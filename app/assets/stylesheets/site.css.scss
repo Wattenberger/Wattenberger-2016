@@ -1,0 +1,70 @@
+// Place all the styles related to the Site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Variables */
+
+$main-color: "#"
+$scondary-color: "#"
+$accent-color: "#"
+
+/* Mixins */
+
+@mixin rounded-corners {
+  $rounded-corner-radius: 4px;
+  -webkit-border-radius: $rounded-corner-radius;
+  -moz-border-radius: $rounded-corner-radius;
+  -ms-border-radius: $rounded-corner-radius;
+  border-radius: $rounded-corner-radius;
+}.button {
+  @include rounded-corners;
+}
+
+
+#content {
+  display: table;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#info {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  display: table-cell;
+  margin: auto;
+  font-size: 3em;
+  line-height: 2em;
+}
+
+#info p {
+  font-size: 1em;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/bg.jpg");
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}

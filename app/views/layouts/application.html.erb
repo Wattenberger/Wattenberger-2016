@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wattenberger</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="logo"><%= link_to(image_tag("logo.png", :size => "120x120", :alt => "home image", :title => "Home"), "/", :class => "logo") %></a> </div>
+<%= yield %>
+<div id="contact"><img src="images/contact.png"></div>
+</body>
+</html>
