@@ -4,7 +4,7 @@
 
 /* Variables */
 
-$background: #F0F0D8;
+$background: #FCFEFB;
 $main: #607848;
 $secondary: #604848;
 
@@ -27,7 +27,9 @@ h1 {
 	color: $main;
 }
 
-img {
+#daily img {
+  width: 60%;
+  height: auto;
 }
 
 

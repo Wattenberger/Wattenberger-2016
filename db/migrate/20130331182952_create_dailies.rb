@@ -1,5 +1,7 @@
 class CreateDailies < ActiveRecord::Migration
   def change
+    drop_table :dailies
+
     create_table :dailies do |t|
       t.string :title
       t.date :date

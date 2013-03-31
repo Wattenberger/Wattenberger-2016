@@ -40,7 +40,7 @@ Reveal.initialize({
     mouseWheel: false,
 
     // Apply a 3D roll to links on hover
-    rollingLinks: true,
+    rollingLinks: false,
 
     // Transition style
     transition: 'linear' // default/cube/page/concave/zoom/linear/fade/none
