@@ -4,9 +4,9 @@
 
 /* Variables */
 
-$background: #F0F0D8;
-$main: #607848;
-$secondary: #604848;
+$background: #F5E7D0;
+$main: #089A99;
+$secondary: #FFF;
 
 /* Mixins */
 
@@ -20,15 +20,14 @@ $secondary: #604848;
 
 body {
   background-color: $background;
-  color: $secondary;
 }
 
-h1 {
-	color: $main;
+body, html, #content {
+  font-family: "Noto Sans", sans-serif;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
-
-img {
-}
-
-
 

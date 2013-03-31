@@ -12,6 +12,51 @@
  *= require_tree .
  */
 
+/* Variables */
+
+
+/* Mixins */
+
+@mixin rounded-corners {
+  $rounded-corner-radius: 4px;
+  -webkit-border-radius: $rounded-corner-radius;
+  -moz-border-radius: $rounded-corner-radius;
+  -ms-border-radius: $rounded-corner-radius;
+  border-radius: $rounded-corner-radius;
+}
+
+body, html, #content {
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      display: block;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.button {
+  @include rounded-corners;
+}
+
 #logo, .logo {
   position: fixed;
   top: 20px;

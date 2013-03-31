@@ -1,4 +1,10 @@
 Wattenberger::Application.routes.draw do
+  resources :dailies
+
+
+  resources :examples
+
+
   get "site/main"
 
   # The priority is based upon order of creation:
