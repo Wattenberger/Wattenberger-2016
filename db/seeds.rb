@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Example.delete_all
-Example.create( :title => 'Icon Font', :description => 'new', :image_url => 'images/icons.png', :date => '1/12/2012' )
-Example.create( :title => 'Coffee Robot', :description => 'Prototype for a mobile app that sends your coffee order to a coffee machine, which prepares your drink before you get to the kitchen.  See it live <a href="wattenberger.com/coffeebot">here</a>.', :image_url => 'images/coffee.png', :date => '1/10/2012' )
+Example.create( :title => 'Icon Font', :description => 'I created an icon font for databases owned by OwnLocal.  Each of the more than 500 categories had an icon, each of which was optimized using user testing interviews and surveys.  See it live <a href="austin.ownlocal.com">here</a>', :image_url => 'images/icons.png', :date => '1/12/2012' )
+Example.create( :title => 'Coffee Robot', :description => 'I created a prototype for a mobile app that sends your coffee order to a coffee machine, which prepares your drink before you get to the kitchen.  See it live <a href="wattenberger.com/coffeebot">here</a>.', :image_url => 'images/coffee.png', :date => '1/10/2012' )
 
 Daily.delete_all
 Daily.create( :title => 'Obama', :description => '', :image_url => 'images/daily/obama.png', :date => '21/1/2013' )
