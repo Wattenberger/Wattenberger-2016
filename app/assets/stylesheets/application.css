@@ -83,3 +83,11 @@ html {
 #contactsvg {
   height: auto;
 }
+
+#cvimg {
+   height: 100%;
+   margin: auto;
+   float: left;
+   margin-left: 200px;
+}
+                             
