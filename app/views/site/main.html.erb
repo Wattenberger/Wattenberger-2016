@@ -19,14 +19,16 @@
                          <li>Illustration</li>
                          <li>Photoshop</li>
                          <li>Illustrator</li>
-                         <li>Drawing/Painting</li>
+						 <li>Drawing/Painting</li>
+						 <li>Blender</li>
                      </ul>
                  </section>
                  <section>
                      <h2>Developing Skills</h2>
                      <ul><li>HTML</li>
                          <li>CSS</li>
-                         <li>jQuery</li>
+						 <li>jQuery</li>
+						 <li>Javascript</li>
                          <li>MATLAB</li>
                          <li>Ruby on Rails</li>
                      </ul>
@@ -63,7 +65,7 @@
 	    			<p>\/</p>
 	    		</section>
 	    	<% @dailies.each do |daily| %>
-	    			<section id="<%= ((daily.title).gsub(/ /,"_")).underscore.to_sym %>" class="dailytitle">
+				<!--    			<section id="<%= ((daily.title).gsub(/ /,"_")).underscore.to_sym %>" class="dailytitle"> -->
 	    				<h2 class="dailydate"><%= (daily.date).to_s(:long) %></h2>
 		        		<img src="<%= daily.image_url %>" />
 	          		</section>
