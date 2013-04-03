@@ -59,7 +59,7 @@ Wattenberger::Application.routes.draw do
   # root :to => 'welcome#index'
     root :to => 'site#main'
 
-match ':permalink', :controller => 'pages', :action => 'cv', :as => 'cv'
+match '/cv' => 'pages#cv'
 match ':permalink', :controller => 'pages', :action => 'coffeebot', :as => 'coffeebot'
 
   # See how all your routes lay out with "rake routes"
