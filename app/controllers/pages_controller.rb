@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
 
-
 	def cv
 	end
 

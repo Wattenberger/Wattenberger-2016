@@ -5,7 +5,7 @@
 /* Variables */
 
 $background: #FCFEFB;
-$main: #607848;
+$main: #A8C0A8;
 $secondary: #604848;
 
 /* Mixins */
@@ -40,4 +40,9 @@ h1 {
 #aboutme li {
 	list-style: none;
 	padding: 10px;
+}
+
+.arrow, .down {
+  font-size: 4em;
+  color: $main;
 }
