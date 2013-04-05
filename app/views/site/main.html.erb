@@ -6,11 +6,12 @@
 				<h1>Amelia Wattenberger</h1>
 				<p>a multi-faceted designer in Austin, TX</p><br>
 				<p id="sitehelp">Explore using your arrow keys or swiping.<br>View the layout with the 'Esc' key</p>
+				<div id="left">⇢</div>
 		    </section>
              <section id="aboutme">
                  <section>
                  <h1>About Me</h1>
-                 <p>↓</p>
+	    			<p class="down">⇣</p>
              </section>
                  <section>
                      <h2>Design Skills</h2>
@@ -48,7 +49,7 @@
 		    <section id="work">
 	    		<section>
 	    			<h1>Work Examples</h1>
-	    			<p>↓</p>
+	    			<p class="down">⇣</p>
 	    		</section>
 	    	<% @examples.each do |example| %>
 		      <section id="<%= ((example.title).gsub(/ /,"_")).underscore.to_sym %>" class="exampletitle">
@@ -65,7 +66,7 @@
 	    	<section id="daily">
 	    		<section>
 	    			<h1>Drawing a Day</h1>
-	    			<p>↓</p>
+	    			<p class="down">⇣</p>
 	    		</section>
 	    	<% @dailies.each do |daily| %>
 	    			<section id="<%= ((daily.title).gsub(/ /,"_")).underscore.to_sym %>" class="dailytitle">
