@@ -10,7 +10,7 @@
              <section id="aboutme">
                  <section>
                  <h1>About Me</h1>
-                 <p>V</p>
+                 <p>↓</p>
              </section>
                  <section>
                      <h2>Design Skills</h2>
@@ -48,7 +48,7 @@
 		    <section id="work">
 	    		<section>
 	    			<h1>Work Examples</h1>
-	    			<p>\/</p>
+	    			<p>↓</p>
 	    		</section>
 	    	<% @examples.each do |example| %>
 		      <section id="<%= ((example.title).gsub(/ /,"_")).underscore.to_sym %>" class="exampletitle">
@@ -65,7 +65,7 @@
 	    	<section id="daily">
 	    		<section>
 	    			<h1>Drawing a Day</h1>
-	    			<p>\/</p>
+	    			<p>↓</p>
 	    		</section>
 	    	<% @dailies.each do |daily| %>
 	    			<section id="<%= ((daily.title).gsub(/ /,"_")).underscore.to_sym %>" class="dailytitle">
