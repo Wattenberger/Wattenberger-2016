@@ -1,0 +1,35 @@
+@import "~styles/variables";
+
+.HomeHeader {
+  height: 100vh;
+  width: 100%;
+  font-family: $font-family-serif;
+}
+
+.HomeHeader__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  // border: 30px solid #fff;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.HomeHeader__content__text {
+  position: absolute;
+  top: 56%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 800px;
+  padding-left: 10vw;
+  transform: translate3d( 0, -50%, 0);
+}
+
+.HomeHeader__content__text__description {
+  margin-top: 30px;
+  opacity: 0.6;
+}
