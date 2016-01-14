@@ -24,7 +24,10 @@ build/Release
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+
+/node_modules
+npm-debug.log
+.DS_Store
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 #

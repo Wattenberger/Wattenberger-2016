@@ -7,7 +7,8 @@
     "dev": "NODE_ENV=development node index",
     "build": "webpack --progress -p --config ./webpack/webpack.config.babel.js",
     "start": "NODE_ENV=production node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack --progress -p --config ./webpack/webpack.config.babel.js",
   },
   "engines": {
     "node": "4.2.4"
@@ -54,7 +55,6 @@
     "react-hot-loader": "^1.2.5",
     "webpack-dev-server": "^1.8.0"
   },
-  "postinstall": "webpack --progress -p --config ./webpack/webpack.config.babel.js",
   "author": "Amelia Wattenberger",
   "license": "ISC"
 }
