@@ -1,12 +1,12 @@
-import path from "path"
-import webpack from "webpack"
-import _ from "lodash"
-import config from "../src/config/config"
+var path = require("path")
+var webpack = require("webpack")
+var _ = require("lodash")
+var config = require("../src/config/config")
 
 const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../dist")
 
-export default {
+module.exports = {
   entry: {
     "main": [
       "./src/client.js"
@@ -25,7 +25,7 @@ export default {
     },
     module: {
       loaders: [
-      {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["babel"] },
+      {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["babel?cacheDirectory,presets[]=react,presets[]=es2015,plugins[]=transform-decorators-legacy"] },
       {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
       {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
       {
