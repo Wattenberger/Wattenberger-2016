@@ -18,8 +18,6 @@ class App extends Component {
   render() {
     return (
       <div className={this.getClassName()}>
-        <img src={resume} />
-        {resume}
         {this.props.children}
         <Footer />
       </div>
