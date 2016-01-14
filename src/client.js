@@ -8,7 +8,7 @@ import createStore from "./store"
 if (__DEV__) window.Perf = require('react-addons-perf')
 
 const store = createStore()
-const appRoot = document.getElementById('app
+const appRoot = document.getElementById('app')
 
 ReactDOM.render((
   <Provider store={store}>
