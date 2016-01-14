@@ -15,7 +15,7 @@ module.exports = {
     target: "web",
     output: {
       path: assetsPath,
-      publicPath: `//${config.STATIC_HOST}/`,
+      publicPath: `//${config.STATIC_HOST}/static/`,
       filename: "app.min.js",
       chunkFilename: "[chunkhash].js"
     },
