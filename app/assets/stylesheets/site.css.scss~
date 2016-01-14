@@ -1,0 +1,33 @@
+// Place all the styles related to the Site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Variables */
+
+$background: #F5E7D0;
+$main: #089A99;
+$secondary: #FFF;
+
+/* Mixins */
+
+@mixin rounded-corners {
+  $rounded-corner-radius: 4px;
+  -webkit-border-radius: $rounded-corner-radius;
+  -moz-border-radius: $rounded-corner-radius;
+  -ms-border-radius: $rounded-corner-radius;
+  border-radius: $rounded-corner-radius;
+}
+
+body {
+  background-color: $background;
+}
+
+body, html, #content {
+  font-family: "Noto Sans", sans-serif;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+

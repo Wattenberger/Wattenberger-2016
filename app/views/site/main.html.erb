@@ -1,0 +1,86 @@
+
+	<div class="reveal">
+	    <div class="slides">
+		    <section>
+		    	<p>Hi, I'm</p>
+				<h1>Amelia Wattenberger</h1>
+				<p>a multi-faceted designer in Austin, TX</p><br>
+				<p id="sitehelp">Explore using your arrow keys or swiping.<br>View the layout with the 'Esc' key</p>
+				<div id="right" class="arrow">⇢</div>
+		    </section>
+             <section id="aboutme">
+                 <section>
+                 <h1>About Me</h1>
+	    			<p class="down">⇣</p>
+             </section>
+                 <section>
+                     <h2>Design Skills</h2>
+                     <ul><li>UX Design</li>
+                         <li>Graphic Design</li>
+                         <li>Illustration</li>
+                         <li>Photoshop</li>
+						 <li>Illustrator</li>
+						 <li>Blender</li>
+                         <li>Drawing/Painting</li>
+                     </ul>
+                 </section>
+                 <section>
+                     <h2>Developing Skills</h2>
+                     <ul><li>HTML</li>
+                         <li>CSS</li>
+						 <li>jQuery</li>
+						 <li>Javascript</li>
+                         <li>MATLAB</li>
+						 <li>Ruby on Rails</li>
+                     </ul>
+                 </section>
+                 <section>
+                     <h2>Relevant Skills</h2>
+                     <ul><li>Research</li>
+                         <li>Data Analysis</li>
+                         <li>Neuroscience</li>
+                         <li>Psychology</li>
+                     </ul>
+				</section>
+				<section>
+				<p>View my <%= link_to 'CV', cv_path(@cv) %></p>
+				</section>
+             </section>
+		    <section id="work">
+	    		<section>
+	    			<h1>Work Examples</h1>
+	    			<p class="down">⇣</p>
+	    		</section>
+	    	<% @examples.each do |example| %>
+		      <section id="<%= ((example.title).gsub(/ /,"_")).underscore.to_sym %>" class="exampletitle">
+			      <div class="text">
+			        <h2 class="title"><%= example.title %></h2>
+					<p class="description"><%= sanitize example.description %></p>
+		          </div>
+	          </section>
+	          <section>
+		        <img src="<%= example.image_url %>" />
+		      </section>
+            <% end %>
+	    	</section>
+	    	<section id="daily">
+	    		<section>
+	    			<h1>Drawing a Day</h1>
+	    			<p class="down">⇣</p>
+	    		</section>
+	    	<% @dailies.each do |daily| %>
+	    			<section id="<%= ((daily.title).gsub(/ /,"_")).underscore.to_sym %>" class="dailytitle">
+					<!-- <h2 class="dailydate"><%= (daily.date).to_s(:long) %></h2> -->
+		        		<img src="<%= daily.image_url %>" />
+	          		</section>
+            <% end %>
+	    	</section>
+	    	<section id="aboutme">
+	    		<section>
+	    			<h1>Contact me</h1>
+					<p>Feel free to drop me a line at</p>
+					<p>wattenberger@gmail.com</p>
+	    		</section>
+	    	</section>
+	  </div>
+	</div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Robocoffee</title>
+        <link rel="shortcut icon" href="../logo2.png" />
+		<link rel="stylesheet" href="coffeecss.css" type="text/css"></link>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="coffeescripts.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Amatic+SC|Meddon' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+    <h1 class="logo"><a href="../../index.html"><img src="../logo.png" /></a></h1>
+</header>
+<div id="load"><div id="ask">Would you like me to make you a cup of coffee?</div>
+<div id="yes">Bring it on!</div></div>
+<div id="coffeeform"><div id="coffee"><img src="coffee1.png" alt="coffee" /></div><div id="mug">
+<img src="steam2.png" alt="coffee mug" /></div>
+<div id="form">
+  <form id="form1" name="form1" method="post" action="email.php">
+<div id="name">Name         <input type="text" name="name" alt="name"></div>
+<div id="icons"><br />
+<img src="temp.png" alt="Temperature" /><br /><br />
+<img src="sugar.png" alt="Sugar" /><br /><br />
+<img src="milk.png" alt="Milk" /><br /><br />
+<img src="beans.png" alt="Beans" />
+</div>
+<div id="formitems">
+  <br />
+  <section>   
+    <span class="temptooltip"></span>   
+    <div id="tempslider"></div>
+</section><br /><br />
+<div id="sugarinp">
+<div id="larrow"><img src="arrow.png" alt="arrow"/></div>
+<div id="suginp"></div>
+<div id="rarrow"><img src="arrow.png" alt="arrow"/></div></div><br /><br /><br />
+  <section>   
+    <span class="tooltip"></span>   
+    <div id="slider"></div>
+</section> <br />
+<div id="beanform"><select name="Bean Type">
+<option value="columbian">Columbian</option>
+<option value="french">French Roast</option>
+<option value="dark" selected="selected">Dark Roast</option>
+<option value="sumatra">Sumatra</option>
+</select></div>
+</div>
+</div>
+<input type="submit" id="submit" value="Send Order">
+<input type="button" value="Save Order" />
+  </form>
+  
+
+
+</div>
+<div id="preload">
+<img src="iced.png" />
+<img src="steam1.png" />
+<img src="steam2.png" />
+<img src="steam3.png" />
+<img src="steam4.png" />
+<img src="coffee2.png" />
+<img src="coffee3.png" />
+<img src="coffee4.png" />
+<img src="coffee5.png" /></div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35815535-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="keywords" content="graphic design, ux design, ui design" />
+        <meta name="author" content="Wattenberger" />
+		<link rel="shortcut icon" href="images/logo.png" />
+		<%= stylesheet_link_tag :all %>
+
+  <title>Wattenberger</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="logo"><a href="/"> <%= image_tag("logo.png", :size => "120x120", :alt => "Home") %></a> </div>
+<%= yield %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'googleanalytics' %>
+</body>
+</html>

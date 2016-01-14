@@ -1,0 +1,29 @@
+<h1>Listing dailies</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Date</th>
+    <th>Image url</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dailies.each do |daily| %>
+  <tr>
+    <td><%= daily.title %></td>
+    <td><%= daily.date %></td>
+    <td><%= daily.image_url %></td>
+    <td><%= daily.description %></td>
+    <td><%= link_to 'Show', daily %></td>
+    <td><%= link_to 'Edit', edit_daily_path(daily) %></td>
+    <td><%= link_to 'Destroy', daily, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Daily', new_daily_path %>
