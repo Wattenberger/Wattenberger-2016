@@ -1,4 +1,0 @@
-[01-Oct-2012 19:33:11 UTC] PHP Warning:  mail() expects at least 3 parameters, 2 given in /home/wattenbe/public_html/img/coffee/email.php on line 4
-[01-Oct-2012 20:12:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/wattenbe/public_html/img/coffee/email.php:7) in /home/wattenbe/public_html/img/coffee/email.php on line 11
-[01-Oct-2012 20:24:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/wattenbe/public_html/img/coffee/email.php:7) in /home/wattenbe/public_html/img/coffee/email.php on line 8
-[11-Feb-2013 22:26:51 UTC] PHP Warning:  PHP Startup: apc.shm_size now uses M/G suffixes, please update your ini files in Unknown on line 0
