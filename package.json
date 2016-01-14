@@ -29,6 +29,7 @@
     "css-loader": "^0.23.1",
     "d3": "^4.0.0-alpha.4",
     "express": "^4.13.3",
+    "file-loader": "^0.8.5",
     "history": "^1.17.0",
     "image-webpack-loader": "^1.6.2",
     "immutable": "^3.7.6",

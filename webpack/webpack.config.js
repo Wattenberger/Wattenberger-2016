@@ -15,7 +15,7 @@ module.exports = {
     target: "web",
     output: {
       path: assetsPath,
-      publicPath: `//${config.STATIC_HOST}/static/`,
+      publicPath: `//${config.STATIC_HOST}/`,
       filename: "app.min.js",
       chunkFilename: "[chunkhash].js"
     },
@@ -29,11 +29,14 @@ module.exports = {
       {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
       {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
       {
-        test: /.*\.(gif|png|jpe?g|pdf)$/i,
+        test: /.*\.(gif|png|jpe?g|ico)$/i,
         loaders: [
           'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+          'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}',
         ]
+      },{
+        test: /\.pdf$/,
+        loader: 'file?name=resume.pdf!./resume.pdf'
       }
     ],
     // noParse: [/node_modules/]

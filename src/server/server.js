@@ -14,7 +14,7 @@ app.use(morgan(app.get("env") === "production" ? "combined" : "dev"))
 app.use(bodyParser.json())
 app.use(compression())
 
-app.use('/static/', express.static('dist'))
+app.use('/', express.static('dist'))
 
 // Dev: serve static files from webpack dev server
 if (app.get("env") === "development") require ("../../webpack/dev-server")
