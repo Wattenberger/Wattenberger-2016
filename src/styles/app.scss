@@ -44,16 +44,11 @@ h6 {
 }
 
 a {
-  color: $accent-1;
-  background: linear-gradient(to right, $accent-3, $accent-2 1%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: underline;
+  color: $accent-2;
+  text-decoration: none;
   transition: all 0.2s ease-out;
   &:hover {
-    background: linear-gradient(to right, $accent-3, $accent-2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $accent-4;
   }
   &::selection {
     background: #fff;
@@ -74,6 +69,7 @@ p {
     -webkit-text-fill-color: #fff;
     color: #fff;
     background: $accent-2;
+    border-color: $accent-2;
     text-decoration: none;
   }
 }

@@ -28,7 +28,7 @@ class Footer extends Component {
   render() {
     return (
       <div className={this.getClassName()}>
-        <div className="Footer__c">© 2016 Amelia Wattenberger</div>
+        <div className="Footer__c">© 2016 Amelia Wattenberger - code on <a href="https://github.com/Wattenberger/Wattenberger-2016">github</a></div>
         <div className="Footer__links">
           {links.map(::this.renderLink)}
         </div>
