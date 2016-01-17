@@ -8,6 +8,7 @@ const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../../static")
 
 export default {
+  devtool: "#source-map",
   entry: {
     "main": [
       `webpack-dev-server/client?http://${config.WEBPACK_HOST}:${config.WEBPACK_PORT}`,
@@ -39,8 +40,8 @@ export default {
           'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
         ]
       }
-    ]
-    // noParse: [/node_modules/]
+    ],
+    noParse: [/node_modules/]
   },
   plugins: [
     // hot reload

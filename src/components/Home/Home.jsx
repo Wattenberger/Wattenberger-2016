@@ -15,7 +15,7 @@ class Home extends Component {
       <div className={this.getClassName()}>
         <HomeHeader />
         <div className="Home__content">
-          <Portfolio />p
+          <Portfolio />
         </div>
       </div>
     )

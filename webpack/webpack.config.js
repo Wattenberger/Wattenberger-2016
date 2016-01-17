@@ -25,18 +25,23 @@ module.exports = {
     },
     module: {
       loaders: [
-      {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["babel?cacheDirectory,presets[]=react,presets[]=es2015,plugins[]=transform-decorators-legacy"] },
+      {test: /\js(x)?$/, exclude: /node_modules/, loader: "babel",
+      query: {
+        plugins: ["transform-decorators-legacy"],
+        presets: ["react", "es2015", "stage-0"],
+      } },
       {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
       {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
+      {test: /\.json$/,  loaders: ["json"] },
       {
         test: /.*\.(gif|png|jpe?g|ico)$/i,
         loaders: [
           'file?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}',
         ]
-      }
+      },
     ],
-    noParse: [/node_modules/]
+    // noParse: [/node_modules/]
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
