@@ -12,7 +12,7 @@ class HomeHeader extends Component {
   render() {
     return (
       <div className={this.getClassName()}>
-        <WatercolorCanvas />
+        <WatercolorCanvas className="HomeHeader__watercolor-canvas" />
         <div className="HomeHeader__content">
           <div className="HomeHeader__content__text">
             <div className="HomeHeader__content__text__top">Hi I’m</div>

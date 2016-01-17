@@ -2,9 +2,11 @@
 @import "~styles/mixins";
 
 .HomeHeader {
-  height: 100vh;
+  position: relative;
+  height: 110vh;
   width: 100%;
   font-family: $font-family-serif;
+  overflow: hidden;
 }
 
 .HomeHeader__content {
@@ -12,6 +14,10 @@
   margin: 40vh $horizontal-padding;
   opacity: 0.9;
   z-index: 1;
+}
+
+.HomeHeader__content__text__title {
+
 }
 
 .HomeHeader__content__text {
@@ -22,6 +28,12 @@
 .HomeHeader__content__text__description {
   margin-top: 30px;
   opacity: 0.6;
+}
+
+.HomeHeader__watercolor-canvas {
+  height: 100vh;
+  width: 110vw;
+  margin: -5vh -5vw;
 }
 
 @media (max-width: 900px) {

@@ -33,7 +33,7 @@ export default {
       {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
       {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
       {
-        test: /.*\.(gif|png|jpe?g|pdf|ico)$/i,
+        test: /.*\.(gif|png|jpe?g|pdf|svg)$/i,
         loaders: [
           'file?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'

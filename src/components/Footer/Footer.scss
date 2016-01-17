@@ -1,8 +1,25 @@
 @import "~styles/variables";
 
 .Footer {
-  padding: 40px;
-  color: $accent-1;
-  background: $accent-3;
-  text-align: center;
+  padding: 13px 20px;
+  // background: $gray;
+  font-size: $font-size-xsmall;
+  border-top: 1px solid $gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer__links {
+  height: 30px;
+}
+
+.Footer__link {
+  height: 30px;
+  img {
+    height: 30px;
+    width: 30px;
+    fill: $gray;
+  }
 }
