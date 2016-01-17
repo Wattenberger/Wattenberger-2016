@@ -12,7 +12,7 @@ const serverOptions = {
   quiet: false,
   noInfo: false,
   hot: true,
-  inline: true,
+  // inline: true,
   publicPath: config.output.publicPath,
   proxy: {
     '*': `http://${WEBPACK_HOST}:${SERVER_PORT}`

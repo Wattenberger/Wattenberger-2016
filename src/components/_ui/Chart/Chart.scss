@@ -1,0 +1,22 @@
+@import "~styles/variables";
+@import "~styles/mixins";
+
+.Chart {
+  position: relative;
+  height: 100%;
+  min-height: 270px;
+  width: 100%;
+}
+
+.Chart__svg {
+  @include abs(0,0,0,0);
+}
+
+.Chart__clip-path {
+  pointer-events: none;
+  transition: width $transition-fast;
+}
+
+.Chart__tooltip-container {
+  @include abs(0,0,0,0);
+}

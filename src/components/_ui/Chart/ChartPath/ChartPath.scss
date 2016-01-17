@@ -1,0 +1,11 @@
+@import '~styles/variables';
+
+.ChartPath {
+  animation: slideUp 0.3s ease-out;
+}
+
+.ChartPath__line {
+  fill: none;
+  stroke: $accent-3;
+  stroke-width: 1px;
+}

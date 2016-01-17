@@ -1,0 +1,14 @@
+@import '~styles/variables';
+
+.Brush__background {
+  stroke: $accent-2;
+  stroke-width: 1px;
+  fill: none;
+  visibility: visible !important;
+  cursor: crosshair;
+}
+
+.Brush__extent {
+  fill: $accent-2;
+  cursor: move;
+}

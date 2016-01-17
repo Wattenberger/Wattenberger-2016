@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import classNames from "classnames"
 import HomeHeader from "./HomeHeader/HomeHeader"
+import Portfolio from "components/Portfolio/Portfolio"
 
 require('./Home.scss')
 
@@ -14,6 +15,7 @@ class Home extends Component {
       <div className={this.getClassName()}>
         <HomeHeader />
         <div className="Home__content">
+          <Portfolio />p
         </div>
       </div>
     )

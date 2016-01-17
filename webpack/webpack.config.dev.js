@@ -5,7 +5,7 @@ import config from "../src/config/config"
 import NyanProgressPlugin from 'nyan-progress-webpack-plugin'
 
 const srcPath    = path.resolve(__dirname, "../src")
-const assetsPath = path.resolve(__dirname, "../dist")
+const assetsPath = path.resolve(__dirname, "../../static")
 
 export default {
   entry: {
@@ -31,6 +31,7 @@ export default {
       {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["react-hot", "babel"] },
       {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
       {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
+      {test: /\.json$/,  loaders: ["json"] },
       {
         test: /.*\.(gif|png|jpe?g|pdf|ico)$/i,
         loaders: [
@@ -38,7 +39,7 @@ export default {
           'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
         ]
       }
-    ],
+    ]
     // noParse: [/node_modules/]
   },
   plugins: [

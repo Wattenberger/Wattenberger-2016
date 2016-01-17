@@ -1,0 +1,10 @@
+@import "~styles/variables";
+
+.Axis {
+  text {
+    fill: $gray;
+  }
+  .domain {
+    fill: none;
+  }
+}

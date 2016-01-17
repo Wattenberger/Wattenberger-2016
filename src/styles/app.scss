@@ -11,7 +11,7 @@ body {
   color: $tc;
   font-size: 18px;
   line-height: 1.46em;
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
 }
 
 h1 {
@@ -21,15 +21,26 @@ h1 {
 }
 
 h2 {
+  font-family: $font-family-serif;
   font-size: $font-size-large;
+  line-height: 1.3em;
+  margin-bottom: 0.6em;
 }
 
 h3 {
+  font-family: $font-family-serif;
+  font-size: $font-size-medium;
+  line-height: 1.1em;
+  margin-bottom: 0.6em;
+}
+
+h6 {
   font-family: $font-family-sans-serif;
   font-size: $font-size-xsmall;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.1em;
+  margin-bottom: 0.6em;
 }
 
 a {
@@ -38,7 +49,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;
-  transition: all 5s ease-out;
+  transition: all 0.2s ease-out;
   &:hover {
     background: linear-gradient(to right, $accent-3, $accent-2 100%);
     -webkit-background-clip: text;
@@ -46,5 +57,38 @@ a {
   }
   &::selection {
     background: #fff;
+  }
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+.btn {
+  @extend h6;
+  color: $accent-2;
+  padding: 0.9em 1.4em;
+  border: 1px solid;
+  transition: all 0.2s ease-out;
+  &:hover {
+    -webkit-text-fill-color: #fff;
+    color: #fff;
+    background: $accent-2;
+    text-decoration: none;
+  }
+}
+
+.pill {
+  @extend h6;
+  background: $accent-4;
+  color: #fff;
+  margin-bottom: 0.6em;
+  padding: 0.6em 0.9em;
+  display: inline-block;
+  font-size: $font-size-xsmall;
+  line-height: 1em;
+  border-radius: 2px;
+  & + .pill {
+    margin-left: 0.6em;
   }
 }

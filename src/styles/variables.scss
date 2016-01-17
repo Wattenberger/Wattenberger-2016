@@ -1,7 +1,9 @@
 $accent-1: #f4f4f4;
-$accent-2: #697287;
+$accent-2: #6E9987;
 $accent-3: #27191C;
-$accent-4: #454C66;
+$accent-4: #114D4D;
+
+$gray: #E0E4CE;
 
 $tc: $accent-3;
 $bgc: $accent-1;
@@ -18,3 +20,12 @@ $font-size-large: 40px;
 $font-size-medium: 24px;
 $font-size-small: 18px;
 $font-size-xsmall: 12px;
+
+//
+
+$transition-fast: 0.2s ease-out;
+
+//
+
+$horizontal-padding: 300px;
+$horizontal-padding-skinny: 50px;

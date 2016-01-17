@@ -1,0 +1,11 @@
+@import "~styles/variables";
+@import "~styles/mixins";
+
+.Sidebar {
+  @include abs(0, 0, 0);
+  position: fixed;
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  overflow: auto;
+}
