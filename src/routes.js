@@ -13,7 +13,6 @@ class Routes extends Component {
         <Route path="/" component={App}>
           <IndexRedirect to="home" />
           <Route path="home" component={Home} />
-          <Route path="candidates" component={Candidates} />
         </Route>
         <Redirect from="*" to="home" />
       </Router>

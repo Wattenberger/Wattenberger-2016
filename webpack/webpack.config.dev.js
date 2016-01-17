@@ -8,7 +8,7 @@ const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../../static")
 
 export default {
-  devtool: "eval-source-map",
+  devtool: "eval",
   entry: {
     "main": [
       `webpack-dev-server/client?http://${config.WEBPACK_HOST}:${config.WEBPACK_PORT}`,
@@ -32,7 +32,6 @@ export default {
       {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["react-hot", "babel"] },
       {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
       {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
-      {test: /\.json$/,  loaders: ["json"] },
       {
         test: /.*\.(gif|png|jpe?g|pdf|ico)$/i,
         loaders: [
@@ -41,7 +40,7 @@ export default {
         ]
       }
     ],
-    noParse: [/node_modules/]
+    // noParse: [/node_modules/]
   },
   plugins: [
     // hot reload

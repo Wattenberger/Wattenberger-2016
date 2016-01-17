@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import classNames from "classnames"
 import _ from "lodash"
 import numeral from "numeral"
-import sentiment from "sentiment"
+// import sentiment from "sentiment"
 import {candidates} from "./data"
 import Chart from "components/_ui/Chart/Chart"
 import d3 from "d3"
@@ -41,8 +41,8 @@ class Candidates extends Component {
       article.title || article["twitter:title"] || "",
       article.description || article['twitter:description']
     ].join(" ")
-    let score = sentiment(text)
-    return score
+    // let score = sentiment(text)
+    // return score
   }
 
   getArticlesWithScore(candidate, targetScore) {

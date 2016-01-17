@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import {connect} from "react-redux"
 import classNames from "classnames"
 import Footer from "components/Footer/Footer"
-let favicon = require('./favicon.png')
 
 require('styles/app.scss')
 require('./App.scss')
