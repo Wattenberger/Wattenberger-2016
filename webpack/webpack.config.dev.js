@@ -8,7 +8,7 @@ const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../../static")
 
 export default {
-  devtool: "#source-map",
+  devtool: "eval-source-map",
   entry: {
     "main": [
       `webpack-dev-server/client?http://${config.WEBPACK_HOST}:${config.WEBPACK_PORT}`,
