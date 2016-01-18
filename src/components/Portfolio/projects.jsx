@@ -60,7 +60,7 @@ export const projects = [
         </div>,
         link: "https://fake-cohort.firebaseapp.com/",
         tools: ["Angular", "Google Analytics API", "SCSS"],
-        images: []
+        images: [ca]
       },
     ]
   },
@@ -85,7 +85,7 @@ export const projects = [
           <p>I will post images when we release the new product to our clients next month.</p>
         </div>,
         tools: ["React.js","D3.js","SCSS"],
-        images: [ca]
+        images: []
       },
       {
         title: "Umbel SXSW Party Photobooth",
