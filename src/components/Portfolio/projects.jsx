@@ -16,7 +16,7 @@ import lucha1 from "./lucha/images/lucha1.gif"
 import lucha2 from "./lucha/images/lucha2.jpg"
 import lucha3 from "./lucha/images/lucha3.jpg"
 import lucha4 from "./lucha/images/lucha4.jpg"
-import ca from "./ca/images/ca.png
+import ca from "./ca/images/ca.png"
 
 export const projects = [
     {
