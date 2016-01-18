@@ -16,6 +16,7 @@ import lucha1 from "./lucha/images/lucha1.gif"
 import lucha2 from "./lucha/images/lucha2.jpg"
 import lucha3 from "./lucha/images/lucha3.jpg"
 import lucha4 from "./lucha/images/lucha4.jpg"
+import ca from "./ca/images/ca.png
 
 export const projects = [
     {
@@ -54,9 +55,10 @@ export const projects = [
         title: "Cohort Analysis Visualization",
         description: <div>
           <p>Often, I get to collaborate with Umbel’s Data Science team. One of these projects was aimed at helping a client understand how different cohorts of their customers behave. I built an interactive web app to securely visualize our findings.</p>
-        <p>Each category of their product is displayed in a stacked or grouped bar chart, split into month of first purchase.</p>
+          <p>Each category of their product is displayed in a stacked or grouped bar chart, split into month of first purchase.</p>
+          <p>Feel free to play around with this version, populated with dummy data.</p>
         </div>,
-        link: "https://umbel-data-science.firebaseapp.com/",
+        link: "https://fake-cohort.firebaseapp.com/",
         tools: ["Angular", "Google Analytics API", "SCSS"],
         images: []
       },
@@ -83,7 +85,7 @@ export const projects = [
           <p>I will post images when we release the new product to our clients next month.</p>
         </div>,
         tools: ["React.js","D3.js","SCSS"],
-        images: []
+        images: [ca]
       },
       {
         title: "Umbel SXSW Party Photobooth",
