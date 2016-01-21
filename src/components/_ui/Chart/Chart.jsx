@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from "react"
 import classNames from "classnames"
 import numeral from "numeral"
+import {flatten, clone, isDate} from "lodash"
 import d3 from "d3"
 import ChartPath from "./ChartPath/ChartPath"
 import Bars from "./Bars/Bars"
@@ -9,10 +10,6 @@ import Brush from "./Brush/Brush"
 import ChartTooltip from "./ChartTooltip/ChartTooltip"
 
 require('./Chart.scss')
-const axesHeights = {
-  x: 30,
-  y: 30
-}
 const clipPathExtension = 2
 const transitionDuration = 100
 
@@ -25,6 +22,7 @@ class Chart extends Component {
       width: this.props.width,
       isLoaded: false,
       extent: null,
+      hoveredPoint: {},
       xScale: () => {},
       brushXScale: () => {}
     }
@@ -34,11 +32,13 @@ class Chart extends Component {
     data: PropTypes.array,
     height: PropTypes.number,
     width: PropTypes.number,
+    axesHeights: PropTypes.object,
     brushHeight: PropTypes.number,
     valueKeyX: PropTypes.string,
     valueKeyY: PropTypes.string,
     line: PropTypes.bool,
     area: PropTypes.bool,
+    brush: PropTypes.bool,
     bar: PropTypes.bool,
     xAxis: PropTypes.bool,
     yAxis: PropTypes.bool,
@@ -51,13 +51,18 @@ class Chart extends Component {
     xDomain: PropTypes.array,
     hasTooltip: PropTypes.bool,
     renderTooltip: PropTypes.func,
-    onBarClick: PropTypes.func
+    onBarClick: PropTypes.func,
+    selectedPoint: PropTypes.object
   };
 
   static defaultProps = {
     data: [],
     height: 200,
     width: 600,
+    axesHeights: {
+      x: 30,
+      y: 30
+    },
     brushHeight: 16,
     parseData: (d) => d,
     valueKeyX: "date",
@@ -76,15 +81,17 @@ class Chart extends Component {
   }
 
   getHeight() {
-    let {height} = this.state
-    height = height - axesHeights.y * 2
+    let {height, axesHeights} = this.props
+
+    height = height - axesHeights.x
     if (this.props.brush) height -= this.props.brushHeight + axesHeights.y
     return height
   }
 
   getWidth() {
-    let {width} = this.state
-    return width - axesHeights.x * 2
+    let {width, axesHeights} = this.props
+
+    return width - axesHeights.y
   }
 
   parseData(props) {
@@ -94,16 +101,33 @@ class Chart extends Component {
       return
     }
 
-    let parsedData = data.map(d => {
-      return {
+    let parsedData
+    if (data[0].values) {
+      parsedData = clone(data)
+      parsedData.map(series => {
+        series.values = series.values.map(d => {
+          d.xVal = d[valueKeyX]
+          d.yVal = +d[valueKeyY]
+          return d
+        })
+        return series
+      })
+    } else {
+      parsedData = clone(data).map(d => ({
         xVal: d[valueKeyX],
         yVal: +d[valueKeyY]
-      }
-    })
+      }))
+    }
+
     this.setState({parsedData: parsedData})
     setTimeout(() => {
       this.setScales()
     }, 0)
+  }
+
+  getFlattenedValues(data) {
+    if (!data) return []
+    return flatten(data.map(d => d.values))
   }
 
   getAxisRange(axis) {
@@ -111,25 +135,29 @@ class Chart extends Component {
     if (axis === "y") return [this.getHeight(), 0]
   }
 
-  getAxisDomain(axis, isBrush) {
-    let {extent} = this.state
+  getAxisDomain(axis, isBrush, currentExtent) {
+    let {parsedData} = this.state
+    currentExtent = currentExtent || this.state.currentExtent
     let {xDomain} = this.props
+    if (!parsedData[0]) return []
 
-    let data = this.state.parsedData
-    if (axis === "x")
-      return isBrush
-        ? extent
-        : (!!d3.extent(data, d => d.xVal)[0]
-          ? xDomain || d3.extent(data, d => d.xVal)
-          : d3.extent(data, d => d.xVal)
-        )
-    if (axis === "y") return [0, d3.max(data, d => d.yVal)]
+    if (axis === "x") {
+      return isBrush && currentExtent
+        ? currentExtent
+        : !!parsedData[0].values
+          ? d3.extent(parsedData[0] && parsedData[0].values ? this.getFlattenedValues(parsedData) : parsedData, d => d.xVal)
+          : xDomain || d3.extent(parsedData, d => d.xVal)
+    }
+    if (axis === "y") return [0, d3.max(parsedData[0] && parsedData[0].values ? this.getFlattenedValues(parsedData) : parsedData, d => d.yVal)]
   }
 
   getAxisScale(axis, isBrush) {
-    return this.props[axis + "AxisScale"]()
-      .range(this.getAxisRange(axis))
-      .domain(this.getAxisDomain(axis, isBrush))
+    let scaleRange = this.getAxisRange(axis)
+    let scaleDomain = this.getAxisDomain(axis, isBrush)
+    let scale = this.props[axis + "AxisScale"]()
+      .range(scaleRange)
+    if (scaleDomain.length) scale.domain(scaleDomain)
+    return scale
   }
 
   getAxisStyle(axis) {
@@ -140,15 +168,19 @@ class Chart extends Component {
   }
 
   getFillClipPathStyle() {
+    let {axesHeights} = this.props
+
     return {
       height: this.getHeight(),
       width: this.getWidth(),
       marginLeft: axesHeights.x,
-      marginTop: axesHeights.y
+      marginTop: 0
     }
   }
 
   getBrushStyle(axis) {
+    let {axesHeights} = this.props
+
     let yOffset = this.getHeight() + axesHeights.y + 4
     return {
       transform: "translate3d(0, " + yOffset + "px, 0)",
@@ -157,9 +189,11 @@ class Chart extends Component {
   }
 
   getStyle() {
+    let {axesHeights} = this.props
+
     return {
-      transform: "translate3d(" + axesHeights.x + "px," + axesHeights.y + "px, 0)",
-      WebkitTransform: "translate3d(" + axesHeights.x + "px," + axesHeights.y + "px, 0)"
+      transform: "translate3d(" + axesHeights.x + "px, 0, 0)",
+      WebkitTransform: "translate3d(" + axesHeights.x + "px, 0, 0)"
     }
   }
 
@@ -178,11 +212,17 @@ class Chart extends Component {
 
   onBrush(newExtent) {
     let {parsedData, xScale} = this.state
+    let xScaleIsDate = isDate(xScale.domain()[0])
 
     let data = parsedData
-    if (new Date(newExtent[0]) + "" === new Date(newExtent[1]) + "") newExtent = d3.extent(data, d => d.xVal)
-    let newXScale = xScale.domain(newExtent)
+    if (xScaleIsDate) {
+      if (new Date(newExtent[0]) + "" === new Date(newExtent[1]) + "") newExtent = d3.extent(data, d => d.xVal)
+    } else {
+      if (newExtent[0] === newExtent[1]) newExtent = null
+    }
     this.setState({currentExtent: newExtent})
+    xScale.domain(this.getAxisDomain("x", true, newExtent))
+    this.setState({xScale})
   }
 
   clearExtent() {
@@ -212,6 +252,10 @@ class Chart extends Component {
     window.removeEventListener("resize", this._setSize)
   }
 
+  setHoveredPoint(hoveredPoint) {
+    this.setState({hoveredPoint})
+  }
+
   renderClipPath() {
     let {isLoaded} = this.state
 
@@ -219,7 +263,7 @@ class Chart extends Component {
       <clipPath id="chartPath-clip">
         <rect className="Chart__clip-path"
           x={-clipPathExtension}
-          y={-clipPathExtension * 2}
+          y={0}
           height={this.getHeight() + clipPathExtension * 3}
           width={isLoaded ? this.getWidth() + clipPathExtension * 2 : 0}
           />
@@ -228,15 +272,35 @@ class Chart extends Component {
   }
 
   renderChartPath(type) {
-    let {parsedData, xScale, yScale} = this.state
+    let {selectedSeries, filtered} = this.props
+    let {parsedData, xScale, yScale, hoveredPoint} = this.state
 
-    return <ChartPath
-      data={parsedData}
-      type={type}
-      height={this.getHeight()}
-      xScale={xScale}
-      yScale={yScale}
-      transitionDuration={transitionDuration} />
+    if (parsedData[0].values) {
+      return parsedData.map((series, idx) =>
+        <ChartPath
+          data={series.values}
+          type={type}
+          height={this.getHeight()}
+          xScale={xScale}
+          yScale={yScale}
+          color={series.color}
+          hoveredPoint={hoveredPoint}
+          transitionDuration={transitionDuration}
+          selected={selectedSeries === series}
+          filtered={series.filtered}
+          key={idx}
+        />
+        )
+    } else {
+      return <ChartPath
+        data={parsedData}
+        type={type}
+        height={this.getHeight()}
+        xScale={xScale}
+        yScale={yScale}
+        hoveredPoint={hoveredPoint}
+        transitionDuration={transitionDuration} />
+    }
   }
 
   renderBars() {
@@ -266,7 +330,7 @@ class Chart extends Component {
   }
 
   renderBrush() {
-    let {brushHeight} = this.props
+    let {brushHeight, xAxisFormatting} = this.props
     let {brushXScale} = this.state
 
     return <g style={this.getBrushStyle()}>
@@ -274,6 +338,7 @@ class Chart extends Component {
         height={brushHeight}
         width={this.getWidth()}
         xScale={brushXScale}
+        xAxisFormatting={xAxisFormatting}
         transitionDuration={transitionDuration}
         onChange={::this.onBrush}/>
     </g>
@@ -281,7 +346,7 @@ class Chart extends Component {
 
   renderTooltipElem() {
     let {xAxisFormatting, renderTooltip} = this.props
-    let {parsedData, xScale, yScale} = this.state
+    let {parsedData, xScale, yScale, hoveredPoint} = this.state
 
     return <div className="Chart__tooltip-container" style={this.getFillClipPathStyle()}>
       <ChartTooltip
@@ -290,13 +355,14 @@ class Chart extends Component {
         yScale={yScale}
         xAxisFormatting={xAxisFormatting}
         renderTooltip={renderTooltip}
+        hoveredPoint={hoveredPoint}
+        onTooltipChange={::this.setHoveredPoint}
     />
     </div>
   }
 
   render() {
-    let {children, line, area, bar, xAxis, yAxis, brush, hasTooltip} = this.props
-    let {height, width} = this.state
+    let {height, width, children, line, area, bar, xAxis, yAxis, brush, hasTooltip} = this.props
 
     return (
       <div ref="el" className={this.getClassName()}>

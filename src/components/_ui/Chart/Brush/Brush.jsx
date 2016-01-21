@@ -17,6 +17,7 @@ class Brush extends Component {
     height: PropTypes.number,
     width: PropTypes.number,
     xScale: PropTypes.func,
+    xAxisFormatting: PropTypes.func,
     transitionDuration: PropTypes.number,
     onChange: PropTypes.func
   };
@@ -62,7 +63,7 @@ class Brush extends Component {
   }
 
   render() {
-    let {height, width, xScale, transitionDuration} = this.props
+    let {height, width, xScale, xAxisFormatting, transitionDuration} = this.props
     return (
       <g ref="el" className={this.getClassName()} height={height} width={width}>
         <g style={{transform: "translate3d(0, 6px, 0)"}}>
@@ -71,6 +72,7 @@ class Brush extends Component {
             scale={xScale}
             range={xScale.range()}
             domain={xScale.domain()}
+            formatting={xAxisFormatting}
             transitionDuration={transitionDuration} />
         </g>
         <rect className="Brush__background background" width={width} x="0" height="4" rx="4" ry="4"></rect>

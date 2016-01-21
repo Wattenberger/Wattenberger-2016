@@ -20,7 +20,7 @@ class Footer extends Component {
   }
 
   renderLink(link, idx) {
-    return <a className="Footer__link" href={link.url} title={link.alt}>
+    return <a className="Footer__link" href={link.url} title={link.alt} key={idx}>
       <img src={link.icon} />
     </a>
   }

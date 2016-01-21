@@ -3,16 +3,6 @@ import classNames from "classnames"
 import d3 from "d3"
 
 require('./ChartPath.scss')
-const gradientStops = {
-  line: [
-    {offset: 0, color: "#ae1b3a"},
-    {offset: 100, color: "#f4546e"},
-  ],
-  area: [
-    {offset: 0, color: "#f4546e", opacity: "0.4"},
-    {offset: 100, color: "#f4546e", opacity: "0"},
-  ]
-}
 
 class ChartPath extends Component {
   static propTypes = {
@@ -21,12 +11,17 @@ class ChartPath extends Component {
     height: PropTypes.number,
     xScale: PropTypes.func,
     yScale: PropTypes.func,
-    transitionDuration: PropTypes.number
+    color: PropTypes.string,
+    hoveredPoint: PropTypes.object,
+    transitionDuration: PropTypes.number,
+    selected: PropTypes.bool,
+    filtered: PropTypes.bool
   };
 
   static defaultProps = {
     data: [],
     height: 200,
+    hoveredPoint: {}
   };
 
   update(props, duration, zero) {
@@ -51,11 +46,13 @@ class ChartPath extends Component {
         .attr("d", path)
   }
 
-  getGradients() {
-    let {type} = this.props
+  getLineStyle() {
+    let {type, data, color, hoveredPoint, selected, filtered} = this.props
+    if (!color) return
     let style = {}
-    if (type === "area") style.fill = "url(#area-gradient)"
-    if (type === "line") style.stroke = "url(#line-gradient)"
+
+    if (type === "area") style.fill = color
+    if (type === "line") style.stroke = color
     return style
   }
 
@@ -76,23 +73,19 @@ class ChartPath extends Component {
   }
 
   getClassName() {
-    return classNames("ChartPath", this.props.className)
+    let {data, hoveredPoint, selected, filtered} = this.props
+
+    return classNames("ChartPath", {
+      "ChartPath--filtered": filtered,
+      "ChartPath--selected": selected,
+      "ChartPath--hovered": hoveredPoint.values === data
+    }, this.props.className)
   }
 
   render() {
     return (
       <g className={this.getClassName()}>
-        <linearGradient id={this.props.type + "-gradient"} x1="0%" y1="0%" x2="0%" y2="100%">
-          {gradientStops[this.props.type].map((stop, idx) =>
-            <stop
-              key={idx}
-              offset={stop.offset + "%"}
-              stopColor={stop.color}
-              stopOpacity={stop.opacity || 1}>
-            </stop>
-          )}
-        </linearGradient>
-        <path ref="path" className={"ChartPath__" + this.props.type} style={this.getGradients()} />
+        <path ref="path" className={"ChartPath__" + this.props.type} style={this.getLineStyle()} />
       </g>
     )
   }

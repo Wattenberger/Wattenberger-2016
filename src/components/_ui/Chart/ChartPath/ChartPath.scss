@@ -8,4 +8,23 @@
   fill: none;
   stroke: $accent-3;
   stroke-width: 1px;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.ChartPath--selected path {
+  opacity: 1;
+  stroke: red !important;
+  stroke-width: 6px;
+}
+
+.ChartPath--filtered path {
+  opacity: 0.06;
+}
+
+.ChartPath--hovered:not(.ChartPath--filtered) path {
+  opacity: 1;
+  stroke-width: 10px;
 }

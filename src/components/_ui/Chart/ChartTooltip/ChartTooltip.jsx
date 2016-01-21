@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from "react"
 import {findDOMNode} from "react-dom"
 import classNames from "classnames"
-import {clone, isDate} from "lodash"
+import {clone, isDate, filter, merge} from "lodash"
 
 require('./ChartTooltip.scss')
 
@@ -22,7 +22,6 @@ class ChartTooltip extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      hoveredPoint: {},
       showTooltip: false
     }
   }
@@ -30,13 +29,16 @@ class ChartTooltip extends Component {
     data: PropTypes.array,
     xScale: PropTypes.func,
     yScale: PropTypes.func,
+    hoveredPoint: PropTypes.object,
     xAxisFormatting: PropTypes.func,
-    renderTooltip: PropTypes.func
+    renderTooltip: PropTypes.func,
+    onTooltipChange: PropTypes.func
   };
 
   static defaultProps = {
     data: [],
     height: 200,
+    onTooltipChange: () => {}
   };
 
   updateTooltip() {
@@ -47,6 +49,7 @@ class ChartTooltip extends Component {
     let xScaleIsDate = isDate(xScale.domain()[0])
     let d
     let mouseX = xScale.invert(d3.mouse(elem)[0])
+    let mouseY = yScale.invert(d3.mouse(elem)[1])
 
     if (xScaleIsDate) {
       let reversedData = clone(data).reverse()
@@ -57,7 +60,23 @@ class ChartTooltip extends Component {
         d1 = reversedData[i]
       d = mouseX - d0.date > d1.date - mouseX ? d1 : d0
     } else {
-      d = data[findClosestIndex(mouseX, data.map(d => d.xVal))]
+      if (!!data[0].values) {
+        let xVal = data[0].values[findClosestIndex(mouseX, data[0].values.map(d => d.xVal))].xVal
+        let closestPoint = {}
+        let closestPointDistance
+        data.map(series => {
+          if (series.filtered) return
+          let yearInSeries = _.filter(series.values, d => d.xVal === xVal)[0]
+          let distance = Math.abs((yearInSeries ? yearInSeries.yVal : 0) - mouseY || 0)
+          if (!closestPointDistance || distance < closestPointDistance) {
+            closestPoint = merge(series, yearInSeries)
+            closestPointDistance = distance
+          }
+        })
+        d = closestPoint
+      } else {
+        d = data[findClosestIndex(mouseX, data.map(d => d.xVal))]
+      }
     }
 
       let hoveredPoint = {
@@ -67,11 +86,12 @@ class ChartTooltip extends Component {
         yValue: d.yVal
       }
 
-      this.setState({hoveredPoint})
+      this.props.onTooltipChange(merge(d, hoveredPoint))
   }
 
   hideTooltip() {
     this.setState({showTooltip: false})
+    this.props.onTooltipChange({})
   }
 
   componentDidMount() {
@@ -85,8 +105,8 @@ class ChartTooltip extends Component {
   }
 
   render() {
-    let {renderTooltip} = this.props
-    let {hoveredPoint, showTooltip} = this.state
+    let {renderTooltip, hoveredPoint} = this.props
+    let {showTooltip} = this.state
 
     return (
       <div className={this.getClassName()}>
