@@ -30,8 +30,8 @@ export default {
   module: {
     loaders: [
       {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["react-hot", "babel"] },
-      {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
-      {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
+      {test: /\.css$/,   loaders: ["style", "css", "postcss"] },
+      {test: /\.scss$/,  loaders: ["style", "css", "postcss", "sass?include_paths[]=" + srcPath] },
       {
         test: /.*\.(gif|png|jpe?g|pdf|svg)$/i,
         loaders: [

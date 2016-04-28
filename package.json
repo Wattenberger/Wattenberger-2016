@@ -14,7 +14,6 @@
     "node": "4.2.4"
   },
   "dependencies": {
-    "autoprefixer-loader": "^3.1.0",
     "babel": "^6.3.26",
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
@@ -39,6 +38,7 @@
     "node-sass": "^3.4.2",
     "numeral": "^1.5.3",
     "nyan-progress-webpack-plugin": "^1.1.4",
+    "postcss-loader": "^0.8.2",
     "react": "^0.14.6",
     "react-addons-perf": "^0.14.6",
     "react-dom": "^0.14.6",

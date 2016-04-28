@@ -15,7 +15,7 @@ module.exports = {
     target: "web",
     output: {
       path: assetsPath,
-      publicPath: `//${config.STATIC_HOST}/static/`,
+      publicPath: "//" + config.STATIC_HOST + "/static/",
       filename: "app.min.js",
       chunkFilename: "[chunkhash].js"
     },
@@ -30,8 +30,8 @@ module.exports = {
         plugins: ["transform-decorators-legacy"],
         presets: ["react", "es2015", "stage-0"],
       } },
-      {test: /\.css$/,   loaders: ["style", "css", "autoprefixer"] },
-      {test: /\.scss$/,  loaders: ["style", "css", "autoprefixer", "sass?include_paths[]=" + srcPath] },
+      {test: /\.css$/,   loaders: ["style", "css", "postcss"] },
+      {test: /\.scss$/,  loaders: ["style", "css", "postcss", "sass?include_paths[]=" + srcPath] },
       {
         test: /.*\.(gif|png|jpe?g|svg)$/i,
         loaders: [
