@@ -7,7 +7,7 @@ import promiseMiddleware from 'redux-promise'
 import {default as app} from "reducers/appReducer"
 
 const loggerMiddleware = logger({
-  transformer: state => mapValues(state, val => typeof val.toJS === "function"
+  stateTransformer: state => mapValues(state, val => typeof val.toJS === "function"
     ? val.toJS()
     : val
   ),
