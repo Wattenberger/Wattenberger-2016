@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development node index",
     "build": "webpack --progress -p --config ./webpack/webpack.config.js",
-    "start": "NODE_ENV=production node index",
+    "start": "npm install && NODE_ENV=production node index",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "webpack --progress -p --config ./webpack/webpack.config.js"
   },
