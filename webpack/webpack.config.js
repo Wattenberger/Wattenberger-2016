@@ -2,6 +2,7 @@ var path = require("path")
 var webpack = require("webpack")
 var _ = require("lodash")
 var config = require("../src/config/config")
+var CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../dist")
@@ -51,5 +52,11 @@ module.exports = {
       "__PROD__": JSON.stringify(process.env.NODE_ENV === "production")
     }),
 
+    new CleanWebpackPlugin(['dist'], {
+        root: __dirname,
+        verbose: true,
+        dry: false,
+        exclude: ['favicon.*']
+    }),
   ]
 }

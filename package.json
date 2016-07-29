@@ -24,6 +24,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "body-parser": "^1.14.2",
     "classnames": "^2.2.3",
+    "clean-webpack-plugin": "^0.1.10",
     "compression": "^1.6.0",
     "css-loader": "^0.23.1",
     "d3": "^3.5.12",

@@ -3,10 +3,11 @@ import webpack from "webpack"
 import _ from "lodash"
 import config from "../src/config/config"
 import NyanProgressPlugin from 'nyan-progress-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../../static")
-
+console.log("this")
 export default {
   devtool: "eval",
   entry: {
@@ -50,6 +51,13 @@ export default {
     new webpack.DefinePlugin({
       "__DEV__" : JSON.stringify(process.env.NODE_ENV === "development"),
       "__PROD__": JSON.stringify(process.env.NODE_ENV === "production")
+    }),
+
+    new CleanWebpackPlugin(['dist'], {
+        root: __dirname,
+        verbose: true,
+        dry: false,
+        exclude: ['favicon.*']
     }),
 
     new NyanProgressPlugin()

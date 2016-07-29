@@ -6,7 +6,7 @@ import morgan from "morgan"
 import config from "../config/config"
 import render from "./render"
 
-// Init express server
+// Init express  server
 const app = express()
 
 // Express schtuff
