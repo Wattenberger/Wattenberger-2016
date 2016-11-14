@@ -2,6 +2,7 @@
 @import "~styles/mixins";
 
 .Chart {
+  display: inline-block;
   position: relative;
   min-height: 270px;
 }

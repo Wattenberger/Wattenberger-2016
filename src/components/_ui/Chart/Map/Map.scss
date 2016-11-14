@@ -1,0 +1,14 @@
+@import "~styles/variables";
+
+.Map {
+
+  &__path {
+    stroke-width: 0;
+  }
+
+  &__states {
+    fill: none;
+    stroke: $bgc;
+    stroke-linejoin: round;
+  }
+}

@@ -5,7 +5,7 @@ import numeral from "numeral"
 // import sentiment from "sentiment"
 import {candidates} from "./data"
 import Chart from "components/_ui/Chart/Chart"
-import d3 from "d3"
+import * as d3 from "d3"
 import Sidebar from "components/Sidebar/Sidebar"
 
 require('./Candidates.scss')

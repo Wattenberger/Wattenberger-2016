@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from "react"
 import classNames from "classnames"
-import d3 from "d3"
+import * as d3 from "d3"
 
 require('./Bars.scss')
 

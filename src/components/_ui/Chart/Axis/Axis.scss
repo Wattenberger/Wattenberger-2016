@@ -3,9 +3,22 @@
 .Axis {
   text {
     fill: $accent-3;
-    font-size: $font-size-xsmall;
+    font-size: $font-size-small;
   }
   .domain {
     fill: none;
+    stroke: white;
+    stroke-width: 1;
+  }
+
+  &--x {
+    text {
+      // transform: translate3d(0, 10px, 0);
+    }
+  }
+
+  text.Axis__label {
+    text-anchor: end;
+    font-size: $font-size-xsmall;
   }
 }
