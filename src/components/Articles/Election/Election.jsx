@@ -9,11 +9,9 @@ import Scatter from "./ElectionScatter/ElectionScatter"
 import Map from "./ElectionMap/ElectionMap"
 import {states} from "./data"
 import {counties} from "./counties"
-import {countyUnemploymentRates} from "./county_unemployment_rates"
 
 console.log("states:",states);
 console.log("counties:",counties);
-console.log("countyUnemploymentRates:",countyUnemploymentRates);
 
 const parameters = [
   "VEP Total Ballots Counted",
@@ -35,18 +33,26 @@ const mapParameters = [
     slug: "democratic_vote_share",
     label: "Democratic Vote Share",
     colors: [
-      "rgb(200,200,200)",
+      "rgb(245,247,249)",
       "rgb(  0, 83,151)",
-    ]
+    ],
   },
   {
     slug: "voters_per_sq_mi",
     label: "Voters per Square Mile",
     colors: [
-      "rgb(200,200,200)",
+      "rgb(245,247,249)",
       "rgb( 79, 58, 75)",
     ],
     maxVal: 400
+  },
+  {
+    slug: "unemployment",
+    label: "Unemployment",
+    colors: [
+      "rgb(245,247,249)",
+      "rgb( 79, 58, 75)",
+    ],
   },
 ]
 

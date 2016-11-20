@@ -126,13 +126,13 @@ class Axis extends Component {
   }
 
   getClassName() {
-    let {dimension} = this.props
+    let {dimension, className} = this.props
 
     return classNames(
       "Axis", {
         [`Axis--${dimension}`]: dimension,
       },
-      this.props.className
+      className
     )
   }
 

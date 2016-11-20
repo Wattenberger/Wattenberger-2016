@@ -8,7 +8,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Autauga",
     "diff_margin": -2.5831450468350816,
-    "diff_density": 1.1561045690061178
+    "diff_density": 1.1561045690061178,
+    "unemployment": 5.1
   },
   "1003": {
     "year": 2016,
@@ -19,7 +20,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Baldwin",
     "diff_margin": -1.9846901902433878,
-    "diff_density": 5.404289650140271
+    "diff_density": 5.404289650140271,
+    "unemployment": 4.9
   },
   "1005": {
     "year": 2016,
@@ -30,7 +32,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Barbour",
     "diff_margin": -4.669749759384025,
-    "diff_density": -1.2782949100443002
+    "diff_density": -1.2782949100443002,
+    "unemployment": 8.6
   },
   "1007": {
     "year": 2016,
@@ -41,7 +44,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Bibb",
     "diff_margin": -4.727960676726106,
-    "diff_density": 0.5312062706800731
+    "diff_density": 0.5312062706800731,
+    "unemployment": 6.2
   },
   "1009": {
     "year": 2016,
@@ -52,7 +56,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Blount",
     "diff_margin": -3.8700976993381655,
-    "diff_density": 2.0484667638574408
+    "diff_density": 2.0484667638574408,
+    "unemployment": 5.1
   },
   "1011": {
     "year": 2016,
@@ -63,7 +68,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Bullock",
     "diff_margin": -1.2195937034673534,
-    "diff_density": -1.001830443159923
+    "diff_density": -1.001830443159923,
+    "unemployment": 7.1
   },
   "1013": {
     "year": 2016,
@@ -74,7 +80,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Butler",
     "diff_margin": -3.2435866436384586,
-    "diff_density": -1.0499477363129657
+    "diff_density": -1.0499477363129657,
+    "unemployment": 6.7
   },
   "1015": {
     "year": 2016,
@@ -85,7 +92,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Calhoun",
     "diff_margin": -5.594123606889568,
-    "diff_density": 1.6749923250862366
+    "diff_density": 1.6749923250862366,
+    "unemployment": 6.1
   },
   "1017": {
     "year": 2016,
@@ -96,7 +104,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Chambers",
     "diff_margin": -5.14244883147046,
-    "diff_density": -1.423089534474375
+    "diff_density": -1.423089534474375,
+    "unemployment": 5
   },
   "1019": {
     "year": 2016,
@@ -107,7 +116,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Cherokee",
     "diff_margin": -7.259860039988574,
-    "diff_density": 1.2887556438504575
+    "diff_density": 1.2887556438504575,
+    "unemployment": 5
   },
   "1021": {
     "year": 2016,
@@ -118,7 +128,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Chilton",
     "diff_margin": -3.4946398247055583,
-    "diff_density": 1.1076943061268665
+    "diff_density": 1.1076943061268665,
+    "unemployment": 5.2
   },
   "1023": {
     "year": 2016,
@@ -129,7 +140,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Choctaw",
     "diff_margin": -4.693445239405612,
-    "diff_density": -0.7737876299945272
+    "diff_density": -0.7737876299945272,
+    "unemployment": 7.9
   },
   "1025": {
     "year": 2016,
@@ -140,7 +152,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Clarke",
     "diff_margin": -1.5441558441558456,
-    "diff_density": -0.7447696332542026
+    "diff_density": -0.7447696332542026,
+    "unemployment": 11.1
   },
   "1027": {
     "year": 2016,
@@ -151,7 +164,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Clay",
     "diff_margin": -7.833371880706025,
-    "diff_density": -0.17848466785880035
+    "diff_density": -0.17848466785880035,
+    "unemployment": 5.9
   },
   "1029": {
     "year": 2016,
@@ -162,7 +176,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Cleburne",
     "diff_margin": -4.898475199020206,
-    "diff_density": 0.38220317800392856
+    "diff_density": 0.38220317800392856,
+    "unemployment": 5.5
   },
   "1031": {
     "year": 2016,
@@ -173,7 +188,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Coffee",
     "diff_margin": -4.404428898747138,
-    "diff_density": 1.0219386718117107
+    "diff_density": 1.0219386718117107,
+    "unemployment": 5.6
   },
   "1033": {
     "year": 2016,
@@ -184,7 +200,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Colbert",
     "diff_margin": -9.472776740030863,
-    "diff_density": 1.9944531065438227
+    "diff_density": 1.9944531065438227,
+    "unemployment": 6.5
   },
   "1035": {
     "year": 2016,
@@ -195,7 +212,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Conecuh",
     "diff_margin": -3.6949105914718032,
-    "diff_density": -0.5638016373388535
+    "diff_density": -0.5638016373388535,
+    "unemployment": 7.7
   },
   "1037": {
     "year": 2016,
@@ -206,7 +224,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Coosa",
     "diff_margin": -7.3999693662645925,
-    "diff_density": -0.08609573994131381
+    "diff_density": -0.08609573994131381,
+    "unemployment": 5.7
   },
   "1039": {
     "year": 2016,
@@ -217,7 +236,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Covington",
     "diff_margin": -5.410171955999493,
-    "diff_density": 0.37042602332938657
+    "diff_density": 0.37042602332938657,
+    "unemployment": 6.7
   },
   "1041": {
     "year": 2016,
@@ -228,7 +248,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Crenshaw",
     "diff_margin": -5.310511836212413,
-    "diff_density": -0.28129229354181895
+    "diff_density": -0.28129229354181895,
+    "unemployment": 5.7
   },
   "1043": {
     "year": 2016,
@@ -239,7 +260,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Cullman",
     "diff_margin": -4.614098395836686,
-    "diff_density": 3.7094104839148585
+    "diff_density": 3.7094104839148585,
+    "unemployment": 4.8
   },
   "1045": {
     "year": 2016,
@@ -250,7 +272,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Dale",
     "diff_margin": -4.742715797389483,
-    "diff_density": 0.026512518934332263
+    "diff_density": 0.026512518934332263,
+    "unemployment": 5.6
   },
   "1047": {
     "year": 2016,
@@ -261,7 +284,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Dallas",
     "diff_margin": -1.221623064602241,
-    "diff_density": -2.282368447941149
+    "diff_density": -2.282368447941149,
+    "unemployment": 9.5
   },
   "1049": {
     "year": 2016,
@@ -272,7 +296,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "DeKalb",
     "diff_margin": -7.755149122134478,
-    "diff_density": 2.748827291562108
+    "diff_density": 2.748827291562108,
+    "unemployment": 5.7
   },
   "1051": {
     "year": 2016,
@@ -283,7 +308,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Elmore",
     "diff_margin": -2.3313087657499025,
-    "diff_density": 2.199517696324918
+    "diff_density": 2.199517696324918,
+    "unemployment": 4.7
   },
   "1053": {
     "year": 2016,
@@ -294,7 +320,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Escambia",
     "diff_margin": -5.968517057779533,
-    "diff_density": 0.3370499851864377
+    "diff_density": 0.3370499851864377,
+    "unemployment": 6.3
   },
   "1055": {
     "year": 2016,
@@ -305,7 +332,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Etowah",
     "diff_margin": -6.232666881354373,
-    "diff_density": 1.591331987513783
+    "diff_density": 1.591331987513783,
+    "unemployment": 5.7
   },
   "1057": {
     "year": 2016,
@@ -316,7 +344,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Fayette",
     "diff_margin": -6.260941922889213,
-    "diff_density": 0.3780250454067495
+    "diff_density": 0.3780250454067495,
+    "unemployment": 6.6
   },
   "1059": {
     "year": 2016,
@@ -327,7 +356,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Franklin",
     "diff_margin": -10.762751986616479,
-    "diff_density": 1.691821968382186
+    "diff_density": 1.691821968382186,
+    "unemployment": 5.5
   },
   "1061": {
     "year": 2016,
@@ -338,7 +368,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Geneva",
     "diff_margin": -4.935707179003344,
-    "diff_density": 0.5673485837642112
+    "diff_density": 0.5673485837642112,
+    "unemployment": 5.4
   },
   "1063": {
     "year": 2016,
@@ -349,7 +380,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Greene",
     "diff_margin": -2.225923488276436,
-    "diff_density": -0.7465942420917617
+    "diff_density": -0.7465942420917617,
+    "unemployment": 9.3
   },
   "1065": {
     "year": 2016,
@@ -360,7 +392,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Hale",
     "diff_margin": -3.0044694132334513,
-    "diff_density": -0.9909528838090509
+    "diff_density": -0.9909528838090509,
+    "unemployment": 7.6
   },
   "1067": {
     "year": 2016,
@@ -371,7 +404,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Henry",
     "diff_margin": -6.655593114631408,
-    "diff_density": -1.3285269247886067
+    "diff_density": -1.3285269247886067,
+    "unemployment": 6.3
   },
   "1069": {
     "year": 2016,
@@ -382,7 +416,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Houston",
     "diff_margin": -4.366019509873901,
-    "diff_density": 0.0780135214376827
+    "diff_density": 0.0780135214376827,
+    "unemployment": 5.6
   },
   "1071": {
     "year": 2016,
@@ -393,7 +428,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Jackson",
     "diff_margin": -10.596713976425306,
-    "diff_density": 0.1434015233748056
+    "diff_density": 0.1434015233748056,
+    "unemployment": 5.9
   },
   "1073": {
     "year": 2016,
@@ -404,7 +440,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Jefferson",
     "diff_margin": -0.2506885295628223,
-    "diff_density": -12.969781153264648
+    "diff_density": -12.969781153264648,
+    "unemployment": 5.5
   },
   "1075": {
     "year": 2016,
@@ -415,7 +452,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Lamar",
     "diff_margin": -8.007089886019335,
-    "diff_density": -0.4009605687360498
+    "diff_density": -0.4009605687360498,
+    "unemployment": 5.2
   },
   "1077": {
     "year": 2016,
@@ -426,7 +464,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Lauderdale",
     "diff_margin": -8.332340710586656,
-    "diff_density": 2.6693994308821303
+    "diff_density": 2.6693994308821303,
+    "unemployment": 6
   },
   "1079": {
     "year": 2016,
@@ -437,7 +476,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Lawrence",
     "diff_margin": -11.136024755522119,
-    "diff_density": 0.6918885735796607
+    "diff_density": 0.6918885735796607,
+    "unemployment": 6.4
   },
   "1081": {
     "year": 2016,
@@ -448,7 +488,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Lee",
     "diff_margin": -2.8371998335298585,
-    "diff_density": 5.2204990617901785
+    "diff_density": 5.2204990617901785,
+    "unemployment": 4.9
   },
   "1083": {
     "year": 2016,
@@ -459,7 +500,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Limestone",
     "diff_margin": -3.9544162436548227,
-    "diff_density": 6.894681930206801
+    "diff_density": 6.894681930206801,
+    "unemployment": 5
   },
   "1085": {
     "year": 2016,
@@ -470,7 +512,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Lowndes",
     "diff_margin": -3.2623786698622013,
-    "diff_density": -1.1848054923104847
+    "diff_density": -1.1848054923104847,
+    "unemployment": 10.3
   },
   "1087": {
     "year": 2016,
@@ -481,7 +524,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Macon",
     "diff_margin": -4.272519433013258,
-    "diff_density": -2.702636972802523
+    "diff_density": -2.702636972802523,
+    "unemployment": 7.2
   },
   "1089": {
     "year": 2016,
@@ -492,7 +536,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Madison",
     "diff_margin": -0.7491719601437197,
-    "diff_density": 5.045845132798547
+    "diff_density": 5.045845132798547,
+    "unemployment": 4.9
   },
   "1091": {
     "year": 2016,
@@ -503,7 +548,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Marengo",
     "diff_margin": -2.2151662404092036,
-    "diff_density": -0.6128916550651056
+    "diff_density": -0.6128916550651056,
+    "unemployment": 6.9
   },
   "1093": {
     "year": 2016,
@@ -514,7 +560,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Marion",
     "diff_margin": -7.449541511771994,
-    "diff_density": 1.0548187366123756
+    "diff_density": 1.0548187366123756,
+    "unemployment": 6.1
   },
   "1095": {
     "year": 2016,
@@ -525,7 +572,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Marshall",
     "diff_margin": -5.248805948805948,
-    "diff_density": 4.10308638484377
+    "diff_density": 4.10308638484377,
+    "unemployment": 5.1
   },
   "1097": {
     "year": 2016,
@@ -536,7 +584,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Mobile",
     "diff_margin": -3.0884549566366957,
-    "diff_density": -9.563454446369462
+    "diff_density": -9.563454446369462,
+    "unemployment": 6.5
   },
   "1099": {
     "year": 2016,
@@ -547,7 +596,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Monroe",
     "diff_margin": -3.5328669612174792,
-    "diff_density": -0.5199055251689142
+    "diff_density": -0.5199055251689142,
+    "unemployment": 8.6
   },
   "1101": {
     "year": 2016,
@@ -558,7 +608,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Montgomery",
     "diff_margin": 0.22633210675464,
-    "diff_density": -9.560902135798543
+    "diff_density": -9.560902135798543,
+    "unemployment": 5.6
   },
   "1103": {
     "year": 2016,
@@ -569,7 +620,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Morgan",
     "diff_margin": -4.733961513072355,
-    "diff_density": 0.9195708910139047
+    "diff_density": 0.9195708910139047,
+    "unemployment": 5.2
   },
   "1105": {
     "year": 2016,
@@ -580,7 +632,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Perry",
     "diff_margin": -2.120237868696492,
-    "diff_density": -1.1779406942167139
+    "diff_density": -1.1779406942167139,
+    "unemployment": 10.9
   },
   "1107": {
     "year": 2016,
@@ -591,7 +644,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Pickens",
     "diff_margin": -4.463050347587952,
-    "diff_density": -0.14862232105376627
+    "diff_density": -0.14862232105376627,
+    "unemployment": 6.7
   },
   "1109": {
     "year": 2016,
@@ -602,7 +656,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Pike",
     "diff_margin": -4.042859884836851,
-    "diff_density": -1.6301550387596926
+    "diff_density": -1.6301550387596926,
+    "unemployment": 6.4
   },
   "1111": {
     "year": 2016,
@@ -613,7 +668,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Randolph",
     "diff_margin": -6.9338795656465955,
-    "diff_density": -0.5010291964516398
+    "diff_density": -0.5010291964516398,
+    "unemployment": 5.7
   },
   "1113": {
     "year": 2016,
@@ -624,7 +680,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Russell",
     "diff_margin": -5.482968227424756,
-    "diff_density": 0.3568353245780962
+    "diff_density": 0.3568353245780962,
+    "unemployment": 5.3
   },
   "1115": {
     "year": 2016,
@@ -635,7 +692,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "St. Clair",
     "diff_margin": -1.830482642275351,
-    "diff_density": 4.276398164266503
+    "diff_density": 4.276398164266503,
+    "unemployment": 5
   },
   "1117": {
     "year": 2016,
@@ -646,7 +704,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Shelby",
     "diff_margin": 1.4900314490766853,
-    "diff_density": 8.24088835947154
+    "diff_density": 8.24088835947154,
+    "unemployment": 4.2
   },
   "1119": {
     "year": 2016,
@@ -657,7 +716,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Sumter",
     "diff_margin": -2.9588499452354853,
-    "diff_density": -0.7094493799024217
+    "diff_density": -0.7094493799024217,
+    "unemployment": 7.3
   },
   "1121": {
     "year": 2016,
@@ -668,7 +728,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Talladega",
     "diff_margin": -5.159882593774462,
-    "diff_density": -0.2640165859087631
+    "diff_density": -0.2640165859087631,
+    "unemployment": 6.4
   },
   "1123": {
     "year": 2016,
@@ -679,7 +740,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Tallapoosa",
     "diff_margin": -5.034267185473414,
-    "diff_density": -0.4851800368447492
+    "diff_density": -0.4851800368447492,
+    "unemployment": 5.1
   },
   "1125": {
     "year": 2016,
@@ -690,7 +752,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Tuscaloosa",
     "diff_margin": -1.8270113085621986,
-    "diff_density": 2.217576564580561
+    "diff_density": 2.217576564580561,
+    "unemployment": 5.5
   },
   "1127": {
     "year": 2016,
@@ -701,7 +764,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Walker",
     "diff_margin": -7.599576650822419,
-    "diff_density": 0.8307805963169343
+    "diff_density": 0.8307805963169343,
+    "unemployment": 7.2
   },
   "1129": {
     "year": 2016,
@@ -712,7 +776,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Washington",
     "diff_margin": -6.0084832783796465,
-    "diff_density": -0.26856564927190174
+    "diff_density": -0.26856564927190174,
+    "unemployment": 8.3
   },
   "1131": {
     "year": 2016,
@@ -723,7 +788,8 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Wilcox",
     "diff_margin": -3.23456931911403,
-    "diff_density": -0.5201238041643217
+    "diff_density": -0.5201238041643217,
+    "unemployment": 13.9
   },
   "1133": {
     "year": 2016,
@@ -734,7 +800,95 @@ export const counties = {
     "statenam": "Alabama",
     "cty_name": "Winston",
     "diff_margin": -4.726582155046319,
-    "diff_density": 0.8597464843877471
+    "diff_density": 0.8597464843877471,
+    "unemployment": 7
+  },
+  "2013": {
+    "unemployment": 1.9
+  },
+  "2016": {
+    "unemployment": 2.2
+  },
+  "2020": {
+    "unemployment": 5
+  },
+  "2050": {
+    "unemployment": 14.1
+  },
+  "2060": {
+    "unemployment": 5.6
+  },
+  "2068": {
+    "unemployment": 3.2
+  },
+  "2070": {
+    "unemployment": 8.1
+  },
+  "2090": {
+    "unemployment": 4.9
+  },
+  "2100": {
+    "unemployment": 5.9
+  },
+  "2105": {
+    "unemployment": 7.3
+  },
+  "2110": {
+    "unemployment": 3.6
+  },
+  "2122": {
+    "unemployment": 6.9
+  },
+  "2130": {
+    "unemployment": 4.4
+  },
+  "2150": {
+    "unemployment": 4.8
+  },
+  "2158": {
+    "unemployment": 21.7
+  },
+  "2164": {
+    "unemployment": 9.2
+  },
+  "2170": {
+    "unemployment": 7.4
+  },
+  "2180": {
+    "unemployment": 13.6
+  },
+  "2185": {
+    "unemployment": 6.9
+  },
+  "2188": {
+    "unemployment": 16.5
+  },
+  "2195": {
+    "unemployment": 5.7
+  },
+  "2198": {
+    "unemployment": 9.4
+  },
+  "2220": {
+    "unemployment": 3
+  },
+  "2230": {
+    "unemployment": 3
+  },
+  "2240": {
+    "unemployment": 8.7
+  },
+  "2261": {
+    "unemployment": 5.4
+  },
+  "2275": {
+    "unemployment": 5.4
+  },
+  "2282": {
+    "unemployment": 5.8
+  },
+  "2290": {
+    "unemployment": 16.4
   },
   "4001": {
     "year": 2016,
@@ -745,7 +899,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Apache",
     "diff_margin": -0.9774403772978246,
-    "diff_density": -0.6436488793947233
+    "diff_density": -0.6436488793947233,
+    "unemployment": 11.8
   },
   "4003": {
     "year": 2016,
@@ -756,7 +911,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Cochise",
     "diff_margin": -2.410687880965078,
-    "diff_density": -0.9520808701053731
+    "diff_density": -0.9520808701053731,
+    "unemployment": 6.5
   },
   "4005": {
     "year": 2016,
@@ -767,7 +923,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Coconino",
     "diff_margin": -0.23112555365131726,
-    "diff_density": -0.36691177987075463
+    "diff_density": -0.36691177987075463,
+    "unemployment": 6.4
   },
   "4007": {
     "year": 2016,
@@ -778,7 +935,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Gila",
     "diff_margin": -3.486148839116396,
-    "diff_density": -0.4192671182636145
+    "diff_density": -0.4192671182636145,
+    "unemployment": 7.6
   },
   "4009": {
     "year": 2016,
@@ -789,7 +947,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Graham",
     "diff_margin": -2.6376902173913024,
-    "diff_density": -0.012515900142777259
+    "diff_density": -0.012515900142777259,
+    "unemployment": 7.3
   },
   "4011": {
     "year": 2016,
@@ -800,7 +959,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Greenlee",
     "diff_margin": -10.377474560592042,
-    "diff_density": 0.14950692571875002
+    "diff_density": 0.14950692571875002,
+    "unemployment": 7.7
   },
   "4012": {
     "year": 2016,
@@ -811,7 +971,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "La Paz",
     "diff_margin": -6.151141756236061,
-    "diff_density": -0.1741321175296635
+    "diff_density": -0.1741321175296635,
+    "unemployment": 6.6
   },
   "4013": {
     "year": 2016,
@@ -822,7 +983,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Maricopa",
     "diff_margin": 1.873499112518708,
-    "diff_density": -24.695814063699032
+    "diff_density": -24.695814063699032,
+    "unemployment": 4.9
   },
   "4015": {
     "year": 2016,
@@ -833,7 +995,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Mohave",
     "diff_margin": -5.594505462950998,
-    "diff_density": -0.027441860465115653
+    "diff_density": -0.027441860465115653,
+    "unemployment": 7
   },
   "4017": {
     "year": 2016,
@@ -844,7 +1007,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Navajo",
     "diff_margin": -2.0055497189979903,
-    "diff_density": -0.1914567425294611
+    "diff_density": -0.1914567425294611,
+    "unemployment": 8.5
   },
   "4019": {
     "year": 2016,
@@ -855,7 +1019,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Pima",
     "diff_margin": 1.4911401027859768,
-    "diff_density": -4.778441630819067
+    "diff_density": -4.778441630819067,
+    "unemployment": 5.4
   },
   "4021": {
     "year": 2016,
@@ -866,7 +1031,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Pinal",
     "diff_margin": -2.720460800909713,
-    "diff_density": -5.76722234750569
+    "diff_density": -5.76722234750569,
+    "unemployment": 5.9
   },
   "4023": {
     "year": 2016,
@@ -877,7 +1043,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Santa Cruz",
     "diff_margin": 4.188496549151282,
-    "diff_density": -2.561694854962326
+    "diff_density": -2.561694854962326,
+    "unemployment": 13
   },
   "4025": {
     "year": 2016,
@@ -888,7 +1055,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Yavapai",
     "diff_margin": -1.8454998048484335,
-    "diff_density": -0.985780759524836
+    "diff_density": -0.985780759524836,
+    "unemployment": 5
   },
   "4027": {
     "year": 2016,
@@ -899,7 +1067,8 @@ export const counties = {
     "statenam": "Arizona",
     "cty_name": "Yuma",
     "diff_margin": 1.9363833754508235,
-    "diff_density": -0.21807509625516186
+    "diff_density": -0.21807509625516186,
+    "unemployment": 24.4
   },
   "5001": {
     "year": 2016,
@@ -910,7 +1079,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Arkansas",
     "diff_margin": -6.581194654644982,
-    "diff_density": -0.28845828655804695
+    "diff_density": -0.28845828655804695,
+    "unemployment": 3.2
   },
   "5003": {
     "year": 2016,
@@ -921,7 +1091,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Ashley",
     "diff_margin": -6.299080786836573,
-    "diff_density": 0.17507321554006516
+    "diff_density": 0.17507321554006516,
+    "unemployment": 6.3
   },
   "5005": {
     "year": 2016,
@@ -932,7 +1103,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Baxter",
     "diff_margin": -5.640152052711603,
-    "diff_density": 0.7057277910081581
+    "diff_density": 0.7057277910081581,
+    "unemployment": 4.1
   },
   "5007": {
     "year": 2016,
@@ -943,7 +1115,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Benton",
     "diff_margin": 0.3289349185964596,
-    "diff_density": 20.41920694864048
+    "diff_density": 20.41920694864048,
+    "unemployment": 2.7
   },
   "5009": {
     "year": 2016,
@@ -954,7 +1127,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Boone",
     "diff_margin": -6.34004099888185,
-    "diff_density": 1.1941134811853011
+    "diff_density": 1.1941134811853011,
+    "unemployment": 3.3
   },
   "5011": {
     "year": 2016,
@@ -965,7 +1139,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Bradley",
     "diff_margin": -3.6175684556407504,
-    "diff_density": -0.004874851747454834
+    "diff_density": -0.004874851747454834,
+    "unemployment": 5.9
   },
   "5013": {
     "year": 2016,
@@ -976,7 +1151,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Calhoun",
     "diff_margin": -2.268127208480564,
-    "diff_density": 0.14176906678545276
+    "diff_density": 0.14176906678545276,
+    "unemployment": 5.1
   },
   "5015": {
     "year": 2016,
@@ -987,7 +1163,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Carroll",
     "diff_margin": -5.245603576751115,
-    "diff_density": 0.8788357218809999
+    "diff_density": 0.8788357218809999,
+    "unemployment": 2.8
   },
   "5017": {
     "year": 2016,
@@ -998,7 +1175,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Chicot",
     "diff_margin": -4.466053639846741,
-    "diff_density": -0.2885472605928907
+    "diff_density": -0.2885472605928907,
+    "unemployment": 6
   },
   "5019": {
     "year": 2016,
@@ -1009,7 +1187,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Clark",
     "diff_margin": -2.921410934744266,
-    "diff_density": 0.1102223838719727
+    "diff_density": 0.1102223838719727,
+    "unemployment": 4.5
   },
   "5021": {
     "year": 2016,
@@ -1020,7 +1199,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Clay",
     "diff_margin": -0.6822240746915611,
-    "diff_density": 1.3896425164589417
+    "diff_density": 1.3896425164589417,
+    "unemployment": 5
   },
   "5023": {
     "year": 2016,
@@ -1031,7 +1211,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Cleburne",
     "diff_margin": -5.109055541759787,
-    "diff_density": 0.7790684317939629
+    "diff_density": 0.7790684317939629,
+    "unemployment": 5.7
   },
   "5025": {
     "year": 2016,
@@ -1042,7 +1223,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Cleveland",
     "diff_margin": -4.300787589498807,
-    "diff_density": 0.14741409883234624
+    "diff_density": 0.14741409883234624,
+    "unemployment": 4.4
   },
   "5027": {
     "year": 2016,
@@ -1053,7 +1235,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Columbia",
     "diff_margin": -2.287491842016422,
-    "diff_density": -0.7389295737876118
+    "diff_density": -0.7389295737876118,
+    "unemployment": 5.7
   },
   "5029": {
     "year": 2016,
@@ -1064,7 +1247,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Conway",
     "diff_margin": -5.351504860497414,
-    "diff_density": 0.3431416930737896
+    "diff_density": 0.3431416930737896,
+    "unemployment": 5.9
   },
   "5031": {
     "year": 2016,
@@ -1075,7 +1259,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Craighead",
     "diff_margin": -3.6257722291266496,
-    "diff_density": 5.24150931123711
+    "diff_density": 5.24150931123711,
+    "unemployment": 3.1
   },
   "5033": {
     "year": 2016,
@@ -1086,7 +1271,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Crawford",
     "diff_margin": -3.7205329643351313,
-    "diff_density": 3.05335648889713
+    "diff_density": 3.05335648889713,
+    "unemployment": 3.7
   },
   "5035": {
     "year": 2016,
@@ -1097,7 +1283,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Crittenden",
     "diff_margin": -4.101201711337609,
-    "diff_density": -1.344006822356338
+    "diff_density": -1.344006822356338,
+    "unemployment": 4.4
   },
   "5037": {
     "year": 2016,
@@ -1108,7 +1295,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Cross",
     "diff_margin": -5.041079702753898,
-    "diff_density": 0.2943651643466687
+    "diff_density": 0.2943651643466687,
+    "unemployment": 3.9
   },
   "5039": {
     "year": 2016,
@@ -1119,7 +1307,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Dallas",
     "diff_margin": -1.2770494763452476,
-    "diff_density": -0.471001663195433
+    "diff_density": -0.471001663195433,
+    "unemployment": 5
   },
   "5041": {
     "year": 2016,
@@ -1130,7 +1319,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Desha",
     "diff_margin": -2.8946472248353743,
-    "diff_density": -0.21462279502701254
+    "diff_density": -0.21462279502701254,
+    "unemployment": 5.1
   },
   "5043": {
     "year": 2016,
@@ -1141,7 +1331,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Drew",
     "diff_margin": -3.77746585735963,
-    "diff_density": -0.05452170553865443
+    "diff_density": -0.05452170553865443,
+    "unemployment": 5.7
   },
   "5045": {
     "year": 2016,
@@ -1152,7 +1343,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Faulkner",
     "diff_margin": -2.074086787015851,
-    "diff_density": 8.85682348583071
+    "diff_density": 8.85682348583071,
+    "unemployment": 3.7
   },
   "5047": {
     "year": 2016,
@@ -1163,7 +1355,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Franklin",
     "diff_margin": -6.047007687758722,
-    "diff_density": 0.3692862070098215
+    "diff_density": 0.3692862070098215,
+    "unemployment": 3.9
   },
   "5049": {
     "year": 2016,
@@ -1174,7 +1367,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Fulton",
     "diff_margin": -9.745715782854745,
-    "diff_density": 0.4076919717239029
+    "diff_density": 0.4076919717239029,
+    "unemployment": 3.9
   },
   "5051": {
     "year": 2016,
@@ -1185,7 +1379,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Garland",
     "diff_margin": -3.735829037167967,
-    "diff_density": 0.009147215910765283
+    "diff_density": 0.009147215910765283,
+    "unemployment": 4
   },
   "5053": {
     "year": 2016,
@@ -1196,7 +1391,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Grant",
     "diff_margin": -2.2923103647944423,
-    "diff_density": 0.6836667669077734
+    "diff_density": 0.6836667669077734,
+    "unemployment": 3.2
   },
   "5055": {
     "year": 2016,
@@ -1207,7 +1403,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Greene",
     "diff_margin": -8.080989010989011,
-    "diff_density": 1.3833927644105906
+    "diff_density": 1.3833927644105906,
+    "unemployment": 4
   },
   "5057": {
     "year": 2016,
@@ -1218,7 +1415,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Hempstead",
     "diff_margin": -1.937912103541457,
-    "diff_density": 0.15433912469760358
+    "diff_density": 0.15433912469760358,
+    "unemployment": 3.7
   },
   "5059": {
     "year": 2016,
@@ -1229,7 +1427,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Hot Spring",
     "diff_margin": -7.668577546393482,
-    "diff_density": 1.057932379713911
+    "diff_density": 1.057932379713911,
+    "unemployment": 3.6
   },
   "5061": {
     "year": 2016,
@@ -1240,7 +1439,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Howard",
     "diff_margin": -4.068265895953754,
-    "diff_density": 0.35645399711154546
+    "diff_density": 0.35645399711154546,
+    "unemployment": 3.4
   },
   "5063": {
     "year": 2016,
@@ -1251,7 +1451,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Independence",
     "diff_margin": -5.305122812178261,
-    "diff_density": 1.5695942142810395
+    "diff_density": 1.5695942142810395,
+    "unemployment": 5
   },
   "5065": {
     "year": 2016,
@@ -1262,7 +1463,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Izard",
     "diff_margin": -8.465959595959596,
-    "diff_density": 0.2885524820007568
+    "diff_density": 0.2885524820007568,
+    "unemployment": 5.3
   },
   "5067": {
     "year": 2016,
@@ -1273,7 +1475,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Jackson",
     "diff_margin": -8.448103280916328,
-    "diff_density": -0.30462535886677067
+    "diff_density": -0.30462535886677067,
+    "unemployment": 5.9
   },
   "5069": {
     "year": 2016,
@@ -1284,7 +1487,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Jefferson",
     "diff_margin": -2.915448665814644,
-    "diff_density": -1.796253229974159
+    "diff_density": -1.796253229974159,
+    "unemployment": 5.9
   },
   "5071": {
     "year": 2016,
@@ -1295,7 +1499,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Johnson",
     "diff_margin": -7.914611490204717,
-    "diff_density": 1.5008396483782978
+    "diff_density": 1.5008396483782978,
+    "unemployment": 4.8
   },
   "5073": {
     "year": 2016,
@@ -1306,7 +1511,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Lafayette",
     "diff_margin": -3.929128601546026,
-    "diff_density": -0.15260340356257185
+    "diff_density": -0.15260340356257185,
+    "unemployment": 6.2
   },
   "5075": {
     "year": 2016,
@@ -1317,7 +1523,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Lawrence",
     "diff_margin": -10.053641160949873,
-    "diff_density": 0.2447842957063351
+    "diff_density": 0.2447842957063351,
+    "unemployment": 4.5
   },
   "5077": {
     "year": 2016,
@@ -1328,7 +1535,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Lee",
     "diff_margin": -4.089668874172183,
-    "diff_density": -0.6685499983405796
+    "diff_density": -0.6685499983405796,
+    "unemployment": 4.5
   },
   "5079": {
     "year": 2016,
@@ -1339,7 +1547,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Lincoln",
     "diff_margin": -5.516529012023,
-    "diff_density": 0.17364866790141065
+    "diff_density": 0.17364866790141065,
+    "unemployment": 4.9
   },
   "5081": {
     "year": 2016,
@@ -1350,7 +1559,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Little River",
     "diff_margin": -4.256624976312299,
-    "diff_density": 0.42451385627054883
+    "diff_density": 0.42451385627054883,
+    "unemployment": 5.1
   },
   "5083": {
     "year": 2016,
@@ -1361,7 +1571,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Logan",
     "diff_margin": -5.75377418131243,
-    "diff_density": 0.8190109021069887
+    "diff_density": 0.8190109021069887,
+    "unemployment": 4.4
   },
   "5085": {
     "year": 2016,
@@ -1372,7 +1583,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Lonoke",
     "diff_margin": -2.4539308327470657,
-    "diff_density": 3.750805470138701
+    "diff_density": 3.750805470138701,
+    "unemployment": 3.2
   },
   "5087": {
     "year": 2016,
@@ -1383,7 +1595,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Madison",
     "diff_margin": -8.720872748572265,
-    "diff_density": 0.3157956248127052
+    "diff_density": 0.3157956248127052,
+    "unemployment": 3
   },
   "5089": {
     "year": 2016,
@@ -1394,7 +1607,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Marion",
     "diff_margin": -8.574272646798466,
-    "diff_density": -0.4567563357397706
+    "diff_density": -0.4567563357397706,
+    "unemployment": 3.8
   },
   "5091": {
     "year": 2016,
@@ -1405,7 +1619,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Miller",
     "diff_margin": -2.9131323803604694,
-    "diff_density": 1.2201317177659128
+    "diff_density": 1.2201317177659128,
+    "unemployment": 4.3
   },
   "5093": {
     "year": 2016,
@@ -1416,7 +1631,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Mississippi",
     "diff_margin": -5.359560229445506,
-    "diff_density": -0.3314173245833203
+    "diff_density": -0.3314173245833203,
+    "unemployment": 7.1
   },
   "5095": {
     "year": 2016,
@@ -1427,7 +1643,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Monroe",
     "diff_margin": -2.2857379409647223,
-    "diff_density": -0.7442983265252341
+    "diff_density": -0.7442983265252341,
+    "unemployment": 4.5
   },
   "5097": {
     "year": 2016,
@@ -1438,7 +1655,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Montgomery",
     "diff_margin": -5.85454624027658,
-    "diff_density": 0.09068472072626488
+    "diff_density": 0.09068472072626488,
+    "unemployment": 4.6
   },
   "5099": {
     "year": 2016,
@@ -1449,7 +1667,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Nevada",
     "diff_margin": -3.18399321615788,
-    "diff_density": -0.2310682377314519
+    "diff_density": -0.2310682377314519,
+    "unemployment": 3.7
   },
   "5101": {
     "year": 2016,
@@ -1460,7 +1679,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Newton",
     "diff_margin": -8.494900079936052,
-    "diff_density": 0.11181142648312825
+    "diff_density": 0.11181142648312825,
+    "unemployment": 3.6
   },
   "5103": {
     "year": 2016,
@@ -1471,7 +1691,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Ouachita",
     "diff_margin": -1.4110867156813427,
-    "diff_density": -0.5302306285651905
+    "diff_density": -0.5302306285651905,
+    "unemployment": 5.6
   },
   "5105": {
     "year": 2016,
@@ -1482,7 +1703,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Perry",
     "diff_margin": -5.855626466447678,
-    "diff_density": 0.5894160319187529
+    "diff_density": 0.5894160319187529,
+    "unemployment": 4.4
   },
   "5107": {
     "year": 2016,
@@ -1493,7 +1715,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Phillips",
     "diff_margin": -3.684246970571259,
-    "diff_density": -1.4353621021763505
+    "diff_density": -1.4353621021763505,
+    "unemployment": 5.5
   },
   "5109": {
     "year": 2016,
@@ -1504,7 +1727,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Pike",
     "diff_margin": -5.284070351758793,
-    "diff_density": 0.31648596450334665
+    "diff_density": 0.31648596450334665,
+    "unemployment": 3.8
   },
   "5111": {
     "year": 2016,
@@ -1515,7 +1739,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Poinsett",
     "diff_margin": 3.611305326331582,
-    "diff_density": -2.9393165785413844
+    "diff_density": -2.9393165785413844,
+    "unemployment": 4.1
   },
   "5113": {
     "year": 2016,
@@ -1526,7 +1751,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Polk",
     "diff_margin": -5.41084601339014,
-    "diff_density": 0.5681643503404548
+    "diff_density": 0.5681643503404548,
+    "unemployment": 4.7
   },
   "5115": {
     "year": 2016,
@@ -1537,7 +1763,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Pope",
     "diff_margin": -2.948626550298574,
-    "diff_density": 1.6421974032367253
+    "diff_density": 1.6421974032367253,
+    "unemployment": 4.7
   },
   "5117": {
     "year": 2016,
@@ -1548,7 +1775,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Prairie",
     "diff_margin": -4.415348837209304,
-    "diff_density": 0.458969689487005
+    "diff_density": 0.458969689487005,
+    "unemployment": 3.7
   },
   "5119": {
     "year": 2016,
@@ -1559,7 +1787,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Pulaski",
     "diff_margin": 1.300655606134704,
-    "diff_density": 0.13628935453300528
+    "diff_density": 0.13628935453300528,
+    "unemployment": 3.5
   },
   "5121": {
     "year": 2016,
@@ -1570,7 +1799,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Randolph",
     "diff_margin": -12.007572906867356,
-    "diff_density": 0.6493587758168609
+    "diff_density": 0.6493587758168609,
+    "unemployment": 4.6
   },
   "5123": {
     "year": 2016,
@@ -1581,7 +1811,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "St. Francis",
     "diff_margin": -4.466971736204577,
-    "diff_density": -1.4649729823400595
+    "diff_density": -1.4649729823400595,
+    "unemployment": 5
   },
   "5125": {
     "year": 2016,
@@ -1592,7 +1823,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Saline",
     "diff_margin": -2.1450515424702346,
-    "diff_density": 7.621691542288545
+    "diff_density": 7.621691542288545,
+    "unemployment": 3
   },
   "5127": {
     "year": 2016,
@@ -1603,7 +1835,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Scott",
     "diff_margin": -7.951389071757735,
-    "diff_density": -0.6753917876994802
+    "diff_density": -0.6753917876994802,
+    "unemployment": 3.7
   },
   "5129": {
     "year": 2016,
@@ -1614,7 +1847,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Searcy",
     "diff_margin": -5.9187553648068665,
-    "diff_density": 0.046757243657108205
+    "diff_density": 0.046757243657108205,
+    "unemployment": 4.3
   },
   "5131": {
     "year": 2016,
@@ -1625,7 +1859,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Sebastian",
     "diff_margin": -2.573780230739594,
-    "diff_density": 1.4244830892444327
+    "diff_density": 1.4244830892444327,
+    "unemployment": 3.5
   },
   "5133": {
     "year": 2016,
@@ -1636,7 +1871,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Sevier",
     "diff_margin": -0.5370240700218822,
-    "diff_density": 0.4266349335551105
+    "diff_density": 0.4266349335551105,
+    "unemployment": 4.8
   },
   "5135": {
     "year": 2016,
@@ -1647,7 +1883,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Sharp",
     "diff_margin": -8.40534363786917,
-    "diff_density": -0.06204420620739981
+    "diff_density": -0.06204420620739981,
+    "unemployment": 5.2
   },
   "5137": {
     "year": 2016,
@@ -1658,7 +1895,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Stone",
     "diff_margin": -3.975833333333334,
-    "diff_density": 0.3520580474934043
+    "diff_density": 0.3520580474934043,
+    "unemployment": 4.8
   },
   "5139": {
     "year": 2016,
@@ -1669,7 +1907,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Union",
     "diff_margin": -1.5845134789752322,
-    "diff_density": -0.7170266837309125
+    "diff_density": -0.7170266837309125,
+    "unemployment": 5.6
   },
   "5141": {
     "year": 2016,
@@ -1680,7 +1919,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Van Buren",
     "diff_margin": -6.750258572231591,
-    "diff_density": 0.9688603948371792
+    "diff_density": 0.9688603948371792,
+    "unemployment": 6.4
   },
   "5143": {
     "year": 2016,
@@ -1691,7 +1931,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Washington",
     "diff_margin": 0.5319385741045721,
-    "diff_density": 9.643241292185522
+    "diff_density": 9.643241292185522,
+    "unemployment": 2.6
   },
   "5145": {
     "year": 2016,
@@ -1702,7 +1943,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "White",
     "diff_margin": -3.2858937198067615,
-    "diff_density": 1.3779132047764442
+    "diff_density": 1.3779132047764442,
+    "unemployment": 4.8
   },
   "5147": {
     "year": 2016,
@@ -1713,7 +1955,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Woodruff",
     "diff_margin": -6.379212782540911,
-    "diff_density": -0.20705567579542894
+    "diff_density": -0.20705567579542894,
+    "unemployment": 5.3
   },
   "5149": {
     "year": 2016,
@@ -1724,7 +1967,8 @@ export const counties = {
     "statenam": "Arkansas",
     "cty_name": "Yell",
     "diff_margin": -5.902360267787639,
-    "diff_density": 0.4866001419385366
+    "diff_density": 0.4866001419385366,
+    "unemployment": 4.4
   },
   "6001": {
     "year": 2016,
@@ -1735,7 +1979,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Alameda",
     "diff_margin": 0.1425187557398715,
-    "diff_density": -291.7725228004655
+    "diff_density": -291.7725228004655,
+    "unemployment": 4.6
   },
   "6003": {
     "year": 2016,
@@ -1746,7 +1991,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Alpine",
     "diff_margin": -4.265652173913047,
-    "diff_density": -0.10121544566792628
+    "diff_density": -0.10121544566792628,
+    "unemployment": 7.3
   },
   "6005": {
     "year": 2016,
@@ -1757,7 +2003,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Amador",
     "diff_margin": -4.666762861976316,
-    "diff_density": -12.778994248040636
+    "diff_density": -12.778994248040636,
+    "unemployment": 5.7
   },
   "6007": {
     "year": 2016,
@@ -1768,7 +2015,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Butte",
     "diff_margin": -3.26005864534779,
-    "diff_density": -11.279879495985242
+    "diff_density": -11.279879495985242,
+    "unemployment": 6.6
   },
   "6009": {
     "year": 2016,
@@ -1779,7 +2027,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Calaveras",
     "diff_margin": -4.065212399540755,
-    "diff_density": -4.281736061411163
+    "diff_density": -4.281736061411163,
+    "unemployment": 5.7
   },
   "6011": {
     "year": 2016,
@@ -1790,7 +2039,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Colusa",
     "diff_margin": -0.19128306602791412,
-    "diff_density": -1.0678657895422905
+    "diff_density": -1.0678657895422905,
+    "unemployment": 10
   },
   "6013": {
     "year": 2016,
@@ -1801,7 +2051,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Contra Costa",
     "diff_margin": 2.3582035043779115,
-    "diff_density": -201.64521328602962
+    "diff_density": -201.64521328602962,
+    "unemployment": 4.7
   },
   "6015": {
     "year": 2016,
@@ -1812,7 +2063,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Del Norte",
     "diff_margin": -5.527144294879854,
-    "diff_density": -0.8113146258334423
+    "diff_density": -0.8113146258334423,
+    "unemployment": 7.3
   },
   "6017": {
     "year": 2016,
@@ -1823,7 +2075,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "El Dorado",
     "diff_margin": 0.511972169730285,
-    "diff_density": -11.080170972199454
+    "diff_density": -11.080170972199454,
+    "unemployment": 5.1
   },
   "6019": {
     "year": 2016,
@@ -1834,7 +2087,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Fresno",
     "diff_margin": -1.3338571612736843,
-    "diff_density": -14.797118759850214
+    "diff_density": -14.797118759850214,
+    "unemployment": 8.7
   },
   "6021": {
     "year": 2016,
@@ -1845,7 +2099,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Glenn",
     "diff_margin": -3.3767647058823584,
-    "diff_density": -2.8698120172000454
+    "diff_density": -2.8698120172000454,
+    "unemployment": 7.9
   },
   "6023": {
     "year": 2016,
@@ -1856,7 +2111,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Humboldt",
     "diff_margin": -1.7009917945058888,
-    "diff_density": -6.682843533754298
+    "diff_density": -6.682843533754298,
+    "unemployment": 5.1
   },
   "6025": {
     "year": 2016,
@@ -1867,7 +2123,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Imperial",
     "diff_margin": 3.5274503787515528,
-    "diff_density": -4.235985730019634
+    "diff_density": -4.235985730019634,
+    "unemployment": 26.4
   },
   "6027": {
     "year": 2016,
@@ -1878,7 +2135,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Inyo",
     "diff_margin": -2.6407319801821956,
-    "diff_density": -0.17541658481388644
+    "diff_density": -0.17541658481388644,
+    "unemployment": 4.9
   },
   "6029": {
     "year": 2016,
@@ -1889,7 +2147,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Kern",
     "diff_margin": -1.8996819846622444,
-    "diff_density": -6.480410727109959
+    "diff_density": -6.480410727109959,
+    "unemployment": 9.7
   },
   "6031": {
     "year": 2016,
@@ -1900,7 +2159,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Kings",
     "diff_margin": -2.6795365365791426,
-    "diff_density": -5.698626909069972
+    "diff_density": -5.698626909069972,
+    "unemployment": 8.9
   },
   "6033": {
     "year": 2016,
@@ -1911,7 +2171,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Lake",
     "diff_margin": -8.435580682253743,
-    "diff_density": -8.237655954029577
+    "diff_density": -8.237655954029577,
+    "unemployment": 6.3
   },
   "6035": {
     "year": 2016,
@@ -1922,7 +2183,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Lassen",
     "diff_margin": -6.492165335838418,
-    "diff_density": -0.4747164833809716
+    "diff_density": -0.4747164833809716,
+    "unemployment": 6.1
   },
   "6037": {
     "year": 2016,
@@ -1933,7 +2195,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Los Angeles",
     "diff_margin": 1.7899607020951862,
-    "diff_density": -231.82802093704095
+    "diff_density": -231.82802093704095,
+    "unemployment": 5.3
   },
   "6039": {
     "year": 2016,
@@ -1944,7 +2207,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Madera",
     "diff_margin": -1.4122330210431073,
-    "diff_density": -2.617301024299625
+    "diff_density": -2.617301024299625,
+    "unemployment": 8.2
   },
   "6041": {
     "year": 2016,
@@ -1955,7 +2219,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Marin",
     "diff_margin": 4.680070678315488,
-    "diff_density": -101.90029847590856
+    "diff_density": -101.90029847590856,
+    "unemployment": 3.5
   },
   "6043": {
     "year": 2016,
@@ -1966,7 +2231,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Mariposa",
     "diff_margin": -3.907440435670523,
-    "diff_density": -1.1403571182065404
+    "diff_density": -1.1403571182065404,
+    "unemployment": 5.4
   },
   "6045": {
     "year": 2016,
@@ -1977,7 +2243,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Mendocino",
     "diff_margin": -5.845216440752083,
-    "diff_density": -6.728764637770439
+    "diff_density": -6.728764637770439,
+    "unemployment": 5
   },
   "6047": {
     "year": 2016,
@@ -1988,7 +2255,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Merced",
     "diff_margin": -1.7819330715142385,
-    "diff_density": -10.093948691710985
+    "diff_density": -10.093948691710985,
+    "unemployment": 9.2
   },
   "6049": {
     "year": 2016,
@@ -1999,7 +2267,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Modoc",
     "diff_margin": -4.112929443286692,
-    "diff_density": -0.16262450322504896
+    "diff_density": -0.16262450322504896,
+    "unemployment": 6.6
   },
   "6051": {
     "year": 2016,
@@ -2010,7 +2279,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Mono",
     "diff_margin": -1.1729680549939303,
-    "diff_density": -0.0778181555798989
+    "diff_density": -0.0778181555798989,
+    "unemployment": 5.2
   },
   "6053": {
     "year": 2016,
@@ -2021,7 +2291,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Monterey",
     "diff_margin": -0.25682575746884595,
-    "diff_density": -16.04992196525625
+    "diff_density": -16.04992196525625,
+    "unemployment": 5.6
   },
   "6055": {
     "year": 2016,
@@ -2032,7 +2303,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Napa",
     "diff_margin": 1.893322128496223,
-    "diff_density": -33.98252605697793
+    "diff_density": -33.98252605697793,
+    "unemployment": 4
   },
   "6057": {
     "year": 2016,
@@ -2043,7 +2315,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Nevada",
     "diff_margin": 0.977077996271575,
-    "diff_density": -19.225588084822036
+    "diff_density": -19.225588084822036,
+    "unemployment": 4.8
   },
   "6059": {
     "year": 2016,
@@ -2054,7 +2327,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Orange",
     "diff_margin": 4.1552168978578266,
-    "diff_density": -412.5349303666975
+    "diff_density": -412.5349303666975,
+    "unemployment": 4.3
   },
   "6061": {
     "year": 2016,
@@ -2065,7 +2339,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Placer",
     "diff_margin": 2.76136633795182,
-    "diff_density": -47.02208058222756
+    "diff_density": -47.02208058222756,
+    "unemployment": 4.7
   },
   "6063": {
     "year": 2016,
@@ -2076,7 +2351,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Plumas",
     "diff_margin": -3.558108720271804,
-    "diff_density": -0.4813781217685582
+    "diff_density": -0.4813781217685582,
+    "unemployment": 7.1
   },
   "6065": {
     "year": 2016,
@@ -2087,7 +2363,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Riverside",
     "diff_margin": -0.9862943475806532,
-    "diff_density": -26.70793341548162
+    "diff_density": -26.70793341548162,
+    "unemployment": 6.9
   },
   "6067": {
     "year": 2016,
@@ -2098,7 +2375,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Sacramento",
     "diff_margin": 0.1359449867458622,
-    "diff_density": -204.51451318626636
+    "diff_density": -204.51451318626636,
+    "unemployment": 5.7
   },
   "6069": {
     "year": 2016,
@@ -2109,7 +2387,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Benito",
     "diff_margin": -1.7937727504677667,
-    "diff_density": -5.2431494696516925
+    "diff_density": -5.2431494696516925,
+    "unemployment": 6.2
   },
   "6071": {
     "year": 2016,
@@ -2120,7 +2399,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Bernardino",
     "diff_margin": -1.1220921343560164,
-    "diff_density": -7.545502484426834
+    "diff_density": -7.545502484426834,
+    "unemployment": 6.2
   },
   "6073": {
     "year": 2016,
@@ -2131,7 +2411,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Diego",
     "diff_margin": 3.4747211409280325,
-    "diff_density": -117.81144072571158
+    "diff_density": -117.81144072571158,
+    "unemployment": 5
   },
   "6075": {
     "year": 2016,
@@ -2142,7 +2423,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Francisco",
     "diff_margin": 1.7557420473570886,
-    "diff_density": -1997.0523661190518
+    "diff_density": -1997.0523661190518,
+    "unemployment": 3.5
   },
   "6077": {
     "year": 2016,
@@ -2153,7 +2435,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Joaquin",
     "diff_margin": -2.534659446880873,
-    "diff_density": -50.75395911795992
+    "diff_density": -50.75395911795992,
+    "unemployment": 7.7
   },
   "6079": {
     "year": 2016,
@@ -2164,7 +2447,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Luis Obispo",
     "diff_margin": 2.2811459125785234,
-    "diff_density": -10.194881812421752
+    "diff_density": -10.194881812421752,
+    "unemployment": 4.5
   },
   "6081": {
     "year": 2016,
@@ -2175,7 +2459,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "San Mateo",
     "diff_margin": 4.209915196828675,
-    "diff_density": -192.7641397381861
+    "diff_density": -192.7641397381861,
+    "unemployment": 3.2
   },
   "6083": {
     "year": 2016,
@@ -2186,7 +2471,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Santa Barbara",
     "diff_margin": 3.6892010472530643,
-    "diff_density": -16.41891999897627
+    "diff_density": -16.41891999897627,
+    "unemployment": 4.8
   },
   "6085": {
     "year": 2016,
@@ -2197,7 +2483,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Santa Clara",
     "diff_margin": 3.1159983531932625,
-    "diff_density": -167.11498953569492
+    "diff_density": -167.11498953569492,
+    "unemployment": 4
   },
   "6087": {
     "year": 2016,
@@ -2208,7 +2495,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Santa Cruz",
     "diff_margin": -0.20606592503082766,
-    "diff_density": -89.45012220050765
+    "diff_density": -89.45012220050765,
+    "unemployment": 5.7
   },
   "6089": {
     "year": 2016,
@@ -2219,7 +2507,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Shasta",
     "diff_margin": -4.909024140562472,
-    "diff_density": -5.989190019600571
+    "diff_density": -5.989190019600571,
+    "unemployment": 6.8
   },
   "6091": {
     "year": 2016,
@@ -2230,7 +2519,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Sierra",
     "diff_margin": -3.102501395868231,
-    "diff_density": -0.0010855949895616224
+    "diff_density": -0.0010855949895616224,
+    "unemployment": 6.6
   },
   "6093": {
     "year": 2016,
@@ -2241,7 +2531,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Siskiyou",
     "diff_margin": -4.533232461233688,
-    "diff_density": -0.8381655779250674
+    "diff_density": -0.8381655779250674,
+    "unemployment": 7.1
   },
   "6095": {
     "year": 2016,
@@ -2252,7 +2543,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Solano",
     "diff_margin": -1.5839696169606015,
-    "diff_density": -30.188494937694685
+    "diff_density": -30.188494937694685,
+    "unemployment": 5.7
   },
   "6097": {
     "year": 2016,
@@ -2263,7 +2555,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Sonoma",
     "diff_margin": -0.37770327928807035,
-    "diff_density": -33.2811063870292
+    "diff_density": -33.2811063870292,
+    "unemployment": 4.1
   },
   "6099": {
     "year": 2016,
@@ -2274,7 +2567,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Stanislaus",
     "diff_margin": -3.333462247449404,
-    "diff_density": -30.632667393616657
+    "diff_density": -30.632667393616657,
+    "unemployment": 7.9
   },
   "6101": {
     "year": 2016,
@@ -2285,7 +2579,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Sutter",
     "diff_margin": -0.563190090227863,
-    "diff_density": -18.93579953852028
+    "diff_density": -18.93579953852028,
+    "unemployment": 7.9
   },
   "6103": {
     "year": 2016,
@@ -2296,7 +2591,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Tehama",
     "diff_margin": -5.0132713754646865,
-    "diff_density": -2.318275660997183
+    "diff_density": -2.318275660997183,
+    "unemployment": 7.4
   },
   "6105": {
     "year": 2016,
@@ -2307,7 +2603,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Trinity",
     "diff_margin": -7.3505258693808315,
-    "diff_density": -0.29663128096249114
+    "diff_density": -0.29663128096249114,
+    "unemployment": 5.9
   },
   "6107": {
     "year": 2016,
@@ -2318,7 +2615,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Tulare",
     "diff_margin": -1.7410117525118238,
-    "diff_density": -8.560689852452834
+    "diff_density": -8.560689852452834,
+    "unemployment": 10.6
   },
   "6109": {
     "year": 2016,
@@ -2329,7 +2627,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Tuolumne",
     "diff_margin": -2.6516075536297024,
-    "diff_density": -2.703066171967869
+    "diff_density": -2.703066171967869,
+    "unemployment": 6.1
   },
   "6111": {
     "year": 2016,
@@ -2340,7 +2639,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Ventura",
     "diff_margin": 2.7880664930967782,
-    "diff_density": -42.57120333345995
+    "diff_density": -42.57120333345995,
+    "unemployment": 5.7
   },
   "6113": {
     "year": 2016,
@@ -2351,7 +2651,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Yolo",
     "diff_margin": 2.6618250597554436,
-    "diff_density": -23.509885777922328
+    "diff_density": -23.509885777922328,
+    "unemployment": 5.5
   },
   "6115": {
     "year": 2016,
@@ -2362,7 +2663,8 @@ export const counties = {
     "statenam": "California",
     "cty_name": "Yuba",
     "diff_margin": -4.877825708352873,
-    "diff_density": -7.552182831096481
+    "diff_density": -7.552182831096481,
+    "unemployment": 8
   },
   "8001": {
     "year": 2016,
@@ -2373,7 +2675,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Adams",
     "diff_margin": -9.160332757098452,
-    "diff_density": -35.49900612341028
+    "diff_density": -35.49900612341028,
+    "unemployment": 3.6
   },
   "8003": {
     "year": 2016,
@@ -2384,7 +2687,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Alamosa",
     "diff_margin": -10.816985645933016,
-    "diff_density": 0.25417137163733017
+    "diff_density": 0.25417137163733017,
+    "unemployment": 4.3
   },
   "8005": {
     "year": 2016,
@@ -2395,7 +2699,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Arapahoe",
     "diff_margin": -0.9733037189088662,
-    "diff_density": -45.212747775967955
+    "diff_density": -45.212747775967955,
+    "unemployment": 3.2
   },
   "8007": {
     "year": 2016,
@@ -2406,7 +2711,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Archuleta",
     "diff_margin": -5.637338820301778,
-    "diff_density": 0.40932008561884725
+    "diff_density": 0.40932008561884725,
+    "unemployment": 3.1
   },
   "8009": {
     "year": 2016,
@@ -2417,7 +2723,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Baca",
     "diff_margin": -8.975885144755578,
-    "diff_density": 0.004667217227599663
+    "diff_density": 0.004667217227599663,
+    "unemployment": 1.8
   },
   "8011": {
     "year": 2016,
@@ -2428,7 +2735,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Bent",
     "diff_margin": -11.261754756871035,
-    "diff_density": -0.02938857528125527
+    "diff_density": -0.02938857528125527,
+    "unemployment": 3.1
   },
   "8013": {
     "year": 2016,
@@ -2439,7 +2747,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Boulder",
     "diff_margin": 1.5633898569246725,
-    "diff_density": -26.294694268129803
+    "diff_density": -26.294694268129803,
+    "unemployment": 2.9
   },
   "8014": {
     "year": 2016,
@@ -2450,7 +2759,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Broomfield",
     "diff_margin": 0.5403588452680594,
-    "diff_density": 138.32798667877682
+    "diff_density": 138.32798667877682,
+    "unemployment": 3.1
   },
   "8015": {
     "year": 2016,
@@ -2461,7 +2771,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Chaffee",
     "diff_margin": -5.215145922356577,
-    "diff_density": 0.533562265640418
+    "diff_density": 0.533562265640418,
+    "unemployment": 2.4
   },
   "8017": {
     "year": 2016,
@@ -2472,7 +2783,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Cheyenne",
     "diff_margin": -3.937026022304833,
-    "diff_density": -0.00492093483590883
+    "diff_density": -0.00492093483590883,
+    "unemployment": 2.7
   },
   "8019": {
     "year": 2016,
@@ -2483,7 +2795,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Clear Creek",
     "diff_margin": -7.581872740419385,
-    "diff_density": -0.5330868102117758
+    "diff_density": -0.5330868102117758,
+    "unemployment": 3.3
   },
   "8021": {
     "year": 2016,
@@ -2494,7 +2807,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Conejos",
     "diff_margin": -9.803828715365242,
-    "diff_density": -0.10624138761369917
+    "diff_density": -0.10624138761369917,
+    "unemployment": 4.9
   },
   "8023": {
     "year": 2016,
@@ -2505,7 +2819,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Costilla",
     "diff_margin": -12.015934065934076,
-    "diff_density": -0.01664697012918226
+    "diff_density": -0.01664697012918226,
+    "unemployment": 4.8
   },
   "8025": {
     "year": 2016,
@@ -2516,7 +2831,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Crowley",
     "diff_margin": -13.38307081403044,
-    "diff_density": 0.008925097152726824
+    "diff_density": 0.008925097152726824,
+    "unemployment": 3.6
   },
   "8027": {
     "year": 2016,
@@ -2527,7 +2843,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Custer",
     "diff_margin": -5.9582506527415156,
-    "diff_density": 0.4682765156643467
+    "diff_density": 0.4682765156643467,
+    "unemployment": 3
   },
   "8029": {
     "year": 2016,
@@ -2538,7 +2855,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Delta",
     "diff_margin": -4.723739271352262,
-    "diff_density": 0.6486782540169003
+    "diff_density": 0.6486782540169003,
+    "unemployment": 4.7
   },
   "8031": {
     "year": 2016,
@@ -2549,7 +2867,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Denver",
     "diff_margin": 1.9800787478553303,
-    "diff_density": -634.7554248366012
+    "diff_density": -634.7554248366012,
+    "unemployment": 3.2
   },
   "8033": {
     "year": 2016,
@@ -2560,7 +2879,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Dolores",
     "diff_margin": -8.374715447154472,
-    "diff_density": -0.017289255423831973
+    "diff_density": -0.017289255423831973,
+    "unemployment": 4.1
   },
   "8035": {
     "year": 2016,
@@ -2571,7 +2891,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Douglas",
     "diff_margin": 0.303035786527289,
-    "diff_density": 17.654733710205306
+    "diff_density": 17.654733710205306,
+    "unemployment": 2.8
   },
   "8037": {
     "year": 2016,
@@ -2582,7 +2903,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Eagle",
     "diff_margin": -0.474933881738977,
-    "diff_density": -0.03726487506901144
+    "diff_density": -0.03726487506901144,
+    "unemployment": 2.5
   },
   "8039": {
     "year": 2016,
@@ -2593,7 +2915,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Elbert",
     "diff_margin": -5.9313844094588575,
-    "diff_density": 0.8166458654131894
+    "diff_density": 0.8166458654131894,
+    "unemployment": 2.6
   },
   "8041": {
     "year": 2016,
@@ -2604,7 +2927,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "El Paso",
     "diff_margin": -4.7653050853408985,
-    "diff_density": 10.857818318600692
+    "diff_density": 10.857818318600692,
+    "unemployment": 3.9
   },
   "8043": {
     "year": 2016,
@@ -2615,7 +2939,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Fremont",
     "diff_margin": -8.731224862888485,
-    "diff_density": 0.9520162810569648
+    "diff_density": 0.9520162810569648,
+    "unemployment": 5.1
   },
   "8045": {
     "year": 2016,
@@ -2626,7 +2951,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Garfield",
     "diff_margin": -3.137499463864465,
-    "diff_density": -0.3700677170269637
+    "diff_density": -0.3700677170269637,
+    "unemployment": 3.3
   },
   "8047": {
     "year": 2016,
@@ -2637,7 +2963,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Gilpin",
     "diff_margin": -10.96091773922776,
-    "diff_density": 1.5725617078052032
+    "diff_density": 1.5725617078052032,
+    "unemployment": 2.6
   },
   "8049": {
     "year": 2016,
@@ -2648,7 +2975,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Grand",
     "diff_margin": -6.012569012099142,
-    "diff_density": 0.18076838918286597
+    "diff_density": 0.18076838918286597,
+    "unemployment": 2.3
   },
   "8051": {
     "year": 2016,
@@ -2659,7 +2987,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Gunnison",
     "diff_margin": -3.5731677296632043,
-    "diff_density": 0.07909974993053615
+    "diff_density": 0.07909974993053615,
+    "unemployment": 2.1
   },
   "8053": {
     "year": 2016,
@@ -2670,7 +2999,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Hinsdale",
     "diff_margin": -4.723480475382004,
-    "diff_density": -0.01281270977847393
+    "diff_density": -0.01281270977847393,
+    "unemployment": 2
   },
   "8055": {
     "year": 2016,
@@ -2681,7 +3011,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Huerfano",
     "diff_margin": -9.340339342523855,
-    "diff_density": 0.040835952231300876
+    "diff_density": 0.040835952231300876,
+    "unemployment": 6.2
   },
   "8057": {
     "year": 2016,
@@ -2692,7 +3023,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Jackson",
     "diff_margin": -5.632412993039441,
-    "diff_density": 0.004169496566938435
+    "diff_density": 0.004169496566938435,
+    "unemployment": 2.3
   },
   "8059": {
     "year": 2016,
@@ -2703,7 +3035,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Jefferson",
     "diff_margin": -2.140284399846223,
-    "diff_density": -1.998660446735812
+    "diff_density": -1.998660446735812,
+    "unemployment": 3.1
   },
   "8061": {
     "year": 2016,
@@ -2714,7 +3047,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Kiowa",
     "diff_margin": -3.7017702227432583,
-    "diff_density": 0.022528835764833666
+    "diff_density": 0.022528835764833666,
+    "unemployment": 2.1
   },
   "8063": {
     "year": 2016,
@@ -2725,7 +3059,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Kit Carson",
     "diff_margin": -8.081461389427071,
-    "diff_density": -0.03794957469849414
+    "diff_density": -0.03794957469849414,
+    "unemployment": 1.8
   },
   "8065": {
     "year": 2016,
@@ -2736,7 +3071,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Lake",
     "diff_margin": -10.096299212598431,
-    "diff_density": 0.3537616407099833
+    "diff_density": 0.3537616407099833,
+    "unemployment": 2.6
   },
   "8067": {
     "year": 2016,
@@ -2747,7 +3083,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "La Plata",
     "diff_margin": -3.268554781589735,
-    "diff_density": 0.9063519455344924
+    "diff_density": 0.9063519455344924,
+    "unemployment": 2.9
   },
   "8069": {
     "year": 2016,
@@ -2758,7 +3095,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Larimer",
     "diff_margin": -3.37099485299715,
-    "diff_density": -3.6245608628659483
+    "diff_density": -3.6245608628659483,
+    "unemployment": 2.9
   },
   "8071": {
     "year": 2016,
@@ -2769,7 +3107,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Las Animas",
     "diff_margin": -11.144270132974754,
-    "diff_density": -0.03764031454091721
+    "diff_density": -0.03764031454091721,
+    "unemployment": 5
   },
   "8073": {
     "year": 2016,
@@ -2780,7 +3119,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Lincoln",
     "diff_margin": -7.528842631140716,
-    "diff_density": 0.04186376632798339
+    "diff_density": 0.04186376632798339,
+    "unemployment": 2.5
   },
   "8075": {
     "year": 2016,
@@ -2791,7 +3131,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Logan",
     "diff_margin": -10.723916718202432,
-    "diff_density": 0.316984580239863
+    "diff_density": 0.316984580239863,
+    "unemployment": 3.3
   },
   "8077": {
     "year": 2016,
@@ -2802,7 +3143,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Mesa",
     "diff_margin": -4.423780760626396,
-    "diff_density": -0.4258772833639206
+    "diff_density": -0.4258772833639206,
+    "unemployment": 5.3
   },
   "8079": {
     "year": 2016,
@@ -2813,7 +3155,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Mineral",
     "diff_margin": -8.42030674846626,
-    "diff_density": 0.004572727168910662
+    "diff_density": 0.004572727168910662,
+    "unemployment": 1.7
   },
   "8081": {
     "year": 2016,
@@ -2824,7 +3167,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Moffat",
     "diff_margin": -8.134500768049154,
-    "diff_density": 0.07246510333544864
+    "diff_density": 0.07246510333544864,
+    "unemployment": 3.6
   },
   "8083": {
     "year": 2016,
@@ -2835,7 +3179,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Montezuma",
     "diff_margin": -6.018433810798047,
-    "diff_density": 0.19056279039974733
+    "diff_density": 0.19056279039974733,
+    "unemployment": 4.5
   },
   "8085": {
     "year": 2016,
@@ -2846,7 +3191,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Montrose",
     "diff_margin": -4.3116856280473606,
-    "diff_density": -1.291331280403445
+    "diff_density": -1.291331280403445,
+    "unemployment": 3.9
   },
   "8087": {
     "year": 2016,
@@ -2857,7 +3203,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Morgan",
     "diff_margin": -9.987752355316282,
-    "diff_density": 0.8643810282483226
+    "diff_density": 0.8643810282483226,
+    "unemployment": 3.5
   },
   "8089": {
     "year": 2016,
@@ -2868,7 +3215,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Otero",
     "diff_margin": -10.399317189360865,
-    "diff_density": -2.4977973945291456
+    "diff_density": -2.4977973945291456,
+    "unemployment": 4.6
   },
   "8091": {
     "year": 2016,
@@ -2879,7 +3227,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Ouray",
     "diff_margin": 0.004663827198051251,
-    "diff_density": 0.1591667128270462
+    "diff_density": 0.1591667128270462,
+    "unemployment": 3.2
   },
   "8093": {
     "year": 2016,
@@ -2890,7 +3239,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Park",
     "diff_margin": -8.521361639824299,
-    "diff_density": 0.3998725984000737
+    "diff_density": 0.3998725984000737,
+    "unemployment": 2.7
   },
   "8095": {
     "year": 2016,
@@ -2901,7 +3251,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Phillips",
     "diff_margin": -7.263602058319041,
-    "diff_density": 0.09987978428037758
+    "diff_density": 0.09987978428037758,
+    "unemployment": 2.3
   },
   "8097": {
     "year": 2016,
@@ -2912,7 +3263,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Pitkin",
     "diff_margin": 1.7128853374410369,
-    "diff_density": 0.32052539404553215
+    "diff_density": 0.32052539404553215,
+    "unemployment": 2.7
   },
   "8099": {
     "year": 2016,
@@ -2923,7 +3275,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Prowers",
     "diff_margin": -7.676319807151465,
-    "diff_density": 0.06834862273329279
+    "diff_density": 0.06834862273329279,
+    "unemployment": 3.5
   },
   "8101": {
     "year": 2016,
@@ -2934,7 +3287,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Pueblo",
     "diff_margin": -9.361778014373172,
-    "diff_density": -6.737426344243744
+    "diff_density": -6.737426344243744,
+    "unemployment": 4.9
   },
   "8103": {
     "year": 2016,
@@ -2945,7 +3299,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Rio Blanco",
     "diff_margin": -3.822148172112584,
-    "diff_density": -0.0903392808909228
+    "diff_density": -0.0903392808909228,
+    "unemployment": 5.1
   },
   "8105": {
     "year": 2016,
@@ -2956,7 +3311,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Rio Grande",
     "diff_margin": -8.620174927113702,
-    "diff_density": -0.052192201412343486
+    "diff_density": -0.052192201412343486,
+    "unemployment": 5.1
   },
   "8107": {
     "year": 2016,
@@ -2967,7 +3323,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Routt",
     "diff_margin": -2.3060731919837423,
-    "diff_density": 0.19057793508126508
+    "diff_density": 0.19057793508126508,
+    "unemployment": 2.6
   },
   "8109": {
     "year": 2016,
@@ -2978,7 +3335,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Saguache",
     "diff_margin": -13.794000738825261,
-    "diff_density": -0.07566060602235114
+    "diff_density": -0.07566060602235114,
+    "unemployment": 5.9
   },
   "8111": {
     "year": 2016,
@@ -2989,7 +3347,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "San Juan",
     "diff_margin": -0.19845849802371873,
-    "diff_density": -0.004159849286433204
+    "diff_density": -0.004159849286433204,
+    "unemployment": 2.4
   },
   "8113": {
     "year": 2016,
@@ -3000,7 +3359,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "San Miguel",
     "diff_margin": -1.6384365576432316,
-    "diff_density": 0.04066570289365101
+    "diff_density": 0.04066570289365101,
+    "unemployment": 2.4
   },
   "8115": {
     "year": 2016,
@@ -3011,7 +3371,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Sedgwick",
     "diff_margin": -11.745219941348974,
-    "diff_density": 0.04886942558937335
+    "diff_density": 0.04886942558937335,
+    "unemployment": 2.2
   },
   "8117": {
     "year": 2016,
@@ -3022,7 +3383,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Summit",
     "diff_margin": -1.878054915634145,
-    "diff_density": 1.2304865540140675
+    "diff_density": 1.2304865540140675,
+    "unemployment": 2.1
   },
   "8119": {
     "year": 2016,
@@ -3033,7 +3395,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Teller",
     "diff_margin": -7.346402872632542,
-    "diff_density": 1.426813571492687
+    "diff_density": 1.426813571492687,
+    "unemployment": 3.7
   },
   "8121": {
     "year": 2016,
@@ -3044,7 +3407,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Washington",
     "diff_margin": -7.387917282127029,
-    "diff_density": 0.045443898603273025
+    "diff_density": 0.045443898603273025,
+    "unemployment": 2.1
   },
   "8123": {
     "year": 2016,
@@ -3055,7 +3419,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Weld",
     "diff_margin": -7.998509923965635,
-    "diff_density": 1.4182255394709138
+    "diff_density": 1.4182255394709138,
+    "unemployment": 3.5
   },
   "8125": {
     "year": 2016,
@@ -3066,7 +3431,8 @@ export const counties = {
     "statenam": "Colorado",
     "cty_name": "Yuma",
     "diff_margin": -6.529982847341337,
-    "diff_density": 0.03258512694498861
+    "diff_density": 0.03258512694498861,
+    "unemployment": 2.2
   },
   "9001": {
     "year": 2016,
@@ -3077,7 +3443,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "Fairfield",
     "diff_margin": 1.6347448460246028,
-    "diff_density": -111.9585383027412
+    "diff_density": -111.9585383027412,
+    "unemployment": 5.2
   },
   "9003": {
     "year": 2016,
@@ -3088,7 +3455,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "Hartford",
     "diff_margin": -3.945394631374576,
-    "diff_density": 1.31345531220245
+    "diff_density": 1.31345531220245,
+    "unemployment": 6
   },
   "9005": {
     "year": 2016,
@@ -3099,7 +3467,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "Litchfield",
     "diff_margin": -6.692291185616199,
-    "diff_density": 5.57187277309464
+    "diff_density": 5.57187277309464,
+    "unemployment": 4.8
   },
   "9007": {
     "year": 2016,
@@ -3110,7 +3479,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "Middlesex",
     "diff_margin": -6.205041789436265,
-    "diff_density": 10.104673707013262
+    "diff_density": 10.104673707013262,
+    "unemployment": 4.8
   },
   "9009": {
     "year": 2016,
@@ -3121,7 +3491,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "New Haven",
     "diff_margin": -6.542684963078571,
-    "diff_density": 18.93265785512233
+    "diff_density": 18.93265785512233,
+    "unemployment": 6.1
   },
   "9011": {
     "year": 2016,
@@ -3132,7 +3503,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "New London",
     "diff_margin": -7.874734477779569,
-    "diff_density": 14.392479845987253
+    "diff_density": 14.392479845987253,
+    "unemployment": 5.4
   },
   "9013": {
     "year": 2016,
@@ -3143,7 +3515,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "Tolland",
     "diff_margin": -5.400491082967179,
-    "diff_density": 15.735089344482105
+    "diff_density": 15.735089344482105,
+    "unemployment": 4.8
   },
   "9015": {
     "year": 2016,
@@ -3154,7 +3527,8 @@ export const counties = {
     "statenam": "Connecticut",
     "cty_name": "Windham",
     "diff_margin": -12.889438559113053,
-    "diff_density": 8.180204129379419
+    "diff_density": 8.180204129379419,
+    "unemployment": 5.8
   },
   "10001": {
     "year": 2016,
@@ -3165,7 +3539,8 @@ export const counties = {
     "statenam": "Delaware",
     "cty_name": "Kent",
     "diff_margin": -6.820030032456593,
-    "diff_density": 9.502694394213393
+    "diff_density": 9.502694394213393,
+    "unemployment": 5.1
   },
   "10003": {
     "year": 2016,
@@ -3176,7 +3551,8 @@ export const counties = {
     "statenam": "Delaware",
     "cty_name": "New Castle",
     "diff_margin": -3.9960086893998508,
-    "diff_density": 22.177104318656347
+    "diff_density": 22.177104318656347,
+    "unemployment": 4.5
   },
   "10005": {
     "year": 2016,
@@ -3187,7 +3563,11 @@ export const counties = {
     "statenam": "Delaware",
     "cty_name": "Sussex",
     "diff_margin": -5.711950403538289,
-    "diff_density": 13.439483804803004
+    "diff_density": 13.439483804803004,
+    "unemployment": 3.7
+  },
+  "11001": {
+    "unemployment": 6.5
   },
   "12001": {
     "year": 2016,
@@ -3198,7 +3578,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Alachua",
     "diff_margin": 1.082504009325099,
-    "diff_density": 8.464660922036074
+    "diff_density": 8.464660922036074,
+    "unemployment": 4.4
   },
   "12003": {
     "year": 2016,
@@ -3209,7 +3590,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Baker",
     "diff_margin": -3.61320405255659,
-    "diff_density": 2.168093570049379
+    "diff_density": 2.168093570049379,
+    "unemployment": 4.7
   },
   "12005": {
     "year": 2016,
@@ -3220,7 +3602,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Bay",
     "diff_margin": -2.7233090842331116,
-    "diff_density": 9.615202647469857
+    "diff_density": 9.615202647469857,
+    "unemployment": 4.6
   },
   "12007": {
     "year": 2016,
@@ -3231,7 +3614,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Bradford",
     "diff_margin": -4.410715820796824,
-    "diff_density": 1.5752592189413548
+    "diff_density": 1.5752592189413548,
+    "unemployment": 4.2
   },
   "12009": {
     "year": 2016,
@@ -3242,7 +3626,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Brevard",
     "diff_margin": -5.045523085096569,
-    "diff_density": 28.3403806391903
+    "diff_density": 28.3403806391903,
+    "unemployment": 5.2
   },
   "12011": {
     "year": 2016,
@@ -3253,7 +3638,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Broward",
     "diff_margin": -0.7280255992377533,
-    "diff_density": 54.898620835021006
+    "diff_density": 54.898620835021006,
+    "unemployment": 4.6
   },
   "12013": {
     "year": 2016,
@@ -3264,7 +3650,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Calhoun",
     "diff_margin": -6.677492994890393,
-    "diff_density": -0.1460476266018027
+    "diff_density": -0.1460476266018027,
+    "unemployment": 5.9
   },
   "12015": {
     "year": 2016,
@@ -3275,7 +3662,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Charlotte",
     "diff_margin": -7.703198613000012,
-    "diff_density": 17.113167519256777
+    "diff_density": 17.113167519256777,
+    "unemployment": 5.3
   },
   "12017": {
     "year": 2016,
@@ -3286,7 +3674,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Citrus",
     "diff_margin": -9.887160447292377,
-    "diff_density": 9.723104693140783
+    "diff_density": 9.723104693140783,
+    "unemployment": 6.8
   },
   "12019": {
     "year": 2016,
@@ -3297,7 +3686,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Clay",
     "diff_margin": -0.5631771386666458,
-    "diff_density": 16.17278575683369
+    "diff_density": 16.17278575683369,
+    "unemployment": 4.4
   },
   "12021": {
     "year": 2016,
@@ -3308,7 +3698,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Collier",
     "diff_margin": 1.0714738570716378,
-    "diff_density": 10.704172304735977
+    "diff_density": 10.704172304735977,
+    "unemployment": 5.3
   },
   "12023": {
     "year": 2016,
@@ -3319,7 +3710,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Columbia",
     "diff_margin": -4.668957345971563,
-    "diff_density": 1.919287084519226
+    "diff_density": 1.919287084519226,
+    "unemployment": 4.8
   },
   "12027": {
     "year": 2016,
@@ -3330,7 +3722,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "DeSoto",
     "diff_margin": -7.359716569092093,
-    "diff_density": 1.401658556493894
+    "diff_density": 1.401658556493894,
+    "unemployment": 6.1
   },
   "12029": {
     "year": 2016,
@@ -3341,7 +3734,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Dixie",
     "diff_margin": -8.266009441821716,
-    "diff_density": 0.3748783774200426
+    "diff_density": 0.3748783774200426,
+    "unemployment": 5.3
   },
   "12031": {
     "year": 2016,
@@ -3352,7 +3746,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Duval",
     "diff_margin": -0.2750497511277459,
-    "diff_density": 22.152788018735464
+    "diff_density": 22.152788018735464,
+    "unemployment": 5.1
   },
   "12033": {
     "year": 2016,
@@ -3363,7 +3758,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Escambia",
     "diff_margin": -1.5080939785896632,
-    "diff_density": 4.729334308259439
+    "diff_density": 4.729334308259439,
+    "unemployment": 5
   },
   "12035": {
     "year": 2016,
@@ -3374,7 +3770,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Flagler",
     "diff_margin": -7.577278839287267,
-    "diff_density": 14.045150578832448
+    "diff_density": 14.045150578832448,
+    "unemployment": 5.4
   },
   "12037": {
     "year": 2016,
@@ -3385,7 +3782,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Franklin",
     "diff_margin": -4.747809428619028,
-    "diff_density": 0.9862263198249579
+    "diff_density": 0.9862263198249579,
+    "unemployment": 4.1
   },
   "12039": {
     "year": 2016,
@@ -3396,7 +3794,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Gadsden",
     "diff_margin": -2.179315639295254,
-    "diff_density": -0.8085877249046192
+    "diff_density": -0.8085877249046192,
+    "unemployment": 6.3
   },
   "12041": {
     "year": 2016,
@@ -3407,7 +3806,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Gilchrist",
     "diff_margin": -6.521850795913515,
-    "diff_density": 1.453438572409059
+    "diff_density": 1.453438572409059,
+    "unemployment": 5.1
   },
   "12043": {
     "year": 2016,
@@ -3418,7 +3818,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Glades",
     "diff_margin": -11.00515499425947,
-    "diff_density": 0.45315876974231095
+    "diff_density": 0.45315876974231095,
+    "unemployment": 6.9
   },
   "12045": {
     "year": 2016,
@@ -3429,7 +3830,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Gulf",
     "diff_margin": -4.769071301002882,
-    "diff_density": 0.30579954256130293
+    "diff_density": 0.30579954256130293,
+    "unemployment": 4.3
   },
   "12047": {
     "year": 2016,
@@ -3440,7 +3842,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Hamilton",
     "diff_margin": -6.372355531095209,
-    "diff_density": 0.0893929426419362
+    "diff_density": 0.0893929426419362,
+    "unemployment": 4.4
   },
   "12049": {
     "year": 2016,
@@ -3451,7 +3854,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Hardee",
     "diff_margin": -5.754247063481593,
-    "diff_density": 0.5502721941735391
+    "diff_density": 0.5502721941735391,
+    "unemployment": 7.2
   },
   "12051": {
     "year": 2016,
@@ -3462,7 +3866,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Hendry",
     "diff_margin": -5.140905816675669,
-    "diff_density": 0.7943526350032535
+    "diff_density": 0.7943526350032535,
+    "unemployment": 11.5
   },
   "12053": {
     "year": 2016,
@@ -3473,7 +3878,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Hernando",
     "diff_margin": -11.317075140075417,
-    "diff_density": 21.606779531891476
+    "diff_density": 21.606779531891476,
+    "unemployment": 6
   },
   "12055": {
     "year": 2016,
@@ -3484,7 +3890,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Highlands",
     "diff_margin": -5.364483757046656,
-    "diff_density": 3.093697743502979
+    "diff_density": 3.093697743502979,
+    "unemployment": 6.9
   },
   "12057": {
     "year": 2016,
@@ -3495,7 +3902,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Hillsborough",
     "diff_margin": -1.3467353194235372,
-    "diff_density": 51.92383372050847
+    "diff_density": 51.92383372050847,
+    "unemployment": 4.5
   },
   "12059": {
     "year": 2016,
@@ -3506,7 +3914,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Holmes",
     "diff_margin": -5.263541029861274,
-    "diff_density": 0.4859885542420308
+    "diff_density": 0.4859885542420308,
+    "unemployment": 5.6
   },
   "12061": {
     "year": 2016,
@@ -3517,7 +3926,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Indian River",
     "diff_margin": -2.177022791844493,
-    "diff_density": 16.772017221150577
+    "diff_density": 16.772017221150577,
+    "unemployment": 6.6
   },
   "12063": {
     "year": 2016,
@@ -3528,7 +3938,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Jackson",
     "diff_margin": -4.660419107491549,
-    "diff_density": 0.05853033472803304
+    "diff_density": 0.05853033472803304,
+    "unemployment": 5.4
   },
   "12065": {
     "year": 2016,
@@ -3539,7 +3950,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Jefferson",
     "diff_margin": -4.240247349823321,
-    "diff_density": -0.27454439057014035
+    "diff_density": -0.27454439057014035,
+    "unemployment": 5.3
   },
   "12067": {
     "year": 2016,
@@ -3550,7 +3962,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Lafayette",
     "diff_margin": -4.950740740740743,
-    "diff_density": -0.03921992602270841
+    "diff_density": -0.03921992602270841,
+    "unemployment": 3.8
   },
   "12069": {
     "year": 2016,
@@ -3561,7 +3974,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Lake",
     "diff_margin": -4.136128971500547,
-    "diff_density": 20.3445834310194
+    "diff_density": 20.3445834310194,
+    "unemployment": 4.7
   },
   "12071": {
     "year": 2016,
@@ -3572,7 +3986,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Lee",
     "diff_margin": -3.1069587196935515,
-    "diff_density": 76.00724936584623
+    "diff_density": 76.00724936584623,
+    "unemployment": 4.7
   },
   "12073": {
     "year": 2016,
@@ -3583,7 +3998,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Leon",
     "diff_margin": -0.7459305578410422,
-    "diff_density": 5.354848166754124
+    "diff_density": 5.354848166754124,
+    "unemployment": 4.7
   },
   "12075": {
     "year": 2016,
@@ -3594,7 +4010,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Levy",
     "diff_margin": -6.973016987659417,
-    "diff_density": 0.8696447894402652
+    "diff_density": 0.8696447894402652,
+    "unemployment": 5.2
   },
   "12077": {
     "year": 2016,
@@ -3605,7 +4022,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Liberty",
     "diff_margin": -8.922792109256449,
-    "diff_density": 0.013463066685815761
+    "diff_density": 0.013463066685815761,
+    "unemployment": 5.4
   },
   "12079": {
     "year": 2016,
@@ -3616,7 +4034,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Madison",
     "diff_margin": -6.45228272374456,
-    "diff_density": -0.30216825921402446
+    "diff_density": -0.30216825921402446,
+    "unemployment": 5.3
   },
   "12081": {
     "year": 2016,
@@ -3627,7 +4046,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Manatee",
     "diff_margin": -3.5217981638014564,
-    "diff_density": 33.693163555112875
+    "diff_density": 33.693163555112875,
+    "unemployment": 4.6
   },
   "12083": {
     "year": 2016,
@@ -3638,7 +4058,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Marion",
     "diff_margin": -5.900930452474427,
-    "diff_density": 8.266436843267812
+    "diff_density": 8.266436843267812,
+    "unemployment": 5.9
   },
   "12085": {
     "year": 2016,
@@ -3649,7 +4070,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Martin",
     "diff_margin": -2.9966290339510877,
-    "diff_density": 12.638741029698593
+    "diff_density": 12.638741029698593,
+    "unemployment": 5
   },
   "12086": {
     "year": 2016,
@@ -3660,7 +4082,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Miami-Dade",
     "diff_margin": 2.0084344058773667,
-    "diff_density": 52.87832367261768
+    "diff_density": 52.87832367261768,
+    "unemployment": 5.6
   },
   "12087": {
     "year": 2016,
@@ -3671,7 +4094,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Monroe",
     "diff_margin": -5.024770702738373,
-    "diff_density": 3.435560979578554
+    "diff_density": 3.435560979578554,
+    "unemployment": 3.1
   },
   "12089": {
     "year": 2016,
@@ -3682,7 +4106,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Nassau",
     "diff_margin": -1.9773670412789812,
-    "diff_density": 9.265498273310321
+    "diff_density": 9.265498273310321,
+    "unemployment": 4.6
   },
   "12091": {
     "year": 2016,
@@ -3693,7 +4118,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Okaloosa",
     "diff_margin": -1.1537644674488625,
-    "diff_density": 6.294246170384312
+    "diff_density": 6.294246170384312,
+    "unemployment": 3.9
   },
   "12093": {
     "year": 2016,
@@ -3704,7 +4130,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Okeechobee",
     "diff_margin": -10.40205399061033,
-    "diff_density": 1.69899299007686
+    "diff_density": 1.69899299007686,
+    "unemployment": 5.8
   },
   "12095": {
     "year": 2016,
@@ -3715,7 +4142,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Orange",
     "diff_margin": 1.7045731037009872,
-    "diff_density": 87.93199218533812
+    "diff_density": 87.93199218533812,
+    "unemployment": 4.3
   },
   "12097": {
     "year": 2016,
@@ -3726,7 +4154,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Osceola",
     "diff_margin": -0.9324455461812633,
-    "diff_density": 23.57105277034917
+    "diff_density": 23.57105277034917,
+    "unemployment": 5
   },
   "12099": {
     "year": 2016,
@@ -3737,7 +4166,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Palm Beach",
     "diff_margin": -1.6988586274315907,
-    "diff_density": 28.692476646901127
+    "diff_density": 28.692476646901127,
+    "unemployment": 5.1
   },
   "12101": {
     "year": 2016,
@@ -3748,7 +4178,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Pasco",
     "diff_margin": -8.637588097037543,
-    "diff_density": 36.472311183708484
+    "diff_density": 36.472311183708484,
+    "unemployment": 5.1
   },
   "12103": {
     "year": 2016,
@@ -3759,7 +4190,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Pinellas",
     "diff_margin": -4.769500325520838,
-    "diff_density": 123.50896274653019
+    "diff_density": 123.50896274653019,
+    "unemployment": 4.3
   },
   "12105": {
     "year": 2016,
@@ -3770,7 +4202,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Polk",
     "diff_margin": -4.803728032470374,
-    "diff_density": 19.551668224091145
+    "diff_density": 19.551668224091145,
+    "unemployment": 5.8
   },
   "12107": {
     "year": 2016,
@@ -3781,7 +4214,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Putnam",
     "diff_margin": -6.86901261791008,
-    "diff_density": 1.825072153046925
+    "diff_density": 1.825072153046925,
+    "unemployment": 6
   },
   "12109": {
     "year": 2016,
@@ -3792,7 +4226,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "St. Johns",
     "diff_margin": 0.9039034547480789,
-    "diff_density": 35.95400316323983
+    "diff_density": 35.95400316323983,
+    "unemployment": 3.6
   },
   "12111": {
     "year": 2016,
@@ -3803,7 +4238,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "St. Lucie",
     "diff_margin": -6.065030021814664,
-    "diff_density": 30.95332942842657
+    "diff_density": 30.95332942842657,
+    "unemployment": 6
   },
   "12113": {
     "year": 2016,
@@ -3814,7 +4250,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Santa Rosa",
     "diff_margin": -2.07736114923598,
-    "diff_density": 10.468564367691116
+    "diff_density": 10.468564367691116,
+    "unemployment": 4.6
   },
   "12115": {
     "year": 2016,
@@ -3825,7 +4262,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Sarasota",
     "diff_margin": -3.0950752924392475,
-    "diff_density": 37.833526723874286
+    "diff_density": 37.833526723874286,
+    "unemployment": 4.5
   },
   "12117": {
     "year": 2016,
@@ -3836,7 +4274,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Seminole",
     "diff_margin": 0.8385498067983832,
-    "diff_density": 50.96253411810358
+    "diff_density": 50.96253411810358,
+    "unemployment": 4.2
   },
   "12119": {
     "year": 2016,
@@ -3847,7 +4286,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Sumter",
     "diff_margin": -2.7545006458009915,
-    "diff_density": 29.5640769385479
+    "diff_density": 29.5640769385479,
+    "unemployment": 6.7
   },
   "12121": {
     "year": 2016,
@@ -3858,7 +4298,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Suwannee",
     "diff_margin": -5.771954484605086,
-    "diff_density": 1.522213346888389
+    "diff_density": 1.522213346888389,
+    "unemployment": 5.1
   },
   "12123": {
     "year": 2016,
@@ -3869,7 +4310,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Taylor",
     "diff_margin": -7.150176743183533,
-    "diff_density": 0.15380912672168456
+    "diff_density": 0.15380912672168456,
+    "unemployment": 5.5
   },
   "12125": {
     "year": 2016,
@@ -3880,7 +4322,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Union",
     "diff_margin": -7.018652731424552,
-    "diff_density": 1.23411726063393
+    "diff_density": 1.23411726063393,
+    "unemployment": 4.6
   },
   "12127": {
     "year": 2016,
@@ -3891,7 +4334,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Volusia",
     "diff_margin": -7.135405986846145,
-    "diff_density": 23.408626195471527
+    "diff_density": 23.408626195471527,
+    "unemployment": 5
   },
   "12129": {
     "year": 2016,
@@ -3902,7 +4346,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Wakulla",
     "diff_margin": -6.9631908237747595,
-    "diff_density": 1.1325955608324279
+    "diff_density": 1.1325955608324279,
+    "unemployment": 4.1
   },
   "12131": {
     "year": 2016,
@@ -3913,7 +4358,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Walton",
     "diff_margin": -2.9654098751452658,
-    "diff_density": 4.882283302172283
+    "diff_density": 4.882283302172283,
+    "unemployment": 4.1
   },
   "12133": {
     "year": 2016,
@@ -3924,7 +4370,8 @@ export const counties = {
     "statenam": "Florida",
     "cty_name": "Washington",
     "diff_margin": -5.35105527638191,
-    "diff_density": 0.2514824982841475
+    "diff_density": 0.2514824982841475,
+    "unemployment": 5
   },
   "13001": {
     "year": 2016,
@@ -3935,7 +4382,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Appling",
     "diff_margin": -4.333061545052118,
-    "diff_density": -0.15955588861718084
+    "diff_density": -0.15955588861718084,
+    "unemployment": 6.9
   },
   "13003": {
     "year": 2016,
@@ -3946,7 +4394,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Atkinson",
     "diff_margin": -5.3218894009216555,
-    "diff_density": -0.8771848665213042
+    "diff_density": -0.8771848665213042,
+    "unemployment": 4.6
   },
   "13005": {
     "year": 2016,
@@ -3957,7 +4406,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Bacon",
     "diff_margin": -4.9828428927680815,
-    "diff_density": 0.30777322298708576
+    "diff_density": 0.30777322298708576,
+    "unemployment": 5.2
   },
   "13007": {
     "year": 2016,
@@ -3968,7 +4418,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Baker",
     "diff_margin": -4.831111111111106,
-    "diff_density": -0.438734865765924
+    "diff_density": -0.438734865765924,
+    "unemployment": 8.3
   },
   "13009": {
     "year": 2016,
@@ -3979,7 +4430,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Baldwin",
     "diff_margin": -2.6910108864696767,
-    "diff_density": -0.6351349674216493
+    "diff_density": -0.6351349674216493,
+    "unemployment": 7.2
   },
   "13011": {
     "year": 2016,
@@ -3990,7 +4442,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Banks",
     "diff_margin": -2.7426058162971483,
-    "diff_density": 3.238045154896806
+    "diff_density": 3.238045154896806,
+    "unemployment": 4.8
   },
   "13013": {
     "year": 2016,
@@ -4001,7 +4454,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Barrow",
     "diff_margin": -1.0949687803524348,
-    "diff_density": 22.636585989645056
+    "diff_density": 22.636585989645056,
+    "unemployment": 4.6
   },
   "13015": {
     "year": 2016,
@@ -4012,7 +4466,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Bartow",
     "diff_margin": -2.55500980566946,
-    "diff_density": 7.5297876137006625
+    "diff_density": 7.5297876137006625,
+    "unemployment": 5
   },
   "13017": {
     "year": 2016,
@@ -4023,7 +4478,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Ben Hill",
     "diff_margin": -6.758760763126794,
-    "diff_density": -0.12936670398208605
+    "diff_density": -0.12936670398208605,
+    "unemployment": 8.1
   },
   "13019": {
     "year": 2016,
@@ -4034,7 +4490,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Berrien",
     "diff_margin": -4.6683513637056215,
-    "diff_density": 0.8031245850851967
+    "diff_density": 0.8031245850851967,
+    "unemployment": 6.1
   },
   "13021": {
     "year": 2016,
@@ -4045,7 +4502,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Bibb",
     "diff_margin": -0.671314142678348,
-    "diff_density": -25.587809096732855
+    "diff_density": -25.587809096732855,
+    "unemployment": 5.7
   },
   "13023": {
     "year": 2016,
@@ -4056,7 +4514,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Bleckley",
     "diff_margin": -3.687320632346978,
-    "diff_density": 0.12634872840135003
+    "diff_density": 0.12634872840135003,
+    "unemployment": 7.6
   },
   "13025": {
     "year": 2016,
@@ -4067,7 +4526,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Brantley",
     "diff_margin": -5.791153540175021,
-    "diff_density": 0.6378849805588196
+    "diff_density": 0.6378849805588196,
+    "unemployment": 6.6
   },
   "13027": {
     "year": 2016,
@@ -4078,7 +4538,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Brooks",
     "diff_margin": -6.591052967453734,
-    "diff_density": -0.9572933779535546
+    "diff_density": -0.9572933779535546,
+    "unemployment": 4.8
   },
   "13029": {
     "year": 2016,
@@ -4089,7 +4550,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Bryan",
     "diff_margin": -0.938477063002054,
-    "diff_density": 3.6905424685184727
+    "diff_density": 3.6905424685184727,
+    "unemployment": 4.8
   },
   "13031": {
     "year": 2016,
@@ -4100,7 +4562,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Bulloch",
     "diff_margin": -3.3428980166452718,
-    "diff_density": 0.09572093161516904
+    "diff_density": 0.09572093161516904,
+    "unemployment": 5.6
   },
   "13033": {
     "year": 2016,
@@ -4111,7 +4574,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Burke",
     "diff_margin": -4.681764705882358,
-    "diff_density": -0.523664824600651
+    "diff_density": -0.523664824600651,
+    "unemployment": 7.5
   },
   "13035": {
     "year": 2016,
@@ -4122,7 +4586,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Butts",
     "diff_margin": -4.5639210720692205,
-    "diff_density": 0.516496556212374
+    "diff_density": 0.516496556212374,
+    "unemployment": 5.2
   },
   "13037": {
     "year": 2016,
@@ -4133,7 +4598,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Calhoun",
     "diff_margin": -1.0896490360850208,
-    "diff_density": -0.5845347219745332
+    "diff_density": -0.5845347219745332,
+    "unemployment": 6
   },
   "13039": {
     "year": 2016,
@@ -4144,7 +4610,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Camden",
     "diff_margin": -4.044329349269592,
-    "diff_density": 1.378622883429582
+    "diff_density": 1.378622883429582,
+    "unemployment": 5.7
   },
   "13043": {
     "year": 2016,
@@ -4155,7 +4622,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Candler",
     "diff_margin": -5.560827788128826,
-    "diff_density": 0.9383607636603042
+    "diff_density": 0.9383607636603042,
+    "unemployment": 4.7
   },
   "13045": {
     "year": 2016,
@@ -4166,7 +4634,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Carroll",
     "diff_margin": -2.142962692026334,
-    "diff_density": 4.399274665384311
+    "diff_density": 4.399274665384311,
+    "unemployment": 5.9
   },
   "13047": {
     "year": 2016,
@@ -4177,7 +4646,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Catoosa",
     "diff_margin": -4.670562052055828,
-    "diff_density": 17.460513073507627
+    "diff_density": 17.460513073507627,
+    "unemployment": 4.8
   },
   "13049": {
     "year": 2016,
@@ -4188,7 +4658,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Charlton",
     "diff_margin": -6.750099800399202,
-    "diff_density": 0.31110602652602193
+    "diff_density": 0.31110602652602193,
+    "unemployment": 5.8
   },
   "13051": {
     "year": 2016,
@@ -4199,7 +4670,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Chatham",
     "diff_margin": 0.19166536179525195,
-    "diff_density": -6.129962480067519
+    "diff_density": -6.129962480067519,
+    "unemployment": 5
   },
   "13053": {
     "year": 2016,
@@ -4210,7 +4682,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Chattahoochee",
     "diff_margin": -6.083179190751444,
-    "diff_density": -0.42595722441103234
+    "diff_density": -0.42595722441103234,
+    "unemployment": 8.6
   },
   "13055": {
     "year": 2016,
@@ -4221,7 +4694,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Chattooga",
     "diff_margin": -8.981127819548874,
-    "diff_density": 1.3564613518861321
+    "diff_density": 1.3564613518861321,
+    "unemployment": 6.1
   },
   "13057": {
     "year": 2016,
@@ -4232,7 +4706,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Cherokee",
     "diff_margin": 2.5412587412587406,
-    "diff_density": 29.894009296369177
+    "diff_density": 29.894009296369177,
+    "unemployment": 4.1
   },
   "13059": {
     "year": 2016,
@@ -4243,7 +4718,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Clarke",
     "diff_margin": 3.742045634427086,
-    "diff_density": 32.32154362416105
+    "diff_density": 32.32154362416105,
+    "unemployment": 5.4
   },
   "13061": {
     "year": 2016,
@@ -4254,7 +4730,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Clay",
     "diff_margin": -6.641290322580645,
-    "diff_density": -0.6747282219265021
+    "diff_density": -0.6747282219265021,
+    "unemployment": 9.6
   },
   "13063": {
     "year": 2016,
@@ -4265,7 +4742,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Clayton",
     "diff_margin": 0.2543238155004701,
-    "diff_density": -48.24871512326058
+    "diff_density": -48.24871512326058,
+    "unemployment": 6.4
   },
   "13065": {
     "year": 2016,
@@ -4276,7 +4754,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Clinch",
     "diff_margin": -6.430704052394596,
-    "diff_density": -0.03708955037364703
+    "diff_density": -0.03708955037364703,
+    "unemployment": 6
   },
   "13067": {
     "year": 2016,
@@ -4287,7 +4766,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Cobb",
     "diff_margin": 5.907095311619244,
-    "diff_density": 48.022953909586136
+    "diff_density": 48.022953909586136,
+    "unemployment": 4.4
   },
   "13069": {
     "year": 2016,
@@ -4298,7 +4778,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Coffee",
     "diff_margin": -5.557069660333912,
-    "diff_density": -0.9672456964006244
+    "diff_density": -0.9672456964006244,
+    "unemployment": 5.6
   },
   "13071": {
     "year": 2016,
@@ -4309,7 +4790,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Colquitt",
     "diff_margin": -4.353849323131254,
-    "diff_density": 0.4884066893319883
+    "diff_density": 0.4884066893319883,
+    "unemployment": 5.3
   },
   "13073": {
     "year": 2016,
@@ -4320,7 +4802,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Columbia",
     "diff_margin": 1.4661972269823949,
-    "diff_density": 18.15615567582475
+    "diff_density": 18.15615567582475,
+    "unemployment": 4.8
   },
   "13075": {
     "year": 2016,
@@ -4331,7 +4814,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Cook",
     "diff_margin": -4.833769460086124,
-    "diff_density": 0.02038387039971923
+    "diff_density": 0.02038387039971923,
+    "unemployment": 5.2
   },
   "13077": {
     "year": 2016,
@@ -4342,7 +4826,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Coweta",
     "diff_margin": -0.27235586724292915,
-    "diff_density": 13.060970083240719
+    "diff_density": 13.060970083240719,
+    "unemployment": 4.9
   },
   "13079": {
     "year": 2016,
@@ -4353,7 +4838,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Crawford",
     "diff_margin": -5.724002326934269,
-    "diff_density": 0.07306472960078736
+    "diff_density": 0.07306472960078736,
+    "unemployment": 5.5
   },
   "13081": {
     "year": 2016,
@@ -4364,7 +4850,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Crisp",
     "diff_margin": -5.020000000000003,
-    "diff_density": 0.3848580233326011
+    "diff_density": 0.3848580233326011,
+    "unemployment": 5.9
   },
   "13083": {
     "year": 2016,
@@ -4375,7 +4862,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Dade",
     "diff_margin": -7.970298172491185,
-    "diff_density": 1.2546959420623054
+    "diff_density": 1.2546959420623054,
+    "unemployment": 5.1
   },
   "13085": {
     "year": 2016,
@@ -4386,7 +4874,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Dawson",
     "diff_margin": 0.2530136986301379,
-    "diff_density": 6.810085376843894
+    "diff_density": 6.810085376843894,
+    "unemployment": 4.5
   },
   "13087": {
     "year": 2016,
@@ -4397,7 +4886,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Decatur",
     "diff_margin": -3.704045712053137,
-    "diff_density": -0.41494188967411105
+    "diff_density": -0.41494188967411105,
+    "unemployment": 6.5
   },
   "13089": {
     "year": 2016,
@@ -4408,7 +4898,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "DeKalb",
     "diff_margin": 3.0427234166241277,
-    "diff_density": -38.83087226250086
+    "diff_density": -38.83087226250086,
+    "unemployment": 5.2
   },
   "13091": {
     "year": 2016,
@@ -4419,7 +4910,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Dodge",
     "diff_margin": -5.33268048606147,
-    "diff_density": -1.4840490834660915
+    "diff_density": -1.4840490834660915,
+    "unemployment": 7
   },
   "13093": {
     "year": 2016,
@@ -4430,7 +4922,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Dooly",
     "diff_margin": -4.671991657977053,
-    "diff_density": -1.1827876715823855
+    "diff_density": -1.1827876715823855,
+    "unemployment": 5.5
   },
   "13095": {
     "year": 2016,
@@ -4441,7 +4934,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Dougherty",
     "diff_margin": -0.8931098010316845,
-    "diff_density": -12.147246341537624
+    "diff_density": -12.147246341537624,
+    "unemployment": 6.8
   },
   "13097": {
     "year": 2016,
@@ -4452,7 +4946,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Douglas",
     "diff_margin": 2.5293663383596225,
-    "diff_density": 10.47464637376919
+    "diff_density": 10.47464637376919,
+    "unemployment": 5.3
   },
   "13099": {
     "year": 2016,
@@ -4463,7 +4958,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Early",
     "diff_margin": -6.3760560434964475,
-    "diff_density": -1.1109065725043408
+    "diff_density": -1.1109065725043408,
+    "unemployment": 6.7
   },
   "13101": {
     "year": 2016,
@@ -4474,7 +4970,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Echols",
     "diff_margin": -2.4234042553191504,
-    "diff_density": 0.17207597194437074
+    "diff_density": 0.17207597194437074,
+    "unemployment": 4.5
   },
   "13103": {
     "year": 2016,
@@ -4485,7 +4982,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Effingham",
     "diff_margin": -3.0348001709767054,
-    "diff_density": 5.40425162235713
+    "diff_density": 5.40425162235713,
+    "unemployment": 4.7
   },
   "13105": {
     "year": 2016,
@@ -4496,7 +4994,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Elbert",
     "diff_margin": -7.373953488372095,
-    "diff_density": -0.6625420156098656
+    "diff_density": -0.6625420156098656,
+    "unemployment": 6.2
   },
   "13107": {
     "year": 2016,
@@ -4507,7 +5006,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Emanuel",
     "diff_margin": -5.168918091349838,
-    "diff_density": -0.36369086100499715
+    "diff_density": -0.36369086100499715,
+    "unemployment": 7.4
   },
   "13109": {
     "year": 2016,
@@ -4518,7 +5018,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Evans",
     "diff_margin": -4.218539700166577,
-    "diff_density": 0.20920700027345163
+    "diff_density": 0.20920700027345163,
+    "unemployment": 4.8
   },
   "13111": {
     "year": 2016,
@@ -4529,7 +5030,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Fannin",
     "diff_margin": -3.929020741244475,
-    "diff_density": 4.5199420769549015
+    "diff_density": 4.5199420769549015,
+    "unemployment": 5
   },
   "13113": {
     "year": 2016,
@@ -4540,7 +5042,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Fayette",
     "diff_margin": 4.809944193286633,
-    "diff_density": 9.35861994442729
+    "diff_density": 9.35861994442729,
+    "unemployment": 4.7
   },
   "13115": {
     "year": 2016,
@@ -4551,7 +5054,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Floyd",
     "diff_margin": -2.711824817518245,
-    "diff_density": 2.7887160479300235
+    "diff_density": 2.7887160479300235,
+    "unemployment": 5.9
   },
   "13117": {
     "year": 2016,
@@ -4562,7 +5066,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Forsyth",
     "diff_margin": 6.243617362352797,
-    "diff_density": 69.55871440049998
+    "diff_density": 69.55871440049998,
+    "unemployment": 4.1
   },
   "13119": {
     "year": 2016,
@@ -4573,7 +5078,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Franklin",
     "diff_margin": -4.64160254897333,
-    "diff_density": 2.7253537284894875
+    "diff_density": 2.7253537284894875,
+    "unemployment": 5.5
   },
   "13121": {
     "year": 2016,
@@ -4584,7 +5090,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Fulton",
     "diff_margin": 4.94733088883595,
-    "diff_density": 18.547119229819828
+    "diff_density": 18.547119229819828,
+    "unemployment": 5.2
   },
   "13123": {
     "year": 2016,
@@ -4595,7 +5102,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Gilmer",
     "diff_margin": -2.3920404310548253,
-    "diff_density": 3.9749420921836176
+    "diff_density": 3.9749420921836176,
+    "unemployment": 5.4
   },
   "13125": {
     "year": 2016,
@@ -4606,7 +5114,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Glascock",
     "diff_margin": -3.2719424460431643,
-    "diff_density": 0.40023792959510196
+    "diff_density": 0.40023792959510196,
+    "unemployment": 6.3
   },
   "13127": {
     "year": 2016,
@@ -4617,7 +5126,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Glynn",
     "diff_margin": -1.5880517611116005,
-    "diff_density": 2.1682727814174996
+    "diff_density": 2.1682727814174996,
+    "unemployment": 5
   },
   "13129": {
     "year": 2016,
@@ -4628,7 +5138,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Gordon",
     "diff_margin": -3.5111936339522565,
-    "diff_density": 5.487712824260136
+    "diff_density": 5.487712824260136,
+    "unemployment": 5.3
   },
   "13131": {
     "year": 2016,
@@ -4639,7 +5150,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Grady",
     "diff_margin": -3.680736910852289,
-    "diff_density": -0.4579127890348289
+    "diff_density": -0.4579127890348289,
+    "unemployment": 5.4
   },
   "13133": {
     "year": 2016,
@@ -4650,7 +5162,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Greene",
     "diff_margin": -2.291955610916091,
-    "diff_density": 1.3132066900681387
+    "diff_density": 1.3132066900681387,
+    "unemployment": 5.9
   },
   "13135": {
     "year": 2016,
@@ -4661,7 +5174,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Gwinnett",
     "diff_margin": 6.29622215842263,
-    "diff_density": 63.21276313955104
+    "diff_density": 63.21276313955104,
+    "unemployment": 4.6
   },
   "13137": {
     "year": 2016,
@@ -4672,7 +5186,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Habersham",
     "diff_margin": -0.3244146825396843,
-    "diff_density": 5.368528582785288
+    "diff_density": 5.368528582785288,
+    "unemployment": 5
   },
   "13139": {
     "year": 2016,
@@ -4683,7 +5198,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Hall",
     "diff_margin": 1.8519535739238293,
-    "diff_density": 22.325425428993356
+    "diff_density": 22.325425428993356,
+    "unemployment": 4.4
   },
   "13141": {
     "year": 2016,
@@ -4694,7 +5210,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Hancock",
     "diff_margin": -5.472071668533033,
-    "diff_density": -1.0896371651407257
+    "diff_density": -1.0896371651407257,
+    "unemployment": 8.9
   },
   "13143": {
     "year": 2016,
@@ -4705,7 +5222,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Haralson",
     "diff_margin": -4.215346823363079,
-    "diff_density": 3.3370276783499264
+    "diff_density": 3.3370276783499264,
+    "unemployment": 5.6
   },
   "13145": {
     "year": 2016,
@@ -4716,7 +5234,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Harris",
     "diff_margin": -1.857608589555884,
-    "diff_density": 1.9474867958695299
+    "diff_density": 1.9474867958695299,
+    "unemployment": 4.7
   },
   "13147": {
     "year": 2016,
@@ -4727,7 +5246,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Hart",
     "diff_margin": -4.547371241440906,
-    "diff_density": 2.432451052110679
+    "diff_density": 2.432451052110679,
+    "unemployment": 5.3
   },
   "13149": {
     "year": 2016,
@@ -4738,7 +5258,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Heard",
     "diff_margin": -5.05475986685687,
-    "diff_density": 0.11801945748741893
+    "diff_density": 0.11801945748741893,
+    "unemployment": 5.8
   },
   "13151": {
     "year": 2016,
@@ -4749,7 +5270,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Henry",
     "diff_margin": 3.011190366902291,
-    "diff_density": 20.669862788315243
+    "diff_density": 20.669862788315243,
+    "unemployment": 5.4
   },
   "13153": {
     "year": 2016,
@@ -4760,7 +5282,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Houston",
     "diff_margin": -1.3894944508806404,
-    "diff_density": 4.005622303882404
+    "diff_density": 4.005622303882404,
+    "unemployment": 5.3
   },
   "13155": {
     "year": 2016,
@@ -4771,7 +5294,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Irwin",
     "diff_margin": -6.436414320852695,
-    "diff_density": -0.143759665857651
+    "diff_density": -0.143759665857651,
+    "unemployment": 7.3
   },
   "13157": {
     "year": 2016,
@@ -4782,7 +5306,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Jackson",
     "diff_margin": -1.3630173337768383,
-    "diff_density": 9.869070835541407
+    "diff_density": 9.869070835541407,
+    "unemployment": 4.1
   },
   "13159": {
     "year": 2016,
@@ -4793,7 +5318,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Jasper",
     "diff_margin": -4.925106382978722,
-    "diff_density": -0.03972241084281691
+    "diff_density": -0.03972241084281691,
+    "unemployment": 4.7
   },
   "13161": {
     "year": 2016,
@@ -4804,7 +5330,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Jeff Davis",
     "diff_margin": -6.185146394183533,
-    "diff_density": -0.7432914071476073
+    "diff_density": -0.7432914071476073,
+    "unemployment": 6.3
   },
   "13163": {
     "year": 2016,
@@ -4815,7 +5342,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Jefferson",
     "diff_margin": -3.4577819440438375,
-    "diff_density": -0.6897593496552634
+    "diff_density": -0.6897593496552634,
+    "unemployment": 7
   },
   "13165": {
     "year": 2016,
@@ -4826,7 +5354,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Jenkins",
     "diff_margin": -7.370553724456165,
-    "diff_density": -1.0235337479843345
+    "diff_density": -1.0235337479843345,
+    "unemployment": 7.1
   },
   "13167": {
     "year": 2016,
@@ -4837,7 +5366,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Johnson",
     "diff_margin": -3.727202607278649,
-    "diff_density": -0.30858585525230176
+    "diff_density": -0.30858585525230176,
+    "unemployment": 6
   },
   "13169": {
     "year": 2016,
@@ -4848,7 +5378,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Jones",
     "diff_margin": -3.6907090386457995,
-    "diff_density": 1.062450435356535
+    "diff_density": 1.062450435356535,
+    "unemployment": 4.6
   },
   "13171": {
     "year": 2016,
@@ -4859,7 +5390,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Lamar",
     "diff_margin": -4.342607260726076,
-    "diff_density": -0.08934604904631982
+    "diff_density": -0.08934604904631982,
+    "unemployment": 6.4
   },
   "13173": {
     "year": 2016,
@@ -4870,7 +5402,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Lanier",
     "diff_margin": -9.342984970290104,
-    "diff_density": -0.5968390370290386
+    "diff_density": -0.5968390370290386,
+    "unemployment": 5.3
   },
   "13175": {
     "year": 2016,
@@ -4881,7 +5414,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Laurens",
     "diff_margin": -3.6889058000822743,
-    "diff_density": -0.1898228663446062
+    "diff_density": -0.1898228663446062,
+    "unemployment": 6.4
   },
   "13177": {
     "year": 2016,
@@ -4892,7 +5426,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Lee",
     "diff_margin": -1.0056500779809987,
-    "diff_density": 1.3480971386812115
+    "diff_density": 1.3480971386812115,
+    "unemployment": 4.8
   },
   "13179": {
     "year": 2016,
@@ -4903,7 +5438,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Liberty",
     "diff_margin": -5.404983211043408,
-    "diff_density": -0.17619028174765106
+    "diff_density": -0.17619028174765106,
+    "unemployment": 5.7
   },
   "13181": {
     "year": 2016,
@@ -4914,7 +5450,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Lincoln",
     "diff_margin": -4.810000000000002,
-    "diff_density": -1.5614554615457763
+    "diff_density": -1.5614554615457763,
+    "unemployment": 5.7
   },
   "13183": {
     "year": 2016,
@@ -4925,7 +5462,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Long",
     "diff_margin": -4.929269895351666,
-    "diff_density": 0.7650578330710225
+    "diff_density": 0.7650578330710225,
+    "unemployment": 5.6
   },
   "13185": {
     "year": 2016,
@@ -4936,7 +5474,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Lowndes",
     "diff_margin": -4.942067204520143,
-    "diff_density": -4.680715020057647
+    "diff_density": -4.680715020057647,
+    "unemployment": 5.2
   },
   "13187": {
     "year": 2016,
@@ -4947,7 +5486,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Lumpkin",
     "diff_margin": -0.8588250567997413,
-    "diff_density": 5.018477361891634
+    "diff_density": 5.018477361891634,
+    "unemployment": 5
   },
   "13189": {
     "year": 2016,
@@ -4958,7 +5498,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "McDuffie",
     "diff_margin": -2.248476478204566,
-    "diff_density": -1.2621750951604085
+    "diff_density": -1.2621750951604085,
+    "unemployment": 7.2
   },
   "13191": {
     "year": 2016,
@@ -4969,7 +5510,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "McIntosh",
     "diff_margin": -6.1745817071101285,
-    "diff_density": -1.0512420457223666
+    "diff_density": -1.0512420457223666,
+    "unemployment": 5.5
   },
   "13193": {
     "year": 2016,
@@ -4980,7 +5522,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Macon",
     "diff_margin": -4.062262654536973,
-    "diff_density": -1.2296206070287532
+    "diff_density": -1.2296206070287532,
+    "unemployment": 7.6
   },
   "13195": {
     "year": 2016,
@@ -4991,7 +5534,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Madison",
     "diff_margin": -2.175362076182502,
-    "diff_density": 2.9816432290744217
+    "diff_density": 2.9816432290744217,
+    "unemployment": 4.7
   },
   "13197": {
     "year": 2016,
@@ -5002,7 +5546,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Marion",
     "diff_margin": -6.431297518064717,
-    "diff_density": 0.036721311475409024
+    "diff_density": 0.036721311475409024,
+    "unemployment": 6.9
   },
   "13199": {
     "year": 2016,
@@ -5013,7 +5558,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Meriwether",
     "diff_margin": -5.35017318374905,
-    "diff_density": -0.17269422608834262
+    "diff_density": -0.17269422608834262,
+    "unemployment": 6.8
   },
   "13201": {
     "year": 2016,
@@ -5024,7 +5570,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Miller",
     "diff_margin": -6.211811023622047,
-    "diff_density": -0.8363026697825937
+    "diff_density": -0.8363026697825937,
+    "unemployment": 5.5
   },
   "13205": {
     "year": 2016,
@@ -5035,7 +5582,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Mitchell",
     "diff_margin": -4.875555555555557,
-    "diff_density": -0.8169938877931617
+    "diff_density": -0.8169938877931617,
+    "unemployment": 6.3
   },
   "13207": {
     "year": 2016,
@@ -5046,7 +5594,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Monroe",
     "diff_margin": -2.664319526627221,
-    "diff_density": 1.0050806247788486
+    "diff_density": 1.0050806247788486,
+    "unemployment": 4.9
   },
   "13209": {
     "year": 2016,
@@ -5057,7 +5606,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Montgomery",
     "diff_margin": -5.827865168539329,
-    "diff_density": -1.136940547762192
+    "diff_density": -1.136940547762192,
+    "unemployment": 7.1
   },
   "13211": {
     "year": 2016,
@@ -5068,7 +5618,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Morgan",
     "diff_margin": -2.328298887122415,
-    "diff_density": 1.1728040880955817
+    "diff_density": 1.1728040880955817,
+    "unemployment": 4.8
   },
   "13213": {
     "year": 2016,
@@ -5079,7 +5630,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Murray",
     "diff_margin": -8.177630011270326,
-    "diff_density": 3.5011954596916937
+    "diff_density": 3.5011954596916937,
+    "unemployment": 6.6
   },
   "13215": {
     "year": 2016,
@@ -5090,7 +5642,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Muscogee",
     "diff_margin": -2.33454332552693,
-    "diff_density": -10.549173675940494
+    "diff_density": -10.549173675940494,
+    "unemployment": 6.6
   },
   "13217": {
     "year": 2016,
@@ -5101,7 +5654,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Newton",
     "diff_margin": -0.44293922853814394,
-    "diff_density": 2.036978248089355
+    "diff_density": 2.036978248089355,
+    "unemployment": 5.8
   },
   "13219": {
     "year": 2016,
@@ -5112,7 +5666,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Oconee",
     "diff_margin": 2.7937834997372555,
-    "diff_density": 6.581164469043358
+    "diff_density": 6.581164469043358,
+    "unemployment": 4
   },
   "13221": {
     "year": 2016,
@@ -5123,7 +5678,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Oglethorpe",
     "diff_margin": -3.006240601503759,
-    "diff_density": 0.857718730780622
+    "diff_density": 0.857718730780622,
+    "unemployment": 4.5
   },
   "13223": {
     "year": 2016,
@@ -5134,7 +5690,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Paulding",
     "diff_margin": 0.29953762325660804,
-    "diff_density": 23.068590096726638
+    "diff_density": 23.068590096726638,
+    "unemployment": 4.5
   },
   "13225": {
     "year": 2016,
@@ -5145,7 +5702,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Peach",
     "diff_margin": -5.890886998784936,
-    "diff_density": -5.421490650163051
+    "diff_density": -5.421490650163051,
+    "unemployment": 6.4
   },
   "13227": {
     "year": 2016,
@@ -5156,7 +5714,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Pickens",
     "diff_margin": -1.4403919324846228,
-    "diff_density": 5.61165905369301
+    "diff_density": 5.61165905369301,
+    "unemployment": 4.8
   },
   "13229": {
     "year": 2016,
@@ -5167,7 +5726,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Pierce",
     "diff_margin": -4.045051390982598,
-    "diff_density": 1.4260207273531549
+    "diff_density": 1.4260207273531549,
+    "unemployment": 5.3
   },
   "13231": {
     "year": 2016,
@@ -5178,7 +5738,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Pike",
     "diff_margin": -2.437579250720459,
-    "diff_density": 2.615309824610115
+    "diff_density": 2.615309824610115,
+    "unemployment": 5.1
   },
   "13233": {
     "year": 2016,
@@ -5189,7 +5750,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Polk",
     "diff_margin": -6.348217262325189,
-    "diff_density": 1.7724019592047213
+    "diff_density": 1.7724019592047213,
+    "unemployment": 5.7
   },
   "13235": {
     "year": 2016,
@@ -5200,7 +5762,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Pulaski",
     "diff_margin": -2.426286826014451,
-    "diff_density": -0.3419415331486153
+    "diff_density": -0.3419415331486153,
+    "unemployment": 5.6
   },
   "13237": {
     "year": 2016,
@@ -5211,7 +5774,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Putnam",
     "diff_margin": -2.6238606722510873,
-    "diff_density": 0.6047864438254393
+    "diff_density": 0.6047864438254393,
+    "unemployment": 6.8
   },
   "13239": {
     "year": 2016,
@@ -5222,7 +5786,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Quitman",
     "diff_margin": -10.102911877394632,
-    "diff_density": -0.5570642687119811
+    "diff_density": -0.5570642687119811,
+    "unemployment": 7.7
   },
   "13241": {
     "year": 2016,
@@ -5233,7 +5798,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Rabun",
     "diff_margin": -2.736773179016229,
-    "diff_density": 1.3143644422822227
+    "diff_density": 1.3143644422822227,
+    "unemployment": 5.4
   },
   "13243": {
     "year": 2016,
@@ -5244,7 +5810,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Randolph",
     "diff_margin": -2.715924006908473,
-    "diff_density": -0.3797720904165889
+    "diff_density": -0.3797720904165889,
+    "unemployment": 8.6
   },
   "13245": {
     "year": 2016,
@@ -5255,7 +5822,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Richmond",
     "diff_margin": -1.5257434091151652,
-    "diff_density": -12.542044214226223
+    "diff_density": -12.542044214226223,
+    "unemployment": 6.5
   },
   "13247": {
     "year": 2016,
@@ -5266,7 +5834,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Rockdale",
     "diff_margin": 3.906146212987842,
-    "diff_density": -3.816008167039058
+    "diff_density": -3.816008167039058,
+    "unemployment": 5.5
   },
   "13249": {
     "year": 2016,
@@ -5277,7 +5846,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Schley",
     "diff_margin": -4.6242378208486095,
-    "diff_density": 0.9673015397519613
+    "diff_density": 0.9673015397519613,
+    "unemployment": 6.4
   },
   "13251": {
     "year": 2016,
@@ -5288,7 +5858,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Screven",
     "diff_margin": -5.122042463590105,
-    "diff_density": -0.6257107425205408
+    "diff_density": -0.6257107425205408,
+    "unemployment": 6.9
   },
   "13253": {
     "year": 2016,
@@ -5299,7 +5870,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Seminole",
     "diff_margin": -6.053723790886217,
-    "diff_density": -0.8136062577052243
+    "diff_density": -0.8136062577052243,
+    "unemployment": 7.5
   },
   "13255": {
     "year": 2016,
@@ -5310,7 +5882,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Spalding",
     "diff_margin": -3.4168465690054006,
-    "diff_density": 4.340335420165928
+    "diff_density": 4.340335420165928,
+    "unemployment": 6.5
   },
   "13257": {
     "year": 2016,
@@ -5321,7 +5894,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Stephens",
     "diff_margin": -3.6387704918032817,
-    "diff_density": 1.465569139730917
+    "diff_density": 1.465569139730917,
+    "unemployment": 5.9
   },
   "13259": {
     "year": 2016,
@@ -5332,7 +5906,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Stewart",
     "diff_margin": -4.304768631271301,
-    "diff_density": -0.05460052754343536
+    "diff_density": -0.05460052754343536,
+    "unemployment": 5.8
   },
   "13261": {
     "year": 2016,
@@ -5343,7 +5918,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Sumter",
     "diff_margin": -3.5747051854552154,
-    "diff_density": -1.7774539051170493
+    "diff_density": -1.7774539051170493,
+    "unemployment": 7.4
   },
   "13263": {
     "year": 2016,
@@ -5354,7 +5930,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Talbot",
     "diff_margin": -3.1778723404255302,
-    "diff_density": -0.6341470144868282
+    "diff_density": -0.6341470144868282,
+    "unemployment": 6.6
   },
   "13265": {
     "year": 2016,
@@ -5365,7 +5942,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Taliaferro",
     "diff_margin": -5.281917502787081,
-    "diff_density": -0.34078156312625296
+    "diff_density": -0.34078156312625296,
+    "unemployment": 6.6
   },
   "13267": {
     "year": 2016,
@@ -5376,7 +5954,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Tattnall",
     "diff_margin": -4.056919610408489,
-    "diff_density": 0.43918648310387987
+    "diff_density": 0.43918648310387987,
+    "unemployment": 5.4
   },
   "13269": {
     "year": 2016,
@@ -5387,7 +5966,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Taylor",
     "diff_margin": -6.364156378600825,
-    "diff_density": -0.3587010539170148
+    "diff_density": -0.3587010539170148,
+    "unemployment": 7
   },
   "13271": {
     "year": 2016,
@@ -5398,7 +5978,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Telfair",
     "diff_margin": -7.0227253558249885,
-    "diff_density": -1.2440338440429919
+    "diff_density": -1.2440338440429919,
+    "unemployment": 7.7
   },
   "13273": {
     "year": 2016,
@@ -5409,7 +5990,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Terrell",
     "diff_margin": -3.5925723857382152,
-    "diff_density": -0.651736227045074
+    "diff_density": -0.651736227045074,
+    "unemployment": 6
   },
   "13275": {
     "year": 2016,
@@ -5420,7 +6002,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Thomas",
     "diff_margin": -2.2700160170848918,
-    "diff_density": -0.4077855306647038
+    "diff_density": -0.4077855306647038,
+    "unemployment": 6.3
   },
   "13277": {
     "year": 2016,
@@ -5431,7 +6014,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Tift",
     "diff_margin": -3.0442450765864315,
-    "diff_density": -4.369329522632476
+    "diff_density": -4.369329522632476,
+    "unemployment": 5.6
   },
   "13279": {
     "year": 2016,
@@ -5442,7 +6026,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Toombs",
     "diff_margin": -3.720259112867808,
-    "diff_density": -0.6480219780219798
+    "diff_density": -0.6480219780219798,
+    "unemployment": 7.3
   },
   "13281": {
     "year": 2016,
@@ -5453,7 +6038,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Towns",
     "diff_margin": -2.56958073148974,
-    "diff_density": 3.091844380403458
+    "diff_density": 3.091844380403458,
+    "unemployment": 6.3
   },
   "13283": {
     "year": 2016,
@@ -5464,7 +6050,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Treutlen",
     "diff_margin": -7.198148148148142,
-    "diff_density": -0.2520938628158831
+    "diff_density": -0.2520938628158831,
+    "unemployment": 7.3
   },
   "13285": {
     "year": 2016,
@@ -5475,7 +6062,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Troup",
     "diff_margin": -3.3822304501221296,
-    "diff_density": -0.46656271890626044
+    "diff_density": -0.46656271890626044,
+    "unemployment": 5
   },
   "13287": {
     "year": 2016,
@@ -5486,7 +6074,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Turner",
     "diff_margin": -5.763333333333335,
-    "diff_density": -0.5915179228424261
+    "diff_density": -0.5915179228424261,
+    "unemployment": 6.4
   },
   "13289": {
     "year": 2016,
@@ -5497,7 +6086,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Twiggs",
     "diff_margin": -5.414029114236371,
-    "diff_density": -0.41140625000000064
+    "diff_density": -0.41140625000000064,
+    "unemployment": 8.2
   },
   "13291": {
     "year": 2016,
@@ -5508,7 +6098,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Union",
     "diff_margin": -3.0129653625716415,
-    "diff_density": 2.986328394371448
+    "diff_density": 2.986328394371448,
+    "unemployment": 4.5
   },
   "13293": {
     "year": 2016,
@@ -5519,7 +6110,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Upson",
     "diff_margin": -3.3759245697546696,
-    "diff_density": -1.045575068018799
+    "diff_density": -1.045575068018799,
+    "unemployment": 6.2
   },
   "13295": {
     "year": 2016,
@@ -5530,7 +6122,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Walker",
     "diff_margin": -6.491102802957517,
-    "diff_density": 4.5791948564003775
+    "diff_density": 4.5791948564003775,
+    "unemployment": 5.3
   },
   "13297": {
     "year": 2016,
@@ -5541,7 +6134,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Walton",
     "diff_margin": -1.180098948670377,
-    "diff_density": 8.634907885040533
+    "diff_density": 8.634907885040533,
+    "unemployment": 4.7
   },
   "13299": {
     "year": 2016,
@@ -5552,7 +6146,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Ware",
     "diff_margin": -4.3901646090535,
-    "diff_density": 0.23405553190058725
+    "diff_density": 0.23405553190058725,
+    "unemployment": 5.4
   },
   "13301": {
     "year": 2016,
@@ -5563,7 +6158,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Warren",
     "diff_margin": -4.226397941680965,
-    "diff_density": -0.6873971157228294
+    "diff_density": -0.6873971157228294,
+    "unemployment": 7
   },
   "13303": {
     "year": 2016,
@@ -5574,7 +6170,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Washington",
     "diff_margin": -3.804967941106625,
-    "diff_density": -0.566410199719952
+    "diff_density": -0.566410199719952,
+    "unemployment": 6.3
   },
   "13305": {
     "year": 2016,
@@ -5585,7 +6182,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Wayne",
     "diff_margin": -5.628882035466464,
-    "diff_density": 0.16753404593474386
+    "diff_density": 0.16753404593474386,
+    "unemployment": 6.6
   },
   "13307": {
     "year": 2016,
@@ -5596,7 +6194,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Webster",
     "diff_margin": -6.749928186714541,
-    "diff_density": -0.3529150726855397
+    "diff_density": -0.3529150726855397,
+    "unemployment": 8.6
   },
   "13309": {
     "year": 2016,
@@ -5607,7 +6206,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Wheeler",
     "diff_margin": -5.0073644148430105,
-    "diff_density": -0.19615134696087733
+    "diff_density": -0.19615134696087733,
+    "unemployment": 8.5
   },
   "13311": {
     "year": 2016,
@@ -5618,7 +6218,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "White",
     "diff_margin": -1.7255993543454249,
-    "diff_density": 5.325230794798287
+    "diff_density": 5.325230794798287,
+    "unemployment": 4.4
   },
   "13313": {
     "year": 2016,
@@ -5629,7 +6230,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Whitfield",
     "diff_margin": -0.7282939200316143,
-    "diff_density": 12.000744336569582
+    "diff_density": 12.000744336569582,
+    "unemployment": 5.7
   },
   "13315": {
     "year": 2016,
@@ -5640,7 +6242,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Wilcox",
     "diff_margin": -5.222078708375381,
-    "diff_density": -0.4086735504368537
+    "diff_density": -0.4086735504368537,
+    "unemployment": 6.8
   },
   "13317": {
     "year": 2016,
@@ -5651,7 +6254,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Wilkes",
     "diff_margin": -2.5872035794183503,
-    "diff_density": -0.6190304372830102
+    "diff_density": -0.6190304372830102,
+    "unemployment": 6.7
   },
   "13319": {
     "year": 2016,
@@ -5662,7 +6266,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Wilkinson",
     "diff_margin": -4.739653882132835,
-    "diff_density": -0.39063401220629856
+    "diff_density": -0.39063401220629856,
+    "unemployment": 6
   },
   "13321": {
     "year": 2016,
@@ -5673,7 +6278,8 @@ export const counties = {
     "statenam": "Georgia",
     "cty_name": "Worth",
     "diff_margin": -5.1630341156544866,
-    "diff_density": -0.2660329420010523
+    "diff_density": -0.2660329420010523,
+    "unemployment": 5.8
   },
   "15001": {
     "year": 2016,
@@ -5684,7 +6290,8 @@ export const counties = {
     "statenam": "Hawaii",
     "cty_name": "Hawaii",
     "diff_margin": -10.814049179064213,
-    "diff_density": 0.3518463814597297
+    "diff_density": 0.3518463814597297,
+    "unemployment": 4.1
   },
   "15003": {
     "year": 2016,
@@ -5695,7 +6302,8 @@ export const counties = {
     "statenam": "Hawaii",
     "cty_name": "Honolulu",
     "diff_margin": -7.381368089805832,
-    "diff_density": -18.40818057728802
+    "diff_density": -18.40818057728802,
+    "unemployment": 3
   },
   "15007": {
     "year": 2016,
@@ -5706,7 +6314,8 @@ export const counties = {
     "statenam": "Hawaii",
     "cty_name": "Kauai",
     "diff_margin": -10.982815644579453,
-    "diff_density": 1.5485470030324535
+    "diff_density": 1.5485470030324535,
+    "unemployment": 3.4
   },
   "15009": {
     "year": 2016,
@@ -5717,7 +6326,8 @@ export const counties = {
     "statenam": "Hawaii",
     "cty_name": "Maui",
     "diff_margin": -9.645416040968769,
-    "diff_density": 2.8289889110820283
+    "diff_density": 2.8289889110820283,
+    "unemployment": 3.4
   },
   "16001": {
     "year": 2016,
@@ -5728,7 +6338,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Ada",
     "diff_margin": -4.028266909354912,
-    "diff_density": 14.276755020996063
+    "diff_density": 14.276755020996063,
+    "unemployment": 3.5
   },
   "16003": {
     "year": 2016,
@@ -5739,7 +6350,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Adams",
     "diff_margin": -8.9894640403115,
-    "diff_density": 0.0915435857555793
+    "diff_density": 0.0915435857555793,
+    "unemployment": 4.9
   },
   "16005": {
     "year": 2016,
@@ -5750,7 +6362,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Bannock",
     "diff_margin": -6.510562790001497,
-    "diff_density": -1.6692622235811498
+    "diff_density": -1.6692622235811498,
+    "unemployment": 3.6
   },
   "16007": {
     "year": 2016,
@@ -5761,7 +6374,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Bear Lake",
     "diff_margin": -1.9909836065573767,
-    "diff_density": 0.11375469336670818
+    "diff_density": 0.11375469336670818,
+    "unemployment": 3.4
   },
   "16009": {
     "year": 2016,
@@ -5772,7 +6386,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Benewah",
     "diff_margin": -11.353129770992368,
-    "diff_density": 0.3977492209832354
+    "diff_density": 0.3977492209832354,
+    "unemployment": 4.6
   },
   "16011": {
     "year": 2016,
@@ -5783,7 +6398,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Bingham",
     "diff_margin": -4.122030075187972,
-    "diff_density": -0.47057364444741623
+    "diff_density": -0.47057364444741623,
+    "unemployment": 3.7
   },
   "16013": {
     "year": 2016,
@@ -5794,7 +6410,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Blaine",
     "diff_margin": 1.0540016786347053,
-    "diff_density": 0.1962265706860742
+    "diff_density": 0.1962265706860742,
+    "unemployment": 2.8
   },
   "16015": {
     "year": 2016,
@@ -5805,7 +6422,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Boise",
     "diff_margin": -10.176998950682055,
-    "diff_density": 0.19711863692845544
+    "diff_density": 0.19711863692845544,
+    "unemployment": 4.9
   },
   "16017": {
     "year": 2016,
@@ -5816,7 +6434,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Bonner",
     "diff_margin": -4.50205471305382,
-    "diff_density": -0.9959547899479393
+    "diff_density": -0.9959547899479393,
+    "unemployment": 4.3
   },
   "16019": {
     "year": 2016,
@@ -5827,7 +6446,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Bonneville",
     "diff_margin": -2.7118637473988976,
-    "diff_density": 0.5324461973763199
+    "diff_density": 0.5324461973763199,
+    "unemployment": 3.2
   },
   "16021": {
     "year": 2016,
@@ -5838,7 +6458,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Boundary",
     "diff_margin": -8.84349514563107,
-    "diff_density": 0.47972125875007876
+    "diff_density": 0.47972125875007876,
+    "unemployment": 4.1
   },
   "16023": {
     "year": 2016,
@@ -5849,7 +6470,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Butte",
     "diff_margin": -7.051869918699184,
-    "diff_density": -0.028843242952587
+    "diff_density": -0.028843242952587,
+    "unemployment": 3.7
   },
   "16025": {
     "year": 2016,
@@ -5860,7 +6482,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Camas",
     "diff_margin": -9.146060100166949,
-    "diff_density": 0.017473778257591888
+    "diff_density": 0.017473778257591888,
+    "unemployment": 2.6
   },
   "16027": {
     "year": 2016,
@@ -5871,7 +6494,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Canyon",
     "diff_margin": -6.88141916758093,
-    "diff_density": 10.052233175000424
+    "diff_density": 10.052233175000424,
+    "unemployment": 4.4
   },
   "16029": {
     "year": 2016,
@@ -5882,7 +6506,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Caribou",
     "diff_margin": -3.720840197693576,
-    "diff_density": -0.009624748462432331
+    "diff_density": -0.009624748462432331,
+    "unemployment": 3.2
   },
   "16031": {
     "year": 2016,
@@ -5893,7 +6518,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Cassia",
     "diff_margin": -0.41186598190266466,
-    "diff_density": -0.08179534361501384
+    "diff_density": -0.08179534361501384,
+    "unemployment": 2.9
   },
   "16033": {
     "year": 2016,
@@ -5904,7 +6530,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Clark",
     "diff_margin": -4.5722968197879865,
-    "diff_density": -0.029585529821220063
+    "diff_density": -0.029585529821220063,
+    "unemployment": 3.3
   },
   "16035": {
     "year": 2016,
@@ -5915,7 +6542,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Clearwater",
     "diff_margin": -9.398558274138388,
-    "diff_density": 0.04683856474868442
+    "diff_density": 0.04683856474868442,
+    "unemployment": 5.9
   },
   "16037": {
     "year": 2016,
@@ -5926,7 +6554,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Custer",
     "diff_margin": -4.814185661002902,
-    "diff_density": 0.010353469052660713
+    "diff_density": 0.010353469052660713,
+    "unemployment": 4.1
   },
   "16039": {
     "year": 2016,
@@ -5937,7 +6566,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Elmore",
     "diff_margin": -10.10642094142505,
-    "diff_density": 0.17064076962604968
+    "diff_density": 0.17064076962604968,
+    "unemployment": 4.2
   },
   "16041": {
     "year": 2016,
@@ -5948,7 +6578,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Franklin",
     "diff_margin": 1.201272958719768,
-    "diff_density": -0.15388101983002755
+    "diff_density": -0.15388101983002755,
+    "unemployment": 2.9
   },
   "16043": {
     "year": 2016,
@@ -5959,7 +6590,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Fremont",
     "diff_margin": -2.566930346517328,
-    "diff_density": -0.04377622039892026
+    "diff_density": -0.04377622039892026,
+    "unemployment": 3.2
   },
   "16045": {
     "year": 2016,
@@ -5970,7 +6602,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Gem",
     "diff_margin": -10.664768611670022,
-    "diff_density": 0.8172151898734192
+    "diff_density": 0.8172151898734192,
+    "unemployment": 4.3
   },
   "16047": {
     "year": 2016,
@@ -5981,7 +6614,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Gooding",
     "diff_margin": -7.234376806010403,
-    "diff_density": 0.10100635142735648
+    "diff_density": 0.10100635142735648,
+    "unemployment": 3
   },
   "16049": {
     "year": 2016,
@@ -5992,7 +6626,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Idaho",
     "diff_margin": -7.245429891766994,
-    "diff_density": 0.04999652013895839
+    "diff_density": 0.04999652013895839,
+    "unemployment": 4.8
   },
   "16051": {
     "year": 2016,
@@ -6003,7 +6638,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Jefferson",
     "diff_margin": -2.9415874814750236,
-    "diff_density": 0.08016918152720542
+    "diff_density": 0.08016918152720542,
+    "unemployment": 3.1
   },
   "16053": {
     "year": 2016,
@@ -6014,7 +6650,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Jerome",
     "diff_margin": -5.58374519546264,
-    "diff_density": 6.672286077899463
+    "diff_density": 6.672286077899463,
+    "unemployment": 2.8
   },
   "16055": {
     "year": 2016,
@@ -6025,7 +6662,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Kootenai",
     "diff_margin": -6.973898862504903,
-    "diff_density": 5.189426421888562
+    "diff_density": 5.189426421888562,
+    "unemployment": 4
   },
   "16057": {
     "year": 2016,
@@ -6036,7 +6674,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Latah",
     "diff_margin": -4.940639259340898,
-    "diff_density": 1.2843122676579934
+    "diff_density": 1.2843122676579934,
+    "unemployment": 3.2
   },
   "16059": {
     "year": 2016,
@@ -6047,7 +6686,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Lemhi",
     "diff_margin": -5.341317600786628,
-    "diff_density": -0.008557453998014775
+    "diff_density": -0.008557453998014775,
+    "unemployment": 4.8
   },
   "16061": {
     "year": 2016,
@@ -6058,7 +6698,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Lewis",
     "diff_margin": -7.538867924528301,
-    "diff_density": -0.049197994987468796
+    "diff_density": -0.049197994987468796,
+    "unemployment": 6.9
   },
   "16063": {
     "year": 2016,
@@ -6069,7 +6710,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Lincoln",
     "diff_margin": -7.605034324942789,
-    "diff_density": 0.07496920259697015
+    "diff_density": 0.07496920259697015,
+    "unemployment": 3.6
   },
   "16065": {
     "year": 2016,
@@ -6080,7 +6722,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Madison",
     "diff_margin": 1.8860209090329576,
-    "diff_density": 2.7127912874832205
+    "diff_density": 2.7127912874832205,
+    "unemployment": 2.9
   },
   "16067": {
     "year": 2016,
@@ -6091,7 +6734,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Minidoka",
     "diff_margin": -2.943100436681224,
-    "diff_density": -0.1317704827149253
+    "diff_density": -0.1317704827149253,
+    "unemployment": 3.1
   },
   "16069": {
     "year": 2016,
@@ -6102,7 +6746,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Nez Perce",
     "diff_margin": -10.202070369293402,
-    "diff_density": 0.4049708167765189
+    "diff_density": 0.4049708167765189,
+    "unemployment": 3.1
   },
   "16071": {
     "year": 2016,
@@ -6113,7 +6758,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Oneida",
     "diff_margin": -1.492514506769826,
-    "diff_density": -0.016752829025215243
+    "diff_density": -0.016752829025215243,
+    "unemployment": 3.1
   },
   "16073": {
     "year": 2016,
@@ -6124,7 +6770,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Owyhee",
     "diff_margin": -7.293469387755103,
-    "diff_density": 0.021381499730611542
+    "diff_density": 0.021381499730611542,
+    "unemployment": 3.7
   },
   "16075": {
     "year": 2016,
@@ -6135,7 +6782,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Payette",
     "diff_margin": -11.089109240750483,
-    "diff_density": -6.863237889252094
+    "diff_density": -6.863237889252094,
+    "unemployment": 4.1
   },
   "16077": {
     "year": 2016,
@@ -6146,7 +6794,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Power",
     "diff_margin": -8.47554749818709,
-    "diff_density": -0.10594827095083437
+    "diff_density": -0.10594827095083437,
+    "unemployment": 4.2
   },
   "16079": {
     "year": 2016,
@@ -6157,7 +6806,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Shoshone",
     "diff_margin": -17.198749999999997,
-    "diff_density": -0.012980233186039136
+    "diff_density": -0.012980233186039136,
+    "unemployment": 5.9
   },
   "16081": {
     "year": 2016,
@@ -6168,7 +6818,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Teton",
     "diff_margin": 0.8553604510672557,
-    "diff_density": 0.9888141325145732
+    "diff_density": 0.9888141325145732,
+    "unemployment": 2
   },
   "16083": {
     "year": 2016,
@@ -6179,7 +6830,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Twin Falls",
     "diff_margin": -5.3307456181607265,
-    "diff_density": 1.9504757418501892
+    "diff_density": 1.9504757418501892,
+    "unemployment": 3.4
   },
   "16085": {
     "year": 2016,
@@ -6190,7 +6842,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Valley",
     "diff_margin": -6.826305851561038,
-    "diff_density": 0.11967673713538773
+    "diff_density": 0.11967673713538773,
+    "unemployment": 4.2
   },
   "16087": {
     "year": 2016,
@@ -6201,7 +6854,8 @@ export const counties = {
     "statenam": "Idaho",
     "cty_name": "Washington",
     "diff_margin": -8.067458464301748,
-    "diff_density": 0.08542416275516507
+    "diff_density": 0.08542416275516507,
+    "unemployment": 5.3
   },
   "17001": {
     "year": 2016,
@@ -6212,7 +6866,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Adams",
     "diff_margin": -7.494189486937362,
-    "diff_density": 1.3592048643592136
+    "diff_density": 1.3592048643592136,
+    "unemployment": 4.7
   },
   "17003": {
     "year": 2016,
@@ -6223,7 +6878,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Alexander",
     "diff_margin": -11.378226950354616,
-    "diff_density": -2.8959861577003085
+    "diff_density": -2.8959861577003085,
+    "unemployment": 9.5
   },
   "17005": {
     "year": 2016,
@@ -6234,7 +6890,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Bond",
     "diff_margin": -13.483052800857681,
-    "diff_density": 0.3323835068896628
+    "diff_density": 0.3323835068896628,
+    "unemployment": 4.7
   },
   "17007": {
     "year": 2016,
@@ -6245,7 +6902,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Boone",
     "diff_margin": -6.656390019465576,
-    "diff_density": 4.411516101453401
+    "diff_density": 4.411516101453401,
+    "unemployment": 5.8
   },
   "17009": {
     "year": 2016,
@@ -6256,7 +6914,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Brown",
     "diff_margin": -12.956095890410957,
-    "diff_density": -0.09627106442852096
+    "diff_density": -0.09627106442852096,
+    "unemployment": 3.2
   },
   "17011": {
     "year": 2016,
@@ -6267,7 +6926,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Bureau",
     "diff_margin": -12.045619211188125,
-    "diff_density": -0.38000322198313086
+    "diff_density": -0.38000322198313086,
+    "unemployment": 5.8
   },
   "17013": {
     "year": 2016,
@@ -6278,7 +6938,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Calhoun",
     "diff_margin": -13.017636932707354,
-    "diff_density": -0.07987156252462313
+    "diff_density": -0.07987156252462313,
+    "unemployment": 5.7
   },
   "17015": {
     "year": 2016,
@@ -6289,7 +6950,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Carroll",
     "diff_margin": -16.481571933641554,
-    "diff_density": -0.06709831163867719
+    "diff_density": -0.06709831163867719,
+    "unemployment": 4.8
   },
   "17017": {
     "year": 2016,
@@ -6300,7 +6962,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Cass",
     "diff_margin": -10.235540166204984,
-    "diff_density": 0.5079271991911032
+    "diff_density": 0.5079271991911032,
+    "unemployment": 4.8
   },
   "17019": {
     "year": 2016,
@@ -6311,7 +6974,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Champaign",
     "diff_margin": 3.6032606843356234,
-    "diff_density": 10.87994670119545
+    "diff_density": 10.87994670119545,
+    "unemployment": 5
   },
   "17021": {
     "year": 2016,
@@ -6322,7 +6986,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Christian",
     "diff_margin": -11.360855649902025,
-    "diff_density": 0.8622267332036451
+    "diff_density": 0.8622267332036451,
+    "unemployment": 5.8
   },
   "17023": {
     "year": 2016,
@@ -6333,7 +6998,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Clark",
     "diff_margin": -9.005530118941042,
-    "diff_density": -0.08628614734154993
+    "diff_density": -0.08628614734154993,
+    "unemployment": 5.5
   },
   "17025": {
     "year": 2016,
@@ -6344,7 +7010,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Clay",
     "diff_margin": -10.6583593501115,
-    "diff_density": 0.7853638537751966
+    "diff_density": 0.7853638537751966,
+    "unemployment": 6.4
   },
   "17027": {
     "year": 2016,
@@ -6355,7 +7022,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Clinton",
     "diff_margin": -11.209020152883951,
-    "diff_density": 1.7242321970975354
+    "diff_density": 1.7242321970975354,
+    "unemployment": 4.1
   },
   "17029": {
     "year": 2016,
@@ -6366,7 +7034,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Coles",
     "diff_margin": -9.611890639480997,
-    "diff_density": 0.43607822306163513
+    "diff_density": 0.43607822306163513,
+    "unemployment": 6
   },
   "17031": {
     "year": 2016,
@@ -6377,7 +7046,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Cook",
     "diff_margin": 0.3757709047471991,
-    "diff_density": 46.131488263357824
+    "diff_density": 46.131488263357824,
+    "unemployment": 5.7
   },
   "17033": {
     "year": 2016,
@@ -6388,7 +7058,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Crawford",
     "diff_margin": -10.05435523686376,
-    "diff_density": -0.23411018190834554
+    "diff_density": -0.23411018190834554,
+    "unemployment": 5.6
   },
   "17035": {
     "year": 2016,
@@ -6399,7 +7070,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Cumberland",
     "diff_margin": -12.343165245782696,
-    "diff_density": 0.6326050517311135
+    "diff_density": 0.6326050517311135,
+    "unemployment": 5
   },
   "17037": {
     "year": 2016,
@@ -6410,7 +7082,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "DeKalb",
     "diff_margin": -3.8503473770684167,
-    "diff_density": 2.3966547338074804
+    "diff_density": 2.3966547338074804,
+    "unemployment": 5
   },
   "17039": {
     "year": 2016,
@@ -6421,7 +7094,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "De Witt",
     "diff_margin": -9.877800240996116,
-    "diff_density": 0.30946441598953456
+    "diff_density": 0.30946441598953456,
+    "unemployment": 5.6
   },
   "17041": {
     "year": 2016,
@@ -6432,7 +7106,11 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Douglas",
     "diff_margin": -6.712638150574854,
-    "diff_density": 0.46344469244246156
+    "diff_density": 0.46344469244246156,
+    "unemployment": 4.6
+  },
+  "17043": {
+    "unemployment": 4.4
   },
   "17045": {
     "year": 2016,
@@ -6443,7 +7121,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Edgar",
     "diff_margin": -9.955338558396502,
-    "diff_density": -0.05463817636395696
+    "diff_density": -0.05463817636395696,
+    "unemployment": 6.1
   },
   "17047": {
     "year": 2016,
@@ -6454,7 +7133,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Edwards",
     "diff_margin": -10.316521739130435,
-    "diff_density": 0.3807472349608858
+    "diff_density": 0.3807472349608858,
+    "unemployment": 5.2
   },
   "17049": {
     "year": 2016,
@@ -6465,7 +7145,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Effingham",
     "diff_margin": -5.618930456736283,
-    "diff_density": 1.7008521659217166
+    "diff_density": 1.7008521659217166,
+    "unemployment": 4.5
   },
   "17051": {
     "year": 2016,
@@ -6476,7 +7157,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Fayette",
     "diff_margin": -12.735365212821861,
-    "diff_density": 0.7602032157213046
+    "diff_density": 0.7602032157213046,
+    "unemployment": 6
   },
   "17053": {
     "year": 2016,
@@ -6487,7 +7169,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Ford",
     "diff_margin": -5.149901415169346,
-    "diff_density": 0.5804550883406794
+    "diff_density": 0.5804550883406794,
+    "unemployment": 5.3
   },
   "17055": {
     "year": 2016,
@@ -6498,7 +7181,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Franklin",
     "diff_margin": -15.070478066152269,
-    "diff_density": 1.5151485729658347
+    "diff_density": 1.5151485729658347,
+    "unemployment": 8
   },
   "17057": {
     "year": 2016,
@@ -6509,7 +7193,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Fulton",
     "diff_margin": -15.034663975911329,
-    "diff_density": 0.29257855822551093
+    "diff_density": 0.29257855822551093,
+    "unemployment": 6.9
   },
   "17059": {
     "year": 2016,
@@ -6520,7 +7205,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Gallatin",
     "diff_margin": -15.61244518766258,
-    "diff_density": 0.36946420280434555
+    "diff_density": 0.36946420280434555,
+    "unemployment": 7.6
   },
   "17061": {
     "year": 2016,
@@ -6531,7 +7217,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Greene",
     "diff_margin": -14.291079032840127,
-    "diff_density": -0.14411439725976827
+    "diff_density": -0.14411439725976827,
+    "unemployment": 5.3
   },
   "17063": {
     "year": 2016,
@@ -6542,7 +7229,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Grundy",
     "diff_margin": -9.450027958586347,
-    "diff_density": 3.9379179025930497
+    "diff_density": 3.9379179025930497,
+    "unemployment": 5.9
   },
   "17065": {
     "year": 2016,
@@ -6553,7 +7241,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Hamilton",
     "diff_margin": -12.89032102341299,
-    "diff_density": 0.4613686244737387
+    "diff_density": 0.4613686244737387,
+    "unemployment": 6.1
   },
   "17067": {
     "year": 2016,
@@ -6564,7 +7253,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Hancock",
     "diff_margin": -17.7525044768483,
-    "diff_density": -1.6303029997606249
+    "diff_density": -1.6303029997606249,
+    "unemployment": 6.9
   },
   "17069": {
     "year": 2016,
@@ -6575,7 +7265,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Hardin",
     "diff_margin": -12.20630567276137,
-    "diff_density": -1.1051292739255327
+    "diff_density": -1.1051292739255327,
+    "unemployment": 8.1
   },
   "17071": {
     "year": 2016,
@@ -6586,7 +7277,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Henderson",
     "diff_margin": -22.365287356321836,
-    "diff_density": -0.23479135323461797
+    "diff_density": -0.23479135323461797,
+    "unemployment": 5.8
   },
   "17073": {
     "year": 2016,
@@ -6597,7 +7289,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Henry",
     "diff_margin": -14.239947177286233,
-    "diff_density": -0.10614284499204274
+    "diff_density": -0.10614284499204274,
+    "unemployment": 5.4
   },
   "17075": {
     "year": 2016,
@@ -6608,7 +7301,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Iroquois",
     "diff_margin": -7.385599319043564,
-    "diff_density": 0.1260688075036711
+    "diff_density": 0.1260688075036711,
+    "unemployment": 4.9
   },
   "17077": {
     "year": 2016,
@@ -6619,7 +7313,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Jackson",
     "diff_margin": -8.062925047941576,
-    "diff_density": 0.8517175729352147
+    "diff_density": 0.8517175729352147,
+    "unemployment": 5.5
   },
   "17079": {
     "year": 2016,
@@ -6630,7 +7325,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Jasper",
     "diff_margin": -10.376551724137933,
-    "diff_density": 0.12132818345432916
+    "diff_density": 0.12132818345432916,
+    "unemployment": 6.2
   },
   "17081": {
     "year": 2016,
@@ -6641,7 +7337,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Jefferson",
     "diff_margin": -11.099986918777503,
-    "diff_density": 0.8748237827617018
+    "diff_density": 0.8748237827617018,
+    "unemployment": 6.5
   },
   "17083": {
     "year": 2016,
@@ -6652,7 +7349,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Jersey",
     "diff_margin": -12.317295810798424,
-    "diff_density": 2.5720694884501896
+    "diff_density": 2.5720694884501896,
+    "unemployment": 5.5
   },
   "17085": {
     "year": 2016,
@@ -6663,7 +7361,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Jo Daviess",
     "diff_margin": -9.748202558826158,
-    "diff_density": -0.4154467716980861
+    "diff_density": -0.4154467716980861,
+    "unemployment": 4.4
   },
   "17087": {
     "year": 2016,
@@ -6674,7 +7373,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Johnson",
     "diff_margin": -8.856779125810203,
-    "diff_density": 1.005347755291929
+    "diff_density": 1.005347755291929,
+    "unemployment": 8.3
   },
   "17089": {
     "year": 2016,
@@ -6685,7 +7385,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Kane",
     "diff_margin": 1.6338242894056805,
-    "diff_density": 22.79245317847949
+    "diff_density": 22.79245317847949,
+    "unemployment": 5.1
   },
   "17091": {
     "year": 2016,
@@ -6696,7 +7397,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Kankakee",
     "diff_margin": -6.8365452358450085,
-    "diff_density": 1.5428177840842068
+    "diff_density": 1.5428177840842068,
+    "unemployment": 6.1
   },
   "17093": {
     "year": 2016,
@@ -6707,7 +7409,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Kendall",
     "diff_margin": -1.4763485191380497,
-    "diff_density": 10.993284425436286
+    "diff_density": 10.993284425436286,
+    "unemployment": 4.7
   },
   "17095": {
     "year": 2016,
@@ -6718,7 +7421,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Knox",
     "diff_margin": -12.528679657621566,
-    "diff_density": -1.8307222323036356
+    "diff_density": -1.8307222323036356,
+    "unemployment": 5.6
   },
   "17097": {
     "year": 2016,
@@ -6729,7 +7433,11 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Lake",
     "diff_margin": 3.8091332338694883,
-    "diff_density": 13.704502670904049
+    "diff_density": 13.704502670904049,
+    "unemployment": 4.8
+  },
+  "17099": {
+    "unemployment": 6.2
   },
   "17101": {
     "year": 2016,
@@ -6740,7 +7448,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Lawrence",
     "diff_margin": -12.25196555721146,
-    "diff_density": 0.13601966790262665
+    "diff_density": 0.13601966790262665,
+    "unemployment": 7.6
   },
   "17103": {
     "year": 2016,
@@ -6751,7 +7460,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Lee",
     "diff_margin": -9.198034834045359,
-    "diff_density": -0.12089805490412431
+    "diff_density": -0.12089805490412431,
+    "unemployment": 4.8
   },
   "17105": {
     "year": 2016,
@@ -6762,7 +7472,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Livingston",
     "diff_margin": -6.849793322734502,
-    "diff_density": 0.05575462754598881
+    "diff_density": 0.05575462754598881,
+    "unemployment": 5.2
   },
   "17107": {
     "year": 2016,
@@ -6773,7 +7484,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Logan",
     "diff_margin": -5.786479802143443,
-    "diff_density": 0.1259262854739056
+    "diff_density": 0.1259262854739056,
+    "unemployment": 5.1
   },
   "17109": {
     "year": 2016,
@@ -6784,7 +7496,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "McDonough",
     "diff_margin": -7.0269635941130915,
-    "diff_density": 0.7732591913947857
+    "diff_density": 0.7732591913947857,
+    "unemployment": 6.8
   },
   "17111": {
     "year": 2016,
@@ -6795,7 +7508,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "McHenry",
     "diff_margin": -1.990642548788756,
-    "diff_density": 10.447431072500308
+    "diff_density": 10.447431072500308,
+    "unemployment": 4.6
   },
   "17113": {
     "year": 2016,
@@ -6806,7 +7520,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "McLean",
     "diff_margin": 2.0187005506677593,
-    "diff_density": 4.743705487670901
+    "diff_density": 4.743705487670901,
+    "unemployment": 5.1
   },
   "17115": {
     "year": 2016,
@@ -6817,7 +7532,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Macon",
     "diff_margin": -8.075100353192482,
-    "diff_density": -2.7844545282336526
+    "diff_density": -2.7844545282336526,
+    "unemployment": 6.6
   },
   "17117": {
     "year": 2016,
@@ -6828,7 +7544,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Macoupin",
     "diff_margin": -15.197616653717834,
-    "diff_density": 1.0072214947097606
+    "diff_density": 1.0072214947097606,
+    "unemployment": 5.5
   },
   "17119": {
     "year": 2016,
@@ -6839,7 +7556,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Madison",
     "diff_margin": -8.75486872761958,
-    "diff_density": 7.588925067777183
+    "diff_density": 7.588925067777183,
+    "unemployment": 6
   },
   "17121": {
     "year": 2016,
@@ -6850,7 +7568,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Marion",
     "diff_margin": -14.002048192771088,
-    "diff_density": 1.4627255573415319
+    "diff_density": 1.4627255573415319,
+    "unemployment": 6.2
   },
   "17123": {
     "year": 2016,
@@ -6861,7 +7580,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Marshall",
     "diff_margin": -11.748078942910382,
-    "diff_density": 0.14151141446262905
+    "diff_density": 0.14151141446262905,
+    "unemployment": 5.9
   },
   "17125": {
     "year": 2016,
@@ -6872,7 +7592,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Mason",
     "diff_margin": -14.495947458417536,
-    "diff_density": 0.29975298568355413
+    "diff_density": 0.29975298568355413,
+    "unemployment": 7.1
   },
   "17127": {
     "year": 2016,
@@ -6883,7 +7604,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Massac",
     "diff_margin": -8.766610884969097,
-    "diff_density": 0.5813860551386902
+    "diff_density": 0.5813860551386902,
+    "unemployment": 7.4
   },
   "17129": {
     "year": 2016,
@@ -6894,7 +7616,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Menard",
     "diff_margin": -5.991159894130469,
-    "diff_density": 0.8667904846711636
+    "diff_density": 0.8667904846711636,
+    "unemployment": 3.9
   },
   "17131": {
     "year": 2016,
@@ -6905,7 +7628,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Mercer",
     "diff_margin": -16.443123440655818,
-    "diff_density": -0.21178189593728014
+    "diff_density": -0.21178189593728014,
+    "unemployment": 5.3
   },
   "17133": {
     "year": 2016,
@@ -6916,7 +7640,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Monroe",
     "diff_margin": -6.699596309111879,
-    "diff_density": 4.2615703488221115
+    "diff_density": 4.2615703488221115,
+    "unemployment": 3.9
   },
   "17135": {
     "year": 2016,
@@ -6927,7 +7652,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Montgomery",
     "diff_margin": -14.486009042014185,
-    "diff_density": 0.9910392360272269
+    "diff_density": 0.9910392360272269,
+    "unemployment": 6.3
   },
   "17137": {
     "year": 2016,
@@ -6938,7 +7664,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Morgan",
     "diff_margin": -9.061568426097075,
-    "diff_density": 0.9008312382425849
+    "diff_density": 0.9008312382425849,
+    "unemployment": 4.6
   },
   "17139": {
     "year": 2016,
@@ -6949,7 +7676,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Moultrie",
     "diff_margin": -11.628056047672729,
-    "diff_density": 0.4524671072215263
+    "diff_density": 0.4524671072215263,
+    "unemployment": 4.5
   },
   "17141": {
     "year": 2016,
@@ -6960,7 +7688,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Ogle",
     "diff_margin": -6.998678880578197,
-    "diff_density": 0.5721871415953679
+    "diff_density": 0.5721871415953679,
+    "unemployment": 5.3
   },
   "17143": {
     "year": 2016,
@@ -6971,7 +7700,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Peoria",
     "diff_margin": -2.9536590718388993,
-    "diff_density": -1.5270462363333905
+    "diff_density": -1.5270462363333905,
+    "unemployment": 6.6
   },
   "17145": {
     "year": 2016,
@@ -6982,7 +7712,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Perry",
     "diff_margin": -14.923031114774371,
-    "diff_density": 0.35120608475190096
+    "diff_density": 0.35120608475190096,
+    "unemployment": 6.9
   },
   "17147": {
     "year": 2016,
@@ -6993,7 +7724,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Piatt",
     "diff_margin": -5.902405888302056,
-    "diff_density": 0.4418397085610195
+    "diff_density": 0.4418397085610195,
+    "unemployment": 4.8
   },
   "17149": {
     "year": 2016,
@@ -7004,7 +7736,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Pike",
     "diff_margin": -12.337310270850093,
-    "diff_density": 0.21062715003969323
+    "diff_density": 0.21062715003969323,
+    "unemployment": 4.4
   },
   "17151": {
     "year": 2016,
@@ -7015,7 +7748,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Pope",
     "diff_margin": -11.707786116322701,
-    "diff_density": -0.2486186511917996
+    "diff_density": -0.2486186511917996,
+    "unemployment": 6.8
   },
   "17153": {
     "year": 2016,
@@ -7026,7 +7760,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Pulaski",
     "diff_margin": -13.213202587949858,
-    "diff_density": -2.6647181083387714
+    "diff_density": -2.6647181083387714,
+    "unemployment": 8.6
   },
   "17155": {
     "year": 2016,
@@ -7037,7 +7772,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Putnam",
     "diff_margin": -12.571352405721711,
-    "diff_density": -0.3642057942057946
+    "diff_density": -0.3642057942057946,
+    "unemployment": 5.2
   },
   "17157": {
     "year": 2016,
@@ -7048,7 +7784,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Randolph",
     "diff_margin": -15.640011402508556,
-    "diff_density": -0.6277237185056492
+    "diff_density": -0.6277237185056492,
+    "unemployment": 4.8
   },
   "17159": {
     "year": 2016,
@@ -7059,7 +7796,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Richland",
     "diff_margin": -11.74537352555701,
-    "diff_density": 0.9650331953665372
+    "diff_density": 0.9650331953665372,
+    "unemployment": 5.8
   },
   "17161": {
     "year": 2016,
@@ -7070,7 +7808,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Rock Island",
     "diff_margin": -9.003244826983853,
-    "diff_density": -4.787638200355417
+    "diff_density": -4.787638200355417,
+    "unemployment": 6
   },
   "17163": {
     "year": 2016,
@@ -7081,7 +7820,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "St. Clair",
     "diff_margin": -5.83384636034932,
-    "diff_density": -0.4073656044757854
+    "diff_density": -0.4073656044757854,
+    "unemployment": 6.2
   },
   "17165": {
     "year": 2016,
@@ -7092,7 +7832,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Saline",
     "diff_margin": -11.812148833897101,
-    "diff_density": 1.3571681322731841
+    "diff_density": 1.3571681322731841,
+    "unemployment": 8.1
   },
   "17167": {
     "year": 2016,
@@ -7103,7 +7844,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Sangamon",
     "diff_margin": -2.429459324985487,
-    "diff_density": 2.5044569849130625
+    "diff_density": 2.5044569849130625,
+    "unemployment": 4.6
   },
   "17169": {
     "year": 2016,
@@ -7114,7 +7856,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Schuyler",
     "diff_margin": -16.077215189873414,
-    "diff_density": -0.2280124408260349
+    "diff_density": -0.2280124408260349,
+    "unemployment": 4.9
   },
   "17171": {
     "year": 2016,
@@ -7125,7 +7868,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Scott",
     "diff_margin": -15.178652729384432,
-    "diff_density": 0.1145279183771084
+    "diff_density": 0.1145279183771084,
+    "unemployment": 4.3
   },
   "17173": {
     "year": 2016,
@@ -7136,7 +7880,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Shelby",
     "diff_margin": -11.264736070381229,
-    "diff_density": 0.6859094025207
+    "diff_density": 0.6859094025207,
+    "unemployment": 5.6
   },
   "17175": {
     "year": 2016,
@@ -7147,7 +7892,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Stark",
     "diff_margin": -13.497934983376432,
-    "diff_density": 0.15669536239933457
+    "diff_density": 0.15669536239933457,
+    "unemployment": 6.7
   },
   "17177": {
     "year": 2016,
@@ -7158,7 +7904,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Stephenson",
     "diff_margin": -9.708937259923175,
-    "diff_density": -2.713094310210437
+    "diff_density": -2.713094310210437,
+    "unemployment": 5.6
   },
   "17179": {
     "year": 2016,
@@ -7169,7 +7916,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Tazewell",
     "diff_margin": -7.561216947921764,
-    "diff_density": 3.541599919873036
+    "diff_density": 3.541599919873036,
+    "unemployment": 6
   },
   "17181": {
     "year": 2016,
@@ -7180,7 +7928,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Union",
     "diff_margin": -9.820333568240546,
-    "diff_density": 0.562076621680454
+    "diff_density": 0.562076621680454,
+    "unemployment": 7.1
   },
   "17183": {
     "year": 2016,
@@ -7191,7 +7940,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Vermilion",
     "diff_margin": -9.337948253297085,
-    "diff_density": -0.5699253091710546
+    "diff_density": -0.5699253091710546,
+    "unemployment": 7.1
   },
   "17185": {
     "year": 2016,
@@ -7202,7 +7952,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Wabash",
     "diff_margin": -9.75563495001851,
-    "diff_density": 1.1970884658454644
+    "diff_density": 1.1970884658454644,
+    "unemployment": 6.5
   },
   "17187": {
     "year": 2016,
@@ -7213,7 +7964,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Warren",
     "diff_margin": -13.149740259740256,
-    "diff_density": -0.17383480825958486
+    "diff_density": -0.17383480825958486,
+    "unemployment": 5.2
   },
   "17189": {
     "year": 2016,
@@ -7224,7 +7976,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Washington",
     "diff_margin": -13.485878524945775,
-    "diff_density": -0.04874273423751774
+    "diff_density": -0.04874273423751774,
+    "unemployment": 3.8
   },
   "17191": {
     "year": 2016,
@@ -7235,7 +7988,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Wayne",
     "diff_margin": -7.016201550387597,
-    "diff_density": 0.8061030246143943
+    "diff_density": 0.8061030246143943,
+    "unemployment": 8.4
   },
   "17193": {
     "year": 2016,
@@ -7246,7 +8000,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "White",
     "diff_margin": -11.598344080120729,
-    "diff_density": 0.4520977423853516
+    "diff_density": 0.4520977423853516,
+    "unemployment": 6.2
   },
   "17195": {
     "year": 2016,
@@ -7257,7 +8012,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Whiteside",
     "diff_margin": -13.906687822292746,
-    "diff_density": -0.8167409572524633
+    "diff_density": -0.8167409572524633,
+    "unemployment": 5.8
   },
   "17197": {
     "year": 2016,
@@ -7268,7 +8024,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Will",
     "diff_margin": -1.7508676677777402,
-    "diff_density": 16.279587530319873
+    "diff_density": 16.279587530319873,
+    "unemployment": 5.4
   },
   "17199": {
     "year": 2016,
@@ -7279,7 +8036,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Williamson",
     "diff_margin": -9.354772452421873,
-    "diff_density": 5.427575865762236
+    "diff_density": 5.427575865762236,
+    "unemployment": 6.2
   },
   "17201": {
     "year": 2016,
@@ -7290,7 +8048,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Winnebago",
     "diff_margin": -5.346870747697459,
-    "diff_density": -11.59896992364034
+    "diff_density": -11.59896992364034,
+    "unemployment": 6.4
   },
   "17203": {
     "year": 2016,
@@ -7301,7 +8060,8 @@ export const counties = {
     "statenam": "Illinois",
     "cty_name": "Woodford",
     "diff_margin": -3.38146784259116,
-    "diff_density": 0.9755058734369157
+    "diff_density": 0.9755058734369157,
+    "unemployment": 4.9
   },
   "18001": {
     "year": 2016,
@@ -7312,7 +8072,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Adams",
     "diff_margin": -7.760621980213209,
-    "diff_density": 0.07972332831902662
+    "diff_density": 0.07972332831902662,
+    "unemployment": 3.8
   },
   "18003": {
     "year": 2016,
@@ -7323,7 +8084,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Allen",
     "diff_margin": -2.981451158196542,
-    "diff_density": -1.7566300527909107
+    "diff_density": -1.7566300527909107,
+    "unemployment": 4.3
   },
   "18005": {
     "year": 2016,
@@ -7334,7 +8096,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Bartholomew",
     "diff_margin": -5.846227731637285,
-    "diff_density": 7.527453982453125
+    "diff_density": 7.527453982453125,
+    "unemployment": 3.6
   },
   "18007": {
     "year": 2016,
@@ -7345,7 +8108,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Benton",
     "diff_margin": -8.85414887794198,
-    "diff_density": 0.19069927661040253
+    "diff_density": 0.19069927661040253,
+    "unemployment": 4.3
   },
   "18009": {
     "year": 2016,
@@ -7356,7 +8120,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Blackford",
     "diff_margin": -14.852314392368314,
-    "diff_density": 0.480079961230917
+    "diff_density": 0.480079961230917,
+    "unemployment": 5.7
   },
   "18011": {
     "year": 2016,
@@ -7367,7 +8132,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Boone",
     "diff_margin": 1.7350918561492144,
-    "diff_density": 10.220456125416746
+    "diff_density": 10.220456125416746,
+    "unemployment": 3.6
   },
   "18013": {
     "year": 2016,
@@ -7378,7 +8144,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Brown",
     "diff_margin": -8.39882650480526,
-    "diff_density": 0.977778703763061
+    "diff_density": 0.977778703763061,
+    "unemployment": 3.8
   },
   "18015": {
     "year": 2016,
@@ -7389,7 +8156,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Carroll",
     "diff_margin": -11.774614937855734,
-    "diff_density": 2.148794798774915
+    "diff_density": 2.148794798774915,
+    "unemployment": 4.4
   },
   "18017": {
     "year": 2016,
@@ -7400,7 +8168,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Cass",
     "diff_margin": -11.343512557481432,
-    "diff_density": -0.064233895426419
+    "diff_density": -0.064233895426419,
+    "unemployment": 4.7
   },
   "18019": {
     "year": 2016,
@@ -7411,7 +8180,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Clark",
     "diff_margin": -7.359884157795868,
-    "diff_density": 10.609486134205852
+    "diff_density": 10.609486134205852,
+    "unemployment": 4.4
   },
   "18021": {
     "year": 2016,
@@ -7422,7 +8192,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Clay",
     "diff_margin": -11.598607336353137,
-    "diff_density": 1.330182916596744
+    "diff_density": 1.330182916596744,
+    "unemployment": 5
   },
   "18023": {
     "year": 2016,
@@ -7433,7 +8204,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Clinton",
     "diff_margin": -9.772958977807665,
-    "diff_density": 4.967763596415438
+    "diff_density": 4.967763596415438,
+    "unemployment": 4
   },
   "18025": {
     "year": 2016,
@@ -7444,7 +8216,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Crawford",
     "diff_margin": -15.652748856458288,
-    "diff_density": 0.0009396675827790801
+    "diff_density": 0.0009396675827790801,
+    "unemployment": 5.6
   },
   "18027": {
     "year": 2016,
@@ -7455,7 +8228,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Daviess",
     "diff_margin": -7.013979135618481,
-    "diff_density": 1.1270895713520659
+    "diff_density": 1.1270895713520659,
+    "unemployment": 3.6
   },
   "18029": {
     "year": 2016,
@@ -7466,7 +8240,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Dearborn",
     "diff_margin": -8.777582601421997,
-    "diff_density": 5.095732550896628
+    "diff_density": 5.095732550896628,
+    "unemployment": 4.7
   },
   "18031": {
     "year": 2016,
@@ -7477,7 +8252,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Decatur",
     "diff_margin": -9.413280757097795,
-    "diff_density": 2.109638725608608
+    "diff_density": 2.109638725608608,
+    "unemployment": 3.6
   },
   "18033": {
     "year": 2016,
@@ -7488,7 +8264,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "DeKalb",
     "diff_margin": -9.753986679352995,
-    "diff_density": 1.3480513753376329
+    "diff_density": 1.3480513753376329,
+    "unemployment": 4.2
   },
   "18035": {
     "year": 2016,
@@ -7499,7 +8276,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Delaware",
     "diff_margin": -9.886924092261573,
-    "diff_density": -0.6868346424564038
+    "diff_density": -0.6868346424564038,
+    "unemployment": 5.5
   },
   "18037": {
     "year": 2016,
@@ -7510,7 +8288,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Dubois",
     "diff_margin": -8.112712255861826,
-    "diff_density": 3.2145528588480374
+    "diff_density": 3.2145528588480374,
+    "unemployment": 3.3
   },
   "18039": {
     "year": 2016,
@@ -7521,7 +8300,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Elkhart",
     "diff_margin": -4.255825854848357,
-    "diff_density": -5.749019366539301
+    "diff_density": -5.749019366539301,
+    "unemployment": 4
   },
   "18041": {
     "year": 2016,
@@ -7532,7 +8312,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Fayette",
     "diff_margin": -16.59935991605456,
-    "diff_density": 3.223519836286684
+    "diff_density": 3.223519836286684,
+    "unemployment": 5.9
   },
   "18043": {
     "year": 2016,
@@ -7543,7 +8324,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Floyd",
     "diff_margin": -4.504734721289459,
-    "diff_density": 12.972279302419906
+    "diff_density": 12.972279302419906,
+    "unemployment": 4.4
   },
   "18045": {
     "year": 2016,
@@ -7554,7 +8336,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Fountain",
     "diff_margin": -11.711538667380253,
-    "diff_density": 0.9199560228478987
+    "diff_density": 0.9199560228478987,
+    "unemployment": 5.9
   },
   "18047": {
     "year": 2016,
@@ -7565,7 +8348,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Franklin",
     "diff_margin": -9.651910828025478,
-    "diff_density": 1.1177793096272417
+    "diff_density": 1.1177793096272417,
+    "unemployment": 4.2
   },
   "18049": {
     "year": 2016,
@@ -7576,7 +8360,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Fulton",
     "diff_margin": -8.844220205397658,
-    "diff_density": 0.6713444990363477
+    "diff_density": 0.6713444990363477,
+    "unemployment": 4.8
   },
   "18051": {
     "year": 2016,
@@ -7587,7 +8372,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Gibson",
     "diff_margin": -9.436566701137536,
-    "diff_density": 1.5380869351166169
+    "diff_density": 1.5380869351166169,
+    "unemployment": 3.8
   },
   "18053": {
     "year": 2016,
@@ -7598,7 +8384,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Grant",
     "diff_margin": -10.070243670509925,
-    "diff_density": -0.10653802497162701
+    "diff_density": -0.10653802497162701,
+    "unemployment": 5.1
   },
   "18055": {
     "year": 2016,
@@ -7609,7 +8396,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Greene",
     "diff_margin": -11.89830269563322,
-    "diff_density": 1.1995852534562204
+    "diff_density": 1.1995852534562204,
+    "unemployment": 6.6
   },
   "18057": {
     "year": 2016,
@@ -7620,7 +8408,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Hamilton",
     "diff_margin": 5.24142420100241,
-    "diff_density": 42.52683414918715
+    "diff_density": 42.52683414918715,
+    "unemployment": 3.4
   },
   "18059": {
     "year": 2016,
@@ -7631,7 +8420,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Hancock",
     "diff_margin": -3.663529852610541,
-    "diff_density": 10.407599503300446
+    "diff_density": 10.407599503300446,
+    "unemployment": 4
   },
   "18061": {
     "year": 2016,
@@ -7642,7 +8432,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Harrison",
     "diff_margin": -11.612797927461138,
-    "diff_density": 1.7699075373565591
+    "diff_density": 1.7699075373565591,
+    "unemployment": 4.4
   },
   "18063": {
     "year": 2016,
@@ -7653,7 +8444,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Hendricks",
     "diff_margin": -1.656613781923518,
-    "diff_density": 21.16998894104347
+    "diff_density": 21.16998894104347,
+    "unemployment": 3.6
   },
   "18065": {
     "year": 2016,
@@ -7664,7 +8456,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Henry",
     "diff_margin": -14.525716064757155,
-    "diff_density": 2.727416556088599
+    "diff_density": 2.727416556088599,
+    "unemployment": 4.7
   },
   "18067": {
     "year": 2016,
@@ -7675,7 +8468,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Howard",
     "diff_margin": -11.196314414757577,
-    "diff_density": 1.5845908687640815
+    "diff_density": 1.5845908687640815,
+    "unemployment": 4.8
   },
   "18069": {
     "year": 2016,
@@ -7686,7 +8480,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Huntington",
     "diff_margin": -7.201834230624762,
-    "diff_density": 0.5457206324317241
+    "diff_density": 0.5457206324317241,
+    "unemployment": 4.2
   },
   "18071": {
     "year": 2016,
@@ -7697,7 +8492,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Jackson",
     "diff_margin": -13.010082135523614,
-    "diff_density": 1.6130429404488424
+    "diff_density": 1.6130429404488424,
+    "unemployment": 4
   },
   "18073": {
     "year": 2016,
@@ -7708,7 +8504,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Jasper",
     "diff_margin": -11.258129922736476,
-    "diff_density": 0.7815217468996813
+    "diff_density": 0.7815217468996813,
+    "unemployment": 5.1
   },
   "18075": {
     "year": 2016,
@@ -7719,7 +8516,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Jay",
     "diff_margin": -15.044805325295155,
-    "diff_density": 0.1597759833289949
+    "diff_density": 0.1597759833289949,
+    "unemployment": 4.7
   },
   "18077": {
     "year": 2016,
@@ -7730,7 +8528,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Jefferson",
     "diff_margin": -11.510143377163658,
-    "diff_density": 0.9263455619332888
+    "diff_density": 0.9263455619332888,
+    "unemployment": 5
   },
   "18079": {
     "year": 2016,
@@ -7741,7 +8540,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Jennings",
     "diff_margin": -16.01144399460189,
-    "diff_density": 2.295640766902121
+    "diff_density": 2.295640766902121,
+    "unemployment": 4.8
   },
   "18081": {
     "year": 2016,
@@ -7752,7 +8552,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Johnson",
     "diff_margin": -3.6313340077609517,
-    "diff_density": 25.787888150298016
+    "diff_density": 25.787888150298016,
+    "unemployment": 3.8
   },
   "18083": {
     "year": 2016,
@@ -7763,7 +8564,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Knox",
     "diff_margin": -10.157796292708134,
-    "diff_density": 0.6540695308412303
+    "diff_density": 0.6540695308412303,
+    "unemployment": 4.5
   },
   "18085": {
     "year": 2016,
@@ -7774,7 +8576,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Kosciusko",
     "diff_margin": -3.0506412385996775,
-    "diff_density": 3.475541796830896
+    "diff_density": 3.475541796830896,
+    "unemployment": 4
   },
   "18087": {
     "year": 2016,
@@ -7785,7 +8588,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "LaGrange",
     "diff_margin": -9.334455611390283,
-    "diff_density": 0.6220041093725293
+    "diff_density": 0.6220041093725293,
+    "unemployment": 3.7
   },
   "18089": {
     "year": 2016,
@@ -7796,7 +8600,11 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Lake",
     "diff_margin": -6.5040942436091385,
-    "diff_density": -3.0312361712361735
+    "diff_density": -3.0312361712361735,
+    "unemployment": 6.6
+  },
+  "18091": {
+    "unemployment": 6
   },
   "18093": {
     "year": 2016,
@@ -7807,7 +8615,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Lawrence",
     "diff_margin": -10.360383728244916,
-    "diff_density": 2.7894436404924647
+    "diff_density": 2.7894436404924647,
+    "unemployment": 5.6
   },
   "18095": {
     "year": 2016,
@@ -7818,7 +8627,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Madison",
     "diff_margin": -11.946626910175176,
-    "diff_density": 2.857829704372449
+    "diff_density": 2.857829704372449,
+    "unemployment": 4.9
   },
   "18097": {
     "year": 2016,
@@ -7829,7 +8639,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Marion",
     "diff_margin": -1.4392726427016242,
-    "diff_density": -5.3775750693919235
+    "diff_density": -5.3775750693919235,
+    "unemployment": 4.7
   },
   "18099": {
     "year": 2016,
@@ -7840,7 +8651,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Marshall",
     "diff_margin": -7.906286095068854,
-    "diff_density": 0.5523855465139889
+    "diff_density": 0.5523855465139889,
+    "unemployment": 3.9
   },
   "18101": {
     "year": 2016,
@@ -7851,7 +8663,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Martin",
     "diff_margin": -10.15256084876222,
-    "diff_density": 0.18762673497348992
+    "diff_density": 0.18762673497348992,
+    "unemployment": 4.1
   },
   "18103": {
     "year": 2016,
@@ -7862,7 +8675,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Miami",
     "diff_margin": -12.449642857142859,
-    "diff_density": 1.7612090734003871
+    "diff_density": 1.7612090734003871,
+    "unemployment": 4.8
   },
   "18105": {
     "year": 2016,
@@ -7873,7 +8687,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Monroe",
     "diff_margin": 0.891798587369621,
-    "diff_density": 1.0122037464196012
+    "diff_density": 1.0122037464196012,
+    "unemployment": 5.1
   },
   "18107": {
     "year": 2016,
@@ -7884,7 +8699,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Montgomery",
     "diff_margin": -7.31657373683862,
-    "diff_density": 1.3060815283089902
+    "diff_density": 1.3060815283089902,
+    "unemployment": 4.1
   },
   "18109": {
     "year": 2016,
@@ -7895,7 +8711,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Morgan",
     "diff_margin": -8.828229634381017,
-    "diff_density": 7.213949303166075
+    "diff_density": 7.213949303166075,
+    "unemployment": 4.2
   },
   "18111": {
     "year": 2016,
@@ -7906,7 +8723,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Newton",
     "diff_margin": -14.892750820238298,
-    "diff_density": 0.34407805655117407
+    "diff_density": 0.34407805655117407,
+    "unemployment": 5.3
   },
   "18113": {
     "year": 2016,
@@ -7917,7 +8735,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Noble",
     "diff_margin": -9.075731201894609,
-    "diff_density": 1.5708947522149757
+    "diff_density": 1.5708947522149757,
+    "unemployment": 4.2
   },
   "18115": {
     "year": 2016,
@@ -7928,7 +8747,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Ohio",
     "diff_margin": -11.742687692835105,
-    "diff_density": 1.1334780589737647
+    "diff_density": 1.1334780589737647,
+    "unemployment": 4.9
   },
   "18117": {
     "year": 2016,
@@ -7939,7 +8759,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Orange",
     "diff_margin": -12.79084137257296,
-    "diff_density": 1.0352348201511106
+    "diff_density": 1.0352348201511106,
+    "unemployment": 5.2
   },
   "18119": {
     "year": 2016,
@@ -7950,7 +8771,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Owen",
     "diff_margin": -11.959624413145537,
-    "diff_density": 1.0532134236549098
+    "diff_density": 1.0532134236549098,
+    "unemployment": 5.4
   },
   "18121": {
     "year": 2016,
@@ -7961,7 +8783,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Parke",
     "diff_margin": -10.476982968369832,
-    "diff_density": 0.13882741870192916
+    "diff_density": 0.13882741870192916,
+    "unemployment": 5.1
   },
   "18123": {
     "year": 2016,
@@ -7972,7 +8795,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Perry",
     "diff_margin": -16.65423676012461,
-    "diff_density": 0.39271238833730493
+    "diff_density": 0.39271238833730493,
+    "unemployment": 4.9
   },
   "18125": {
     "year": 2016,
@@ -7983,7 +8807,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Pike",
     "diff_margin": -14.160150577212647,
-    "diff_density": 0.1523599808520828
+    "diff_density": 0.1523599808520828,
+    "unemployment": 4.6
   },
   "18127": {
     "year": 2016,
@@ -7994,7 +8819,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Porter",
     "diff_margin": -7.164043298645609,
-    "diff_density": 8.259570728207592
+    "diff_density": 8.259570728207592,
+    "unemployment": 5.3
   },
   "18129": {
     "year": 2016,
@@ -8005,7 +8831,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Posey",
     "diff_margin": -8.842532133676091,
-    "diff_density": 0.542851038894451
+    "diff_density": 0.542851038894451,
+    "unemployment": 4.3
   },
   "18131": {
     "year": 2016,
@@ -8016,7 +8843,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Pulaski",
     "diff_margin": -10.763157991539455,
-    "diff_density": 0.08776086705868913
+    "diff_density": 0.08776086705868913,
+    "unemployment": 4.6
   },
   "18133": {
     "year": 2016,
@@ -8027,7 +8855,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Putnam",
     "diff_margin": -9.72896457765668,
-    "diff_density": 1.7696014816972934
+    "diff_density": 1.7696014816972934,
+    "unemployment": 4.5
   },
   "18135": {
     "year": 2016,
@@ -8038,7 +8867,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Randolph",
     "diff_margin": -13.596732976281562,
-    "diff_density": 0.593311817498563
+    "diff_density": 0.593311817498563,
+    "unemployment": 4.5
   },
   "18137": {
     "year": 2016,
@@ -8049,7 +8879,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Ripley",
     "diff_margin": -10.19021892103206,
-    "diff_density": 4.04950832157337
+    "diff_density": 4.04950832157337,
+    "unemployment": 4.5
   },
   "18139": {
     "year": 2016,
@@ -8060,7 +8891,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Rush",
     "diff_margin": -10.470548932630994,
-    "diff_density": 0.456173674409488
+    "diff_density": 0.456173674409488,
+    "unemployment": 4
   },
   "18141": {
     "year": 2016,
@@ -8071,7 +8903,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "St. Joseph",
     "diff_margin": -3.2649197821876257,
-    "diff_density": -2.733540460849639
+    "diff_density": -2.733540460849639,
+    "unemployment": 5
   },
   "18143": {
     "year": 2016,
@@ -8082,7 +8915,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Scott",
     "diff_margin": -16.688852097130248,
-    "diff_density": 1.7840336134453807
+    "diff_density": 1.7840336134453807,
+    "unemployment": 4.9
   },
   "18145": {
     "year": 2016,
@@ -8093,7 +8927,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Shelby",
     "diff_margin": -8.290044605519931,
-    "diff_density": 2.861549312902838
+    "diff_density": 2.861549312902838,
+    "unemployment": 4
   },
   "18147": {
     "year": 2016,
@@ -8104,7 +8939,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Spencer",
     "diff_margin": -12.662216085952405,
-    "diff_density": 0.5820819680395211
+    "diff_density": 0.5820819680395211,
+    "unemployment": 4.2
   },
   "18149": {
     "year": 2016,
@@ -8115,7 +8951,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Starke",
     "diff_margin": -16.531894645566872,
-    "diff_density": 1.5250490085077466
+    "diff_density": 1.5250490085077466,
+    "unemployment": 5.2
   },
   "18151": {
     "year": 2016,
@@ -8126,7 +8963,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Steuben",
     "diff_margin": -9.693269098417066,
-    "diff_density": 2.7017861073347618
+    "diff_density": 2.7017861073347618,
+    "unemployment": 3.8
   },
   "18153": {
     "year": 2016,
@@ -8137,7 +8975,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Sullivan",
     "diff_margin": -13.802536511274681,
-    "diff_density": 0.601655857225925
+    "diff_density": 0.601655857225925,
+    "unemployment": 6.1
   },
   "18155": {
     "year": 2016,
@@ -8148,7 +8987,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Switzerland",
     "diff_margin": -16.743528441879633,
-    "diff_density": 1.093677197117346
+    "diff_density": 1.093677197117346,
+    "unemployment": 5.3
   },
   "18157": {
     "year": 2016,
@@ -8159,7 +8999,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Tippecanoe",
     "diff_margin": -3.00820789456683,
-    "diff_density": 10.03907404813829
+    "diff_density": 10.03907404813829,
+    "unemployment": 4.3
   },
   "18159": {
     "year": 2016,
@@ -8170,7 +9011,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Tipton",
     "diff_margin": -11.888175765645808,
-    "diff_density": 0.5547485990634833
+    "diff_density": 0.5547485990634833,
+    "unemployment": 3.8
   },
   "18161": {
     "year": 2016,
@@ -8181,7 +9023,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Union",
     "diff_margin": -11.081022519780895,
-    "diff_density": 1.1520865897531323
+    "diff_density": 1.1520865897531323,
+    "unemployment": 4.2
   },
   "18163": {
     "year": 2016,
@@ -8192,7 +9035,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Vanderburgh",
     "diff_margin": -4.496515140986979,
-    "diff_density": -1.9033781642181111
+    "diff_density": -1.9033781642181111,
+    "unemployment": 4.4
   },
   "18165": {
     "year": 2016,
@@ -8203,7 +9047,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Vermillion",
     "diff_margin": -15.167294951540583,
-    "diff_density": 1.2913983182809083
+    "diff_density": 1.2913983182809083,
+    "unemployment": 6.5
   },
   "18167": {
     "year": 2016,
@@ -8214,7 +9059,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Vigo",
     "diff_margin": -9.191429401804442,
-    "diff_density": -0.7593655004834972
+    "diff_density": -0.7593655004834972,
+    "unemployment": 5.7
   },
   "18169": {
     "year": 2016,
@@ -8225,7 +9071,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Wabash",
     "diff_margin": -8.362795378307865,
-    "diff_density": 1.316731809034259
+    "diff_density": 1.316731809034259,
+    "unemployment": 4.5
   },
   "18171": {
     "year": 2016,
@@ -8236,7 +9083,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Warren",
     "diff_margin": -13.431477417708603,
-    "diff_density": 0.3264078095864864
+    "diff_density": 0.3264078095864864,
+    "unemployment": 5
   },
   "18173": {
     "year": 2016,
@@ -8247,7 +9095,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Warrick",
     "diff_margin": -5.013384443919083,
-    "diff_density": 12.94446610015332
+    "diff_density": 12.94446610015332,
+    "unemployment": 4.4
   },
   "18175": {
     "year": 2016,
@@ -8258,7 +9107,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Washington",
     "diff_margin": -13.150492367422569,
-    "diff_density": 1.1602261888540681
+    "diff_density": 1.1602261888540681,
+    "unemployment": 4.6
   },
   "18177": {
     "year": 2016,
@@ -8269,7 +9119,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Wayne",
     "diff_margin": -9.030410557184751,
-    "diff_density": 0.2405764922586684
+    "diff_density": 0.2405764922586684,
+    "unemployment": 4.9
   },
   "18179": {
     "year": 2016,
@@ -8280,7 +9131,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Wells",
     "diff_margin": -6.86176026823135,
-    "diff_density": 0.5116069439539288
+    "diff_density": 0.5116069439539288,
+    "unemployment": 3.6
   },
   "18181": {
     "year": 2016,
@@ -8291,7 +9143,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "White",
     "diff_margin": -10.846340133306398,
-    "diff_density": -0.006737408932529831
+    "diff_density": -0.006737408932529831,
+    "unemployment": 3.9
   },
   "18183": {
     "year": 2016,
@@ -8302,7 +9155,8 @@ export const counties = {
     "statenam": "Indiana",
     "cty_name": "Whitley",
     "diff_margin": -7.699114901834566,
-    "diff_density": 1.564364812110739
+    "diff_density": 1.564364812110739,
+    "unemployment": 4
   },
   "19001": {
     "year": 2016,
@@ -8313,7 +9167,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Adair",
     "diff_margin": -14.808621973929235,
-    "diff_density": -0.4168064363131725
+    "diff_density": -0.4168064363131725,
+    "unemployment": 3.4
   },
   "19003": {
     "year": 2016,
@@ -8324,7 +9179,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Adams",
     "diff_margin": -19.9126320845341,
-    "diff_density": -0.24312866049499338
+    "diff_density": -0.24312866049499338,
+    "unemployment": 2.9
   },
   "19005": {
     "year": 2016,
@@ -8335,7 +9191,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Allamakee",
     "diff_margin": -16.005247915752527,
-    "diff_density": -0.15180885022219393
+    "diff_density": -0.15180885022219393,
+    "unemployment": 4.9
   },
   "19007": {
     "year": 2016,
@@ -8346,7 +9203,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Appanoose",
     "diff_margin": -17.509186351706038,
-    "diff_density": -0.3015592511411871
+    "diff_density": -0.3015592511411871,
+    "unemployment": 5.7
   },
   "19009": {
     "year": 2016,
@@ -8357,7 +9215,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Audubon",
     "diff_margin": -14.667475584492454,
-    "diff_density": -0.17177171753657205
+    "diff_density": -0.17177171753657205,
+    "unemployment": 3.7
   },
   "19011": {
     "year": 2016,
@@ -8368,7 +9227,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Benton",
     "diff_margin": -14.802899926953984,
-    "diff_density": -0.46682880518247316
+    "diff_density": -0.46682880518247316,
+    "unemployment": 4
   },
   "19013": {
     "year": 2016,
@@ -8379,7 +9239,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Black Hawk",
     "diff_margin": -8.684416728618658,
-    "diff_density": -6.926712091485939
+    "diff_density": -6.926712091485939,
+    "unemployment": 5.8
   },
   "19015": {
     "year": 2016,
@@ -8390,7 +9251,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Boone",
     "diff_margin": -12.757768878718537,
-    "diff_density": -0.7040553213079797
+    "diff_density": -0.7040553213079797,
+    "unemployment": 3.4
   },
   "19017": {
     "year": 2016,
@@ -8401,7 +9263,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Bremer",
     "diff_margin": -10.60258426966292,
-    "diff_density": 0.005828051804904533
+    "diff_density": 0.005828051804904533,
+    "unemployment": 4.2
   },
   "19019": {
     "year": 2016,
@@ -8412,7 +9275,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Buchanan",
     "diff_margin": -16.985998816217815,
-    "diff_density": -0.6975570032573266
+    "diff_density": -0.6975570032573266,
+    "unemployment": 4.6
   },
   "19021": {
     "year": 2016,
@@ -8423,7 +9287,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Buena Vista",
     "diff_margin": -9.282437950849733,
-    "diff_density": -0.3534254057156758
+    "diff_density": -0.3534254057156758,
+    "unemployment": 4.4
   },
   "19023": {
     "year": 2016,
@@ -8434,7 +9299,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Butler",
     "diff_margin": -15.113697197264315,
-    "diff_density": -0.15598452071087543
+    "diff_density": -0.15598452071087543,
+    "unemployment": 4.5
   },
   "19025": {
     "year": 2016,
@@ -8445,7 +9311,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Calhoun",
     "diff_margin": -15.444260528893242,
-    "diff_density": -0.22338824850430683
+    "diff_density": -0.22338824850430683,
+    "unemployment": 4.7
   },
   "19027": {
     "year": 2016,
@@ -8456,7 +9323,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Carroll",
     "diff_margin": -14.677743172017255,
-    "diff_density": -0.4149789266647943
+    "diff_density": -0.4149789266647943,
+    "unemployment": 3.1
   },
   "19029": {
     "year": 2016,
@@ -8467,7 +9335,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Cass",
     "diff_margin": -12.086725726435155,
-    "diff_density": -0.2671201729668411
+    "diff_density": -0.2671201729668411,
+    "unemployment": 3
   },
   "19031": {
     "year": 2016,
@@ -8478,7 +9347,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Cedar",
     "diff_margin": -13.409394843383765,
-    "diff_density": -0.45160154632058536
+    "diff_density": -0.45160154632058536,
+    "unemployment": 3.8
   },
   "19033": {
     "year": 2016,
@@ -8489,7 +9359,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Cerro Gordo",
     "diff_margin": -12.413660142270139,
-    "diff_density": -2.0949045415354277
+    "diff_density": -2.0949045415354277,
+    "unemployment": 4.4
   },
   "19035": {
     "year": 2016,
@@ -8500,7 +9371,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Cherokee",
     "diff_margin": -13.96656320724216,
-    "diff_density": -0.3973569534242767
+    "diff_density": -0.3973569534242767,
+    "unemployment": 4.1
   },
   "19037": {
     "year": 2016,
@@ -8511,7 +9383,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Chickasaw",
     "diff_margin": -19.251652269514693,
-    "diff_density": -0.2365811491335883
+    "diff_density": -0.2365811491335883,
+    "unemployment": 4.6
   },
   "19039": {
     "year": 2016,
@@ -8522,7 +9395,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Clarke",
     "diff_margin": -16.197741203178204,
-    "diff_density": -0.05361203237702128
+    "diff_density": -0.05361203237702128,
+    "unemployment": 3.4
   },
   "19041": {
     "year": 2016,
@@ -8533,7 +9407,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Clay",
     "diff_margin": -13.51639194568017,
-    "diff_density": 0.06888160214371375
+    "diff_density": 0.06888160214371375,
+    "unemployment": 4.1
   },
   "19043": {
     "year": 2016,
@@ -8544,7 +9419,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Clayton",
     "diff_margin": -17.021743240272592,
-    "diff_density": -0.05402368535977509
+    "diff_density": -0.05402368535977509,
+    "unemployment": 4.2
   },
   "19045": {
     "year": 2016,
@@ -8555,7 +9431,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Clinton",
     "diff_margin": -16.252808158959027,
-    "diff_density": -3.2448256608769412
+    "diff_density": -3.2448256608769412,
+    "unemployment": 6.1
   },
   "19047": {
     "year": 2016,
@@ -8566,7 +9443,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Crawford",
     "diff_margin": -16.482573593704455,
-    "diff_density": 0.15808748372281833
+    "diff_density": 0.15808748372281833,
+    "unemployment": 5.2
   },
   "19049": {
     "year": 2016,
@@ -8577,7 +9455,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Dallas",
     "diff_margin": -1.8545692107291885,
-    "diff_density": -0.8444328320163166
+    "diff_density": -0.8444328320163166,
+    "unemployment": 3.2
   },
   "19051": {
     "year": 2016,
@@ -8588,7 +9467,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Davis",
     "diff_margin": -14.991918092275792,
-    "diff_density": 0.17235130130030463
+    "diff_density": 0.17235130130030463,
+    "unemployment": 5.3
   },
   "19053": {
     "year": 2016,
@@ -8599,7 +9479,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Decatur",
     "diff_margin": -14.296837699162836,
-    "diff_density": -0.24790328645559168
+    "diff_density": -0.24790328645559168,
+    "unemployment": 3.5
   },
   "19055": {
     "year": 2016,
@@ -8610,7 +9491,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Delaware",
     "diff_margin": -16.966863066012003,
-    "diff_density": -0.36701190805870887
+    "diff_density": -0.36701190805870887,
+    "unemployment": 3.7
   },
   "19057": {
     "year": 2016,
@@ -8621,7 +9503,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Des Moines",
     "diff_margin": -14.617760914872015,
-    "diff_density": -4.019799096414495
+    "diff_density": -4.019799096414495,
+    "unemployment": 5.9
   },
   "19059": {
     "year": 2016,
@@ -8632,7 +9515,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Dickinson",
     "diff_margin": -10.535431833707428,
-    "diff_density": 0.2325716612805735
+    "diff_density": 0.2325716612805735,
+    "unemployment": 3.5
   },
   "19061": {
     "year": 2016,
@@ -8643,7 +9527,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Dubuque",
     "diff_margin": -10.087517792687152,
-    "diff_density": -3.0568157159296305
+    "diff_density": -3.0568157159296305,
+    "unemployment": 4
   },
   "19063": {
     "year": 2016,
@@ -8654,7 +9539,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Emmet",
     "diff_margin": -15.971841937539835,
-    "diff_density": 0.0499666565625958
+    "diff_density": 0.0499666565625958,
+    "unemployment": 4.2
   },
   "19065": {
     "year": 2016,
@@ -8665,7 +9551,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Fayette",
     "diff_margin": -17.94139406909202,
-    "diff_density": -0.7524333274038391
+    "diff_density": -0.7524333274038391,
+    "unemployment": 5
   },
   "19067": {
     "year": 2016,
@@ -8676,7 +9563,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Floyd",
     "diff_margin": -16.892899185973697,
-    "diff_density": -0.5400968779338022
+    "diff_density": -0.5400968779338022,
+    "unemployment": 3.9
   },
   "19069": {
     "year": 2016,
@@ -8687,7 +9575,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Franklin",
     "diff_margin": -13.374638860630718,
-    "diff_density": -0.4645474852655642
+    "diff_density": -0.4645474852655642,
+    "unemployment": 3.8
   },
   "19071": {
     "year": 2016,
@@ -8698,7 +9587,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Fremont",
     "diff_margin": -17.64631963984243,
-    "diff_density": -0.22705076787635647
+    "diff_density": -0.22705076787635647,
+    "unemployment": 4.1
   },
   "19073": {
     "year": 2016,
@@ -8709,7 +9599,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Greene",
     "diff_margin": -13.562708945821086,
-    "diff_density": -0.1493068455150386
+    "diff_density": -0.1493068455150386,
+    "unemployment": 4.3
   },
   "19075": {
     "year": 2016,
@@ -8720,7 +9611,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Grundy",
     "diff_margin": -10.551744014188593,
-    "diff_density": -0.38815247280117937
+    "diff_density": -0.38815247280117937,
+    "unemployment": 3.7
   },
   "19077": {
     "year": 2016,
@@ -8731,7 +9623,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Guthrie",
     "diff_margin": -13.209059073222502,
-    "diff_density": -0.3970089058955004
+    "diff_density": -0.3970089058955004,
+    "unemployment": 3.6
   },
   "19079": {
     "year": 2016,
@@ -8742,7 +9635,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Hamilton",
     "diff_margin": -11.934535511925155,
-    "diff_density": -0.5817858690940625
+    "diff_density": -0.5817858690940625,
+    "unemployment": 4
   },
   "19081": {
     "year": 2016,
@@ -8753,7 +9647,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Hancock",
     "diff_margin": -15.3444969905417,
-    "diff_density": -0.19611208406304748
+    "diff_density": -0.19611208406304748,
+    "unemployment": 3
   },
   "19083": {
     "year": 2016,
@@ -8764,7 +9659,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Hardin",
     "diff_margin": -12.86636590288495,
-    "diff_density": -0.834897156206635
+    "diff_density": -0.834897156206635,
+    "unemployment": 4.2
   },
   "19085": {
     "year": 2016,
@@ -8775,7 +9671,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Harrison",
     "diff_margin": -14.055264299268092,
-    "diff_density": 0.07764439979909632
+    "diff_density": 0.07764439979909632,
+    "unemployment": 3.7
   },
   "19087": {
     "year": 2016,
@@ -8786,7 +9683,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Henry",
     "diff_margin": -14.792498384665091,
-    "diff_density": -0.9499433610388373
+    "diff_density": -0.9499433610388373,
+    "unemployment": 4.4
   },
   "19089": {
     "year": 2016,
@@ -8797,7 +9695,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Howard",
     "diff_margin": -22.447776791657425,
-    "diff_density": -0.29649234020073933
+    "diff_density": -0.29649234020073933,
+    "unemployment": 3.6
   },
   "19091": {
     "year": 2016,
@@ -8808,7 +9707,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Humboldt",
     "diff_margin": -13.374049274786405,
-    "diff_density": -0.2925705076551175
+    "diff_density": -0.2925705076551175,
+    "unemployment": 3.2
   },
   "19093": {
     "year": 2016,
@@ -8819,7 +9719,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Ida",
     "diff_margin": -13.998718662952648,
-    "diff_density": -0.1703782067622992
+    "diff_density": -0.1703782067622992,
+    "unemployment": 2.8
   },
   "19095": {
     "year": 2016,
@@ -8830,7 +9731,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Iowa",
     "diff_margin": -11.809973830925024,
-    "diff_density": -0.13347065443508477
+    "diff_density": -0.13347065443508477,
+    "unemployment": 3.2
   },
   "19097": {
     "year": 2016,
@@ -8841,7 +9743,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Jackson",
     "diff_margin": -20.067099176793413,
-    "diff_density": -0.05698383749449931
+    "diff_density": -0.05698383749449931,
+    "unemployment": 4.5
   },
   "19099": {
     "year": 2016,
@@ -8852,7 +9755,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Jasper",
     "diff_margin": -14.70316148274393,
-    "diff_density": -1.0142416691766343
+    "diff_density": -1.0142416691766343,
+    "unemployment": 4
   },
   "19101": {
     "year": 2016,
@@ -8863,7 +9767,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Jefferson",
     "diff_margin": -9.980783652043499,
-    "diff_density": -1.2184356271956993
+    "diff_density": -1.2184356271956993,
+    "unemployment": 4.6
   },
   "19103": {
     "year": 2016,
@@ -8874,7 +9779,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Johnson",
     "diff_margin": -0.6614689900445541,
-    "diff_density": -0.550728291316517
+    "diff_density": -0.550728291316517,
+    "unemployment": 3.2
   },
   "19105": {
     "year": 2016,
@@ -8885,7 +9791,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Jones",
     "diff_margin": -15.211523324343226,
-    "diff_density": -0.758317987561238
+    "diff_density": -0.758317987561238,
+    "unemployment": 4.4
   },
   "19107": {
     "year": 2016,
@@ -8896,7 +9803,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Keokuk",
     "diff_margin": -17.690477562783038,
-    "diff_density": -0.7022794295383115
+    "diff_density": -0.7022794295383115,
+    "unemployment": 5.1
   },
   "19109": {
     "year": 2016,
@@ -8907,7 +9815,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Kossuth",
     "diff_margin": -13.414550264550261,
-    "diff_density": -0.4264766839378247
+    "diff_density": -0.4264766839378247,
+    "unemployment": 3
   },
   "19111": {
     "year": 2016,
@@ -8918,7 +9827,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Lee",
     "diff_margin": -17.67057509595419,
-    "diff_density": -5.830075745864892
+    "diff_density": -5.830075745864892,
+    "unemployment": 8.1
   },
   "19113": {
     "year": 2016,
@@ -8929,7 +9839,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Linn",
     "diff_margin": -6.897941812600294,
-    "diff_density": -5.281333556522696
+    "diff_density": -5.281333556522696,
+    "unemployment": 4.3
   },
   "19115": {
     "year": 2016,
@@ -8940,7 +9851,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Louisa",
     "diff_margin": -16.121076269471978,
-    "diff_density": -0.06694103591607004
+    "diff_density": -0.06694103591607004,
+    "unemployment": 4.5
   },
   "19117": {
     "year": 2016,
@@ -8951,7 +9863,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Lucas",
     "diff_margin": -17.195745869211077,
-    "diff_density": -0.06066931419679911
+    "diff_density": -0.06066931419679911,
+    "unemployment": 3.8
   },
   "19119": {
     "year": 2016,
@@ -8962,7 +9875,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Lyon",
     "diff_margin": -7.387146464646463,
-    "diff_density": -0.2980719816217139
+    "diff_density": -0.2980719816217139,
+    "unemployment": 2.3
   },
   "19121": {
     "year": 2016,
@@ -8973,7 +9887,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Madison",
     "diff_margin": -11.639934295435882,
-    "diff_density": 0.1122425625211676
+    "diff_density": 0.1122425625211676,
+    "unemployment": 3.7
   },
   "19123": {
     "year": 2016,
@@ -8984,7 +9899,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Mahaska",
     "diff_margin": -13.87676195921479,
-    "diff_density": -0.6772091230774606
+    "diff_density": -0.6772091230774606,
+    "unemployment": 4.3
   },
   "19125": {
     "year": 2016,
@@ -8995,7 +9911,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Marion",
     "diff_margin": -11.284707758915346,
-    "diff_density": -0.24436369538167213
+    "diff_density": -0.24436369538167213,
+    "unemployment": 3.4
   },
   "19127": {
     "year": 2016,
@@ -9006,7 +9923,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Marshall",
     "diff_margin": -10.73220338983051,
-    "diff_density": -2.3829694323144075
+    "diff_density": -2.3829694323144075,
+    "unemployment": 4.9
   },
   "19129": {
     "year": 2016,
@@ -9017,7 +9935,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Mills",
     "diff_margin": -12.150357518401684,
-    "diff_density": 0.9020994879297746
+    "diff_density": 0.9020994879297746,
+    "unemployment": 4
   },
   "19131": {
     "year": 2016,
@@ -9028,7 +9947,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Mitchell",
     "diff_margin": -15.624029850746268,
-    "diff_density": -0.48459552789205596
+    "diff_density": -0.48459552789205596,
+    "unemployment": 3
   },
   "19133": {
     "year": 2016,
@@ -9039,7 +9959,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Monona",
     "diff_margin": -16.818287292817683,
-    "diff_density": -0.310484677338021
+    "diff_density": -0.310484677338021,
+    "unemployment": 4.6
   },
   "19135": {
     "year": 2016,
@@ -9050,7 +9971,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Monroe",
     "diff_margin": -17.806659729448494,
-    "diff_density": 0.0330651818035097
+    "diff_density": 0.0330651818035097,
+    "unemployment": 5.4
   },
   "19137": {
     "year": 2016,
@@ -9061,7 +9983,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Montgomery",
     "diff_margin": -11.999499799919967,
-    "diff_density": -0.06504362178731427
+    "diff_density": -0.06504362178731427,
+    "unemployment": 4.2
   },
   "19139": {
     "year": 2016,
@@ -9072,7 +9995,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Muscatine",
     "diff_margin": -13.596458136854238,
-    "diff_density": -1.7818654993485268
+    "diff_density": -1.7818654993485268,
+    "unemployment": 4.4
   },
   "19141": {
     "year": 2016,
@@ -9083,7 +10007,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "O'Brien",
     "diff_margin": -8.937583015786608,
-    "diff_density": 0.013063364919812415
+    "diff_density": 0.013063364919812415,
+    "unemployment": 3
   },
   "19143": {
     "year": 2016,
@@ -9094,7 +10019,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Osceola",
     "diff_margin": -11.28381294964029,
-    "diff_density": 0.008962576502458575
+    "diff_density": 0.008962576502458575,
+    "unemployment": 3.1
   },
   "19145": {
     "year": 2016,
@@ -9105,7 +10031,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Page",
     "diff_margin": -11.063272101033292,
-    "diff_density": -0.20424010169364948
+    "diff_density": -0.20424010169364948,
+    "unemployment": 6.4
   },
   "19147": {
     "year": 2016,
@@ -9116,7 +10043,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Palo Alto",
     "diff_margin": -13.92404364569962,
-    "diff_density": -0.3804143019296262
+    "diff_density": -0.3804143019296262,
+    "unemployment": 3.9
   },
   "19149": {
     "year": 2016,
@@ -9127,7 +10055,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Plymouth",
     "diff_margin": -10.108183349927241,
-    "diff_density": 0.12170856076672543
+    "diff_density": 0.12170856076672543,
+    "unemployment": 2.9
   },
   "19151": {
     "year": 2016,
@@ -9138,7 +10067,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Pocahontas",
     "diff_margin": -12.65906290785696,
-    "diff_density": -0.34324579031252256
+    "diff_density": -0.34324579031252256,
+    "unemployment": 3.4
   },
   "19153": {
     "year": 2016,
@@ -9149,7 +10079,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Polk",
     "diff_margin": -3.7392286139567474,
-    "diff_density": -0.8001064849509021
+    "diff_density": -0.8001064849509021,
+    "unemployment": 4.1
   },
   "19155": {
     "year": 2016,
@@ -9160,7 +10091,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Pottawattamie",
     "diff_margin": -10.109303272865056,
-    "diff_density": -0.07467567453802815
+    "diff_density": -0.07467567453802815,
+    "unemployment": 3.8
   },
   "19157": {
     "year": 2016,
@@ -9171,7 +10103,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Poweshiek",
     "diff_margin": -9.626957598266792,
-    "diff_density": -0.47878635050347995
+    "diff_density": -0.47878635050347995,
+    "unemployment": 4
   },
   "19159": {
     "year": 2016,
@@ -9182,7 +10115,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Ringgold",
     "diff_margin": -17.574858420268257,
-    "diff_density": 0.16213818860877716
+    "diff_density": 0.16213818860877716,
+    "unemployment": 3.7
   },
   "19161": {
     "year": 2016,
@@ -9193,7 +10127,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Sac",
     "diff_margin": -15.5074408685537,
-    "diff_density": -0.229721222239613
+    "diff_density": -0.229721222239613,
+    "unemployment": 3
   },
   "19163": {
     "year": 2016,
@@ -9204,7 +10139,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Scott",
     "diff_margin": -8.637731332029496,
-    "diff_density": -11.753265952105465
+    "diff_density": -11.753265952105465,
+    "unemployment": 5.4
   },
   "19165": {
     "year": 2016,
@@ -9215,7 +10151,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Shelby",
     "diff_margin": -11.78015948963317,
-    "diff_density": -0.35691221774603044
+    "diff_density": -0.35691221774603044,
+    "unemployment": 3.2
   },
   "19167": {
     "year": 2016,
@@ -9226,7 +10163,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Sioux",
     "diff_margin": -2.8755572850075044,
-    "diff_density": 0.8831167597256346
+    "diff_density": 0.8831167597256346,
+    "unemployment": 2.4
   },
   "19169": {
     "year": 2016,
@@ -9237,7 +10175,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Story",
     "diff_margin": -4.2619198527908395,
-    "diff_density": 3.0745885269368927
+    "diff_density": 3.0745885269368927,
+    "unemployment": 2.9
   },
   "19171": {
     "year": 2016,
@@ -9248,7 +10187,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Tama",
     "diff_margin": -15.895284854099124,
-    "diff_density": -0.5323575262479014
+    "diff_density": -0.5323575262479014,
+    "unemployment": 4.2
   },
   "19173": {
     "year": 2016,
@@ -9259,7 +10199,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Taylor",
     "diff_margin": -16.99847485847486,
-    "diff_density": 0.015798082346305975
+    "diff_density": 0.015798082346305975,
+    "unemployment": 3.9
   },
   "19175": {
     "year": 2016,
@@ -9270,7 +10211,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Union",
     "diff_margin": -17.792898751733702,
-    "diff_density": -0.4446662260409777
+    "diff_density": -0.4446662260409777,
+    "unemployment": 4.4
   },
   "19177": {
     "year": 2016,
@@ -9281,7 +10223,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Van Buren",
     "diff_margin": -15.371888825865003,
-    "diff_density": -0.0867476639369631
+    "diff_density": -0.0867476639369631,
+    "unemployment": 4.9
   },
   "19179": {
     "year": 2016,
@@ -9292,7 +10235,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Wapello",
     "diff_margin": -17.64672445985596,
-    "diff_density": -1.7933714656230464
+    "diff_density": -1.7933714656230464,
+    "unemployment": 7.4
   },
   "19181": {
     "year": 2016,
@@ -9303,7 +10247,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Warren",
     "diff_margin": -9.6090147124387,
-    "diff_density": 1.4851403050032417
+    "diff_density": 1.4851403050032417,
+    "unemployment": 3.8
   },
   "19183": {
     "year": 2016,
@@ -9314,7 +10259,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Washington",
     "diff_margin": -10.097886178861785,
-    "diff_density": -0.3118022642570857
+    "diff_density": -0.3118022642570857,
+    "unemployment": 3.5
   },
   "19185": {
     "year": 2016,
@@ -9325,7 +10271,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Wayne",
     "diff_margin": -18.525142074631976,
-    "diff_density": 0.03915042630937826
+    "diff_density": 0.03915042630937826,
+    "unemployment": 4.6
   },
   "19187": {
     "year": 2016,
@@ -9336,7 +10283,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Webster",
     "diff_margin": -15.63556238760949,
-    "diff_density": -1.4703993739694248
+    "diff_density": -1.4703993739694248,
+    "unemployment": 4.7
   },
   "19189": {
     "year": 2016,
@@ -9347,7 +10295,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Winnebago",
     "diff_margin": -15.465952422599266,
-    "diff_density": -0.5049868910584525
+    "diff_density": -0.5049868910584525,
+    "unemployment": 4.1
   },
   "19191": {
     "year": 2016,
@@ -9358,7 +10307,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Winneshiek",
     "diff_margin": -9.743022198448784,
-    "diff_density": 0.18958513922913056
+    "diff_density": 0.18958513922913056,
+    "unemployment": 3.6
   },
   "19193": {
     "year": 2016,
@@ -9369,7 +10319,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Woodbury",
     "diff_margin": -12.035050427410148,
-    "diff_density": -2.3917273695908747
+    "diff_density": -2.3917273695908747,
+    "unemployment": 4.2
   },
   "19195": {
     "year": 2016,
@@ -9380,7 +10331,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Worth",
     "diff_margin": -20.20571157495256,
-    "diff_density": 0.10683894831550589
+    "diff_density": 0.10683894831550589,
+    "unemployment": 3.5
   },
   "19197": {
     "year": 2016,
@@ -9391,7 +10343,8 @@ export const counties = {
     "statenam": "Iowa",
     "cty_name": "Wright",
     "diff_margin": -13.399954614220881,
-    "diff_density": -0.5705254815478451
+    "diff_density": -0.5705254815478451,
+    "unemployment": 4.5
   },
   "20001": {
     "year": 2016,
@@ -9402,7 +10355,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Allen",
     "diff_margin": -8.892133985698159,
-    "diff_density": 0.011627023785729662
+    "diff_density": 0.011627023785729662,
+    "unemployment": 6.9
   },
   "20003": {
     "year": 2016,
@@ -9413,7 +10367,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Anderson",
     "diff_margin": -8.187049130302103,
-    "diff_density": -0.066588458552574
+    "diff_density": -0.066588458552574,
+    "unemployment": 4.6
   },
   "20005": {
     "year": 2016,
@@ -9424,7 +10379,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Atchison",
     "diff_margin": -8.020456749569846,
-    "diff_density": -0.6529016397244725
+    "diff_density": -0.6529016397244725,
+    "unemployment": 7.4
   },
   "20007": {
     "year": 2016,
@@ -9435,7 +10391,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Barber",
     "diff_margin": -8.109311905839744,
-    "diff_density": -0.09214845644448744
+    "diff_density": -0.09214845644448744,
+    "unemployment": 4.4
   },
   "20009": {
     "year": 2016,
@@ -9446,7 +10403,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Barton",
     "diff_margin": -4.139024583663762,
-    "diff_density": -0.28352691534509766
+    "diff_density": -0.28352691534509766,
+    "unemployment": 5
   },
   "20011": {
     "year": 2016,
@@ -9457,7 +10415,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Bourbon",
     "diff_margin": -9.85173369381548,
-    "diff_density": -0.527207893370262
+    "diff_density": -0.527207893370262,
+    "unemployment": 5.7
   },
   "20013": {
     "year": 2016,
@@ -9468,7 +10427,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Brown",
     "diff_margin": -5.485353535353536,
-    "diff_density": -0.05321929686268323
+    "diff_density": -0.05321929686268323,
+    "unemployment": 4.2
   },
   "20015": {
     "year": 2016,
@@ -9479,7 +10439,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Butler",
     "diff_margin": -3.9319773760674295,
-    "diff_density": 0.6786353908774316
+    "diff_density": 0.6786353908774316,
+    "unemployment": 4.6
   },
   "20017": {
     "year": 2016,
@@ -9490,7 +10451,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Chase",
     "diff_margin": -4.846602086438153,
-    "diff_density": 0.09595839908933357
+    "diff_density": 0.09595839908933357,
+    "unemployment": 4.6
   },
   "20019": {
     "year": 2016,
@@ -9501,7 +10463,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Chautauqua",
     "diff_margin": -4.388672086720867,
-    "diff_density": 0.3378662659654399
+    "diff_density": 0.3378662659654399,
+    "unemployment": 5.9
   },
   "20021": {
     "year": 2016,
@@ -9512,7 +10475,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Cherokee",
     "diff_margin": -10.82963749105652,
-    "diff_density": -0.31765798117671196
+    "diff_density": -0.31765798117671196,
+    "unemployment": 5.2
   },
   "20023": {
     "year": 2016,
@@ -9523,7 +10487,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Cheyenne",
     "diff_margin": -2.9972036905606796,
-    "diff_density": -0.018478463363696074
+    "diff_density": -0.018478463363696074,
+    "unemployment": 3.3
   },
   "20025": {
     "year": 2016,
@@ -9534,7 +10499,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Clark",
     "diff_margin": -5.105930824008137,
-    "diff_density": -0.031412125627161114
+    "diff_density": -0.031412125627161114,
+    "unemployment": 3
   },
   "20027": {
     "year": 2016,
@@ -9545,7 +10511,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Clay",
     "diff_margin": -4.787231016903675,
-    "diff_density": 0.06560824422749167
+    "diff_density": 0.06560824422749167,
+    "unemployment": 4.8
   },
   "20029": {
     "year": 2016,
@@ -9556,7 +10523,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Cloud",
     "diff_margin": -4.57948316366484,
-    "diff_density": -0.3145047110464958
+    "diff_density": -0.3145047110464958,
+    "unemployment": 5.1
   },
   "20031": {
     "year": 2016,
@@ -9567,7 +10535,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Coffey",
     "diff_margin": -4.842599697122665,
-    "diff_density": 0.08948321237738188
+    "diff_density": 0.08948321237738188,
+    "unemployment": 8.2
   },
   "20033": {
     "year": 2016,
@@ -9578,7 +10547,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Comanche",
     "diff_margin": -3.5080163360560093,
-    "diff_density": -0.0928504376506405
+    "diff_density": -0.0928504376506405,
+    "unemployment": 3.2
   },
   "20035": {
     "year": 2016,
@@ -9589,7 +10559,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Cowley",
     "diff_margin": -5.748959000903785,
-    "diff_density": -0.4785409726848755
+    "diff_density": -0.4785409726848755,
+    "unemployment": 5.1
   },
   "20037": {
     "year": 2016,
@@ -9600,7 +10571,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Crawford",
     "diff_margin": -10.513099139128023,
-    "diff_density": -0.9165056972327719
+    "diff_density": -0.9165056972327719,
+    "unemployment": 5.4
   },
   "20039": {
     "year": 2016,
@@ -9611,7 +10583,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Decatur",
     "diff_margin": -5.168219178082191,
-    "diff_density": -0.07601307189542483
+    "diff_density": -0.07601307189542483,
+    "unemployment": 4.7
   },
   "20041": {
     "year": 2016,
@@ -9622,7 +10595,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Dickinson",
     "diff_margin": -5.364755244755244,
-    "diff_density": -0.03623584827700199
+    "diff_density": -0.03623584827700199,
+    "unemployment": 4.7
   },
   "20043": {
     "year": 2016,
@@ -9633,7 +10607,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Doniphan",
     "diff_margin": -9.160029708853237,
-    "diff_density": -0.09382308083375612
+    "diff_density": -0.09382308083375612,
+    "unemployment": 4.7
   },
   "20045": {
     "year": 2016,
@@ -9644,7 +10619,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Douglas",
     "diff_margin": 1.5951879496589356,
-    "diff_density": 0.18989909403997274
+    "diff_density": 0.18989909403997274,
+    "unemployment": 4.1
   },
   "20047": {
     "year": 2016,
@@ -9655,7 +10631,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Edwards",
     "diff_margin": -5.6178593272171256,
-    "diff_density": -0.12673414912605097
+    "diff_density": -0.12673414912605097,
+    "unemployment": 3.3
   },
   "20049": {
     "year": 2016,
@@ -9666,7 +10643,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Elk",
     "diff_margin": -7.821501191421765,
-    "diff_density": -0.16582001055474516
+    "diff_density": -0.16582001055474516,
+    "unemployment": 6.8
   },
   "20051": {
     "year": 2016,
@@ -9677,7 +10655,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Ellis",
     "diff_margin": -3.2097770154373926,
-    "diff_density": -0.06314875932037545
+    "diff_density": -0.06314875932037545,
+    "unemployment": 3.4
   },
   "20053": {
     "year": 2016,
@@ -9688,7 +10667,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Ellsworth",
     "diff_margin": -6.2684234577303855,
-    "diff_density": -0.12163372214849488
+    "diff_density": -0.12163372214849488,
+    "unemployment": 4.3
   },
   "20055": {
     "year": 2016,
@@ -9699,7 +10679,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Finney",
     "diff_margin": 1.3709670126400155,
-    "diff_density": 0.4940585420554999
+    "diff_density": 0.4940585420554999,
+    "unemployment": 3.5
   },
   "20057": {
     "year": 2016,
@@ -9710,7 +10691,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Ford",
     "diff_margin": -3.722996632996633,
-    "diff_density": -0.8493673686798333
+    "diff_density": -0.8493673686798333,
+    "unemployment": 3.6
   },
   "20059": {
     "year": 2016,
@@ -9721,7 +10703,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Franklin",
     "diff_margin": -7.066558453743664,
-    "diff_density": -0.5793115992724189
+    "diff_density": -0.5793115992724189,
+    "unemployment": 4.8
   },
   "20061": {
     "year": 2016,
@@ -9732,7 +10715,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Geary",
     "diff_margin": -6.4340903352503815,
-    "diff_density": -1.8648224221309349
+    "diff_density": -1.8648224221309349,
+    "unemployment": 6.4
   },
   "20063": {
     "year": 2016,
@@ -9743,7 +10727,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Gove",
     "diff_margin": -1.5101204819277125,
-    "diff_density": -0.05080100031726498
+    "diff_density": -0.05080100031726498,
+    "unemployment": 3
   },
   "20065": {
     "year": 2016,
@@ -9754,7 +10739,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Graham",
     "diff_margin": -4.475494071146247,
-    "diff_density": -0.0821292792592263
+    "diff_density": -0.0821292792592263,
+    "unemployment": 5
   },
   "20067": {
     "year": 2016,
@@ -9765,7 +10751,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Grant",
     "diff_margin": -1.2931501514495878,
-    "diff_density": 0.010528879610300024
+    "diff_density": 0.010528879610300024,
+    "unemployment": 3.9
   },
   "20069": {
     "year": 2016,
@@ -9776,7 +10763,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Gray",
     "diff_margin": -3.770288413724515,
-    "diff_density": 0.06450044310426195
+    "diff_density": 0.06450044310426195,
+    "unemployment": 2.6
   },
   "20071": {
     "year": 2016,
@@ -9787,7 +10775,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Greeley",
     "diff_margin": -3.880954616588422,
-    "diff_density": -0.03913803070203614
+    "diff_density": -0.03913803070203614,
+    "unemployment": 2.7
   },
   "20073": {
     "year": 2016,
@@ -9798,7 +10787,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Greenwood",
     "diff_margin": -5.301928139452151,
-    "diff_density": 0.5986722644975073
+    "diff_density": 0.5986722644975073,
+    "unemployment": 5.7
   },
   "20075": {
     "year": 2016,
@@ -9809,7 +10799,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Hamilton",
     "diff_margin": -5.130731995277451,
-    "diff_density": -0.030033617324462414
+    "diff_density": -0.030033617324462414,
+    "unemployment": 3.2
   },
   "20077": {
     "year": 2016,
@@ -9820,7 +10811,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Harper",
     "diff_margin": -7.580286510147234,
-    "diff_density": 0.15627116951838982
+    "diff_density": 0.15627116951838982,
+    "unemployment": 4
   },
   "20079": {
     "year": 2016,
@@ -9831,7 +10823,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Harvey",
     "diff_margin": -3.1608390646492452,
-    "diff_density": 0.45839740620657565
+    "diff_density": 0.45839740620657565,
+    "unemployment": 6.3
   },
   "20081": {
     "year": 2016,
@@ -9842,7 +10835,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Haskell",
     "diff_margin": 2.1384615384615397,
-    "diff_density": -0.1689957057764233
+    "diff_density": -0.1689957057764233,
+    "unemployment": 2.8
   },
   "20083": {
     "year": 2016,
@@ -9853,7 +10847,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Hodgeman",
     "diff_margin": -4.563956262425448,
-    "diff_density": -0.06021895603437244
+    "diff_density": -0.06021895603437244,
+    "unemployment": 2.7
   },
   "20085": {
     "year": 2016,
@@ -9864,7 +10859,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Jackson",
     "diff_margin": -8.180349222978872,
-    "diff_density": 0.2572561031361431
+    "diff_density": 0.2572561031361431,
+    "unemployment": 4
   },
   "20087": {
     "year": 2016,
@@ -9875,7 +10871,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Jefferson",
     "diff_margin": -6.687480063795853,
-    "diff_density": 0.25503032465215547
+    "diff_density": 0.25503032465215547,
+    "unemployment": 4.1
   },
   "20089": {
     "year": 2016,
@@ -9886,7 +10883,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Jewell",
     "diff_margin": -3.1624409979770736,
-    "diff_density": -0.019935588823671413
+    "diff_density": -0.019935588823671413,
+    "unemployment": 4.5
   },
   "20091": {
     "year": 2016,
@@ -9897,7 +10895,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Johnson",
     "diff_margin": 4.875547929780915,
-    "diff_density": 11.3792002196966
+    "diff_density": 11.3792002196966,
+    "unemployment": 3.7
   },
   "20093": {
     "year": 2016,
@@ -9908,7 +10907,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Kearny",
     "diff_margin": -2.4343396226415095,
-    "diff_density": -0.06795621108737104
+    "diff_density": -0.06795621108737104,
+    "unemployment": 3.7
   },
   "20095": {
     "year": 2016,
@@ -9919,7 +10919,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Kingman",
     "diff_margin": -4.585763486741847,
-    "diff_density": 0.06026871756856922
+    "diff_density": 0.06026871756856922,
+    "unemployment": 4.8
   },
   "20097": {
     "year": 2016,
@@ -9930,7 +10931,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Kiowa",
     "diff_margin": -3.3995601173020535,
-    "diff_density": -0.16435735636001336
+    "diff_density": -0.16435735636001336,
+    "unemployment": 3.5
   },
   "20099": {
     "year": 2016,
@@ -9941,7 +10943,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Labette",
     "diff_margin": -10.569367344361662,
-    "diff_density": -0.17799826434626098
+    "diff_density": -0.17799826434626098,
+    "unemployment": 6.2
   },
   "20101": {
     "year": 2016,
@@ -9952,7 +10955,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Lane",
     "diff_margin": -6.014957882069796,
-    "diff_density": -0.13174727510941375
+    "diff_density": -0.13174727510941375,
+    "unemployment": 3.9
   },
   "20103": {
     "year": 2016,
@@ -9963,7 +10967,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Leavenworth",
     "diff_margin": -5.1370737296131495,
-    "diff_density": 1.2785748546982632
+    "diff_density": 1.2785748546982632,
+    "unemployment": 4.5
   },
   "20105": {
     "year": 2016,
@@ -9974,7 +10979,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Lincoln",
     "diff_margin": -4.7109944751381185,
-    "diff_density": -0.047211565193216565
+    "diff_density": -0.047211565193216565,
+    "unemployment": 4
   },
   "20107": {
     "year": 2016,
@@ -9985,7 +10991,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Linn",
     "diff_margin": -9.340268754381867,
-    "diff_density": -0.31702386964279583
+    "diff_density": -0.31702386964279583,
+    "unemployment": 7
   },
   "20109": {
     "year": 2016,
@@ -9996,7 +11003,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Logan",
     "diff_margin": -3.5365875370919877,
-    "diff_density": -0.003697518150215684
+    "diff_density": -0.003697518150215684,
+    "unemployment": 3.2
   },
   "20111": {
     "year": 2016,
@@ -10007,7 +11015,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Lyon",
     "diff_margin": -5.100451255853557,
-    "diff_density": -0.15110233990583843
+    "diff_density": -0.15110233990583843,
+    "unemployment": 4.3
   },
   "20113": {
     "year": 2016,
@@ -10018,7 +11027,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "McPherson",
     "diff_margin": -2.4693522462428668,
-    "diff_density": 0.16218252863838423
+    "diff_density": 0.16218252863838423,
+    "unemployment": 3.9
   },
   "20115": {
     "year": 2016,
@@ -10029,7 +11039,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Marion",
     "diff_margin": -4.072946020128086,
-    "diff_density": 0.05741700113312653
+    "diff_density": 0.05741700113312653,
+    "unemployment": 5.9
   },
   "20117": {
     "year": 2016,
@@ -10040,7 +11051,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Marshall",
     "diff_margin": -7.6257841852337265,
-    "diff_density": -0.21435046324068452
+    "diff_density": -0.21435046324068452,
+    "unemployment": 3.6
   },
   "20119": {
     "year": 2016,
@@ -10051,7 +11063,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Meade",
     "diff_margin": -2.8014925373134325,
-    "diff_density": -0.0374786573832675
+    "diff_density": -0.0374786573832675,
+    "unemployment": 2.9
   },
   "20121": {
     "year": 2016,
@@ -10062,7 +11075,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Miami",
     "diff_margin": -4.877966286025011,
-    "diff_density": -0.25324775040822445
+    "diff_density": -0.25324775040822445,
+    "unemployment": 4.3
   },
   "20123": {
     "year": 2016,
@@ -10073,7 +11087,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Mitchell",
     "diff_margin": -3.0923512747875357,
-    "diff_density": -0.1960042177859469
+    "diff_density": -0.1960042177859469,
+    "unemployment": 3.1
   },
   "20125": {
     "year": 2016,
@@ -10084,7 +11099,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Montgomery",
     "diff_margin": -6.20051621784393,
-    "diff_density": -1.2386819573291064
+    "diff_density": -1.2386819573291064,
+    "unemployment": 6.9
   },
   "20127": {
     "year": 2016,
@@ -10095,7 +11111,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Morris",
     "diff_margin": -5.200685358255452,
-    "diff_density": 0.013476009665170707
+    "diff_density": 0.013476009665170707,
+    "unemployment": 4.3
   },
   "20129": {
     "year": 2016,
@@ -10106,7 +11123,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Morton",
     "diff_margin": -2.289999999999999,
-    "diff_density": -0.16037095912186694
+    "diff_density": -0.16037095912186694,
+    "unemployment": 4.6
   },
   "20131": {
     "year": 2016,
@@ -10117,7 +11135,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Nemaha",
     "diff_margin": -5.6910447761194,
-    "diff_density": -0.005832346012851097
+    "diff_density": -0.005832346012851097,
+    "unemployment": 3
   },
   "20133": {
     "year": 2016,
@@ -10128,7 +11147,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Neosho",
     "diff_margin": -7.838992033815643,
-    "diff_density": -0.576530351549513
+    "diff_density": -0.576530351549513,
+    "unemployment": 8.1
   },
   "20135": {
     "year": 2016,
@@ -10139,7 +11159,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Ness",
     "diff_margin": -3.9501742160278734,
-    "diff_density": -0.004805768783438191
+    "diff_density": -0.004805768783438191,
+    "unemployment": 4.1
   },
   "20137": {
     "year": 2016,
@@ -10150,7 +11171,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Norton",
     "diff_margin": -4.471598173515982,
-    "diff_density": -0.15606402241126016
+    "diff_density": -0.15606402241126016,
+    "unemployment": 2.9
   },
   "20139": {
     "year": 2016,
@@ -10161,7 +11183,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Osage",
     "diff_margin": -7.7457151145924,
-    "diff_density": -0.01848395509694889
+    "diff_density": -0.01848395509694889,
+    "unemployment": 4.6
   },
   "20141": {
     "year": 2016,
@@ -10172,7 +11195,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Osborne",
     "diff_margin": -4.452589845978322,
-    "diff_density": -0.09585434173669483
+    "diff_density": -0.09585434173669483,
+    "unemployment": 4.1
   },
   "20143": {
     "year": 2016,
@@ -10183,7 +11207,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Ottawa",
     "diff_margin": -4.225861828332169,
-    "diff_density": -0.09347619774395444
+    "diff_density": -0.09347619774395444,
+    "unemployment": 4.5
   },
   "20145": {
     "year": 2016,
@@ -10194,7 +11219,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Pawnee",
     "diff_margin": -5.739069946195237,
-    "diff_density": -0.010261183146395236
+    "diff_density": -0.010261183146395236,
+    "unemployment": 3.6
   },
   "20147": {
     "year": 2016,
@@ -10205,7 +11231,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Phillips",
     "diff_margin": -3.5533473764841066,
-    "diff_density": 0.047351785794915724
+    "diff_density": 0.047351785794915724,
+    "unemployment": 3.6
   },
   "20149": {
     "year": 2016,
@@ -10216,7 +11243,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Pottawatomie",
     "diff_margin": -3.479309778936191,
-    "diff_density": 1.0471862738103734
+    "diff_density": 1.0471862738103734,
+    "unemployment": 4.1
   },
   "20151": {
     "year": 2016,
@@ -10227,7 +11255,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Pratt",
     "diff_margin": -5.575060430898581,
-    "diff_density": 0.00794949934697442
+    "diff_density": 0.00794949934697442,
+    "unemployment": 5
   },
   "20153": {
     "year": 2016,
@@ -10238,7 +11267,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Rawlins",
     "diff_margin": -2.1102762430939226,
-    "diff_density": 0.0040049746591608315
+    "diff_density": 0.0040049746591608315,
+    "unemployment": 2.6
   },
   "20155": {
     "year": 2016,
@@ -10249,7 +11279,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Reno",
     "diff_margin": -4.664077106789492,
-    "diff_density": -0.7715437925678081
+    "diff_density": -0.7715437925678081,
+    "unemployment": 5.2
   },
   "20157": {
     "year": 2016,
@@ -10260,7 +11291,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Republic",
     "diff_margin": -2.864669887278584,
-    "diff_density": -0.27735171529336355
+    "diff_density": -0.27735171529336355,
+    "unemployment": 3.2
   },
   "20159": {
     "year": 2016,
@@ -10271,7 +11303,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Rice",
     "diff_margin": -6.022778245023829,
-    "diff_density": -0.15840052875082655
+    "diff_density": -0.15840052875082655,
+    "unemployment": 4.8
   },
   "20161": {
     "year": 2016,
@@ -10282,7 +11315,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Riley",
     "diff_margin": 0.8885714285714315,
-    "diff_density": -1.0217655837446884
+    "diff_density": -1.0217655837446884,
+    "unemployment": 3.7
   },
   "20163": {
     "year": 2016,
@@ -10293,7 +11327,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Rooks",
     "diff_margin": -3.189764507989908,
-    "diff_density": -0.08968007815570456
+    "diff_density": -0.08968007815570456,
+    "unemployment": 5.5
   },
   "20165": {
     "year": 2016,
@@ -10304,7 +11339,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Rush",
     "diff_margin": -7.979728629579375,
-    "diff_density": -0.1363887650468123
+    "diff_density": -0.1363887650468123,
+    "unemployment": 4.7
   },
   "20167": {
     "year": 2016,
@@ -10315,7 +11351,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Russell",
     "diff_margin": -4.108144853875478,
-    "diff_density": -0.05799494504998526
+    "diff_density": -0.05799494504998526,
+    "unemployment": 4.6
   },
   "20169": {
     "year": 2016,
@@ -10326,7 +11363,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Saline",
     "diff_margin": -4.060006601905123,
-    "diff_density": -0.40662774391514134
+    "diff_density": -0.40662774391514134,
+    "unemployment": 4
   },
   "20171": {
     "year": 2016,
@@ -10337,7 +11375,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Scott",
     "diff_margin": -2.7542843909217236,
-    "diff_density": 0.14889149036987526
+    "diff_density": 0.14889149036987526,
+    "unemployment": 2.7
   },
   "20173": {
     "year": 2016,
@@ -10348,7 +11387,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Sedgwick",
     "diff_margin": -2.4393499308437114,
-    "diff_density": -2.1488090344958835
+    "diff_density": -2.1488090344958835,
+    "unemployment": 5.2
   },
   "20175": {
     "year": 2016,
@@ -10359,7 +11399,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Seward",
     "diff_margin": 2.6458001265022126,
-    "diff_density": -0.6732681782642684
+    "diff_density": -0.6732681782642684,
+    "unemployment": 4.9
   },
   "20177": {
     "year": 2016,
@@ -10370,7 +11411,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Shawnee",
     "diff_margin": -3.1556571800999365,
-    "diff_density": -5.262624168229081
+    "diff_density": -5.262624168229081,
+    "unemployment": 4.5
   },
   "20179": {
     "year": 2016,
@@ -10381,7 +11423,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Sheridan",
     "diff_margin": -3.2688986784140965,
-    "diff_density": 0.02015714987276218
+    "diff_density": 0.02015714987276218,
+    "unemployment": 2.9
   },
   "20181": {
     "year": 2016,
@@ -10392,7 +11435,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Sherman",
     "diff_margin": -8.598344501379582,
-    "diff_density": -0.07769712234984416
+    "diff_density": -0.07769712234984416,
+    "unemployment": 3.8
   },
   "20183": {
     "year": 2016,
@@ -10403,7 +11447,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Smith",
     "diff_margin": -3.052532274081429,
-    "diff_density": -0.010901761086356654
+    "diff_density": -0.010901761086356654,
+    "unemployment": 3.7
   },
   "20185": {
     "year": 2016,
@@ -10414,7 +11459,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Stafford",
     "diff_margin": -5.887197452229298,
-    "diff_density": 0.058637712265640296
+    "diff_density": 0.058637712265640296,
+    "unemployment": 5
   },
   "20187": {
     "year": 2016,
@@ -10425,7 +11471,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Stanton",
     "diff_margin": -1.0502425876010797,
-    "diff_density": -0.029384875431763158
+    "diff_density": -0.029384875431763158,
+    "unemployment": 3.3
   },
   "20189": {
     "year": 2016,
@@ -10436,7 +11483,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Stevens",
     "diff_margin": -0.787193739881273,
-    "diff_density": -0.25218551059412286
+    "diff_density": -0.25218551059412286,
+    "unemployment": 4.7
   },
   "20191": {
     "year": 2016,
@@ -10447,7 +11495,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Sumner",
     "diff_margin": -7.60327785970086,
-    "diff_density": 0.30255664416129413
+    "diff_density": 0.30255664416129413,
+    "unemployment": 4.9
   },
   "20193": {
     "year": 2016,
@@ -10458,7 +11507,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Thomas",
     "diff_margin": -3.8020183749641117,
-    "diff_density": 0.010934595092538135
+    "diff_density": 0.010934595092538135,
+    "unemployment": 3.2
   },
   "20195": {
     "year": 2016,
@@ -10469,7 +11519,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Trego",
     "diff_margin": -5.201761480466072,
-    "diff_density": -0.1397157890003149
+    "diff_density": -0.1397157890003149,
+    "unemployment": 4.2
   },
   "20197": {
     "year": 2016,
@@ -10480,7 +11531,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Wabaunsee",
     "diff_margin": -4.9562874251497,
-    "diff_density": 0.09496034243988394
+    "diff_density": 0.09496034243988394,
+    "unemployment": 3.8
   },
   "20199": {
     "year": 2016,
@@ -10491,7 +11543,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Wallace",
     "diff_margin": -2.743363286264441,
-    "diff_density": -0.017375909812291312
+    "diff_density": -0.017375909812291312,
+    "unemployment": 3.3
   },
   "20201": {
     "year": 2016,
@@ -10502,7 +11555,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Washington",
     "diff_margin": -4.019716100112067,
-    "diff_density": -0.2381362600026824
+    "diff_density": -0.2381362600026824,
+    "unemployment": 3.9
   },
   "20203": {
     "year": 2016,
@@ -10513,7 +11567,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Wichita",
     "diff_margin": -1.0277730192719474,
-    "diff_density": -0.07019622305412154
+    "diff_density": -0.07019622305412154,
+    "unemployment": 2.6
   },
   "20205": {
     "year": 2016,
@@ -10524,7 +11579,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Wilson",
     "diff_margin": -6.214480183802415,
-    "diff_density": -6.925725956312891
+    "diff_density": -6.925725956312891,
+    "unemployment": 6.9
   },
   "20207": {
     "year": 2016,
@@ -10535,7 +11591,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Woodson",
     "diff_margin": -7.245915492957749,
-    "diff_density": -0.057563376320758586
+    "diff_density": -0.057563376320758586,
+    "unemployment": 6.9
   },
   "20209": {
     "year": 2016,
@@ -10546,7 +11603,8 @@ export const counties = {
     "statenam": "Kansas",
     "cty_name": "Wyandotte",
     "diff_margin": -5.785995955084587,
-    "diff_density": -21.573139841688658
+    "diff_density": -21.573139841688658,
+    "unemployment": 6.1
   },
   "21001": {
     "year": 2016,
@@ -10557,7 +11615,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Adair",
     "diff_margin": -5.76661887984449,
-    "diff_density": 1.5594157125937649
+    "diff_density": 1.5594157125937649,
+    "unemployment": 6.1
   },
   "21003": {
     "year": 2016,
@@ -10568,7 +11627,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Allen",
     "diff_margin": -8.787153627487335,
-    "diff_density": 2.877124934657605
+    "diff_density": 2.877124934657605,
+    "unemployment": 3.9
   },
   "21005": {
     "year": 2016,
@@ -10579,7 +11639,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Anderson",
     "diff_margin": -9.055201401050784,
-    "diff_density": 5.452272209285034
+    "diff_density": 5.452272209285034,
+    "unemployment": 3.6
   },
   "21007": {
     "year": 2016,
@@ -10590,7 +11651,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Ballard",
     "diff_margin": -10.632414045354793,
-    "diff_density": 0.8361250304062295
+    "diff_density": 0.8361250304062295,
+    "unemployment": 9
   },
   "21009": {
     "year": 2016,
@@ -10601,7 +11663,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Barren",
     "diff_margin": -9.460637883460482,
-    "diff_density": 3.9307355293924644
+    "diff_density": 3.9307355293924644,
+    "unemployment": 4.3
   },
   "21011": {
     "year": 2016,
@@ -10612,7 +11675,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Bath",
     "diff_margin": -13.243294785075275,
-    "diff_density": 1.6488966605688873
+    "diff_density": 1.6488966605688873,
+    "unemployment": 6.5
   },
   "21013": {
     "year": 2016,
@@ -10623,7 +11687,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Bell",
     "diff_margin": -5.750884955752213,
-    "diff_density": 0.659637883008358
+    "diff_density": 0.659637883008358,
+    "unemployment": 8.3
   },
   "21015": {
     "year": 2016,
@@ -10634,7 +11699,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Boone",
     "diff_margin": -3.6596004863644254,
-    "diff_density": 20.532415976619575
+    "diff_density": 20.532415976619575,
+    "unemployment": 3.5
   },
   "21017": {
     "year": 2016,
@@ -10645,7 +11711,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Bourbon",
     "diff_margin": -7.076060261512225,
-    "diff_density": 3.006896313682173
+    "diff_density": 3.006896313682173,
+    "unemployment": 4.6
   },
   "21019": {
     "year": 2016,
@@ -10656,7 +11723,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Boyd",
     "diff_margin": -11.383215019067176,
-    "diff_density": 8.789455773802075
+    "diff_density": 8.789455773802075,
+    "unemployment": 8.3
   },
   "21021": {
     "year": 2016,
@@ -10667,7 +11735,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Boyle",
     "diff_margin": -3.0514237130932145,
-    "diff_density": 3.139957262585341
+    "diff_density": 3.139957262585341,
+    "unemployment": 4.5
   },
   "21023": {
     "year": 2016,
@@ -10678,7 +11747,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Bracken",
     "diff_margin": -15.501341083073434,
-    "diff_density": 1.4338349302076718
+    "diff_density": 1.4338349302076718,
+    "unemployment": 5.4
   },
   "21025": {
     "year": 2016,
@@ -10689,7 +11759,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Breathitt",
     "diff_margin": -4.389651264167394,
-    "diff_density": 1.47679839970756
+    "diff_density": 1.47679839970756,
+    "unemployment": 8.3
   },
   "21027": {
     "year": 2016,
@@ -10700,7 +11771,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Breckinridge",
     "diff_margin": -13.103631284916204,
-    "diff_density": 1.4144991801399929
+    "diff_density": 1.4144991801399929,
+    "unemployment": 5.7
   },
   "21029": {
     "year": 2016,
@@ -10711,7 +11783,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Bullitt",
     "diff_margin": -8.483788761302492,
-    "diff_density": 14.395765268332113
+    "diff_density": 14.395765268332113,
+    "unemployment": 3.8
   },
   "21031": {
     "year": 2016,
@@ -10722,7 +11795,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Butler",
     "diff_margin": -8.566499282639885,
-    "diff_density": 1.2064371376939143
+    "diff_density": 1.2064371376939143,
+    "unemployment": 4.8
   },
   "21033": {
     "year": 2016,
@@ -10733,7 +11807,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Caldwell",
     "diff_margin": -10.512133891213391,
-    "diff_density": 0.3293889033904698
+    "diff_density": 0.3293889033904698,
+    "unemployment": 5
   },
   "21035": {
     "year": 2016,
@@ -10744,7 +11819,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Calloway",
     "diff_margin": -5.681994390775941,
-    "diff_density": 2.523159835852688
+    "diff_density": 2.523159835852688,
+    "unemployment": 4.1
   },
   "21037": {
     "year": 2016,
@@ -10755,7 +11831,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Campbell",
     "diff_margin": -3.0316592529831254,
-    "diff_density": 15.277613508690763
+    "diff_density": 15.277613508690763,
+    "unemployment": 3.5
   },
   "21039": {
     "year": 2016,
@@ -10766,7 +11843,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Carlisle",
     "diff_margin": -12.031003460207614,
-    "diff_density": -0.09933431874571141
+    "diff_density": -0.09933431874571141,
+    "unemployment": 6.8
   },
   "21041": {
     "year": 2016,
@@ -10777,7 +11855,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Carroll",
     "diff_margin": -15.579987029831393,
-    "diff_density": 1.3636664851831704
+    "diff_density": 1.3636664851831704,
+    "unemployment": 5
   },
   "21043": {
     "year": 2016,
@@ -10788,7 +11867,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Carter",
     "diff_margin": -15.826992408020242,
-    "diff_density": 3.339133089133089
+    "diff_density": 3.339133089133089,
+    "unemployment": 10.6
   },
   "21045": {
     "year": 2016,
@@ -10799,7 +11879,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Casey",
     "diff_margin": -5.918212455350208,
-    "diff_density": 0.7847437138419266
+    "diff_density": 0.7847437138419266,
+    "unemployment": 4.4
   },
   "21047": {
     "year": 2016,
@@ -10810,7 +11891,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Christian",
     "diff_margin": -5.040074718108954,
-    "diff_density": 0.1777003484320545
+    "diff_density": 0.1777003484320545,
+    "unemployment": 6
   },
   "21049": {
     "year": 2016,
@@ -10821,7 +11903,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Clark",
     "diff_margin": -4.864203184792,
-    "diff_density": 3.1165032084290516
+    "diff_density": 3.1165032084290516,
+    "unemployment": 4.5
   },
   "21051": {
     "year": 2016,
@@ -10832,7 +11915,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Clay",
     "diff_margin": -3.9339615668883976,
-    "diff_density": -1.3133777304208856
+    "diff_density": -1.3133777304208856,
+    "unemployment": 9.7
   },
   "21053": {
     "year": 2016,
@@ -10843,7 +11927,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Clinton",
     "diff_margin": -4.8499237326155225,
-    "diff_density": 0.33076045627376516
+    "diff_density": 0.33076045627376516,
+    "unemployment": 6.4
   },
   "21055": {
     "year": 2016,
@@ -10854,7 +11939,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Crittenden",
     "diff_margin": -9.626373544711418,
-    "diff_density": 0.5054465898041389
+    "diff_density": 0.5054465898041389,
+    "unemployment": 5.2
   },
   "21057": {
     "year": 2016,
@@ -10865,7 +11951,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Cumberland",
     "diff_margin": -6.019354207436399,
-    "diff_density": 0.6965299167704302
+    "diff_density": 0.6965299167704302,
+    "unemployment": 4.6
   },
   "21059": {
     "year": 2016,
@@ -10876,7 +11963,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Daviess",
     "diff_margin": -7.573585330158799,
-    "diff_density": 8.062186102323551
+    "diff_density": 8.062186102323551,
+    "unemployment": 4
   },
   "21061": {
     "year": 2016,
@@ -10887,7 +11975,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Edmonson",
     "diff_margin": -10.750358710169817,
-    "diff_density": 1.8938827258320146
+    "diff_density": 1.8938827258320146,
+    "unemployment": 5.4
   },
   "21063": {
     "year": 2016,
@@ -10898,7 +11987,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Elliott",
     "diff_margin": -23.52056042031524,
-    "diff_density": 1.944712560283385
+    "diff_density": 1.944712560283385,
+    "unemployment": 11.7
   },
   "21065": {
     "year": 2016,
@@ -10909,7 +11999,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Estill",
     "diff_margin": -6.1780342651036975,
-    "diff_density": 1.430067962699539
+    "diff_density": 1.430067962699539,
+    "unemployment": 5.2
   },
   "21067": {
     "year": 2016,
@@ -10920,7 +12011,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Fayette",
     "diff_margin": 1.8958779791395983,
-    "diff_density": 36.56671602326816
+    "diff_density": 36.56671602326816,
+    "unemployment": 3.3
   },
   "21069": {
     "year": 2016,
@@ -10931,7 +12023,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Fleming",
     "diff_margin": -11.506129135368386,
-    "diff_density": 1.3620284615826002
+    "diff_density": 1.3620284615826002,
+    "unemployment": 5.5
   },
   "21071": {
     "year": 2016,
@@ -10942,7 +12035,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Floyd",
     "diff_margin": -7.515513905683193,
-    "diff_density": 4.19906571755434
+    "diff_density": 4.19906571755434,
+    "unemployment": 10.4
   },
   "21073": {
     "year": 2016,
@@ -10953,7 +12047,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Franklin",
     "diff_margin": -4.513822296730929,
-    "diff_density": 2.5195788206979586
+    "diff_density": 2.5195788206979586,
+    "unemployment": 3.6
   },
   "21075": {
     "year": 2016,
@@ -10964,7 +12059,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Fulton",
     "diff_margin": -8.696297229219141,
-    "diff_density": -0.4787591240875919
+    "diff_density": -0.4787591240875919,
+    "unemployment": 6.6
   },
   "21077": {
     "year": 2016,
@@ -10975,7 +12071,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Gallatin",
     "diff_margin": -17.994689841174704,
-    "diff_density": 2.724536204682405
+    "diff_density": 2.724536204682405,
+    "unemployment": 4.4
   },
   "21079": {
     "year": 2016,
@@ -10986,7 +12083,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Garrard",
     "diff_margin": -4.399255807848796,
-    "diff_density": 2.3545688456189104
+    "diff_density": 2.3545688456189104,
+    "unemployment": 4.3
   },
   "21081": {
     "year": 2016,
@@ -10997,7 +12095,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Grant",
     "diff_margin": -12.65255755546254,
-    "diff_density": 3.6745030237246112
+    "diff_density": 3.6745030237246112,
+    "unemployment": 4.2
   },
   "21083": {
     "year": 2016,
@@ -11008,7 +12107,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Graves",
     "diff_margin": -9.392680810028928,
-    "diff_density": 1.9721354261064974
+    "diff_density": 1.9721354261064974,
+    "unemployment": 6.4
   },
   "21085": {
     "year": 2016,
@@ -11019,7 +12119,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Grayson",
     "diff_margin": -11.069920544835416,
-    "diff_density": 2.614477551842157
+    "diff_density": 2.614477551842157,
+    "unemployment": 6.2
   },
   "21087": {
     "year": 2016,
@@ -11030,7 +12131,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Green",
     "diff_margin": -8.389024939058691,
-    "diff_density": 1.6648973883858353
+    "diff_density": 1.6648973883858353,
+    "unemployment": 4
   },
   "21089": {
     "year": 2016,
@@ -11041,7 +12143,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Greenup",
     "diff_margin": -14.252214711485284,
-    "diff_density": 3.2102903600464643
+    "diff_density": 3.2102903600464643,
+    "unemployment": 8.8
   },
   "21091": {
     "year": 2016,
@@ -11052,7 +12155,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Hancock",
     "diff_margin": -15.362594921965997,
-    "diff_density": 0.8476978417266174
+    "diff_density": 0.8476978417266174,
+    "unemployment": 4.7
   },
   "21093": {
     "year": 2016,
@@ -11063,7 +12167,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Hardin",
     "diff_margin": -6.468078857699169,
-    "diff_density": 6.296082659478884
+    "diff_density": 6.296082659478884,
+    "unemployment": 4.1
   },
   "21095": {
     "year": 2016,
@@ -11074,7 +12179,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Harlan",
     "diff_margin": -4.4155145486659855,
-    "diff_density": 0.21211514930339703
+    "diff_density": 0.21211514930339703,
+    "unemployment": 11.6
   },
   "21097": {
     "year": 2016,
@@ -11085,7 +12191,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Harrison",
     "diff_margin": -8.394601542416456,
-    "diff_density": 2.0149601775688737
+    "diff_density": 2.0149601775688737,
+    "unemployment": 4.4
   },
   "21099": {
     "year": 2016,
@@ -11096,7 +12203,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Hart",
     "diff_margin": -10.660641608150897,
-    "diff_density": 1.5547907010604476
+    "diff_density": 1.5547907010604476,
+    "unemployment": 4.4
   },
   "21101": {
     "year": 2016,
@@ -11107,7 +12215,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Henderson",
     "diff_margin": -9.412953565085004,
-    "diff_density": 2.4756097281700136
+    "diff_density": 2.4756097281700136,
+    "unemployment": 4.5
   },
   "21103": {
     "year": 2016,
@@ -11118,7 +12227,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Henry",
     "diff_margin": -12.80567529741078,
-    "diff_density": 1.93808299566858
+    "diff_density": 1.93808299566858,
+    "unemployment": 3.9
   },
   "21105": {
     "year": 2016,
@@ -11129,7 +12239,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Hickman",
     "diff_margin": -11.254051923968476,
-    "diff_density": 0.07328971808312978
+    "diff_density": 0.07328971808312978,
+    "unemployment": 5.1
   },
   "21107": {
     "year": 2016,
@@ -11140,7 +12251,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Hopkins",
     "diff_margin": -8.101267882601643,
-    "diff_density": 1.059520295202951
+    "diff_density": 1.059520295202951,
+    "unemployment": 5.5
   },
   "21109": {
     "year": 2016,
@@ -11151,7 +12263,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Jackson",
     "diff_margin": -3.326363636363636,
-    "diff_density": 1.2727925840092702
+    "diff_density": 1.2727925840092702,
+    "unemployment": 6.9
   },
   "21111": {
     "year": 2016,
@@ -11162,7 +12275,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Jefferson",
     "diff_margin": -0.7621006193792539,
-    "diff_density": 35.09827821881072
+    "diff_density": 35.09827821881072,
+    "unemployment": 4.2
   },
   "21113": {
     "year": 2016,
@@ -11173,7 +12287,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Jessamine",
     "diff_margin": -2.717689865270742,
-    "diff_density": 15.525531024866382
+    "diff_density": 15.525531024866382,
+    "unemployment": 3.6
   },
   "21115": {
     "year": 2016,
@@ -11184,7 +12299,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Johnson",
     "diff_margin": -6.011078144588383,
-    "diff_density": 2.051324680282498
+    "diff_density": 2.051324680282498,
+    "unemployment": 9.2
   },
   "21117": {
     "year": 2016,
@@ -11195,7 +12311,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Kenton",
     "diff_margin": -3.1560602943833658,
-    "diff_density": 26.477238689547562
+    "diff_density": 26.477238689547562,
+    "unemployment": 3.8
   },
   "21119": {
     "year": 2016,
@@ -11206,7 +12323,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Knott",
     "diff_margin": -3.336668401874025,
-    "diff_density": 0.19451524806554588
+    "diff_density": 0.19451524806554588,
+    "unemployment": 10.5
   },
   "21121": {
     "year": 2016,
@@ -11217,7 +12335,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Knox",
     "diff_margin": -7.719660339660338,
-    "diff_density": 2.365003882992493
+    "diff_density": 2.365003882992493,
+    "unemployment": 7.5
   },
   "21123": {
     "year": 2016,
@@ -11228,7 +12347,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Larue",
     "diff_margin": -9.997752473692476,
-    "diff_density": 2.3061303150810666
+    "diff_density": 2.3061303150810666,
+    "unemployment": 3.9
   },
   "21125": {
     "year": 2016,
@@ -11239,7 +12359,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Laurel",
     "diff_margin": -3.5724427972929416,
-    "diff_density": 5.564747090678651
+    "diff_density": 5.564747090678651,
+    "unemployment": 5.8
   },
   "21127": {
     "year": 2016,
@@ -11250,7 +12371,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Lawrence",
     "diff_margin": -9.88440251572327,
-    "diff_density": 1.078017324350336
+    "diff_density": 1.078017324350336,
+    "unemployment": 10.6
   },
   "21129": {
     "year": 2016,
@@ -11261,7 +12383,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Lee",
     "diff_margin": -6.032080989876263,
-    "diff_density": 0.20931916116058424
+    "diff_density": 0.20931916116058424,
+    "unemployment": 8.3
   },
   "21131": {
     "year": 2016,
@@ -11272,7 +12395,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Leslie",
     "diff_margin": 0.15471950133570722,
-    "diff_density": -1.1435335794830852
+    "diff_density": -1.1435335794830852,
+    "unemployment": 13.2
   },
   "21133": {
     "year": 2016,
@@ -11283,7 +12407,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Letcher",
     "diff_margin": -2.5480205824392392,
-    "diff_density": 1.1108662069781872
+    "diff_density": 1.1108662069781872,
+    "unemployment": 11.8
   },
   "21135": {
     "year": 2016,
@@ -11294,7 +12419,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Lewis",
     "diff_margin": -13.323087957719896,
-    "diff_density": 1.0925789081269155
+    "diff_density": 1.0925789081269155,
+    "unemployment": 8.4
   },
   "21137": {
     "year": 2016,
@@ -11305,7 +12431,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Lincoln",
     "diff_margin": -8.703672210019874,
-    "diff_density": 1.2271804848847623
+    "diff_density": 1.2271804848847623,
+    "unemployment": 5.6
   },
   "21139": {
     "year": 2016,
@@ -11316,7 +12443,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Livingston",
     "diff_margin": -10.735972431617487,
-    "diff_density": 0.4177073419985309
+    "diff_density": 0.4177073419985309,
+    "unemployment": 6.7
   },
   "21141": {
     "year": 2016,
@@ -11327,7 +12455,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Logan",
     "diff_margin": -7.732451601064312,
-    "diff_density": 0.6999163240541186
+    "diff_density": 0.6999163240541186,
+    "unemployment": 4.2
   },
   "21143": {
     "year": 2016,
@@ -11338,7 +12467,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Lyon",
     "diff_margin": -9.377773289573337,
-    "diff_density": 0.5731949120838031
+    "diff_density": 0.5731949120838031,
+    "unemployment": 5.6
   },
   "21145": {
     "year": 2016,
@@ -11349,7 +12479,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "McCracken",
     "diff_margin": -3.7522962868281446,
-    "diff_density": 2.9900828173996956
+    "diff_density": 2.9900828173996956,
+    "unemployment": 5.7
   },
   "21147": {
     "year": 2016,
@@ -11360,7 +12491,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "McCreary",
     "diff_margin": -7.234155124653741,
-    "diff_density": 0.16327085285848142
+    "diff_density": 0.16327085285848142,
+    "unemployment": 7.3
   },
   "21149": {
     "year": 2016,
@@ -11371,7 +12503,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "McLean",
     "diff_margin": -12.46180464301358,
-    "diff_density": 1.44531706737434
+    "diff_density": 1.44531706737434,
+    "unemployment": 4.5
   },
   "21151": {
     "year": 2016,
@@ -11382,7 +12515,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Madison",
     "diff_margin": -2.963863295478891,
-    "diff_density": 9.18041116878959
+    "diff_density": 9.18041116878959,
+    "unemployment": 3.8
   },
   "21153": {
     "year": 2016,
@@ -11393,7 +12527,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Magoffin",
     "diff_margin": -6.301477716966382,
-    "diff_density": 0.6766943327713655
+    "diff_density": 0.6766943327713655,
+    "unemployment": 16.3
   },
   "21155": {
     "year": 2016,
@@ -11404,7 +12539,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Marion",
     "diff_margin": -13.67263411024787,
-    "diff_density": 2.3107101833765817
+    "diff_density": 2.3107101833765817,
+    "unemployment": 4.3
   },
   "21157": {
     "year": 2016,
@@ -11415,7 +12551,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Marshall",
     "diff_margin": -9.946164908916586,
-    "diff_density": 3.2158506224066414
+    "diff_density": 3.2158506224066414,
+    "unemployment": 5.5
   },
   "21159": {
     "year": 2016,
@@ -11426,7 +12563,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Martin",
     "diff_margin": -5.827100935997976,
-    "diff_density": 0.5668989547038343
+    "diff_density": 0.5668989547038343,
+    "unemployment": 9
   },
   "21161": {
     "year": 2016,
@@ -11437,7 +12575,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Mason",
     "diff_margin": -10.369556541019957,
-    "diff_density": 1.3903893724232717
+    "diff_density": 1.3903893724232717,
+    "unemployment": 6
   },
   "21163": {
     "year": 2016,
@@ -11448,7 +12587,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Meade",
     "diff_margin": -13.015540109575596,
-    "diff_density": 4.299944993779057
+    "diff_density": 4.299944993779057,
+    "unemployment": 4.7
   },
   "21165": {
     "year": 2016,
@@ -11459,7 +12599,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Menifee",
     "diff_margin": -15.16014388489209,
-    "diff_density": 0.8948946411906284
+    "diff_density": 0.8948946411906284,
+    "unemployment": 7.1
   },
   "21167": {
     "year": 2016,
@@ -11470,7 +12611,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Mercer",
     "diff_margin": -7.211504157218442,
-    "diff_density": 2.590192926045013
+    "diff_density": 2.590192926045013,
+    "unemployment": 4.4
   },
   "21169": {
     "year": 2016,
@@ -11481,7 +12623,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Metcalfe",
     "diff_margin": -12.929885256549039,
-    "diff_density": 1.4973829581549527
+    "diff_density": 1.4973829581549527,
+    "unemployment": 3.8
   },
   "21171": {
     "year": 2016,
@@ -11492,7 +12635,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Monroe",
     "diff_margin": -7.678324984972949,
-    "diff_density": 0.743171205634999
+    "diff_density": 0.743171205634999,
+    "unemployment": 3.6
   },
   "21173": {
     "year": 2016,
@@ -11503,7 +12647,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Montgomery",
     "diff_margin": -8.514753582663406,
-    "diff_density": 6.0624694735775435
+    "diff_density": 6.0624694735775435,
+    "unemployment": 6
   },
   "21175": {
     "year": 2016,
@@ -11514,7 +12659,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Morgan",
     "diff_margin": -9.51985324947589,
-    "diff_density": 0.7854146879017652
+    "diff_density": 0.7854146879017652,
+    "unemployment": 6.8
   },
   "21177": {
     "year": 2016,
@@ -11525,7 +12671,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Muhlenberg",
     "diff_margin": -12.38488585874062,
-    "diff_density": 0.6781031086751739
+    "diff_density": 0.6781031086751739,
+    "unemployment": 6.7
   },
   "21179": {
     "year": 2016,
@@ -11536,7 +12683,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Nelson",
     "diff_margin": -10.095611399961484,
-    "diff_density": 5.36210174606596
+    "diff_density": 5.36210174606596,
+    "unemployment": 4.3
   },
   "21181": {
     "year": 2016,
@@ -11547,7 +12695,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Nicholas",
     "diff_margin": -9.018732394366193,
-    "diff_density": 1.3314167136342672
+    "diff_density": 1.3314167136342672,
+    "unemployment": 4.9
   },
   "21183": {
     "year": 2016,
@@ -11558,7 +12707,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Ohio",
     "diff_margin": -10.966153106366605,
-    "diff_density": 1.275654979821887
+    "diff_density": 1.275654979821887,
+    "unemployment": 6.3
   },
   "21185": {
     "year": 2016,
@@ -11569,7 +12719,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Oldham",
     "diff_margin": 0.33437555169999555,
-    "diff_density": 15.858047217177642
+    "diff_density": 15.858047217177642,
+    "unemployment": 3.1
   },
   "21187": {
     "year": 2016,
@@ -11580,7 +12731,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Owen",
     "diff_margin": -11.695751150230045,
-    "diff_density": 1.2581088009114207
+    "diff_density": 1.2581088009114207,
+    "unemployment": 3.8
   },
   "21189": {
     "year": 2016,
@@ -11591,7 +12743,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Owsley",
     "diff_margin": -3.356276293348495,
-    "diff_density": 0.9103895446026034
+    "diff_density": 0.9103895446026034,
+    "unemployment": 8.7
   },
   "21191": {
     "year": 2016,
@@ -11602,7 +12755,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Pendleton",
     "diff_margin": -14.212606958548363,
-    "diff_density": 1.7034016452590564
+    "diff_density": 1.7034016452590564,
+    "unemployment": 4.3
   },
   "21193": {
     "year": 2016,
@@ -11613,7 +12767,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Perry",
     "diff_margin": 0.21431328036322483,
-    "diff_density": 0.9743265522418803
+    "diff_density": 0.9743265522418803,
+    "unemployment": 10.4
   },
   "21195": {
     "year": 2016,
@@ -11624,7 +12779,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Pike",
     "diff_margin": -6.539087221095336,
-    "diff_density": 1.2882411702654935
+    "diff_density": 1.2882411702654935,
+    "unemployment": 10.3
   },
   "21197": {
     "year": 2016,
@@ -11635,7 +12791,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Powell",
     "diff_margin": -10.489318135969334,
-    "diff_density": 2.655831936529225
+    "diff_density": 2.655831936529225,
+    "unemployment": 6.9
   },
   "21199": {
     "year": 2016,
@@ -11646,7 +12803,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Pulaski",
     "diff_margin": -4.129655418420491,
-    "diff_density": 3.088332649868626
+    "diff_density": 3.088332649868626,
+    "unemployment": 5
   },
   "21201": {
     "year": 2016,
@@ -11657,7 +12815,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Robertson",
     "diff_margin": -14.444896347482725,
-    "diff_density": 0.7791252126914223
+    "diff_density": 0.7791252126914223,
+    "unemployment": 6.1
   },
   "21203": {
     "year": 2016,
@@ -11668,7 +12827,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Rockcastle",
     "diff_margin": -3.968779904306219,
-    "diff_density": 1.4877839203917205
+    "diff_density": 1.4877839203917205,
+    "unemployment": 5.3
   },
   "21205": {
     "year": 2016,
@@ -11679,7 +12839,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Rowan",
     "diff_margin": -7.584675412802532,
-    "diff_density": 4.201143674052894
+    "diff_density": 4.201143674052894,
+    "unemployment": 5.3
   },
   "21207": {
     "year": 2016,
@@ -11690,7 +12851,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Russell",
     "diff_margin": -4.898333741130415,
-    "diff_density": 1.0442371678624909
+    "diff_density": 1.0442371678624909,
+    "unemployment": 7.6
   },
   "21209": {
     "year": 2016,
@@ -11701,7 +12863,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Scott",
     "diff_margin": -4.709098353875426,
-    "diff_density": 12.79757355289776
+    "diff_density": 12.79757355289776,
+    "unemployment": 3.6
   },
   "21211": {
     "year": 2016,
@@ -11712,7 +12875,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Shelby",
     "diff_margin": -5.04399698634132,
-    "diff_density": 5.030812348540728
+    "diff_density": 5.030812348540728,
+    "unemployment": 3.3
   },
   "21213": {
     "year": 2016,
@@ -11723,7 +12887,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Simpson",
     "diff_margin": -8.883442688272016,
-    "diff_density": 1.857736976942789
+    "diff_density": 1.857736976942789,
+    "unemployment": 4.2
   },
   "21215": {
     "year": 2016,
@@ -11734,7 +12899,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Spencer",
     "diff_margin": -10.036580468832124,
-    "diff_density": 5.7988600814227595
+    "diff_density": 5.7988600814227595,
+    "unemployment": 3.5
   },
   "21217": {
     "year": 2016,
@@ -11745,7 +12911,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Taylor",
     "diff_margin": -7.415074309978767,
-    "diff_density": 1.3335850260954487
+    "diff_density": 1.3335850260954487,
+    "unemployment": 4.8
   },
   "21219": {
     "year": 2016,
@@ -11756,7 +12923,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Todd",
     "diff_margin": -7.913439463762042,
-    "diff_density": 0.1476635514018696
+    "diff_density": 0.1476635514018696,
+    "unemployment": 3.9
   },
   "21221": {
     "year": 2016,
@@ -11767,7 +12935,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Trigg",
     "diff_margin": -7.841460340993329,
-    "diff_density": 0.009885825612215626
+    "diff_density": 0.009885825612215626,
+    "unemployment": 5
   },
   "21223": {
     "year": 2016,
@@ -11778,7 +12947,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Trimble",
     "diff_margin": -15.035142555438227,
-    "diff_density": 1.6185690735245615
+    "diff_density": 1.6185690735245615,
+    "unemployment": 5.4
   },
   "21225": {
     "year": 2016,
@@ -11789,7 +12959,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Union",
     "diff_margin": -11.050278538077599,
-    "diff_density": 0.6757940790433103
+    "diff_density": 0.6757940790433103,
+    "unemployment": 6.4
   },
   "21227": {
     "year": 2016,
@@ -11800,7 +12971,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Warren",
     "diff_margin": -3.2523346271368396,
-    "diff_density": 8.37131462333825
+    "diff_density": 8.37131462333825,
+    "unemployment": 3.5
   },
   "21229": {
     "year": 2016,
@@ -11811,7 +12983,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Washington",
     "diff_margin": -6.75797513321492,
-    "diff_density": 1.3790116728899662
+    "diff_density": 1.3790116728899662,
+    "unemployment": 4
   },
   "21231": {
     "year": 2016,
@@ -11822,7 +12995,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Wayne",
     "diff_margin": -7.822353898135404,
-    "diff_density": 1.7011244734487203
+    "diff_density": 1.7011244734487203,
+    "unemployment": 6.8
   },
   "21233": {
     "year": 2016,
@@ -11833,7 +13007,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Webster",
     "diff_margin": -10.909104220499572,
-    "diff_density": 1.0081002590829655
+    "diff_density": 1.0081002590829655,
+    "unemployment": 5.5
   },
   "21235": {
     "year": 2016,
@@ -11844,7 +13019,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Whitley",
     "diff_margin": -5.50801655893674,
-    "diff_density": 1.5882790124020758
+    "diff_density": 1.5882790124020758,
+    "unemployment": 6.4
   },
   "21237": {
     "year": 2016,
@@ -11855,7 +13031,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Wolfe",
     "diff_margin": -9.563149905123339,
-    "diff_density": 0.3402871674843606
+    "diff_density": 0.3402871674843606,
+    "unemployment": 9.5
   },
   "21239": {
     "year": 2016,
@@ -11866,7 +13043,8 @@ export const counties = {
     "statenam": "Kentucky",
     "cty_name": "Woodford",
     "diff_margin": -3.036578171091449,
-    "diff_density": 6.5096429706536725
+    "diff_density": 6.5096429706536725,
+    "unemployment": 3
   },
   "22001": {
     "year": 2016,
@@ -11877,7 +13055,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Acadia",
     "diff_margin": -3.8628386766961214,
-    "diff_density": 0.8430284528025354
+    "diff_density": 0.8430284528025354,
+    "unemployment": 7.9
   },
   "22003": {
     "year": 2016,
@@ -11888,7 +13067,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Allen",
     "diff_margin": -5.340118983234184,
-    "diff_density": -0.08506530156855163
+    "diff_density": -0.08506530156855163,
+    "unemployment": 7.5
   },
   "22005": {
     "year": 2016,
@@ -11899,7 +13079,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Ascension",
     "diff_margin": -1.8781009092073226,
-    "diff_density": 12.376103869232367
+    "diff_density": 12.376103869232367,
+    "unemployment": 5.3
   },
   "22007": {
     "year": 2016,
@@ -11910,7 +13091,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Assumption",
     "diff_margin": -7.199009537784299,
-    "diff_density": -0.2625157975550749
+    "diff_density": -0.2625157975550749,
+    "unemployment": 9
   },
   "22009": {
     "year": 2016,
@@ -11921,7 +13103,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Avoyelles",
     "diff_margin": -5.33201133827875,
-    "diff_density": -0.5412080295039807
+    "diff_density": -0.5412080295039807,
+    "unemployment": 7.8
   },
   "22011": {
     "year": 2016,
@@ -11932,7 +13115,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Beauregard",
     "diff_margin": -4.009194853428836,
-    "diff_density": 0.7381507595002343
+    "diff_density": 0.7381507595002343,
+    "unemployment": 6.7
   },
   "22013": {
     "year": 2016,
@@ -11943,7 +13127,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Bienville",
     "diff_margin": -3.781905781584584,
-    "diff_density": -0.24539006742514857
+    "diff_density": -0.24539006742514857,
+    "unemployment": 8
   },
   "22015": {
     "year": 2016,
@@ -11954,7 +13139,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Bossier",
     "diff_margin": -1.3116592396322595,
-    "diff_density": 1.4929069352189117
+    "diff_density": 1.4929069352189117,
+    "unemployment": 5.9
   },
   "22017": {
     "year": 2016,
@@ -11965,7 +13151,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Caddo",
     "diff_margin": -1.3819420827146587,
-    "diff_density": -6.864637694356546
+    "diff_density": -6.864637694356546,
+    "unemployment": 7.4
   },
   "22019": {
     "year": 2016,
@@ -11976,7 +13163,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Calcasieu",
     "diff_margin": -3.313992575173387,
-    "diff_density": 1.9291899667186811
+    "diff_density": 1.9291899667186811,
+    "unemployment": 5.5
   },
   "22021": {
     "year": 2016,
@@ -11987,7 +13175,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Caldwell",
     "diff_margin": -4.745456095481668,
-    "diff_density": -0.04747119489252327
+    "diff_density": -0.04747119489252327,
+    "unemployment": 8.4
   },
   "22023": {
     "year": 2016,
@@ -11998,7 +13187,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Cameron",
     "diff_margin": -2.151354279523293,
-    "diff_density": -0.036602277237740566
+    "diff_density": -0.036602277237740566,
+    "unemployment": 4.8
   },
   "22025": {
     "year": 2016,
@@ -12009,7 +13199,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Catahoula",
     "diff_margin": -6.355947281713341,
-    "diff_density": 0.9384664491617594
+    "diff_density": 0.9384664491617594,
+    "unemployment": 9.6
   },
   "22027": {
     "year": 2016,
@@ -12020,7 +13211,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Claiborne",
     "diff_margin": -2.455718735399472,
-    "diff_density": -0.4140122933446371
+    "diff_density": -0.4140122933446371,
+    "unemployment": 7.5
   },
   "22029": {
     "year": 2016,
@@ -12031,7 +13223,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Concordia",
     "diff_margin": -3.967452925921748,
-    "diff_density": -0.734005624748896
+    "diff_density": -0.734005624748896,
+    "unemployment": 9.2
   },
   "22031": {
     "year": 2016,
@@ -12042,7 +13235,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "De Soto",
     "diff_margin": -4.297054901089126,
-    "diff_density": 0.5049249640238465
+    "diff_density": 0.5049249640238465,
+    "unemployment": 8
   },
   "22033": {
     "year": 2016,
@@ -12053,7 +13247,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "East Baton Rouge",
     "diff_margin": 0.5149562985147611,
-    "diff_density": -4.031703010738511
+    "diff_density": -4.031703010738511,
+    "unemployment": 5.7
   },
   "22035": {
     "year": 2016,
@@ -12064,7 +13259,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "East Carroll",
     "diff_margin": 0.7082783259612171,
-    "diff_density": -2.544024245305443
+    "diff_density": -2.544024245305443,
+    "unemployment": 11.8
   },
   "22037": {
     "year": 2016,
@@ -12075,7 +13271,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "East Feliciana",
     "diff_margin": -3.357126070503881,
-    "diff_density": -0.3722749829073031
+    "diff_density": -0.3722749829073031,
+    "unemployment": 6.2
   },
   "22039": {
     "year": 2016,
@@ -12086,7 +13283,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Evangeline",
     "diff_margin": -5.5185294710666035,
-    "diff_density": -1.3470633171291375
+    "diff_density": -1.3470633171291375,
+    "unemployment": 8.5
   },
   "22041": {
     "year": 2016,
@@ -12097,7 +13295,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Franklin",
     "diff_margin": -3.9378934730408197,
-    "diff_density": -0.28117725227749446
+    "diff_density": -0.28117725227749446,
+    "unemployment": 9.6
   },
   "22043": {
     "year": 2016,
@@ -12108,7 +13307,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Grant",
     "diff_margin": -3.0184590089579313,
-    "diff_density": 0.23475669875433525
+    "diff_density": 0.23475669875433525,
+    "unemployment": 7.8
   },
   "22045": {
     "year": 2016,
@@ -12119,7 +13319,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Iberia",
     "diff_margin": -3.3664207801811727,
-    "diff_density": -1.640763442545854
+    "diff_density": -1.640763442545854,
+    "unemployment": 9.7
   },
   "22047": {
     "year": 2016,
@@ -12130,7 +13331,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Iberville",
     "diff_margin": -4.234442435953376,
-    "diff_density": -1.5668897402324475
+    "diff_density": -1.5668897402324475,
+    "unemployment": 7.4
   },
   "22049": {
     "year": 2016,
@@ -12141,7 +13343,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Jackson",
     "diff_margin": -1.9524437299035355,
-    "diff_density": -0.11639797603569946
+    "diff_density": -0.11639797603569946,
+    "unemployment": 6.3
   },
   "22051": {
     "year": 2016,
@@ -12152,7 +13355,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Jefferson",
     "diff_margin": 0.6329245595077992,
-    "diff_density": 17.074252613063663
+    "diff_density": 17.074252613063663,
+    "unemployment": 5.9
   },
   "22053": {
     "year": 2016,
@@ -12163,7 +13367,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Jefferson Davis",
     "diff_margin": -3.796840372627301,
-    "diff_density": 0.8297641748422464
+    "diff_density": 0.8297641748422464,
+    "unemployment": 6.7
   },
   "22055": {
     "year": 2016,
@@ -12174,7 +13379,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Lafayette",
     "diff_margin": -1.2191762232596908,
-    "diff_density": 25.89037808871683
+    "diff_density": 25.89037808871683,
+    "unemployment": 6.7
   },
   "22057": {
     "year": 2016,
@@ -12185,7 +13391,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Lafourche",
     "diff_margin": -4.403796945538371,
-    "diff_density": 2.4048438041209153
+    "diff_density": 2.4048438041209153,
+    "unemployment": 6.7
   },
   "22059": {
     "year": 2016,
@@ -12196,7 +13403,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "La Salle",
     "diff_margin": -2.4186723507917183,
-    "diff_density": -0.005816738169942326
+    "diff_density": -0.005816738169942326,
+    "unemployment": 6.7
   },
   "22061": {
     "year": 2016,
@@ -12207,7 +13415,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Lincoln",
     "diff_margin": -3.8381354479211325,
-    "diff_density": -0.6958332980031372
+    "diff_density": -0.6958332980031372,
+    "unemployment": 7.5
   },
   "22063": {
     "year": 2016,
@@ -12218,7 +13427,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Livingston",
     "diff_margin": -1.7349393414211427,
-    "diff_density": 5.60985590200103
+    "diff_density": 5.60985590200103,
+    "unemployment": 5.3
   },
   "22065": {
     "year": 2016,
@@ -12229,7 +13439,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Madison",
     "diff_margin": -2.82183431952663,
-    "diff_density": -0.7320101210684786
+    "diff_density": -0.7320101210684786,
+    "unemployment": 9.4
   },
   "22067": {
     "year": 2016,
@@ -12240,7 +13451,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Morehouse",
     "diff_margin": -3.1852311846101955,
-    "diff_density": -0.9605111141861524
+    "diff_density": -0.9605111141861524,
+    "unemployment": 10.4
   },
   "22069": {
     "year": 2016,
@@ -12251,7 +13463,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Natchitoches",
     "diff_margin": -3.0339014262502246,
-    "diff_density": -0.5102854861249746
+    "diff_density": -0.5102854861249746,
+    "unemployment": 8.1
   },
   "22071": {
     "year": 2016,
@@ -12262,7 +13475,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Orleans",
     "diff_margin": 0.5077575640476084,
-    "diff_density": 46.094632274820015
+    "diff_density": 46.094632274820015,
+    "unemployment": 6.7
   },
   "22073": {
     "year": 2016,
@@ -12273,7 +13487,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Ouachita",
     "diff_margin": -2.9913684969185255,
-    "diff_density": -0.800763093658361
+    "diff_density": -0.800763093658361,
+    "unemployment": 6.7
   },
   "22075": {
     "year": 2016,
@@ -12284,7 +13499,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Plaquemines",
     "diff_margin": -3.4909004918653004,
-    "diff_density": 0.4254102396430355
+    "diff_density": 0.4254102396430355,
+    "unemployment": 5.9
   },
   "22077": {
     "year": 2016,
@@ -12295,7 +13511,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Pointe Coupee",
     "diff_margin": -4.2432403707167765,
-    "diff_density": -0.6883583026823352
+    "diff_density": -0.6883583026823352,
+    "unemployment": 7.2
   },
   "22079": {
     "year": 2016,
@@ -12306,7 +13523,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Rapides",
     "diff_margin": -2.3215612794257297,
-    "diff_density": -0.8942602203405272
+    "diff_density": -0.8942602203405272,
+    "unemployment": 6.9
   },
   "22081": {
     "year": 2016,
@@ -12317,7 +13535,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Red River",
     "diff_margin": -3.043677069199454,
-    "diff_density": -0.9850201752807823
+    "diff_density": -0.9850201752807823,
+    "unemployment": 6.8
   },
   "22083": {
     "year": 2016,
@@ -12328,7 +13547,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Richland",
     "diff_margin": -3.410875364735311,
-    "diff_density": 0.4751402404121343
+    "diff_density": 0.4751402404121343,
+    "unemployment": 7.7
   },
   "22085": {
     "year": 2016,
@@ -12339,7 +13559,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Sabine",
     "diff_margin": -4.415809913132346,
-    "diff_density": -0.3095285348348824
+    "diff_density": -0.3095285348348824,
+    "unemployment": 7.3
   },
   "22087": {
     "year": 2016,
@@ -12350,7 +13571,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Bernard",
     "diff_margin": -4.890475738596823,
-    "diff_density": 4.900629370629375
+    "diff_density": 4.900629370629375,
+    "unemployment": 6.9
   },
   "22089": {
     "year": 2016,
@@ -12361,7 +13583,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Charles",
     "diff_margin": -2.4434058801069085,
-    "diff_density": 3.0740590511681347
+    "diff_density": 3.0740590511681347,
+    "unemployment": 6
   },
   "22091": {
     "year": 2016,
@@ -12372,7 +13595,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Helena",
     "diff_margin": -2.8993427230047004,
-    "diff_density": -1.0566699314397638
+    "diff_density": -1.0566699314397638,
+    "unemployment": 8.5
   },
   "22093": {
     "year": 2016,
@@ -12383,7 +13607,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. James",
     "diff_margin": -3.8428423665701317,
-    "diff_density": -1.2868791918522788
+    "diff_density": -1.2868791918522788,
+    "unemployment": 8.1
   },
   "22095": {
     "year": 2016,
@@ -12394,7 +13619,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. John the Baptist",
     "diff_margin": -1.3581774349083915,
-    "diff_density": -1.8010972919697679
+    "diff_density": -1.8010972919697679,
+    "unemployment": 7.5
   },
   "22097": {
     "year": 2016,
@@ -12405,7 +13631,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Landry",
     "diff_margin": -4.1777107830873135,
-    "diff_density": -1.8168056457548545
+    "diff_density": -1.8168056457548545,
+    "unemployment": 8.9
   },
   "22099": {
     "year": 2016,
@@ -12416,7 +13643,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Martin",
     "diff_margin": -4.9477824381529345,
-    "diff_density": 0.42679861723039636
+    "diff_density": 0.42679861723039636,
+    "unemployment": 8.3
   },
   "22101": {
     "year": 2016,
@@ -12427,7 +13655,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Mary",
     "diff_margin": -4.772588430763847,
-    "diff_density": -1.389186863048721
+    "diff_density": -1.389186863048721,
+    "unemployment": 10.1
   },
   "22103": {
     "year": 2016,
@@ -12438,7 +13667,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "St. Tammany",
     "diff_margin": -0.5082869867914361,
-    "diff_density": 13.590164981373078
+    "diff_density": 13.590164981373078,
+    "unemployment": 5.7
   },
   "22105": {
     "year": 2016,
@@ -12449,7 +13679,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Tangipahoa",
     "diff_margin": -3.165574731295699,
-    "diff_density": 2.888642688336475
+    "diff_density": 2.888642688336475,
+    "unemployment": 7.5
   },
   "22107": {
     "year": 2016,
@@ -12460,7 +13691,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Tensas",
     "diff_margin": -3.3588910735351902,
-    "diff_density": -0.4512137098112081
+    "diff_density": -0.4512137098112081,
+    "unemployment": 10.5
   },
   "22109": {
     "year": 2016,
@@ -12471,7 +13703,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Terrebonne",
     "diff_margin": -4.224554256943019,
-    "diff_density": 1.2626411326330214
+    "diff_density": 1.2626411326330214,
+    "unemployment": 7.3
   },
   "22111": {
     "year": 2016,
@@ -12482,7 +13715,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Union",
     "diff_margin": -3.8583293556085927,
-    "diff_density": 0.14203445877376097
+    "diff_density": 0.14203445877376097,
+    "unemployment": 6.9
   },
   "22113": {
     "year": 2016,
@@ -12493,7 +13727,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Vermilion",
     "diff_margin": -4.100153249118918,
-    "diff_density": 0.2248891919536291
+    "diff_density": 0.2248891919536291,
+    "unemployment": 7.9
   },
   "22115": {
     "year": 2016,
@@ -12504,7 +13739,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Vernon",
     "diff_margin": -4.307634822341129,
-    "diff_density": 0.7656982777447254
+    "diff_density": 0.7656982777447254,
+    "unemployment": 8.1
   },
   "22117": {
     "year": 2016,
@@ -12515,7 +13751,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Washington",
     "diff_margin": -4.244742777360109,
-    "diff_density": 0.06395626717648639
+    "diff_density": 0.06395626717648639,
+    "unemployment": 7.9
   },
   "22119": {
     "year": 2016,
@@ -12526,7 +13763,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Webster",
     "diff_margin": -2.4361411245865483,
-    "diff_density": -0.46132826332563326
+    "diff_density": -0.46132826332563326,
+    "unemployment": 9.4
   },
   "22121": {
     "year": 2016,
@@ -12537,7 +13775,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "West Baton Rouge",
     "diff_margin": -2.2153894571203807,
-    "diff_density": -0.336275274182654
+    "diff_density": -0.336275274182654,
+    "unemployment": 6.1
   },
   "22123": {
     "year": 2016,
@@ -12548,7 +13787,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "West Carroll",
     "diff_margin": -3.7358352595083026,
-    "diff_density": 0.5823091894897825
+    "diff_density": 0.5823091894897825,
+    "unemployment": 12
   },
   "22125": {
     "year": 2016,
@@ -12559,7 +13799,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "West Feliciana",
     "diff_margin": -3.495256985167302,
-    "diff_density": 0.04960368046427455
+    "diff_density": 0.04960368046427455,
+    "unemployment": 5.5
   },
   "22127": {
     "year": 2016,
@@ -12570,7 +13811,8 @@ export const counties = {
     "statenam": "Louisiana",
     "cty_name": "Winn",
     "diff_margin": -3.5691206030150724,
-    "diff_density": -0.1774770811186306
+    "diff_density": -0.1774770811186306,
+    "unemployment": 8.5
   },
   "23001": {
     "year": 2016,
@@ -12581,7 +13823,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Androscoggin",
     "diff_margin": -13.323917600289121,
-    "diff_density": 5.295552539909821
+    "diff_density": 5.295552539909821,
+    "unemployment": 3.2
   },
   "23003": {
     "year": 2016,
@@ -12592,7 +13835,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Aroostook",
     "diff_margin": -14.102509601571434,
-    "diff_density": 0.03277361485640817
+    "diff_density": 0.03277361485640817,
+    "unemployment": 4.8
   },
   "23005": {
     "year": 2016,
@@ -12603,7 +13847,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Cumberland",
     "diff_margin": 4.067776612480344,
-    "diff_density": 146.3864139648484
+    "diff_density": 146.3864139648484,
+    "unemployment": 2.6
   },
   "23007": {
     "year": 2016,
@@ -12614,7 +13859,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Franklin",
     "diff_margin": -14.81941350967184,
-    "diff_density": -0.06274629997465375
+    "diff_density": -0.06274629997465375,
+    "unemployment": 4
   },
   "23009": {
     "year": 2016,
@@ -12625,7 +13871,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Hancock",
     "diff_margin": -5.6943909348441935,
-    "diff_density": 2.8347680683601233
+    "diff_density": 2.8347680683601233,
+    "unemployment": 3.2
   },
   "23011": {
     "year": 2016,
@@ -12636,7 +13883,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Kennebec",
     "diff_margin": -10.841448658313006,
-    "diff_density": 2.887784950202885
+    "diff_density": 2.887784950202885,
+    "unemployment": 3.2
   },
   "23013": {
     "year": 2016,
@@ -12647,7 +13895,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Knox",
     "diff_margin": -5.882382172798742,
-    "diff_density": 2.6087771478651476
+    "diff_density": 2.6087771478651476,
+    "unemployment": 2.7
   },
   "23015": {
     "year": 2016,
@@ -12658,7 +13907,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Lincoln",
     "diff_margin": -6.422760531175797,
-    "diff_density": 4.352501426001496
+    "diff_density": 4.352501426001496,
+    "unemployment": 2.9
   },
   "23017": {
     "year": 2016,
@@ -12669,7 +13919,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Oxford",
     "diff_margin": -16.301530944625405,
-    "diff_density": 0.6120727643920567
+    "diff_density": 0.6120727643920567,
+    "unemployment": 4.2
   },
   "23019": {
     "year": 2016,
@@ -12680,7 +13931,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Penobscot",
     "diff_margin": -9.158293537090103,
-    "diff_density": 0.36353521557915514
+    "diff_density": 0.36353521557915514,
+    "unemployment": 4
   },
   "23021": {
     "year": 2016,
@@ -12691,7 +13943,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Piscataquis",
     "diff_margin": -12.054240915878545,
-    "diff_density": 0.2760653999383975
+    "diff_density": 0.2760653999383975,
+    "unemployment": 4.8
   },
   "23023": {
     "year": 2016,
@@ -12702,7 +13955,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Sagadahoc",
     "diff_margin": -7.401027968142252,
-    "diff_density": 3.1675178367298713
+    "diff_density": 3.1675178367298713,
+    "unemployment": 2.6
   },
   "23025": {
     "year": 2016,
@@ -12713,7 +13967,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Somerset",
     "diff_margin": -14.149462025316453,
-    "diff_density": 0.12174905718071471
+    "diff_density": 0.12174905718071471,
+    "unemployment": 4.9
   },
   "23027": {
     "year": 2016,
@@ -12724,7 +13979,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Waldo",
     "diff_margin": -7.348625544132631,
-    "diff_density": 0.7340640070144673
+    "diff_density": 0.7340640070144673,
+    "unemployment": 3.6
   },
   "23029": {
     "year": 2016,
@@ -12735,7 +13991,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "Washington",
     "diff_margin": -11.818310684453316,
-    "diff_density": 0.0799018207643627
+    "diff_density": 0.0799018207643627,
+    "unemployment": 4.6
   },
   "23031": {
     "year": 2016,
@@ -12746,7 +14003,8 @@ export const counties = {
     "statenam": "Maine",
     "cty_name": "York",
     "diff_margin": -7.848156226223686,
-    "diff_density": -9.570651048238133
+    "diff_density": -9.570651048238133,
+    "unemployment": 2.9
   },
   "24001": {
     "year": 2016,
@@ -12757,7 +14015,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Allegany",
     "diff_margin": -8.878628974248311,
-    "diff_density": -4.819264428517542
+    "diff_density": -4.819264428517542,
+    "unemployment": 6.4
   },
   "24003": {
     "year": 2016,
@@ -12768,7 +14027,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Anne Arundel",
     "diff_margin": -0.9009278872474127,
-    "diff_density": -41.49372619908411
+    "diff_density": -41.49372619908411,
+    "unemployment": 4
   },
   "24005": {
     "year": 2016,
@@ -12779,7 +14039,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Baltimore",
     "diff_margin": -0.7145112636075197,
-    "diff_density": -83.17181347150256
+    "diff_density": -83.17181347150256,
+    "unemployment": 4.7
   },
   "24009": {
     "year": 2016,
@@ -12790,7 +14051,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Calvert",
     "diff_margin": -6.7319484405570265,
-    "diff_density": -9.72640159512082
+    "diff_density": -9.72640159512082,
+    "unemployment": 4.1
   },
   "24011": {
     "year": 2016,
@@ -12801,7 +14063,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Caroline",
     "diff_margin": -8.998887215780755,
-    "diff_density": -0.23838331976708105
+    "diff_density": -0.23838331976708105,
+    "unemployment": 4.8
   },
   "24013": {
     "year": 2016,
@@ -12812,7 +14075,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Carroll",
     "diff_margin": -3.274516429269905,
-    "diff_density": -5.938632707774815
+    "diff_density": -5.938632707774815,
+    "unemployment": 3.8
   },
   "24015": {
     "year": 2016,
@@ -12823,7 +14087,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Cecil",
     "diff_margin": -9.0785605899454,
-    "diff_density": -0.49499985560400717
+    "diff_density": -0.49499985560400717,
+    "unemployment": 5.3
   },
   "24017": {
     "year": 2016,
@@ -12834,7 +14099,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Charles",
     "diff_margin": -1.287295805739511,
-    "diff_density": -5.99029492080831
+    "diff_density": -5.99029492080831,
+    "unemployment": 4.7
   },
   "24019": {
     "year": 2016,
@@ -12845,7 +14111,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Dorchester",
     "diff_margin": -6.409980048453761,
-    "diff_density": -2.607636659516235
+    "diff_density": -2.607636659516235,
+    "unemployment": 6.2
   },
   "24021": {
     "year": 2016,
@@ -12856,7 +14123,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Frederick",
     "diff_margin": -1.9524762965153784,
-    "diff_density": -3.263193783890216
+    "diff_density": -3.263193783890216,
+    "unemployment": 3.9
   },
   "24023": {
     "year": 2016,
@@ -12867,7 +14135,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Garrett",
     "diff_margin": -6.289399457574582,
-    "diff_density": -0.387178179570391
+    "diff_density": -0.387178179570391,
+    "unemployment": 5.2
   },
   "24025": {
     "year": 2016,
@@ -12878,7 +14147,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Harford",
     "diff_margin": -4.218697836166925,
-    "diff_density": -3.9630860921091653
+    "diff_density": -3.9630860921091653,
+    "unemployment": 4.3
   },
   "24027": {
     "year": 2016,
@@ -12889,7 +14159,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Howard",
     "diff_margin": 4.386065054200458,
-    "diff_density": -26.7442721544229
+    "diff_density": -26.7442721544229,
+    "unemployment": 3.4
   },
   "24029": {
     "year": 2016,
@@ -12900,7 +14171,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Kent",
     "diff_margin": -3.3085031638664617,
-    "diff_density": -2.663330686207267
+    "diff_density": -2.663330686207267,
+    "unemployment": 4.7
   },
   "24031": {
     "year": 2016,
@@ -12911,7 +14183,17 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Montgomery",
     "diff_margin": 4.946029879990206,
-    "diff_density": -97.07496183206115
+    "diff_density": -97.07496183206115,
+    "unemployment": 3.4
+  },
+  "24033": {
+    "unemployment": 4.6
+  },
+  "24035": {
+    "unemployment": 3.8
+  },
+  "24037": {
+    "unemployment": 4.5
   },
   "24039": {
     "year": 2016,
@@ -12922,7 +14204,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Somerset",
     "diff_margin": -10.654598540145983,
-    "diff_density": -5.10600400350307
+    "diff_density": -5.10600400350307,
+    "unemployment": 6.5
   },
   "24041": {
     "year": 2016,
@@ -12933,7 +14216,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Talbot",
     "diff_margin": -1.0607842613848675,
-    "diff_density": -6.438752513592021
+    "diff_density": -6.438752513592021,
+    "unemployment": 4
   },
   "24043": {
     "year": 2016,
@@ -12944,7 +14228,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Washington",
     "diff_margin": -8.296700202532477,
-    "diff_density": -4.425838175542822
+    "diff_density": -4.425838175542822,
+    "unemployment": 5.2
   },
   "24045": {
     "year": 2016,
@@ -12955,7 +14240,8 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Wicomico",
     "diff_margin": -4.295339083725011,
-    "diff_density": -9.446903108642232
+    "diff_density": -9.446903108642232,
+    "unemployment": 5.5
   },
   "24047": {
     "year": 2016,
@@ -12966,7 +14252,11 @@ export const counties = {
     "statenam": "Maryland",
     "cty_name": "Worcester",
     "diff_margin": -5.8224969692229465,
-    "diff_density": -3.943781498248903
+    "diff_density": -3.943781498248903,
+    "unemployment": 5.8
+  },
+  "24510": {
+    "unemployment": 6.9
   },
   "25001": {
     "year": 2016,
@@ -12977,7 +14267,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Barnstable",
     "diff_margin": 1.581879194630865,
-    "diff_density": -65.61209692167023
+    "diff_density": -65.61209692167023,
+    "unemployment": 3.4
   },
   "25003": {
     "year": 2016,
@@ -12988,7 +14279,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Berkshire",
     "diff_margin": -8.243449238067186,
-    "diff_density": 0.019602947681875094
+    "diff_density": 0.019602947681875094,
+    "unemployment": 3.9
   },
   "25005": {
     "year": 2016,
@@ -12999,7 +14291,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Bristol",
     "diff_margin": -7.402088758488773,
-    "diff_density": 23.666398481287274
+    "diff_density": 23.666398481287274,
+    "unemployment": 4.7
   },
   "25007": {
     "year": 2016,
@@ -13010,7 +14303,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Dukes",
     "diff_margin": 0.18286164072065958,
-    "diff_density": 4.510920096852303
+    "diff_density": 4.510920096852303,
+    "unemployment": 2.7
   },
   "25009": {
     "year": 2016,
@@ -13021,7 +14315,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Essex",
     "diff_margin": 1.1336158715286473,
-    "diff_density": 1.6073639759623575
+    "diff_density": 1.6073639759623575,
+    "unemployment": 3.9
   },
   "25011": {
     "year": 2016,
@@ -13032,7 +14327,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Franklin",
     "diff_margin": -8.269502948609947,
-    "diff_density": -11.555921180575425
+    "diff_density": -11.555921180575425,
+    "unemployment": 3.3
   },
   "25013": {
     "year": 2016,
@@ -13043,7 +14339,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Hampden",
     "diff_margin": -4.478977692950011,
-    "diff_density": -53.047445960397965
+    "diff_density": -53.047445960397965,
+    "unemployment": 5.3
   },
   "25015": {
     "year": 2016,
@@ -13054,7 +14351,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Hampshire",
     "diff_margin": -3.558272132866165,
-    "diff_density": -17.305452821242312
+    "diff_density": -17.305452821242312,
+    "unemployment": 3.6
   },
   "25017": {
     "year": 2016,
@@ -13065,7 +14363,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Middlesex",
     "diff_margin": 3.7627499781712572,
-    "diff_density": 16.10125773397567
+    "diff_density": 16.10125773397567,
+    "unemployment": 3.2
   },
   "25019": {
     "year": 2016,
@@ -13076,7 +14375,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Nantucket",
     "diff_margin": 2.1295565271705215,
-    "diff_density": 6.31604847676229
+    "diff_density": 6.31604847676229,
+    "unemployment": 1.8
   },
   "25021": {
     "year": 2016,
@@ -13087,7 +14387,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Norfolk",
     "diff_margin": 6.227453044884982,
-    "diff_density": -163.4867276766555
+    "diff_density": -163.4867276766555,
+    "unemployment": 3.4
   },
   "25023": {
     "year": 2016,
@@ -13098,7 +14399,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Plymouth",
     "diff_margin": -0.7398140577208423,
-    "diff_density": 11.583254840080087
+    "diff_density": 11.583254840080087,
+    "unemployment": 4
   },
   "25025": {
     "year": 2016,
@@ -13109,7 +14411,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Suffolk",
     "diff_margin": 3.4975793835960616,
-    "diff_density": 4647.683791917456
+    "diff_density": 4647.683791917456,
+    "unemployment": 3.7
   },
   "25027": {
     "year": 2016,
@@ -13120,7 +14423,8 @@ export const counties = {
     "statenam": "Massachusetts",
     "cty_name": "Worcester",
     "diff_margin": -2.0218382443331535,
-    "diff_density": 3.364293439769142
+    "diff_density": 3.364293439769142,
+    "unemployment": 4.1
   },
   "26001": {
     "year": 2016,
@@ -13131,7 +14435,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Alcona",
     "diff_margin": -12.469574364783945,
-    "diff_density": 0.1096377058657847
+    "diff_density": 0.1096377058657847,
+    "unemployment": 5.8
   },
   "26003": {
     "year": 2016,
@@ -13142,7 +14447,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Alger",
     "diff_margin": -11.050897407489472,
-    "diff_density": -0.11813686384648214
+    "diff_density": -0.11813686384648214,
+    "unemployment": 6.1
   },
   "26005": {
     "year": 2016,
@@ -13153,7 +14459,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Allegan",
     "diff_margin": -7.026809421065032,
-    "diff_density": 3.07348884553398
+    "diff_density": 3.07348884553398,
+    "unemployment": 3.3
   },
   "26007": {
     "year": 2016,
@@ -13164,7 +14471,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Alpena",
     "diff_margin": -13.526023965141604,
-    "diff_density": 1.1746081208687436
+    "diff_density": 1.1746081208687436,
+    "unemployment": 5
   },
   "26009": {
     "year": 2016,
@@ -13175,7 +14483,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Antrim",
     "diff_margin": -5.926643088712062,
-    "diff_density": 0.7905865040992239
+    "diff_density": 0.7905865040992239,
+    "unemployment": 5
   },
   "26011": {
     "year": 2016,
@@ -13186,7 +14495,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Arenac",
     "diff_margin": -16.777930803272092,
-    "diff_density": -1.0580470277265341
+    "diff_density": -1.0580470277265341,
+    "unemployment": 6.3
   },
   "26013": {
     "year": 2016,
@@ -13197,7 +14507,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Baraga",
     "diff_margin": -11.938783706253588,
-    "diff_density": -0.009163716518602705
+    "diff_density": -0.009163716518602705,
+    "unemployment": 6.8
   },
   "26015": {
     "year": 2016,
@@ -13208,7 +14519,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Barry",
     "diff_margin": -10.202527672228644,
-    "diff_density": 3.1698466795639035
+    "diff_density": 3.1698466795639035,
+    "unemployment": 3.5
   },
   "26017": {
     "year": 2016,
@@ -13219,7 +14531,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Bay",
     "diff_margin": -11.335468903498828,
-    "diff_density": -1.015570879493552
+    "diff_density": -1.015570879493552,
+    "unemployment": 4.7
   },
   "26019": {
     "year": 2016,
@@ -13230,7 +14543,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Benzie",
     "diff_margin": -7.128237941493005,
-    "diff_density": 1.000597435095404
+    "diff_density": 1.000597435095404,
+    "unemployment": 4.6
   },
   "26021": {
     "year": 2016,
@@ -13241,7 +14555,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Berrien",
     "diff_margin": -5.126083303191336,
-    "diff_density": -1.0814575077058493
+    "diff_density": -1.0814575077058493,
+    "unemployment": 4.4
   },
   "26023": {
     "year": 2016,
@@ -13252,7 +14567,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Branch",
     "diff_margin": -11.575306246209827,
-    "diff_density": -1.2948796334695984
+    "diff_density": -1.2948796334695984,
+    "unemployment": 4.4
   },
   "26025": {
     "year": 2016,
@@ -13263,7 +14579,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Calhoun",
     "diff_margin": -9.091985846970367,
-    "diff_density": 0.6491713747645917
+    "diff_density": 0.6491713747645917,
+    "unemployment": 4.4
   },
   "26027": {
     "year": 2016,
@@ -13274,7 +14591,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Cass",
     "diff_margin": -11.410742523203847,
-    "diff_density": 1.5980626862016862
+    "diff_density": 1.5980626862016862,
+    "unemployment": 4.2
   },
   "26029": {
     "year": 2016,
@@ -13285,7 +14603,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Charlevoix",
     "diff_margin": -6.885360746893667,
-    "diff_density": 1.1482307729259702
+    "diff_density": 1.1482307729259702,
+    "unemployment": 3.7
   },
   "26031": {
     "year": 2016,
@@ -13296,7 +14615,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Cheboygan",
     "diff_margin": -12.286588261156297,
-    "diff_density": 0.4697751866454176
+    "diff_density": 0.4697751866454176,
+    "unemployment": 4
   },
   "26033": {
     "year": 2016,
@@ -13307,7 +14627,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Chippewa",
     "diff_margin": -10.77485292211999,
-    "diff_density": -0.08637966658538865
+    "diff_density": -0.08637966658538865,
+    "unemployment": 6
   },
   "26035": {
     "year": 2016,
@@ -13318,7 +14639,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Clare",
     "diff_margin": -15.178038849458346,
-    "diff_density": -0.21118797845194237
+    "diff_density": -0.21118797845194237,
+    "unemployment": 6
   },
   "26037": {
     "year": 2016,
@@ -13329,7 +14651,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Clinton",
     "diff_margin": -5.708190513756037,
-    "diff_density": 2.3459672322169496
+    "diff_density": 2.3459672322169496,
+    "unemployment": 3.4
   },
   "26039": {
     "year": 2016,
@@ -13340,7 +14663,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Crawford",
     "diff_margin": -13.060444899751207,
-    "diff_density": 0.03338246926008459
+    "diff_density": 0.03338246926008459,
+    "unemployment": 6.2
   },
   "26041": {
     "year": 2016,
@@ -13351,7 +14675,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Delta",
     "diff_margin": -11.32571884984025,
-    "diff_density": 0.3589351891384176
+    "diff_density": 0.3589351891384176,
+    "unemployment": 5.5
   },
   "26043": {
     "year": 2016,
@@ -13362,7 +14687,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Dickinson",
     "diff_margin": -8.804596651445962,
-    "diff_density": 0.4376832151300256
+    "diff_density": 0.4376832151300256,
+    "unemployment": 4.5
   },
   "26045": {
     "year": 2016,
@@ -13373,7 +14699,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Eaton",
     "diff_margin": -6.892247602629027,
-    "diff_density": 1.566593355008095
+    "diff_density": 1.566593355008095,
+    "unemployment": 3.6
   },
   "26047": {
     "year": 2016,
@@ -13384,7 +14711,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Emmet",
     "diff_margin": -3.6635346756152103,
-    "diff_density": 2.2791477892575216
+    "diff_density": 2.2791477892575216,
+    "unemployment": 4.1
   },
   "26049": {
     "year": 2016,
@@ -13395,7 +14723,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Genesee",
     "diff_margin": -11.175672878374598,
-    "diff_density": -10.676093754905935
+    "diff_density": -10.676093754905935,
+    "unemployment": 5
   },
   "26051": {
     "year": 2016,
@@ -13406,7 +14735,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Gladwin",
     "diff_margin": -15.359858883899939,
-    "diff_density": -0.22448563115309028
+    "diff_density": -0.22448563115309028,
+    "unemployment": 5.8
   },
   "26053": {
     "year": 2016,
@@ -13417,7 +14747,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Gogebic",
     "diff_margin": -13.562734855736366,
-    "diff_density": -0.24298044198393587
+    "diff_density": -0.24298044198393587,
+    "unemployment": 5.5
   },
   "26055": {
     "year": 2016,
@@ -13428,7 +14759,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Grand Traverse",
     "diff_margin": -2.7515623785464456,
-    "diff_density": 7.456351947968045
+    "diff_density": 7.456351947968045,
+    "unemployment": 3.4
   },
   "26057": {
     "year": 2016,
@@ -13439,7 +14771,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Gratiot",
     "diff_margin": -13.00555406884807,
-    "diff_density": 0.7137589276290299
+    "diff_density": 0.7137589276290299,
+    "unemployment": 4.5
   },
   "26059": {
     "year": 2016,
@@ -13450,7 +14783,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Hillsdale",
     "diff_margin": -13.060160965794772,
-    "diff_density": 1.306921739421199
+    "diff_density": 1.306921739421199,
+    "unemployment": 4.9
   },
   "26061": {
     "year": 2016,
@@ -13461,7 +14795,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Houghton",
     "diff_margin": -5.979869423286182,
-    "diff_density": 0.3421127737587941
+    "diff_density": 0.3421127737587941,
+    "unemployment": 5.2
   },
   "26063": {
     "year": 2016,
@@ -13472,7 +14807,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Huron",
     "diff_margin": -13.206764260474511,
-    "diff_density": 0.4335160522190691
+    "diff_density": 0.4335160522190691,
+    "unemployment": 4.3
   },
   "26065": {
     "year": 2016,
@@ -13483,7 +14819,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Ingham",
     "diff_margin": -2.326558533990621,
-    "diff_density": 10.016543192116814
+    "diff_density": 10.016543192116814,
+    "unemployment": 4
   },
   "26067": {
     "year": 2016,
@@ -13494,7 +14831,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Ionia",
     "diff_margin": -11.644222424518286,
-    "diff_density": 1.0573831612112699
+    "diff_density": 1.0573831612112699,
+    "unemployment": 3.6
   },
   "26069": {
     "year": 2016,
@@ -13505,7 +14843,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Iosco",
     "diff_margin": -14.238236572027873,
-    "diff_density": 0.010690220360586977
+    "diff_density": 0.010690220360586977,
+    "unemployment": 5.8
   },
   "26071": {
     "year": 2016,
@@ -13516,7 +14855,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Iron",
     "diff_margin": -10.961370558375634,
-    "diff_density": -0.06204133259014721
+    "diff_density": -0.06204133259014721,
+    "unemployment": 4.7
   },
   "26073": {
     "year": 2016,
@@ -13527,7 +14867,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Isabella",
     "diff_margin": -9.063156565656563,
-    "diff_density": 2.1350813717957706
+    "diff_density": 2.1350813717957706,
+    "unemployment": 4.2
   },
   "26075": {
     "year": 2016,
@@ -13538,7 +14879,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Jackson",
     "diff_margin": -9.43063765865999,
-    "diff_density": 0.1748971738851708
+    "diff_density": 0.1748971738851708,
+    "unemployment": 4.6
   },
   "26077": {
     "year": 2016,
@@ -13549,7 +14891,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Kalamazoo",
     "diff_margin": -2.7583154184462444,
-    "diff_density": 4.964472100559078
+    "diff_density": 4.964472100559078,
+    "unemployment": 3.7
   },
   "26079": {
     "year": 2016,
@@ -13560,7 +14903,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Kalkaska",
     "diff_margin": -13.880672645739914,
-    "diff_density": 1.1122699912479685
+    "diff_density": 1.1122699912479685,
+    "unemployment": 5.4
   },
   "26081": {
     "year": 2016,
@@ -13571,7 +14915,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Kent",
     "diff_margin": -0.286587324909398,
-    "diff_density": 15.685207509298039
+    "diff_density": 15.685207509298039,
+    "unemployment": 3.2
   },
   "26083": {
     "year": 2016,
@@ -13582,7 +14927,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Keweenaw",
     "diff_margin": -4.931063680895733,
-    "diff_density": 0.06575734572587066
+    "diff_density": 0.06575734572587066,
+    "unemployment": 6.4
   },
   "26085": {
     "year": 2016,
@@ -13593,7 +14939,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Lake",
     "diff_margin": -15.657357357357355,
-    "diff_density": 0.07069742848582017
+    "diff_density": 0.07069742848582017,
+    "unemployment": 6
   },
   "26087": {
     "year": 2016,
@@ -13604,7 +14951,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Lapeer",
     "diff_margin": -15.38123476488056,
-    "diff_density": 3.1293129189281643
+    "diff_density": 3.1293129189281643,
+    "unemployment": 6.4
   },
   "26089": {
     "year": 2016,
@@ -13615,7 +14963,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Leelanau",
     "diff_margin": -0.48636104899370025,
-    "diff_density": 1.6765529855690318
+    "diff_density": 1.6765529855690318,
+    "unemployment": 3.5
   },
   "26091": {
     "year": 2016,
@@ -13626,7 +14975,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Lenawee",
     "diff_margin": -12.193649635036493,
-    "diff_density": 1.56007137615903
+    "diff_density": 1.56007137615903,
+    "unemployment": 4.4
   },
   "26093": {
     "year": 2016,
@@ -13637,7 +14987,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Livingston",
     "diff_margin": -5.28798365174233,
-    "diff_density": 12.80930119416189
+    "diff_density": 12.80930119416189,
+    "unemployment": 4.6
   },
   "26095": {
     "year": 2016,
@@ -13648,7 +14999,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Luce",
     "diff_margin": -11.733664596273293,
-    "diff_density": -0.02484895671130527
+    "diff_density": -0.02484895671130527,
+    "unemployment": 4.4
   },
   "26097": {
     "year": 2016,
@@ -13659,7 +15011,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Mackinac",
     "diff_margin": -9.232299605781861,
-    "diff_density": -0.010545434967745848
+    "diff_density": -0.010545434967745848,
+    "unemployment": 3.1
   },
   "26099": {
     "year": 2016,
@@ -13670,7 +15023,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Macomb",
     "diff_margin": -9.39562493283951,
-    "diff_density": 30.653778640290398
+    "diff_density": 30.653778640290398,
+    "unemployment": 5.9
   },
   "26101": {
     "year": 2016,
@@ -13681,7 +15035,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Manistee",
     "diff_margin": -12.667853627559928,
-    "diff_density": 0.3571115005072407
+    "diff_density": 0.3571115005072407,
+    "unemployment": 4.9
   },
   "26103": {
     "year": 2016,
@@ -13692,7 +15047,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Marquette",
     "diff_margin": -7.505674985560994,
-    "diff_density": 0.3912187569121848
+    "diff_density": 0.3912187569121848,
+    "unemployment": 4.9
   },
   "26105": {
     "year": 2016,
@@ -13703,7 +15059,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Mason",
     "diff_margin": -10.921892481921134,
-    "diff_density": 0.10793423152281534
+    "diff_density": 0.10793423152281534,
+    "unemployment": 4.2
   },
   "26107": {
     "year": 2016,
@@ -13714,7 +15071,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Mecosta",
     "diff_margin": -10.451342352323756,
-    "diff_density": 0.4252024069036331
+    "diff_density": 0.4252024069036331,
+    "unemployment": 4.9
   },
   "26109": {
     "year": 2016,
@@ -13725,7 +15083,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Menominee",
     "diff_margin": -15.114941941477007,
-    "diff_density": -0.14948739560187008
+    "diff_density": -0.14948739560187008,
+    "unemployment": 5.1
   },
   "26111": {
     "year": 2016,
@@ -13736,7 +15095,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Midland",
     "diff_margin": -4.849534203261044,
-    "diff_density": 1.2100726392251886
+    "diff_density": 1.2100726392251886,
+    "unemployment": 4.1
   },
   "26113": {
     "year": 2016,
@@ -13747,7 +15107,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Missaukee",
     "diff_margin": -10.924580194493906,
-    "diff_density": 0.48830202043454385
+    "diff_density": 0.48830202043454385,
+    "unemployment": 4.8
   },
   "26115": {
     "year": 2016,
@@ -13758,7 +15119,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Monroe",
     "diff_margin": -13.593525593446785,
-    "diff_density": 2.268683630936124
+    "diff_density": 2.268683630936124,
+    "unemployment": 4.3
   },
   "26117": {
     "year": 2016,
@@ -13769,7 +15131,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Montcalm",
     "diff_margin": -15.299450218406388,
-    "diff_density": 1.5967252622625523
+    "diff_density": 1.5967252622625523,
+    "unemployment": 4.5
   },
   "26119": {
     "year": 2016,
@@ -13780,7 +15143,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Montmorency",
     "diff_margin": -14.891086261980828,
-    "diff_density": -0.0789126696667033
+    "diff_density": -0.0789126696667033,
+    "unemployment": 7.6
   },
   "26121": {
     "year": 2016,
@@ -13791,7 +15155,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Muskegon",
     "diff_margin": -10.825929921933763,
-    "diff_density": 1.8996895343014444
+    "diff_density": 1.8996895343014444,
+    "unemployment": 4.8
   },
   "26123": {
     "year": 2016,
@@ -13802,7 +15167,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Newaygo",
     "diff_margin": -13.159354125193541,
-    "diff_density": 1.387589768814557
+    "diff_density": 1.387589768814557,
+    "unemployment": 4.2
   },
   "26125": {
     "year": 2016,
@@ -13813,7 +15179,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Oakland",
     "diff_margin": -1.848968797822863,
-    "diff_density": 13.428090035267246
+    "diff_density": 13.428090035267246,
+    "unemployment": 4.7
   },
   "26127": {
     "year": 2016,
@@ -13824,7 +15191,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Oceana",
     "diff_margin": -10.841860035285222,
-    "diff_density": 0.8848688655847816
+    "diff_density": 0.8848688655847816,
+    "unemployment": 5
   },
   "26129": {
     "year": 2016,
@@ -13835,7 +15203,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Ogemaw",
     "diff_margin": -17.0661120739457,
-    "diff_density": 0.04156045360166161
+    "diff_density": 0.04156045360166161,
+    "unemployment": 6.3
   },
   "26131": {
     "year": 2016,
@@ -13846,7 +15215,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Ontonagon",
     "diff_margin": -10.453274853801176,
-    "diff_density": -0.09174204176263334
+    "diff_density": -0.09174204176263334,
+    "unemployment": 6.6
   },
   "26133": {
     "year": 2016,
@@ -13857,7 +15227,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Osceola",
     "diff_margin": -13.203907709729165,
-    "diff_density": 0.5597229823972896
+    "diff_density": 0.5597229823972896,
+    "unemployment": 4.9
   },
   "26135": {
     "year": 2016,
@@ -13868,7 +15239,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Oscoda",
     "diff_margin": -15.288375184638113,
-    "diff_density": 0.04010358298128125
+    "diff_density": 0.04010358298128125,
+    "unemployment": 5.6
   },
   "26137": {
     "year": 2016,
@@ -13879,7 +15251,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Otsego",
     "diff_margin": -11.17784659589752,
-    "diff_density": 1.349572596461929
+    "diff_density": 1.349572596461929,
+    "unemployment": 4.9
   },
   "26139": {
     "year": 2016,
@@ -13890,7 +15263,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Ottawa",
     "diff_margin": -0.4744094082046644,
-    "diff_density": 23.232780094769907
+    "diff_density": 23.232780094769907,
+    "unemployment": 3
   },
   "26141": {
     "year": 2016,
@@ -13901,7 +15275,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Presque Isle",
     "diff_margin": -11.815966735966732,
-    "diff_density": 0.20306048093271833
+    "diff_density": 0.20306048093271833,
+    "unemployment": 6.6
   },
   "26143": {
     "year": 2016,
@@ -13912,7 +15287,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Roscommon",
     "diff_margin": -14.674145443387545,
-    "diff_density": 0.006598414286816734
+    "diff_density": 0.006598414286816734,
+    "unemployment": 6.8
   },
   "26145": {
     "year": 2016,
@@ -13923,7 +15299,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Saginaw",
     "diff_margin": -8.330549268561967,
-    "diff_density": -4.828688055392391
+    "diff_density": -4.828688055392391,
+    "unemployment": 4.6
   },
   "26147": {
     "year": 2016,
@@ -13934,7 +15311,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "St. Clair",
     "diff_margin": -14.329373285124497,
-    "diff_density": 5.289257456632981
+    "diff_density": 5.289257456632981,
+    "unemployment": 6.5
   },
   "26149": {
     "year": 2016,
@@ -13945,7 +15323,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "St. Joseph",
     "diff_margin": -11.638956448558805,
-    "diff_density": 0.8439807027707289
+    "diff_density": 0.8439807027707289,
+    "unemployment": 3.7
   },
   "26151": {
     "year": 2016,
@@ -13956,7 +15335,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Sanilac",
     "diff_margin": -13.936505742347862,
-    "diff_density": 0.9112733619373152
+    "diff_density": 0.9112733619373152,
+    "unemployment": 5.2
   },
   "26153": {
     "year": 2016,
@@ -13967,7 +15347,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Schoolcraft",
     "diff_margin": -13.089995181883886,
-    "diff_density": 0.08374402404043213
+    "diff_density": 0.08374402404043213,
+    "unemployment": 7
   },
   "26155": {
     "year": 2016,
@@ -13978,7 +15359,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Shiawassee",
     "diff_margin": -14.204753847961463,
-    "diff_density": 0.6828633614110515
+    "diff_density": 0.6828633614110515,
+    "unemployment": 4.6
   },
   "26157": {
     "year": 2016,
@@ -13989,7 +15371,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Tuscola",
     "diff_margin": -15.293748518560992,
-    "diff_density": 0.18882447424451243
+    "diff_density": 0.18882447424451243,
+    "unemployment": 5.3
   },
   "26159": {
     "year": 2016,
@@ -14000,7 +15383,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Van Buren",
     "diff_margin": -9.691895643272211,
-    "diff_density": 0.6243049039458768
+    "diff_density": 0.6243049039458768,
+    "unemployment": 4.6
   },
   "26161": {
     "year": 2016,
@@ -14011,7 +15395,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Washtenaw",
     "diff_margin": 1.0790577507598726,
-    "diff_density": 10.778491578962303
+    "diff_density": 10.778491578962303,
+    "unemployment": 3.5
   },
   "26163": {
     "year": 2016,
@@ -14022,7 +15407,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Wayne",
     "diff_margin": -6.239824802353539,
-    "diff_density": -68.35719121683428
+    "diff_density": -68.35719121683428,
+    "unemployment": 7.3
   },
   "26165": {
     "year": 2016,
@@ -14033,7 +15419,8 @@ export const counties = {
     "statenam": "Michigan",
     "cty_name": "Wexford",
     "diff_margin": -12.59668630145952,
-    "diff_density": 0.7524778761061945
+    "diff_density": 0.7524778761061945,
+    "unemployment": 5.1
   },
   "27001": {
     "year": 2016,
@@ -14044,7 +15431,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Aitkin",
     "diff_margin": -14.13915078933043,
-    "diff_density": 0.022104454179155297
+    "diff_density": 0.022104454179155297,
+    "unemployment": 5.1
   },
   "27003": {
     "year": 2016,
@@ -14055,7 +15443,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Anoka",
     "diff_margin": -6.506658264705244,
-    "diff_density": -5.633526630576114
+    "diff_density": -5.633526630576114,
+    "unemployment": 3.8
   },
   "27005": {
     "year": 2016,
@@ -14066,7 +15455,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Becker",
     "diff_margin": -11.21603861907548,
-    "diff_density": 0.5342214111922132
+    "diff_density": 0.5342214111922132,
+    "unemployment": 3.8
   },
   "27007": {
     "year": 2016,
@@ -14077,7 +15467,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Beltrami",
     "diff_margin": -12.831884030775008,
-    "diff_density": -0.2904149400784064
+    "diff_density": -0.2904149400784064,
+    "unemployment": 4.8
   },
   "27009": {
     "year": 2016,
@@ -14088,7 +15479,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Benton",
     "diff_margin": -13.333949073376523,
-    "diff_density": 0.7156135194709776
+    "diff_density": 0.7156135194709776,
+    "unemployment": 3.7
   },
   "27011": {
     "year": 2016,
@@ -14099,7 +15491,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Big Stone",
     "diff_margin": -14.481374129717842,
-    "diff_density": -0.12128131137028575
+    "diff_density": -0.12128131137028575,
+    "unemployment": 4
   },
   "27013": {
     "year": 2016,
@@ -14110,7 +15503,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Blue Earth",
     "diff_margin": -9.61534760644696,
-    "diff_density": -1.3605947796320095
+    "diff_density": -1.3605947796320095,
+    "unemployment": 3.3
   },
   "27015": {
     "year": 2016,
@@ -14121,7 +15515,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Brown",
     "diff_margin": -12.878464466076267,
-    "diff_density": -0.4315912549706269
+    "diff_density": -0.4315912549706269,
+    "unemployment": 3.9
   },
   "27017": {
     "year": 2016,
@@ -14132,7 +15527,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Carlton",
     "diff_margin": -14.933552245417793,
-    "diff_density": -0.4348046158489858
+    "diff_density": -0.4348046158489858,
+    "unemployment": 4.9
   },
   "27019": {
     "year": 2016,
@@ -14143,7 +15539,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Carver",
     "diff_margin": -0.1845462133033351,
-    "diff_density": 6.248656581621134
+    "diff_density": 6.248656581621134,
+    "unemployment": 3.4
   },
   "27021": {
     "year": 2016,
@@ -14154,7 +15551,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Cass",
     "diff_margin": -11.334822159269756,
-    "diff_density": -0.12212926778594557
+    "diff_density": -0.12212926778594557,
+    "unemployment": 5.6
   },
   "27023": {
     "year": 2016,
@@ -14165,7 +15563,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Chippewa",
     "diff_margin": -17.72388223875768,
-    "diff_density": -0.031921806167400035
+    "diff_density": -0.031921806167400035,
+    "unemployment": 4
   },
   "27025": {
     "year": 2016,
@@ -14176,7 +15575,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Chisago",
     "diff_margin": -11.61927621713486,
-    "diff_density": 1.365245625030127
+    "diff_density": 1.365245625030127,
+    "unemployment": 3.9
   },
   "27027": {
     "year": 2016,
@@ -14187,7 +15587,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Clay",
     "diff_margin": -8.086278557665842,
-    "diff_density": 0.1725962099543743
+    "diff_density": 0.1725962099543743,
+    "unemployment": 3.2
   },
   "27029": {
     "year": 2016,
@@ -14198,7 +15599,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Clearwater",
     "diff_margin": -15.73449704142012,
-    "diff_density": 0.02948325224738202
+    "diff_density": 0.02948325224738202,
+    "unemployment": 7.6
   },
   "27031": {
     "year": 2016,
@@ -14209,7 +15611,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Cook",
     "diff_margin": -3.085238095238097,
-    "diff_density": 0.023603437353678203
+    "diff_density": 0.023603437353678203,
+    "unemployment": 3.1
   },
   "27033": {
     "year": 2016,
@@ -14220,7 +15623,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Cottonwood",
     "diff_margin": -12.035557506584723,
-    "diff_density": -0.2621941403986785
+    "diff_density": -0.2621941403986785,
+    "unemployment": 7.9
   },
   "27035": {
     "year": 2016,
@@ -14231,7 +15635,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Crow Wing",
     "diff_margin": -11.393931623931625,
-    "diff_density": 0.6500400360324221
+    "diff_density": 0.6500400360324221,
+    "unemployment": 4.3
   },
   "27037": {
     "year": 2016,
@@ -14242,7 +15647,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Dakota",
     "diff_margin": -2.324786225238853,
-    "diff_density": -11.972144191258792
+    "diff_density": -11.972144191258792,
+    "unemployment": 3.5
   },
   "27039": {
     "year": 2016,
@@ -14253,7 +15659,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Dodge",
     "diff_margin": -14.086122680802731,
-    "diff_density": 0.5384429065743959
+    "diff_density": 0.5384429065743959,
+    "unemployment": 3.6
   },
   "27041": {
     "year": 2016,
@@ -14264,7 +15671,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Douglas",
     "diff_margin": -12.501960874994218,
-    "diff_density": 1.0490757884826607
+    "diff_density": 1.0490757884826607,
+    "unemployment": 3
   },
   "27043": {
     "year": 2016,
@@ -14275,7 +15683,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Faribault",
     "diff_margin": -14.89739632902787,
-    "diff_density": -0.5069032113182121
+    "diff_density": -0.5069032113182121,
+    "unemployment": 3.9
   },
   "27045": {
     "year": 2016,
@@ -14286,7 +15695,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Fillmore",
     "diff_margin": -17.173032069970844,
-    "diff_density": 0.09352722628584687
+    "diff_density": 0.09352722628584687,
+    "unemployment": 3.7
   },
   "27047": {
     "year": 2016,
@@ -14297,7 +15707,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Freeborn",
     "diff_margin": -17.895459853098124,
-    "diff_density": -1.1024575372300554
+    "diff_density": -1.1024575372300554,
+    "unemployment": 3.7
   },
   "27049": {
     "year": 2016,
@@ -14308,7 +15719,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Goodhue",
     "diff_margin": -10.341982144255617,
-    "diff_density": -0.3470688652819689
+    "diff_density": -0.3470688652819689,
+    "unemployment": 3.7
   },
   "27051": {
     "year": 2016,
@@ -14319,7 +15731,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Grant",
     "diff_margin": -15.257801911381407,
-    "diff_density": -0.060744308231173605
+    "diff_density": -0.060744308231173605,
+    "unemployment": 4.1
   },
   "27053": {
     "year": 2016,
@@ -14330,7 +15743,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Hennepin",
     "diff_margin": 1.4802280600032702,
-    "diff_density": -13.427214003143263
+    "diff_density": -13.427214003143263,
+    "unemployment": 3.5
   },
   "27055": {
     "year": 2016,
@@ -14341,7 +15755,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Houston",
     "diff_margin": -11.140123632905379,
-    "diff_density": 0.12684273448538264
+    "diff_density": 0.12684273448538264,
+    "unemployment": 3.4
   },
   "27057": {
     "year": 2016,
@@ -14352,7 +15767,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Hubbard",
     "diff_margin": -10.54535323470192,
-    "diff_density": -0.09974915466634826
+    "diff_density": -0.09974915466634826,
+    "unemployment": 5.5
   },
   "27059": {
     "year": 2016,
@@ -14363,7 +15779,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Isanti",
     "diff_margin": -12.595389221556886,
-    "diff_density": 1.5115121962413056
+    "diff_density": 1.5115121962413056,
+    "unemployment": 4.2
   },
   "27061": {
     "year": 2016,
@@ -14374,7 +15791,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Itasca",
     "diff_margin": -15.611606765327693,
-    "diff_density": -0.10475177304964589
+    "diff_density": -0.10475177304964589,
+    "unemployment": 7.7
   },
   "27063": {
     "year": 2016,
@@ -14385,7 +15803,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Jackson",
     "diff_margin": -14.408914359068405,
-    "diff_density": 0.03697743890295602
+    "diff_density": 0.03697743890295602,
+    "unemployment": 4
   },
   "27065": {
     "year": 2016,
@@ -14396,7 +15815,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Kanabec",
     "diff_margin": -15.450000000000003,
-    "diff_density": -0.0526308019708992
+    "diff_density": -0.0526308019708992,
+    "unemployment": 5.1
   },
   "27067": {
     "year": 2016,
@@ -14407,7 +15827,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Kandiyohi",
     "diff_margin": -12.115698447893571,
-    "diff_density": 0.22935666055875004
+    "diff_density": 0.22935666055875004,
+    "unemployment": 3.5
   },
   "27069": {
     "year": 2016,
@@ -14418,7 +15839,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Kittson",
     "diff_margin": -16.45139229792637,
-    "diff_density": -0.0494721514379326
+    "diff_density": -0.0494721514379326,
+    "unemployment": 4.2
   },
   "27071": {
     "year": 2016,
@@ -14429,7 +15851,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Koochiching",
     "diff_margin": -16.912200221764614,
-    "diff_density": -0.046218545329197
+    "diff_density": -0.046218545329197,
+    "unemployment": 7.7
   },
   "27073": {
     "year": 2016,
@@ -14440,7 +15863,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Lac qui Parle",
     "diff_margin": -15.625619295958273,
-    "diff_density": -0.19705916185197747
+    "diff_density": -0.19705916185197747,
+    "unemployment": 3.9
   },
   "27075": {
     "year": 2016,
@@ -14451,7 +15875,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Lake",
     "diff_margin": -11.736736711990112,
-    "diff_density": -0.16166895021547534
+    "diff_density": -0.16166895021547534,
+    "unemployment": 4.3
   },
   "27077": {
     "year": 2016,
@@ -14462,7 +15887,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Lake of the Woods",
     "diff_margin": -13.6517937219731,
-    "diff_density": -0.0018001802954068502
+    "diff_density": -0.0018001802954068502,
+    "unemployment": 4.5
   },
   "27079": {
     "year": 2016,
@@ -14473,7 +15899,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Le Sueur",
     "diff_margin": -14.544284657294678,
-    "diff_density": 0.15906676174347467
+    "diff_density": 0.15906676174347467,
+    "unemployment": 3.7
   },
   "27081": {
     "year": 2016,
@@ -14484,7 +15911,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Lincoln",
     "diff_margin": -17.15243171219187,
-    "diff_density": -0.2171838438035616
+    "diff_density": -0.2171838438035616,
+    "unemployment": 3.2
   },
   "27083": {
     "year": 2016,
@@ -14495,7 +15923,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Lyon",
     "diff_margin": -12.589211112027037,
-    "diff_density": -0.36311912225705356
+    "diff_density": -0.36311912225705356,
+    "unemployment": 3.4
   },
   "27085": {
     "year": 2016,
@@ -14506,7 +15935,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "McLeod",
     "diff_margin": -10.909031360376755,
-    "diff_density": 0.2706319816062006
+    "diff_density": 0.2706319816062006,
+    "unemployment": 4.1
   },
   "27087": {
     "year": 2016,
@@ -14517,7 +15947,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Mahnomen",
     "diff_margin": -13.63911282545805,
-    "diff_density": -0.19235462823546312
+    "diff_density": -0.19235462823546312,
+    "unemployment": 5.2
   },
   "27089": {
     "year": 2016,
@@ -14528,7 +15959,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Marshall",
     "diff_margin": -16.977225698790154,
-    "diff_density": 0.05073856242289043
+    "diff_density": 0.05073856242289043,
+    "unemployment": 5.6
   },
   "27091": {
     "year": 2016,
@@ -14539,7 +15971,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Martin",
     "diff_margin": -10.854354761677335,
-    "diff_density": -0.7035726819681347
+    "diff_density": -0.7035726819681347,
+    "unemployment": 3.9
   },
   "27093": {
     "year": 2016,
@@ -14550,7 +15983,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Meeker",
     "diff_margin": -14.516065573770494,
-    "diff_density": -0.020149297905220465
+    "diff_density": -0.020149297905220465,
+    "unemployment": 4
   },
   "27095": {
     "year": 2016,
@@ -14561,7 +15995,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Mille Lacs",
     "diff_margin": -15.884649366697559,
-    "diff_density": -0.2458976778319446
+    "diff_density": -0.2458976778319446,
+    "unemployment": 4.8
   },
   "27097": {
     "year": 2016,
@@ -14572,7 +16007,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Morrison",
     "diff_margin": -16.06744268278773,
-    "diff_density": 0.7249465806268116
+    "diff_density": 0.7249465806268116,
+    "unemployment": 4.5
   },
   "27099": {
     "year": 2016,
@@ -14583,7 +16019,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Mower",
     "diff_margin": -17.703281401034857,
-    "diff_density": -1.3358916396046858
+    "diff_density": -1.3358916396046858,
+    "unemployment": 3
   },
   "27101": {
     "year": 2016,
@@ -14594,7 +16031,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Murray",
     "diff_margin": -17.412542007755277,
-    "diff_density": -0.17279977295302995
+    "diff_density": -0.17279977295302995,
+    "unemployment": 3.3
   },
   "27103": {
     "year": 2016,
@@ -14605,7 +16043,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Nicollet",
     "diff_margin": -8.55856425142347,
-    "diff_density": -0.9870804254275498
+    "diff_density": -0.9870804254275498,
+    "unemployment": 2.9
   },
   "27105": {
     "year": 2016,
@@ -14616,7 +16055,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Nobles",
     "diff_margin": -12.71134078212291,
-    "diff_density": 0.10493476528086632
+    "diff_density": 0.10493476528086632,
+    "unemployment": 3.6
   },
   "27107": {
     "year": 2016,
@@ -14627,7 +16067,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Norman",
     "diff_margin": -14.831089108910888,
-    "diff_density": 0.033067175380103286
+    "diff_density": 0.033067175380103286,
+    "unemployment": 4.6
   },
   "27109": {
     "year": 2016,
@@ -14638,7 +16079,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Olmsted",
     "diff_margin": -4.484071168182446,
-    "diff_density": 1.469251549705362
+    "diff_density": 1.469251549705362,
+    "unemployment": 3
   },
   "27111": {
     "year": 2016,
@@ -14649,7 +16091,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Otter Tail",
     "diff_margin": -9.48146176005947,
-    "diff_density": 0.31010856612595106
+    "diff_density": 0.31010856612595106,
+    "unemployment": 3.6
   },
   "27113": {
     "year": 2016,
@@ -14660,7 +16103,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Pennington",
     "diff_margin": -14.23090990855944,
-    "diff_density": 0.24953387287736817
+    "diff_density": 0.24953387287736817,
+    "unemployment": 4.3
   },
   "27115": {
     "year": 2016,
@@ -14671,7 +16115,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Pine",
     "diff_margin": -14.97995921043048,
-    "diff_density": -0.17202063360471698
+    "diff_density": -0.17202063360471698,
+    "unemployment": 4.8
   },
   "27117": {
     "year": 2016,
@@ -14682,7 +16127,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Pipestone",
     "diff_margin": -13.54766059845156,
-    "diff_density": 0.2860934073022836
+    "diff_density": 0.2860934073022836,
+    "unemployment": 3
   },
   "27119": {
     "year": 2016,
@@ -14693,7 +16139,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Polk",
     "diff_margin": -14.041216492039737,
-    "diff_density": 0.0066365485787338585
+    "diff_density": 0.0066365485787338585,
+    "unemployment": 4.4
   },
   "27121": {
     "year": 2016,
@@ -14704,7 +16151,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Pope",
     "diff_margin": -14.269561487130595,
-    "diff_density": 0.06809768407221028
+    "diff_density": 0.06809768407221028,
+    "unemployment": 2.8
   },
   "27123": {
     "year": 2016,
@@ -14715,7 +16163,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Ramsey",
     "diff_margin": -0.5964799135090146,
-    "diff_density": -63.44706655278901
+    "diff_density": -63.44706655278901,
+    "unemployment": 3.8
   },
   "27125": {
     "year": 2016,
@@ -14726,7 +16175,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Red Lake",
     "diff_margin": -18.128428647781938,
-    "diff_density": -0.24308804144215035
+    "diff_density": -0.24308804144215035,
+    "unemployment": 6.3
   },
   "27127": {
     "year": 2016,
@@ -14737,7 +16187,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Redwood",
     "diff_margin": -13.669476605868358,
-    "diff_density": -0.2582786801279351
+    "diff_density": -0.2582786801279351,
+    "unemployment": 4
   },
   "27129": {
     "year": 2016,
@@ -14748,7 +16199,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Renville",
     "diff_margin": -16.028462250429726,
-    "diff_density": -0.14550101230021006
+    "diff_density": -0.14550101230021006,
+    "unemployment": 5.2
   },
   "27131": {
     "year": 2016,
@@ -14759,7 +16211,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Rice",
     "diff_margin": -8.036863670225976,
-    "diff_density": -0.10645577792124072
+    "diff_density": -0.10645577792124072,
+    "unemployment": 3.6
   },
   "27133": {
     "year": 2016,
@@ -14770,7 +16223,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Rock",
     "diff_margin": -11.597486998127728,
-    "diff_density": -0.07627318893149493
+    "diff_density": -0.07627318893149493,
+    "unemployment": 2.2
   },
   "27135": {
     "year": 2016,
@@ -14781,7 +16235,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Roseau",
     "diff_margin": -13.804029869962665,
-    "diff_density": 0.24644651830581488
+    "diff_density": 0.24644651830581488,
+    "unemployment": 4.3
   },
   "27137": {
     "year": 2016,
@@ -14792,7 +16247,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "St. Louis",
     "diff_margin": -11.557476181916229,
-    "diff_density": -0.6909914524442158
+    "diff_density": -0.6909914524442158,
+    "unemployment": 5.7
   },
   "27139": {
     "year": 2016,
@@ -14803,7 +16259,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Scott",
     "diff_margin": -3.155710444952277,
-    "diff_density": 7.689308797127438
+    "diff_density": 7.689308797127438,
+    "unemployment": 3.2
   },
   "27141": {
     "year": 2016,
@@ -14814,7 +16271,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Sherburne",
     "diff_margin": -10.097916475447455,
-    "diff_density": 3.3017749237734364
+    "diff_density": 3.3017749237734364,
+    "unemployment": 3.6
   },
   "27143": {
     "year": 2016,
@@ -14825,7 +16283,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Sibley",
     "diff_margin": -12.02204866054096,
-    "diff_density": -0.14625259010156455
+    "diff_density": -0.14625259010156455,
+    "unemployment": 3.7
   },
   "27145": {
     "year": 2016,
@@ -14836,7 +16295,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Stearns",
     "diff_margin": -10.370434259669558,
-    "diff_density": 0.37666800681988377
+    "diff_density": 0.37666800681988377,
+    "unemployment": 3.5
   },
   "27147": {
     "year": 2016,
@@ -14847,7 +16307,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Steele",
     "diff_margin": -12.752142857142857,
-    "diff_density": -0.19382832138533956
+    "diff_density": -0.19382832138533956,
+    "unemployment": 3.8
   },
   "27149": {
     "year": 2016,
@@ -14858,7 +16319,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Stevens",
     "diff_margin": -8.958598130841118,
-    "diff_density": -0.5374520936834628
+    "diff_density": -0.5374520936834628,
+    "unemployment": 2.7
   },
   "27151": {
     "year": 2016,
@@ -14869,7 +16331,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Swift",
     "diff_margin": -19.943703703703704,
-    "diff_density": -0.20530401034928936
+    "diff_density": -0.20530401034928936,
+    "unemployment": 4.8
   },
   "27153": {
     "year": 2016,
@@ -14880,7 +16343,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Todd",
     "diff_margin": -17.52959812458138,
-    "diff_density": 0.14942094012571694
+    "diff_density": 0.14942094012571694,
+    "unemployment": 3.9
   },
   "27155": {
     "year": 2016,
@@ -14891,7 +16355,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Traverse",
     "diff_margin": -15.828285873813513,
-    "diff_density": -0.09924725561944614
+    "diff_density": -0.09924725561944614,
+    "unemployment": 3
   },
   "27157": {
     "year": 2016,
@@ -14902,7 +16367,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Wabasha",
     "diff_margin": -13.1670282216933,
-    "diff_density": 0.004168037018626336
+    "diff_density": 0.004168037018626336,
+    "unemployment": 3.2
   },
   "27159": {
     "year": 2016,
@@ -14913,7 +16379,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Wadena",
     "diff_margin": -12.272961995938502,
-    "diff_density": 0.19546459805694916
+    "diff_density": 0.19546459805694916,
+    "unemployment": 5.1
   },
   "27161": {
     "year": 2016,
@@ -14924,7 +16391,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Waseca",
     "diff_margin": -15.202690259943626,
-    "diff_density": -0.39386621315192727
+    "diff_density": -0.39386621315192727,
+    "unemployment": 4
   },
   "27163": {
     "year": 2016,
@@ -14935,7 +16403,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Washington",
     "diff_margin": -2.4251504798975105,
-    "diff_density": 1.8459362964505317
+    "diff_density": 1.8459362964505317,
+    "unemployment": 3.4
   },
   "27165": {
     "year": 2016,
@@ -14946,7 +16415,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Watonwan",
     "diff_margin": -11.988348420840872,
-    "diff_density": -0.40110012645131654
+    "diff_density": -0.40110012645131654,
+    "unemployment": 5.1
   },
   "27167": {
     "year": 2016,
@@ -14957,7 +16427,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Wilkin",
     "diff_margin": -11.806087221713938,
-    "diff_density": 0.07641099392777218
+    "diff_density": 0.07641099392777218,
+    "unemployment": 3.4
   },
   "27169": {
     "year": 2016,
@@ -14968,7 +16439,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Winona",
     "diff_margin": -11.04434937335602,
-    "diff_density": -2.2067244215199437
+    "diff_density": -2.2067244215199437,
+    "unemployment": 3.7
   },
   "27171": {
     "year": 2016,
@@ -14979,7 +16451,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Wright",
     "diff_margin": -8.553168869479713,
-    "diff_density": 2.017516100746832
+    "diff_density": 2.017516100746832,
+    "unemployment": 3.5
   },
   "27173": {
     "year": 2016,
@@ -14990,7 +16463,8 @@ export const counties = {
     "statenam": "Minnesota",
     "cty_name": "Yellow Medicine",
     "diff_margin": -16.227942703326285,
-    "diff_density": -0.27846528784086466
+    "diff_density": -0.27846528784086466,
+    "unemployment": 3.7
   },
   "28001": {
     "year": 2016,
@@ -15001,7 +16475,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Adams",
     "diff_margin": -1.9955166202718146,
-    "diff_density": -6.9962113708613565
+    "diff_density": -6.9962113708613565,
+    "unemployment": 8.2
   },
   "28003": {
     "year": 2016,
@@ -15012,7 +16487,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Alcorn",
     "diff_margin": -5.674414401986482,
-    "diff_density": -0.828624137586246
+    "diff_density": -0.828624137586246,
+    "unemployment": 5
   },
   "28005": {
     "year": 2016,
@@ -15023,7 +16499,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Amite",
     "diff_margin": -3.85017915541021,
-    "diff_density": -0.9170730036981247
+    "diff_density": -0.9170730036981247,
+    "unemployment": 7.1
   },
   "28007": {
     "year": 2016,
@@ -15034,7 +16511,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Attala",
     "diff_margin": -3.8776553438276693,
-    "diff_density": -2.516670657704971
+    "diff_density": -2.516670657704971,
+    "unemployment": 6.5
   },
   "28009": {
     "year": 2016,
@@ -15045,7 +16523,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Benton",
     "diff_margin": -7.080376317109881,
-    "diff_density": -0.31723574836456514
+    "diff_density": -0.31723574836456514,
+    "unemployment": 6.5
   },
   "28011": {
     "year": 2016,
@@ -15056,7 +16535,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Bolivar",
     "diff_margin": -3.0456153066791387,
-    "diff_density": -2.9622642800917234
+    "diff_density": -2.9622642800917234,
+    "unemployment": 7.4
   },
   "28013": {
     "year": 2016,
@@ -15067,7 +16547,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Calhoun",
     "diff_margin": -6.869223852342646,
-    "diff_density": -1.2431056821862718
+    "diff_density": -1.2431056821862718,
+    "unemployment": 5.2
   },
   "28015": {
     "year": 2016,
@@ -15078,7 +16559,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Carroll",
     "diff_margin": -3.3620292504570415,
-    "diff_density": -0.8331363810008909
+    "diff_density": -0.8331363810008909,
+    "unemployment": 7.3
   },
   "28017": {
     "year": 2016,
@@ -15089,7 +16571,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Chickasaw",
     "diff_margin": -5.241584283903677,
-    "diff_density": -1.225977520028696
+    "diff_density": -1.225977520028696,
+    "unemployment": 6.3
   },
   "28019": {
     "year": 2016,
@@ -15100,7 +16583,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Choctaw",
     "diff_margin": -3.6545309381237523,
-    "diff_density": -0.6356105026543606
+    "diff_density": -0.6356105026543606,
+    "unemployment": 5.3
   },
   "28021": {
     "year": 2016,
@@ -15111,7 +16595,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Claiborne",
     "diff_margin": -2.81038591740014,
-    "diff_density": -5.1893939393939394
+    "diff_density": -5.1893939393939394,
+    "unemployment": 12.3
   },
   "28023": {
     "year": 2016,
@@ -15122,7 +16607,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Clarke",
     "diff_margin": -4.561143523920656,
-    "diff_density": -0.7767934350372343
+    "diff_density": -0.7767934350372343,
+    "unemployment": 6.4
   },
   "28025": {
     "year": 2016,
@@ -15133,7 +16619,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Clay",
     "diff_margin": -3.4412851405622433,
-    "diff_density": -2.712056184159188
+    "diff_density": -2.712056184159188,
+    "unemployment": 7.8
   },
   "28027": {
     "year": 2016,
@@ -15144,7 +16631,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Coahoma",
     "diff_margin": -0.7958203460547253,
-    "diff_density": -4.34907682282239
+    "diff_density": -4.34907682282239,
+    "unemployment": 8.1
   },
   "28029": {
     "year": 2016,
@@ -15155,7 +16643,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Copiah",
     "diff_margin": -2.765842083158333,
-    "diff_density": -2.852980803870107
+    "diff_density": -2.852980803870107,
+    "unemployment": 6.4
   },
   "28031": {
     "year": 2016,
@@ -15166,7 +16655,11 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Covington",
     "diff_margin": -4.312764505119453,
-    "diff_density": -1.347340680055101
+    "diff_density": -1.347340680055101,
+    "unemployment": 5.6
+  },
+  "28033": {
+    "unemployment": 4.1
   },
   "28035": {
     "year": 2016,
@@ -15177,7 +16670,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Forrest",
     "diff_margin": -2.5800747690954395,
-    "diff_density": -6.329567026227188
+    "diff_density": -6.329567026227188,
+    "unemployment": 5.8
   },
   "28037": {
     "year": 2016,
@@ -15188,7 +16682,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Franklin",
     "diff_margin": -3.5539179900450364,
-    "diff_density": -0.486584483309092
+    "diff_density": -0.486584483309092,
+    "unemployment": 6.8
   },
   "28039": {
     "year": 2016,
@@ -15199,7 +16694,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "George",
     "diff_margin": -3.4858600345844764,
-    "diff_density": -0.053558312966096366
+    "diff_density": -0.053558312966096366,
+    "unemployment": 7.7
   },
   "28041": {
     "year": 2016,
@@ -15210,7 +16706,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Greene",
     "diff_margin": -4.416948356807513,
-    "diff_density": -0.8389372150122769
+    "diff_density": -0.8389372150122769,
+    "unemployment": 8
   },
   "28043": {
     "year": 2016,
@@ -15221,7 +16718,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Grenada",
     "diff_margin": -4.646552384600653,
-    "diff_density": -2.112372367392389
+    "diff_density": -2.112372367392389,
+    "unemployment": 4.9
   },
   "28045": {
     "year": 2016,
@@ -15232,7 +16730,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Hancock",
     "diff_margin": -3.866982930867156,
-    "diff_density": 0.7351978891820536
+    "diff_density": 0.7351978891820536,
+    "unemployment": 5.9
   },
   "28047": {
     "year": 2016,
@@ -15243,7 +16742,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Harrison",
     "diff_margin": -3.197608737676397,
-    "diff_density": -2.181774421157158
+    "diff_density": -2.181774421157158,
+    "unemployment": 5.3
   },
   "28049": {
     "year": 2016,
@@ -15254,7 +16754,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Hinds",
     "diff_margin": -0.25827276864070825,
-    "diff_density": -16.31863039529054
+    "diff_density": -16.31863039529054,
+    "unemployment": 5.2
   },
   "28051": {
     "year": 2016,
@@ -15265,7 +16766,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Holmes",
     "diff_margin": -1.498218594748053,
-    "diff_density": -2.9598374520946216
+    "diff_density": -2.9598374520946216,
+    "unemployment": 10.9
   },
   "28053": {
     "year": 2016,
@@ -15276,7 +16778,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Humphreys",
     "diff_margin": -1.192864684634614,
-    "diff_density": -3.850033453607015
+    "diff_density": -3.850033453607015,
+    "unemployment": 11.2
   },
   "28055": {
     "year": 2016,
@@ -15287,7 +16790,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Issaquena",
     "diff_margin": -4.350701001430622,
-    "diff_density": -0.21771093088003868
+    "diff_density": -0.21771093088003868,
+    "unemployment": 9.9
   },
   "28057": {
     "year": 2016,
@@ -15298,7 +16802,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Itawamba",
     "diff_margin": -6.892105044633588,
-    "diff_density": 0.5921712119221496
+    "diff_density": 0.5921712119221496,
+    "unemployment": 4.8
   },
   "28059": {
     "year": 2016,
@@ -15309,7 +16814,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Jackson",
     "diff_margin": -3.455220499285165,
-    "diff_density": -11.334430992736074
+    "diff_density": -11.334430992736074,
+    "unemployment": 6.4
   },
   "28061": {
     "year": 2016,
@@ -15320,7 +16826,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Jasper",
     "diff_margin": -2.9993811998110473,
-    "diff_density": -1.287818525967113
+    "diff_density": -1.287818525967113,
+    "unemployment": 7.8
   },
   "28063": {
     "year": 2016,
@@ -15331,7 +16838,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Jefferson",
     "diff_margin": -2.6568204197978815,
-    "diff_density": -1.1078470178677886
+    "diff_density": -1.1078470178677886,
+    "unemployment": 15.4
   },
   "28065": {
     "year": 2016,
@@ -15342,7 +16850,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Jefferson Davis",
     "diff_margin": -2.587927927927929,
-    "diff_density": -1.5911184017236302
+    "diff_density": -1.5911184017236302,
+    "unemployment": 9.3
   },
   "28067": {
     "year": 2016,
@@ -15353,7 +16862,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Jones",
     "diff_margin": -3.11345132743363,
-    "diff_density": -2.750232300407312
+    "diff_density": -2.750232300407312,
+    "unemployment": 5.9
   },
   "28069": {
     "year": 2016,
@@ -15364,7 +16874,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Kemper",
     "diff_margin": -3.1701422720413888,
-    "diff_density": -0.5352870082748176
+    "diff_density": -0.5352870082748176,
+    "unemployment": 8.2
   },
   "28071": {
     "year": 2016,
@@ -15375,7 +16886,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lafayette",
     "diff_margin": -0.913866205070768,
-    "diff_density": 0.2133814566810699
+    "diff_density": 0.2133814566810699,
+    "unemployment": 4.9
   },
   "28073": {
     "year": 2016,
@@ -15386,7 +16898,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lamar",
     "diff_margin": -1.2089222052194053,
-    "diff_density": -1.4259731219571066
+    "diff_density": -1.4259731219571066,
+    "unemployment": 4.5
   },
   "28075": {
     "year": 2016,
@@ -15397,7 +16910,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lauderdale",
     "diff_margin": -4.486451824489933,
-    "diff_density": -5.412056620667109
+    "diff_density": -5.412056620667109,
+    "unemployment": 5.8
   },
   "28077": {
     "year": 2016,
@@ -15408,7 +16922,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lawrence",
     "diff_margin": -2.3895797124348306,
-    "diff_density": -0.8542933104232944
+    "diff_density": -0.8542933104232944,
+    "unemployment": 7.4
   },
   "28079": {
     "year": 2016,
@@ -15419,7 +16934,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Leake",
     "diff_margin": -2.9846799431009927,
-    "diff_density": -0.9400171526586618
+    "diff_density": -0.9400171526586618,
+    "unemployment": 5.6
   },
   "28081": {
     "year": 2016,
@@ -15430,7 +16946,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lee",
     "diff_margin": -5.446141239757299,
-    "diff_density": -7.4087709745527235
+    "diff_density": -7.4087709745527235,
+    "unemployment": 4.8
   },
   "28083": {
     "year": 2016,
@@ -15441,7 +16958,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Leflore",
     "diff_margin": -1.5907108509303782,
-    "diff_density": -5.415942214871567
+    "diff_density": -5.415942214871567,
+    "unemployment": 9
   },
   "28085": {
     "year": 2016,
@@ -15452,7 +16970,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lincoln",
     "diff_margin": -3.9875396564207186,
-    "diff_density": -2.078686958302054
+    "diff_density": -2.078686958302054,
+    "unemployment": 5.8
   },
   "28087": {
     "year": 2016,
@@ -15463,7 +16982,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Lowndes",
     "diff_margin": -3.3753411034647343,
-    "diff_density": -3.9900243318628696
+    "diff_density": -3.9900243318628696,
+    "unemployment": 5.9
   },
   "28089": {
     "year": 2016,
@@ -15474,7 +16994,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Madison",
     "diff_margin": -1.0479133368850952,
-    "diff_density": -6.332596884578237
+    "diff_density": -6.332596884578237,
+    "unemployment": 4.2
   },
   "28091": {
     "year": 2016,
@@ -15485,7 +17006,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Marion",
     "diff_margin": -3.294409682775491,
-    "diff_density": -2.3722456580257365
+    "diff_density": -2.3722456580257365,
+    "unemployment": 6.8
   },
   "28093": {
     "year": 2016,
@@ -15496,7 +17018,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Marshall",
     "diff_margin": -5.371830180977007,
-    "diff_density": -2.1869043741769225
+    "diff_density": -2.1869043741769225,
+    "unemployment": 5.7
   },
   "28095": {
     "year": 2016,
@@ -15507,7 +17030,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Monroe",
     "diff_margin": -6.953013750712884,
-    "diff_density": -1.4836684573056758
+    "diff_density": -1.4836684573056758,
+    "unemployment": 6.3
   },
   "28097": {
     "year": 2016,
@@ -15518,7 +17042,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Montgomery",
     "diff_margin": -4.742234502642965,
-    "diff_density": -3.643453240945501
+    "diff_density": -3.643453240945501,
+    "unemployment": 6.3
   },
   "28099": {
     "year": 2016,
@@ -15529,7 +17054,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Neshoba",
     "diff_margin": -2.4795478060931195,
-    "diff_density": -1.0122159469603957
+    "diff_density": -1.0122159469603957,
+    "unemployment": 5.4
   },
   "28101": {
     "year": 2016,
@@ -15540,7 +17066,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Newton",
     "diff_margin": -4.289771933907378,
-    "diff_density": -2.0440598512368116
+    "diff_density": -2.0440598512368116,
+    "unemployment": 5.9
   },
   "28103": {
     "year": 2016,
@@ -15551,7 +17078,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Noxubee",
     "diff_margin": -0.3529288551823839,
-    "diff_density": -1.0432594872975223
+    "diff_density": -1.0432594872975223,
+    "unemployment": 8
   },
   "28105": {
     "year": 2016,
@@ -15562,7 +17090,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Oktibbeha",
     "diff_margin": -1.5900068107237928,
-    "diff_density": -4.2912003491924935
+    "diff_density": -4.2912003491924935,
+    "unemployment": 5.6
   },
   "28107": {
     "year": 2016,
@@ -15573,7 +17102,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Panola",
     "diff_margin": -4.814988555271306,
-    "diff_density": -2.879759465218786
+    "diff_density": -2.879759465218786,
+    "unemployment": 6.7
   },
   "28109": {
     "year": 2016,
@@ -15584,7 +17114,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Pearl River",
     "diff_margin": -4.199833271582065,
-    "diff_density": -4.1100468638235945
+    "diff_density": -4.1100468638235945,
+    "unemployment": 5.9
   },
   "28111": {
     "year": 2016,
@@ -15595,7 +17126,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Perry",
     "diff_margin": -4.230500736377024,
-    "diff_density": -0.44757049053688647
+    "diff_density": -0.44757049053688647,
+    "unemployment": 7
   },
   "28113": {
     "year": 2016,
@@ -15606,7 +17138,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Pike",
     "diff_margin": -4.844608840273779,
-    "diff_density": -5.718440624923595
+    "diff_density": -5.718440624923595,
+    "unemployment": 6.7
   },
   "28115": {
     "year": 2016,
@@ -15617,7 +17150,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Pontotoc",
     "diff_margin": -4.6152307171280995,
-    "diff_density": -1.2083598223793928
+    "diff_density": -1.2083598223793928,
+    "unemployment": 4.5
   },
   "28117": {
     "year": 2016,
@@ -15628,7 +17162,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Prentiss",
     "diff_margin": -7.139872353358321,
-    "diff_density": -0.39331148489083745
+    "diff_density": -0.39331148489083745,
+    "unemployment": 5.3
   },
   "28119": {
     "year": 2016,
@@ -15639,7 +17174,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Quitman",
     "diff_margin": -2.6152400835073024,
-    "diff_density": -1.541192069331622
+    "diff_density": -1.541192069331622,
+    "unemployment": 8.3
   },
   "28121": {
     "year": 2016,
@@ -15650,7 +17186,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Rankin",
     "diff_margin": -0.9744722602516482,
-    "diff_density": -3.600991373196308
+    "diff_density": -3.600991373196308,
+    "unemployment": 3.8
   },
   "28123": {
     "year": 2016,
@@ -15661,7 +17198,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Scott",
     "diff_margin": -4.380963818789901,
-    "diff_density": -2.192816901408449
+    "diff_density": -2.192816901408449,
+    "unemployment": 4.5
   },
   "28125": {
     "year": 2016,
@@ -15672,7 +17210,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Sharkey",
     "diff_margin": -3.4018068535825563,
-    "diff_density": -1.3987751320300204
+    "diff_density": -1.3987751320300204,
+    "unemployment": 8
   },
   "28127": {
     "year": 2016,
@@ -15683,7 +17222,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Simpson",
     "diff_margin": -4.65145059565522,
-    "diff_density": -1.4132602349107195
+    "diff_density": -1.4132602349107195,
+    "unemployment": 5.5
   },
   "28129": {
     "year": 2016,
@@ -15694,7 +17234,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Smith",
     "diff_margin": -3.291244044467973,
-    "diff_density": -0.8541650294695486
+    "diff_density": -0.8541650294695486,
+    "unemployment": 5.1
   },
   "28131": {
     "year": 2016,
@@ -15705,7 +17246,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Stone",
     "diff_margin": -4.605075376884422,
-    "diff_density": -2.6156275112797154
+    "diff_density": -2.6156275112797154,
+    "unemployment": 6.8
   },
   "28133": {
     "year": 2016,
@@ -15716,7 +17258,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Sunflower",
     "diff_margin": -3.277282585583663,
-    "diff_density": -2.6095270512361157
+    "diff_density": -2.6095270512361157,
+    "unemployment": 8.4
   },
   "28135": {
     "year": 2016,
@@ -15727,7 +17270,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Tallahatchie",
     "diff_margin": -3.970409075283598,
-    "diff_density": -1.063898712206914
+    "diff_density": -1.063898712206914,
+    "unemployment": 5.7
   },
   "28137": {
     "year": 2016,
@@ -15738,7 +17282,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Tate",
     "diff_margin": -6.359350250241462,
-    "diff_density": -2.5123381757090613
+    "diff_density": -2.5123381757090613,
+    "unemployment": 5.4
   },
   "28139": {
     "year": 2016,
@@ -15749,7 +17294,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Tippah",
     "diff_margin": -5.505308979547195,
-    "diff_density": -0.048832921954520714
+    "diff_density": -0.048832921954520714,
+    "unemployment": 5.2
   },
   "28141": {
     "year": 2016,
@@ -15760,7 +17306,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Tishomingo",
     "diff_margin": -8.786642599277977,
-    "diff_density": 0.8775073659398913
+    "diff_density": 0.8775073659398913,
+    "unemployment": 5.1
   },
   "28143": {
     "year": 2016,
@@ -15771,7 +17318,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Tunica",
     "diff_margin": -4.884753104244865,
-    "diff_density": -2.0234869245826648
+    "diff_density": -2.0234869245826648,
+    "unemployment": 6.1
   },
   "28145": {
     "year": 2016,
@@ -15782,7 +17330,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Union",
     "diff_margin": -6.818588007736942,
-    "diff_density": 0.017661212704521034
+    "diff_density": 0.017661212704521034,
+    "unemployment": 4.2
   },
   "28147": {
     "year": 2016,
@@ -15793,7 +17342,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Walthall",
     "diff_margin": -3.4347402267727247,
-    "diff_density": -4.061589840075261
+    "diff_density": -4.061589840075261,
+    "unemployment": 7.9
   },
   "28149": {
     "year": 2016,
@@ -15804,7 +17354,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Warren",
     "diff_margin": -3.84046262372177,
-    "diff_density": -5.276083262531863
+    "diff_density": -5.276083262531863,
+    "unemployment": 6.4
   },
   "28151": {
     "year": 2016,
@@ -15815,7 +17366,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Washington",
     "diff_margin": -3.3405613890604684,
-    "diff_density": -7.094858845930954
+    "diff_density": -7.094858845930954,
+    "unemployment": 9.2
   },
   "28153": {
     "year": 2016,
@@ -15826,7 +17378,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Wayne",
     "diff_margin": -3.5127019089574105,
-    "diff_density": -0.9805180388529138
+    "diff_density": -0.9805180388529138,
+    "unemployment": 7.6
   },
   "28155": {
     "year": 2016,
@@ -15837,7 +17390,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Webster",
     "diff_margin": -2.815636942675159,
-    "diff_density": -0.4948073359623688
+    "diff_density": -0.4948073359623688,
+    "unemployment": 6.1
   },
   "28157": {
     "year": 2016,
@@ -15848,7 +17402,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Wilkinson",
     "diff_margin": -2.6051605174892245,
-    "diff_density": -1.00465647166389
+    "diff_density": -1.00465647166389,
+    "unemployment": 10.1
   },
   "28159": {
     "year": 2016,
@@ -15859,7 +17414,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Winston",
     "diff_margin": -3.7962341808231628,
-    "diff_density": -1.7461959654178685
+    "diff_density": -1.7461959654178685,
+    "unemployment": 7.4
   },
   "28161": {
     "year": 2016,
@@ -15870,7 +17426,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Yalobusha",
     "diff_margin": -5.200729613733905,
-    "diff_density": -0.6314473487037873
+    "diff_density": -0.6314473487037873,
+    "unemployment": 6
   },
   "28163": {
     "year": 2016,
@@ -15881,7 +17438,8 @@ export const counties = {
     "statenam": "Mississippi",
     "cty_name": "Yazoo",
     "diff_margin": -4.0399757379700745,
-    "diff_density": -1.8721929681997942
+    "diff_density": -1.8721929681997942,
+    "unemployment": 7
   },
   "29001": {
     "year": 2016,
@@ -15892,7 +17450,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Adair",
     "diff_margin": -7.19234388872448,
-    "diff_density": 0.01822251991820778
+    "diff_density": 0.01822251991820778,
+    "unemployment": 6.7
   },
   "29003": {
     "year": 2016,
@@ -15903,7 +17462,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Andrew",
     "diff_margin": -9.51582056892779,
-    "diff_density": 1.9231800323549813
+    "diff_density": 1.9231800323549813,
+    "unemployment": 4.5
   },
   "29005": {
     "year": 2016,
@@ -15914,7 +17474,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Atchison",
     "diff_margin": -8.042207124495043,
-    "diff_density": 0.025333455143431216
+    "diff_density": 0.025333455143431216,
+    "unemployment": 5.9
   },
   "29007": {
     "year": 2016,
@@ -15925,7 +17486,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Audrain",
     "diff_margin": -9.999908393906203,
-    "diff_density": 0.12797411302438277
+    "diff_density": 0.12797411302438277,
+    "unemployment": 5.1
   },
   "29009": {
     "year": 2016,
@@ -15936,7 +17498,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Barry",
     "diff_margin": -8.003440153382634,
-    "diff_density": 1.0251782846129167
+    "diff_density": 1.0251782846129167,
+    "unemployment": 5.3
   },
   "29011": {
     "year": 2016,
@@ -15947,7 +17510,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Barton",
     "diff_margin": -8.008111935266353,
-    "diff_density": 0.31162454385727756
+    "diff_density": 0.31162454385727756,
+    "unemployment": 6
   },
   "29013": {
     "year": 2016,
@@ -15958,7 +17522,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Bates",
     "diff_margin": -12.740418900386484,
-    "diff_density": 0.29658523467472975
+    "diff_density": 0.29658523467472975,
+    "unemployment": 6
   },
   "29015": {
     "year": 2016,
@@ -15969,7 +17534,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Benton",
     "diff_margin": -10.821469115191988,
-    "diff_density": 0.6024762094139717
+    "diff_density": 0.6024762094139717,
+    "unemployment": 7.3
   },
   "29017": {
     "year": 2016,
@@ -15980,7 +17546,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Bollinger",
     "diff_margin": -9.793944258246604,
-    "diff_density": 0.34447524720428646
+    "diff_density": 0.34447524720428646,
+    "unemployment": 6.2
   },
   "29019": {
     "year": 2016,
@@ -15991,7 +17558,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Boone",
     "diff_margin": -0.8709794507393909,
-    "diff_density": 5.680604747523375
+    "diff_density": 5.680604747523375,
+    "unemployment": 4.1
   },
   "29021": {
     "year": 2016,
@@ -16002,7 +17570,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Buchanan",
     "diff_margin": -10.648945814470096,
-    "diff_density": 1.1178070239933362
+    "diff_density": 1.1178070239933362,
+    "unemployment": 4.9
   },
   "29023": {
     "year": 2016,
@@ -16013,7 +17582,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Butler",
     "diff_margin": -8.211615598885793,
-    "diff_density": 0.4960230037283928
+    "diff_density": 0.4960230037283928,
+    "unemployment": 6.9
   },
   "29025": {
     "year": 2016,
@@ -16024,7 +17594,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Caldwell",
     "diff_margin": -12.065539568345322,
-    "diff_density": 0.3357717113440746
+    "diff_density": 0.3357717113440746,
+    "unemployment": 5.6
   },
   "29027": {
     "year": 2016,
@@ -16035,7 +17606,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Callaway",
     "diff_margin": -7.221681392795521,
-    "diff_density": 1.0681145007069404
+    "diff_density": 1.0681145007069404,
+    "unemployment": 5.2
   },
   "29029": {
     "year": 2016,
@@ -16046,7 +17618,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Camden",
     "diff_margin": -8.214600126228472,
-    "diff_density": 0.35814855470179197
+    "diff_density": 0.35814855470179197,
+    "unemployment": 5.5
   },
   "29031": {
     "year": 2016,
@@ -16057,7 +17630,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Cape Girardeau",
     "diff_margin": -4.275932203389829,
-    "diff_density": 1.9991319378424635
+    "diff_density": 1.9991319378424635,
+    "unemployment": 5.3
   },
   "29033": {
     "year": 2016,
@@ -16068,7 +17642,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Carroll",
     "diff_margin": -9.726762210502176,
-    "diff_density": 0.07825285767757872
+    "diff_density": 0.07825285767757872,
+    "unemployment": 5.9
   },
   "29035": {
     "year": 2016,
@@ -16079,7 +17654,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Carter",
     "diff_margin": -11.59869106263195,
-    "diff_density": 0.08154525386313516
+    "diff_density": 0.08154525386313516,
+    "unemployment": 7.8
   },
   "29037": {
     "year": 2016,
@@ -16090,7 +17666,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Cass",
     "diff_margin": -5.635763580794638,
-    "diff_density": 2.5885431375925663
+    "diff_density": 2.5885431375925663,
+    "unemployment": 5
   },
   "29039": {
     "year": 2016,
@@ -16101,7 +17678,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Cedar",
     "diff_margin": -9.342073908888182,
-    "diff_density": 0.4913269263193385
+    "diff_density": 0.4913269263193385,
+    "unemployment": 6.4
   },
   "29041": {
     "year": 2016,
@@ -16112,7 +17690,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Chariton",
     "diff_margin": -12.627077233720343,
-    "diff_density": 0.1843683271652603
+    "diff_density": 0.1843683271652603,
+    "unemployment": 5.1
   },
   "29043": {
     "year": 2016,
@@ -16123,7 +17702,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Christian",
     "diff_margin": -5.303543991882883,
-    "diff_density": 6.101022323332856
+    "diff_density": 6.101022323332856,
+    "unemployment": 4.5
   },
   "29045": {
     "year": 2016,
@@ -16134,7 +17714,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Clark",
     "diff_margin": -21.516465621230402,
-    "diff_density": 0.1803699300560746
+    "diff_density": 0.1803699300560746,
+    "unemployment": 8.7
   },
   "29047": {
     "year": 2016,
@@ -16145,7 +17726,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Clay",
     "diff_margin": -3.44855653304284,
-    "diff_density": 9.178401711552965
+    "diff_density": 9.178401711552965,
+    "unemployment": 4.5
   },
   "29049": {
     "year": 2016,
@@ -16156,7 +17738,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Clinton",
     "diff_margin": -12.176895165244677,
-    "diff_density": 0.7988390299789963
+    "diff_density": 0.7988390299789963,
+    "unemployment": 5
   },
   "29051": {
     "year": 2016,
@@ -16167,7 +17750,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Cole",
     "diff_margin": -3.1181071361477173,
-    "diff_density": 0.5011111111111148
+    "diff_density": 0.5011111111111148,
+    "unemployment": 4.6
   },
   "29053": {
     "year": 2016,
@@ -16178,7 +17762,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Cooper",
     "diff_margin": -8.717331995987962,
-    "diff_density": 0.8228132303987525
+    "diff_density": 0.8228132303987525,
+    "unemployment": 5.7
   },
   "29055": {
     "year": 2016,
@@ -16189,7 +17774,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Crawford",
     "diff_margin": -12.42290322580645,
-    "diff_density": 0.45990949738727593
+    "diff_density": 0.45990949738727593,
+    "unemployment": 5.9
   },
   "29057": {
     "year": 2016,
@@ -16200,7 +17786,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Dade",
     "diff_margin": -7.9774993672488,
-    "diff_density": 0.11310075304585698
+    "diff_density": 0.11310075304585698,
+    "unemployment": 5.6
   },
   "29059": {
     "year": 2016,
@@ -16211,7 +17798,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Dallas",
     "diff_margin": -12.066666666666666,
-    "diff_density": 0.29815966122381
+    "diff_density": 0.29815966122381,
+    "unemployment": 6.5
   },
   "29061": {
     "year": 2016,
@@ -16222,7 +17810,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Daviess",
     "diff_margin": -12.161439414475467,
-    "diff_density": 0.2996058518571125
+    "diff_density": 0.2996058518571125,
+    "unemployment": 4.6
   },
   "29063": {
     "year": 2016,
@@ -16233,7 +17822,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "DeKalb",
     "diff_margin": -9.497930283224402,
-    "diff_density": 0.5732978925384469
+    "diff_density": 0.5732978925384469,
+    "unemployment": 5.1
   },
   "29065": {
     "year": 2016,
@@ -16244,7 +17834,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Dent",
     "diff_margin": -9.430964886397165,
-    "diff_density": 0.1838390520596711
+    "diff_density": 0.1838390520596711,
+    "unemployment": 6.6
   },
   "29067": {
     "year": 2016,
@@ -16255,7 +17846,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Douglas",
     "diff_margin": -11.314093637454981,
-    "diff_density": 0.13045512087803957
+    "diff_density": 0.13045512087803957,
+    "unemployment": 7.3
   },
   "29069": {
     "year": 2016,
@@ -16266,7 +17858,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Dunklin",
     "diff_margin": -11.821104596179307,
-    "diff_density": -0.1472421313323622
+    "diff_density": -0.1472421313323622,
+    "unemployment": 9.1
   },
   "29071": {
     "year": 2016,
@@ -16277,7 +17870,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Franklin",
     "diff_margin": -10.304190228794088,
-    "diff_density": 3.568739324576235
+    "diff_density": 3.568739324576235,
+    "unemployment": 4.9
   },
   "29073": {
     "year": 2016,
@@ -16288,7 +17882,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Gasconade",
     "diff_margin": -9.014304137560451,
-    "diff_density": 0.5962070297412154
+    "diff_density": 0.5962070297412154,
+    "unemployment": 5
   },
   "29075": {
     "year": 2016,
@@ -16299,7 +17894,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Gentry",
     "diff_margin": -11.292753049785688,
-    "diff_density": 0.07190997517398579
+    "diff_density": 0.07190997517398579,
+    "unemployment": 4.7
   },
   "29077": {
     "year": 2016,
@@ -16310,7 +17906,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Greene",
     "diff_margin": -3.5035034362780024,
-    "diff_density": 2.606385310232497
+    "diff_density": 2.606385310232497,
+    "unemployment": 4.6
   },
   "29079": {
     "year": 2016,
@@ -16321,7 +17918,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Grundy",
     "diff_margin": -10.034949014276002,
-    "diff_density": 0.08830178276052258
+    "diff_density": 0.08830178276052258,
+    "unemployment": 5.6
   },
   "29081": {
     "year": 2016,
@@ -16332,7 +17930,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Harrison",
     "diff_margin": -11.040646387832698,
-    "diff_density": -0.013806228373702822
+    "diff_density": -0.013806228373702822,
+    "unemployment": 4.7
   },
   "29083": {
     "year": 2016,
@@ -16343,7 +17942,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Henry",
     "diff_margin": -11.713353627600199,
-    "diff_density": -0.3798177774589284
+    "diff_density": -0.3798177774589284,
+    "unemployment": 5.9
   },
   "29085": {
     "year": 2016,
@@ -16354,7 +17954,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Hickory",
     "diff_margin": -15.490886156455378,
-    "diff_density": 0.08938911022576335
+    "diff_density": 0.08938911022576335,
+    "unemployment": 6.6
   },
   "29087": {
     "year": 2016,
@@ -16365,7 +17966,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Holt",
     "diff_margin": -9.11405451448041,
-    "diff_density": 0.08467202662689921
+    "diff_density": 0.08467202662689921,
+    "unemployment": 4
   },
   "29089": {
     "year": 2016,
@@ -16376,7 +17978,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Howard",
     "diff_margin": -9.034302205730778,
-    "diff_density": -0.031877762207610516
+    "diff_density": -0.031877762207610516,
+    "unemployment": 5.4
   },
   "29091": {
     "year": 2016,
@@ -16387,7 +17990,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Howell",
     "diff_margin": -10.3525322997416,
-    "diff_density": 1.151342679967648
+    "diff_density": 1.151342679967648,
+    "unemployment": 7.2
   },
   "29093": {
     "year": 2016,
@@ -16398,7 +18002,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Iron",
     "diff_margin": -19.49859154929577,
-    "diff_density": 0.4117947879184385
+    "diff_density": 0.4117947879184385,
+    "unemployment": 8.4
   },
   "29095": {
     "year": 2016,
@@ -16409,7 +18014,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Jackson",
     "diff_margin": 10.886164631388517,
-    "diff_density": 197.36876683320645
+    "diff_density": 197.36876683320645,
+    "unemployment": 6
   },
   "29097": {
     "year": 2016,
@@ -16420,7 +18026,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Jasper",
     "diff_margin": -6.401358890803046,
-    "diff_density": 4.6377205594449435
+    "diff_density": 4.6377205594449435,
+    "unemployment": 5.2
   },
   "29099": {
     "year": 2016,
@@ -16431,7 +18038,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Jefferson",
     "diff_margin": -12.810916588813704,
-    "diff_density": 12.733122915492743
+    "diff_density": 12.733122915492743,
+    "unemployment": 4.9
   },
   "29101": {
     "year": 2016,
@@ -16442,7 +18050,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Johnson",
     "diff_margin": -8.376862047707121,
-    "diff_density": 0.07808219178082254
+    "diff_density": 0.07808219178082254,
+    "unemployment": 6.1
   },
   "29103": {
     "year": 2016,
@@ -16453,7 +18062,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Knox",
     "diff_margin": -15.370053561863955,
-    "diff_density": -0.1757084184837603
+    "diff_density": -0.1757084184837603,
+    "unemployment": 4.1
   },
   "29105": {
     "year": 2016,
@@ -16464,7 +18074,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Laclede",
     "diff_margin": -10.705417632683753,
-    "diff_density": 0.7790762632074468
+    "diff_density": 0.7790762632074468,
+    "unemployment": 6.2
   },
   "29107": {
     "year": 2016,
@@ -16475,7 +18086,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Lafayette",
     "diff_margin": -10.210369901991776,
-    "diff_density": 0.03588959788680057
+    "diff_density": 0.03588959788680057,
+    "unemployment": 4.9
   },
   "29109": {
     "year": 2016,
@@ -16486,7 +18098,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Lawrence",
     "diff_margin": -8.119647355163728,
-    "diff_density": 1.5066776735214304
+    "diff_density": 1.5066776735214304,
+    "unemployment": 5.4
   },
   "29111": {
     "year": 2016,
@@ -16497,7 +18110,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Lewis",
     "diff_margin": -14.283126684636123,
-    "diff_density": 0.34514335498178284
+    "diff_density": 0.34514335498178284,
+    "unemployment": 4.9
   },
   "29113": {
     "year": 2016,
@@ -16508,7 +18122,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Lincoln",
     "diff_margin": -11.768032345013477,
-    "diff_density": 3.522178243105216
+    "diff_density": 3.522178243105216,
+    "unemployment": 4.8
   },
   "29115": {
     "year": 2016,
@@ -16519,7 +18134,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Linn",
     "diff_margin": -14.53381909547739,
-    "diff_density": 0.03192020274221896
+    "diff_density": 0.03192020274221896,
+    "unemployment": 9
   },
   "29117": {
     "year": 2016,
@@ -16530,7 +18146,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Livingston",
     "diff_margin": -11.739051186017477,
-    "diff_density": 0.667645821201134
+    "diff_density": 0.667645821201134,
+    "unemployment": 4.5
   },
   "29119": {
     "year": 2016,
@@ -16541,7 +18158,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "McDonald",
     "diff_margin": -8.417646058544879,
-    "diff_density": 0.7709920664343439
+    "diff_density": 0.7709920664343439,
+    "unemployment": 4.9
   },
   "29121": {
     "year": 2016,
@@ -16552,7 +18170,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Macon",
     "diff_margin": -12.220972423802614,
-    "diff_density": 0.5192064700522945
+    "diff_density": 0.5192064700522945,
+    "unemployment": 6
   },
   "29123": {
     "year": 2016,
@@ -16563,7 +18182,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Madison",
     "diff_margin": -13.311918014291088,
-    "diff_density": 0.7866900625012647
+    "diff_density": 0.7866900625012647,
+    "unemployment": 6.9
   },
   "29125": {
     "year": 2016,
@@ -16574,7 +18194,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Maries",
     "diff_margin": -10.967710093374837,
-    "diff_density": -0.07457171050134725
+    "diff_density": -0.07457171050134725,
+    "unemployment": 6.8
   },
   "29127": {
     "year": 2016,
@@ -16585,7 +18206,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Marion",
     "diff_margin": -9.962046194388464,
-    "diff_density": 1.6994333058683502
+    "diff_density": 1.6994333058683502,
+    "unemployment": 5
   },
   "29129": {
     "year": 2016,
@@ -16596,7 +18218,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Mercer",
     "diff_margin": -8.909068430132258,
-    "diff_density": 0.18183130247008794
+    "diff_density": 0.18183130247008794,
+    "unemployment": 5
   },
   "29131": {
     "year": 2016,
@@ -16607,7 +18230,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Miller",
     "diff_margin": -8.72795163833888,
-    "diff_density": 0.6708842389470142
+    "diff_density": 0.6708842389470142,
+    "unemployment": 5.4
   },
   "29133": {
     "year": 2016,
@@ -16618,7 +18242,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Mississippi",
     "diff_margin": -9.531539206195543,
-    "diff_density": 0.5992006414305866
+    "diff_density": 0.5992006414305866,
+    "unemployment": 7.7
   },
   "29135": {
     "year": 2016,
@@ -16629,7 +18254,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Moniteau",
     "diff_margin": -6.790199764982372,
-    "diff_density": 0.8840287215073985
+    "diff_density": 0.8840287215073985,
+    "unemployment": 4.9
   },
   "29137": {
     "year": 2016,
@@ -16640,7 +18266,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Monroe",
     "diff_margin": -13.890913913672534,
-    "diff_density": 0.14314984945572462
+    "diff_density": 0.14314984945572462,
+    "unemployment": 5.5
   },
   "29139": {
     "year": 2016,
@@ -16651,7 +18278,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Montgomery",
     "diff_margin": -12.047905604719759,
-    "diff_density": 0.18468531468531424
+    "diff_density": 0.18468531468531424,
+    "unemployment": 5.1
   },
   "29141": {
     "year": 2016,
@@ -16662,7 +18290,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Morgan",
     "diff_margin": -11.863278502552468,
-    "diff_density": 0.2099288857654411
+    "diff_density": 0.2099288857654411,
+    "unemployment": 6.4
   },
   "29143": {
     "year": 2016,
@@ -16673,7 +18302,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "New Madrid",
     "diff_margin": -12.517834602829165,
-    "diff_density": 0.15443423626340902
+    "diff_density": 0.15443423626340902,
+    "unemployment": 9.9
   },
   "29145": {
     "year": 2016,
@@ -16684,7 +18314,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Newton",
     "diff_margin": -6.791619256017505,
-    "diff_density": 2.2758915423522623
+    "diff_density": 2.2758915423522623,
+    "unemployment": 5.5
   },
   "29147": {
     "year": 2016,
@@ -16695,7 +18326,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Nodaway",
     "diff_margin": -8.546907511388923,
-    "diff_density": 0.5233187374566679
+    "diff_density": 0.5233187374566679,
+    "unemployment": 6
   },
   "29149": {
     "year": 2016,
@@ -16706,7 +18338,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Oregon",
     "diff_margin": -13.55368782161235,
-    "diff_density": 0.305292479108636
+    "diff_density": 0.305292479108636,
+    "unemployment": 7
   },
   "29151": {
     "year": 2016,
@@ -16717,7 +18350,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Osage",
     "diff_margin": -7.1899717434303465,
-    "diff_density": 0.2617564325308184
+    "diff_density": 0.2617564325308184,
+    "unemployment": 4.2
   },
   "29153": {
     "year": 2016,
@@ -16728,7 +18362,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Ozark",
     "diff_margin": -12.234685625416574,
-    "diff_density": 0.061854034390646184
+    "diff_density": 0.061854034390646184,
+    "unemployment": 8.8
   },
   "29155": {
     "year": 2016,
@@ -16739,7 +18374,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Pemiscot",
     "diff_margin": -9.861244813278006,
-    "diff_density": -0.6274909652007956
+    "diff_density": -0.6274909652007956,
+    "unemployment": 9.9
   },
   "29157": {
     "year": 2016,
@@ -16750,7 +18386,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Perry",
     "diff_margin": -9.932762253779202,
-    "diff_density": 1.5683482660482753
+    "diff_density": 1.5683482660482753,
+    "unemployment": 4.3
   },
   "29159": {
     "year": 2016,
@@ -16761,7 +18398,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Pettis",
     "diff_margin": -10.428766971460242,
-    "diff_density": 1.2704118905924773
+    "diff_density": 1.2704118905924773,
+    "unemployment": 6.1
   },
   "29161": {
     "year": 2016,
@@ -16772,7 +18410,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Phelps",
     "diff_margin": -6.133473701281154,
-    "diff_density": 0.4572889934204696
+    "diff_density": 0.4572889934204696,
+    "unemployment": 5.6
   },
   "29163": {
     "year": 2016,
@@ -16783,7 +18422,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Pike",
     "diff_margin": -10.781864406779665,
-    "diff_density": 0.08023864924527047
+    "diff_density": 0.08023864924527047,
+    "unemployment": 5.4
   },
   "29165": {
     "year": 2016,
@@ -16794,7 +18434,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Platte",
     "diff_margin": -1.5355521965652557,
-    "diff_density": 2.5897858111806613
+    "diff_density": 2.5897858111806613,
+    "unemployment": 4.4
   },
   "29167": {
     "year": 2016,
@@ -16805,7 +18446,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Polk",
     "diff_margin": -8.105522649354437,
-    "diff_density": 0.9313116817724065
+    "diff_density": 0.9313116817724065,
+    "unemployment": 6.4
   },
   "29169": {
     "year": 2016,
@@ -16816,7 +18458,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Pulaski",
     "diff_margin": -9.233535669121476,
-    "diff_density": -0.23862365198318258
+    "diff_density": -0.23862365198318258,
+    "unemployment": 6.8
   },
   "29171": {
     "year": 2016,
@@ -16827,7 +18470,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Putnam",
     "diff_margin": -10.390111016225452,
-    "diff_density": 0.06717853552926556
+    "diff_density": 0.06717853552926556,
+    "unemployment": 5.1
   },
   "29173": {
     "year": 2016,
@@ -16838,7 +18482,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Ralls",
     "diff_margin": -12.859669578427646,
-    "diff_density": 0.48950232023500284
+    "diff_density": 0.48950232023500284,
+    "unemployment": 4.4
   },
   "29175": {
     "year": 2016,
@@ -16849,7 +18494,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Randolph",
     "diff_margin": -8.334302066155786,
-    "diff_density": 0.7578354189110783
+    "diff_density": 0.7578354189110783,
+    "unemployment": 6.6
   },
   "29177": {
     "year": 2016,
@@ -16860,7 +18506,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Ray",
     "diff_margin": -12.73976926626673,
-    "diff_density": 0.8188748241912798
+    "diff_density": 0.8188748241912798,
+    "unemployment": 5.5
   },
   "29179": {
     "year": 2016,
@@ -16871,7 +18518,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Reynolds",
     "diff_margin": -18.319973614775726,
-    "diff_density": -0.20975262220463087
+    "diff_density": -0.20975262220463087,
+    "unemployment": 8.1
   },
   "29181": {
     "year": 2016,
@@ -16882,7 +18530,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Ripley",
     "diff_margin": -11.478318231243204,
-    "diff_density": 0.4051300949899943
+    "diff_density": 0.4051300949899943,
+    "unemployment": 8.4
   },
   "29183": {
     "year": 2016,
@@ -16893,7 +18542,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "St. Charles",
     "diff_margin": -4.494233308105237,
-    "diff_density": 24.669857252466898
+    "diff_density": 24.669857252466898,
+    "unemployment": 4.1
   },
   "29185": {
     "year": 2016,
@@ -16904,7 +18554,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "St. Clair",
     "diff_margin": -11.34401727861771,
-    "diff_density": 0.010654049374607233
+    "diff_density": 0.010654049374607233,
+    "unemployment": 7.3
   },
   "29186": {
     "year": 2016,
@@ -16915,7 +18566,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Ste. Genevieve",
     "diff_margin": -17.222810024825627,
-    "diff_density": 0.7768095762796747
+    "diff_density": 0.7768095762796747,
+    "unemployment": 5.8
   },
   "29187": {
     "year": 2016,
@@ -16926,7 +18578,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "St. Francois",
     "diff_margin": -13.810690296997652,
-    "diff_density": 4.720300736905003
+    "diff_density": 4.720300736905003,
+    "unemployment": 6.7
   },
   "29189": {
     "year": 2016,
@@ -16937,7 +18590,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "St. Louis",
     "diff_margin": -0.4165035065035738,
-    "diff_density": -49.59168570303257
+    "diff_density": -49.59168570303257,
+    "unemployment": 5.1
   },
   "29195": {
     "year": 2016,
@@ -16948,7 +18602,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Saline",
     "diff_margin": -11.463975121687401,
-    "diff_density": 0.17692918596955565
+    "diff_density": 0.17692918596955565,
+    "unemployment": 5.8
   },
   "29197": {
     "year": 2016,
@@ -16959,7 +18614,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Schuyler",
     "diff_margin": -17.636497672012418,
-    "diff_density": -0.019729905629677802
+    "diff_density": -0.019729905629677802,
+    "unemployment": 7.6
   },
   "29199": {
     "year": 2016,
@@ -16970,7 +18626,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Scotland",
     "diff_margin": -14.663252032520326,
-    "diff_density": 0.07683582568072023
+    "diff_density": 0.07683582568072023,
+    "unemployment": 4.6
   },
   "29201": {
     "year": 2016,
@@ -16981,7 +18638,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Scott",
     "diff_margin": -9.403950359545348,
-    "diff_density": 0.5881204314388455
+    "diff_density": 0.5881204314388455,
+    "unemployment": 6.9
   },
   "29203": {
     "year": 2016,
@@ -16992,7 +18650,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Shannon",
     "diff_margin": -15.392950819672134,
-    "diff_density": 0.20914347193719962
+    "diff_density": 0.20914347193719962,
+    "unemployment": 8
   },
   "29205": {
     "year": 2016,
@@ -17003,7 +18662,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Shelby",
     "diff_margin": -11.255313653136533,
-    "diff_density": 0.04283232839515971
+    "diff_density": 0.04283232839515971,
+    "unemployment": 4.8
   },
   "29207": {
     "year": 2016,
@@ -17014,7 +18674,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Stoddard",
     "diff_margin": -10.40395993372496,
-    "diff_density": 0.49934573989941633
+    "diff_density": 0.49934573989941633,
+    "unemployment": 7.1
   },
   "29209": {
     "year": 2016,
@@ -17025,7 +18686,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Stone",
     "diff_margin": -7.089280445035673,
-    "diff_density": 1.1899370730340735
+    "diff_density": 1.1899370730340735,
+    "unemployment": 6
   },
   "29211": {
     "year": 2016,
@@ -17036,7 +18698,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Sullivan",
     "diff_margin": -13.81447665056361,
-    "diff_density": -0.1665483502577243
+    "diff_density": -0.1665483502577243,
+    "unemployment": 7.4
   },
   "29213": {
     "year": 2016,
@@ -17047,7 +18710,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Taney",
     "diff_margin": -6.636809265353222,
-    "diff_density": 2.7479760925937597
+    "diff_density": 2.7479760925937597,
+    "unemployment": 6.1
   },
   "29215": {
     "year": 2016,
@@ -17058,7 +18722,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Texas",
     "diff_margin": -10.867530864197533,
-    "diff_density": 0.14843850603514852
+    "diff_density": 0.14843850603514852,
+    "unemployment": 7.6
   },
   "29217": {
     "year": 2016,
@@ -17069,7 +18734,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Vernon",
     "diff_margin": -10.387276119402987,
-    "diff_density": 0.06754114230396802
+    "diff_density": 0.06754114230396802,
+    "unemployment": 5.8
   },
   "29219": {
     "year": 2016,
@@ -17080,7 +18746,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Warren",
     "diff_margin": -10.728083217049349,
-    "diff_density": 2.5448810079328013
+    "diff_density": 2.5448810079328013,
+    "unemployment": 4.6
   },
   "29221": {
     "year": 2016,
@@ -17091,7 +18758,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Washington",
     "diff_margin": -18.543452958292917,
-    "diff_density": 0.7706565251148181
+    "diff_density": 0.7706565251148181,
+    "unemployment": 7.2
   },
   "29223": {
     "year": 2016,
@@ -17102,7 +18770,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Wayne",
     "diff_margin": -15.213419309864065,
-    "diff_density": 0.028154851286915417
+    "diff_density": 0.028154851286915417,
+    "unemployment": 6.1
   },
   "29225": {
     "year": 2016,
@@ -17113,7 +18782,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Webster",
     "diff_margin": -9.568615937687238,
-    "diff_density": 2.1259241258269235
+    "diff_density": 2.1259241258269235,
+    "unemployment": 5.9
   },
   "29227": {
     "year": 2016,
@@ -17124,7 +18794,8 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Worth",
     "diff_margin": -13.897552581261948,
-    "diff_density": -0.006666291586962636
+    "diff_density": -0.006666291586962636,
+    "unemployment": 3.6
   },
   "29229": {
     "year": 2016,
@@ -17135,7 +18806,11 @@ export const counties = {
     "statenam": "Missouri",
     "cty_name": "Wright",
     "diff_margin": -10.130014840465002,
-    "diff_density": 0.190304794872171
+    "diff_density": 0.190304794872171,
+    "unemployment": 7.3
+  },
+  "29510": {
+    "unemployment": 6.6
   },
   "30001": {
     "year": 2016,
@@ -17146,7 +18821,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Beaverhead",
     "diff_margin": -4.7362718363868765,
-    "diff_density": -0.022955273006810217
+    "diff_density": -0.022955273006810217,
+    "unemployment": 2.9
   },
   "30003": {
     "year": 2016,
@@ -17157,7 +18833,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Big Horn",
     "diff_margin": -12.851823416506718,
-    "diff_density": -0.09564240330219842
+    "diff_density": -0.09564240330219842,
+    "unemployment": 7.7
   },
   "30005": {
     "year": 2016,
@@ -17168,7 +18845,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Blaine",
     "diff_margin": -11.642873345935733,
-    "diff_density": -0.054342113044198226
+    "diff_density": -0.054342113044198226,
+    "unemployment": 4.4
   },
   "30007": {
     "year": 2016,
@@ -17179,7 +18857,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Broadwater",
     "diff_margin": -7.1237072856221815,
-    "diff_density": 0.081170610629413
+    "diff_density": 0.081170610629413,
+    "unemployment": 4.3
   },
   "30009": {
     "year": 2016,
@@ -17190,7 +18869,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Carbon",
     "diff_margin": -5.972237196765498,
-    "diff_density": 0.04731988149102628
+    "diff_density": 0.04731988149102628,
+    "unemployment": 3.5
   },
   "30011": {
     "year": 2016,
@@ -17201,7 +18881,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Carter",
     "diff_margin": -3.0625706940874036,
-    "diff_density": -0.0071181620893511766
+    "diff_density": -0.0071181620893511766,
+    "unemployment": 2.4
   },
   "30013": {
     "year": 2016,
@@ -17212,7 +18893,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Cascade",
     "diff_margin": -8.46237726867004,
-    "diff_density": -0.3533628843359917
+    "diff_density": -0.3533628843359917,
+    "unemployment": 3.8
   },
   "30015": {
     "year": 2016,
@@ -17223,7 +18905,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Chouteau",
     "diff_margin": -6.425133669120498,
-    "diff_density": -0.06028156143879526
+    "diff_density": -0.06028156143879526,
+    "unemployment": 3.6
   },
   "30017": {
     "year": 2016,
@@ -17234,7 +18917,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Custer",
     "diff_margin": -11.456821705426357,
-    "diff_density": -0.056132961177366214
+    "diff_density": -0.056132961177366214,
+    "unemployment": 3.7
   },
   "30019": {
     "year": 2016,
@@ -17245,7 +18929,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Daniels",
     "diff_margin": -5.99798319327731,
-    "diff_density": -0.042449811024394934
+    "diff_density": -0.042449811024394934,
+    "unemployment": 2.3
   },
   "30021": {
     "year": 2016,
@@ -17256,7 +18941,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Dawson",
     "diff_margin": -9.297918215613382,
-    "diff_density": -0.045390368740145126
+    "diff_density": -0.045390368740145126,
+    "unemployment": 4
   },
   "30023": {
     "year": 2016,
@@ -17267,7 +18953,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Deer Lodge",
     "diff_margin": -15.173182920912176,
-    "diff_density": -0.46348661968962546
+    "diff_density": -0.46348661968962546,
+    "unemployment": 4.2
   },
   "30025": {
     "year": 2016,
@@ -17278,7 +18965,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Fallon",
     "diff_margin": -6.426395663956638,
-    "diff_density": 0.04067825786508883
+    "diff_density": 0.04067825786508883,
+    "unemployment": 3.1
   },
   "30027": {
     "year": 2016,
@@ -17289,7 +18977,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Fergus",
     "diff_margin": -6.3786389511816495,
-    "diff_density": -0.06422415779529
+    "diff_density": -0.06422415779529,
+    "unemployment": 3.3
   },
   "30029": {
     "year": 2016,
@@ -17300,7 +18989,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Flathead",
     "diff_margin": -3.3381081081081057,
-    "diff_density": 0.5406231941599859
+    "diff_density": 0.5406231941599859,
+    "unemployment": 4.8
   },
   "30031": {
     "year": 2016,
@@ -17311,7 +19001,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Gallatin",
     "diff_margin": -0.21279067545619768,
-    "diff_density": 1.6980420641720677
+    "diff_density": 1.6980420641720677,
+    "unemployment": 2.3
   },
   "30033": {
     "year": 2016,
@@ -17322,7 +19013,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Garfield",
     "diff_margin": -4.671396648044693,
-    "diff_density": 0.0031432873618288393
+    "diff_density": 0.0031432873618288393,
+    "unemployment": 2.4
   },
   "30035": {
     "year": 2016,
@@ -17333,7 +19025,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Glacier",
     "diff_margin": -4.0490643157683905,
-    "diff_density": 0.17592121337543465
+    "diff_density": 0.17592121337543465,
+    "unemployment": 9
   },
   "30037": {
     "year": 2016,
@@ -17344,7 +19037,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Golden Valley",
     "diff_margin": -7.885690021231424,
-    "diff_density": -0.009264893562713705
+    "diff_density": -0.009264893562713705,
+    "unemployment": 3.2
   },
   "30039": {
     "year": 2016,
@@ -17355,7 +19049,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Granite",
     "diff_margin": -4.687762039660058,
-    "diff_density": 0.03176090215988103
+    "diff_density": 0.03176090215988103,
+    "unemployment": 5.5
   },
   "30041": {
     "year": 2016,
@@ -17366,7 +19061,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Hill",
     "diff_margin": -12.956733668341705,
-    "diff_density": -0.15334258955828828
+    "diff_density": -0.15334258955828828,
+    "unemployment": 4.9
   },
   "30043": {
     "year": 2016,
@@ -17377,7 +19073,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Jefferson",
     "diff_margin": -4.7287025461198375,
-    "diff_density": 0.020127033195271427
+    "diff_density": 0.020127033195271427,
+    "unemployment": 4.5
   },
   "30045": {
     "year": 2016,
@@ -17388,7 +19085,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Judith Basin",
     "diff_margin": -8.276912751677852,
-    "diff_density": -0.012505481811083463
+    "diff_density": -0.012505481811083463,
+    "unemployment": 2.7
   },
   "30047": {
     "year": 2016,
@@ -17399,7 +19097,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Lake",
     "diff_margin": -7.282523378931913,
-    "diff_density": -0.24698151192832896
+    "diff_density": -0.24698151192832896,
+    "unemployment": 4.8
   },
   "30049": {
     "year": 2016,
@@ -17410,7 +19109,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Lewis and Clark",
     "diff_margin": -4.480591715976331,
-    "diff_density": 0.14209056241561413
+    "diff_density": 0.14209056241561413,
+    "unemployment": 3.3
   },
   "30051": {
     "year": 2016,
@@ -17421,7 +19121,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Liberty",
     "diff_margin": -4.216386554621849,
-    "diff_density": -0.034289010873745585
+    "diff_density": -0.034289010873745585,
+    "unemployment": 3.1
   },
   "30053": {
     "year": 2016,
@@ -17432,7 +19133,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Lincoln",
     "diff_margin": -6.708274374460743,
-    "diff_density": 0.10634522768287136
+    "diff_density": 0.10634522768287136,
+    "unemployment": 7.9
   },
   "30055": {
     "year": 2016,
@@ -17443,7 +19145,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "McCone",
     "diff_margin": -7.876666666666667,
-    "diff_density": 0.019520273005519895
+    "diff_density": 0.019520273005519895,
+    "unemployment": 2.1
   },
   "30057": {
     "year": 2016,
@@ -17454,7 +19157,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Madison",
     "diff_margin": -3.5459322033898317,
-    "diff_density": 0.05568677734788774
+    "diff_density": 0.05568677734788774,
+    "unemployment": 3.1
   },
   "30059": {
     "year": 2016,
@@ -17465,7 +19169,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Meagher",
     "diff_margin": -8.01979423868313,
-    "diff_density": -0.003630195116036905
+    "diff_density": -0.003630195116036905,
+    "unemployment": 4.2
   },
   "30061": {
     "year": 2016,
@@ -17476,7 +19181,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Mineral",
     "diff_margin": -8.695415617128461,
-    "diff_density": -0.032203634455159724
+    "diff_density": -0.032203634455159724,
+    "unemployment": 7.1
   },
   "30063": {
     "year": 2016,
@@ -17487,7 +19193,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Missoula",
     "diff_margin": -3.8267642296240822,
-    "diff_density": 0.07566094192224782
+    "diff_density": 0.07566094192224782,
+    "unemployment": 3.5
   },
   "30065": {
     "year": 2016,
@@ -17498,7 +19205,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Musselshell",
     "diff_margin": -6.699858862598589,
-    "diff_density": -0.0004889864304258307
+    "diff_density": -0.0004889864304258307,
+    "unemployment": 4.3
   },
   "30067": {
     "year": 2016,
@@ -17509,7 +19217,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Park",
     "diff_margin": -4.34177604832152,
-    "diff_density": -0.05871362011515968
+    "diff_density": -0.05871362011515968,
+    "unemployment": 3.3
   },
   "30069": {
     "year": 2016,
@@ -17520,7 +19229,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Petroleum",
     "diff_margin": -7.065000000000001,
-    "diff_density": 0.013368663399541986
+    "diff_density": 0.013368663399541986,
+    "unemployment": 3.1
   },
   "30071": {
     "year": 2016,
@@ -17531,7 +19241,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Phillips",
     "diff_margin": -6.482019543973941,
-    "diff_density": -0.011909055005515479
+    "diff_density": -0.011909055005515479,
+    "unemployment": 4.6
   },
   "30073": {
     "year": 2016,
@@ -17542,7 +19253,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Pondera",
     "diff_margin": -8.583908216136194,
-    "diff_density": -0.015038142538481347
+    "diff_density": -0.015038142538481347,
+    "unemployment": 4.7
   },
   "30075": {
     "year": 2016,
@@ -17553,7 +19265,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Powder River",
     "diff_margin": -4.42010506208214,
-    "diff_density": 0.00753252661268311
+    "diff_density": 0.00753252661268311,
+    "unemployment": 2.5
   },
   "30077": {
     "year": 2016,
@@ -17564,7 +19277,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Powell",
     "diff_margin": -12.217580993520517,
-    "diff_density": 0.004124802806064531
+    "diff_density": 0.004124802806064531,
+    "unemployment": 4.5
   },
   "30079": {
     "year": 2016,
@@ -17575,7 +19289,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Prairie",
     "diff_margin": -9.225116279069768,
-    "diff_density": -0.0038554993839031715
+    "diff_density": -0.0038554993839031715,
+    "unemployment": 3
   },
   "30081": {
     "year": 2016,
@@ -17586,7 +19301,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Ravalli",
     "diff_margin": -4.9272940963746485,
-    "diff_density": -0.03710768690240229
+    "diff_density": -0.03710768690240229,
+    "unemployment": 4.5
   },
   "30083": {
     "year": 2016,
@@ -17597,7 +19313,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Richland",
     "diff_margin": -7.674570361145703,
-    "diff_density": 0.08174489237767135
+    "diff_density": 0.08174489237767135,
+    "unemployment": 4.9
   },
   "30085": {
     "year": 2016,
@@ -17608,7 +19325,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Roosevelt",
     "diff_margin": -13.86311250713878,
-    "diff_density": -0.07281855282212013
+    "diff_density": -0.07281855282212013,
+    "unemployment": 6.2
   },
   "30087": {
     "year": 2016,
@@ -17619,7 +19337,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Rosebud",
     "diff_margin": -11.623345195729538,
-    "diff_density": -0.026999840332109115
+    "diff_density": -0.026999840332109115,
+    "unemployment": 6.8
   },
   "30089": {
     "year": 2016,
@@ -17630,7 +19349,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Sanders",
     "diff_margin": -8.568762746430998,
-    "diff_density": -0.008517525683566785
+    "diff_density": -0.008517525683566785,
+    "unemployment": 7
   },
   "30091": {
     "year": 2016,
@@ -17641,7 +19361,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Sheridan",
     "diff_margin": -8.436360153256707,
-    "diff_density": -0.06060653039807273
+    "diff_density": -0.06060653039807273,
+    "unemployment": 3.2
   },
   "30093": {
     "year": 2016,
@@ -17652,7 +19373,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Silver Bow",
     "diff_margin": -12.088630812877767,
-    "diff_density": -0.7529139294065246
+    "diff_density": -0.7529139294065246,
+    "unemployment": 4.3
   },
   "30095": {
     "year": 2016,
@@ -17663,7 +19385,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Stillwater",
     "diff_margin": -7.8120116014087415,
-    "diff_density": 0.06861224830812951
+    "diff_density": 0.06861224830812951,
+    "unemployment": 3.9
   },
   "30097": {
     "year": 2016,
@@ -17674,7 +19397,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Sweet Grass",
     "diff_margin": -3.305384615384618,
-    "diff_density": -0.01882708063820604
+    "diff_density": -0.01882708063820604,
+    "unemployment": 2.9
   },
   "30099": {
     "year": 2016,
@@ -17685,7 +19409,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Teton",
     "diff_margin": -7.528335974643419,
-    "diff_density": -0.051587850623575404
+    "diff_density": -0.051587850623575404,
+    "unemployment": 3.5
   },
   "30101": {
     "year": 2016,
@@ -17696,7 +19421,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Toole",
     "diff_margin": -7.976561264822134,
-    "diff_density": -0.04343956359460255
+    "diff_density": -0.04343956359460255,
+    "unemployment": 3.3
   },
   "30103": {
     "year": 2016,
@@ -17707,7 +19433,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Treasure",
     "diff_margin": -11.70158371040724,
-    "diff_density": -0.01777982402291789
+    "diff_density": -0.01777982402291789,
+    "unemployment": 4.1
   },
   "30105": {
     "year": 2016,
@@ -17718,7 +19445,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Valley",
     "diff_margin": -13.019581827568405,
-    "diff_density": 0.006468039839052198
+    "diff_density": 0.006468039839052198,
+    "unemployment": 3
   },
   "30107": {
     "year": 2016,
@@ -17729,7 +19457,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Wheatland",
     "diff_margin": -8.33684434968017,
-    "diff_density": -0.04091723522509294
+    "diff_density": -0.04091723522509294,
+    "unemployment": 4.9
   },
   "30109": {
     "year": 2016,
@@ -17740,7 +19469,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Wibaux",
     "diff_margin": -7.710374531835207,
-    "diff_density": -0.009500708454220352
+    "diff_density": -0.009500708454220352,
+    "unemployment": 4.6
   },
   "30111": {
     "year": 2016,
@@ -17751,7 +19481,8 @@ export const counties = {
     "statenam": "Montana",
     "cty_name": "Yellowstone",
     "diff_margin": -5.833753601528436,
-    "diff_density": -1.4828855538129098
+    "diff_density": -1.4828855538129098,
+    "unemployment": 3.7
   },
   "31001": {
     "year": 2016,
@@ -17762,7 +19493,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Adams",
     "diff_margin": -7.219429092013364,
-    "diff_density": 0.8948775897882051
+    "diff_density": 0.8948775897882051,
+    "unemployment": 3.3
   },
   "31003": {
     "year": 2016,
@@ -17773,7 +19505,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Antelope",
     "diff_margin": -5.837701863354038,
-    "diff_density": -0.013671402907071695
+    "diff_density": -0.013671402907071695,
+    "unemployment": 2.5
   },
   "31005": {
     "year": 2016,
@@ -17784,7 +19517,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Arthur",
     "diff_margin": -5.366349809885931,
-    "diff_density": -0.002352941176470613
+    "diff_density": -0.002352941176470613,
+    "unemployment": 5.4
   },
   "31007": {
     "year": 2016,
@@ -17795,7 +19529,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Banner",
     "diff_margin": -8.764615384615386,
-    "diff_density": -0.027288871614105203
+    "diff_density": -0.027288871614105203,
+    "unemployment": 4.2
   },
   "31009": {
     "year": 2016,
@@ -17806,7 +19541,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Blaine",
     "diff_margin": 0.014664536741213041,
-    "diff_density": 0.010305541097528403
+    "diff_density": 0.010305541097528403,
+    "unemployment": 4.1
   },
   "31011": {
     "year": 2016,
@@ -17817,7 +19553,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Boone",
     "diff_margin": -7.479818625741196,
-    "diff_density": 0.08595222489257903
+    "diff_density": 0.08595222489257903,
+    "unemployment": 2.8
   },
   "31013": {
     "year": 2016,
@@ -17828,7 +19565,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Box Butte",
     "diff_margin": -15.943196807393406,
-    "diff_density": 0.04764277543732387
+    "diff_density": 0.04764277543732387,
+    "unemployment": 3.6
   },
   "31015": {
     "year": 2016,
@@ -17839,7 +19577,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Boyd",
     "diff_margin": -6.341593695271454,
-    "diff_density": 0.1350498203504089
+    "diff_density": 0.1350498203504089,
+    "unemployment": 2.8
   },
   "31017": {
     "year": 2016,
@@ -17850,7 +19589,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Brown",
     "diff_margin": -4.720322989233692,
-    "diff_density": 0.022852873506750804
+    "diff_density": 0.022852873506750804,
+    "unemployment": 3.5
   },
   "31019": {
     "year": 2016,
@@ -17861,7 +19601,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Buffalo",
     "diff_margin": -4.676254334130974,
-    "diff_density": 1.061522037784961
+    "diff_density": 1.061522037784961,
+    "unemployment": 2.8
   },
   "31021": {
     "year": 2016,
@@ -17872,7 +19613,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Burt",
     "diff_margin": -11.908813511212035,
-    "diff_density": 0.2966870092355265
+    "diff_density": 0.2966870092355265,
+    "unemployment": 3.6
   },
   "31023": {
     "year": 2016,
@@ -17883,7 +19625,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Butler",
     "diff_margin": -9.45097598364844,
-    "diff_density": 0.0916277717939522
+    "diff_density": 0.0916277717939522,
+    "unemployment": 3.2
   },
   "31025": {
     "year": 2016,
@@ -17894,7 +19637,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Cass",
     "diff_margin": -8.401352208739791,
-    "diff_density": 0.7690689747959425
+    "diff_density": 0.7690689747959425,
+    "unemployment": 3.5
   },
   "31027": {
     "year": 2016,
@@ -17905,7 +19649,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Cedar",
     "diff_margin": -8.98073394495413,
-    "diff_density": 0.03942470046332058
+    "diff_density": 0.03942470046332058,
+    "unemployment": 2.8
   },
   "31029": {
     "year": 2016,
@@ -17916,7 +19661,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Chase",
     "diff_margin": -4.361750405186385,
-    "diff_density": -0.02050244851412053
+    "diff_density": -0.02050244851412053,
+    "unemployment": 2.5
   },
   "31031": {
     "year": 2016,
@@ -17927,7 +19673,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Cherry",
     "diff_margin": -3.944471122647631,
-    "diff_density": 0.007077655601450905
+    "diff_density": 0.007077655601450905,
+    "unemployment": 2.5
   },
   "31033": {
     "year": 2016,
@@ -17938,7 +19685,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Cheyenne",
     "diff_margin": -7.955587655942219,
-    "diff_density": -0.07069197268220906
+    "diff_density": -0.07069197268220906,
+    "unemployment": 3.3
   },
   "31035": {
     "year": 2016,
@@ -17949,7 +19697,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Clay",
     "diff_margin": -6.82105280861083,
-    "diff_density": 0.044918660119869
+    "diff_density": 0.044918660119869,
+    "unemployment": 3
   },
   "31037": {
     "year": 2016,
@@ -17960,7 +19709,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Colfax",
     "diff_margin": -4.55234552332913,
-    "diff_density": 0.24538794150512544
+    "diff_density": 0.24538794150512544,
+    "unemployment": 3.2
   },
   "31039": {
     "year": 2016,
@@ -17971,7 +19721,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Cuming",
     "diff_margin": -8.076439317953863,
-    "diff_density": 0.018889278328835246
+    "diff_density": 0.018889278328835246,
+    "unemployment": 3.2
   },
   "31041": {
     "year": 2016,
@@ -17982,7 +19733,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Custer",
     "diff_margin": -8.13140827108763,
-    "diff_density": 0.0012201031248060268
+    "diff_density": 0.0012201031248060268,
+    "unemployment": 2.6
   },
   "31043": {
     "year": 2016,
@@ -17993,7 +19745,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Dakota",
     "diff_margin": -7.614489599118329,
-    "diff_density": 4.250198675496691
+    "diff_density": 4.250198675496691,
+    "unemployment": 4.5
   },
   "31045": {
     "year": 2016,
@@ -18004,7 +19757,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Dawes",
     "diff_margin": -8.42036892118502,
-    "diff_density": -0.10780702633802619
+    "diff_density": -0.10780702633802619,
+    "unemployment": 3.4
   },
   "31047": {
     "year": 2016,
@@ -18015,7 +19769,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Dawson",
     "diff_margin": -3.0448126325712934,
-    "diff_density": 0.6162708518408841
+    "diff_density": 0.6162708518408841,
+    "unemployment": 3
   },
   "31049": {
     "year": 2016,
@@ -18026,7 +19781,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Deuel",
     "diff_margin": -8.857502558853636,
-    "diff_density": -0.08878822325792912
+    "diff_density": -0.08878822325792912,
+    "unemployment": 3.4
   },
   "31051": {
     "year": 2016,
@@ -18037,7 +19793,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Dixon",
     "diff_margin": -12.127609329446063,
-    "diff_density": 0.12192176049387893
+    "diff_density": 0.12192176049387893,
+    "unemployment": 3.4
   },
   "31053": {
     "year": 2016,
@@ -18048,7 +19805,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Dodge",
     "diff_margin": -8.195337255164116,
-    "diff_density": 0.013393353634313598
+    "diff_density": 0.013393353634313598,
+    "unemployment": 3.3
   },
   "31055": {
     "year": 2016,
@@ -18059,7 +19817,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Douglas",
     "diff_margin": 0.3835278844445682,
-    "diff_density": -13.375162125133215
+    "diff_density": -13.375162125133215,
+    "unemployment": 3.5
   },
   "31057": {
     "year": 2016,
@@ -18070,7 +19829,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Dundy",
     "diff_margin": -8.491707060063225,
-    "diff_density": -0.03811934585942933
+    "diff_density": -0.03811934585942933,
+    "unemployment": 2.5
   },
   "31059": {
     "year": 2016,
@@ -18081,7 +19841,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Fillmore",
     "diff_margin": -6.842087530392497,
-    "diff_density": 0.0037367259328782154
+    "diff_density": 0.0037367259328782154,
+    "unemployment": 2.8
   },
   "31061": {
     "year": 2016,
@@ -18092,7 +19853,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Franklin",
     "diff_margin": -9.903381642512077,
-    "diff_density": 0.20589871834948426
+    "diff_density": 0.20589871834948426,
+    "unemployment": 3.3
   },
   "31063": {
     "year": 2016,
@@ -18103,7 +19865,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Frontier",
     "diff_margin": -8.479923664122136,
-    "diff_density": 0.004154977990744602
+    "diff_density": 0.004154977990744602,
+    "unemployment": 2.8
   },
   "31065": {
     "year": 2016,
@@ -18114,7 +19877,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Furnas",
     "diff_margin": -5.748250539956803,
-    "diff_density": 0.10916760530084968
+    "diff_density": 0.10916760530084968,
+    "unemployment": 3.3
   },
   "31067": {
     "year": 2016,
@@ -18125,7 +19889,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Gage",
     "diff_margin": -10.665881875380553,
-    "diff_density": 0.22265499301224878
+    "diff_density": 0.22265499301224878,
+    "unemployment": 3.5
   },
   "31069": {
     "year": 2016,
@@ -18136,7 +19901,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Garden",
     "diff_margin": -7.786773283160864,
-    "diff_density": -0.016276198746684845
+    "diff_density": -0.016276198746684845,
+    "unemployment": 3.2
   },
   "31071": {
     "year": 2016,
@@ -18147,7 +19913,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Garfield",
     "diff_margin": -3.3499999999999996,
-    "diff_density": 0.048871514066586075
+    "diff_density": 0.048871514066586075,
+    "unemployment": 2.7
   },
   "31073": {
     "year": 2016,
@@ -18158,7 +19925,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Gosper",
     "diff_margin": -7.02,
-    "diff_density": 0.05269125832151067
+    "diff_density": 0.05269125832151067,
+    "unemployment": 2.7
   },
   "31075": {
     "year": 2016,
@@ -18169,7 +19937,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Grant",
     "diff_margin": -3.1838578680203042,
-    "diff_density": 0.037588054932879866
+    "diff_density": 0.037588054932879866,
+    "unemployment": 2.6
   },
   "31077": {
     "year": 2016,
@@ -18180,7 +19949,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Greeley",
     "diff_margin": -10.664248927038628,
-    "diff_density": -0.03545883715624498
+    "diff_density": -0.03545883715624498,
+    "unemployment": 3.7
   },
   "31079": {
     "year": 2016,
@@ -18191,7 +19961,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Hall",
     "diff_margin": -6.6062256809338535,
-    "diff_density": 2.017026304709951
+    "diff_density": 2.017026304709951,
+    "unemployment": 3.4
   },
   "31081": {
     "year": 2016,
@@ -18202,7 +19973,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Hamilton",
     "diff_margin": -5.720942472460223,
-    "diff_density": 0.05961980548187462
+    "diff_density": 0.05961980548187462,
+    "unemployment": 2.9
   },
   "31083": {
     "year": 2016,
@@ -18213,7 +19985,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Harlan",
     "diff_margin": -6.066763590391908,
-    "diff_density": -0.35166982853632556
+    "diff_density": -0.35166982853632556,
+    "unemployment": 2.9
   },
   "31085": {
     "year": 2016,
@@ -18224,7 +19997,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Hayes",
     "diff_margin": -3.5776470588235307,
-    "diff_density": -0.04477266990155104
+    "diff_density": -0.04477266990155104,
+    "unemployment": 2.8
   },
   "31087": {
     "year": 2016,
@@ -18235,7 +20009,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Hitchcock",
     "diff_margin": -7.357777777777777,
-    "diff_density": -0.08165957686565051
+    "diff_density": -0.08165957686565051,
+    "unemployment": 4.1
   },
   "31089": {
     "year": 2016,
@@ -18246,7 +20021,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Holt",
     "diff_margin": -7.375967061658967,
-    "diff_density": 0.013919747968827778
+    "diff_density": 0.013919747968827778,
+    "unemployment": 3.1
   },
   "31091": {
     "year": 2016,
@@ -18257,7 +20033,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Hooker",
     "diff_margin": -5.278164251207729,
-    "diff_density": 0.024106944752606996
+    "diff_density": 0.024106944752606996,
+    "unemployment": 2.7
   },
   "31093": {
     "year": 2016,
@@ -18268,7 +20045,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Howard",
     "diff_margin": -13.459195402298853,
-    "diff_density": 0.1554895141743069
+    "diff_density": 0.1554895141743069,
+    "unemployment": 2.9
   },
   "31095": {
     "year": 2016,
@@ -18279,7 +20057,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Jefferson",
     "diff_margin": -10.452594752186588,
-    "diff_density": -0.024355817461152007
+    "diff_density": -0.024355817461152007,
+    "unemployment": 2.7
   },
   "31097": {
     "year": 2016,
@@ -18290,7 +20069,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Johnson",
     "diff_margin": -10.986245733788394,
-    "diff_density": -0.035938040154235296
+    "diff_density": -0.035938040154235296,
+    "unemployment": 3.1
   },
   "31099": {
     "year": 2016,
@@ -18301,7 +20081,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Kearney",
     "diff_margin": -7.3451634793337455,
-    "diff_density": 0.12002479466914551
+    "diff_density": 0.12002479466914551,
+    "unemployment": 2.4
   },
   "31101": {
     "year": 2016,
@@ -18312,7 +20093,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Keith",
     "diff_margin": -8.674816223067175,
-    "diff_density": -0.10391107761868845
+    "diff_density": -0.10391107761868845,
+    "unemployment": 3
   },
   "31103": {
     "year": 2016,
@@ -18323,7 +20105,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Keya Paha",
     "diff_margin": -8.942451361867706,
-    "diff_density": 0.03488157605391484
+    "diff_density": 0.03488157605391484,
+    "unemployment": 2.3
   },
   "31105": {
     "year": 2016,
@@ -18334,7 +20117,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Kimball",
     "diff_margin": -9.534694376528119,
-    "diff_density": -0.05124179229920678
+    "diff_density": -0.05124179229920678,
+    "unemployment": 4.3
   },
   "31107": {
     "year": 2016,
@@ -18345,7 +20129,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Knox",
     "diff_margin": -8.633499138143314,
-    "diff_density": 0.024005052555601036
+    "diff_density": 0.024005052555601036,
+    "unemployment": 2.8
   },
   "31109": {
     "year": 2016,
@@ -18356,7 +20141,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Lancaster",
     "diff_margin": -2.0554846189995573,
-    "diff_density": 2.9194042146737615
+    "diff_density": 2.9194042146737615,
+    "unemployment": 3
   },
   "31111": {
     "year": 2016,
@@ -18367,7 +20153,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Lincoln",
     "diff_margin": -10.06838203394156,
-    "diff_density": 0.002937634307954795
+    "diff_density": 0.002937634307954795,
+    "unemployment": 3.2
   },
   "31113": {
     "year": 2016,
@@ -18378,7 +20165,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Logan",
     "diff_margin": -8.684656319290465,
-    "diff_density": 0.030312970945922335
+    "diff_density": 0.030312970945922335,
+    "unemployment": 3
   },
   "31115": {
     "year": 2016,
@@ -18389,7 +20177,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Loup",
     "diff_margin": -4.754554973821991,
-    "diff_density": 0.042192014640412556
+    "diff_density": 0.042192014640412556,
+    "unemployment": 3.7
   },
   "31117": {
     "year": 2016,
@@ -18400,7 +20189,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "McPherson",
     "diff_margin": -9.194895104895105,
-    "diff_density": -0.007046962676663049
+    "diff_density": -0.007046962676663049,
+    "unemployment": 2.5
   },
   "31119": {
     "year": 2016,
@@ -18411,7 +20201,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Madison",
     "diff_margin": -6.018601318429351,
-    "diff_density": 0.12707755700667178
+    "diff_density": 0.12707755700667178,
+    "unemployment": 3
   },
   "31121": {
     "year": 2016,
@@ -18422,7 +20213,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Merrick",
     "diff_margin": -10.297429188022662,
-    "diff_density": 0.4451905626134298
+    "diff_density": 0.4451905626134298,
+    "unemployment": 3.7
   },
   "31123": {
     "year": 2016,
@@ -18433,7 +20225,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Morrill",
     "diff_margin": -7.760609418282549,
-    "diff_density": -0.018761658613327237
+    "diff_density": -0.018761658613327237,
+    "unemployment": 3.5
   },
   "31125": {
     "year": 2016,
@@ -18444,7 +20237,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Nance",
     "diff_margin": -12.159055659787366,
-    "diff_density": -0.04932205692548042
+    "diff_density": -0.04932205692548042,
+    "unemployment": 2.9
   },
   "31127": {
     "year": 2016,
@@ -18455,7 +20249,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Nemaha",
     "diff_margin": -9.894069192751235,
-    "diff_density": -0.4399533604987971
+    "diff_density": -0.4399533604987971,
+    "unemployment": 4.3
   },
   "31129": {
     "year": 2016,
@@ -18466,7 +20261,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Nuckolls",
     "diff_margin": -9.756507199256852,
-    "diff_density": -0.06662870555507228
+    "diff_density": -0.06662870555507228,
+    "unemployment": 3
   },
   "31131": {
     "year": 2016,
@@ -18477,7 +20273,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Otoe",
     "diff_margin": -8.970149745844207,
-    "diff_density": 0.4836603154492156
+    "diff_density": 0.4836603154492156,
+    "unemployment": 3.6
   },
   "31133": {
     "year": 2016,
@@ -18488,7 +20285,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Pawnee",
     "diff_margin": -8.59712328767123,
-    "diff_density": -0.06177117405525756
+    "diff_density": -0.06177117405525756,
+    "unemployment": 2.4
   },
   "31135": {
     "year": 2016,
@@ -18499,7 +20297,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Perkins",
     "diff_margin": -5.786502115655853,
-    "diff_density": 0.025270903615821627
+    "diff_density": 0.025270903615821627,
+    "unemployment": 2.5
   },
   "31137": {
     "year": 2016,
@@ -18510,7 +20309,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Phelps",
     "diff_margin": -7.701195487090475,
-    "diff_density": 0.42850571518553693
+    "diff_density": 0.42850571518553693,
+    "unemployment": 2.8
   },
   "31139": {
     "year": 2016,
@@ -18521,7 +20321,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Pierce",
     "diff_margin": -7.899608938547486,
-    "diff_density": 0.25509376362843383
+    "diff_density": 0.25509376362843383,
+    "unemployment": 2.5
   },
   "31141": {
     "year": 2016,
@@ -18532,7 +20333,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Platte",
     "diff_margin": -4.775282266676161,
-    "diff_density": 0.8493911521229585
+    "diff_density": 0.8493911521229585,
+    "unemployment": 3.5
   },
   "31143": {
     "year": 2016,
@@ -18543,7 +20345,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Polk",
     "diff_margin": -5.296146572104018,
-    "diff_density": 0.1798939203832548
+    "diff_density": 0.1798939203832548,
+    "unemployment": 2.7
   },
   "31145": {
     "year": 2016,
@@ -18554,7 +20357,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Red Willow",
     "diff_margin": -6.683795692550879,
-    "diff_density": 0.17867585321971013
+    "diff_density": 0.17867585321971013,
+    "unemployment": 3.2
   },
   "31147": {
     "year": 2016,
@@ -18565,7 +20369,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Richardson",
     "diff_margin": -10.082405891980361,
-    "diff_density": -0.13677007828356125
+    "diff_density": -0.13677007828356125,
+    "unemployment": 3.3
   },
   "31149": {
     "year": 2016,
@@ -18576,7 +20381,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Rock",
     "diff_margin": -4.222761664564944,
-    "diff_density": 0.006456680418914562
+    "diff_density": 0.006456680418914562,
+    "unemployment": 2.6
   },
   "31151": {
     "year": 2016,
@@ -18587,7 +20393,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Saline",
     "diff_margin": -12.176256517205424,
-    "diff_density": -0.2866325215149299
+    "diff_density": -0.2866325215149299,
+    "unemployment": 3.1
   },
   "31153": {
     "year": 2016,
@@ -18598,7 +20405,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Sarpy",
     "diff_margin": -1.6920470294802072,
-    "diff_density": 26.327132097577305
+    "diff_density": 26.327132097577305,
+    "unemployment": 3.1
   },
   "31155": {
     "year": 2016,
@@ -18609,7 +20417,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Saunders",
     "diff_margin": -8.395721834308361,
-    "diff_density": 0.3763345907255111
+    "diff_density": 0.3763345907255111,
+    "unemployment": 3.2
   },
   "31157": {
     "year": 2016,
@@ -18620,7 +20429,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Scotts Bluff",
     "diff_margin": -7.612777977689817,
-    "diff_density": -0.5277360021639161
+    "diff_density": -0.5277360021639161,
+    "unemployment": 3.8
   },
   "31159": {
     "year": 2016,
@@ -18631,7 +20441,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Seward",
     "diff_margin": -7.25155274696931,
-    "diff_density": 0.3194660763348107
+    "diff_density": 0.3194660763348107,
+    "unemployment": 3.1
   },
   "31161": {
     "year": 2016,
@@ -18642,7 +20453,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Sheridan",
     "diff_margin": -4.629902534113061,
-    "diff_density": 0.04085912342371123
+    "diff_density": 0.04085912342371123,
+    "unemployment": 3.4
   },
   "31163": {
     "year": 2016,
@@ -18653,7 +20465,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Sherman",
     "diff_margin": -14.315672891178362,
-    "diff_density": 0.044640616439566294
+    "diff_density": 0.044640616439566294,
+    "unemployment": 3.3
   },
   "31165": {
     "year": 2016,
@@ -18664,7 +20477,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Sioux",
     "diff_margin": -2.8096332863187587,
-    "diff_density": -0.016947656696052693
+    "diff_density": -0.016947656696052693,
+    "unemployment": 2.6
   },
   "31167": {
     "year": 2016,
@@ -18675,7 +20489,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Stanton",
     "diff_margin": -8.04532751091703,
-    "diff_density": 0.24131090080616957
+    "diff_density": 0.24131090080616957,
+    "unemployment": 2.7
   },
   "31169": {
     "year": 2016,
@@ -18686,7 +20501,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Thayer",
     "diff_margin": -8.627608113279752,
-    "diff_density": -0.07622784545406969
+    "diff_density": -0.07622784545406969,
+    "unemployment": 2.8
   },
   "31171": {
     "year": 2016,
@@ -18697,7 +20513,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Thomas",
     "diff_margin": -2.5380620155038756,
-    "diff_density": -0.027405641859682528
+    "diff_density": -0.027405641859682528,
+    "unemployment": 3.2
   },
   "31173": {
     "year": 2016,
@@ -18708,7 +20525,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Thurston",
     "diff_margin": -11.401034992607194,
-    "diff_density": -0.47475837186848935
+    "diff_density": -0.47475837186848935,
+    "unemployment": 4.6
   },
   "31175": {
     "year": 2016,
@@ -18719,7 +20537,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Valley",
     "diff_margin": -7.174346224677718,
-    "diff_density": -0.03639292315817233
+    "diff_density": -0.03639292315817233,
+    "unemployment": 2.9
   },
   "31177": {
     "year": 2016,
@@ -18730,7 +20549,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Washington",
     "diff_margin": -5.947928949357522,
-    "diff_density": 0.8712452559236858
+    "diff_density": 0.8712452559236858,
+    "unemployment": 3.2
   },
   "31179": {
     "year": 2016,
@@ -18741,7 +20561,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Wayne",
     "diff_margin": -7.03096256684492,
-    "diff_density": 0.13396279237785613
+    "diff_density": 0.13396279237785613,
+    "unemployment": 3.4
   },
   "31181": {
     "year": 2016,
@@ -18752,7 +20573,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Webster",
     "diff_margin": -7.23129223473622,
-    "diff_density": -0.09562766346036744
+    "diff_density": -0.09562766346036744,
+    "unemployment": 3.7
   },
   "31183": {
     "year": 2016,
@@ -18763,7 +20585,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "Wheeler",
     "diff_margin": -7.252374727668846,
-    "diff_density": 0.018011057408115816
+    "diff_density": 0.018011057408115816,
+    "unemployment": 2.7
   },
   "31185": {
     "year": 2016,
@@ -18774,7 +20597,8 @@ export const counties = {
     "statenam": "Nebraska",
     "cty_name": "York",
     "diff_margin": -2.732122762148336,
-    "diff_density": -0.17267995318858986
+    "diff_density": -0.17267995318858986,
+    "unemployment": 2.9
   },
   "32001": {
     "year": 2016,
@@ -18785,7 +20609,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Churchill",
     "diff_margin": -8.641514264813463,
-    "diff_density": 0.13804862020987896
+    "diff_density": 0.13804862020987896,
+    "unemployment": 5.8
   },
   "32003": {
     "year": 2016,
@@ -18796,7 +20621,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Clark",
     "diff_margin": -4.0216466754896985,
-    "diff_density": 9.403954200949627
+    "diff_density": 9.403954200949627,
+    "unemployment": 6
   },
   "32005": {
     "year": 2016,
@@ -18807,7 +20633,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Douglas",
     "diff_margin": -5.320984177101646,
-    "diff_density": 2.530416502282584
+    "diff_density": 2.530416502282584,
+    "unemployment": 5.3
   },
   "32007": {
     "year": 2016,
@@ -18818,7 +20645,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Elko",
     "diff_margin": -3.626217309247778,
-    "diff_density": 0.15009223154801166
+    "diff_density": 0.15009223154801166,
+    "unemployment": 4.4
   },
   "32009": {
     "year": 2016,
@@ -18829,7 +20657,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Esmeralda",
     "diff_margin": -5.783569739952718,
-    "diff_density": -0.001905591477101412
+    "diff_density": -0.001905591477101412,
+    "unemployment": 4.7
   },
   "32011": {
     "year": 2016,
@@ -18840,7 +20669,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Eureka",
     "diff_margin": -4.5748946135831385,
-    "diff_density": 0.014517587554601863
+    "diff_density": 0.014517587554601863,
+    "unemployment": 5.1
   },
   "32013": {
     "year": 2016,
@@ -18851,7 +20681,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Humboldt",
     "diff_margin": -8.694842219804134,
-    "diff_density": 0.06727104502134684
+    "diff_density": 0.06727104502134684,
+    "unemployment": 5.5
   },
   "32015": {
     "year": 2016,
@@ -18862,7 +20693,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Lander",
     "diff_margin": -7.9687981765437215,
-    "diff_density": 0.04951840585781675
+    "diff_density": 0.04951840585781675,
+    "unemployment": 5.9
   },
   "32017": {
     "year": 2016,
@@ -18873,7 +20705,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Lincoln",
     "diff_margin": -5.222270168855536,
-    "diff_density": 0.0005040815558815526
+    "diff_density": 0.0005040815558815526,
+    "unemployment": 5.3
   },
   "32019": {
     "year": 2016,
@@ -18884,7 +20717,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Lyon",
     "diff_margin": -8.515173806918611,
-    "diff_density": 1.1439350086698408
+    "diff_density": 1.1439350086698408,
+    "unemployment": 7.3
   },
   "32021": {
     "year": 2016,
@@ -18895,7 +20729,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Mineral",
     "diff_margin": -10.512153229844767,
-    "diff_density": -0.00786966670574829
+    "diff_density": -0.00786966670574829,
+    "unemployment": 8.6
   },
   "32023": {
     "year": 2016,
@@ -18906,7 +20741,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Nye",
     "diff_margin": -10.064487545937116,
-    "diff_density": 0.1175539656977922
+    "diff_density": 0.1175539656977922,
+    "unemployment": 7.5
   },
   "32027": {
     "year": 2016,
@@ -18917,7 +20753,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Pershing",
     "diff_margin": -11.854742684157415,
-    "diff_density": 0.018332692791921235
+    "diff_density": 0.018332692791921235,
+    "unemployment": 6
   },
   "32029": {
     "year": 2016,
@@ -18928,7 +20765,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Storey",
     "diff_margin": -10.362032838154807,
-    "diff_density": 0.9291951924539763
+    "diff_density": 0.9291951924539763,
+    "unemployment": 5.8
   },
   "32031": {
     "year": 2016,
@@ -18939,7 +20777,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Washoe",
     "diff_margin": -4.425764184210777,
-    "diff_density": 3.3968729700096993
+    "diff_density": 3.3968729700096993,
+    "unemployment": 4.9
   },
   "32033": {
     "year": 2016,
@@ -18950,7 +20789,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "White Pine",
     "diff_margin": -7.801595547309834,
-    "diff_density": 0.0050956267991640325
+    "diff_density": 0.0050956267991640325,
+    "unemployment": 4.6
   },
   "32510": {
     "year": 2016,
@@ -18961,7 +20801,8 @@ export const counties = {
     "statenam": "Nevada",
     "cty_name": "Carson City",
     "diff_margin": -5.714585865046374,
-    "diff_density": 11.729628093460548
+    "diff_density": 11.729628093460548,
+    "unemployment": 6
   },
   "33001": {
     "year": 2016,
@@ -18972,7 +20813,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Belknap",
     "diff_margin": -7.7068826274748545,
-    "diff_density": 1.5229390600404713
+    "diff_density": 1.5229390600404713,
+    "unemployment": 2.6
   },
   "33003": {
     "year": 2016,
@@ -18983,7 +20825,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Carroll",
     "diff_margin": -4.215046934635353,
-    "diff_density": 0.516440186454151
+    "diff_density": 0.516440186454151,
+    "unemployment": 2.8
   },
   "33005": {
     "year": 2016,
@@ -18994,7 +20837,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Cheshire",
     "diff_margin": -7.702412451361866,
-    "diff_density": -0.34077179973395744
+    "diff_density": -0.34077179973395744,
+    "unemployment": 2.9
   },
   "33007": {
     "year": 2016,
@@ -19005,7 +20849,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Coos",
     "diff_margin": -14.997103109656301,
-    "diff_density": -0.23873336750841467
+    "diff_density": -0.23873336750841467,
+    "unemployment": 3.5
   },
   "33009": {
     "year": 2016,
@@ -19016,7 +20861,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Grafton",
     "diff_margin": -3.9614303959131547,
-    "diff_density": 0.6467008046817853
+    "diff_density": 0.6467008046817853,
+    "unemployment": 2.4
   },
   "33011": {
     "year": 2016,
@@ -19027,7 +20873,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Hillsborough",
     "diff_margin": -2.569218596768515,
-    "diff_density": 5.013920606295784
+    "diff_density": 5.013920606295784,
+    "unemployment": 3.2
   },
   "33013": {
     "year": 2016,
@@ -19038,7 +20885,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Merrimack",
     "diff_margin": -6.5774458556640525,
-    "diff_density": 1.2998300004282157
+    "diff_density": 1.2998300004282157,
+    "unemployment": 2.6
   },
   "33015": {
     "year": 2016,
@@ -19049,7 +20897,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Rockingham",
     "diff_margin": -2.305884625491302,
-    "diff_density": 12.14768079226161
+    "diff_density": 12.14768079226161,
+    "unemployment": 3.1
   },
   "33017": {
     "year": 2016,
@@ -19060,7 +20909,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Strafford",
     "diff_margin": -5.645305896272333,
-    "diff_density": 7.591027697978205
+    "diff_density": 7.591027697978205,
+    "unemployment": 2.7
   },
   "33019": {
     "year": 2016,
@@ -19071,7 +20921,8 @@ export const counties = {
     "statenam": "New Hampshire",
     "cty_name": "Sullivan",
     "diff_margin": -9.571448777622123,
-    "diff_density": 0.5447909028307691
+    "diff_density": 0.5447909028307691,
+    "unemployment": 2.5
   },
   "34001": {
     "year": 2016,
@@ -19082,7 +20933,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Atlantic",
     "diff_margin": -6.501494505076991,
-    "diff_density": -14.21705776498112
+    "diff_density": -14.21705776498112,
+    "unemployment": 7.1
   },
   "34003": {
     "year": 2016,
@@ -19093,7 +20945,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Bergen",
     "diff_margin": -0.7025848710168958,
-    "diff_density": -6.192268142998046
+    "diff_density": -6.192268142998046,
+    "unemployment": 4.7
   },
   "34005": {
     "year": 2016,
@@ -19104,7 +20957,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Burlington",
     "diff_margin": -3.0157631303036467,
-    "diff_density": -27.948398407172732
+    "diff_density": -27.948398407172732,
+    "unemployment": 5
   },
   "34007": {
     "year": 2016,
@@ -19115,7 +20969,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Camden",
     "diff_margin": -4.036076944524936,
-    "diff_density": -192.14097984271893
+    "diff_density": -192.14097984271893,
+    "unemployment": 6
   },
   "34009": {
     "year": 2016,
@@ -19126,7 +20981,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Cape May",
     "diff_margin": -6.676640826873381,
-    "diff_density": 1.7594750029829527
+    "diff_density": 1.7594750029829527,
+    "unemployment": 5.7
   },
   "34011": {
     "year": 2016,
@@ -19137,7 +20993,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Cumberland",
     "diff_margin": -10.57019046874084,
-    "diff_density": -8.589512094273303
+    "diff_density": -8.589512094273303,
+    "unemployment": 7.9
   },
   "34013": {
     "year": 2016,
@@ -19148,7 +21005,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Essex",
     "diff_margin": -1.0303484897000885,
-    "diff_density": -25.400544330876983
+    "diff_density": -25.400544330876983,
+    "unemployment": 6.6
   },
   "34015": {
     "year": 2016,
@@ -19159,7 +21017,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Gloucester",
     "diff_margin": -6.801478451888897,
-    "diff_density": 9.946397515527963
+    "diff_density": 9.946397515527963,
+    "unemployment": 5.6
   },
   "34017": {
     "year": 2016,
@@ -19170,7 +21029,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Hudson",
     "diff_margin": -3.018575498575487,
-    "diff_density": 25.25083567871843
+    "diff_density": 25.25083567871843,
+    "unemployment": 5.2
   },
   "34019": {
     "year": 2016,
@@ -19181,7 +21041,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Hunterdon",
     "diff_margin": 0.3793539429316226,
-    "diff_density": 9.55059931746996
+    "diff_density": 9.55059931746996,
+    "unemployment": 4.1
   },
   "34021": {
     "year": 2016,
@@ -19192,7 +21053,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Mercer",
     "diff_margin": -1.6773461070387299,
-    "diff_density": -54.24700391877445
+    "diff_density": -54.24700391877445,
+    "unemployment": 4.9
   },
   "34023": {
     "year": 2016,
@@ -19203,7 +21065,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Middlesex",
     "diff_margin": -4.907610058443119,
-    "diff_density": -60.35030915153288
+    "diff_density": -60.35030915153288,
+    "unemployment": 4.9
   },
   "34025": {
     "year": 2016,
@@ -19214,7 +21077,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Monmouth",
     "diff_margin": -3.2828289359625558,
-    "diff_density": 58.66116939354504
+    "diff_density": 58.66116939354504,
+    "unemployment": 4.8
   },
   "34027": {
     "year": 2016,
@@ -19225,7 +21089,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Morris",
     "diff_margin": 1.9467067446794815,
-    "diff_density": 46.62231040027814
+    "diff_density": 46.62231040027814,
+    "unemployment": 4.2
   },
   "34029": {
     "year": 2016,
@@ -19236,7 +21101,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Ocean",
     "diff_margin": -9.181678634164381,
-    "diff_density": 13.230281497503142
+    "diff_density": 13.230281497503142,
+    "unemployment": 5.4
   },
   "34031": {
     "year": 2016,
@@ -19247,7 +21113,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Passaic",
     "diff_margin": -4.150240350292705,
-    "diff_density": 38.53710872745012
+    "diff_density": 38.53710872745012,
+    "unemployment": 6.8
   },
   "34033": {
     "year": 2016,
@@ -19258,7 +21125,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Salem",
     "diff_margin": -9.623059548254616,
-    "diff_density": -0.8514341669177412
+    "diff_density": -0.8514341669177412,
+    "unemployment": 6.8
   },
   "34035": {
     "year": 2016,
@@ -19269,7 +21137,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Somerset",
     "diff_margin": 2.163026599848301,
-    "diff_density": 37.539818428812794
+    "diff_density": 37.539818428812794,
+    "unemployment": 4.4
   },
   "34037": {
     "year": 2016,
@@ -19280,7 +21149,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Sussex",
     "diff_margin": -5.757376116978065,
-    "diff_density": 11.419396736093745
+    "diff_density": 11.419396736093745,
+    "unemployment": 5
   },
   "34039": {
     "year": 2016,
@@ -19291,7 +21161,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Union",
     "diff_margin": -0.6062614166330604,
-    "diff_density": -86.80342407155354
+    "diff_density": -86.80342407155354,
+    "unemployment": 5.6
   },
   "34041": {
     "year": 2016,
@@ -19302,7 +21173,8 @@ export const counties = {
     "statenam": "New Jersey",
     "cty_name": "Warren",
     "diff_margin": -6.335065026216917,
-    "diff_density": 8.882290709402668
+    "diff_density": 8.882290709402668,
+    "unemployment": 5.1
   },
   "35001": {
     "year": 2016,
@@ -19313,7 +21185,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Bernalillo",
     "diff_margin": -3.4395910354259485,
-    "diff_density": 0.8885479355288908
+    "diff_density": 0.8885479355288908,
+    "unemployment": 6.2
   },
   "35003": {
     "year": 2016,
@@ -19324,7 +21197,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Catron",
     "diff_margin": -5.446339066339068,
-    "diff_density": -0.016081583664202148
+    "diff_density": -0.016081583664202148,
+    "unemployment": 6.9
   },
   "35005": {
     "year": 2016,
@@ -19335,7 +21209,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Chaves",
     "diff_margin": -5.2461842949508934,
-    "diff_density": -0.00950567740595254
+    "diff_density": -0.00950567740595254,
+    "unemployment": 6.9
   },
   "35006": {
     "year": 2016,
@@ -19346,7 +21221,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Cibola",
     "diff_margin": -13.766129474865913,
-    "diff_density": -0.05393868901283838
+    "diff_density": -0.05393868901283838,
+    "unemployment": 9.1
   },
   "35007": {
     "year": 2016,
@@ -19357,7 +21233,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Colfax",
     "diff_margin": -9.11281026027914,
-    "diff_density": -0.11916568655103954
+    "diff_density": -0.11916568655103954,
+    "unemployment": 5.6
   },
   "35009": {
     "year": 2016,
@@ -19368,7 +21245,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Curry",
     "diff_margin": -5.132755864007731,
-    "diff_density": -1.597067198177676
+    "diff_density": -1.597067198177676,
+    "unemployment": 5.4
   },
   "35011": {
     "year": 2016,
@@ -19379,7 +21257,11 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "De Baca",
     "diff_margin": -10.604530386740333,
-    "diff_density": -0.00035382456019494857
+    "diff_density": -0.00035382456019494857,
+    "unemployment": 5
+  },
+  "35013": {
+    "unemployment": 7.1
   },
   "35015": {
     "year": 2016,
@@ -19390,7 +21272,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Eddy",
     "diff_margin": -6.331586572798695,
-    "diff_density": 0.0842690260146135
+    "diff_density": 0.0842690260146135,
+    "unemployment": 7.2
   },
   "35017": {
     "year": 2016,
@@ -19401,7 +21284,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Grant",
     "diff_margin": -5.976508298591995,
-    "diff_density": -0.05095925404253787
+    "diff_density": -0.05095925404253787,
+    "unemployment": 6.6
   },
   "35019": {
     "year": 2016,
@@ -19412,7 +21296,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Guadalupe",
     "diff_margin": -16.668026460859984,
-    "diff_density": -0.10141495736648976
+    "diff_density": -0.10141495736648976,
+    "unemployment": 6.4
   },
   "35021": {
     "year": 2016,
@@ -19423,7 +21308,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Harding",
     "diff_margin": -13.658481973434533,
-    "diff_density": -0.032051339957844066
+    "diff_density": -0.032051339957844066,
+    "unemployment": 7.3
   },
   "35023": {
     "year": 2016,
@@ -19434,7 +21320,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Hidalgo",
     "diff_margin": -9.552045088566828,
-    "diff_density": -0.017935441071210367
+    "diff_density": -0.017935441071210367,
+    "unemployment": 5.4
   },
   "35025": {
     "year": 2016,
@@ -19445,7 +21332,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Lea",
     "diff_margin": -1.7609616596939652,
-    "diff_density": 0.09387341633776902
+    "diff_density": 0.09387341633776902,
+    "unemployment": 9.8
   },
   "35027": {
     "year": 2016,
@@ -19456,7 +21344,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Lincoln",
     "diff_margin": -5.637917228969858,
-    "diff_density": -0.06942157980911134
+    "diff_density": -0.06942157980911134,
+    "unemployment": 6
   },
   "35028": {
     "year": 2016,
@@ -19467,7 +21356,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Los Alamos",
     "diff_margin": 2.0732064203060787,
-    "diff_density": 0.568834844737566
+    "diff_density": 0.568834844737566,
+    "unemployment": 4.5
   },
   "35029": {
     "year": 2016,
@@ -19478,7 +21368,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Luna",
     "diff_margin": -3.9728786840301566,
-    "diff_density": -0.06978665785329108
+    "diff_density": -0.06978665785329108,
+    "unemployment": 10
   },
   "35031": {
     "year": 2016,
@@ -19489,7 +21380,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "McKinley",
     "diff_margin": -9.441202347440239,
-    "diff_density": -0.17417785207190706
+    "diff_density": -0.17417785207190706,
+    "unemployment": 9.8
   },
   "35033": {
     "year": 2016,
@@ -19500,7 +21392,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Mora",
     "diff_margin": -11.897255546425626,
-    "diff_density": -0.08968942716450834
+    "diff_density": -0.08968942716450834,
+    "unemployment": 8
   },
   "35035": {
     "year": 2016,
@@ -19511,7 +21404,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Otero",
     "diff_margin": -3.636446869789296,
-    "diff_density": -0.03735346374907156
+    "diff_density": -0.03735346374907156,
+    "unemployment": 6.4
   },
   "35037": {
     "year": 2016,
@@ -19522,7 +21416,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Quay",
     "diff_margin": -8.82668068404822,
-    "diff_density": -0.04902377928923052
+    "diff_density": -0.04902377928923052,
+    "unemployment": 7
   },
   "35039": {
     "year": 2016,
@@ -19533,7 +21428,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Rio Arriba",
     "diff_margin": -10.279310577897945,
-    "diff_density": -0.09561782952614317
+    "diff_density": -0.09561782952614317,
+    "unemployment": 7.3
   },
   "35041": {
     "year": 2016,
@@ -19544,7 +21440,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Roosevelt",
     "diff_margin": -4.488186738836266,
-    "diff_density": -0.02440486551198573
+    "diff_density": -0.02440486551198573,
+    "unemployment": 6.1
   },
   "35043": {
     "year": 2016,
@@ -19555,7 +21452,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Sandoval",
     "diff_margin": -5.541042095967029,
-    "diff_density": 1.9085145459690338
+    "diff_density": 1.9085145459690338,
+    "unemployment": 7.1
   },
   "35045": {
     "year": 2016,
@@ -19566,7 +21464,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "San Juan",
     "diff_margin": -6.392229472539423,
-    "diff_density": -0.050726237831190346
+    "diff_density": -0.050726237831190346,
+    "unemployment": 9.4
   },
   "35047": {
     "year": 2016,
@@ -19577,7 +21476,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "San Miguel",
     "diff_margin": -9.133336449471827,
-    "diff_density": -0.17167762976534284
+    "diff_density": -0.17167762976534284,
+    "unemployment": 8.1
   },
   "35049": {
     "year": 2016,
@@ -19588,7 +21488,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Santa Fe",
     "diff_margin": -2.4855734909628353,
-    "diff_density": 0.5874585866838373
+    "diff_density": 0.5874585866838373,
+    "unemployment": 5.5
   },
   "35051": {
     "year": 2016,
@@ -19599,7 +21500,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Sierra",
     "diff_margin": -7.416005049524184,
-    "diff_density": 0.012124739169554255
+    "diff_density": 0.012124739169554255,
+    "unemployment": 7.8
   },
   "35053": {
     "year": 2016,
@@ -19610,7 +21512,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Socorro",
     "diff_margin": -8.201507656065964,
-    "diff_density": -0.05813645308635307
+    "diff_density": -0.05813645308635307,
+    "unemployment": 8
   },
   "35055": {
     "year": 2016,
@@ -19621,7 +21524,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Taos",
     "diff_margin": -8.236328543997885,
-    "diff_density": -0.10469091420764354
+    "diff_density": -0.10469091420764354,
+    "unemployment": 8.3
   },
   "35057": {
     "year": 2016,
@@ -19632,7 +21536,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Torrance",
     "diff_margin": -9.772188991409482,
-    "diff_density": -0.03068738713959407
+    "diff_density": -0.03068738713959407,
+    "unemployment": 9.3
   },
   "35059": {
     "year": 2016,
@@ -19643,7 +21548,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Union",
     "diff_margin": -8.091048909840897,
-    "diff_density": -0.016193674256094803
+    "diff_density": -0.016193674256094803,
+    "unemployment": 4.5
   },
   "35061": {
     "year": 2016,
@@ -19654,7 +21560,8 @@ export const counties = {
     "statenam": "New Mexico",
     "cty_name": "Valencia",
     "diff_margin": -9.433769675378961,
-    "diff_density": -0.2082985827776085
+    "diff_density": -0.2082985827776085,
+    "unemployment": 7.6
   },
   "36001": {
     "year": 2016,
@@ -19665,7 +21572,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Albany",
     "diff_margin": -4.976612969978667,
-    "diff_density": -19.36100229533281
+    "diff_density": -19.36100229533281,
+    "unemployment": 4
   },
   "36003": {
     "year": 2016,
@@ -19676,7 +21584,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Allegany",
     "diff_margin": -10.068921161825724,
-    "diff_density": 0.15375766290039294
+    "diff_density": 0.15375766290039294,
+    "unemployment": 4.9
   },
   "36005": {
     "year": 2016,
@@ -19687,7 +21596,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Bronx",
     "diff_margin": -2.7230140418049587,
-    "diff_density": -287.80076009501136
+    "diff_density": -287.80076009501136,
+    "unemployment": 7.8
   },
   "36007": {
     "year": 2016,
@@ -19698,7 +21608,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Broome",
     "diff_margin": -6.117017397015083,
-    "diff_density": -5.53840330419257
+    "diff_density": -5.53840330419257,
+    "unemployment": 5
   },
   "36009": {
     "year": 2016,
@@ -19709,7 +21620,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Cattaraugus",
     "diff_margin": -12.390901211974729,
-    "diff_density": -0.6144858027286269
+    "diff_density": -0.6144858027286269,
+    "unemployment": 5.2
   },
   "36011": {
     "year": 2016,
@@ -19720,7 +21632,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Cayuga",
     "diff_margin": -14.054091090160668,
-    "diff_density": -1.5117710170912986
+    "diff_density": -1.5117710170912986,
+    "unemployment": 4.4
   },
   "36013": {
     "year": 2016,
@@ -19731,7 +21644,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Chautauqua",
     "diff_margin": -9.908727008613454,
-    "diff_density": -3.749625552946064
+    "diff_density": -3.749625552946064,
+    "unemployment": 5.1
   },
   "36015": {
     "year": 2016,
@@ -19742,7 +21656,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Chemung",
     "diff_margin": -10.643051664407288,
-    "diff_density": -4.459880937768517
+    "diff_density": -4.459880937768517,
+    "unemployment": 5.2
   },
   "36017": {
     "year": 2016,
@@ -19753,7 +21668,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Chenango",
     "diff_margin": -14.389311544194783,
-    "diff_density": -1.3391701639527724
+    "diff_density": -1.3391701639527724,
+    "unemployment": 4.4
   },
   "36019": {
     "year": 2016,
@@ -19764,7 +21680,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Clinton",
     "diff_margin": -14.46822538586229,
-    "diff_density": -2.1969350098761815
+    "diff_density": -2.1969350098761815,
+    "unemployment": 5.1
   },
   "36021": {
     "year": 2016,
@@ -19775,7 +21692,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Columbia",
     "diff_margin": -7.54103650706292,
-    "diff_density": -2.9491293661672273
+    "diff_density": -2.9491293661672273,
+    "unemployment": 3.3
   },
   "36023": {
     "year": 2016,
@@ -19786,7 +21704,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Cortland",
     "diff_margin": -10.118640903169776,
-    "diff_density": -2.410389766621222
+    "diff_density": -2.410389766621222,
+    "unemployment": 4.6
   },
   "36025": {
     "year": 2016,
@@ -19797,7 +21716,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Delaware",
     "diff_margin": -11.784784565192929,
-    "diff_density": -0.5950506086908298
+    "diff_density": -0.5950506086908298,
+    "unemployment": 4.9
   },
   "36027": {
     "year": 2016,
@@ -19808,7 +21728,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Dutchess",
     "diff_margin": -5.483466584580569,
-    "diff_density": -4.406008320450439
+    "diff_density": -4.406008320450439,
+    "unemployment": 4
   },
   "36029": {
     "year": 2016,
@@ -19819,7 +21740,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Erie",
     "diff_margin": -7.194930906358287,
-    "diff_density": -29.68300798895166
+    "diff_density": -29.68300798895166,
+    "unemployment": 4.6
   },
   "36031": {
     "year": 2016,
@@ -19830,7 +21752,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Essex",
     "diff_margin": -13.699440944359708,
-    "diff_density": -0.9158377688479185
+    "diff_density": -0.9158377688479185,
+    "unemployment": 4.1
   },
   "36033": {
     "year": 2016,
@@ -19841,7 +21764,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Franklin",
     "diff_margin": -19.067818853974124,
-    "diff_density": -0.4817285405617753
+    "diff_density": -0.4817285405617753,
+    "unemployment": 4.8
   },
   "36035": {
     "year": 2016,
@@ -19852,7 +21776,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Fulton",
     "diff_margin": -13.55502695976773,
-    "diff_density": -1.0313060326558627
+    "diff_density": -1.0313060326558627,
+    "unemployment": 5.2
   },
   "36037": {
     "year": 2016,
@@ -19863,7 +21788,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Genesee",
     "diff_margin": -10.406099006663123,
-    "diff_density": -0.5732705805980487
+    "diff_density": -0.5732705805980487,
+    "unemployment": 3.8
   },
   "36039": {
     "year": 2016,
@@ -19874,7 +21800,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Greene",
     "diff_margin": -9.930924267316762,
-    "diff_density": -2.783377217380554
+    "diff_density": -2.783377217380554,
+    "unemployment": 4.5
   },
   "36041": {
     "year": 2016,
@@ -19885,7 +21812,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Hamilton",
     "diff_margin": -8.263809523809524,
-    "diff_density": -0.2448160268317252
+    "diff_density": -0.2448160268317252,
+    "unemployment": 2.9
   },
   "36043": {
     "year": 2016,
@@ -19896,7 +21824,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Herkimer",
     "diff_margin": -14.975896294464366,
-    "diff_density": -0.5515369083296129
+    "diff_density": -0.5515369083296129,
+    "unemployment": 4.4
   },
   "36045": {
     "year": 2016,
@@ -19907,7 +21836,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Jefferson",
     "diff_margin": -12.023321658932375,
-    "diff_density": -1.1412737763974157
+    "diff_density": -1.1412737763974157,
+    "unemployment": 5.1
   },
   "36047": {
     "year": 2016,
@@ -19918,7 +21848,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Kings",
     "diff_margin": -2.2512907764355816,
-    "diff_density": 127.0330189212109
+    "diff_density": 127.0330189212109,
+    "unemployment": 5.9
   },
   "36049": {
     "year": 2016,
@@ -19929,7 +21860,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Lewis",
     "diff_margin": -17.475640031031805,
-    "diff_density": -0.16012646311231116
+    "diff_density": -0.16012646311231116,
+    "unemployment": 5.4
   },
   "36051": {
     "year": 2016,
@@ -19940,7 +21872,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Livingston",
     "diff_margin": -7.914915254237286,
-    "diff_density": 3.951387868810947
+    "diff_density": 3.951387868810947,
+    "unemployment": 4.2
   },
   "36053": {
     "year": 2016,
@@ -19951,7 +21884,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Madison",
     "diff_margin": -10.862406542056071,
-    "diff_density": -1.0699346405228738
+    "diff_density": -1.0699346405228738,
+    "unemployment": 4.6
   },
   "36055": {
     "year": 2016,
@@ -19962,7 +21896,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Monroe",
     "diff_margin": -3.603175497557501,
-    "diff_density": -20.77368771016876
+    "diff_density": -20.77368771016876,
+    "unemployment": 4.6
   },
   "36057": {
     "year": 2016,
@@ -19973,7 +21908,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Montgomery",
     "diff_margin": -12.516033948847351,
-    "diff_density": -1.853822945613338
+    "diff_density": -1.853822945613338,
+    "unemployment": 5.2
   },
   "36059": {
     "year": 2016,
@@ -19984,7 +21920,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Nassau",
     "diff_margin": -2.029018175632743,
-    "diff_density": 110.60073054228678
+    "diff_density": 110.60073054228678,
+    "unemployment": 3.8
   },
   "36061": {
     "year": 2016,
@@ -19995,7 +21932,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "New York",
     "diff_margin": 3.427550493093989,
-    "diff_density": -392.00005694261927
+    "diff_density": -392.00005694261927,
+    "unemployment": 4.9
   },
   "36063": {
     "year": 2016,
@@ -20006,7 +21944,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Niagara",
     "diff_margin": -11.178139534883726,
-    "diff_density": -5.772585190290215
+    "diff_density": -5.772585190290215,
+    "unemployment": 5.2
   },
   "36065": {
     "year": 2016,
@@ -20017,7 +21956,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Oneida",
     "diff_margin": -10.019930373408364,
-    "diff_density": -2.3299236244566828
+    "diff_density": -2.3299236244566828,
+    "unemployment": 4.3
   },
   "36067": {
     "year": 2016,
@@ -20028,7 +21968,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Onondaga",
     "diff_margin": -6.107826757379065,
-    "diff_density": -16.385834864271118
+    "diff_density": -16.385834864271118,
+    "unemployment": 4.2
   },
   "36069": {
     "year": 2016,
@@ -20039,7 +21980,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Ontario",
     "diff_margin": -5.92151064548834,
-    "diff_density": -0.7924619994721098
+    "diff_density": -0.7924619994721098,
+    "unemployment": 3.7
   },
   "36071": {
     "year": 2016,
@@ -20050,7 +21992,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Orange",
     "diff_margin": -7.344453688376092,
-    "diff_density": 0.1573353127425321
+    "diff_density": 0.1573353127425321,
+    "unemployment": 4.2
   },
   "36073": {
     "year": 2016,
@@ -20061,7 +22004,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Orleans",
     "diff_margin": -13.473908623370413,
-    "diff_density": 5.148843735623366
+    "diff_density": 5.148843735623366,
+    "unemployment": 5.2
   },
   "36075": {
     "year": 2016,
@@ -20072,7 +22016,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Oswego",
     "diff_margin": -17.341758306513753,
-    "diff_density": -0.49631587243209196
+    "diff_density": -0.49631587243209196,
+    "unemployment": 5.7
   },
   "36077": {
     "year": 2016,
@@ -20083,7 +22028,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Otsego",
     "diff_margin": -9.872515635858242,
-    "diff_density": -1.1150743735649407
+    "diff_density": -1.1150743735649407,
+    "unemployment": 4.3
   },
   "36079": {
     "year": 2016,
@@ -20094,7 +22040,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Putnam",
     "diff_margin": -4.704748110261171,
-    "diff_density": -0.6855429638313524
+    "diff_density": -0.6855429638313524,
+    "unemployment": 3.9
   },
   "36081": {
     "year": 2016,
@@ -20105,7 +22052,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Queens",
     "diff_margin": -3.58189068627685,
-    "diff_density": 292.88795448263136
+    "diff_density": 292.88795448263136,
+    "unemployment": 5
   },
   "36083": {
     "year": 2016,
@@ -20116,7 +22064,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Rensselaer",
     "diff_margin": -9.500156384961592,
-    "diff_density": -3.0635168523826195
+    "diff_density": -3.0635168523826195,
+    "unemployment": 4.1
   },
   "36085": {
     "year": 2016,
@@ -20127,7 +22076,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Richmond",
     "diff_margin": -10.304878266122039,
-    "diff_density": 223.20936953914725
+    "diff_density": 223.20936953914725,
+    "unemployment": 5.9
   },
   "36087": {
     "year": 2016,
@@ -20138,7 +22088,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Rockland",
     "diff_margin": -1.5638856571165718,
-    "diff_density": -2.8769346009795527
+    "diff_density": -2.8769346009795527,
+    "unemployment": 4.1
   },
   "36089": {
     "year": 2016,
@@ -20149,7 +22100,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "St. Lawrence",
     "diff_margin": -15.710620128577112,
-    "diff_density": -0.7646954536297113
+    "diff_density": -0.7646954536297113,
+    "unemployment": 5.8
   },
   "36091": {
     "year": 2016,
@@ -20160,7 +22112,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Saratoga",
     "diff_margin": -5.47249863097926,
-    "diff_density": -1.751888688609597
+    "diff_density": -1.751888688609597,
+    "unemployment": 3.5
   },
   "36093": {
     "year": 2016,
@@ -20171,7 +22124,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Schenectady",
     "diff_margin": -6.649944993428427,
-    "diff_density": -16.165167220809735
+    "diff_density": -16.165167220809735,
+    "unemployment": 4.2
   },
   "36095": {
     "year": 2016,
@@ -20182,7 +22136,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Schoharie",
     "diff_margin": -11.286480707014917,
-    "diff_density": -0.8595040365379063
+    "diff_density": -0.8595040365379063,
+    "unemployment": 4.7
   },
   "36097": {
     "year": 2016,
@@ -20193,7 +22148,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Schuyler",
     "diff_margin": -12.320705211919744,
-    "diff_density": 0.8440675539853224
+    "diff_density": 0.8440675539853224,
+    "unemployment": 4.6
   },
   "36099": {
     "year": 2016,
@@ -20204,7 +22160,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Seneca",
     "diff_margin": -12.818414394594164,
-    "diff_density": -1.6627309236947738
+    "diff_density": -1.6627309236947738,
+    "unemployment": 3.8
   },
   "36101": {
     "year": 2016,
@@ -20215,7 +22172,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Steuben",
     "diff_margin": -11.727717980809341,
-    "diff_density": -0.1297445633413865
+    "diff_density": -0.1297445633413865,
+    "unemployment": 5
   },
   "36103": {
     "year": 2016,
@@ -20226,7 +22184,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Suffolk",
     "diff_margin": -6.908509237358565,
-    "diff_density": 34.48887835096764
+    "diff_density": 34.48887835096764,
+    "unemployment": 4.3
   },
   "36105": {
     "year": 2016,
@@ -20237,7 +22196,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Sullivan",
     "diff_margin": -12.298787958806443,
-    "diff_density": -1.968346709636105
+    "diff_density": -1.968346709636105,
+    "unemployment": 4.1
   },
   "36107": {
     "year": 2016,
@@ -20248,7 +22208,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Tioga",
     "diff_margin": -8.02666666666667,
-    "diff_density": -1.9925144620131192
+    "diff_density": -1.9925144620131192,
+    "unemployment": 4.5
   },
   "36109": {
     "year": 2016,
@@ -20259,7 +22220,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Tompkins",
     "diff_margin": -0.9792555699790739,
-    "diff_density": -4.054033498367218
+    "diff_density": -4.054033498367218,
+    "unemployment": 3.7
   },
   "36111": {
     "year": 2016,
@@ -20270,7 +22232,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Ulster",
     "diff_margin": -8.099229652293417,
-    "diff_density": -2.219484358182939
+    "diff_density": -2.219484358182939,
+    "unemployment": 4.3
   },
   "36113": {
     "year": 2016,
@@ -20281,7 +22244,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Warren",
     "diff_margin": -8.83103888566454,
-    "diff_density": -2.3211650037487743
+    "diff_density": -2.3211650037487743,
+    "unemployment": 4.1
   },
   "36115": {
     "year": 2016,
@@ -20292,7 +22256,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Washington",
     "diff_margin": -13.114856033212803,
-    "diff_density": -0.8391590269255715
+    "diff_density": -0.8391590269255715,
+    "unemployment": 3.8
   },
   "36117": {
     "year": 2016,
@@ -20303,7 +22268,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Wayne",
     "diff_margin": -10.478479698344167,
-    "diff_density": -1.5702257257837502
+    "diff_density": -1.5702257257837502,
+    "unemployment": 4.5
   },
   "36119": {
     "year": 2016,
@@ -20314,7 +22280,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Westchester",
     "diff_margin": 2.9151798386287098,
-    "diff_density": -23.09584204413477
+    "diff_density": -23.09584204413477,
+    "unemployment": 4.2
   },
   "36121": {
     "year": 2016,
@@ -20325,7 +22292,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Wyoming",
     "diff_margin": -12.639115479115475,
-    "diff_density": -0.09479544495993153
+    "diff_density": -0.09479544495993153,
+    "unemployment": 4.1
   },
   "36123": {
     "year": 2016,
@@ -20336,7 +22304,8 @@ export const counties = {
     "statenam": "New York",
     "cty_name": "Yates",
     "diff_margin": -11.663704735376044,
-    "diff_density": -1.3777393978825359
+    "diff_density": -1.3777393978825359,
+    "unemployment": 3.7
   },
   "37001": {
     "year": 2016,
@@ -20347,7 +22316,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Alamance",
     "diff_margin": -0.34428274428274364,
-    "diff_density": 3.5116106052743135
+    "diff_density": 3.5116106052743135,
+    "unemployment": 4.8
   },
   "37003": {
     "year": 2016,
@@ -20358,7 +22328,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Alexander",
     "diff_margin": -5.989390372550105,
-    "diff_density": 3.1357413746682568
+    "diff_density": 3.1357413746682568,
+    "unemployment": 4.5
   },
   "37005": {
     "year": 2016,
@@ -20369,7 +22340,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Alleghany",
     "diff_margin": -6.307126965861141,
-    "diff_density": 0.6215706628094964
+    "diff_density": 0.6215706628094964,
+    "unemployment": 5.1
   },
   "37007": {
     "year": 2016,
@@ -20380,7 +22352,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Anson",
     "diff_margin": -6.702890128920529,
-    "diff_density": -1.6221864709756346
+    "diff_density": -1.6221864709756346,
+    "unemployment": 5.9
   },
   "37009": {
     "year": 2016,
@@ -20391,7 +22364,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Ashe",
     "diff_margin": -6.226626139817629,
-    "diff_density": 1.2925945134114016
+    "diff_density": 1.2925945134114016,
+    "unemployment": 4.5
   },
   "37011": {
     "year": 2016,
@@ -20402,7 +22376,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Avery",
     "diff_margin": -3.540397022332506,
-    "diff_density": 1.2196932291877474
+    "diff_density": 1.2196932291877474,
+    "unemployment": 4.8
   },
   "37013": {
     "year": 2016,
@@ -20413,7 +22388,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Beaufort",
     "diff_margin": -3.07826857070215,
-    "diff_density": -0.02088335207147196
+    "diff_density": -0.02088335207147196,
+    "unemployment": 5.6
   },
   "37015": {
     "year": 2016,
@@ -20424,7 +22400,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Bertie",
     "diff_margin": -3.911855010660986,
-    "diff_density": -1.0660111258884264
+    "diff_density": -1.0660111258884264,
+    "unemployment": 6.4
   },
   "37017": {
     "year": 2016,
@@ -20435,7 +22412,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Bladen",
     "diff_margin": -5.922401067140953,
-    "diff_density": -0.24421271144762358
+    "diff_density": -0.24421271144762358,
+    "unemployment": 6.7
   },
   "37019": {
     "year": 2016,
@@ -20446,7 +22424,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Brunswick",
     "diff_margin": -4.047834361757495,
-    "diff_density": 11.676590552203734
+    "diff_density": 11.676590552203734,
+    "unemployment": 5.7
   },
   "37021": {
     "year": 2016,
@@ -20457,7 +22436,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Buncombe",
     "diff_margin": 0.40234210858913855,
-    "diff_density": 10.371955167740282
+    "diff_density": 10.371955167740282,
+    "unemployment": 3.9
   },
   "37023": {
     "year": 2016,
@@ -20468,7 +22448,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Burke",
     "diff_margin": -8.450199798076415,
-    "diff_density": 2.162046933543678
+    "diff_density": 2.162046933543678,
+    "unemployment": 5.1
   },
   "37025": {
     "year": 2016,
@@ -20479,7 +22460,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Cabarrus",
     "diff_margin": -0.796560734928903,
-    "diff_density": 20.550469937802347
+    "diff_density": 20.550469937802347,
+    "unemployment": 4.6
   },
   "37027": {
     "year": 2016,
@@ -20490,7 +22472,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Caldwell",
     "diff_margin": -7.873132290821609,
-    "diff_density": 2.154228428441158
+    "diff_density": 2.154228428441158,
+    "unemployment": 5.3
   },
   "37029": {
     "year": 2016,
@@ -20501,7 +22484,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Camden",
     "diff_margin": -6.427280826078153,
-    "diff_density": 0.9812603924176919
+    "diff_density": 0.9812603924176919,
+    "unemployment": 5.3
   },
   "37031": {
     "year": 2016,
@@ -20512,7 +22496,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Carteret",
     "diff_margin": -2.4391505728757537,
-    "diff_density": 2.7664197530864243
+    "diff_density": 2.7664197530864243,
+    "unemployment": 4.7
   },
   "37033": {
     "year": 2016,
@@ -20523,7 +22508,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Caswell",
     "diff_margin": -5.187993342843562,
-    "diff_density": -1.2341654899745862
+    "diff_density": -1.2341654899745862,
+    "unemployment": 5.5
   },
   "37035": {
     "year": 2016,
@@ -20534,7 +22520,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Catawba",
     "diff_margin": -4.9592302821360725,
-    "diff_density": 3.6728451043338453
+    "diff_density": 3.6728451043338453,
+    "unemployment": 4.9
   },
   "37037": {
     "year": 2016,
@@ -20545,7 +22532,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Chatham",
     "diff_margin": 1.7956601842374553,
-    "diff_density": 5.34693306751884
+    "diff_density": 5.34693306751884,
+    "unemployment": 4.3
   },
   "37039": {
     "year": 2016,
@@ -20556,7 +22544,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Cherokee",
     "diff_margin": -5.983044733044732,
-    "diff_density": 2.182777814373228
+    "diff_density": 2.182777814373228,
+    "unemployment": 5.4
   },
   "37041": {
     "year": 2016,
@@ -20567,7 +22556,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Chowan",
     "diff_margin": -5.666437816544743,
-    "diff_density": -2.297035426450975
+    "diff_density": -2.297035426450975,
+    "unemployment": 6.5
   },
   "37043": {
     "year": 2016,
@@ -20578,7 +22568,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Clay",
     "diff_margin": -5.016338147833473,
-    "diff_density": 1.1339580908032616
+    "diff_density": 1.1339580908032616,
+    "unemployment": 5.1
   },
   "37045": {
     "year": 2016,
@@ -20589,7 +22580,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Cleveland",
     "diff_margin": -5.620538097287991,
-    "diff_density": 1.721620893914917
+    "diff_density": 1.721620893914917,
+    "unemployment": 5.6
   },
   "37047": {
     "year": 2016,
@@ -20600,7 +22592,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Columbus",
     "diff_margin": -7.274785276073622,
-    "diff_density": -0.8175905002720611
+    "diff_density": -0.8175905002720611,
+    "unemployment": 6.1
   },
   "37049": {
     "year": 2016,
@@ -20611,7 +22604,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Craven",
     "diff_margin": -2.827709545543037,
-    "diff_density": 0.08960279846535002
+    "diff_density": 0.08960279846535002,
+    "unemployment": 5.1
   },
   "37051": {
     "year": 2016,
@@ -20622,7 +22616,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Cumberland",
     "diff_margin": -2.6903969389559634,
-    "diff_density": -4.962985038018161
+    "diff_density": -4.962985038018161,
+    "unemployment": 6.3
   },
   "37053": {
     "year": 2016,
@@ -20633,7 +22628,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Currituck",
     "diff_margin": -8.335243499959756,
-    "diff_density": 4.273192667557758
+    "diff_density": 4.273192667557758,
+    "unemployment": 4.6
   },
   "37055": {
     "year": 2016,
@@ -20644,7 +22640,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Dare",
     "diff_margin": -3.889745383765586,
-    "diff_density": 2.6974868290647294
+    "diff_density": 2.6974868290647294,
+    "unemployment": 4.2
   },
   "37057": {
     "year": 2016,
@@ -20655,7 +22652,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Davidson",
     "diff_margin": -5.007677919264577,
-    "diff_density": 1.9501791304033418
+    "diff_density": 1.9501791304033418,
+    "unemployment": 4.9
   },
   "37059": {
     "year": 2016,
@@ -20666,7 +22664,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Davie",
     "diff_margin": -3.262880562060893,
-    "diff_density": 2.5775298171216434
+    "diff_density": 2.5775298171216434,
+    "unemployment": 4.6
   },
   "37061": {
     "year": 2016,
@@ -20677,7 +22676,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Duplin",
     "diff_margin": -4.0855235182758065,
-    "diff_density": 0.009518757197813699
+    "diff_density": 0.009518757197813699,
+    "unemployment": 5.4
   },
   "37063": {
     "year": 2016,
@@ -20688,7 +22688,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Durham",
     "diff_margin": 3.103037670300182,
-    "diff_density": 13.310937827820112
+    "diff_density": 13.310937827820112,
+    "unemployment": 4.5
   },
   "37065": {
     "year": 2016,
@@ -20699,7 +22700,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Edgecombe",
     "diff_margin": -2.3726187482253636,
-    "diff_density": -4.585023548501994
+    "diff_density": -4.585023548501994,
+    "unemployment": 8.5
   },
   "37067": {
     "year": 2016,
@@ -20710,7 +22712,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Forsyth",
     "diff_margin": 0.5734346613799914,
-    "diff_density": -3.819213524439533
+    "diff_density": -3.819213524439533,
+    "unemployment": 4.9
   },
   "37069": {
     "year": 2016,
@@ -20721,7 +22724,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Franklin",
     "diff_margin": -4.486711925623702,
-    "diff_density": 3.0759778717865274
+    "diff_density": 3.0759778717865274,
+    "unemployment": 5.1
   },
   "37071": {
     "year": 2016,
@@ -20732,7 +22736,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Gaston",
     "diff_margin": -4.003367906231553,
-    "diff_density": 12.321926523045846
+    "diff_density": 12.321926523045846,
+    "unemployment": 5.3
   },
   "37073": {
     "year": 2016,
@@ -20743,7 +22748,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Gates",
     "diff_margin": -7.1292492492492485,
-    "diff_density": -0.19966513923158224
+    "diff_density": -0.19966513923158224,
+    "unemployment": 5.2
   },
   "37075": {
     "year": 2016,
@@ -20754,7 +22760,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Graham",
     "diff_margin": -9.76182217879824,
-    "diff_density": 0.5067077513010148
+    "diff_density": 0.5067077513010148,
+    "unemployment": 7.1
   },
   "37077": {
     "year": 2016,
@@ -20765,7 +22772,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Granville",
     "diff_margin": -4.101411589895989,
-    "diff_density": 1.2124365558628156
+    "diff_density": 1.2124365558628156,
+    "unemployment": 4.4
   },
   "37079": {
     "year": 2016,
@@ -20776,7 +22784,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Greene",
     "diff_margin": -1.3173979782852783,
-    "diff_density": -0.8380103786710791
+    "diff_density": -0.8380103786710791,
+    "unemployment": 5
   },
   "37081": {
     "year": 2016,
@@ -20787,7 +22796,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Guilford",
     "diff_margin": 1.0296587289308832,
-    "diff_density": -2.7311413969335945
+    "diff_density": -2.7311413969335945,
+    "unemployment": 5.3
   },
   "37083": {
     "year": 2016,
@@ -20798,7 +22808,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Halifax",
     "diff_margin": -2.992751899039426,
-    "diff_density": -1.6582493888881231
+    "diff_density": -1.6582493888881231,
+    "unemployment": 7.8
   },
   "37085": {
     "year": 2016,
@@ -20809,7 +22820,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Harnett",
     "diff_margin": -3.323403403403404,
-    "diff_density": 2.585891695658745
+    "diff_density": 2.585891695658745,
+    "unemployment": 5.8
   },
   "37087": {
     "year": 2016,
@@ -20820,7 +22832,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Haywood",
     "diff_margin": -7.766242207189279,
-    "diff_density": 3.943689067889963
+    "diff_density": 3.943689067889963,
+    "unemployment": 4.4
   },
   "37089": {
     "year": 2016,
@@ -20831,7 +22844,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Henderson",
     "diff_margin": -0.9663756380918826,
-    "diff_density": 11.837052563862017
+    "diff_density": 11.837052563862017,
+    "unemployment": 4.3
   },
   "37091": {
     "year": 2016,
@@ -20842,7 +22856,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Hertford",
     "diff_margin": -3.6617821782178197,
-    "diff_density": -2.312964368662552
+    "diff_density": -2.312964368662552,
+    "unemployment": 6.5
   },
   "37093": {
     "year": 2016,
@@ -20853,7 +22868,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Hoke",
     "diff_margin": -5.124621505014851,
-    "diff_density": 1.9448733172953894
+    "diff_density": 1.9448733172953894,
+    "unemployment": 6.5
   },
   "37095": {
     "year": 2016,
@@ -20864,7 +22880,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Hyde",
     "diff_margin": -6.741047074351073,
-    "diff_density": -0.18019095805451313
+    "diff_density": -0.18019095805451313,
+    "unemployment": 6.4
   },
   "37097": {
     "year": 2016,
@@ -20875,7 +22892,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Iredell",
     "diff_margin": -3.8738842023114906,
-    "diff_density": 7.601037938065247
+    "diff_density": 7.601037938065247,
+    "unemployment": 4.7
   },
   "37099": {
     "year": 2016,
@@ -20886,7 +22904,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Jackson",
     "diff_margin": -6.457113974672296,
-    "diff_density": 2.6567040244523668
+    "diff_density": 2.6567040244523668,
+    "unemployment": 5.1
   },
   "37101": {
     "year": 2016,
@@ -20897,7 +22916,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Johnston",
     "diff_margin": -2.2837242912729323,
-    "diff_density": 9.933279413623154
+    "diff_density": 9.933279413623154,
+    "unemployment": 4.5
   },
   "37103": {
     "year": 2016,
@@ -20908,7 +22928,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Jones",
     "diff_margin": -4.465931732486602,
-    "diff_density": -0.4048949459327389
+    "diff_density": -0.4048949459327389,
+    "unemployment": 5.1
   },
   "37105": {
     "year": 2016,
@@ -20919,7 +22940,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Lee",
     "diff_margin": -2.4948354676608844,
-    "diff_density": 1.7138092249764725
+    "diff_density": 1.7138092249764725,
+    "unemployment": 5.7
   },
   "37107": {
     "year": 2016,
@@ -20930,7 +22952,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Lenoir",
     "diff_margin": -3.5737254901960753,
-    "diff_density": -6.453892758181681
+    "diff_density": -6.453892758181681,
+    "unemployment": 5.4
   },
   "37109": {
     "year": 2016,
@@ -20941,7 +22964,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Lincoln",
     "diff_margin": -5.046541610687214,
-    "diff_density": 8.97585352755587
+    "diff_density": 8.97585352755587,
+    "unemployment": 4.6
   },
   "37111": {
     "year": 2016,
@@ -20952,7 +22976,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "McDowell",
     "diff_margin": -9.56891343253055,
-    "diff_density": 3.3061918703615447
+    "diff_density": 3.3061918703615447,
+    "unemployment": 4.6
   },
   "37113": {
     "year": 2016,
@@ -20963,7 +22988,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Macon",
     "diff_margin": -5.955449930779881,
-    "diff_density": 0.9255721933431644
+    "diff_density": 0.9255721933431644,
+    "unemployment": 5.1
   },
   "37115": {
     "year": 2016,
@@ -20974,7 +23000,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Madison",
     "diff_margin": -8.784647091008573,
-    "diff_density": 1.9021969882332037
+    "diff_density": 1.9021969882332037,
+    "unemployment": 4.9
   },
   "37117": {
     "year": 2016,
@@ -20985,7 +23012,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Martin",
     "diff_margin": -2.9749881876476536,
-    "diff_density": -1.732935692294351
+    "diff_density": -1.732935692294351,
+    "unemployment": 6.8
   },
   "37119": {
     "year": 2016,
@@ -20996,7 +23024,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Mecklenburg",
     "diff_margin": 2.632045063810814,
-    "diff_density": 24.691795968234487
+    "diff_density": 24.691795968234487,
+    "unemployment": 4.7
   },
   "37121": {
     "year": 2016,
@@ -21007,7 +23036,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Mitchell",
     "diff_margin": -3.7278761952692534,
-    "diff_density": 0.8239619744388733
+    "diff_density": 0.8239619744388733,
+    "unemployment": 6
   },
   "37123": {
     "year": 2016,
@@ -21018,7 +23048,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Montgomery",
     "diff_margin": -6.019137042536464,
-    "diff_density": 0.4416821213600137
+    "diff_density": 0.4416821213600137,
+    "unemployment": 5.2
   },
   "37125": {
     "year": 2016,
@@ -21029,7 +23060,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Moore",
     "diff_margin": -1.739365810748545,
-    "diff_density": 1.9096950590393078
+    "diff_density": 1.9096950590393078,
+    "unemployment": 5
   },
   "37127": {
     "year": 2016,
@@ -21040,7 +23072,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Nash",
     "diff_margin": -1.0514555572138278,
-    "diff_density": -2.9384898502988506
+    "diff_density": -2.9384898502988506,
+    "unemployment": 6.8
   },
   "37129": {
     "year": 2016,
@@ -21051,7 +23084,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "New Hanover",
     "diff_margin": -0.7760883599878667,
-    "diff_density": 26.688293217772753
+    "diff_density": 26.688293217772753,
+    "unemployment": 4.7
   },
   "37131": {
     "year": 2016,
@@ -21062,7 +23096,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Northampton",
     "diff_margin": -4.613219956971619,
-    "diff_density": -1.8592025568870092
+    "diff_density": -1.8592025568870092,
+    "unemployment": 7.3
   },
   "37133": {
     "year": 2016,
@@ -21073,7 +23108,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Onslow",
     "diff_margin": -4.9623545986561695,
-    "diff_density": 5.155677950546703
+    "diff_density": 5.155677950546703,
+    "unemployment": 5.4
   },
   "37135": {
     "year": 2016,
@@ -21084,7 +23120,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Orange",
     "diff_margin": 3.8185819867217816,
-    "diff_density": 7.718050055281964
+    "diff_density": 7.718050055281964,
+    "unemployment": 4.5
   },
   "37137": {
     "year": 2016,
@@ -21095,7 +23132,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Pamlico",
     "diff_margin": -3.311252215002952,
-    "diff_density": 0.03242229749806924
+    "diff_density": 0.03242229749806924,
+    "unemployment": 5.1
   },
   "37139": {
     "year": 2016,
@@ -21106,7 +23144,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Pasquotank",
     "diff_margin": -6.939160575336004,
-    "diff_density": -5.039196050775743
+    "diff_density": -5.039196050775743,
+    "unemployment": 6.2
   },
   "37141": {
     "year": 2016,
@@ -21117,7 +23156,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Pender",
     "diff_margin": -5.707647754137113,
-    "diff_density": 2.924754251026112
+    "diff_density": 2.924754251026112,
+    "unemployment": 5.2
   },
   "37143": {
     "year": 2016,
@@ -21128,7 +23168,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Perquimans",
     "diff_margin": -6.741561789234268,
-    "diff_density": -0.22932049050953296
+    "diff_density": -0.22932049050953296,
+    "unemployment": 6.3
   },
   "37145": {
     "year": 2016,
@@ -21139,7 +23180,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Person",
     "diff_margin": -3.7968284722581984,
-    "diff_density": 0.5021818923327857
+    "diff_density": 0.5021818923327857,
+    "unemployment": 5.4
   },
   "37147": {
     "year": 2016,
@@ -21150,7 +23192,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Pitt",
     "diff_margin": -0.7153715629152657,
-    "diff_density": -0.909507960366895
+    "diff_density": -0.909507960366895,
+    "unemployment": 5.7
   },
   "37149": {
     "year": 2016,
@@ -21161,7 +23204,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Polk",
     "diff_margin": -3.984844726289289,
-    "diff_density": 1.4044110349468042
+    "diff_density": 1.4044110349468042,
+    "unemployment": 4.9
   },
   "37151": {
     "year": 2016,
@@ -21172,7 +23216,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Randolph",
     "diff_margin": -3.7782433388351784,
-    "diff_density": 3.7050467719674884
+    "diff_density": 3.7050467719674884,
+    "unemployment": 4.8
   },
   "37153": {
     "year": 2016,
@@ -21183,7 +23228,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Richmond",
     "diff_margin": -6.944725987349166,
-    "diff_density": -1.2750487526908927
+    "diff_density": -1.2750487526908927,
+    "unemployment": 6.9
   },
   "37155": {
     "year": 2016,
@@ -21194,7 +23240,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Robeson",
     "diff_margin": -11.601706290870382,
-    "diff_density": -3.6753469164155845
+    "diff_density": -3.6753469164155845,
+    "unemployment": 7.3
   },
   "37157": {
     "year": 2016,
@@ -21205,7 +23252,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Rockingham",
     "diff_margin": -4.9345564847488745,
-    "diff_density": -1.1428962956414068
+    "diff_density": -1.1428962956414068,
+    "unemployment": 5.5
   },
   "37159": {
     "year": 2016,
@@ -21216,7 +23264,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Rowan",
     "diff_margin": -5.898812581248617,
-    "diff_density": 1.500998298687847
+    "diff_density": 1.500998298687847,
+    "unemployment": 5.5
   },
   "37161": {
     "year": 2016,
@@ -21227,7 +23276,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Rutherford",
     "diff_margin": -7.626402365273478,
-    "diff_density": 1.8790179916688814
+    "diff_density": 1.8790179916688814,
+    "unemployment": 6.6
   },
   "37163": {
     "year": 2016,
@@ -21238,7 +23288,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Sampson",
     "diff_margin": -3.2897737733052423,
-    "diff_density": -0.5623748332874641
+    "diff_density": -0.5623748332874641,
+    "unemployment": 5.6
   },
   "37165": {
     "year": 2016,
@@ -21249,7 +23300,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Scotland",
     "diff_margin": -5.0648541075456635,
-    "diff_density": -1.298228006899798
+    "diff_density": -1.298228006899798,
+    "unemployment": 8.9
   },
   "37167": {
     "year": 2016,
@@ -21260,7 +23312,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Stanly",
     "diff_margin": -5.56454313945197,
-    "diff_density": 1.8525093016781113
+    "diff_density": 1.8525093016781113,
+    "unemployment": 4.7
   },
   "37169": {
     "year": 2016,
@@ -21271,7 +23324,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Stokes",
     "diff_margin": -6.899597872148586,
-    "diff_density": 1.2585269349017523
+    "diff_density": 1.2585269349017523,
+    "unemployment": 4.9
   },
   "37171": {
     "year": 2016,
@@ -21282,7 +23336,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Surry",
     "diff_margin": -7.428858920506585,
-    "diff_density": 4.117904804855591
+    "diff_density": 4.117904804855591,
+    "unemployment": 4.8
   },
   "37173": {
     "year": 2016,
@@ -21293,7 +23348,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Swain",
     "diff_margin": -9.167037780006687,
-    "diff_density": 0.4795454545454554
+    "diff_density": 0.4795454545454554,
+    "unemployment": 4.9
   },
   "37175": {
     "year": 2016,
@@ -21304,7 +23360,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Transylvania",
     "diff_margin": -3.3346788990825686,
-    "diff_density": 1.792966475576577
+    "diff_density": 1.792966475576577,
+    "unemployment": 4.8
   },
   "37177": {
     "year": 2016,
@@ -21315,7 +23372,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Tyrrell",
     "diff_margin": -5.469411764705875,
-    "diff_density": -0.21026938104051052
+    "diff_density": -0.21026938104051052,
+    "unemployment": 6.2
   },
   "37179": {
     "year": 2016,
@@ -21326,7 +23384,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Union",
     "diff_margin": -1.4109703077338906,
-    "diff_density": 14.04231061565747
+    "diff_density": 14.04231061565747,
+    "unemployment": 4.4
   },
   "37181": {
     "year": 2016,
@@ -21337,7 +23396,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Vance",
     "diff_margin": -2.3172846877846354,
-    "diff_density": -4.309542442410859
+    "diff_density": -4.309542442410859,
+    "unemployment": 7.3
   },
   "37183": {
     "year": 2016,
@@ -21348,7 +23408,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Wake",
     "diff_margin": 3.452961991623283,
-    "diff_density": 29.353013816718885
+    "diff_density": 29.353013816718885,
+    "unemployment": 4.2
   },
   "37185": {
     "year": 2016,
@@ -21359,7 +23420,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Warren",
     "diff_margin": -2.8001985577398045,
-    "diff_density": -0.09352378285020535
+    "diff_density": -0.09352378285020535,
+    "unemployment": 7
   },
   "37187": {
     "year": 2016,
@@ -21370,7 +23432,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Washington",
     "diff_margin": -1.907228127555193,
-    "diff_density": -1.104722661074888
+    "diff_density": -1.104722661074888,
+    "unemployment": 6.9
   },
   "37189": {
     "year": 2016,
@@ -21381,7 +23444,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Watauga",
     "diff_margin": 1.5201216587298845,
-    "diff_density": 3.5031277194778596
+    "diff_density": 3.5031277194778596,
+    "unemployment": 4.7
   },
   "37191": {
     "year": 2016,
@@ -21392,7 +23456,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Wayne",
     "diff_margin": -2.207964033397559,
-    "diff_density": -2.7670116979153505
+    "diff_density": -2.7670116979153505,
+    "unemployment": 5.6
   },
   "37193": {
     "year": 2016,
@@ -21403,7 +23468,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Wilkes",
     "diff_margin": -6.574965633510569,
-    "diff_density": 2.2519764543670817
+    "diff_density": 2.2519764543670817,
+    "unemployment": 4.7
   },
   "37195": {
     "year": 2016,
@@ -21414,7 +23480,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Wilson",
     "diff_margin": -1.4368190886601226,
-    "diff_density": -4.112278023739037
+    "diff_density": -4.112278023739037,
+    "unemployment": 8.1
   },
   "37197": {
     "year": 2016,
@@ -21425,7 +23492,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Yadkin",
     "diff_margin": -5.442017291066282,
-    "diff_density": 1.6073401427590142
+    "diff_density": 1.6073401427590142,
+    "unemployment": 4.4
   },
   "37199": {
     "year": 2016,
@@ -21436,7 +23504,8 @@ export const counties = {
     "statenam": "North Carolina",
     "cty_name": "Yancey",
     "diff_margin": -9.687292006525283,
-    "diff_density": 1.145559820857322
+    "diff_density": 1.145559820857322,
+    "unemployment": 5.1
   },
   "38001": {
     "year": 2016,
@@ -21447,7 +23516,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Adams",
     "diff_margin": -7.599552238805973,
-    "diff_density": -0.07888256616917433
+    "diff_density": -0.07888256616917433,
+    "unemployment": 2.3
   },
   "38003": {
     "year": 2016,
@@ -21458,7 +23528,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Barnes",
     "diff_margin": -12.948324766799924,
-    "diff_density": -0.17816030304046127
+    "diff_density": -0.17816030304046127,
+    "unemployment": 3.2
   },
   "38005": {
     "year": 2016,
@@ -21469,7 +23540,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Benson",
     "diff_margin": -13.857938144329893,
-    "diff_density": -0.1530200689848853
+    "diff_density": -0.1530200689848853,
+    "unemployment": 3.1
   },
   "38007": {
     "year": 2016,
@@ -21480,7 +23552,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Billings",
     "diff_margin": -5.602702702702704,
-    "diff_density": 0.015297906602254496
+    "diff_density": 0.015297906602254496,
+    "unemployment": 2.5
   },
   "38009": {
     "year": 2016,
@@ -21491,7 +23564,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Bottineau",
     "diff_margin": -11.924166424207158,
-    "diff_density": -0.06996715455340974
+    "diff_density": -0.06996715455340974,
+    "unemployment": 3.2
   },
   "38011": {
     "year": 2016,
@@ -21502,7 +23576,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Bowman",
     "diff_margin": -10.997891464104011,
-    "diff_density": 0.0226241812344532
+    "diff_density": 0.0226241812344532,
+    "unemployment": 1.8
   },
   "38013": {
     "year": 2016,
@@ -21513,7 +23588,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Burke",
     "diff_margin": -11.034801163918527,
-    "diff_density": 0.004240691573710764
+    "diff_density": 0.004240691573710764,
+    "unemployment": 3.8
   },
   "38015": {
     "year": 2016,
@@ -21524,7 +23600,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Burleigh",
     "diff_margin": -9.370838844562016,
-    "diff_density": 2.1403788319603088
+    "diff_density": 2.1403788319603088,
+    "unemployment": 2.3
   },
   "38017": {
     "year": 2016,
@@ -21535,7 +23612,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Cass",
     "diff_margin": -7.294136307688397,
-    "diff_density": 2.801376250750728
+    "diff_density": 2.801376250750728,
+    "unemployment": 2
   },
   "38019": {
     "year": 2016,
@@ -21546,7 +23624,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Cavalier",
     "diff_margin": -15.365292026409342,
-    "diff_density": -0.06741393786733818
+    "diff_density": -0.06741393786733818,
+    "unemployment": 1.9
   },
   "38021": {
     "year": 2016,
@@ -21557,7 +23636,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Dickey",
     "diff_margin": -10.420657672849913,
-    "diff_density": -0.14361211521295347
+    "diff_density": -0.14361211521295347,
+    "unemployment": 1.8
   },
   "38023": {
     "year": 2016,
@@ -21568,7 +23648,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Divide",
     "diff_margin": -12.658222409435552,
-    "diff_density": 0.02147320330903635
+    "diff_density": 0.02147320330903635,
+    "unemployment": 2
   },
   "38025": {
     "year": 2016,
@@ -21579,7 +23660,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Dunn",
     "diff_margin": -8.790823101409732,
-    "diff_density": 0.08486870537625846
+    "diff_density": 0.08486870537625846,
+    "unemployment": 2.2
   },
   "38027": {
     "year": 2016,
@@ -21590,7 +23672,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Eddy",
     "diff_margin": -12.969803117309269,
-    "diff_density": 0.09439865433137085
+    "diff_density": 0.09439865433137085,
+    "unemployment": 2.8
   },
   "38029": {
     "year": 2016,
@@ -21601,7 +23684,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Emmons",
     "diff_margin": -9.355012761613066,
-    "diff_density": 0.04698165423091427
+    "diff_density": 0.04698165423091427,
+    "unemployment": 3.1
   },
   "38031": {
     "year": 2016,
@@ -21612,7 +23696,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Foster",
     "diff_margin": -15.725079458505007,
-    "diff_density": 0.0236958061216459
+    "diff_density": 0.0236958061216459,
+    "unemployment": 2.5
   },
   "38033": {
     "year": 2016,
@@ -21623,7 +23708,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Golden Valley",
     "diff_margin": -6.950445859872612,
-    "diff_density": 0.011256407438123839
+    "diff_density": 0.011256407438123839,
+    "unemployment": 2.4
   },
   "38035": {
     "year": 2016,
@@ -21634,7 +23720,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Grand Forks",
     "diff_margin": -10.285585473393688,
-    "diff_density": -0.22536223005054623
+    "diff_density": -0.22536223005054623,
+    "unemployment": 2.3
   },
   "38037": {
     "year": 2016,
@@ -21645,7 +23732,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Grant",
     "diff_margin": -9.900102865540045,
-    "diff_density": -0.029695504900128955
+    "diff_density": -0.029695504900128955,
+    "unemployment": 2.1
   },
   "38039": {
     "year": 2016,
@@ -21656,7 +23744,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Griggs",
     "diff_margin": -16.01264635124298,
-    "diff_density": -0.13073812815665464
+    "diff_density": -0.13073812815665464,
+    "unemployment": 2.3
   },
   "38041": {
     "year": 2016,
@@ -21667,7 +23756,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Hettinger",
     "diff_margin": -9.657240285487708,
-    "diff_density": -0.08625885428626945
+    "diff_density": -0.08625885428626945,
+    "unemployment": 2.9
   },
   "38043": {
     "year": 2016,
@@ -21678,7 +23768,11 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Kidder",
     "diff_margin": -16.408851251840943,
-    "diff_density": 0.025040001776212018
+    "diff_density": 0.025040001776212018,
+    "unemployment": 2.6
+  },
+  "38045": {
+    "unemployment": 2
   },
   "38047": {
     "year": 2016,
@@ -21689,7 +23783,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Logan",
     "diff_margin": -10.74621359223301,
-    "diff_density": -0.04255111702020509
+    "diff_density": -0.04255111702020509,
+    "unemployment": 2.9
   },
   "38049": {
     "year": 2016,
@@ -21700,7 +23795,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "McHenry",
     "diff_margin": -17.12950874581318,
-    "diff_density": -0.01613036633848286
+    "diff_density": -0.01613036633848286,
+    "unemployment": 4.1
   },
   "38051": {
     "year": 2016,
@@ -21711,7 +23807,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "McIntosh",
     "diff_margin": -13.626141953619115,
-    "diff_density": -0.11010854287854088
+    "diff_density": -0.11010854287854088,
+    "unemployment": 2.4
   },
   "38053": {
     "year": 2016,
@@ -21722,7 +23819,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "McKenzie",
     "diff_margin": -11.709804092294297,
-    "diff_density": 0.41429979132854156
+    "diff_density": 0.41429979132854156,
+    "unemployment": 3.1
   },
   "38055": {
     "year": 2016,
@@ -21733,7 +23831,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "McLean",
     "diff_margin": -13.266792162888976,
-    "diff_density": 0.12626999166224495
+    "diff_density": 0.12626999166224495,
+    "unemployment": 3.1
   },
   "38057": {
     "year": 2016,
@@ -21744,7 +23843,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Mercer",
     "diff_margin": -12.673067484662578,
-    "diff_density": 0.10600675001917637
+    "diff_density": 0.10600675001917637,
+    "unemployment": 4.5
   },
   "38059": {
     "year": 2016,
@@ -21755,7 +23855,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Morton",
     "diff_margin": -13.03840033446967,
-    "diff_density": 1.0010388470982772
+    "diff_density": 1.0010388470982772,
+    "unemployment": 2.9
   },
   "38061": {
     "year": 2016,
@@ -21766,7 +23867,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Mountrail",
     "diff_margin": -10.372965826889494,
-    "diff_density": 0.30635128472032025
+    "diff_density": 0.30635128472032025,
+    "unemployment": 2.9
   },
   "38063": {
     "year": 2016,
@@ -21777,7 +23879,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Nelson",
     "diff_margin": -14.068913813459268,
-    "diff_density": 0.015455045479083829
+    "diff_density": 0.015455045479083829,
+    "unemployment": 2.9
   },
   "38065": {
     "year": 2016,
@@ -21788,7 +23891,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Oliver",
     "diff_margin": -15.863752495009978,
-    "diff_density": -0.013167983834133645
+    "diff_density": -0.013167983834133645,
+    "unemployment": 5.3
   },
   "38067": {
     "year": 2016,
@@ -21799,7 +23903,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Pembina",
     "diff_margin": -16.472541222114454,
-    "diff_density": -0.14515898059337307
+    "diff_density": -0.14515898059337307,
+    "unemployment": 4.5
   },
   "38069": {
     "year": 2016,
@@ -21810,7 +23915,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Pierce",
     "diff_margin": -8.963366336633666,
-    "diff_density": -0.15688592185352457
+    "diff_density": -0.15688592185352457,
+    "unemployment": 3
   },
   "38071": {
     "year": 2016,
@@ -21821,7 +23927,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Ramsey",
     "diff_margin": -14.447531621310848,
-    "diff_density": 0.1865117748662426
+    "diff_density": 0.1865117748662426,
+    "unemployment": 2.5
   },
   "38073": {
     "year": 2016,
@@ -21832,7 +23939,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Ransom",
     "diff_margin": -19.29886059559776,
-    "diff_density": -0.1231870680458278
+    "diff_density": -0.1231870680458278,
+    "unemployment": 1.9
   },
   "38075": {
     "year": 2016,
@@ -21843,7 +23951,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Renville",
     "diff_margin": -15.20374501992032,
-    "diff_density": -0.029066757881534677
+    "diff_density": -0.029066757881534677,
+    "unemployment": 3.5
   },
   "38077": {
     "year": 2016,
@@ -21854,7 +23963,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Richland",
     "diff_margin": -14.34243967828418,
-    "diff_density": -0.10421791639387656
+    "diff_density": -0.10421791639387656,
+    "unemployment": 2.7
   },
   "38079": {
     "year": 2016,
@@ -21865,7 +23975,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Rolette",
     "diff_margin": -16.396209721463677,
-    "diff_density": -0.984988262390929
+    "diff_density": -0.984988262390929,
+    "unemployment": 14.2
   },
   "38081": {
     "year": 2016,
@@ -21876,7 +23987,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Sargent",
     "diff_margin": -18.52461071789687,
-    "diff_density": -0.03600820025392837
+    "diff_density": -0.03600820025392837,
+    "unemployment": 1.6
   },
   "38083": {
     "year": 2016,
@@ -21887,7 +23999,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Sheridan",
     "diff_margin": -7.6852971576227365,
-    "diff_density": -0.05401489129764081
+    "diff_density": -0.05401489129764081,
+    "unemployment": 3.7
   },
   "38085": {
     "year": 2016,
@@ -21898,7 +24011,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Sioux",
     "diff_margin": -14.268980458793536,
-    "diff_density": 0.025779871856977055
+    "diff_density": 0.025779871856977055,
+    "unemployment": 5.3
   },
   "38087": {
     "year": 2016,
@@ -21909,7 +24023,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Slope",
     "diff_margin": -9.153934426229506,
-    "diff_density": -0.008536529154183015
+    "diff_density": -0.008536529154183015,
+    "unemployment": 2.3
   },
   "38089": {
     "year": 2016,
@@ -21920,7 +24035,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Stark",
     "diff_margin": -9.766368138671071,
-    "diff_density": 0.3567421126370114
+    "diff_density": 0.3567421126370114,
+    "unemployment": 3.3
   },
   "38091": {
     "year": 2016,
@@ -21931,7 +24047,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Steele",
     "diff_margin": -13.023008130081301,
-    "diff_density": -0.07840442559883187
+    "diff_density": -0.07840442559883187,
+    "unemployment": 1.7
   },
   "38093": {
     "year": 2016,
@@ -21942,7 +24059,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Stutsman",
     "diff_margin": -12.515031193399071,
-    "diff_density": 0.17311092306861386
+    "diff_density": 0.17311092306861386,
+    "unemployment": 2.1
   },
   "38095": {
     "year": 2016,
@@ -21953,7 +24071,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Towner",
     "diff_margin": -16.825021987686892,
-    "diff_density": -0.040255329116889005
+    "diff_density": -0.040255329116889005,
+    "unemployment": 2
   },
   "38097": {
     "year": 2016,
@@ -21964,7 +24083,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Traill",
     "diff_margin": -14.124782608695654,
-    "diff_density": -0.06714136550843985
+    "diff_density": -0.06714136550843985,
+    "unemployment": 2.7
   },
   "38099": {
     "year": 2016,
@@ -21975,7 +24095,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Walsh",
     "diff_margin": -15.614140435835353,
-    "diff_density": -0.20612474940129344
+    "diff_density": -0.20612474940129344,
+    "unemployment": 3.6
   },
   "38101": {
     "year": 2016,
@@ -21986,7 +24107,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Ward",
     "diff_margin": -11.587139347008673,
-    "diff_density": 0.6919097194627675
+    "diff_density": 0.6919097194627675,
+    "unemployment": 3.5
   },
   "38103": {
     "year": 2016,
@@ -21997,7 +24119,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Wells",
     "diff_margin": -10.475374149659864,
-    "diff_density": -0.019561386255458224
+    "diff_density": -0.019561386255458224,
+    "unemployment": 2.7
   },
   "38105": {
     "year": 2016,
@@ -22008,7 +24131,8 @@ export const counties = {
     "statenam": "North Dakota",
     "cty_name": "Williams",
     "diff_margin": -9.925886343682658,
-    "diff_density": 1.311096563011457
+    "diff_density": 1.311096563011457,
+    "unemployment": 3.7
   },
   "39001": {
     "year": 2016,
@@ -22019,7 +24143,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Adams",
     "diff_margin": -15.133253186296663,
-    "diff_density": -0.04228903694315278
+    "diff_density": -0.04228903694315278,
+    "unemployment": 6.8
   },
   "39003": {
     "year": 2016,
@@ -22030,7 +24155,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Allen",
     "diff_margin": -8.429990142485888,
-    "diff_density": -8.943105590062117
+    "diff_density": -8.943105590062117,
+    "unemployment": 4.6
   },
   "39005": {
     "year": 2016,
@@ -22041,7 +24167,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Ashland",
     "diff_margin": -10.533312287114729,
-    "diff_density": -0.6007424045395453
+    "diff_density": -0.6007424045395453,
+    "unemployment": 4.3
   },
   "39007": {
     "year": 2016,
@@ -22052,7 +24179,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Ashtabula",
     "diff_margin": -17.110287372202272,
-    "diff_density": -4.636367586511476
+    "diff_density": -4.636367586511476,
+    "unemployment": 5.3
   },
   "39009": {
     "year": 2016,
@@ -22063,7 +24191,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Athens",
     "diff_margin": -10.579858988583076,
-    "diff_density": 0.6025258141381968
+    "diff_density": 0.6025258141381968,
+    "unemployment": 6
   },
   "39011": {
     "year": 2016,
@@ -22074,7 +24203,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Auglaize",
     "diff_margin": -8.17771653543307,
-    "diff_density": -1.3579085179002988
+    "diff_density": -1.3579085179002988,
+    "unemployment": 3.5
   },
   "39013": {
     "year": 2016,
@@ -22085,7 +24215,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Belmont",
     "diff_margin": -16.51715787405443,
-    "diff_density": -1.9336470411365667
+    "diff_density": -1.9336470411365667,
+    "unemployment": 6.3
   },
   "39015": {
     "year": 2016,
@@ -22096,7 +24227,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Brown",
     "diff_margin": -14.339534458435654,
-    "diff_density": -0.5124105138565795
+    "diff_density": -0.5124105138565795,
+    "unemployment": 5
   },
   "39017": {
     "year": 2016,
@@ -22107,7 +24239,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Butler",
     "diff_margin": -2.994564368075423,
-    "diff_density": -3.789648867383221
+    "diff_density": -3.789648867383221,
+    "unemployment": 4.2
   },
   "39019": {
     "year": 2016,
@@ -22118,7 +24251,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Carroll",
     "diff_margin": -17.407089872725848,
-    "diff_density": -1.1551711816730474
+    "diff_density": -1.1551711816730474,
+    "unemployment": 6
   },
   "39021": {
     "year": 2016,
@@ -22129,7 +24263,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Champaign",
     "diff_margin": -12.735652668068422,
-    "diff_density": -1.91977488510976
+    "diff_density": -1.91977488510976,
+    "unemployment": 4.1
   },
   "39023": {
     "year": 2016,
@@ -22140,7 +24275,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Clark",
     "diff_margin": -10.772556189198255,
-    "diff_density": -11.381257956575354
+    "diff_density": -11.381257956575354,
+    "unemployment": 4.7
   },
   "39025": {
     "year": 2016,
@@ -22151,7 +24287,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Clermont",
     "diff_margin": -4.584896583899226,
-    "diff_density": 0.39881663348816687
+    "diff_density": 0.39881663348816687,
+    "unemployment": 4.1
   },
   "39027": {
     "year": 2016,
@@ -22162,7 +24299,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Clinton",
     "diff_margin": -10.135469613259673,
-    "diff_density": -0.11106978565136671
+    "diff_density": -0.11106978565136671,
+    "unemployment": 5.4
   },
   "39029": {
     "year": 2016,
@@ -22173,7 +24311,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Columbiana",
     "diff_margin": -15.923939815735398,
-    "diff_density": -1.4853375697982614
+    "diff_density": -1.4853375697982614,
+    "unemployment": 6
   },
   "39031": {
     "year": 2016,
@@ -22184,7 +24323,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Coshocton",
     "diff_margin": -17.968751420359602,
-    "diff_density": -1.3791706123317553
+    "diff_density": -1.3791706123317553,
+    "unemployment": 6.2
   },
   "39033": {
     "year": 2016,
@@ -22195,7 +24335,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Crawford",
     "diff_margin": -13.75215591915303,
-    "diff_density": -2.743296498170686
+    "diff_density": -2.743296498170686,
+    "unemployment": 5.5
   },
   "39035": {
     "year": 2016,
@@ -22206,7 +24347,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Cuyahoga",
     "diff_margin": -3.584223376712444,
-    "diff_density": -133.5359299197271
+    "diff_density": -133.5359299197271,
+    "unemployment": 5.5
   },
   "39037": {
     "year": 2016,
@@ -22217,7 +24359,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Darke",
     "diff_margin": -9.29,
-    "diff_density": -0.6709697375020909
+    "diff_density": -0.6709697375020909,
+    "unemployment": 3.7
   },
   "39039": {
     "year": 2016,
@@ -22228,7 +24371,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Defiance",
     "diff_margin": -12.59750491711155,
-    "diff_density": -1.2015675885869825
+    "diff_density": -1.2015675885869825,
+    "unemployment": 4.3
   },
   "39041": {
     "year": 2016,
@@ -22239,7 +24383,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Delaware",
     "diff_margin": 1.7840604988961175,
-    "diff_density": 3.0206296547054876
+    "diff_density": 3.0206296547054876,
+    "unemployment": 3.4
   },
   "39043": {
     "year": 2016,
@@ -22250,7 +24395,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Erie",
     "diff_margin": -12.587429893819767,
-    "diff_density": -10.631095563682607
+    "diff_density": -10.631095563682607,
+    "unemployment": 4.6
   },
   "39045": {
     "year": 2016,
@@ -22261,7 +24407,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Fairfield",
     "diff_margin": -7.235076124861784,
-    "diff_density": -3.0294815725302726
+    "diff_density": -3.0294815725302726,
+    "unemployment": 3.9
   },
   "39047": {
     "year": 2016,
@@ -22272,7 +24419,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Fayette",
     "diff_margin": -13.858141813811596,
-    "diff_density": -0.5007461364307524
+    "diff_density": -0.5007461364307524,
+    "unemployment": 3.9
   },
   "39049": {
     "year": 2016,
@@ -22283,7 +24431,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Franklin",
     "diff_margin": -0.09494900948421758,
-    "diff_density": -30.582406659276103
+    "diff_density": -30.582406659276103,
+    "unemployment": 3.9
   },
   "39051": {
     "year": 2016,
@@ -22294,7 +24443,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Fulton",
     "diff_margin": -13.756506064852847,
-    "diff_density": -1.4216219415943172
+    "diff_density": -1.4216219415943172,
+    "unemployment": 4
   },
   "39053": {
     "year": 2016,
@@ -22305,7 +24455,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Gallia",
     "diff_margin": -15.811394979345408,
-    "diff_density": -0.017812359333802874
+    "diff_density": -0.017812359333802874,
+    "unemployment": 6.4
   },
   "39055": {
     "year": 2016,
@@ -22316,7 +24467,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Geauga",
     "diff_margin": -3.329629021667756,
-    "diff_density": -5.648716513394646
+    "diff_density": -5.648716513394646,
+    "unemployment": 4.4
   },
   "39057": {
     "year": 2016,
@@ -22327,7 +24479,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Greene",
     "diff_margin": -3.43981502643377,
-    "diff_density": -9.324230778527067
+    "diff_density": -9.324230778527067,
+    "unemployment": 4.2
   },
   "39059": {
     "year": 2016,
@@ -22338,7 +24491,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Guernsey",
     "diff_margin": -17.78115622678881,
-    "diff_density": -1.2646242221158488
+    "diff_density": -1.2646242221158488,
+    "unemployment": 5.8
   },
   "39061": {
     "year": 2016,
@@ -22349,7 +24503,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Hamilton",
     "diff_margin": 0.05367088607595605,
-    "diff_density": -58.867879332857115
+    "diff_density": -58.867879332857115,
+    "unemployment": 4.2
   },
   "39063": {
     "year": 2016,
@@ -22360,7 +24515,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Hancock",
     "diff_margin": -8.453634711494779,
-    "diff_density": -0.9047816922613805
+    "diff_density": -0.9047816922613805,
+    "unemployment": 3.5
   },
   "39065": {
     "year": 2016,
@@ -22371,7 +24527,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Hardin",
     "diff_margin": -13.211203595804896,
-    "diff_density": -0.9200340136054415
+    "diff_density": -0.9200340136054415,
+    "unemployment": 4.9
   },
   "39067": {
     "year": 2016,
@@ -22382,7 +24539,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Harrison",
     "diff_margin": -17.402581943645774,
-    "diff_density": -0.4611398319828979
+    "diff_density": -0.4611398319828979,
+    "unemployment": 6.4
   },
   "39069": {
     "year": 2016,
@@ -22393,7 +24551,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Henry",
     "diff_margin": -12.748558262014484,
-    "diff_density": -1.3578091872791518
+    "diff_density": -1.3578091872791518,
+    "unemployment": 4.2
   },
   "39071": {
     "year": 2016,
@@ -22404,7 +24563,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Highland",
     "diff_margin": -13.755143125293284,
-    "diff_density": -1.4262493671801586
+    "diff_density": -1.4262493671801586,
+    "unemployment": 5.5
   },
   "39073": {
     "year": 2016,
@@ -22415,7 +24575,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Hocking",
     "diff_margin": -18.696860065531848,
-    "diff_density": -0.5104841925377386
+    "diff_density": -0.5104841925377386,
+    "unemployment": 4.5
   },
   "39075": {
     "year": 2016,
@@ -22426,7 +24587,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Holmes",
     "diff_margin": -6.292897533031507,
-    "diff_density": -1.685250751425933
+    "diff_density": -1.685250751425933,
+    "unemployment": 3.3
   },
   "39077": {
     "year": 2016,
@@ -22437,7 +24599,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Huron",
     "diff_margin": -15.53251520631268,
-    "diff_density": -0.6744048830111922
+    "diff_density": -0.6744048830111922,
+    "unemployment": 5
   },
   "39079": {
     "year": 2016,
@@ -22448,7 +24611,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Jackson",
     "diff_margin": -14.877089659339827,
-    "diff_density": -0.34107066381156415
+    "diff_density": -0.34107066381156415,
+    "unemployment": 7
   },
   "39081": {
     "year": 2016,
@@ -22459,7 +24623,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Jefferson",
     "diff_margin": -16.267336183245078,
-    "diff_density": -4.223659050277959
+    "diff_density": -4.223659050277959,
+    "unemployment": 7.4
   },
   "39083": {
     "year": 2016,
@@ -22470,7 +24635,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Knox",
     "diff_margin": -8.217510803802941,
-    "diff_density": -1.1778907305562498
+    "diff_density": -1.1778907305562498,
+    "unemployment": 4.1
   },
   "39085": {
     "year": 2016,
@@ -22481,7 +24647,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Lake",
     "diff_margin": -8.763196205337351,
-    "diff_density": -24.667986724691218
+    "diff_density": -24.667986724691218,
+    "unemployment": 4.8
   },
   "39087": {
     "year": 2016,
@@ -22492,7 +24659,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Lawrence",
     "diff_margin": -15.195919303248683,
-    "diff_density": 0.255811809338951
+    "diff_density": 0.255811809338951,
+    "unemployment": 6.1
   },
   "39089": {
     "year": 2016,
@@ -22503,7 +24671,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Licking",
     "diff_margin": -8.820589428078442,
-    "diff_density": -2.9144688644688586
+    "diff_density": -2.9144688644688586,
+    "unemployment": 4.1
   },
   "39091": {
     "year": 2016,
@@ -22514,7 +24683,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Logan",
     "diff_margin": -11.812437282810489,
-    "diff_density": -0.28621010841349914
+    "diff_density": -0.28621010841349914,
+    "unemployment": 3.9
   },
   "39093": {
     "year": 2016,
@@ -22525,7 +24695,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Lorain",
     "diff_margin": -9.335350447114607,
-    "diff_density": -13.438953369985768
+    "diff_density": -13.438953369985768,
+    "unemployment": 5.9
   },
   "39095": {
     "year": 2016,
@@ -22536,7 +24707,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Lucas",
     "diff_margin": -8.979587028651316,
-    "diff_density": -54.3859543507599
+    "diff_density": -54.3859543507599,
+    "unemployment": 4.9
   },
   "39097": {
     "year": 2016,
@@ -22547,7 +24719,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Madison",
     "diff_margin": -11.253809239584573,
-    "diff_density": -1.6379496866145828
+    "diff_density": -1.6379496866145828,
+    "unemployment": 3.5
   },
   "39099": {
     "year": 2016,
@@ -22558,7 +24731,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Mahoning",
     "diff_margin": -13.719863507848302,
-    "diff_density": -20.605243185462314
+    "diff_density": -20.605243185462314,
+    "unemployment": 5.8
   },
   "39101": {
     "year": 2016,
@@ -22569,7 +24743,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Marion",
     "diff_margin": -15.511016843418588,
-    "diff_density": -4.217115117891808
+    "diff_density": -4.217115117891808,
+    "unemployment": 4.7
   },
   "39103": {
     "year": 2016,
@@ -22580,7 +24755,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Medina",
     "diff_margin": -7.377564905998213,
-    "diff_density": -3.374814885133844
+    "diff_density": -3.374814885133844,
+    "unemployment": 4.3
   },
   "39105": {
     "year": 2016,
@@ -22591,7 +24767,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Meigs",
     "diff_margin": -16.487577045696067,
-    "diff_density": -1.8813671239246723
+    "diff_density": -1.8813671239246723,
+    "unemployment": 7.6
   },
   "39107": {
     "year": 2016,
@@ -22602,7 +24779,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Mercer",
     "diff_margin": -6.263741496598639,
-    "diff_density": -0.7485306519623762
+    "diff_density": -0.7485306519623762,
+    "unemployment": 3
   },
   "39109": {
     "year": 2016,
@@ -22613,7 +24791,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Miami",
     "diff_margin": -6.607518992752638,
-    "diff_density": -1.1548261104825457
+    "diff_density": -1.1548261104825457,
+    "unemployment": 4
   },
   "39111": {
     "year": 2016,
@@ -22624,7 +24803,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Monroe",
     "diff_margin": -20.11643733173796,
-    "diff_density": -0.20871061177916417
+    "diff_density": -0.20871061177916417,
+    "unemployment": 9.1
   },
   "39113": {
     "year": 2016,
@@ -22635,7 +24815,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Montgomery",
     "diff_margin": -4.3526206122776046,
-    "diff_density": -36.22018416206254
+    "diff_density": -36.22018416206254,
+    "unemployment": 4.6
   },
   "39115": {
     "year": 2016,
@@ -22646,7 +24827,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Morgan",
     "diff_margin": -18.708092209856915,
-    "diff_density": 0.38494212573843534
+    "diff_density": 0.38494212573843534,
+    "unemployment": 6.8
   },
   "39117": {
     "year": 2016,
@@ -22657,7 +24839,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Morrow",
     "diff_margin": -13.732778944767077,
-    "diff_density": 0.009141055949569932
+    "diff_density": 0.009141055949569932,
+    "unemployment": 4.4
   },
   "39119": {
     "year": 2016,
@@ -22668,7 +24851,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Muskingum",
     "diff_margin": -15.671846922715854,
-    "diff_density": -1.3039272924252927
+    "diff_density": -1.3039272924252927,
+    "unemployment": 5.3
   },
   "39121": {
     "year": 2016,
@@ -22679,7 +24863,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Noble",
     "diff_margin": -15.847446808510636,
-    "diff_density": 0.01093565488304371
+    "diff_density": 0.01093565488304371,
+    "unemployment": 7.3
   },
   "39123": {
     "year": 2016,
@@ -22690,7 +24875,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Ottawa",
     "diff_margin": -13.799339527182411,
-    "diff_density": -2.8004974109524596
+    "diff_density": -2.8004974109524596,
+    "unemployment": 4.6
   },
   "39125": {
     "year": 2016,
@@ -22701,7 +24887,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Paulding",
     "diff_margin": -15.371626328884865,
-    "diff_density": -0.6876496013831535
+    "diff_density": -0.6876496013831535,
+    "unemployment": 4.2
   },
   "39127": {
     "year": 2016,
@@ -22712,7 +24899,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Perry",
     "diff_margin": -19.1390851368881,
-    "diff_density": -0.8278503321322646
+    "diff_density": -0.8278503321322646,
+    "unemployment": 5.5
   },
   "39129": {
     "year": 2016,
@@ -22723,7 +24911,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Pickaway",
     "diff_margin": -13.579993281263121,
-    "diff_density": -0.6174068459267517
+    "diff_density": -0.6174068459267517,
+    "unemployment": 4.2
   },
   "39131": {
     "year": 2016,
@@ -22734,7 +24923,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Pike",
     "diff_margin": -19.174675584122294,
-    "diff_density": -0.1507313527755052
+    "diff_density": -0.1507313527755052,
+    "unemployment": 6.8
   },
   "39133": {
     "year": 2016,
@@ -22745,7 +24935,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Portage",
     "diff_margin": -9.214038503136493,
-    "diff_density": -4.6634113012434
+    "diff_density": -4.6634113012434,
+    "unemployment": 4.5
   },
   "39135": {
     "year": 2016,
@@ -22756,7 +24947,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Preble",
     "diff_margin": -9.676446886446886,
-    "diff_density": 0.72643119871735
+    "diff_density": 0.72643119871735,
+    "unemployment": 4.3
   },
   "39137": {
     "year": 2016,
@@ -22767,7 +24959,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Putnam",
     "diff_margin": -7.8693914178495685,
-    "diff_density": 0.03619248943049058
+    "diff_density": 0.03619248943049058,
+    "unemployment": 3.2
   },
   "39139": {
     "year": 2016,
@@ -22778,7 +24971,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Richland",
     "diff_margin": -10.226838794916173,
-    "diff_density": -8.025547882972916
+    "diff_density": -8.025547882972916,
+    "unemployment": 4.9
   },
   "39141": {
     "year": 2016,
@@ -22789,7 +24983,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Ross",
     "diff_margin": -14.221745812467624,
-    "diff_density": -1.636912172260189
+    "diff_density": -1.636912172260189,
+    "unemployment": 4.8
   },
   "39143": {
     "year": 2016,
@@ -22800,7 +24995,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Sandusky",
     "diff_margin": -14.74568586082718,
-    "diff_density": -3.674332231607295
+    "diff_density": -3.674332231607295,
+    "unemployment": 4.1
   },
   "39145": {
     "year": 2016,
@@ -22811,7 +25007,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Scioto",
     "diff_margin": -18.529908839219395,
-    "diff_density": -2.5326112321987537
+    "diff_density": -2.5326112321987537,
+    "unemployment": 7
   },
   "39147": {
     "year": 2016,
@@ -22822,7 +25019,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Seneca",
     "diff_margin": -14.11933648481751,
-    "diff_density": -3.236301767630941
+    "diff_density": -3.236301767630941,
+    "unemployment": 4.4
   },
   "39149": {
     "year": 2016,
@@ -22833,7 +25031,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Shelby",
     "diff_margin": -8.652695802682821,
-    "diff_density": -1.8533830455259022
+    "diff_density": -1.8533830455259022,
+    "unemployment": 3.7
   },
   "39151": {
     "year": 2016,
@@ -22844,7 +25043,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Stark",
     "diff_margin": -10.31366341269284,
-    "diff_density": -18.437732195316926
+    "diff_density": -18.437732195316926,
+    "unemployment": 4.9
   },
   "39153": {
     "year": 2016,
@@ -22855,7 +25055,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Summit",
     "diff_margin": -5.188100561341457,
-    "diff_density": -43.06911568746216
+    "diff_density": -43.06911568746216,
+    "unemployment": 4.7
   },
   "39155": {
     "year": 2016,
@@ -22866,7 +25067,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Trumbull",
     "diff_margin": -15.845630414677963,
-    "diff_density": -12.36217531942421
+    "diff_density": -12.36217531942421,
+    "unemployment": 6
   },
   "39157": {
     "year": 2016,
@@ -22877,7 +25079,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Tuscarawas",
     "diff_margin": -14.557778886449807,
-    "diff_density": -2.687774645902337
+    "diff_density": -2.687774645902337,
+    "unemployment": 5
   },
   "39159": {
     "year": 2016,
@@ -22888,7 +25091,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Union",
     "diff_margin": -6.060246485508607,
-    "diff_density": 2.2373923517012955
+    "diff_density": 2.2373923517012955,
+    "unemployment": 3.5
   },
   "39161": {
     "year": 2016,
@@ -22899,7 +25103,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Van Wert",
     "diff_margin": -9.42660777385159,
-    "diff_density": -0.6902737315475633
+    "diff_density": -0.6902737315475633,
+    "unemployment": 3.7
   },
   "39163": {
     "year": 2016,
@@ -22910,7 +25115,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Vinton",
     "diff_margin": -19.861316521416654,
-    "diff_density": -0.18162188379086253
+    "diff_density": -0.18162188379086253,
+    "unemployment": 5.9
   },
   "39165": {
     "year": 2016,
@@ -22921,7 +25127,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Warren",
     "diff_margin": -0.7354762196509483,
-    "diff_density": 8.102598988313275
+    "diff_density": 8.102598988313275,
+    "unemployment": 3.9
   },
   "39167": {
     "year": 2016,
@@ -22932,7 +25139,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Washington",
     "diff_margin": -12.454608167770417,
-    "diff_density": -0.8044046394607349
+    "diff_density": -0.8044046394607349,
+    "unemployment": 6.4
   },
   "39169": {
     "year": 2016,
@@ -22943,7 +25151,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Wayne",
     "diff_margin": -8.573728115345006,
-    "diff_density": -4.531487935415271
+    "diff_density": -4.531487935415271,
+    "unemployment": 3.6
   },
   "39171": {
     "year": 2016,
@@ -22954,7 +25163,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Williams",
     "diff_margin": -15.730046050301095,
-    "diff_density": -1.8233979475484645
+    "diff_density": -1.8233979475484645,
+    "unemployment": 4.1
   },
   "39173": {
     "year": 2016,
@@ -22965,7 +25175,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Wood",
     "diff_margin": -8.841334949507917,
-    "diff_density": -2.692970139822762
+    "diff_density": -2.692970139822762,
+    "unemployment": 4
   },
   "39175": {
     "year": 2016,
@@ -22976,7 +25187,8 @@ export const counties = {
     "statenam": "Ohio",
     "cty_name": "Wyandot",
     "diff_margin": -15.236194690265489,
-    "diff_density": -0.42884115319389693
+    "diff_density": -0.42884115319389693,
+    "unemployment": 3.4
   },
   "40001": {
     "year": 2016,
@@ -22987,7 +25199,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Adair",
     "diff_margin": -11.436957328385898,
-    "diff_density": -0.07148985143335373
+    "diff_density": -0.07148985143335373,
+    "unemployment": 5.8
   },
   "40003": {
     "year": 2016,
@@ -22998,7 +25211,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Alfalfa",
     "diff_margin": -5.885531914893617,
-    "diff_density": 0.20369780486115907
+    "diff_density": 0.20369780486115907,
+    "unemployment": 3.6
   },
   "40005": {
     "year": 2016,
@@ -23009,7 +25223,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Atoka",
     "diff_margin": -10.106357457017191,
-    "diff_density": 0.2275217319993441
+    "diff_density": 0.2275217319993441,
+    "unemployment": 7.1
   },
   "40007": {
     "year": 2016,
@@ -23020,7 +25235,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Beaver",
     "diff_margin": -2.7123200715243625,
-    "diff_density": -0.037268980034937504
+    "diff_density": -0.037268980034937504,
+    "unemployment": 3.2
   },
   "40009": {
     "year": 2016,
@@ -23031,7 +25247,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Beckham",
     "diff_margin": -7.735866648957366,
-    "diff_density": 0.6688578398758054
+    "diff_density": 0.6688578398758054,
+    "unemployment": 7.7
   },
   "40011": {
     "year": 2016,
@@ -23042,7 +25259,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Blaine",
     "diff_margin": -7.254943316635909,
-    "diff_density": -0.02456452898472694
+    "diff_density": -0.02456452898472694,
+    "unemployment": 3.7
   },
   "40013": {
     "year": 2016,
@@ -23053,7 +25271,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Bryan",
     "diff_margin": -7.604137931034483,
-    "diff_density": 0.6299136510884829
+    "diff_density": 0.6299136510884829,
+    "unemployment": 4.3
   },
   "40015": {
     "year": 2016,
@@ -23064,7 +25283,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Caddo",
     "diff_margin": -9.850257069408741,
-    "diff_density": 0.38350702892144994
+    "diff_density": 0.38350702892144994,
+    "unemployment": 5.6
   },
   "40017": {
     "year": 2016,
@@ -23075,7 +25295,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Canadian",
     "diff_margin": -1.7150678733031661,
-    "diff_density": 10.139620133165302
+    "diff_density": 10.139620133165302,
+    "unemployment": 4.3
   },
   "40019": {
     "year": 2016,
@@ -23086,7 +25307,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Carter",
     "diff_margin": -7.0660864404036055,
-    "diff_density": 1.711566829244564
+    "diff_density": 1.711566829244564,
+    "unemployment": 5.4
   },
   "40021": {
     "year": 2016,
@@ -23097,7 +25319,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Cherokee",
     "diff_margin": -9.863325650512529,
-    "diff_density": 2.9099733123390408
+    "diff_density": 2.9099733123390408,
+    "unemployment": 5.6
   },
   "40023": {
     "year": 2016,
@@ -23108,7 +25331,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Choctaw",
     "diff_margin": -9.855381066617458,
-    "diff_density": 0.4543735396438029
+    "diff_density": 0.4543735396438029,
+    "unemployment": 8.3
   },
   "40025": {
     "year": 2016,
@@ -23119,7 +25343,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Cimarron",
     "diff_margin": -3.1104642525533883,
-    "diff_density": -0.06299584682298309
+    "diff_density": -0.06299584682298309,
+    "unemployment": 2.7
   },
   "40027": {
     "year": 2016,
@@ -23130,7 +25355,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Cleveland",
     "diff_margin": -1.5489616376708213,
-    "diff_density": 28.65775711342505
+    "diff_density": 28.65775711342505,
+    "unemployment": 4
   },
   "40029": {
     "year": 2016,
@@ -23141,7 +25367,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Coal",
     "diff_margin": -10.334905975762641,
-    "diff_density": 0.061493380815979215
+    "diff_density": 0.061493380815979215,
+    "unemployment": 7.5
   },
   "40031": {
     "year": 2016,
@@ -23152,7 +25379,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Comanche",
     "diff_margin": -6.2874083189761265,
-    "diff_density": 2.1677405568180745
+    "diff_density": 2.1677405568180745,
+    "unemployment": 4.8
   },
   "40033": {
     "year": 2016,
@@ -23163,7 +25391,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Cotton",
     "diff_margin": -10.484842428900844,
-    "diff_density": 0.23285861060618096
+    "diff_density": 0.23285861060618096,
+    "unemployment": 5.2
   },
   "40035": {
     "year": 2016,
@@ -23174,7 +25403,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Craig",
     "diff_margin": -11.303523710626518,
-    "diff_density": 0.6191508504629937
+    "diff_density": 0.6191508504629937,
+    "unemployment": 4.9
   },
   "40037": {
     "year": 2016,
@@ -23185,7 +25415,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Creek",
     "diff_margin": -7.033203640658655,
-    "diff_density": 2.8165878712610777
+    "diff_density": 2.8165878712610777,
+    "unemployment": 6.3
   },
   "40039": {
     "year": 2016,
@@ -23196,7 +25427,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Custer",
     "diff_margin": -4.099882252397684,
-    "diff_density": 0.7300677575291754
+    "diff_density": 0.7300677575291754,
+    "unemployment": 4.9
   },
   "40041": {
     "year": 2016,
@@ -23207,7 +25439,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Delaware",
     "diff_margin": -8.305816326530614,
-    "diff_density": 1.9014316291419462
+    "diff_density": 1.9014316291419462,
+    "unemployment": 5.2
   },
   "40043": {
     "year": 2016,
@@ -23218,7 +25451,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Dewey",
     "diff_margin": -4.495761353517365,
-    "diff_density": 0.15716852763436995
+    "diff_density": 0.15716852763436995,
+    "unemployment": 4.1
   },
   "40045": {
     "year": 2016,
@@ -23229,7 +25463,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Ellis",
     "diff_margin": -4.061500547645126,
-    "diff_density": 0.022720540470313244
+    "diff_density": 0.022720540470313244,
+    "unemployment": 3.7
   },
   "40047": {
     "year": 2016,
@@ -23240,7 +25475,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Garfield",
     "diff_margin": -3.5275142909828503,
-    "diff_density": 1.6837315181346675
+    "diff_density": 1.6837315181346675,
+    "unemployment": 4.5
   },
   "40049": {
     "year": 2016,
@@ -23251,7 +25487,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Garvin",
     "diff_margin": -9.393825847497862,
-    "diff_density": 1.3089582606093852
+    "diff_density": 1.3089582606093852,
+    "unemployment": 5.7
   },
   "40051": {
     "year": 2016,
@@ -23262,7 +25499,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Grady",
     "diff_margin": -6.966268140360338,
-    "diff_density": 2.3944434348023655
+    "diff_density": 2.3944434348023655,
+    "unemployment": 5.2
   },
   "40053": {
     "year": 2016,
@@ -23273,7 +25511,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Grant",
     "diff_margin": -5.954545454545453,
-    "diff_density": 0.12808766373255276
+    "diff_density": 0.12808766373255276,
+    "unemployment": 3.1
   },
   "40055": {
     "year": 2016,
@@ -23284,7 +25523,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Greer",
     "diff_margin": -9.604135021097047,
-    "diff_density": 0.0956510041919536
+    "diff_density": 0.0956510041919536,
+    "unemployment": 7.9
   },
   "40057": {
     "year": 2016,
@@ -23295,7 +25535,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Harmon",
     "diff_margin": -5.625641025641027,
-    "diff_density": 0.095000279230812
+    "diff_density": 0.095000279230812,
+    "unemployment": 3.6
   },
   "40059": {
     "year": 2016,
@@ -23306,7 +25547,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Harper",
     "diff_margin": -3.2384511784511787,
-    "diff_density": 0.049231391118554235
+    "diff_density": 0.049231391118554235,
+    "unemployment": 4.3
   },
   "40061": {
     "year": 2016,
@@ -23317,7 +25559,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Haskell",
     "diff_margin": -9.058821292775665,
-    "diff_density": 0.8513369874418926
+    "diff_density": 0.8513369874418926,
+    "unemployment": 8.8
   },
   "40063": {
     "year": 2016,
@@ -23328,7 +25571,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Hughes",
     "diff_margin": -11.322430939226521,
-    "diff_density": 0.3935630398309824
+    "diff_density": 0.3935630398309824,
+    "unemployment": 7.5
   },
   "40065": {
     "year": 2016,
@@ -23339,7 +25583,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Jackson",
     "diff_margin": -5.799900076863953,
-    "diff_density": -0.14471500654083158
+    "diff_density": -0.14471500654083158,
+    "unemployment": 4.9
   },
   "40067": {
     "year": 2016,
@@ -23350,7 +25595,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Jefferson",
     "diff_margin": -11.454968017057569,
-    "diff_density": 0.14028372626279895
+    "diff_density": 0.14028372626279895,
+    "unemployment": 8
   },
   "40069": {
     "year": 2016,
@@ -23361,7 +25607,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Johnston",
     "diff_margin": -10.484886278430395,
-    "diff_density": 0.33297570535353227
+    "diff_density": 0.33297570535353227,
+    "unemployment": 6.5
   },
   "40071": {
     "year": 2016,
@@ -23372,7 +25619,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Kay",
     "diff_margin": -6.457192616850254,
-    "diff_density": 0.7307939286529717
+    "diff_density": 0.7307939286529717,
+    "unemployment": 6.7
   },
   "40073": {
     "year": 2016,
@@ -23383,7 +25631,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Kingfisher",
     "diff_margin": -2.7821509064184227,
-    "diff_density": 0.3972708648793093
+    "diff_density": 0.3972708648793093,
+    "unemployment": 3.6
   },
   "40075": {
     "year": 2016,
@@ -23394,7 +25643,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Kiowa",
     "diff_margin": -10.365285182000573,
-    "diff_density": 0.0666596731775062
+    "diff_density": 0.0666596731775062,
+    "unemployment": 5.6
   },
   "40077": {
     "year": 2016,
@@ -23405,7 +25655,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Latimer",
     "diff_margin": -11.130987654320986,
-    "diff_density": 0.34879680921781553
+    "diff_density": 0.34879680921781553,
+    "unemployment": 9.7
   },
   "40079": {
     "year": 2016,
@@ -23416,7 +25667,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Le Flore",
     "diff_margin": -10.562623989766848,
-    "diff_density": 0.8523582786415886
+    "diff_density": 0.8523582786415886,
+    "unemployment": 7.4
   },
   "40081": {
     "year": 2016,
@@ -23427,7 +25679,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Lincoln",
     "diff_margin": -8.214093279051497,
-    "diff_density": 1.232145309825583
+    "diff_density": 1.232145309825583,
+    "unemployment": 5.5
   },
   "40083": {
     "year": 2016,
@@ -23438,7 +25691,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Logan",
     "diff_margin": -5.3582457251424955,
-    "diff_density": 2.56356250756221
+    "diff_density": 2.56356250756221,
+    "unemployment": 4.3
   },
   "40085": {
     "year": 2016,
@@ -23449,7 +25703,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Love",
     "diff_margin": -10.391497227356748,
-    "diff_density": 0.6177042801556416
+    "diff_density": 0.6177042801556416,
+    "unemployment": 3.3
   },
   "40087": {
     "year": 2016,
@@ -23460,7 +25715,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "McClain",
     "diff_margin": -5.149644872023277,
-    "diff_density": 4.435869984229889
+    "diff_density": 4.435869984229889,
+    "unemployment": 4.3
   },
   "40089": {
     "year": 2016,
@@ -23471,7 +25727,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "McCurtain",
     "diff_margin": -7.4210458492856475,
-    "diff_density": 0.33861735882508714
+    "diff_density": 0.33861735882508714,
+    "unemployment": 7.7
   },
   "40091": {
     "year": 2016,
@@ -23482,7 +25739,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "McIntosh",
     "diff_margin": -11.465008796179948,
-    "diff_density": 1.0866127728375101
+    "diff_density": 1.0866127728375101,
+    "unemployment": 9.5
   },
   "40093": {
     "year": 2016,
@@ -23493,7 +25751,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Major",
     "diff_margin": -5.059670491320977,
-    "diff_density": 0.2691995727703955
+    "diff_density": 0.2691995727703955,
+    "unemployment": 4.3
   },
   "40095": {
     "year": 2016,
@@ -23504,7 +25763,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Marshall",
     "diff_margin": -7.203739748496446,
-    "diff_density": 0.9365689339226044
+    "diff_density": 0.9365689339226044,
+    "unemployment": 5.1
   },
   "40097": {
     "year": 2016,
@@ -23515,7 +25775,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Mayes",
     "diff_margin": -11.564103869653767,
-    "diff_density": 1.9135119547139894
+    "diff_density": 1.9135119547139894,
+    "unemployment": 5.5
   },
   "40099": {
     "year": 2016,
@@ -23526,7 +25787,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Murray",
     "diff_margin": -10.27389140271493,
-    "diff_density": 0.9065802237910017
+    "diff_density": 0.9065802237910017,
+    "unemployment": 4.3
   },
   "40101": {
     "year": 2016,
@@ -23537,7 +25799,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Muskogee",
     "diff_margin": -9.67072004298764,
-    "diff_density": 1.0313171694737484
+    "diff_density": 1.0313171694737484,
+    "unemployment": 6
   },
   "40103": {
     "year": 2016,
@@ -23548,7 +25811,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Noble",
     "diff_margin": -6.178973305954823,
-    "diff_density": 0.3240053833226302
+    "diff_density": 0.3240053833226302,
+    "unemployment": 4
   },
   "40105": {
     "year": 2016,
@@ -23559,7 +25823,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Nowata",
     "diff_margin": -13.007609157422706,
-    "diff_density": 0.2887765562586164
+    "diff_density": 0.2887765562586164,
+    "unemployment": 6.5
   },
   "40107": {
     "year": 2016,
@@ -23570,7 +25835,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Okfuskee",
     "diff_margin": -11.003391812865495,
-    "diff_density": 0.5482132984140842
+    "diff_density": 0.5482132984140842,
+    "unemployment": 6.1
   },
   "40109": {
     "year": 2016,
@@ -23581,7 +25847,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Oklahoma",
     "diff_margin": -0.49408838890533957,
-    "diff_density": 23.83632036342084
+    "diff_density": 23.83632036342084,
+    "unemployment": 4.5
   },
   "40111": {
     "year": 2016,
@@ -23592,7 +25859,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Okmulgee",
     "diff_margin": -9.82070382074117,
-    "diff_density": 1.0870179967017997
+    "diff_density": 1.0870179967017997,
+    "unemployment": 7.4
   },
   "40113": {
     "year": 2016,
@@ -23603,7 +25871,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Osage",
     "diff_margin": -7.833022912047301,
-    "diff_density": 0.4423082675973564
+    "diff_density": 0.4423082675973564,
+    "unemployment": 6.1
   },
   "40115": {
     "year": 2016,
@@ -23614,7 +25883,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Ottawa",
     "diff_margin": -10.998828373572898,
-    "diff_density": 1.506571938320377
+    "diff_density": 1.506571938320377,
+    "unemployment": 5.3
   },
   "40117": {
     "year": 2016,
@@ -23625,7 +25895,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Pawnee",
     "diff_margin": -8.858578632209266,
-    "diff_density": 0.5333220649341488
+    "diff_density": 0.5333220649341488,
+    "unemployment": 7.1
   },
   "40119": {
     "year": 2016,
@@ -23636,7 +25907,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Payne",
     "diff_margin": -4.161201484738189,
-    "diff_density": 3.0272382065138004
+    "diff_density": 3.0272382065138004,
+    "unemployment": 3.9
   },
   "40121": {
     "year": 2016,
@@ -23647,7 +25919,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Pittsburg",
     "diff_margin": -9.357536231884055,
-    "diff_density": 1.2137330902517114
+    "diff_density": 1.2137330902517114,
+    "unemployment": 6.5
   },
   "40123": {
     "year": 2016,
@@ -23658,7 +25931,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Pontotoc",
     "diff_margin": -6.095901174564602,
-    "diff_density": 2.672719486973058
+    "diff_density": 2.672719486973058,
+    "unemployment": 4.2
   },
   "40125": {
     "year": 2016,
@@ -23669,7 +25943,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Pottawatomie",
     "diff_margin": -7.04408033992997,
-    "diff_density": 2.508589637792479
+    "diff_density": 2.508589637792479,
+    "unemployment": 5
   },
   "40127": {
     "year": 2016,
@@ -23680,7 +25955,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Pushmataha",
     "diff_margin": -8.564744590675886,
-    "diff_density": 0.25168615314076126
+    "diff_density": 0.25168615314076126,
+    "unemployment": 7.7
   },
   "40129": {
     "year": 2016,
@@ -23691,7 +25967,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Roger Mills",
     "diff_margin": -7.660693970420933,
-    "diff_density": 0.07056469845943525
+    "diff_density": 0.07056469845943525,
+    "unemployment": 5.4
   },
   "40131": {
     "year": 2016,
@@ -23702,7 +25979,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Rogers",
     "diff_margin": -5.595621785766763,
-    "diff_density": 6.118405636221006
+    "diff_density": 6.118405636221006,
+    "unemployment": 5.6
   },
   "40133": {
     "year": 2016,
@@ -23713,7 +25991,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Seminole",
     "diff_margin": -9.135438247011948,
-    "diff_density": 0.9119916566588717
+    "diff_density": 0.9119916566588717,
+    "unemployment": 7.3
   },
   "40135": {
     "year": 2016,
@@ -23724,7 +26003,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Sequoyah",
     "diff_margin": -9.24753411373554,
-    "diff_density": 0.9931060347260399
+    "diff_density": 0.9931060347260399,
+    "unemployment": 6.5
   },
   "40137": {
     "year": 2016,
@@ -23735,7 +26015,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Stephens",
     "diff_margin": -6.137463938275747,
-    "diff_density": 1.1929509100937672
+    "diff_density": 1.1929509100937672,
+    "unemployment": 10.4
   },
   "40139": {
     "year": 2016,
@@ -23746,7 +26027,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Texas",
     "diff_margin": -0.06454340668861569,
-    "diff_density": -0.012824627925888787
+    "diff_density": -0.012824627925888787,
+    "unemployment": 3.5
   },
   "40141": {
     "year": 2016,
@@ -23757,7 +26039,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Tillman",
     "diff_margin": -9.020620842572058,
-    "diff_density": -0.01368980519555052
+    "diff_density": -0.01368980519555052,
+    "unemployment": 4.5
   },
   "40143": {
     "year": 2016,
@@ -23768,7 +26051,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Tulsa",
     "diff_margin": -0.7651384466877857,
-    "diff_density": 32.876505918456814
+    "diff_density": 32.876505918456814,
+    "unemployment": 5.2
   },
   "40145": {
     "year": 2016,
@@ -23779,7 +26063,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Wagoner",
     "diff_margin": -5.672050822505277,
-    "diff_density": 4.552418306473157
+    "diff_density": 4.552418306473157,
+    "unemployment": 5.2
   },
   "40147": {
     "year": 2016,
@@ -23790,7 +26075,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Washington",
     "diff_margin": -3.363955331412104,
-    "diff_density": 2.425289445179928
+    "diff_density": 2.425289445179928,
+    "unemployment": 5
   },
   "40149": {
     "year": 2016,
@@ -23801,7 +26087,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Washita",
     "diff_margin": -6.3447277441659455,
-    "diff_density": 0.3133755993500609
+    "diff_density": 0.3133755993500609,
+    "unemployment": 7.2
   },
   "40151": {
     "year": 2016,
@@ -23812,7 +26099,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Woods",
     "diff_margin": -5.534447476125511,
-    "diff_density": 0.20892533716817585
+    "diff_density": 0.20892533716817585,
+    "unemployment": 3.3
   },
   "40153": {
     "year": 2016,
@@ -23823,7 +26111,8 @@ export const counties = {
     "statenam": "Oklahoma",
     "cty_name": "Woodward",
     "diff_margin": -4.508613495312295,
-    "diff_density": 0.3954603992273018
+    "diff_density": 0.3954603992273018,
+    "unemployment": 6.4
   },
   "41001": {
     "year": 2016,
@@ -23834,7 +26123,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Baker",
     "diff_margin": -7.035164524118411,
-    "diff_density": 0.01336544603631884
+    "diff_density": 0.01336544603631884,
+    "unemployment": 6.7
   },
   "41003": {
     "year": 2016,
@@ -23845,7 +26135,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Benton",
     "diff_margin": 0.3801478816069519,
-    "diff_density": 1.1475823297925842
+    "diff_density": 1.1475823297925842,
+    "unemployment": 5
   },
   "41005": {
     "year": 2016,
@@ -23856,7 +26147,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Clackamas",
     "diff_margin": -0.9237044845609859,
-    "diff_density": -3.8477338637238603
+    "diff_density": -3.8477338637238603,
+    "unemployment": 5.2
   },
   "41007": {
     "year": 2016,
@@ -23867,7 +26159,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Clatsop",
     "diff_margin": -6.331298601167532,
-    "diff_density": 0.41217719076051296
+    "diff_density": 0.41217719076051296,
+    "unemployment": 5.1
   },
   "41009": {
     "year": 2016,
@@ -23878,7 +26171,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Columbia",
     "diff_margin": -10.566318140128402,
-    "diff_density": 1.828046732384081
+    "diff_density": 1.828046732384081,
+    "unemployment": 7.1
   },
   "41011": {
     "year": 2016,
@@ -23889,7 +26183,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Coos",
     "diff_margin": -10.470334978960274,
-    "diff_density": 0.9383869512645902
+    "diff_density": 0.9383869512645902,
+    "unemployment": 7.3
   },
   "41013": {
     "year": 2016,
@@ -23900,7 +26195,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Crook",
     "diff_margin": -8.076724523113938,
-    "diff_density": 0.47656207096797987
+    "diff_density": 0.47656207096797987,
+    "unemployment": 6.9
   },
   "41015": {
     "year": 2016,
@@ -23911,7 +26207,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Curry",
     "diff_margin": -4.633297706158025,
-    "diff_density": 0.2936091824069411
+    "diff_density": 0.2936091824069411,
+    "unemployment": 7
   },
   "41017": {
     "year": 2016,
@@ -23922,7 +26219,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Deschutes",
     "diff_margin": -0.7270149253731333,
-    "diff_density": 2.872689724636288
+    "diff_density": 2.872689724636288,
+    "unemployment": 5.1
   },
   "41019": {
     "year": 2016,
@@ -23933,7 +26231,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Douglas",
     "diff_margin": -7.378393378773126,
-    "diff_density": 0.30644286119930797
+    "diff_density": 0.30644286119930797,
+    "unemployment": 7.3
   },
   "41021": {
     "year": 2016,
@@ -23944,7 +26243,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Gilliam",
     "diff_margin": -11.384087513340447,
-    "diff_density": -0.10228401158688916
+    "diff_density": -0.10228401158688916,
+    "unemployment": 7.1
   },
   "41023": {
     "year": 2016,
@@ -23955,7 +26255,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Grant",
     "diff_margin": -4.260251738192277,
-    "diff_density": 0.06104740159079969
+    "diff_density": 0.06104740159079969,
+    "unemployment": 6.1
   },
   "41025": {
     "year": 2016,
@@ -23966,7 +26267,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Harney",
     "diff_margin": -5.505714285714287,
-    "diff_density": 0.02994033456460321
+    "diff_density": 0.02994033456460321,
+    "unemployment": 5.9
   },
   "41027": {
     "year": 2016,
@@ -23977,7 +26279,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Hood River",
     "diff_margin": -0.3356582875854812,
-    "diff_density": 1.0427100296963268
+    "diff_density": 1.0427100296963268,
+    "unemployment": 4
   },
   "41029": {
     "year": 2016,
@@ -23988,7 +26291,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Jackson",
     "diff_margin": -3.819869350316509,
-    "diff_density": 2.3965585313718094
+    "diff_density": 2.3965585313718094,
+    "unemployment": 6.8
   },
   "41031": {
     "year": 2016,
@@ -23999,7 +26303,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Jefferson",
     "diff_margin": -7.790412440838402,
-    "diff_density": 0.39318162163983406
+    "diff_density": 0.39318162163983406,
+    "unemployment": 6.6
   },
   "41033": {
     "year": 2016,
@@ -24010,7 +26315,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Josephine",
     "diff_margin": -6.129563278811627,
-    "diff_density": 1.448766032189404
+    "diff_density": 1.448766032189404,
+    "unemployment": 7.4
   },
   "41035": {
     "year": 2016,
@@ -24021,7 +26327,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Klamath",
     "diff_margin": -5.276593707250338,
-    "diff_density": 0.18168892704151585
+    "diff_density": 0.18168892704151585,
+    "unemployment": 7.2
   },
   "41037": {
     "year": 2016,
@@ -24032,7 +26339,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Lake",
     "diff_margin": -4.284347142108022,
-    "diff_density": 0.008609088608154847
+    "diff_density": 0.008609088608154847,
+    "unemployment": 5.7
   },
   "41039": {
     "year": 2016,
@@ -24043,7 +26351,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Lane",
     "diff_margin": -4.228873376336487,
-    "diff_density": 2.028773939628209
+    "diff_density": 2.028773939628209,
+    "unemployment": 6.2
   },
   "41041": {
     "year": 2016,
@@ -24054,7 +26363,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Lincoln",
     "diff_margin": -7.134630746827547,
-    "diff_density": 1.0715179227565912
+    "diff_density": 1.0715179227565912,
+    "unemployment": 5.9
   },
   "41043": {
     "year": 2016,
@@ -24065,7 +26375,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Linn",
     "diff_margin": -7.731746948322492,
-    "diff_density": 1.4355867134180151
+    "diff_density": 1.4355867134180151,
+    "unemployment": 6.7
   },
   "41045": {
     "year": 2016,
@@ -24076,7 +26387,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Malheur",
     "diff_margin": -5.468793969849248,
-    "diff_density": -0.003681940788043292
+    "diff_density": -0.003681940788043292,
+    "unemployment": 6.1
   },
   "41047": {
     "year": 2016,
@@ -24087,7 +26399,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Marion",
     "diff_margin": -2.785561171076857,
-    "diff_density": -8.093355746703537
+    "diff_density": -8.093355746703537,
+    "unemployment": 5.9
   },
   "41049": {
     "year": 2016,
@@ -24098,7 +26411,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Morrow",
     "diff_margin": -5.790784657808974,
-    "diff_density": 0.05346739777811704
+    "diff_density": 0.05346739777811704,
+    "unemployment": 5.8
   },
   "41051": {
     "year": 2016,
@@ -24109,7 +26423,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Multnomah",
     "diff_margin": 0.5894367205013396,
-    "diff_density": -16.143130071875703
+    "diff_density": -16.143130071875703,
+    "unemployment": 5
   },
   "41053": {
     "year": 2016,
@@ -24120,7 +26435,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Polk",
     "diff_margin": -3.701223332433159,
-    "diff_density": 2.3971758528057876
+    "diff_density": 2.3971758528057876,
+    "unemployment": 6
   },
   "41055": {
     "year": 2016,
@@ -24131,7 +26447,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Sherman",
     "diff_margin": -10.540661241098679,
-    "diff_density": -0.05658985783486514
+    "diff_density": -0.05658985783486514,
+    "unemployment": 4.3
   },
   "41057": {
     "year": 2016,
@@ -24142,7 +26459,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Tillamook",
     "diff_margin": -7.279275318603432,
-    "diff_density": 0.6772451885577482
+    "diff_density": 0.6772451885577482,
+    "unemployment": 5.2
   },
   "41059": {
     "year": 2016,
@@ -24153,7 +26471,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Umatilla",
     "diff_margin": -5.792161127278298,
-    "diff_density": 0.35188424231303905
+    "diff_density": 0.35188424231303905,
+    "unemployment": 5.9
   },
   "41061": {
     "year": 2016,
@@ -24164,7 +26483,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Union",
     "diff_margin": -7.079647011632574,
-    "diff_density": 0.19046489018516155
+    "diff_density": 0.19046489018516155,
+    "unemployment": 6.3
   },
   "41063": {
     "year": 2016,
@@ -24175,7 +26495,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Wallowa",
     "diff_margin": -3.5371319128561183,
-    "diff_density": -0.012362444734742795
+    "diff_density": -0.012362444734742795,
+    "unemployment": 5
   },
   "41065": {
     "year": 2016,
@@ -24186,7 +26507,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Wasco",
     "diff_margin": -6.7425499955559545,
-    "diff_density": 0.15429372837515487
+    "diff_density": 0.15429372837515487,
+    "unemployment": 5.9
   },
   "41067": {
     "year": 2016,
@@ -24197,7 +26519,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Washington",
     "diff_margin": 2.315605816388974,
-    "diff_density": -6.8928301782582935
+    "diff_density": -6.8928301782582935,
+    "unemployment": 5
   },
   "41069": {
     "year": 2016,
@@ -24208,7 +26531,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Wheeler",
     "diff_margin": -11.681818181818183,
-    "diff_density": -0.0381250911211547
+    "diff_density": -0.0381250911211547,
+    "unemployment": 4.9
   },
   "41071": {
     "year": 2016,
@@ -24219,7 +26543,8 @@ export const counties = {
     "statenam": "Oregon",
     "cty_name": "Yamhill",
     "diff_margin": -3.585363064101429,
-    "diff_density": 3.0834962143435902
+    "diff_density": 3.0834962143435902,
+    "unemployment": 5.4
   },
   "42001": {
     "year": 2016,
@@ -24230,7 +26555,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Adams",
     "diff_margin": -5.676620136620137,
-    "diff_density": 9.022449341585215
+    "diff_density": 9.022449341585215,
+    "unemployment": 4.5
   },
   "42003": {
     "year": 2016,
@@ -24241,7 +26567,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Allegheny",
     "diff_margin": -0.24842051827424427,
-    "diff_density": 28.88236028928327
+    "diff_density": 28.88236028928327,
+    "unemployment": 5.9
   },
   "42005": {
     "year": 2016,
@@ -24252,7 +26579,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Armstrong",
     "diff_margin": -8.064434080010507,
-    "diff_density": 1.2905327617881142
+    "diff_density": 1.2905327617881142,
+    "unemployment": 8
   },
   "42007": {
     "year": 2016,
@@ -24263,7 +26591,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Beaver",
     "diff_margin": -7.8079330937800435,
-    "diff_density": -3.306837201812698
+    "diff_density": -3.306837201812698,
+    "unemployment": 6.8
   },
   "42009": {
     "year": 2016,
@@ -24274,7 +26603,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Bedford",
     "diff_margin": -6.698148400272293,
-    "diff_density": 1.788413513780501
+    "diff_density": 1.788413513780501,
+    "unemployment": 5.8
   },
   "42011": {
     "year": 2016,
@@ -24285,7 +26615,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Berks",
     "diff_margin": -6.014318778632898,
-    "diff_density": 6.557992901425564
+    "diff_density": 6.557992901425564,
+    "unemployment": 5.6
   },
   "42013": {
     "year": 2016,
@@ -24296,7 +26627,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Blair",
     "diff_margin": -7.235188068192734,
-    "diff_density": 3.40207303157095
+    "diff_density": 3.40207303157095,
+    "unemployment": 5.7
   },
   "42015": {
     "year": 2016,
@@ -24307,7 +26639,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Bradford",
     "diff_margin": -12.151548879877161,
-    "diff_density": 1.7161338678751932
+    "diff_density": 1.7161338678751932,
+    "unemployment": 6.5
   },
   "42017": {
     "year": 2016,
@@ -24318,7 +26651,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Bucks",
     "diff_margin": -1.5836087012365283,
-    "diff_density": 35.67123645149013
+    "diff_density": 35.67123645149013,
+    "unemployment": 5.2
   },
   "42019": {
     "year": 2016,
@@ -24329,7 +26663,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Butler",
     "diff_margin": -2.7611661794908002,
-    "diff_density": 3.276677656606637
+    "diff_density": 3.276677656606637,
+    "unemployment": 5.7
   },
   "42021": {
     "year": 2016,
@@ -24340,7 +26675,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Cambria",
     "diff_margin": -10.47900044875098,
-    "diff_density": -0.5224311760005946
+    "diff_density": -0.5224311760005946,
+    "unemployment": 7.7
   },
   "42023": {
     "year": 2016,
@@ -24351,7 +26687,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Cameron",
     "diff_margin": -11.128063241106716,
-    "diff_density": -0.22185574035282585
+    "diff_density": -0.22185574035282585,
+    "unemployment": 8.2
   },
   "42025": {
     "year": 2016,
@@ -24362,7 +26699,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Carbon",
     "diff_margin": -14.22303088332579,
-    "diff_density": 8.232298012897814
+    "diff_density": 8.232298012897814,
+    "unemployment": 6.7
   },
   "42027": {
     "year": 2016,
@@ -24373,7 +26711,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Centre",
     "diff_margin": -0.6047093933204266,
-    "diff_density": 5.197418192302145
+    "diff_density": 5.197418192302145,
+    "unemployment": 4.8
   },
   "42029": {
     "year": 2016,
@@ -24384,7 +26723,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Chester",
     "diff_margin": 3.2363491188394704,
-    "diff_density": 19.534413398888773
+    "diff_density": 19.534413398888773,
+    "unemployment": 4.6
   },
   "42031": {
     "year": 2016,
@@ -24395,7 +26735,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Clarion",
     "diff_margin": -6.893566729592127,
-    "diff_density": 2.154752259374529
+    "diff_density": 2.154752259374529,
+    "unemployment": 7.2
   },
   "42033": {
     "year": 2016,
@@ -24406,7 +26747,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Clearfield",
     "diff_margin": -11.236837146702555,
-    "diff_density": 0.628948913271369
+    "diff_density": 0.628948913271369,
+    "unemployment": 7.5
   },
   "42035": {
     "year": 2016,
@@ -24417,7 +26759,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Clinton",
     "diff_margin": -12.68211941505492,
-    "diff_density": 1.7709619586026708
+    "diff_density": 1.7709619586026708,
+    "unemployment": 7.3
   },
   "42037": {
     "year": 2016,
@@ -24428,7 +26771,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Columbia",
     "diff_margin": -11.338532089799827,
-    "diff_density": 3.110773115853533
+    "diff_density": 3.110773115853533,
+    "unemployment": 6.2
   },
   "42039": {
     "year": 2016,
@@ -24439,7 +26783,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Crawford",
     "diff_margin": -10.506326519135055,
-    "diff_density": 0.17089005235602173
+    "diff_density": 0.17089005235602173,
+    "unemployment": 6.7
   },
   "42041": {
     "year": 2016,
@@ -24450,7 +26795,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Cumberland",
     "diff_margin": -1.5566684047693542,
-    "diff_density": 7.795890441095565
+    "diff_density": 7.795890441095565,
+    "unemployment": 4.7
   },
   "42043": {
     "year": 2016,
@@ -24461,7 +26807,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Dauphin",
     "diff_margin": -2.9992501536570373,
-    "diff_density": 11.72019998095422
+    "diff_density": 11.72019998095422,
+    "unemployment": 5.3
   },
   "42045": {
     "year": 2016,
@@ -24472,7 +26819,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Delaware",
     "diff_margin": -0.7674457926075746,
-    "diff_density": -3.952741514360241
+    "diff_density": -3.952741514360241,
+    "unemployment": 5.6
   },
   "42047": {
     "year": 2016,
@@ -24483,7 +26831,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Elk",
     "diff_margin": -15.017654107117082,
-    "diff_density": 0.7448269193579584
+    "diff_density": 0.7448269193579584,
+    "unemployment": 6.7
   },
   "42049": {
     "year": 2016,
@@ -24494,7 +26843,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Erie",
     "diff_margin": -10.601214602524735,
-    "diff_density": -1.7241250078208168
+    "diff_density": -1.7241250078208168,
+    "unemployment": 7.1
   },
   "42051": {
     "year": 2016,
@@ -24505,7 +26855,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Fayette",
     "diff_margin": -11.934223037472385,
-    "diff_density": 6.228754966217075
+    "diff_density": 6.228754966217075,
+    "unemployment": 8.5
   },
   "42053": {
     "year": 2016,
@@ -24516,7 +26867,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Forest",
     "diff_margin": -12.644912427022518,
-    "diff_density": 0.20342728060113746
+    "diff_density": 0.20342728060113746,
+    "unemployment": 8.5
   },
   "42055": {
     "year": 2016,
@@ -24527,7 +26879,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Franklin",
     "diff_margin": -5.130549426779147,
-    "diff_density": 8.119538991479104
+    "diff_density": 8.119538991479104,
+    "unemployment": 5.7
   },
   "42057": {
     "year": 2016,
@@ -24538,7 +26891,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Fulton",
     "diff_margin": -7.74350437490731,
-    "diff_density": 1.2508101931207865
+    "diff_density": 1.2508101931207865,
+    "unemployment": 6.3
   },
   "42059": {
     "year": 2016,
@@ -24549,7 +26903,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Greene",
     "diff_margin": -12.663276496155135,
-    "diff_density": 0.8557956419828088
+    "diff_density": 0.8557956419828088,
+    "unemployment": 8.1
   },
   "42061": {
     "year": 2016,
@@ -24560,7 +26915,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Huntingdon",
     "diff_margin": -7.655022568732051,
-    "diff_density": 2.120313729077104
+    "diff_density": 2.120313729077104,
+    "unemployment": 7.1
   },
   "42063": {
     "year": 2016,
@@ -24571,7 +26927,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Indiana",
     "diff_margin": -9.453477523324853,
-    "diff_density": 1.6986595407663572
+    "diff_density": 1.6986595407663572,
+    "unemployment": 8.3
   },
   "42065": {
     "year": 2016,
@@ -24582,7 +26939,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Jefferson",
     "diff_margin": -7.922696889655544,
-    "diff_density": 0.6937016997992167
+    "diff_density": 0.6937016997992167,
+    "unemployment": 7.3
   },
   "42067": {
     "year": 2016,
@@ -24593,7 +26951,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Juniata",
     "diff_margin": -9.30950009613536,
-    "diff_density": 2.219787913632299
+    "diff_density": 2.219787913632299,
+    "unemployment": 5.8
   },
   "42069": {
     "year": 2016,
@@ -24604,7 +26963,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Lackawanna",
     "diff_margin": -12.872947245474009,
-    "diff_density": 10.295416920798118
+    "diff_density": 10.295416920798118,
+    "unemployment": 6.4
   },
   "42071": {
     "year": 2016,
@@ -24615,7 +26975,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Lancaster",
     "diff_margin": -2.1192751859703733,
-    "diff_density": 17.708923618101096
+    "diff_density": 17.708923618101096,
+    "unemployment": 4.8
   },
   "42073": {
     "year": 2016,
@@ -24626,7 +26987,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Lawrence",
     "diff_margin": -10.504186906669958,
-    "diff_density": 4.235194036517953
+    "diff_density": 4.235194036517953,
+    "unemployment": 7
   },
   "42075": {
     "year": 2016,
@@ -24637,7 +26999,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Lebanon",
     "diff_margin": -4.850507927885108,
-    "diff_density": 6.430210043390531
+    "diff_density": 6.430210043390531,
+    "unemployment": 5.1
   },
   "42077": {
     "year": 2016,
@@ -24648,7 +27011,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Lehigh",
     "diff_margin": -2.876546255333892,
-    "diff_density": 17.459653793782763
+    "diff_density": 17.459653793782763,
+    "unemployment": 6.3
   },
   "42079": {
     "year": 2016,
@@ -24659,7 +27023,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Luzerne",
     "diff_margin": -12.914376294912266,
-    "diff_density": 9.310677950872133
+    "diff_density": 9.310677950872133,
+    "unemployment": 6.9
   },
   "42081": {
     "year": 2016,
@@ -24670,7 +27035,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Lycoming",
     "diff_margin": -6.999121167534895,
-    "diff_density": 3.0963579387753413
+    "diff_density": 3.0963579387753413,
+    "unemployment": 7
   },
   "42083": {
     "year": 2016,
@@ -24681,7 +27047,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "McKean",
     "diff_margin": -10.644382224505524,
-    "diff_density": 0.4727777777777771
+    "diff_density": 0.4727777777777771,
+    "unemployment": 7.2
   },
   "42085": {
     "year": 2016,
@@ -24692,7 +27059,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Mercer",
     "diff_margin": -12.089328547808208,
-    "diff_density": -1.8830467751048303
+    "diff_density": -1.8830467751048303,
+    "unemployment": 6.8
   },
   "42087": {
     "year": 2016,
@@ -24703,7 +27071,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Mifflin",
     "diff_margin": -6.564937770711115,
-    "diff_density": 4.5438899836994935
+    "diff_density": 4.5438899836994935,
+    "unemployment": 6
   },
   "42089": {
     "year": 2016,
@@ -24714,7 +27083,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Monroe",
     "diff_margin": -7.56012859395851,
-    "diff_density": 4.9788181623896435
+    "diff_density": 4.9788181623896435,
+    "unemployment": 6.9
   },
   "42091": {
     "year": 2016,
@@ -24725,7 +27095,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Montgomery",
     "diff_margin": 2.119698308026635,
-    "diff_density": 31.647101689301053
+    "diff_density": 31.647101689301053,
+    "unemployment": 4.7
   },
   "42093": {
     "year": 2016,
@@ -24736,7 +27107,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Montour",
     "diff_margin": -5.5863678968951405,
-    "diff_density": 5.402862407862408
+    "diff_density": 5.402862407862408,
+    "unemployment": 4.9
   },
   "42095": {
     "year": 2016,
@@ -24747,7 +27119,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Northampton",
     "diff_margin": -5.528245491157421,
-    "diff_density": 32.5728474044418
+    "diff_density": 32.5728474044418,
+    "unemployment": 5.9
   },
   "42097": {
     "year": 2016,
@@ -24758,7 +27131,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Northumberland",
     "diff_margin": -13.09824025621229,
-    "diff_density": 3.8342600955560044
+    "diff_density": 3.8342600955560044,
+    "unemployment": 6.6
   },
   "42099": {
     "year": 2016,
@@ -24769,7 +27143,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Perry",
     "diff_margin": -7.831851746797145,
-    "diff_density": 3.6688720645570783
+    "diff_density": 3.6688720645570783,
+    "unemployment": 5.1
   },
   "42101": {
     "year": 2016,
@@ -24780,7 +27155,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Philadelphia",
     "diff_margin": -2.8848617152803513,
-    "diff_density": -75.27457867263274
+    "diff_density": -75.27457867263274,
+    "unemployment": 7.7
   },
   "42103": {
     "year": 2016,
@@ -24791,7 +27167,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Pike",
     "diff_margin": -8.384668150080564,
-    "diff_density": 5.111033470346449
+    "diff_density": 5.111033470346449,
+    "unemployment": 6.8
   },
   "42105": {
     "year": 2016,
@@ -24802,7 +27179,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Potter",
     "diff_margin": -9.474042689983285,
-    "diff_density": 0.49213553804609234
+    "diff_density": 0.49213553804609234,
+    "unemployment": 7.8
   },
   "42107": {
     "year": 2016,
@@ -24813,7 +27191,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Schuylkill",
     "diff_margin": -15.868207171314744,
-    "diff_density": 6.450267521158963
+    "diff_density": 6.450267521158963,
+    "unemployment": 6.7
   },
   "42109": {
     "year": 2016,
@@ -24824,7 +27203,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Snyder",
     "diff_margin": -6.804807445049899,
-    "diff_density": 4.049686644356555
+    "diff_density": 4.049686644356555,
+    "unemployment": 5.1
   },
   "42111": {
     "year": 2016,
@@ -24835,7 +27215,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Somerset",
     "diff_margin": -7.181472152253008,
-    "diff_density": 1.6666992749239107
+    "diff_density": 1.6666992749239107,
+    "unemployment": 7.5
   },
   "42113": {
     "year": 2016,
@@ -24846,7 +27227,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Sullivan",
     "diff_margin": -11.196363636363639,
-    "diff_density": 0.49093879183891165
+    "diff_density": 0.49093879183891165,
+    "unemployment": 7
   },
   "42115": {
     "year": 2016,
@@ -24857,7 +27239,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Susquehanna",
     "diff_margin": -12.049791666666668,
-    "diff_density": 1.407100421408014
+    "diff_density": 1.407100421408014,
+    "unemployment": 5.4
   },
   "42117": {
     "year": 2016,
@@ -24868,7 +27251,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Tioga",
     "diff_margin": -10.48926964347525,
-    "diff_density": 0.2885454978435167
+    "diff_density": 0.2885454978435167,
+    "unemployment": 7.4
   },
   "42119": {
     "year": 2016,
@@ -24879,7 +27263,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Union",
     "diff_margin": -2.274137931034481,
-    "diff_density": 3.586776378251791
+    "diff_density": 3.586776378251791,
+    "unemployment": 5.4
   },
   "42121": {
     "year": 2016,
@@ -24890,7 +27275,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Venango",
     "diff_margin": -9.188117306299784,
-    "diff_density": -0.10023076466749359
+    "diff_density": -0.10023076466749359,
+    "unemployment": 8
   },
   "42123": {
     "year": 2016,
@@ -24901,7 +27287,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Warren",
     "diff_margin": -13.045537902859731,
-    "diff_density": 0.3637201542759563
+    "diff_density": 0.3637201542759563,
+    "unemployment": 5.9
   },
   "42125": {
     "year": 2016,
@@ -24912,7 +27299,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Washington",
     "diff_margin": -7.058828201557581,
-    "diff_density": 2.5626735434485823
+    "diff_density": 2.5626735434485823,
+    "unemployment": 6.6
   },
   "42127": {
     "year": 2016,
@@ -24923,7 +27311,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Wayne",
     "diff_margin": -10.252801251956182,
-    "diff_density": 1.0427673649393583
+    "diff_density": 1.0427673649393583,
+    "unemployment": 5.6
   },
   "42129": {
     "year": 2016,
@@ -24934,7 +27323,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Westmoreland",
     "diff_margin": -4.837620776934081,
-    "diff_density": 11.847305727215229
+    "diff_density": 11.847305727215229,
+    "unemployment": 6.6
   },
   "42131": {
     "year": 2016,
@@ -24945,7 +27335,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "Wyoming",
     "diff_margin": -13.857250765018527,
-    "diff_density": 1.374404510218465
+    "diff_density": 1.374404510218465,
+    "unemployment": 6.2
   },
   "42133": {
     "year": 2016,
@@ -24956,7 +27347,8 @@ export const counties = {
     "statenam": "Pennsylvania",
     "cty_name": "York",
     "diff_margin": -5.489252140012695,
-    "diff_density": 15.40203233869363
+    "diff_density": 15.40203233869363,
+    "unemployment": 5.2
   },
   "44001": {
     "year": 2016,
@@ -24967,7 +27359,8 @@ export const counties = {
     "statenam": "Rhode Island",
     "cty_name": "Bristol",
     "diff_margin": -3.2959703436529395,
-    "diff_density": -194.94827814569544
+    "diff_density": -194.94827814569544,
+    "unemployment": 5
   },
   "44003": {
     "year": 2016,
@@ -24978,7 +27371,8 @@ export const counties = {
     "statenam": "Rhode Island",
     "cty_name": "Kent",
     "diff_margin": -11.363816412167687,
-    "diff_density": -25.712242924108466
+    "diff_density": -25.712242924108466,
+    "unemployment": 5.3
   },
   "44005": {
     "year": 2016,
@@ -24989,7 +27383,8 @@ export const counties = {
     "statenam": "Rhode Island",
     "cty_name": "Newport",
     "diff_margin": -3.19799891686975,
-    "diff_density": 191.7576062115441
+    "diff_density": 191.7576062115441,
+    "unemployment": 4.8
   },
   "44007": {
     "year": 2016,
@@ -25000,7 +27395,8 @@ export const counties = {
     "statenam": "Rhode Island",
     "cty_name": "Providence",
     "diff_margin": -8.391278173860314,
-    "diff_density": -33.75780219780211
+    "diff_density": -33.75780219780211,
+    "unemployment": 6.3
   },
   "44009": {
     "year": 2016,
@@ -25011,7 +27407,8 @@ export const counties = {
     "statenam": "Rhode Island",
     "cty_name": "Washington",
     "diff_margin": -5.923107852837994,
-    "diff_density": -22.161789575993197
+    "diff_density": -22.161789575993197,
+    "unemployment": 5
   },
   "45001": {
     "year": 2016,
@@ -25022,7 +27419,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Abbeville",
     "diff_margin": -7.95604998135024,
-    "diff_density": 0.10429619964116554
+    "diff_density": 0.10429619964116554,
+    "unemployment": 6.1
   },
   "45003": {
     "year": 2016,
@@ -25033,7 +27431,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Aiken",
     "diff_margin": -1.985747127974001,
-    "diff_density": 4.114104180088319
+    "diff_density": 4.114104180088319,
+    "unemployment": 5.6
   },
   "45005": {
     "year": 2016,
@@ -25044,7 +27443,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Allendale",
     "diff_margin": -3.1239798770262723,
-    "diff_density": -1.432326202553357
+    "diff_density": -1.432326202553357,
+    "unemployment": 9.1
   },
   "45007": {
     "year": 2016,
@@ -25055,7 +27455,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Anderson",
     "diff_margin": -4.826951280263032,
-    "diff_density": 11.29460017052682
+    "diff_density": 11.29460017052682,
+    "unemployment": 5.2
   },
   "45009": {
     "year": 2016,
@@ -25066,7 +27467,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Bamberg",
     "diff_margin": -4.461993543179979,
-    "diff_density": -1.741468083483742
+    "diff_density": -1.741468083483742,
+    "unemployment": 11.4
   },
   "45011": {
     "year": 2016,
@@ -25077,7 +27479,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Barnwell",
     "diff_margin": -5.914349614938288,
-    "diff_density": -0.804856215467094
+    "diff_density": -0.804856215467094,
+    "unemployment": 8
   },
   "45013": {
     "year": 2016,
@@ -25088,7 +27491,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Beaufort",
     "diff_margin": -0.07550364161055256,
-    "diff_density": -0.9145783299784682
+    "diff_density": -0.9145783299784682,
+    "unemployment": 5.1
   },
   "45015": {
     "year": 2016,
@@ -25099,7 +27503,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Berkeley",
     "diff_margin": -3.212916407962595,
-    "diff_density": 9.758976029703518
+    "diff_density": 9.758976029703518,
+    "unemployment": 5
   },
   "45017": {
     "year": 2016,
@@ -25110,7 +27515,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Calhoun",
     "diff_margin": -4.377252747252754,
-    "diff_density": -0.7336547291092756
+    "diff_density": -0.7336547291092756,
+    "unemployment": 7.4
   },
   "45019": {
     "year": 2016,
@@ -25121,7 +27527,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Charleston",
     "diff_margin": 0.24861245379585029,
-    "diff_density": 15.437122116822565
+    "diff_density": 15.437122116822565,
+    "unemployment": 4.5
   },
   "45021": {
     "year": 2016,
@@ -25132,7 +27539,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Cherokee",
     "diff_margin": -6.819745334191413,
-    "diff_density": 2.5016197218968017
+    "diff_density": 2.5016197218968017,
+    "unemployment": 6.6
   },
   "45023": {
     "year": 2016,
@@ -25143,7 +27551,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Chester",
     "diff_margin": -8.424414871144911,
-    "diff_density": -0.3516250473598994
+    "diff_density": -0.3516250473598994,
+    "unemployment": 8.4
   },
   "45025": {
     "year": 2016,
@@ -25154,7 +27563,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Chesterfield",
     "diff_margin": -6.3614479215319975,
-    "diff_density": 0.6646498473244229
+    "diff_density": 0.6646498473244229,
+    "unemployment": 5.7
   },
   "45027": {
     "year": 2016,
@@ -25165,7 +27575,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Clarendon",
     "diff_margin": -5.423911322248614,
-    "diff_density": -1.868833163080371
+    "diff_density": -1.868833163080371,
+    "unemployment": 7.1
   },
   "45029": {
     "year": 2016,
@@ -25176,7 +27587,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Colleton",
     "diff_margin": -5.400591956357729,
-    "diff_density": 0.13966691591969393
+    "diff_density": 0.13966691591969393,
+    "unemployment": 5.8
   },
   "45031": {
     "year": 2016,
@@ -25187,7 +27599,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Darlington",
     "diff_margin": -4.482309353489008,
-    "diff_density": -0.9170266417178965
+    "diff_density": -0.9170266417178965,
+    "unemployment": 6.8
   },
   "45033": {
     "year": 2016,
@@ -25198,7 +27611,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Dillon",
     "diff_margin": -7.8467989056087575,
-    "diff_density": -3.31171487144022
+    "diff_density": -3.31171487144022,
+    "unemployment": 7.1
   },
   "45035": {
     "year": 2016,
@@ -25209,7 +27623,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Dorchester",
     "diff_margin": -2.801244256599908,
-    "diff_density": 9.786732376184062
+    "diff_density": 9.786732376184062,
+    "unemployment": 4.9
   },
   "45037": {
     "year": 2016,
@@ -25220,7 +27635,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Edgefield",
     "diff_margin": -4.300779800755748,
-    "diff_density": 0.1189194860214613
+    "diff_density": 0.1189194860214613,
+    "unemployment": 6.1
   },
   "45039": {
     "year": 2016,
@@ -25231,7 +27647,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Fairfield",
     "diff_margin": -3.737625311055808,
-    "diff_density": -0.9343597365506753
+    "diff_density": -0.9343597365506753,
+    "unemployment": 7.7
   },
   "45041": {
     "year": 2016,
@@ -25242,7 +27659,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Florence",
     "diff_margin": -3.133410074433094,
-    "diff_density": -0.44388919445972874
+    "diff_density": -0.44388919445972874,
+    "unemployment": 5.8
   },
   "45043": {
     "year": 2016,
@@ -25253,7 +27671,11 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Georgetown",
     "diff_margin": -3.752627304165742,
-    "diff_density": 0.6825480916968871
+    "diff_density": 0.6825480916968871,
+    "unemployment": 6.6
+  },
+  "45045": {
+    "unemployment": 4.7
   },
   "45047": {
     "year": 2016,
@@ -25264,7 +27686,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Greenwood",
     "diff_margin": -4.581678321678318,
-    "diff_density": -0.15553515272799245
+    "diff_density": -0.15553515272799245,
+    "unemployment": 5.8
   },
   "45049": {
     "year": 2016,
@@ -25275,7 +27698,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Hampton",
     "diff_margin": -4.65951557880372,
-    "diff_density": -0.7336238614038226
+    "diff_density": -0.7336238614038226,
+    "unemployment": 6.2
   },
   "45051": {
     "year": 2016,
@@ -25286,7 +27710,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Horry",
     "diff_margin": -5.097899649004443,
-    "diff_density": 10.680687891348427
+    "diff_density": 10.680687891348427,
+    "unemployment": 5.4
   },
   "45053": {
     "year": 2016,
@@ -25297,7 +27722,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Jasper",
     "diff_margin": -2.65962296004502,
-    "diff_density": 6.40321858023561
+    "diff_density": 6.40321858023561,
+    "unemployment": 4.7
   },
   "45055": {
     "year": 2016,
@@ -25308,7 +27734,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Kershaw",
     "diff_margin": -4.64324675324675,
-    "diff_density": 1.28207223078617
+    "diff_density": 1.28207223078617,
+    "unemployment": 5.8
   },
   "45057": {
     "year": 2016,
@@ -25319,7 +27746,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Lancaster",
     "diff_margin": -5.05853578531395,
-    "diff_density": 10.152221574768738
+    "diff_density": 10.152221574768738,
+    "unemployment": 6
   },
   "45059": {
     "year": 2016,
@@ -25330,7 +27758,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Laurens",
     "diff_margin": -7.189861751152073,
-    "diff_density": 1.4788203978705567
+    "diff_density": 1.4788203978705567,
+    "unemployment": 5.6
   },
   "45061": {
     "year": 2016,
@@ -25341,7 +27770,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Lee",
     "diff_margin": -3.3515413070283486,
-    "diff_density": -1.9381925008532868
+    "diff_density": -1.9381925008532868,
+    "unemployment": 8.2
   },
   "45063": {
     "year": 2016,
@@ -25352,7 +27782,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Lexington",
     "diff_margin": -1.473830368795607,
-    "diff_density": 13.172858594096539
+    "diff_density": 13.172858594096539,
+    "unemployment": 4.5
   },
   "45065": {
     "year": 2016,
@@ -25363,7 +27794,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "McCormick",
     "diff_margin": -3.874046021093001,
-    "diff_density": 0.15120402082811246
+    "diff_density": 0.15120402082811246,
+    "unemployment": 5.8
   },
   "45067": {
     "year": 2016,
@@ -25374,7 +27806,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Marion",
     "diff_margin": -4.707677428430756,
-    "diff_density": -1.5700486478752325
+    "diff_density": -1.5700486478752325,
+    "unemployment": 8.6
   },
   "45069": {
     "year": 2016,
@@ -25385,7 +27818,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Marlboro",
     "diff_margin": -4.651234424804407,
-    "diff_density": 1.0435887172431038
+    "diff_density": 1.0435887172431038,
+    "unemployment": 9.1
   },
   "45071": {
     "year": 2016,
@@ -25396,7 +27830,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Newberry",
     "diff_margin": -5.292801428996725,
-    "diff_density": 0.7070376484032792
+    "diff_density": 0.7070376484032792,
+    "unemployment": 4.8
   },
   "45073": {
     "year": 2016,
@@ -25407,7 +27842,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Oconee",
     "diff_margin": -4.083399940351921,
-    "diff_density": 4.57407947886896
+    "diff_density": 4.57407947886896,
+    "unemployment": 5.5
   },
   "45075": {
     "year": 2016,
@@ -25418,7 +27854,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Orangeburg",
     "diff_margin": -3.736577374819703,
-    "diff_density": -3.810099448512787
+    "diff_density": -3.810099448512787,
+    "unemployment": 11.3
   },
   "45077": {
     "year": 2016,
@@ -25429,7 +27866,11 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Pickens",
     "diff_margin": -3.358858832436411,
-    "diff_density": 6.688862835156414
+    "diff_density": 6.688862835156414,
+    "unemployment": 5.6
+  },
+  "45079": {
+    "unemployment": 5.4
   },
   "45081": {
     "year": 2016,
@@ -25440,7 +27881,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Saluda",
     "diff_margin": -6.0407454141839025,
-    "diff_density": -0.006779893104816637
+    "diff_density": -0.006779893104816637,
+    "unemployment": 4.8
   },
   "45083": {
     "year": 2016,
@@ -25451,7 +27893,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Spartanburg",
     "diff_margin": -4.69821893652778,
-    "diff_density": 13.479239661851892
+    "diff_density": 13.479239661851892,
+    "unemployment": 5.3
   },
   "45085": {
     "year": 2016,
@@ -25462,7 +27905,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Sumter",
     "diff_margin": -3.7794987286596395,
-    "diff_density": -4.8993776594944904
+    "diff_density": -4.8993776594944904,
+    "unemployment": 6.5
   },
   "45087": {
     "year": 2016,
@@ -25473,7 +27917,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Union",
     "diff_margin": -7.111867295441378,
-    "diff_density": -0.8822107474181671
+    "diff_density": -0.8822107474181671,
+    "unemployment": 6.5
   },
   "45089": {
     "year": 2016,
@@ -25484,7 +27929,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "Williamsburg",
     "diff_margin": -3.4092949697654404,
-    "diff_density": -1.340339984585082
+    "diff_density": -1.340339984585082,
+    "unemployment": 7.9
   },
   "45091": {
     "year": 2016,
@@ -25495,7 +27941,8 @@ export const counties = {
     "statenam": "South Carolina",
     "cty_name": "York",
     "diff_margin": -2.6999889795018746,
-    "diff_density": 19.414422568322067
+    "diff_density": 19.414422568322067,
+    "unemployment": 5.2
   },
   "46003": {
     "year": 2016,
@@ -25506,7 +27953,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Aurora",
     "diff_margin": -15.545110163468372,
-    "diff_density": 0.0061099347844499885
+    "diff_density": 0.0061099347844499885,
+    "unemployment": 1.9
   },
   "46005": {
     "year": 2016,
@@ -25517,7 +27965,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Beadle",
     "diff_margin": -11.436095688127587,
-    "diff_density": -0.38988861612285586
+    "diff_density": -0.38988861612285586,
+    "unemployment": 2.3
   },
   "46007": {
     "year": 2016,
@@ -25528,7 +27977,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Bennett",
     "diff_margin": -9.692732811140118,
-    "diff_density": -0.050142397717585
+    "diff_density": -0.050142397717585,
+    "unemployment": 4
   },
   "46009": {
     "year": 2016,
@@ -25539,7 +27989,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Bon Homme",
     "diff_margin": -14.28817753866846,
-    "diff_density": -0.1741440482526171
+    "diff_density": -0.1741440482526171,
+    "unemployment": 2.4
   },
   "46011": {
     "year": 2016,
@@ -25550,7 +28001,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Brookings",
     "diff_margin": -8.512082018927444,
-    "diff_density": 0.35585703285744863
+    "diff_density": 0.35585703285744863,
+    "unemployment": 2.5
   },
   "46013": {
     "year": 2016,
@@ -25561,7 +28013,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Brown",
     "diff_margin": -11.28396698318128,
-    "diff_density": 0.026414552417422854
+    "diff_density": 0.026414552417422854,
+    "unemployment": 2.4
   },
   "46015": {
     "year": 2016,
@@ -25572,7 +28025,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Brule",
     "diff_margin": -9.683706293706294,
-    "diff_density": -0.11033282756595408
+    "diff_density": -0.11033282756595408,
+    "unemployment": 2.5
   },
   "46017": {
     "year": 2016,
@@ -25583,7 +28037,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Buffalo",
     "diff_margin": -13.221836734693873,
-    "diff_density": -0.32049896049896054
+    "diff_density": -0.32049896049896054,
+    "unemployment": 9.8
   },
   "46019": {
     "year": 2016,
@@ -25594,7 +28049,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Butte",
     "diff_margin": -7.864302807179014,
-    "diff_density": 0.06164140628472348
+    "diff_density": 0.06164140628472348,
+    "unemployment": 2.9
   },
   "46021": {
     "year": 2016,
@@ -25605,7 +28061,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Campbell",
     "diff_margin": -6.804620938628162,
-    "diff_density": 0.06264638534510958
+    "diff_density": 0.06264638534510958,
+    "unemployment": 2.5
   },
   "46023": {
     "year": 2016,
@@ -25616,7 +28073,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Charles Mix",
     "diff_margin": -12.164346053014853,
-    "diff_density": -0.3019532752006855
+    "diff_density": -0.3019532752006855,
+    "unemployment": 3
   },
   "46025": {
     "year": 2016,
@@ -25627,7 +28085,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Clark",
     "diff_margin": -15.130687990343993,
-    "diff_density": -0.16963241436925647
+    "diff_density": -0.16963241436925647,
+    "unemployment": 2.9
   },
   "46027": {
     "year": 2016,
@@ -25638,7 +28097,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Clay",
     "diff_margin": -5.010009863878473,
-    "diff_density": -0.4022732235134274
+    "diff_density": -0.4022732235134274,
+    "unemployment": 2.7
   },
   "46029": {
     "year": 2016,
@@ -25649,7 +28109,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Codington",
     "diff_margin": -12.609725769131892,
-    "diff_density": 0.20843863471314705
+    "diff_density": 0.20843863471314705,
+    "unemployment": 2.6
   },
   "46031": {
     "year": 2016,
@@ -25660,7 +28121,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Corson",
     "diff_margin": -8.46808510638298,
-    "diff_density": -0.014231786175592898
+    "diff_density": -0.014231786175592898,
+    "unemployment": 5.5
   },
   "46033": {
     "year": 2016,
@@ -25671,7 +28133,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Custer",
     "diff_margin": -5.791060220525868,
-    "diff_density": 0.12890173410404637
+    "diff_density": 0.12890173410404637,
+    "unemployment": 3.1
   },
   "46035": {
     "year": 2016,
@@ -25682,7 +28145,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Davison",
     "diff_margin": -8.54480885311871,
-    "diff_density": -0.043043438332261985
+    "diff_density": -0.043043438332261985,
+    "unemployment": 1.9
   },
   "46037": {
     "year": 2016,
@@ -25693,7 +28157,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Day",
     "diff_margin": -16.653137968693123,
-    "diff_density": -0.12748304746709183
+    "diff_density": -0.12748304746709183,
+    "unemployment": 3.6
   },
   "46039": {
     "year": 2016,
@@ -25704,7 +28169,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Deuel",
     "diff_margin": -15.936153846153847,
-    "diff_density": -0.14965408148516968
+    "diff_density": -0.14965408148516968,
+    "unemployment": 3.2
   },
   "46041": {
     "year": 2016,
@@ -25715,7 +28181,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Dewey",
     "diff_margin": -11.72749267721148,
-    "diff_density": -0.07862870197047533
+    "diff_density": -0.07862870197047533,
+    "unemployment": 14.1
   },
   "46043": {
     "year": 2016,
@@ -25726,7 +28193,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Douglas",
     "diff_margin": -6.306666666666667,
-    "diff_density": -0.19300138953219115
+    "diff_density": -0.19300138953219115,
+    "unemployment": 2.2
   },
   "46045": {
     "year": 2016,
@@ -25737,7 +28205,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Edmunds",
     "diff_margin": -12.317695516162672,
-    "diff_density": -0.01656470922590514
+    "diff_density": -0.01656470922590514,
+    "unemployment": 2.1
   },
   "46047": {
     "year": 2016,
@@ -25748,7 +28217,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Fall River",
     "diff_margin": -9.377619983160258,
-    "diff_density": 0.027807070480657003
+    "diff_density": 0.027807070480657003,
+    "unemployment": 3.8
   },
   "46049": {
     "year": 2016,
@@ -25759,7 +28229,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Faulk",
     "diff_margin": -11.123130590339894,
-    "diff_density": -0.01121721415839061
+    "diff_density": -0.01121721415839061,
+    "unemployment": 2.5
   },
   "46051": {
     "year": 2016,
@@ -25770,7 +28241,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Grant",
     "diff_margin": -14.168107804604151,
-    "diff_density": -0.06298740938573122
+    "diff_density": -0.06298740938573122,
+    "unemployment": 2.5
   },
   "46053": {
     "year": 2016,
@@ -25781,7 +28253,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Gregory",
     "diff_margin": -9.150813008130083,
-    "diff_density": -0.05982028848427534
+    "diff_density": -0.05982028848427534,
+    "unemployment": 2.6
   },
   "46055": {
     "year": 2016,
@@ -25792,7 +28265,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Haakon",
     "diff_margin": -5.264521072796936,
-    "diff_density": -0.023373266391609082
+    "diff_density": -0.023373266391609082,
+    "unemployment": 2.1
   },
   "46057": {
     "year": 2016,
@@ -25803,7 +28277,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Hamlin",
     "diff_margin": -12.885865314989136,
-    "diff_density": -0.06473848155668982
+    "diff_density": -0.06473848155668982,
+    "unemployment": 2.4
   },
   "46059": {
     "year": 2016,
@@ -25814,7 +28289,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Hand",
     "diff_margin": -12.738162816281626,
-    "diff_density": -0.024520851170463764
+    "diff_density": -0.024520851170463764,
+    "unemployment": 1.9
   },
   "46061": {
     "year": 2016,
@@ -25825,7 +28301,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Hanson",
     "diff_margin": -10.323409770687938,
-    "diff_density": -0.9433053324434413
+    "diff_density": -0.9433053324434413,
+    "unemployment": 3.2
   },
   "46063": {
     "year": 2016,
@@ -25836,7 +28313,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Harding",
     "diff_margin": -6.158517555266579,
-    "diff_density": 0.00786619649769027
+    "diff_density": 0.00786619649769027,
+    "unemployment": 2.1
   },
   "46065": {
     "year": 2016,
@@ -25847,7 +28325,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Hughes",
     "diff_margin": -4.1954826868958754,
-    "diff_density": 0.021360375424780642
+    "diff_density": 0.021360375424780642,
+    "unemployment": 2
   },
   "46067": {
     "year": 2016,
@@ -25858,7 +28337,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Hutchinson",
     "diff_margin": -6.385364041604756,
-    "diff_density": -0.07049944642637485
+    "diff_density": -0.07049944642637485,
+    "unemployment": 2
   },
   "46069": {
     "year": 2016,
@@ -25869,7 +28349,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Hyde",
     "diff_margin": -7.664057971014493,
-    "diff_density": -0.048159252544972775
+    "diff_density": -0.048159252544972775,
+    "unemployment": 2.8
   },
   "46071": {
     "year": 2016,
@@ -25880,7 +28361,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Jackson",
     "diff_margin": -9.022283105022836,
-    "diff_density": -0.0025252828731000543
+    "diff_density": -0.0025252828731000543,
+    "unemployment": 2.8
   },
   "46073": {
     "year": 2016,
@@ -25891,7 +28373,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Jerauld",
     "diff_margin": -17.62906928645295,
-    "diff_density": -0.07240047127681803
+    "diff_density": -0.07240047127681803,
+    "unemployment": 2.4
   },
   "46075": {
     "year": 2016,
@@ -25902,7 +28385,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Jones",
     "diff_margin": -5.364408602150538,
-    "diff_density": -0.054552429667519164
+    "diff_density": -0.054552429667519164,
+    "unemployment": 2.4
   },
   "46077": {
     "year": 2016,
@@ -25913,7 +28397,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Kingsbury",
     "diff_margin": -14.3121795374363,
-    "diff_density": -0.0647784292992406
+    "diff_density": -0.0647784292992406,
+    "unemployment": 2.1
   },
   "46079": {
     "year": 2016,
@@ -25924,7 +28409,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Lake",
     "diff_margin": -9.240383141762457,
-    "diff_density": 0.8872944184064764
+    "diff_density": 0.8872944184064764,
+    "unemployment": 3
   },
   "46081": {
     "year": 2016,
@@ -25935,7 +28421,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Lawrence",
     "diff_margin": -6.640192535044751,
-    "diff_density": 0.6019449270652366
+    "diff_density": 0.6019449270652366,
+    "unemployment": 2.9
   },
   "46083": {
     "year": 2016,
@@ -25946,7 +28433,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Lincoln",
     "diff_margin": -4.351756172961828,
-    "diff_density": 5.676693458980047
+    "diff_density": 5.676693458980047,
+    "unemployment": 1.8
   },
   "46085": {
     "year": 2016,
@@ -25957,7 +28445,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Lyman",
     "diff_margin": -12.592371569317386,
-    "diff_density": -0.09456033716213752
+    "diff_density": -0.09456033716213752,
+    "unemployment": 5
   },
   "46087": {
     "year": 2016,
@@ -25968,7 +28457,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "McCook",
     "diff_margin": -10.548051797448785,
-    "diff_density": -0.04460118425635695
+    "diff_density": -0.04460118425635695,
+    "unemployment": 2.1
   },
   "46089": {
     "year": 2016,
@@ -25979,7 +28469,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "McPherson",
     "diff_margin": -5.503456464379948,
-    "diff_density": -0.06968327702702726
+    "diff_density": -0.06968327702702726,
+    "unemployment": 3.6
   },
   "46091": {
     "year": 2016,
@@ -25990,7 +28481,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Marshall",
     "diff_margin": -14.67375449409348,
-    "diff_density": -0.046805040151777444
+    "diff_density": -0.046805040151777444,
+    "unemployment": 2.8
   },
   "46093": {
     "year": 2016,
@@ -26001,7 +28493,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Meade",
     "diff_margin": -7.940837277342741,
-    "diff_density": 0.22804579686428594
+    "diff_density": 0.22804579686428594,
+    "unemployment": 2.7
   },
   "46095": {
     "year": 2016,
@@ -26012,7 +28505,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Mellette",
     "diff_margin": -13.913733528550509,
-    "diff_density": -0.06755314347782848
+    "diff_density": -0.06755314347782848,
+    "unemployment": 3.8
   },
   "46097": {
     "year": 2016,
@@ -26023,7 +28517,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Miner",
     "diff_margin": -15.610225563909776,
-    "diff_density": -0.13434798618295285
+    "diff_density": -0.13434798618295285,
+    "unemployment": 2.4
   },
   "46099": {
     "year": 2016,
@@ -26034,7 +28529,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Minnehaha",
     "diff_margin": -6.168286929966911,
-    "diff_density": 2.0821507774267616
+    "diff_density": 2.0821507774267616,
+    "unemployment": 2.2
   },
   "46101": {
     "year": 2016,
@@ -26045,7 +28541,11 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Moody",
     "diff_margin": -11.556860068259383,
-    "diff_density": -0.1987670151523897
+    "diff_density": -0.1987670151523897,
+    "unemployment": 3.6
+  },
+  "46102": {
+    "unemployment": 13.2
   },
   "46103": {
     "year": 2016,
@@ -26056,7 +28556,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Pennington",
     "diff_margin": -4.540098028947867,
-    "diff_density": 1.1843599070789246
+    "diff_density": 1.1843599070789246,
+    "unemployment": 2.6
   },
   "46105": {
     "year": 2016,
@@ -26067,7 +28568,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Perkins",
     "diff_margin": -8.353897882938979,
-    "diff_density": 0.009488308575569149
+    "diff_density": 0.009488308575569149,
+    "unemployment": 2.8
   },
   "46107": {
     "year": 2016,
@@ -26078,7 +28580,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Potter",
     "diff_margin": -8.445131086142322,
-    "diff_density": -0.04972942843207839
+    "diff_density": -0.04972942843207839,
+    "unemployment": 2.3
   },
   "46109": {
     "year": 2016,
@@ -26089,7 +28592,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Roberts",
     "diff_margin": -14.486294390118374,
-    "diff_density": -0.34060960546392494
+    "diff_density": -0.34060960546392494,
+    "unemployment": 3.3
   },
   "46111": {
     "year": 2016,
@@ -26100,7 +28604,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Sanborn",
     "diff_margin": -13.429626001780942,
-    "diff_density": 0.012528630647087535
+    "diff_density": 0.012528630647087535,
+    "unemployment": 2.5
   },
   "46113": {
     "year": 2016,
@@ -26122,7 +28627,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Spink",
     "diff_margin": -11.608014232463571,
-    "diff_density": -0.057794563540614075
+    "diff_density": -0.057794563540614075,
+    "unemployment": 2.6
   },
   "46117": {
     "year": 2016,
@@ -26133,7 +28639,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Stanley",
     "diff_margin": -7.254467134652202,
-    "diff_density": 0.014857002416177822
+    "diff_density": 0.014857002416177822,
+    "unemployment": 2
   },
   "46119": {
     "year": 2016,
@@ -26144,7 +28651,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Sully",
     "diff_margin": -6.828269454123111,
-    "diff_density": 0.045167755904729656
+    "diff_density": 0.045167755904729656,
+    "unemployment": 1.9
   },
   "46121": {
     "year": 2016,
@@ -26155,7 +28663,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Todd",
     "diff_margin": -8.306470588235285,
-    "diff_density": -0.269637610186092
+    "diff_density": -0.269637610186092,
+    "unemployment": 6.8
   },
   "46123": {
     "year": 2016,
@@ -26166,7 +28675,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Tripp",
     "diff_margin": -9.823460076045627,
-    "diff_density": -0.038941672610003364
+    "diff_density": -0.038941672610003364,
+    "unemployment": 1.9
   },
   "46125": {
     "year": 2016,
@@ -26177,7 +28687,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Turner",
     "diff_margin": -10.363373493975907,
-    "diff_density": -0.09456001037176254
+    "diff_density": -0.09456001037176254,
+    "unemployment": 2.4
   },
   "46127": {
     "year": 2016,
@@ -26188,7 +28699,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Union",
     "diff_margin": -8.412273590880304,
-    "diff_density": 0.6529191818300255
+    "diff_density": 0.6529191818300255,
+    "unemployment": 2.9
   },
   "46129": {
     "year": 2016,
@@ -26199,7 +28711,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Walworth",
     "diff_margin": -8.800262414210739,
-    "diff_density": 0.025477188377573512
+    "diff_density": 0.025477188377573512,
+    "unemployment": 4.3
   },
   "46135": {
     "year": 2016,
@@ -26210,7 +28723,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Yankton",
     "diff_margin": -8.041797004991679,
-    "diff_density": -0.6888525596745723
+    "diff_density": -0.6888525596745723,
+    "unemployment": 2.3
   },
   "46137": {
     "year": 2016,
@@ -26221,7 +28735,8 @@ export const counties = {
     "statenam": "South Dakota",
     "cty_name": "Ziebach",
     "diff_margin": -11.736997389033938,
-    "diff_density": 0.0005632574811219038
+    "diff_density": 0.0005632574811219038,
+    "unemployment": 5.6
   },
   "47001": {
     "year": 2016,
@@ -26232,7 +28747,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Anderson",
     "diff_margin": -3.816774551693978,
-    "diff_density": 0.18695812077351093
+    "diff_density": 0.18695812077351093,
+    "unemployment": 5.1
   },
   "47003": {
     "year": 2016,
@@ -26243,7 +28759,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Bedford",
     "diff_margin": -7.03235294117647,
-    "diff_density": 1.803696978654223
+    "diff_density": 1.803696978654223,
+    "unemployment": 5.3
   },
   "47005": {
     "year": 2016,
@@ -26254,7 +28771,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Benton",
     "diff_margin": -12.95459348307498,
-    "diff_density": 0.23998579185061075
+    "diff_density": 0.23998579185061075,
+    "unemployment": 7.4
   },
   "47007": {
     "year": 2016,
@@ -26265,7 +28783,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Bledsoe",
     "diff_margin": -9.801182795698924,
-    "diff_density": 0.7110845656078535
+    "diff_density": 0.7110845656078535,
+    "unemployment": 6.6
   },
   "47009": {
     "year": 2016,
@@ -26276,7 +28795,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Blount",
     "diff_margin": -2.9619323419930943,
-    "diff_density": 4.681274364160288
+    "diff_density": 4.681274364160288,
+    "unemployment": 4.5
   },
   "47011": {
     "year": 2016,
@@ -26287,7 +28807,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Bradley",
     "diff_margin": -3.934705146905607,
-    "diff_density": 7.388196860931984
+    "diff_density": 7.388196860931984,
+    "unemployment": 4.7
   },
   "47013": {
     "year": 2016,
@@ -26298,7 +28819,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Campbell",
     "diff_margin": -9.521753039027512,
-    "diff_density": 0.83969262167059
+    "diff_density": 0.83969262167059,
+    "unemployment": 6.7
   },
   "47015": {
     "year": 2016,
@@ -26309,7 +28831,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Cannon",
     "diff_margin": -10.200707680694471,
-    "diff_density": 1.228800963746565
+    "diff_density": 1.228800963746565,
+    "unemployment": 4.9
   },
   "47017": {
     "year": 2016,
@@ -26320,7 +28843,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Carroll",
     "diff_margin": -9.53862963321398,
-    "diff_density": -0.8667793074676666
+    "diff_density": -0.8667793074676666,
+    "unemployment": 7.1
   },
   "47019": {
     "year": 2016,
@@ -26331,7 +28855,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Carter",
     "diff_margin": -6.781660077168581,
-    "diff_density": 1.106963657678783
+    "diff_density": 1.106963657678783,
+    "unemployment": 5.9
   },
   "47021": {
     "year": 2016,
@@ -26342,7 +28867,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Cheatham",
     "diff_margin": -6.187693231372055,
-    "diff_density": 2.1178151038222452
+    "diff_density": 2.1178151038222452,
+    "unemployment": 4
   },
   "47023": {
     "year": 2016,
@@ -26353,7 +28879,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Chester",
     "diff_margin": -6.7420618556701015,
-    "diff_density": -5.456527612514876
+    "diff_density": -5.456527612514876,
+    "unemployment": 5.7
   },
   "47025": {
     "year": 2016,
@@ -26364,7 +28891,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Claiborne",
     "diff_margin": -6.797440687464974,
-    "diff_density": 1.2152800404988717
+    "diff_density": 1.2152800404988717,
+    "unemployment": 6.4
   },
   "47027": {
     "year": 2016,
@@ -26375,7 +28903,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Clay",
     "diff_margin": -12.549376498800964,
-    "diff_density": 0.42040754206476727
+    "diff_density": 0.42040754206476727,
+    "unemployment": 6.4
   },
   "47029": {
     "year": 2016,
@@ -26386,7 +28915,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Cocke",
     "diff_margin": -8.12717542120912,
-    "diff_density": 1.5026656848306352
+    "diff_density": 1.5026656848306352,
+    "unemployment": 6
   },
   "47031": {
     "year": 2016,
@@ -26397,7 +28927,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Coffee",
     "diff_margin": -6.649891932646394,
-    "diff_density": 1.4796158149944105
+    "diff_density": 1.4796158149944105,
+    "unemployment": 4.9
   },
   "47033": {
     "year": 2016,
@@ -26408,7 +28939,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Crockett",
     "diff_margin": -6.186216115855924,
-    "diff_density": -0.42680349476538737
+    "diff_density": -0.42680349476538737,
+    "unemployment": 5.2
   },
   "47035": {
     "year": 2016,
@@ -26419,7 +28951,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Cumberland",
     "diff_margin": -5.01902806297057,
-    "diff_density": 1.5456060027605645
+    "diff_density": 1.5456060027605645,
+    "unemployment": 5.9
   },
   "47037": {
     "year": 2016,
@@ -26430,7 +28963,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Davidson",
     "diff_margin": 1.8560938509092253,
-    "diff_density": 2.6310043052993137
+    "diff_density": 2.6310043052993137,
+    "unemployment": 3.8
   },
   "47039": {
     "year": 2016,
@@ -26441,7 +28975,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Decatur",
     "diff_margin": -11.117555167140047,
-    "diff_density": 0.9797498876741031
+    "diff_density": 0.9797498876741031,
+    "unemployment": 7.3
   },
   "47041": {
     "year": 2016,
@@ -26452,7 +28987,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "DeKalb",
     "diff_margin": -11.285158501440925,
-    "diff_density": 1.7026942664695213
+    "diff_density": 1.7026942664695213,
+    "unemployment": 5.8
   },
   "47043": {
     "year": 2016,
@@ -26463,7 +28999,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Dickson",
     "diff_margin": -9.61029324883184,
-    "diff_density": 1.595715452133092
+    "diff_density": 1.595715452133092,
+    "unemployment": 4.4
   },
   "47045": {
     "year": 2016,
@@ -26474,7 +29011,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Dyer",
     "diff_margin": -6.038660647103082,
-    "diff_density": -0.9996880916596744
+    "diff_density": -0.9996880916596744,
+    "unemployment": 6.1
   },
   "47047": {
     "year": 2016,
@@ -26485,7 +29023,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Fayette",
     "diff_margin": -3.790843261162337,
-    "diff_density": -0.3774433519204301
+    "diff_density": -0.3774433519204301,
+    "unemployment": 5.3
   },
   "47049": {
     "year": 2016,
@@ -26496,7 +29035,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Fentress",
     "diff_margin": -7.594178634933661,
-    "diff_density": 0.8327624796935478
+    "diff_density": 0.8327624796935478,
+    "unemployment": 6
   },
   "47051": {
     "year": 2016,
@@ -26507,7 +29047,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Franklin",
     "diff_margin": -8.041183157122774,
-    "diff_density": 0.4373394164532769
+    "diff_density": 0.4373394164532769,
+    "unemployment": 5.7
   },
   "47053": {
     "year": 2016,
@@ -26518,7 +29059,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Gibson",
     "diff_margin": -6.40915212482037,
-    "diff_density": -0.3042874207784507
+    "diff_density": -0.3042874207784507,
+    "unemployment": 6.2
   },
   "47055": {
     "year": 2016,
@@ -26529,7 +29071,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Giles",
     "diff_margin": -8.605971223021584,
-    "diff_density": 0.52175797554548
+    "diff_density": 0.52175797554548,
+    "unemployment": 4.3
   },
   "47057": {
     "year": 2016,
@@ -26540,7 +29083,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Grainger",
     "diff_margin": -8.547902316844082,
-    "diff_density": 2.6168781183178886
+    "diff_density": 2.6168781183178886,
+    "unemployment": 5.4
   },
   "47059": {
     "year": 2016,
@@ -26551,7 +29095,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Greene",
     "diff_margin": -8.133985781788766,
-    "diff_density": -0.6328314259997398
+    "diff_density": -0.6328314259997398,
+    "unemployment": 5.8
   },
   "47061": {
     "year": 2016,
@@ -26562,7 +29107,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Grundy",
     "diff_margin": -17.769473684210528,
-    "diff_density": 1.4250478462263896
+    "diff_density": 1.4250478462263896,
+    "unemployment": 6.6
   },
   "47063": {
     "year": 2016,
@@ -26573,7 +29119,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hamblen",
     "diff_margin": -6.328260362505464,
-    "diff_density": 3.3971311577118684
+    "diff_density": 3.3971311577118684,
+    "unemployment": 5.3
   },
   "47065": {
     "year": 2016,
@@ -26584,7 +29131,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hamilton",
     "diff_margin": -2.5029553186663662,
-    "diff_density": -0.16639216120046285
+    "diff_density": -0.16639216120046285,
+    "unemployment": 5
   },
   "47067": {
     "year": 2016,
@@ -26595,7 +29143,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hancock",
     "diff_margin": -8.774060116644232,
-    "diff_density": 0.8251866510749313
+    "diff_density": 0.8251866510749313,
+    "unemployment": 8
   },
   "47069": {
     "year": 2016,
@@ -26606,7 +29155,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hardeman",
     "diff_margin": -7.346615451201032,
-    "diff_density": -1.7899053566347707
+    "diff_density": -1.7899053566347707,
+    "unemployment": 6.2
   },
   "47071": {
     "year": 2016,
@@ -26617,7 +29167,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hardin",
     "diff_margin": -7.2068539551713755,
-    "diff_density": -0.9469230236264146
+    "diff_density": -0.9469230236264146,
+    "unemployment": 6.2
   },
   "47073": {
     "year": 2016,
@@ -26628,7 +29179,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hawkins",
     "diff_margin": -8.777220450372088,
-    "diff_density": 1.844558298082056
+    "diff_density": 1.844558298082056,
+    "unemployment": 5.5
   },
   "47075": {
     "year": 2016,
@@ -26639,7 +29191,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Haywood",
     "diff_margin": -6.080984759671743,
-    "diff_density": -1.3996398491868458
+    "diff_density": -1.3996398491868458,
+    "unemployment": 6.5
   },
   "47077": {
     "year": 2016,
@@ -26650,7 +29203,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Henderson",
     "diff_margin": -7.37368855682265,
-    "diff_density": 0.2289055319476212
+    "diff_density": 0.2289055319476212,
+    "unemployment": 7
   },
   "47079": {
     "year": 2016,
@@ -26661,7 +29215,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Henry",
     "diff_margin": -10.30738108171025,
-    "diff_density": 0.2665255292652553
+    "diff_density": 0.2665255292652553,
+    "unemployment": 6
   },
   "47081": {
     "year": 2016,
@@ -26672,7 +29227,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Hickman",
     "diff_margin": -12.003785106931204,
-    "diff_density": 0.26265306122448884
+    "diff_density": 0.26265306122448884,
+    "unemployment": 4.6
   },
   "47083": {
     "year": 2016,
@@ -26683,7 +29239,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Houston",
     "diff_margin": -18.91982622432859,
-    "diff_density": 0.6920869738878643
+    "diff_density": 0.6920869738878643,
+    "unemployment": 7.7
   },
   "47085": {
     "year": 2016,
@@ -26694,7 +29251,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Humphreys",
     "diff_margin": -14.777121445580612,
-    "diff_density": 0.5149508456062382
+    "diff_density": 0.5149508456062382,
+    "unemployment": 6.2
   },
   "47087": {
     "year": 2016,
@@ -26705,7 +29263,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Jackson",
     "diff_margin": -16.172098043624917,
-    "diff_density": 0.8533264141152053
+    "diff_density": 0.8533264141152053,
+    "unemployment": 7.3
   },
   "47089": {
     "year": 2016,
@@ -26716,7 +29275,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Jefferson",
     "diff_margin": -5.72577656101927,
-    "diff_density": 5.230934033858745
+    "diff_density": 5.230934033858745,
+    "unemployment": 5.4
   },
   "47091": {
     "year": 2016,
@@ -26727,7 +29287,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Johnson",
     "diff_margin": -8.869835265405735,
-    "diff_density": 1.2146207451085473
+    "diff_density": 1.2146207451085473,
+    "unemployment": 4.9
   },
   "47093": {
     "year": 2016,
@@ -26738,7 +29299,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Knox",
     "diff_margin": 0.6357681880557422,
-    "diff_density": 13.300009051376435
+    "diff_density": 13.300009051376435,
+    "unemployment": 4.3
   },
   "47095": {
     "year": 2016,
@@ -26749,7 +29311,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Lake",
     "diff_margin": -13.070659898477157,
-    "diff_density": -0.7067812763903962
+    "diff_density": -0.7067812763903962,
+    "unemployment": 7.3
   },
   "47097": {
     "year": 2016,
@@ -26760,7 +29323,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Lauderdale",
     "diff_margin": -4.0304770684489455,
-    "diff_density": -0.024017246128096303
+    "diff_density": -0.024017246128096303,
+    "unemployment": 7.8
   },
   "47099": {
     "year": 2016,
@@ -26771,7 +29335,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Lawrence",
     "diff_margin": -9.82365053008047,
-    "diff_density": 0.7122878485894368
+    "diff_density": 0.7122878485894368,
+    "unemployment": 5.9
   },
   "47101": {
     "year": 2016,
@@ -26782,7 +29347,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Lewis",
     "diff_margin": -11.486379048033033,
-    "diff_density": -0.32960260909638706
+    "diff_density": -0.32960260909638706,
+    "unemployment": 5.8
   },
   "47103": {
     "year": 2016,
@@ -26793,7 +29359,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Lincoln",
     "diff_margin": -5.58372268274303,
-    "diff_density": 0.006823298383416443
+    "diff_density": 0.006823298383416443,
+    "unemployment": 4.4
   },
   "47105": {
     "year": 2016,
@@ -26804,7 +29371,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Loudon",
     "diff_margin": -1.8149090284929628,
-    "diff_density": 5.366521245964577
+    "diff_density": 5.366521245964577,
+    "unemployment": 4.8
   },
   "47107": {
     "year": 2016,
@@ -26815,7 +29383,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "McMinn",
     "diff_margin": -7.079970043864339,
-    "diff_density": 2.0022895936017875
+    "diff_density": 2.0022895936017875,
+    "unemployment": 5.8
   },
   "47109": {
     "year": 2016,
@@ -26826,7 +29395,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "McNairy",
     "diff_margin": -8.574419531639261,
-    "diff_density": 0.4185897025903422
+    "diff_density": 0.4185897025903422,
+    "unemployment": 7.4
   },
   "47111": {
     "year": 2016,
@@ -26837,7 +29407,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Macon",
     "diff_margin": -8.180934579439253,
-    "diff_density": 1.9062733606824267
+    "diff_density": 1.9062733606824267,
+    "unemployment": 4.5
   },
   "47113": {
     "year": 2016,
@@ -26848,7 +29419,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Madison",
     "diff_margin": -4.249796631712741,
-    "diff_density": -5.275680643308448
+    "diff_density": -5.275680643308448,
+    "unemployment": 5.3
   },
   "47115": {
     "year": 2016,
@@ -26859,7 +29431,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Marion",
     "diff_margin": -11.862939438700142,
-    "diff_density": 0.8540179861891737
+    "diff_density": 0.8540179861891737,
+    "unemployment": 6.7
   },
   "47117": {
     "year": 2016,
@@ -26870,7 +29443,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Marshall",
     "diff_margin": -9.701925977898615,
-    "diff_density": 1.758081819634583
+    "diff_density": 1.758081819634583,
+    "unemployment": 4.8
   },
   "47119": {
     "year": 2016,
@@ -26881,7 +29455,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Maury",
     "diff_margin": -7.239832325767079,
-    "diff_density": 3.3641155364190922
+    "diff_density": 3.3641155364190922,
+    "unemployment": 4.2
   },
   "47121": {
     "year": 2016,
@@ -26892,7 +29467,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Meigs",
     "diff_margin": -9.483818139642775,
-    "diff_density": 1.774095940959409
+    "diff_density": 1.774095940959409,
+    "unemployment": 7.2
   },
   "47123": {
     "year": 2016,
@@ -26903,7 +29479,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Monroe",
     "diff_margin": -8.085513196480942,
-    "diff_density": 1.1163133879824372
+    "diff_density": 1.1163133879824372,
+    "unemployment": 5.5
   },
   "47125": {
     "year": 2016,
@@ -26914,7 +29491,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Montgomery",
     "diff_margin": -6.219041167638537,
-    "diff_density": 3.141685151526403
+    "diff_density": 3.141685151526403,
+    "unemployment": 5.5
   },
   "47127": {
     "year": 2016,
@@ -26925,7 +29503,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Moore",
     "diff_margin": -8.23853041695147,
-    "diff_density": 0.983553629469121
+    "diff_density": 0.983553629469121,
+    "unemployment": 4.2
   },
   "47129": {
     "year": 2016,
@@ -26936,7 +29515,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Morgan",
     "diff_margin": -10.718679471788715,
-    "diff_density": 0.3018828756367533
+    "diff_density": 0.3018828756367533,
+    "unemployment": 6.6
   },
   "47131": {
     "year": 2016,
@@ -26947,7 +29527,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Obion",
     "diff_margin": -7.170353432054327,
-    "diff_density": -0.13136067409542562
+    "diff_density": -0.13136067409542562,
+    "unemployment": 7.5
   },
   "47133": {
     "year": 2016,
@@ -26958,7 +29539,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Overton",
     "diff_margin": -12.890420988407566,
-    "diff_density": 1.225139798837315
+    "diff_density": 1.225139798837315,
+    "unemployment": 5.6
   },
   "47135": {
     "year": 2016,
@@ -26969,7 +29551,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Perry",
     "diff_margin": -16.93931698774081,
-    "diff_density": 0.563996817206375
+    "diff_density": 0.563996817206375,
+    "unemployment": 6.2
   },
   "47137": {
     "year": 2016,
@@ -26980,7 +29563,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Pickett",
     "diff_margin": -8.485730164814107,
-    "diff_density": 0.9580991532703393
+    "diff_density": 0.9580991532703393,
+    "unemployment": 5.7
   },
   "47139": {
     "year": 2016,
@@ -26991,7 +29575,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Polk",
     "diff_margin": -11.42754601226994,
-    "diff_density": 1.0595398914143743
+    "diff_density": 1.0595398914143743,
+    "unemployment": 5.8
   },
   "47141": {
     "year": 2016,
@@ -27002,7 +29587,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Putnam",
     "diff_margin": -5.20123154536687,
-    "diff_density": 3.6401720269259457
+    "diff_density": 3.6401720269259457,
+    "unemployment": 5.2
   },
   "47143": {
     "year": 2016,
@@ -27013,7 +29599,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Rhea",
     "diff_margin": -7.07835921797917,
-    "diff_density": 1.1273371805441101
+    "diff_density": 1.1273371805441101,
+    "unemployment": 7.5
   },
   "47145": {
     "year": 2016,
@@ -27024,7 +29611,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Roane",
     "diff_margin": -6.134263206672848,
-    "diff_density": 1.3564533836045598
+    "diff_density": 1.3564533836045598,
+    "unemployment": 5.8
   },
   "47147": {
     "year": 2016,
@@ -27035,7 +29623,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Robertson",
     "diff_margin": -6.997790843872497,
-    "diff_density": 1.5763337462470304
+    "diff_density": 1.5763337462470304,
+    "unemployment": 4.4
   },
   "47149": {
     "year": 2016,
@@ -27046,7 +29635,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Rutherford",
     "diff_margin": -2.454262378189604,
-    "diff_density": 12.38075432704727
+    "diff_density": 12.38075432704727,
+    "unemployment": 4
   },
   "47151": {
     "year": 2016,
@@ -27057,7 +29647,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Scott",
     "diff_margin": -8.667547381721185,
-    "diff_density": 0.8515517565282753
+    "diff_density": 0.8515517565282753,
+    "unemployment": 7.4
   },
   "47153": {
     "year": 2016,
@@ -27068,7 +29659,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Sequatchie",
     "diff_margin": -10.414032115757898,
-    "diff_density": 1.9757300835025937
+    "diff_density": 1.9757300835025937,
+    "unemployment": 6.1
   },
   "47155": {
     "year": 2016,
@@ -27079,7 +29671,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Sevier",
     "diff_margin": -4.516412382531787,
-    "diff_density": 3.9132911392405063
+    "diff_density": 3.9132911392405063,
+    "unemployment": 4.2
   },
   "47157": {
     "year": 2016,
@@ -27090,7 +29683,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Shelby",
     "diff_margin": -0.36296651308830974,
-    "diff_density": -51.424552720887846
+    "diff_density": -51.424552720887846,
+    "unemployment": 5.8
   },
   "47159": {
     "year": 2016,
@@ -27101,7 +29695,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Smith",
     "diff_margin": -12.069973009446695,
-    "diff_density": 1.0269512233924054
+    "diff_density": 1.0269512233924054,
+    "unemployment": 4.6
   },
   "47161": {
     "year": 2016,
@@ -27112,7 +29707,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Stewart",
     "diff_margin": -17.319203104296804,
-    "diff_density": 0.361534844229638
+    "diff_density": 0.361534844229638,
+    "unemployment": 6.8
   },
   "47163": {
     "year": 2016,
@@ -27123,7 +29719,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Sullivan",
     "diff_margin": -5.683575008352822,
-    "diff_density": -0.06676214437777617
+    "diff_density": -0.06676214437777617,
+    "unemployment": 5.5
   },
   "47165": {
     "year": 2016,
@@ -27134,7 +29731,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Sumner",
     "diff_margin": -2.8811705120990467,
-    "diff_density": 10.792526206440627
+    "diff_density": 10.792526206440627,
+    "unemployment": 4.1
   },
   "47167": {
     "year": 2016,
@@ -27145,7 +29743,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Tipton",
     "diff_margin": -4.893831935649498,
-    "diff_density": -1.550624604577088
+    "diff_density": -1.550624604577088,
+    "unemployment": 5.9
   },
   "47169": {
     "year": 2016,
@@ -27156,7 +29755,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Trousdale",
     "diff_margin": -12.677269255251431,
-    "diff_density": 2.0755442683247196
+    "diff_density": 2.0755442683247196,
+    "unemployment": 4.9
   },
   "47171": {
     "year": 2016,
@@ -27167,7 +29767,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Unicoi",
     "diff_margin": -9.41696902037399,
-    "diff_density": 0.43376880103136983
+    "diff_density": 0.43376880103136983,
+    "unemployment": 6.9
   },
   "47173": {
     "year": 2016,
@@ -27178,7 +29779,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Union",
     "diff_margin": -9.080180528691166,
-    "diff_density": 1.682180720196822
+    "diff_density": 1.682180720196822,
+    "unemployment": 5.9
   },
   "47175": {
     "year": 2016,
@@ -27189,7 +29791,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Van Buren",
     "diff_margin": -15.739627637567231,
-    "diff_density": 0.42988003803671937
+    "diff_density": 0.42988003803671937,
+    "unemployment": 5.8
   },
   "47177": {
     "year": 2016,
@@ -27200,7 +29803,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Warren",
     "diff_margin": -10.450287504607441,
-    "diff_density": 1.2711139872423054
+    "diff_density": 1.2711139872423054,
+    "unemployment": 4.8
   },
   "47179": {
     "year": 2016,
@@ -27211,7 +29815,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Washington",
     "diff_margin": -3.503997490437353,
-    "diff_density": 4.223917784720953
+    "diff_density": 4.223917784720953,
+    "unemployment": 5.1
   },
   "47181": {
     "year": 2016,
@@ -27222,7 +29827,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Wayne",
     "diff_margin": -8.926805888394384,
-    "diff_density": 0.4880438632338917
+    "diff_density": 0.4880438632338917,
+    "unemployment": 6.2
   },
   "47183": {
     "year": 2016,
@@ -27233,7 +29839,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Weakley",
     "diff_margin": -5.918406860724005,
-    "diff_density": -0.3643490247432659
+    "diff_density": -0.3643490247432659,
+    "unemployment": 7.3
   },
   "47185": {
     "year": 2016,
@@ -27244,7 +29851,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "White",
     "diff_margin": -11.737937806873976,
-    "diff_density": 1.6837526216582148
+    "diff_density": 1.6837526216582148,
+    "unemployment": 5.4
   },
   "47187": {
     "year": 2016,
@@ -27255,7 +29863,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Williamson",
     "diff_margin": 3.4707640878701085,
-    "diff_density": 14.541637487126678
+    "diff_density": 14.541637487126678,
+    "unemployment": 3.7
   },
   "47189": {
     "year": 2016,
@@ -27266,7 +29875,8 @@ export const counties = {
     "statenam": "Tennessee",
     "cty_name": "Wilson",
     "diff_margin": -3.024545712965928,
-    "diff_density": 8.383787467372073
+    "diff_density": 8.383787467372073,
+    "unemployment": 4
   },
   "48001": {
     "year": 2016,
@@ -27277,7 +29887,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Anderson",
     "diff_margin": -3.6348812696156827,
-    "diff_density": 0.632151326933938
+    "diff_density": 0.632151326933938,
+    "unemployment": 4.8
   },
   "48003": {
     "year": 2016,
@@ -27288,7 +29899,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Andrews",
     "diff_margin": -0.7688266341859489,
-    "diff_density": 0.2924463087471927
+    "diff_density": 0.2924463087471927,
+    "unemployment": 4.9
   },
   "48005": {
     "year": 2016,
@@ -27299,7 +29911,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Angelina",
     "diff_margin": -2.3439772346836314,
-    "diff_density": 1.831399884679989
+    "diff_density": 1.831399884679989,
+    "unemployment": 6.6
   },
   "48007": {
     "year": 2016,
@@ -27310,7 +29923,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Aransas",
     "diff_margin": -4.5466714435846,
-    "diff_density": 3.2541797913278003
+    "diff_density": 3.2541797913278003,
+    "unemployment": 5.9
   },
   "48009": {
     "year": 2016,
@@ -27321,7 +29935,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Archer",
     "diff_margin": -3.3806722885921747,
-    "diff_density": 0.11699892593371786
+    "diff_density": 0.11699892593371786,
+    "unemployment": 4.5
   },
   "48011": {
     "year": 2016,
@@ -27332,7 +29947,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Armstrong",
     "diff_margin": -3.5970108161258603,
-    "diff_density": 0.08867650779333625
+    "diff_density": 0.08867650779333625,
+    "unemployment": 3.5
   },
   "48013": {
     "year": 2016,
@@ -27343,7 +29959,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Atascosa",
     "diff_margin": -6.2816427783902995,
-    "diff_density": 0.7258456467192556
+    "diff_density": 0.7258456467192556,
+    "unemployment": 5.7
   },
   "48015": {
     "year": 2016,
@@ -27354,7 +29971,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Austin",
     "diff_margin": -0.40711138310893347,
-    "diff_density": 0.9356232695549949
+    "diff_density": 0.9356232695549949,
+    "unemployment": 5.9
   },
   "48017": {
     "year": 2016,
@@ -27365,7 +29983,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bailey",
     "diff_margin": -3.406636771300448,
-    "diff_density": -0.04228350266086123
+    "diff_density": -0.04228350266086123,
+    "unemployment": 4.6
   },
   "48019": {
     "year": 2016,
@@ -27376,7 +29995,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bandera",
     "diff_margin": -2.8299706256731625,
-    "diff_density": 0.9721573783756448
+    "diff_density": 0.9721573783756448,
+    "unemployment": 4.3
   },
   "48021": {
     "year": 2016,
@@ -27387,7 +30007,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bastrop",
     "diff_margin": -2.927168141592915,
-    "diff_density": 4.247690142430898
+    "diff_density": 4.247690142430898,
+    "unemployment": 4.1
   },
   "48023": {
     "year": 2016,
@@ -27398,7 +30019,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Baylor",
     "diff_margin": -3.9683914209115283,
-    "diff_density": -0.1200756213399734
+    "diff_density": -0.1200756213399734,
+    "unemployment": 3.5
   },
   "48025": {
     "year": 2016,
@@ -27409,7 +30031,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bee",
     "diff_margin": -3.102977063135498,
-    "diff_density": 0.6587430700717984
+    "diff_density": 0.6587430700717984,
+    "unemployment": 8.5
   },
   "48027": {
     "year": 2016,
@@ -27420,7 +30043,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bell",
     "diff_margin": -1.1810637347205812,
-    "diff_density": 7.415976479990874
+    "diff_density": 7.415976479990874,
+    "unemployment": 4.8
   },
   "48029": {
     "year": 2016,
@@ -27431,7 +30055,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bexar",
     "diff_margin": 2.9059220050576826,
-    "diff_density": 58.35990514752143
+    "diff_density": 58.35990514752143,
+    "unemployment": 4.1
   },
   "48031": {
     "year": 2016,
@@ -27442,7 +30067,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Blanco",
     "diff_margin": -2.5860945493032297,
-    "diff_density": 0.9829502996122663
+    "diff_density": 0.9829502996122663,
+    "unemployment": 3.3
   },
   "48033": {
     "year": 2016,
@@ -27453,7 +30079,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Borden",
     "diff_margin": -0.32684931506849324,
-    "diff_density": 0.006712426457478993
+    "diff_density": 0.006712426457478993,
+    "unemployment": 3.4
   },
   "48035": {
     "year": 2016,
@@ -27464,7 +30091,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bosque",
     "diff_margin": -2.201905861228674,
-    "diff_density": 0.4520026857107968
+    "diff_density": 0.4520026857107968,
+    "unemployment": 4.7
   },
   "48037": {
     "year": 2016,
@@ -27475,7 +30103,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Bowie",
     "diff_margin": -3.1806208297069887,
-    "diff_density": -1.0512875560728148
+    "diff_density": -1.0512875560728148,
+    "unemployment": 5.4
   },
   "48039": {
     "year": 2016,
@@ -27486,7 +30115,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Brazoria",
     "diff_margin": 3.5575081465717844,
-    "diff_density": 9.982784120203277
+    "diff_density": 9.982784120203277,
+    "unemployment": 5.7
   },
   "48041": {
     "year": 2016,
@@ -27497,7 +30127,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Brazos",
     "diff_margin": 3.661574292809984,
-    "diff_density": 17.20528567768382
+    "diff_density": 17.20528567768382,
+    "unemployment": 3.9
   },
   "48043": {
     "year": 2016,
@@ -27508,7 +30139,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Brewster",
     "diff_margin": -1.413781353525792,
-    "diff_density": 0.05340629361243132
+    "diff_density": 0.05340629361243132,
+    "unemployment": 4.3
   },
   "48045": {
     "year": 2016,
@@ -27519,7 +30151,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Briscoe",
     "diff_margin": -4.272179836512263,
-    "diff_density": 0.03555555555555556
+    "diff_density": 0.03555555555555556,
+    "unemployment": 4.8
   },
   "48047": {
     "year": 2016,
@@ -27530,7 +30163,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Brooks",
     "diff_margin": -3.8752080123266524,
-    "diff_density": 0.20186567164179126
+    "diff_density": 0.20186567164179126,
+    "unemployment": 12.5
   },
   "48049": {
     "year": 2016,
@@ -27541,7 +30175,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Brown",
     "diff_margin": -2.029095275647,
-    "diff_density": -0.00024469786008296524
+    "diff_density": -0.00024469786008296524,
+    "unemployment": 4.8
   },
   "48051": {
     "year": 2016,
@@ -27552,7 +30187,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Burleson",
     "diff_margin": -4.941317494600433,
-    "diff_density": 0.7382152557546693
+    "diff_density": 0.7382152557546693,
+    "unemployment": 5.2
   },
   "48053": {
     "year": 2016,
@@ -27563,7 +30199,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Burnet",
     "diff_margin": -1.9970608001680148,
-    "diff_density": 2.2659551827489786
+    "diff_density": 2.2659551827489786,
+    "unemployment": 3.8
   },
   "48055": {
     "year": 2016,
@@ -27574,7 +30211,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Caldwell",
     "diff_margin": -3.4659330429584045,
-    "diff_density": 1.1741591167516425
+    "diff_density": 1.1741591167516425,
+    "unemployment": 4.5
   },
   "48057": {
     "year": 2016,
@@ -27585,7 +30223,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Calhoun",
     "diff_margin": -5.805843035791288,
-    "diff_density": 0.6062252387341189
+    "diff_density": 0.6062252387341189,
+    "unemployment": 5.5
   },
   "48059": {
     "year": 2016,
@@ -27596,7 +30235,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Callahan",
     "diff_margin": -4.2268178545716335,
-    "diff_density": 0.3976576937189362
+    "diff_density": 0.3976576937189362,
+    "unemployment": 4.6
   },
   "48061": {
     "year": 2016,
@@ -27607,7 +30247,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Cameron",
     "diff_margin": -0.37516840224826353,
-    "diff_density": 16.734044358640503
+    "diff_density": 16.734044358640503,
+    "unemployment": 7.6
   },
   "48063": {
     "year": 2016,
@@ -27618,7 +30259,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Camp",
     "diff_margin": -5.19891677675033,
-    "diff_density": 1.0535862738089143
+    "diff_density": 1.0535862738089143,
+    "unemployment": 7.8
   },
   "48065": {
     "year": 2016,
@@ -27629,7 +30271,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Carson",
     "diff_margin": -2.0549915110356523,
-    "diff_density": 0.18032166221121004
+    "diff_density": 0.18032166221121004,
+    "unemployment": 3.5
   },
   "48067": {
     "year": 2016,
@@ -27640,7 +30283,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Cass",
     "diff_margin": -5.41347578838532,
-    "diff_density": -0.19313183060109296
+    "diff_density": -0.19313183060109296,
+    "unemployment": 8.2
   },
   "48069": {
     "year": 2016,
@@ -27651,7 +30295,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Castro",
     "diff_margin": -3.3772945891783586,
-    "diff_density": -0.13841116688840938
+    "diff_density": -0.13841116688840938,
+    "unemployment": 3.5
   },
   "48071": {
     "year": 2016,
@@ -27662,7 +30307,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Chambers",
     "diff_margin": -1.2900024008162774,
-    "diff_density": 3.2213296714338355
+    "diff_density": 3.2213296714338355,
+    "unemployment": 6.8
   },
   "48073": {
     "year": 2016,
@@ -27673,7 +30319,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Cherokee",
     "diff_margin": -3.2767516915154786,
-    "diff_density": 0.541754565917314
+    "diff_density": 0.541754565917314,
+    "unemployment": 5.5
   },
   "48075": {
     "year": 2016,
@@ -27684,7 +30331,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Childress",
     "diff_margin": -3.889884836852209,
-    "diff_density": 0.12253302699597945
+    "diff_density": 0.12253302699597945,
+    "unemployment": 3.5
   },
   "48077": {
     "year": 2016,
@@ -27695,7 +30343,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Clay",
     "diff_margin": -3.9335322290959898,
-    "diff_density": -0.037347343669630106
+    "diff_density": -0.037347343669630106,
+    "unemployment": 4.5
   },
   "48079": {
     "year": 2016,
@@ -27706,7 +30355,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Cochran",
     "diff_margin": -6.832319644839071,
-    "diff_density": -0.01764432690446993
+    "diff_density": -0.01764432690446993,
+    "unemployment": 6
   },
   "48081": {
     "year": 2016,
@@ -27717,7 +30367,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Coke",
     "diff_margin": -2.871630358397752,
-    "diff_density": 0.02121430217121789
+    "diff_density": 0.02121430217121789,
+    "unemployment": 3.9
   },
   "48083": {
     "year": 2016,
@@ -27728,7 +30379,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Coleman",
     "diff_margin": -2.013507565337001,
-    "diff_density": 0.11046277586275188
+    "diff_density": 0.11046277586275188,
+    "unemployment": 6.4
   },
   "48085": {
     "year": 2016,
@@ -27739,7 +30391,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Collin",
     "diff_margin": 5.730014303944806,
-    "diff_density": 63.85771382380557
+    "diff_density": 63.85771382380557,
+    "unemployment": 3.8
   },
   "48087": {
     "year": 2016,
@@ -27750,7 +30403,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Collingsworth",
     "diff_margin": -2.825008665511266,
-    "diff_density": 0.006478376377335504
+    "diff_density": 0.006478376377335504,
+    "unemployment": 3.6
   },
   "48089": {
     "year": 2016,
@@ -27761,7 +30415,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Colorado",
     "diff_margin": -1.6863207547169807,
-    "diff_density": 0.3808496568673405
+    "diff_density": 0.3808496568673405,
+    "unemployment": 5.3
   },
   "48091": {
     "year": 2016,
@@ -27772,7 +30427,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Comal",
     "diff_margin": 0.7890795393636196,
-    "diff_density": 17.94325445056124
+    "diff_density": 17.94325445056124,
+    "unemployment": 4.2
   },
   "48093": {
     "year": 2016,
@@ -27783,7 +30439,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Comanche",
     "diff_margin": -3.0094316436251933,
-    "diff_density": 0.32371900826446254
+    "diff_density": 0.32371900826446254,
+    "unemployment": 4.6
   },
   "48095": {
     "year": 2016,
@@ -27794,7 +30451,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Concho",
     "diff_margin": -5.509334582942827,
-    "diff_density": 0.06457003455986987
+    "diff_density": 0.06457003455986987,
+    "unemployment": 3.2
   },
   "48097": {
     "year": 2016,
@@ -27805,7 +30463,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Cooke",
     "diff_margin": -0.8960047816786219,
-    "diff_density": 1.7595550779642402
+    "diff_density": 1.7595550779642402,
+    "unemployment": 4.2
   },
   "48099": {
     "year": 2016,
@@ -27816,7 +30475,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Coryell",
     "diff_margin": -3.1623887019363366,
-    "diff_density": 1.449842120771434
+    "diff_density": 1.449842120771434,
+    "unemployment": 4.9
   },
   "48101": {
     "year": 2016,
@@ -27827,7 +30487,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Cottle",
     "diff_margin": -9.881766723842194,
-    "diff_density": -0.17262503331260537
+    "diff_density": -0.17262503331260537,
+    "unemployment": 5
   },
   "48103": {
     "year": 2016,
@@ -27838,7 +30499,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Crane",
     "diff_margin": 0.22097755249819073,
-    "diff_density": 0.1290788082591361
+    "diff_density": 0.1290788082591361,
+    "unemployment": 9.1
   },
   "48105": {
     "year": 2016,
@@ -27849,7 +30511,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Crockett",
     "diff_margin": -6.27333333333333,
-    "diff_density": -0.023086562676991995
+    "diff_density": -0.023086562676991995,
+    "unemployment": 6.7
   },
   "48107": {
     "year": 2016,
@@ -27860,7 +30523,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Crosby",
     "diff_margin": -8.423551401869158,
-    "diff_density": -0.08820039991113093
+    "diff_density": -0.08820039991113093,
+    "unemployment": 5.1
   },
   "48109": {
     "year": 2016,
@@ -27871,7 +30535,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Culberson",
     "diff_margin": -5.039947506561688,
-    "diff_density": -0.030146873688627812
+    "diff_density": -0.030146873688627812,
+    "unemployment": 4.1
   },
   "48111": {
     "year": 2016,
@@ -27882,7 +30547,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Dallam",
     "diff_margin": -2.0274592833876213,
-    "diff_density": 0.0011141119965940582
+    "diff_density": 0.0011141119965940582,
+    "unemployment": 2.5
   },
   "48113": {
     "year": 2016,
@@ -27893,7 +30559,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Dallas",
     "diff_margin": 4.016438588474777,
-    "diff_density": 46.51737856946113
+    "diff_density": 46.51737856946113,
+    "unemployment": 4.2
   },
   "48115": {
     "year": 2016,
@@ -27904,7 +30571,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Dawson",
     "diff_margin": -4.538113419427287,
-    "diff_density": -0.09358498739323062
+    "diff_density": -0.09358498739323062,
+    "unemployment": 6
   },
   "48117": {
     "year": 2016,
@@ -27915,7 +30583,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Deaf Smith",
     "diff_margin": -0.5424303737205456,
-    "diff_density": -0.07347705545571737
+    "diff_density": -0.07347705545571737,
+    "unemployment": 3.5
   },
   "48119": {
     "year": 2016,
@@ -27926,7 +30595,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Delta",
     "diff_margin": -4.9484422992540615,
-    "diff_density": 1.0139194766762705
+    "diff_density": 1.0139194766762705,
+    "unemployment": 4.3
   },
   "48121": {
     "year": 2016,
@@ -27937,7 +30607,11 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Denton",
     "diff_margin": 4.155924231213795,
-    "diff_density": 57.49634757465026
+    "diff_density": 57.49634757465026,
+    "unemployment": 3.7
+  },
+  "48123": {
+    "unemployment": 6
   },
   "48125": {
     "year": 2016,
@@ -27948,7 +30622,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Dickens",
     "diff_margin": -7.118591859185919,
-    "diff_density": -0.12192654038947781
+    "diff_density": -0.12192654038947781,
+    "unemployment": 5.7
   },
   "48127": {
     "year": 2016,
@@ -27959,7 +30634,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Dimmit",
     "diff_margin": -6.020155038759697,
-    "diff_density": 0.2268556980314247
+    "diff_density": 0.2268556980314247,
+    "unemployment": 7.4
   },
   "48129": {
     "year": 2016,
@@ -27970,7 +30646,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Donley",
     "diff_margin": -1.7063013698630147,
-    "diff_density": -0.08484005653313753
+    "diff_density": -0.08484005653313753,
+    "unemployment": 5.3
   },
   "48131": {
     "year": 2016,
@@ -27981,7 +30658,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Duval",
     "diff_margin": -9.764876172156775,
-    "diff_density": -0.10104467292637764
+    "diff_density": -0.10104467292637764,
+    "unemployment": 12.1
   },
   "48133": {
     "year": 2016,
@@ -27992,7 +30670,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Eastland",
     "diff_margin": -3.740382119682767,
-    "diff_density": 0.4752399917969976
+    "diff_density": 0.4752399917969976,
+    "unemployment": 5.7
   },
   "48135": {
     "year": 2016,
@@ -28003,7 +30682,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Ector",
     "diff_margin": 3.141511285843894,
-    "diff_density": 4.2984417783421875
+    "diff_density": 4.2984417783421875,
+    "unemployment": 6.8
   },
   "48137": {
     "year": 2016,
@@ -28014,7 +30694,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Edwards",
     "diff_margin": 2.1168075117370897,
-    "diff_density": 0.08286610068654204
+    "diff_density": 0.08286610068654204,
+    "unemployment": 5.2
   },
   "48139": {
     "year": 2016,
@@ -28025,7 +30706,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Ellis",
     "diff_margin": 0.05343270328555505,
-    "diff_density": 9.522799709243287
+    "diff_density": 9.522799709243287,
+    "unemployment": 4.1
   },
   "48141": {
     "year": 2016,
@@ -28036,7 +30718,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "El Paso",
     "diff_margin": 3.6292106738636676,
-    "diff_density": 37.57075462382366
+    "diff_density": 37.57075462382366,
+    "unemployment": 5.4
   },
   "48143": {
     "year": 2016,
@@ -28047,7 +30730,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Erath",
     "diff_margin": -0.1164011585807394,
-    "diff_density": 1.2307917309130545
+    "diff_density": 1.2307917309130545,
+    "unemployment": 4.7
   },
   "48145": {
     "year": 2016,
@@ -28058,7 +30742,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Falls",
     "diff_margin": -5.261681957186539,
-    "diff_density": -0.2650728954381565
+    "diff_density": -0.2650728954381565,
+    "unemployment": 4.6
   },
   "48147": {
     "year": 2016,
@@ -28069,7 +30754,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Fannin",
     "diff_margin": -5.2769562312061495,
-    "diff_density": 1.3090013919446797
+    "diff_density": 1.3090013919446797,
+    "unemployment": 4.1
   },
   "48149": {
     "year": 2016,
@@ -28080,7 +30766,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Fayette",
     "diff_margin": -2.6544800072536034,
-    "diff_density": 0.4993514805107324
+    "diff_density": 0.4993514805107324,
+    "unemployment": 4.1
   },
   "48151": {
     "year": 2016,
@@ -28091,7 +30778,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Fisher",
     "diff_margin": -8.02698025551684,
-    "diff_density": 0.1055894720448527
+    "diff_density": 0.1055894720448527,
+    "unemployment": 4.7
   },
   "48153": {
     "year": 2016,
@@ -28102,7 +30790,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Floyd",
     "diff_margin": -4.213452502553626,
-    "diff_density": -0.12648819723022964
+    "diff_density": -0.12648819723022964,
+    "unemployment": 5.5
   },
   "48155": {
     "year": 2016,
@@ -28113,7 +30802,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Foard",
     "diff_margin": -6.166497064579257,
-    "diff_density": 0.025440090857467457
+    "diff_density": 0.025440090857467457,
+    "unemployment": 4.6
   },
   "48157": {
     "year": 2016,
@@ -28124,7 +30814,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Fort Bend",
     "diff_margin": 5.56825035430758,
-    "diff_density": 47.45220504248502
+    "diff_density": 47.45220504248502,
+    "unemployment": 5.7
   },
   "48159": {
     "year": 2016,
@@ -28135,7 +30826,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Franklin",
     "diff_margin": -2.373700642791551,
-    "diff_density": 0.3469942684341927
+    "diff_density": 0.3469942684341927,
+    "unemployment": 5.5
   },
   "48161": {
     "year": 2016,
@@ -28146,7 +30838,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Freestone",
     "diff_margin": -5.23652996845426,
-    "diff_density": 0.04771481304258707
+    "diff_density": 0.04771481304258707,
+    "unemployment": 7.2
   },
   "48163": {
     "year": 2016,
@@ -28157,7 +30850,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Frio",
     "diff_margin": -7.6623332090942995,
-    "diff_density": -1.1329951477723865
+    "diff_density": -1.1329951477723865,
+    "unemployment": 5.4
   },
   "48165": {
     "year": 2016,
@@ -28168,7 +30862,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Gaines",
     "diff_margin": -0.20708179648513791,
-    "diff_density": 0.35779909210718985
+    "diff_density": 0.35779909210718985,
+    "unemployment": 3.7
   },
   "48167": {
     "year": 2016,
@@ -28179,7 +30874,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Galveston",
     "diff_margin": 0.8077434391986742,
-    "diff_density": 36.774346125383204
+    "diff_density": 36.774346125383204,
+    "unemployment": 5.9
   },
   "48169": {
     "year": 2016,
@@ -28190,7 +30886,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Garza",
     "diff_margin": -2.6935593220338987,
-    "diff_density": -0.09902228540087976
+    "diff_density": -0.09902228540087976,
+    "unemployment": 3.8
   },
   "48171": {
     "year": 2016,
@@ -28201,7 +30898,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Gillespie",
     "diff_margin": 1.0497973024460876,
-    "diff_density": 0.5411302104497224
+    "diff_density": 0.5411302104497224,
+    "unemployment": 3.1
   },
   "48173": {
     "year": 2016,
@@ -28212,7 +30910,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Glasscock",
     "diff_margin": -1.9621594684385384,
-    "diff_density": 0.028725422674457324
+    "diff_density": 0.028725422674457324,
+    "unemployment": 4.3
   },
   "48175": {
     "year": 2016,
@@ -28223,7 +30922,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Goliad",
     "diff_margin": -6.384775114462698,
-    "diff_density": 0.29793007124329574
+    "diff_density": 0.29793007124329574,
+    "unemployment": 5.7
   },
   "48177": {
     "year": 2016,
@@ -28234,7 +30934,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Gonzales",
     "diff_margin": -4.482766497461931,
-    "diff_density": 0.2298707215779654
+    "diff_density": 0.2298707215779654,
+    "unemployment": 4.6
   },
   "48179": {
     "year": 2016,
@@ -28245,7 +30946,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Gray",
     "diff_margin": -2.492717391304348,
-    "diff_density": -0.031578344870784925
+    "diff_density": -0.031578344870784925,
+    "unemployment": 7.3
   },
   "48181": {
     "year": 2016,
@@ -28256,7 +30958,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Grayson",
     "diff_margin": -3.417757287328971,
-    "diff_density": 5.148833619210976
+    "diff_density": 5.148833619210976,
+    "unemployment": 4
   },
   "48183": {
     "year": 2016,
@@ -28267,7 +30970,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Gregg",
     "diff_margin": -1.7713658890366233,
-    "diff_density": -0.5161763629710947
+    "diff_density": -0.5161763629710947,
+    "unemployment": 6.8
   },
   "48185": {
     "year": 2016,
@@ -28278,7 +30982,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Grimes",
     "diff_margin": -4.16313182199832,
-    "diff_density": 1.1796622050643837
+    "diff_density": 1.1796622050643837,
+    "unemployment": 7.6
   },
   "48187": {
     "year": 2016,
@@ -28289,7 +30994,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Guadalupe",
     "diff_margin": 0.19580566235581998,
-    "diff_density": 10.834256994235915
+    "diff_density": 10.834256994235915,
+    "unemployment": 4
   },
   "48189": {
     "year": 2016,
@@ -28300,7 +31006,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hale",
     "diff_margin": -1.585396500795273,
-    "diff_density": -0.049001473105864335
+    "diff_density": -0.049001473105864335,
+    "unemployment": 6.4
   },
   "48191": {
     "year": 2016,
@@ -28311,7 +31018,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hall",
     "diff_margin": -8.840312213039484,
-    "diff_density": -0.027388425449071274
+    "diff_density": -0.027388425449071274,
+    "unemployment": 8.2
   },
   "48193": {
     "year": 2016,
@@ -28322,7 +31030,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hamilton",
     "diff_margin": -3.3676253809919654,
-    "diff_density": 0.06745044322953486
+    "diff_density": 0.06745044322953486,
+    "unemployment": 5.3
   },
   "48195": {
     "year": 2016,
@@ -28333,7 +31042,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hansford",
     "diff_margin": 0.6827426810477668,
-    "diff_density": -0.013258499037844373
+    "diff_density": -0.013258499037844373,
+    "unemployment": 3.2
   },
   "48197": {
     "year": 2016,
@@ -28344,7 +31054,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hardeman",
     "diff_margin": -3.720847121111845,
-    "diff_density": 0.023756671605932755
+    "diff_density": 0.023756671605932755,
+    "unemployment": 4.2
   },
   "48199": {
     "year": 2016,
@@ -28355,7 +31066,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hardin",
     "diff_margin": -3.564272663387209,
-    "diff_density": 1.6556489663923095
+    "diff_density": 1.6556489663923095,
+    "unemployment": 6.8
   },
   "48201": {
     "year": 2016,
@@ -28366,7 +31078,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Harris",
     "diff_margin": 4.833505185023725,
-    "diff_density": 67.09844835278375
+    "diff_density": 67.09844835278375,
+    "unemployment": 5.8
   },
   "48203": {
     "year": 2016,
@@ -28377,7 +31090,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Harrison",
     "diff_margin": -5.265545440752543,
-    "diff_density": 0.21496083115728837
+    "diff_density": 0.21496083115728837,
+    "unemployment": 6.7
   },
   "48205": {
     "year": 2016,
@@ -28388,7 +31102,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hartley",
     "diff_margin": -0.7768123393316184,
-    "diff_density": 0.02034205864448735
+    "diff_density": 0.02034205864448735,
+    "unemployment": 2.1
   },
   "48207": {
     "year": 2016,
@@ -28399,7 +31114,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Haskell",
     "diff_margin": -9.679631728045326,
-    "diff_density": -0.27568556021835167
+    "diff_density": -0.27568556021835167,
+    "unemployment": 5.1
   },
   "48209": {
     "year": 2016,
@@ -28410,7 +31126,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hays",
     "diff_margin": 3.0319406073485737,
-    "diff_density": 18.455737337384576
+    "diff_density": 18.455737337384576,
+    "unemployment": 3.7
   },
   "48211": {
     "year": 2016,
@@ -28421,7 +31138,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hemphill",
     "diff_margin": -1.9908950800237122,
-    "diff_density": 0.1914350814860586
+    "diff_density": 0.1914350814860586,
+    "unemployment": 3.8
   },
   "48213": {
     "year": 2016,
@@ -28432,7 +31150,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Henderson",
     "diff_margin": -3.178546307151233,
-    "diff_density": 2.5488125894134477
+    "diff_density": 2.5488125894134477,
+    "unemployment": 5.3
   },
   "48215": {
     "year": 2016,
@@ -28443,7 +31162,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hidalgo",
     "diff_margin": -1.760772298976832,
-    "diff_density": 21.533689420512204
+    "diff_density": 21.533689420512204,
+    "unemployment": 8.4
   },
   "48217": {
     "year": 2016,
@@ -28454,7 +31174,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hill",
     "diff_margin": -3.2079730357973055,
-    "diff_density": 0.8997334334522247
+    "diff_density": 0.8997334334522247,
+    "unemployment": 4.8
   },
   "48219": {
     "year": 2016,
@@ -28465,7 +31186,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hockley",
     "diff_margin": -3.56825872013183,
-    "diff_density": 0.1663806294653174
+    "diff_density": 0.1663806294653174,
+    "unemployment": 5.1
   },
   "48221": {
     "year": 2016,
@@ -28476,7 +31198,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hood",
     "diff_margin": -1.7322358346094955,
-    "diff_density": 8.52585393685812
+    "diff_density": 8.52585393685812,
+    "unemployment": 5
   },
   "48223": {
     "year": 2016,
@@ -28487,7 +31210,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hopkins",
     "diff_margin": -3.1691362422083706,
-    "diff_density": 0.9458589360897847
+    "diff_density": 0.9458589360897847,
+    "unemployment": 4.5
   },
   "48225": {
     "year": 2016,
@@ -28498,7 +31222,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Houston",
     "diff_margin": -3.7444158034208606,
-    "diff_density": 0.07460358596485506
+    "diff_density": 0.07460358596485506,
+    "unemployment": 5
   },
   "48227": {
     "year": 2016,
@@ -28509,7 +31234,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Howard",
     "diff_margin": -3.929456971928211,
-    "diff_density": -0.0006921702061521984
+    "diff_density": -0.0006921702061521984,
+    "unemployment": 6.1
   },
   "48229": {
     "year": 2016,
@@ -28520,7 +31246,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hudspeth",
     "diff_margin": -6.721377726750866,
-    "diff_density": 0.0005499477136194086
+    "diff_density": 0.0005499477136194086,
+    "unemployment": 7
   },
   "48231": {
     "year": 2016,
@@ -28531,7 +31258,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hunt",
     "diff_margin": -3.574773128106461,
-    "diff_density": 3.730862528560543
+    "diff_density": 3.730862528560543,
+    "unemployment": 4.5
   },
   "48233": {
     "year": 2016,
@@ -28542,7 +31270,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Hutchinson",
     "diff_margin": -2.670524243170071,
-    "diff_density": 0.22688174708706121
+    "diff_density": 0.22688174708706121,
+    "unemployment": 6.7
   },
   "48235": {
     "year": 2016,
@@ -28553,7 +31282,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Irion",
     "diff_margin": -2.367894736842107,
-    "diff_density": -0.02726425501160179
+    "diff_density": -0.02726425501160179,
+    "unemployment": 3.3
   },
   "48237": {
     "year": 2016,
@@ -28564,7 +31294,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jack",
     "diff_margin": -1.015986822401917,
-    "diff_density": 0.47657149759515116
+    "diff_density": 0.47657149759515116,
+    "unemployment": 5.2
   },
   "48239": {
     "year": 2016,
@@ -28575,7 +31306,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jackson",
     "diff_margin": -4.152559241706161,
-    "diff_density": 0.2997892528603989
+    "diff_density": 0.2997892528603989,
+    "unemployment": 5.3
   },
   "48241": {
     "year": 2016,
@@ -28586,7 +31318,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jasper",
     "diff_margin": -5.98062467230919,
-    "diff_density": -0.17941098151994517
+    "diff_density": -0.17941098151994517,
+    "unemployment": 8.8
   },
   "48243": {
     "year": 2016,
@@ -28597,7 +31330,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jeff Davis",
     "diff_margin": -0.9951063829787188,
-    "diff_density": -0.011133116954803457
+    "diff_density": -0.011133116954803457,
+    "unemployment": 2.9
   },
   "48245": {
     "year": 2016,
@@ -28608,7 +31342,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jefferson",
     "diff_margin": -1.8622895276032168,
-    "diff_density": -1.4435524769197343
+    "diff_density": -1.4435524769197343,
+    "unemployment": 7.6
   },
   "48247": {
     "year": 2016,
@@ -28619,7 +31354,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jim Hogg",
     "diff_margin": -0.8809627182633477,
-    "diff_density": 0.3950870491312688
+    "diff_density": 0.3950870491312688,
+    "unemployment": 9.9
   },
   "48249": {
     "year": 2016,
@@ -28630,7 +31366,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jim Wells",
     "diff_margin": -3.9686084561801422,
-    "diff_density": 1.363327398638102
+    "diff_density": 1.363327398638102,
+    "unemployment": 11.3
   },
   "48251": {
     "year": 2016,
@@ -28641,7 +31378,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Johnson",
     "diff_margin": -2.324642919504104,
-    "diff_density": 11.636894258234548
+    "diff_density": 11.636894258234548,
+    "unemployment": 4.7
   },
   "48253": {
     "year": 2016,
@@ -28652,7 +31390,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Jones",
     "diff_margin": -6.258031018206339,
-    "diff_density": 0.38845511819503553
+    "diff_density": 0.38845511819503553,
+    "unemployment": 6.2
   },
   "48255": {
     "year": 2016,
@@ -28663,7 +31402,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Karnes",
     "diff_margin": -4.324277180406213,
-    "diff_density": -0.0017871475199306985
+    "diff_density": -0.0017871475199306985,
+    "unemployment": 5.3
   },
   "48257": {
     "year": 2016,
@@ -28674,7 +31414,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kaufman",
     "diff_margin": -2.2705844456917,
-    "diff_density": 8.080073011400025
+    "diff_density": 8.080073011400025,
+    "unemployment": 4
   },
   "48259": {
     "year": 2016,
@@ -28685,7 +31426,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kendall",
     "diff_margin": 1.1133146067415716,
-    "diff_density": 3.2543467431504247
+    "diff_density": 3.2543467431504247,
+    "unemployment": 3.6
   },
   "48261": {
     "year": 2016,
@@ -28696,7 +31438,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kenedy",
     "diff_margin": 4.125806451612895,
-    "diff_density": 0.017543148670054118
+    "diff_density": 0.017543148670054118,
+    "unemployment": 5.4
   },
   "48263": {
     "year": 2016,
@@ -28707,7 +31450,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kent",
     "diff_margin": -2.6741339491916865,
-    "diff_density": 0.029773077306622653
+    "diff_density": 0.029773077306622653,
+    "unemployment": 2.9
   },
   "48265": {
     "year": 2016,
@@ -28718,7 +31462,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kerr",
     "diff_margin": 0.3735513209181498,
-    "diff_density": 1.0977453503969876
+    "diff_density": 1.0977453503969876,
+    "unemployment": 3.9
   },
   "48267": {
     "year": 2016,
@@ -28729,7 +31474,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kimble",
     "diff_margin": -0.8787403598971721,
-    "diff_density": 0.044768623250385664
+    "diff_density": 0.044768623250385664,
+    "unemployment": 3.9
   },
   "48269": {
     "year": 2016,
@@ -28740,7 +31486,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "King",
     "diff_margin": -0.3053459119496855,
-    "diff_density": 0.014558389232272428
+    "diff_density": 0.014558389232272428,
+    "unemployment": 3.6
   },
   "48271": {
     "year": 2016,
@@ -28751,7 +31498,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kinney",
     "diff_margin": -4.537303370786518,
-    "diff_density": -0.0029873682043439764
+    "diff_density": -0.0029873682043439764,
+    "unemployment": 6.6
   },
   "48273": {
     "year": 2016,
@@ -28762,7 +31510,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Kleberg",
     "diff_margin": -3.6705378044922483,
-    "diff_density": 0.650118460019744
+    "diff_density": 0.650118460019744,
+    "unemployment": 7.9
   },
   "48275": {
     "year": 2016,
@@ -28773,7 +31522,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Knox",
     "diff_margin": -3.8014874815905735,
-    "diff_density": -0.1835174343420094
+    "diff_density": -0.1835174343420094,
+    "unemployment": 5.3
   },
   "48277": {
     "year": 2016,
@@ -28784,7 +31534,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lamar",
     "diff_margin": -5.002668716620811,
-    "diff_density": 1.4734262943815502
+    "diff_density": 1.4734262943815502,
+    "unemployment": 5.4
   },
   "48279": {
     "year": 2016,
@@ -28795,7 +31546,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lamb",
     "diff_margin": -4.68169014084507,
-    "diff_density": -0.18717687811214567
+    "diff_density": -0.18717687811214567,
+    "unemployment": 7.1
   },
   "48281": {
     "year": 2016,
@@ -28806,7 +31558,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lampasas",
     "diff_margin": -2.380533807829181,
-    "diff_density": 1.3217378373828623
+    "diff_density": 1.3217378373828623,
+    "unemployment": 4.6
   },
   "48283": {
     "year": 2016,
@@ -28817,7 +31570,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "La Salle",
     "diff_margin": -3.725168374816988,
-    "diff_density": 0.2682294896716866
+    "diff_density": 0.2682294896716866,
+    "unemployment": 5.7
   },
   "48285": {
     "year": 2016,
@@ -28828,7 +31582,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lavaca",
     "diff_margin": -3.6673531796594467,
-    "diff_density": 0.3526616204844739
+    "diff_density": 0.3526616204844739,
+    "unemployment": 4.7
   },
   "48287": {
     "year": 2016,
@@ -28839,7 +31594,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lee",
     "diff_margin": -5.193508126341616,
-    "diff_density": 0.47850974531811374
+    "diff_density": 0.47850974531811374,
+    "unemployment": 4.2
   },
   "48289": {
     "year": 2016,
@@ -28850,7 +31606,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Leon",
     "diff_margin": -3.0178250303766685,
-    "diff_density": 0.4321106089549458
+    "diff_density": 0.4321106089549458,
+    "unemployment": 7.3
   },
   "48291": {
     "year": 2016,
@@ -28861,7 +31618,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Liberty",
     "diff_margin": -2.787201407576074,
-    "diff_density": 1.2116772845772665
+    "diff_density": 1.2116772845772665,
+    "unemployment": 8.5
   },
   "48293": {
     "year": 2016,
@@ -28872,7 +31630,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Limestone",
     "diff_margin": -6.334351464435148,
-    "diff_density": 0.09812159639452567
+    "diff_density": 0.09812159639452567,
+    "unemployment": 6.2
   },
   "48295": {
     "year": 2016,
@@ -28883,7 +31642,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lipscomb",
     "diff_margin": 0.021800302571861607,
-    "diff_density": 0.1681810379969535
+    "diff_density": 0.1681810379969535,
+    "unemployment": 5.1
   },
   "48297": {
     "year": 2016,
@@ -28894,7 +31654,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Live Oak",
     "diff_margin": -5.0210405437075245,
-    "diff_density": 0.14406848129268024
+    "diff_density": 0.14406848129268024,
+    "unemployment": 5.5
   },
   "48299": {
     "year": 2016,
@@ -28905,7 +31666,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Llano",
     "diff_margin": -1.473028813722653,
-    "diff_density": 0.8799215228632917
+    "diff_density": 0.8799215228632917,
+    "unemployment": 4.3
   },
   "48301": {
     "year": 2016,
@@ -28916,7 +31678,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Loving",
     "diff_margin": -7.8100000000000005,
-    "diff_density": -0.004323386952101896
+    "diff_density": -0.004323386952101896,
+    "unemployment": 4.4
   },
   "48303": {
     "year": 2016,
@@ -28927,7 +31690,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lubbock",
     "diff_margin": -0.3009239241280852,
-    "diff_density": 7.680844126842331
+    "diff_density": 7.680844126842331,
+    "unemployment": 3.7
   },
   "48305": {
     "year": 2016,
@@ -28938,7 +31702,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Lynn",
     "diff_margin": -5.649729594391584,
-    "diff_density": 0.03911556616995737
+    "diff_density": 0.03911556616995737,
+    "unemployment": 4.5
   },
   "48307": {
     "year": 2016,
@@ -28949,7 +31714,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "McCulloch",
     "diff_margin": -2.385884640311085,
-    "diff_density": 0.08602102102102105
+    "diff_density": 0.08602102102102105,
+    "unemployment": 5.1
   },
   "48309": {
     "year": 2016,
@@ -28960,7 +31726,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "McLennan",
     "diff_margin": 0.091369880518819,
-    "diff_density": 3.5855973387330096
+    "diff_density": 3.5855973387330096,
+    "unemployment": 4.4
   },
   "48311": {
     "year": 2016,
@@ -28971,7 +31738,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "McMullen",
     "diff_margin": -5.271710261569417,
-    "diff_density": -0.0038169962174069982
+    "diff_density": -0.0038169962174069982,
+    "unemployment": 2.2
   },
   "48313": {
     "year": 2016,
@@ -28982,7 +31750,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Madison",
     "diff_margin": -3.440305860378242,
-    "diff_density": 0.5498038879114269
+    "diff_density": 0.5498038879114269,
+    "unemployment": 4.8
   },
   "48315": {
     "year": 2016,
@@ -28993,7 +31762,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Marion",
     "diff_margin": -7.425454113171654,
-    "diff_density": -0.1971518588531822
+    "diff_density": -0.1971518588531822,
+    "unemployment": 7.7
   },
   "48317": {
     "year": 2016,
@@ -29004,7 +31774,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Martin",
     "diff_margin": -0.11330484330484225,
-    "diff_density": 0.14815856777493597
+    "diff_density": 0.14815856777493597,
+    "unemployment": 4.8
   },
   "48319": {
     "year": 2016,
@@ -29015,7 +31786,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Mason",
     "diff_margin": -2.11565026790063,
-    "diff_density": 0.09037898363479746
+    "diff_density": 0.09037898363479746,
+    "unemployment": 3.7
   },
   "48321": {
     "year": 2016,
@@ -29026,7 +31798,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Matagorda",
     "diff_margin": -4.3001273452754845,
-    "diff_density": -0.32454320718362517
+    "diff_density": -0.32454320718362517,
+    "unemployment": 7.6
   },
   "48323": {
     "year": 2016,
@@ -29037,7 +31810,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Maverick",
     "diff_margin": -2.0839564321460102,
-    "diff_density": 2.361765708300112
+    "diff_density": 2.361765708300112,
+    "unemployment": 11.4
   },
   "48325": {
     "year": 2016,
@@ -29048,7 +31822,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Medina",
     "diff_margin": -2.9059446092977232,
-    "diff_density": 0.8577974286231687
+    "diff_density": 0.8577974286231687,
+    "unemployment": 4.8
   },
   "48327": {
     "year": 2016,
@@ -29059,7 +31834,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Menard",
     "diff_margin": -2.349302325581398,
-    "diff_density": 0.013405097391439358
+    "diff_density": 0.013405097391439358,
+    "unemployment": 5
   },
   "48329": {
     "year": 2016,
@@ -29070,7 +31846,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Midland",
     "diff_margin": 1.9172001722970897,
-    "diff_density": 4.611949350216598
+    "diff_density": 4.611949350216598,
+    "unemployment": 4.6
   },
   "48331": {
     "year": 2016,
@@ -29081,7 +31858,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Milam",
     "diff_margin": -8.305124898338562,
-    "diff_density": 0.3737093998603651
+    "diff_density": 0.3737093998603651,
+    "unemployment": 5.6
   },
   "48333": {
     "year": 2016,
@@ -29092,7 +31870,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Mills",
     "diff_margin": -1.8667739052725647,
-    "diff_density": 0.05093897842995743
+    "diff_density": 0.05093897842995743,
+    "unemployment": 4.6
   },
   "48335": {
     "year": 2016,
@@ -29103,7 +31882,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Mitchell",
     "diff_margin": -7.111278538812783,
-    "diff_density": -0.13628576759705435
+    "diff_density": -0.13628576759705435,
+    "unemployment": 7.3
   },
   "48337": {
     "year": 2016,
@@ -29114,7 +31894,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Montague",
     "diff_margin": -4.114086471408648,
-    "diff_density": 0.9125690990536146
+    "diff_density": 0.9125690990536146,
+    "unemployment": 5.1
   },
   "48339": {
     "year": 2016,
@@ -29125,7 +31906,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Montgomery",
     "diff_margin": 3.5047805084620585,
-    "diff_density": 28.76782717210793
+    "diff_density": 28.76782717210793,
+    "unemployment": 5.5
   },
   "48341": {
     "year": 2016,
@@ -29136,7 +31918,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Moore",
     "diff_margin": 1.4885822881033839,
-    "diff_density": 0.3086812124176097
+    "diff_density": 0.3086812124176097,
+    "unemployment": 3.2
   },
   "48343": {
     "year": 2016,
@@ -29147,7 +31930,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Morris",
     "diff_margin": -7.443311845286061,
-    "diff_density": -0.6908055875233146
+    "diff_density": -0.6908055875233146,
+    "unemployment": 13.1
   },
   "48345": {
     "year": 2016,
@@ -29158,7 +31942,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Motley",
     "diff_margin": -2.718387096774194,
-    "diff_density": 0.01654108896883466
+    "diff_density": 0.01654108896883466,
+    "unemployment": 3.9
   },
   "48347": {
     "year": 2016,
@@ -29169,7 +31954,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Nacogdoches",
     "diff_margin": -0.8853767275969702,
-    "diff_density": 1.8768326747945139
+    "diff_density": 1.8768326747945139,
+    "unemployment": 5.5
   },
   "48349": {
     "year": 2016,
@@ -29180,7 +31966,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Navarro",
     "diff_margin": -3.9051654254669756,
-    "diff_density": 1.0057460653902925
+    "diff_density": 1.0057460653902925,
+    "unemployment": 4.6
   },
   "48351": {
     "year": 2016,
@@ -29191,7 +31978,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Newton",
     "diff_margin": -4.180972568578554,
-    "diff_density": -1.9951666523862563
+    "diff_density": -1.9951666523862563,
+    "unemployment": 7.9
   },
   "48353": {
     "year": 2016,
@@ -29202,7 +31990,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Nolan",
     "diff_margin": -4.889443507588531,
-    "diff_density": 0.1817543859649131
+    "diff_density": 0.1817543859649131,
+    "unemployment": 5.1
   },
   "48355": {
     "year": 2016,
@@ -29213,7 +32002,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Nueces",
     "diff_margin": -0.3974637834510091,
-    "diff_density": 9.363875584390797
+    "diff_density": 9.363875584390797,
+    "unemployment": 5.9
   },
   "48357": {
     "year": 2016,
@@ -29224,7 +32014,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Ochiltree",
     "diff_margin": 0.7415464609191549,
-    "diff_density": -0.011413968593005475
+    "diff_density": -0.011413968593005475,
+    "unemployment": 5.4
   },
   "48359": {
     "year": 2016,
@@ -29235,7 +32026,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Oldham",
     "diff_margin": 0.08396825396825314,
-    "diff_density": 0.04977747862421944
+    "diff_density": 0.04977747862421944,
+    "unemployment": 3.4
   },
   "48361": {
     "year": 2016,
@@ -29246,7 +32038,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Orange",
     "diff_margin": -4.283085545165456,
-    "diff_density": 3.7268612701171833
+    "diff_density": 3.7268612701171833,
+    "unemployment": 7.5
   },
   "48363": {
     "year": 2016,
@@ -29257,7 +32050,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Palo Pinto",
     "diff_margin": -2.6923832923832904,
-    "diff_density": 0.8803833828890824
+    "diff_density": 0.8803833828890824,
+    "unemployment": 5.9
   },
   "48365": {
     "year": 2016,
@@ -29268,7 +32062,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Panola",
     "diff_margin": -3.987796984538555,
-    "diff_density": 0.22783910196445234
+    "diff_density": 0.22783910196445234,
+    "unemployment": 7.5
   },
   "48367": {
     "year": 2016,
@@ -29279,7 +32074,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Parker",
     "diff_margin": -1.705672628649424,
-    "diff_density": 9.649677690707044
+    "diff_density": 9.649677690707044,
+    "unemployment": 4.3
   },
   "48369": {
     "year": 2016,
@@ -29290,7 +32086,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Parmer",
     "diff_margin": 9.382264017033354,
-    "diff_density": 0.29943686278071713
+    "diff_density": 0.29943686278071713,
+    "unemployment": 2.8
   },
   "48371": {
     "year": 2016,
@@ -29301,7 +32098,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Pecos",
     "diff_margin": -1.1189776817854593,
-    "diff_density": 0.004712679870272907
+    "diff_density": 0.004712679870272907,
+    "unemployment": 5.9
   },
   "48373": {
     "year": 2016,
@@ -29312,7 +32110,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Polk",
     "diff_margin": -4.710055742654745,
-    "diff_density": 14.48379135172975
+    "diff_density": 14.48379135172975,
+    "unemployment": 7.1
   },
   "48375": {
     "year": 2016,
@@ -29323,7 +32122,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Potter",
     "diff_margin": -0.042717966819626696,
-    "diff_density": 2.067731871373997
+    "diff_density": 2.067731871373997,
+    "unemployment": 3.6
   },
   "48377": {
     "year": 2016,
@@ -29334,7 +32134,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Presidio",
     "diff_margin": -4.377521561507038,
-    "diff_density": 0.10143005364127788
+    "diff_density": 0.10143005364127788,
+    "unemployment": 11.9
   },
   "48379": {
     "year": 2016,
@@ -29345,7 +32146,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Rains",
     "diff_margin": -5.250669546436285,
-    "diff_density": 2.3686881673567264
+    "diff_density": 2.3686881673567264,
+    "unemployment": 4.5
   },
   "48381": {
     "year": 2016,
@@ -29356,7 +32158,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Randall",
     "diff_margin": 0.2581138386635189,
-    "diff_density": 4.5152590122210725
+    "diff_density": 4.5152590122210725,
+    "unemployment": 3.2
   },
   "48383": {
     "year": 2016,
@@ -29367,7 +32170,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Reagan",
     "diff_margin": -0.1844444444444413,
-    "diff_density": 0.04576193312345789
+    "diff_density": 0.04576193312345789,
+    "unemployment": 7.7
   },
   "48385": {
     "year": 2016,
@@ -29378,7 +32182,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Real",
     "diff_margin": -2.4361740166865324,
-    "diff_density": 0.19988558352402697
+    "diff_density": 0.19988558352402697,
+    "unemployment": 5.3
   },
   "48387": {
     "year": 2016,
@@ -29389,7 +32194,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Red River",
     "diff_margin": -6.905745094229648,
-    "diff_density": 0.07536687954620103
+    "diff_density": 0.07536687954620103,
+    "unemployment": 6.6
   },
   "48389": {
     "year": 2016,
@@ -29400,7 +32206,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Reeves",
     "diff_margin": -5.4257286432160825,
-    "diff_density": 0.11817491215688047
+    "diff_density": 0.11817491215688047,
+    "unemployment": 6.1
   },
   "48391": {
     "year": 2016,
@@ -29411,7 +32218,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Refugio",
     "diff_margin": -2.169643463497458,
-    "diff_density": 0.3524910440787079
+    "diff_density": 0.3524910440787079,
+    "unemployment": 7.4
   },
   "48393": {
     "year": 2016,
@@ -29422,7 +32230,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Roberts",
     "diff_margin": -2.8636363636363638,
-    "diff_density": 0.04519944592342484
+    "diff_density": 0.04519944592342484,
+    "unemployment": 4.9
   },
   "48395": {
     "year": 2016,
@@ -29433,7 +32242,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Robertson",
     "diff_margin": -6.973466476462196,
-    "diff_density": -0.3276851159311889
+    "diff_density": -0.3276851159311889,
+    "unemployment": 5.5
   },
   "48397": {
     "year": 2016,
@@ -29444,7 +32254,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Rockwall",
     "diff_margin": 1.6094502770118133,
-    "diff_density": 30.303967254408008
+    "diff_density": 30.303967254408008,
+    "unemployment": 3.9
   },
   "48399": {
     "year": 2016,
@@ -29455,7 +32266,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Runnels",
     "diff_margin": -2.1446879150066405,
-    "diff_density": 0.09250708889184889
+    "diff_density": 0.09250708889184889,
+    "unemployment": 4.8
   },
   "48401": {
     "year": 2016,
@@ -29466,7 +32278,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Rusk",
     "diff_margin": -3.282931452037488,
-    "diff_density": 0.48560966635282554
+    "diff_density": 0.48560966635282554,
+    "unemployment": 6.4
   },
   "48403": {
     "year": 2016,
@@ -29477,7 +32290,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Sabine",
     "diff_margin": -4.402942697113314,
-    "diff_density": 0.1266716864405062
+    "diff_density": 0.1266716864405062,
+    "unemployment": 9.8
   },
   "48405": {
     "year": 2016,
@@ -29488,7 +32302,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "San Augustine",
     "diff_margin": -6.87392365983721,
-    "diff_density": -0.23571966984509807
+    "diff_density": -0.23571966984509807,
+    "unemployment": 9.6
   },
   "48407": {
     "year": 2016,
@@ -29499,7 +32314,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "San Jacinto",
     "diff_margin": -5.322008733624454,
-    "diff_density": 1.2130848148408404
+    "diff_density": 1.2130848148408404,
+    "unemployment": 6.9
   },
   "48409": {
     "year": 2016,
@@ -29510,7 +32326,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "San Patricio",
     "diff_margin": -2.756644354576302,
-    "diff_density": 2.073145143845988
+    "diff_density": 2.073145143845988,
+    "unemployment": 7.8
   },
   "48411": {
     "year": 2016,
@@ -29521,7 +32338,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "San Saba",
     "diff_margin": -1.8531011045029757,
-    "diff_density": 0.08346075927067731
+    "diff_density": 0.08346075927067731,
+    "unemployment": 3.9
   },
   "48413": {
     "year": 2016,
@@ -29532,7 +32350,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Schleicher",
     "diff_margin": -1.9007779886147986,
-    "diff_density": 0.024193403172519945
+    "diff_density": 0.024193403172519945,
+    "unemployment": 5.9
   },
   "48415": {
     "year": 2016,
@@ -29543,7 +32362,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Scurry",
     "diff_margin": -2.7372875879110445,
-    "diff_density": 0.26043470577840555
+    "diff_density": 0.26043470577840555,
+    "unemployment": 6.3
   },
   "48417": {
     "year": 2016,
@@ -29554,7 +32374,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Shackelford",
     "diff_margin": -2.75247669773635,
-    "diff_density": 0.15280479935250302
+    "diff_density": 0.15280479935250302,
+    "unemployment": 4
   },
   "48419": {
     "year": 2016,
@@ -29565,7 +32386,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Shelby",
     "diff_margin": -5.642716049382717,
-    "diff_density": -0.2669984162497805
+    "diff_density": -0.2669984162497805,
+    "unemployment": 6.5
   },
   "48421": {
     "year": 2016,
@@ -29576,7 +32398,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Sherman",
     "diff_margin": -1.3706109324758842,
-    "diff_density": -0.1091986175963946
+    "diff_density": -0.1091986175963946,
+    "unemployment": 3.4
   },
   "48423": {
     "year": 2016,
@@ -29587,7 +32410,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Smith",
     "diff_margin": -0.341373360108701,
-    "diff_density": 3.8601492213359307
+    "diff_density": 3.8601492213359307,
+    "unemployment": 5.1
   },
   "48425": {
     "year": 2016,
@@ -29598,7 +32422,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Somervell",
     "diff_margin": -3.398111455108358,
-    "diff_density": 1.817300225249383
+    "diff_density": 1.817300225249383,
+    "unemployment": 5.1
   },
   "48427": {
     "year": 2016,
@@ -29609,7 +32434,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Starr",
     "diff_margin": -7.253523222992044,
-    "diff_density": -0.15212626105724603
+    "diff_density": -0.15212626105724603,
+    "unemployment": 14.1
   },
   "48429": {
     "year": 2016,
@@ -29620,7 +32446,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Stephens",
     "diff_margin": -3.841807124239791,
-    "diff_density": 0.05070033009189068
+    "diff_density": 0.05070033009189068,
+    "unemployment": 5.9
   },
   "48431": {
     "year": 2016,
@@ -29631,7 +32458,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Sterling",
     "diff_margin": 4.778451816745656,
-    "diff_density": 0.15547295468081646
+    "diff_density": 0.15547295468081646,
+    "unemployment": 3.8
   },
   "48433": {
     "year": 2016,
@@ -29642,7 +32470,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Stonewall",
     "diff_margin": -4.441797432239657,
-    "diff_density": 0.025024936975477807
+    "diff_density": 0.025024936975477807,
+    "unemployment": 4.9
   },
   "48435": {
     "year": 2016,
@@ -29653,7 +32482,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Sutton",
     "diff_margin": -2.6598586572438165,
-    "diff_density": -0.04677570446995394
+    "diff_density": -0.04677570446995394,
+    "unemployment": 8.5
   },
   "48437": {
     "year": 2016,
@@ -29664,7 +32494,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Swisher",
     "diff_margin": -4.414109589041097,
-    "diff_density": -0.08976813157185193
+    "diff_density": -0.08976813157185193,
+    "unemployment": 4.7
   },
   "48439": {
     "year": 2016,
@@ -29675,7 +32506,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Tarrant",
     "diff_margin": 2.0200748304245977,
-    "diff_density": 60.14311355820337
+    "diff_density": 60.14311355820337,
+    "unemployment": 4.2
   },
   "48441": {
     "year": 2016,
@@ -29686,7 +32518,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Taylor",
     "diff_margin": -0.3445332037290676,
-    "diff_density": 2.19131942548195
+    "diff_density": 2.19131942548195,
+    "unemployment": 4
   },
   "48443": {
     "year": 2016,
@@ -29697,7 +32530,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Terrell",
     "diff_margin": -1.113386727688784,
-    "diff_density": -0.05467580989215576
+    "diff_density": -0.05467580989215576,
+    "unemployment": 4.1
   },
   "48445": {
     "year": 2016,
@@ -29708,7 +32542,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Terry",
     "diff_margin": -4.500085082246173,
-    "diff_density": -2.1865159083749606
+    "diff_density": -2.1865159083749606,
+    "unemployment": 5.5
   },
   "48447": {
     "year": 2016,
@@ -29719,7 +32554,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Throckmorton",
     "diff_margin": -3.0139603960396038,
-    "diff_density": -0.004569064708783044
+    "diff_density": -0.004569064708783044,
+    "unemployment": 4
   },
   "48449": {
     "year": 2016,
@@ -29730,7 +32566,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Titus",
     "diff_margin": -2.250889276373151,
-    "diff_density": 0.7982021918482936
+    "diff_density": 0.7982021918482936,
+    "unemployment": 7.2
   },
   "48451": {
     "year": 2016,
@@ -29741,7 +32578,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Tom Green",
     "diff_margin": -1.3833781230317008,
-    "diff_density": 0.9059731137933085
+    "diff_density": 0.9059731137933085,
+    "unemployment": 4.7
   },
   "48453": {
     "year": 2016,
@@ -29752,7 +32590,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Travis",
     "diff_margin": 6.123288873129496,
-    "diff_density": 76.19846697636842
+    "diff_density": 76.19846697636842,
+    "unemployment": 3.4
   },
   "48455": {
     "year": 2016,
@@ -29763,7 +32602,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Trinity",
     "diff_margin": -6.598793045804079,
-    "diff_density": -0.36555686913395213
+    "diff_density": -0.36555686913395213,
+    "unemployment": 6.7
   },
   "48457": {
     "year": 2016,
@@ -29774,7 +32614,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Tyler",
     "diff_margin": -6.1920579746517745,
-    "diff_density": 0.3397944835045976
+    "diff_density": 0.3397944835045976,
+    "unemployment": 8.2
   },
   "48459": {
     "year": 2016,
@@ -29785,7 +32626,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Upshur",
     "diff_margin": -4.690937303681366,
-    "diff_density": 1.335943905995368
+    "diff_density": 1.335943905995368,
+    "unemployment": 7.3
   },
   "48461": {
     "year": 2016,
@@ -29796,7 +32638,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Upton",
     "diff_margin": -3.706419753086422,
-    "diff_density": -0.005950117616730477
+    "diff_density": -0.005950117616730477,
+    "unemployment": 5
   },
   "48463": {
     "year": 2016,
@@ -29807,7 +32650,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Uvalde",
     "diff_margin": -2.1203670546105684,
-    "diff_density": 0.3179174586810136
+    "diff_density": 0.3179174586810136,
+    "unemployment": 5.6
   },
   "48465": {
     "year": 2016,
@@ -29818,7 +32662,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Val Verde",
     "diff_margin": -0.6694508756307513,
-    "diff_density": 0.44523730026234176
+    "diff_density": 0.44523730026234176,
+    "unemployment": 6.7
   },
   "48467": {
     "year": 2016,
@@ -29829,7 +32674,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Van Zandt",
     "diff_margin": -3.2771151274839774,
-    "diff_density": 3.0717869350550693
+    "diff_density": 3.0717869350550693,
+    "unemployment": 4.6
   },
   "48469": {
     "year": 2016,
@@ -29840,7 +32686,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Victoria",
     "diff_margin": -2.0136091776231027,
-    "diff_density": 2.4680896456344783
+    "diff_density": 2.4680896456344783,
+    "unemployment": 5.7
   },
   "48471": {
     "year": 2016,
@@ -29851,7 +32698,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Walker",
     "diff_margin": -2.5449972057105157,
-    "diff_density": 1.2704246528176313
+    "diff_density": 1.2704246528176313,
+    "unemployment": 6.2
   },
   "48473": {
     "year": 2016,
@@ -29862,7 +32710,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Waller",
     "diff_margin": -6.595656595871972,
-    "diff_density": 1.5855577196501969
+    "diff_density": 1.5855577196501969,
+    "unemployment": 6.4
   },
   "48475": {
     "year": 2016,
@@ -29873,7 +32722,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Ward",
     "diff_margin": -3.0662056841488443,
-    "diff_density": 0.20449018669219754
+    "diff_density": 0.20449018669219754,
+    "unemployment": 5.8
   },
   "48477": {
     "year": 2016,
@@ -29884,7 +32734,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Washington",
     "diff_margin": -0.5533030446870555,
-    "diff_density": 0.577584237105718
+    "diff_density": 0.577584237105718,
+    "unemployment": 5.6
   },
   "48479": {
     "year": 2016,
@@ -29895,7 +32746,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Webb",
     "diff_margin": -2.1811862767510206,
-    "diff_density": 2.307250734795389
+    "diff_density": 2.307250734795389,
+    "unemployment": 5.2
   },
   "48481": {
     "year": 2016,
@@ -29906,7 +32758,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wharton",
     "diff_margin": -1.2437900319575697,
-    "diff_density": 0.5704870413847054
+    "diff_density": 0.5704870413847054,
+    "unemployment": 5.4
   },
   "48483": {
     "year": 2016,
@@ -29917,7 +32770,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wheeler",
     "diff_margin": -2.487163920208154,
-    "diff_density": 0.19154135502777425
+    "diff_density": 0.19154135502777425,
+    "unemployment": 4.4
   },
   "48485": {
     "year": 2016,
@@ -29928,7 +32782,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wichita",
     "diff_margin": -2.5755698573048846,
-    "diff_density": -4.9478243970817815
+    "diff_density": -4.9478243970817815,
+    "unemployment": 4.6
   },
   "48487": {
     "year": 2016,
@@ -29939,7 +32794,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wilbarger",
     "diff_margin": -4.7218727139722,
-    "diff_density": 0.12417700135964793
+    "diff_density": 0.12417700135964793,
+    "unemployment": 5.4
   },
   "48489": {
     "year": 2016,
@@ -29950,7 +32806,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Willacy",
     "diff_margin": -3.8723691460055107,
-    "diff_density": 0.03553721107442165
+    "diff_density": 0.03553721107442165,
+    "unemployment": 13.3
   },
   "48491": {
     "year": 2016,
@@ -29961,7 +32818,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Williamson",
     "diff_margin": 4.115918294069537,
-    "diff_density": 33.311454886881876
+    "diff_density": 33.311454886881876,
+    "unemployment": 3.6
   },
   "48493": {
     "year": 2016,
@@ -29972,7 +32830,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wilson",
     "diff_margin": -3.1433445858218647,
-    "diff_density": 2.547050253194481
+    "diff_density": 2.547050253194481,
+    "unemployment": 4.2
   },
   "48495": {
     "year": 2016,
@@ -29983,7 +32842,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Winkler",
     "diff_margin": -0.6460811532301101,
-    "diff_density": 0.17681932208629103
+    "diff_density": 0.17681932208629103,
+    "unemployment": 8.5
   },
   "48497": {
     "year": 2016,
@@ -29994,7 +32854,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wise",
     "diff_margin": -1.694389116418634,
-    "diff_density": 4.327198867782666
+    "diff_density": 4.327198867782666,
+    "unemployment": 5.1
   },
   "48499": {
     "year": 2016,
@@ -30005,7 +32866,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Wood",
     "diff_margin": -3.3072766276949466,
-    "diff_density": 1.64822233932086
+    "diff_density": 1.64822233932086,
+    "unemployment": 5.8
   },
   "48501": {
     "year": 2016,
@@ -30016,7 +32878,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Yoakum",
     "diff_margin": -0.6902044367116105,
-    "diff_density": 0.21479211214065064
+    "diff_density": 0.21479211214065064,
+    "unemployment": 5
   },
   "48503": {
     "year": 2016,
@@ -30027,7 +32890,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Young",
     "diff_margin": -2.1601566988769925,
-    "diff_density": 0.37424956532198905
+    "diff_density": 0.37424956532198905,
+    "unemployment": 4.8
   },
   "48505": {
     "year": 2016,
@@ -30038,7 +32902,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Zapata",
     "diff_margin": -5.716936821952771,
-    "diff_density": -0.4110090043168637
+    "diff_density": -0.4110090043168637,
+    "unemployment": 11.2
   },
   "48507": {
     "year": 2016,
@@ -30049,7 +32914,8 @@ export const counties = {
     "statenam": "Texas",
     "cty_name": "Zavala",
     "diff_margin": -5.600383480825954,
-    "diff_density": -0.20710199551413977
+    "diff_density": -0.20710199551413977,
+    "unemployment": 17.3
   },
   "49001": {
     "year": 2016,
@@ -30060,7 +32926,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Beaver",
     "diff_margin": -2.9201643385373863,
-    "diff_density": -0.05018811682394553
+    "diff_density": -0.05018811682394553,
+    "unemployment": 6.1
   },
   "49003": {
     "year": 2016,
@@ -30071,7 +32938,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Box Elder",
     "diff_margin": 0.7420497945371043,
-    "diff_density": -0.49985797704310286
+    "diff_density": -0.49985797704310286,
+    "unemployment": 3.3
   },
   "49005": {
     "year": 2016,
@@ -30082,7 +32950,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Cache",
     "diff_margin": 5.755627359202778,
-    "diff_density": -13.56637657643736
+    "diff_density": -13.56637657643736,
+    "unemployment": 3
   },
   "49007": {
     "year": 2016,
@@ -30093,7 +32962,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Carbon",
     "diff_margin": -8.202147896524693,
-    "diff_density": 0.056903462316282294
+    "diff_density": 0.056903462316282294,
+    "unemployment": 6.1
   },
   "49009": {
     "year": 2016,
@@ -30104,7 +32974,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Daggett",
     "diff_margin": -1.7359139784946223,
-    "diff_density": -0.08283594938161787
+    "diff_density": -0.08283594938161787,
+    "unemployment": 3.4
   },
   "49011": {
     "year": 2016,
@@ -30115,7 +32986,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Davis",
     "diff_margin": 4.31769784172662,
-    "diff_density": -114.44421915790878
+    "diff_density": -114.44421915790878,
+    "unemployment": 3.1
   },
   "49013": {
     "year": 2016,
@@ -30126,7 +32998,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Duchesne",
     "diff_margin": -1.8873749093546053,
-    "diff_density": 0.15746262669896205
+    "diff_density": 0.15746262669896205,
+    "unemployment": 8.6
   },
   "49015": {
     "year": 2016,
@@ -30137,7 +33010,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Emery",
     "diff_margin": -3.8995472671827347,
-    "diff_density": -0.0446652070340251
+    "diff_density": -0.0446652070340251,
+    "unemployment": 5.9
   },
   "49017": {
     "year": 2016,
@@ -30148,7 +33022,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Garfield",
     "diff_margin": 1.224376634699217,
-    "diff_density": 0.023274745319915302
+    "diff_density": 0.023274745319915302,
+    "unemployment": 5.3
   },
   "49019": {
     "year": 2016,
@@ -30159,7 +33034,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Grand",
     "diff_margin": -0.34977185452902404,
-    "diff_density": 0.1257610702865828
+    "diff_density": 0.1257610702865828,
+    "unemployment": 3.5
   },
   "49021": {
     "year": 2016,
@@ -30170,7 +33046,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Iron",
     "diff_margin": 3.5121158566519384,
-    "diff_density": -3.8342112670929547
+    "diff_density": -3.8342112670929547,
+    "unemployment": 4.6
   },
   "49023": {
     "year": 2016,
@@ -30181,7 +33058,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Juab",
     "diff_margin": -0.657711258930771,
-    "diff_density": 0.026540379921468737
+    "diff_density": 0.026540379921468737,
+    "unemployment": 3.4
   },
   "49025": {
     "year": 2016,
@@ -30192,7 +33070,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Kane",
     "diff_margin": -0.03558082360171966,
-    "diff_density": -0.024508161183691146
+    "diff_density": -0.024508161183691146,
+    "unemployment": 2.8
   },
   "49027": {
     "year": 2016,
@@ -30203,7 +33082,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Millard",
     "diff_margin": -0.35037334403853926,
-    "diff_density": -0.0019850800997500695
+    "diff_density": -0.0019850800997500695,
+    "unemployment": 3.2
   },
   "49029": {
     "year": 2016,
@@ -30214,7 +33094,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Morgan",
     "diff_margin": 2.3670716510903436,
-    "diff_density": 0.8807288246881155
+    "diff_density": 0.8807288246881155,
+    "unemployment": 2.8
   },
   "49031": {
     "year": 2016,
@@ -30225,7 +33106,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Piute",
     "diff_margin": -4.4356888168557544,
-    "diff_density": -0.21579025851489197
+    "diff_density": -0.21579025851489197,
+    "unemployment": 4.8
   },
   "49033": {
     "year": 2016,
@@ -30236,7 +33118,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Rich",
     "diff_margin": 1.2490510948905094,
-    "diff_density": 0.0853395283734133
+    "diff_density": 0.0853395283734133,
+    "unemployment": 2.2
   },
   "49035": {
     "year": 2016,
@@ -30247,7 +33130,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Salt Lake",
     "diff_margin": 7.372308862213188,
-    "diff_density": -167.1244554615509
+    "diff_density": -167.1244554615509,
+    "unemployment": 3.2
   },
   "49037": {
     "year": 2016,
@@ -30258,7 +33142,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "San Juan",
     "diff_margin": -9.9916976127321,
-    "diff_density": -0.19790219680587828
+    "diff_density": -0.19790219680587828,
+    "unemployment": 7.3
   },
   "49039": {
     "year": 2016,
@@ -30269,7 +33154,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Sanpete",
     "diff_margin": 0.3080659103187475,
-    "diff_density": -0.17979435902273444
+    "diff_density": -0.17979435902273444,
+    "unemployment": 4
   },
   "49041": {
     "year": 2016,
@@ -30280,7 +33166,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Sevier",
     "diff_margin": -0.9733438485804413,
-    "diff_density": -0.07204492876508706
+    "diff_density": -0.07204492876508706,
+    "unemployment": 4.2
   },
   "49043": {
     "year": 2016,
@@ -30291,7 +33178,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Summit",
     "diff_margin": 5.068753924434347,
-    "diff_density": 0.5301187683989514
+    "diff_density": 0.5301187683989514,
+    "unemployment": 2.9
   },
   "49045": {
     "year": 2016,
@@ -30302,7 +33190,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Tooele",
     "diff_margin": -2.2522322137000756,
-    "diff_density": -0.0464663934249101
+    "diff_density": -0.0464663934249101,
+    "unemployment": 3.9
   },
   "49047": {
     "year": 2016,
@@ -30313,7 +33202,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Uintah",
     "diff_margin": -0.8155569215638065,
-    "diff_density": 0.13362596518955572
+    "diff_density": 0.13362596518955572,
+    "unemployment": 9.8
   },
   "49049": {
     "year": 2016,
@@ -30324,7 +33214,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Utah",
     "diff_margin": 4.198204603797858,
-    "diff_density": -6.453375427387755
+    "diff_density": -6.453375427387755,
+    "unemployment": 3.1
   },
   "49051": {
     "year": 2016,
@@ -30335,7 +33226,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Wasatch",
     "diff_margin": 2.26436003228989,
-    "diff_density": 1.324474691620587
+    "diff_density": 1.324474691620587,
+    "unemployment": 3
   },
   "49053": {
     "year": 2016,
@@ -30346,7 +33238,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Washington",
     "diff_margin": 1.7032668278094132,
-    "diff_density": -2.1401496892464458
+    "diff_density": -2.1401496892464458,
+    "unemployment": 3.5
   },
   "49055": {
     "year": 2016,
@@ -30357,7 +33250,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Wayne",
     "diff_margin": 3.01985815602837,
-    "diff_density": 0.03301233805289594
+    "diff_density": 0.03301233805289594,
+    "unemployment": 5.3
   },
   "49057": {
     "year": 2016,
@@ -30368,7 +33262,8 @@ export const counties = {
     "statenam": "Utah",
     "cty_name": "Weber",
     "diff_margin": 2.700053330881339,
-    "diff_density": -18.499273711984472
+    "diff_density": -18.499273711984472,
+    "unemployment": 3.7
   },
   "50001": {
     "year": 2016,
@@ -30379,7 +33274,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Addison",
     "diff_margin": -4.355099609011361,
-    "diff_density": -2.3438102384090413
+    "diff_density": -2.3438102384090413,
+    "unemployment": 3.1
   },
   "50003": {
     "year": 2016,
@@ -30390,7 +33286,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Bennington",
     "diff_margin": -7.085050789377071,
-    "diff_density": -1.8489122640670814
+    "diff_density": -1.8489122640670814,
+    "unemployment": 4
   },
   "50005": {
     "year": 2016,
@@ -30401,7 +33298,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Caledonia",
     "diff_margin": -10.263074194045963,
-    "diff_density": -1.067261042443672
+    "diff_density": -1.067261042443672,
+    "unemployment": 4.2
   },
   "50007": {
     "year": 2016,
@@ -30412,7 +33310,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Chittenden",
     "diff_margin": 0.9255830159840457,
-    "diff_density": 0.22789332438776455
+    "diff_density": 0.22789332438776455,
+    "unemployment": 2.7
   },
   "50009": {
     "year": 2016,
@@ -30423,7 +33322,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Essex",
     "diff_margin": -17.342941611234295,
-    "diff_density": -0.1422423146473779
+    "diff_density": -0.1422423146473779,
+    "unemployment": 5.2
   },
   "50011": {
     "year": 2016,
@@ -30434,7 +33334,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Franklin",
     "diff_margin": -12.393938634258,
-    "diff_density": -2.4251152735478385
+    "diff_density": -2.4251152735478385,
+    "unemployment": 3.2
   },
   "50013": {
     "year": 2016,
@@ -30445,7 +33346,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Grand Isle",
     "diff_margin": -4.032428330522762,
-    "diff_density": -13.567486859797093
+    "diff_density": -13.567486859797093,
+    "unemployment": 3.7
   },
   "50015": {
     "year": 2016,
@@ -30456,7 +33358,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Lamoille",
     "diff_margin": -7.7857629168826605,
-    "diff_density": -0.9033217088055778
+    "diff_density": -0.9033217088055778,
+    "unemployment": 3.7
   },
   "50017": {
     "year": 2016,
@@ -30467,7 +33370,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Orange",
     "diff_margin": -8.712501485442665,
-    "diff_density": -0.8526025064407641
+    "diff_density": -0.8526025064407641,
+    "unemployment": 2.9
   },
   "50019": {
     "year": 2016,
@@ -30478,7 +33382,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Orleans",
     "diff_margin": -13.71856206771023,
-    "diff_density": -1.0204752837999624
+    "diff_density": -1.0204752837999624,
+    "unemployment": 4.5
   },
   "50021": {
     "year": 2016,
@@ -30489,7 +33394,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Rutland",
     "diff_margin": -10.456681127982648,
-    "diff_density": -1.0223068981093135
+    "diff_density": -1.0223068981093135,
+    "unemployment": 4
   },
   "50023": {
     "year": 2016,
@@ -30500,7 +33406,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Washington",
     "diff_margin": -4.548722208648911,
-    "diff_density": -0.9494451639189236
+    "diff_density": -0.9494451639189236,
+    "unemployment": 3.1
   },
   "50025": {
     "year": 2016,
@@ -30511,7 +33418,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Windham",
     "diff_margin": -5.248581560283682,
-    "diff_density": -0.9976174710301784
+    "diff_density": -0.9976174710301784,
+    "unemployment": 3.3
   },
   "50027": {
     "year": 2016,
@@ -30522,7 +33430,8 @@ export const counties = {
     "statenam": "Vermont",
     "cty_name": "Windsor",
     "diff_margin": -4.89464501293476,
-    "diff_density": -0.8976802773020829
+    "diff_density": -0.8976802773020829,
+    "unemployment": 3.1
   },
   "51001": {
     "year": 2016,
@@ -30533,7 +33442,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Accomack",
     "diff_margin": -4.928971754998415,
-    "diff_density": -0.6599443826473887
+    "diff_density": -0.6599443826473887,
+    "unemployment": 4.3
   },
   "51003": {
     "year": 2016,
@@ -30544,7 +33454,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Albemarle",
     "diff_margin": 4.116991484661703,
-    "diff_density": 3.0881642847231774
+    "diff_density": 3.0881642847231774,
+    "unemployment": 3.6
   },
   "51005": {
     "year": 2016,
@@ -30555,7 +33466,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Alleghany",
     "diff_margin": -17.806821790309336,
-    "diff_density": 0.3010236609347636
+    "diff_density": 0.3010236609347636,
+    "unemployment": 4.9
   },
   "51007": {
     "year": 2016,
@@ -30566,7 +33478,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Amelia",
     "diff_margin": -5.448521677327644,
-    "diff_density": 0.34184085343541426
+    "diff_density": 0.34184085343541426,
+    "unemployment": 4.3
   },
   "51009": {
     "year": 2016,
@@ -30577,7 +33490,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Amherst",
     "diff_margin": -6.529493537325237,
-    "diff_density": 0.4062863714050593
+    "diff_density": 0.4062863714050593,
+    "unemployment": 4.6
   },
   "51011": {
     "year": 2016,
@@ -30588,7 +33502,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Appomattox",
     "diff_margin": -5.476255971838068,
-    "diff_density": 0.06079012863953892
+    "diff_density": 0.06079012863953892,
+    "unemployment": 4.7
   },
   "51013": {
     "year": 2016,
@@ -30599,7 +33514,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Arlington",
     "diff_margin": 7.88669392679985,
-    "diff_density": 67.54629572583781
+    "diff_density": 67.54629572583781,
+    "unemployment": 2.6
   },
   "51015": {
     "year": 2016,
@@ -30610,7 +33526,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Augusta",
     "diff_margin": -5.953854777556533,
-    "diff_density": 3.092099276111682
+    "diff_density": 3.092099276111682,
+    "unemployment": 3.6
   },
   "51017": {
     "year": 2016,
@@ -30621,7 +33538,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Bath",
     "diff_margin": -13.336362015158269,
-    "diff_density": 0.038793559603900185
+    "diff_density": 0.038793559603900185,
+    "unemployment": 3.6
   },
   "51019": {
     "year": 2016,
@@ -30632,7 +33550,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Bedford",
     "diff_margin": -4.208364860380222,
-    "diff_density": 6.32241640328278
+    "diff_density": 6.32241640328278,
+    "unemployment": 4.1
   },
   "51021": {
     "year": 2016,
@@ -30643,7 +33562,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Bland",
     "diff_margin": -10.429359795134443,
-    "diff_density": 0.49284320576971474
+    "diff_density": 0.49284320576971474,
+    "unemployment": 6.4
   },
   "51023": {
     "year": 2016,
@@ -30654,7 +33574,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Botetourt",
     "diff_margin": -5.792580333673087,
-    "diff_density": 0.7438285291943743
+    "diff_density": 0.7438285291943743,
+    "unemployment": 3.5
   },
   "51025": {
     "year": 2016,
@@ -30665,7 +33586,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Brunswick",
     "diff_margin": -3.631170699803789,
-    "diff_density": -0.6969885370118494
+    "diff_density": -0.6969885370118494,
+    "unemployment": 5.9
   },
   "51027": {
     "year": 2016,
@@ -30676,7 +33598,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Buchanan",
     "diff_margin": -13.41405639913232,
-    "diff_density": -0.8512300103429098
+    "diff_density": -0.8512300103429098,
+    "unemployment": 10.9
   },
   "51029": {
     "year": 2016,
@@ -30687,7 +33610,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Buckingham",
     "diff_margin": -7.346562328390988,
-    "diff_density": -0.2940130421281424
+    "diff_density": -0.2940130421281424,
+    "unemployment": 5.1
   },
   "51031": {
     "year": 2016,
@@ -30698,7 +33622,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Campbell",
     "diff_margin": -5.3223631420383555,
-    "diff_density": 3.017901442832475
+    "diff_density": 3.017901442832475,
+    "unemployment": 4.5
   },
   "51033": {
     "year": 2016,
@@ -30709,7 +33634,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Caroline",
     "diff_margin": -8.018443864965818,
-    "diff_density": 1.0180682830657268
+    "diff_density": 1.0180682830657268,
+    "unemployment": 4.3
   },
   "51035": {
     "year": 2016,
@@ -30720,7 +33646,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Carroll",
     "diff_margin": -9.710540222271291,
-    "diff_density": 1.4128907286860901
+    "diff_density": 1.4128907286860901,
+    "unemployment": 5.9
   },
   "51036": {
     "year": 2016,
@@ -30731,7 +33658,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Charles City",
     "diff_margin": -5.580106809078778,
-    "diff_density": -2.6653703095941346
+    "diff_density": -2.6653703095941346,
+    "unemployment": 4.4
   },
   "51037": {
     "year": 2016,
@@ -30742,7 +33670,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Charlotte",
     "diff_margin": -5.26803867403315,
-    "diff_density": -0.22324299871651831
+    "diff_density": -0.22324299871651831,
+    "unemployment": 5.2
   },
   "51041": {
     "year": 2016,
@@ -30753,7 +33682,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Chesterfield",
     "diff_margin": 0.7656729496599866,
-    "diff_density": 10.158747932908113
+    "diff_density": 10.158747932908113,
+    "unemployment": 3.8
   },
   "51043": {
     "year": 2016,
@@ -30764,7 +33694,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Clarke",
     "diff_margin": -4.256134546796211,
-    "diff_density": 2.0916630718583207
+    "diff_density": 2.0916630718583207,
+    "unemployment": 3.3
   },
   "51045": {
     "year": 2016,
@@ -30775,7 +33706,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Craig",
     "diff_margin": -11.687528735632185,
-    "diff_density": 0.3583962006494108
+    "diff_density": 0.3583962006494108,
+    "unemployment": 4.4
   },
   "51047": {
     "year": 2016,
@@ -30786,7 +33718,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Culpeper",
     "diff_margin": -5.928651695567531,
-    "diff_density": 4.951700287424515
+    "diff_density": 4.951700287424515,
+    "unemployment": 3.8
   },
   "51049": {
     "year": 2016,
@@ -30797,7 +33730,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Cumberland",
     "diff_margin": -6.297948717948714,
-    "diff_density": -0.5812418476433798
+    "diff_density": -0.5812418476433798,
+    "unemployment": 4.6
   },
   "51051": {
     "year": 2016,
@@ -30808,7 +33742,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Dickenson",
     "diff_margin": -14.976908665105384,
-    "diff_density": -1.512031283090792
+    "diff_density": -1.512031283090792,
+    "unemployment": 10
   },
   "51053": {
     "year": 2016,
@@ -30819,7 +33754,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Dinwiddie",
     "diff_margin": -5.6004285819847865,
-    "diff_density": -0.11388390375605795
+    "diff_density": -0.11388390375605795,
+    "unemployment": 4.8
   },
   "51057": {
     "year": 2016,
@@ -30830,7 +33766,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Essex",
     "diff_margin": -5.690156892043333,
-    "diff_density": -1.2470379589296847
+    "diff_density": -1.2470379589296847,
+    "unemployment": 4.7
   },
   "51059": {
     "year": 2016,
@@ -30841,7 +33778,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Fairfax",
     "diff_margin": 5.729765316160034,
-    "diff_density": 34.710165485842936
+    "diff_density": 34.710165485842936,
+    "unemployment": 3.2
   },
   "51061": {
     "year": 2016,
@@ -30852,7 +33790,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Fauquier",
     "diff_margin": -4.369968753367097,
-    "diff_density": 2.4187906402038735
+    "diff_density": 2.4187906402038735,
+    "unemployment": 3.4
   },
   "51063": {
     "year": 2016,
@@ -30863,7 +33802,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Floyd",
     "diff_margin": -6.889021575514299,
-    "diff_density": 0.8657857105304672
+    "diff_density": 0.8657857105304672,
+    "unemployment": 4.4
   },
   "51065": {
     "year": 2016,
@@ -30874,7 +33814,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Fluvanna",
     "diff_margin": -3.5947405870145275,
-    "diff_density": 2.594825174825175
+    "diff_density": 2.594825174825175,
+    "unemployment": 3.4
   },
   "51067": {
     "year": 2016,
@@ -30885,7 +33826,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Franklin",
     "diff_margin": -6.977884722999441,
-    "diff_density": 0.14363164984140298
+    "diff_density": 0.14363164984140298,
+    "unemployment": 4.3
   },
   "51069": {
     "year": 2016,
@@ -30896,7 +33838,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Frederick",
     "diff_margin": -5.168756634191308,
-    "diff_density": 9.036831922611853
+    "diff_density": 9.036831922611853,
+    "unemployment": 3.4
   },
   "51071": {
     "year": 2016,
@@ -30907,7 +33850,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Giles",
     "diff_margin": -12.34010736944851,
-    "diff_density": 1.7967080780257483
+    "diff_density": 1.7967080780257483,
+    "unemployment": 6.9
   },
   "51073": {
     "year": 2016,
@@ -30918,7 +33862,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Gloucester",
     "diff_margin": -7.426855152632655,
-    "diff_density": 1.1077576787107972
+    "diff_density": 1.1077576787107972,
+    "unemployment": 3.6
   },
   "51075": {
     "year": 2016,
@@ -30929,7 +33874,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Goochland",
     "diff_margin": -0.058980617372576205,
-    "diff_density": 2.1889695117617762
+    "diff_density": 2.1889695117617762,
+    "unemployment": 3.6
   },
   "51077": {
     "year": 2016,
@@ -30940,7 +33886,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Grayson",
     "diff_margin": -9.654494351060897,
-    "diff_density": 0.3141299923108214
+    "diff_density": 0.3141299923108214,
+    "unemployment": 5.2
   },
   "51079": {
     "year": 2016,
@@ -30951,7 +33898,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Greene",
     "diff_margin": -5.701292223508368,
-    "diff_density": 3.069200000000002
+    "diff_density": 3.069200000000002,
+    "unemployment": 3.2
   },
   "51081": {
     "year": 2016,
@@ -30962,7 +33910,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Greensville",
     "diff_margin": -5.010616548246617,
-    "diff_density": -1.9116915625105868
+    "diff_density": -1.9116915625105868,
+    "unemployment": 5.1
   },
   "51083": {
     "year": 2016,
@@ -30973,7 +33922,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Halifax",
     "diff_margin": -5.8714375073763705,
-    "diff_density": 0.3104343147803945
+    "diff_density": 0.3104343147803945,
+    "unemployment": 6.2
   },
   "51085": {
     "year": 2016,
@@ -30984,7 +33934,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Hanover",
     "diff_margin": 0.08895832330332354,
-    "diff_density": 6.943981303624028
+    "diff_density": 6.943981303624028,
+    "unemployment": 3.5
   },
   "51087": {
     "year": 2016,
@@ -30995,7 +33946,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Henrico",
     "diff_margin": 2.579167726559895,
-    "diff_density": -1.1890800171158844
+    "diff_density": -1.1890800171158844,
+    "unemployment": 3.9
   },
   "51089": {
     "year": 2016,
@@ -31006,7 +33958,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Henry",
     "diff_margin": -7.20872986807607,
-    "diff_density": -2.4411521460518415
+    "diff_density": -2.4411521460518415,
+    "unemployment": 5.4
   },
   "51091": {
     "year": 2016,
@@ -31017,7 +33970,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Highland",
     "diff_margin": -5.808540618260242,
-    "diff_density": -0.049484536082474495
+    "diff_density": -0.049484536082474495,
+    "unemployment": 3
   },
   "51093": {
     "year": 2016,
@@ -31028,7 +33982,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Isle of Wight",
     "diff_margin": -4.606008983936334,
-    "diff_density": -1.09661892842432
+    "diff_density": -1.09661892842432,
+    "unemployment": 4.4
   },
   "51095": {
     "year": 2016,
@@ -31039,7 +33994,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "James City",
     "diff_margin": 1.3208940730514556,
-    "diff_density": 10.505102499298005
+    "diff_density": 10.505102499298005,
+    "unemployment": 3.8
   },
   "51097": {
     "year": 2016,
@@ -31050,7 +34006,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "King and Queen",
     "diff_margin": -7.601687413554636,
-    "diff_density": -0.1289077870152937
+    "diff_density": -0.1289077870152937,
+    "unemployment": 4.2
   },
   "51099": {
     "year": 2016,
@@ -31061,7 +34018,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "King George",
     "diff_margin": -6.088034595136627,
-    "diff_density": 3.5765664662658665
+    "diff_density": 3.5765664662658665,
+    "unemployment": 4.1
   },
   "51101": {
     "year": 2016,
@@ -31072,7 +34030,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "King William",
     "diff_margin": -7.198309859154929,
-    "diff_density": 0.6051478425932686
+    "diff_density": 0.6051478425932686,
+    "unemployment": 3.7
   },
   "51103": {
     "year": 2016,
@@ -31083,7 +34042,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Lancaster",
     "diff_margin": -1.8697923927867919,
-    "diff_density": -2.7165478424015035
+    "diff_density": -2.7165478424015035,
+    "unemployment": 4.4
   },
   "51105": {
     "year": 2016,
@@ -31094,7 +34054,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Lee",
     "diff_margin": -9.51451192130867,
-    "diff_density": -0.5645224099926516
+    "diff_density": -0.5645224099926516,
+    "unemployment": 6.9
   },
   "51107": {
     "year": 2016,
@@ -31105,7 +34066,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Loudoun",
     "diff_margin": 3.893404432363468,
-    "diff_density": 39.188925440297965
+    "diff_density": 39.188925440297965,
+    "unemployment": 3.2
   },
   "51109": {
     "year": 2016,
@@ -31116,7 +34078,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Louisa",
     "diff_margin": -6.799898326383733,
-    "diff_density": 2.1250352609308862
+    "diff_density": 2.1250352609308862,
+    "unemployment": 3.7
   },
   "51111": {
     "year": 2016,
@@ -31127,7 +34090,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Lunenburg",
     "diff_margin": -6.896067778375468,
-    "diff_density": -0.3607079318013344
+    "diff_density": -0.3607079318013344,
+    "unemployment": 4.6
   },
   "51113": {
     "year": 2016,
@@ -31138,7 +34102,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Madison",
     "diff_margin": -8.143438130948944,
-    "diff_density": 1.0028015467132327
+    "diff_density": 1.0028015467132327,
+    "unemployment": 3.1
   },
   "51115": {
     "year": 2016,
@@ -31149,7 +34114,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Mathews",
     "diff_margin": -4.084852607709745,
-    "diff_density": -0.9549889444897062
+    "diff_density": -0.9549889444897062,
+    "unemployment": 3.8
   },
   "51117": {
     "year": 2016,
@@ -31160,7 +34126,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Mecklenburg",
     "diff_margin": -2.604223496079591,
-    "diff_density": 0.1641768853219041
+    "diff_density": 0.1641768853219041,
+    "unemployment": 5.6
   },
   "51119": {
     "year": 2016,
@@ -31171,7 +34138,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Middlesex",
     "diff_margin": -3.8281815148481755,
-    "diff_density": -0.6619952421149549
+    "diff_density": -0.6619952421149549,
+    "unemployment": 3.7
   },
   "51121": {
     "year": 2016,
@@ -31182,7 +34150,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Montgomery",
     "diff_margin": -1.6509743529687313,
-    "diff_density": 4.360146766233441
+    "diff_density": 4.360146766233441,
+    "unemployment": 4.5
   },
   "51125": {
     "year": 2016,
@@ -31193,7 +34162,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Nelson",
     "diff_margin": -5.974089972111074,
-    "diff_density": -0.005239774030496136
+    "diff_density": -0.005239774030496136,
+    "unemployment": 3.5
   },
   "51127": {
     "year": 2016,
@@ -31204,7 +34174,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "New Kent",
     "diff_margin": -3.3142300419304433,
-    "diff_density": 5.773610832975734
+    "diff_density": 5.773610832975734,
+    "unemployment": 3.3
   },
   "51131": {
     "year": 2016,
@@ -31215,7 +34186,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Northampton",
     "diff_margin": -4.565115748288228,
-    "diff_density": -1.6827120646472302
+    "diff_density": -1.6827120646472302,
+    "unemployment": 5
   },
   "51133": {
     "year": 2016,
@@ -31226,7 +34198,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Northumberland",
     "diff_margin": -7.6064970645792584,
-    "diff_density": 3.231387422238491
+    "diff_density": 3.231387422238491,
+    "unemployment": 4.4
   },
   "51135": {
     "year": 2016,
@@ -31237,7 +34210,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Nottoway",
     "diff_margin": -6.732983474765518,
-    "diff_density": -0.4148166290276407
+    "diff_density": -0.4148166290276407,
+    "unemployment": 4
   },
   "51137": {
     "year": 2016,
@@ -31248,7 +34222,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Orange",
     "diff_margin": -7.301134813778631,
-    "diff_density": 2.3562644521392144
+    "diff_density": 2.3562644521392144,
+    "unemployment": 3.9
   },
   "51139": {
     "year": 2016,
@@ -31259,7 +34234,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Page",
     "diff_margin": -12.83314545625058,
-    "diff_density": 1.4016148748632844
+    "diff_density": 1.4016148748632844,
+    "unemployment": 4.5
   },
   "51141": {
     "year": 2016,
@@ -31270,7 +34246,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Patrick",
     "diff_margin": -8.443047473200611,
-    "diff_density": 0.4719312771682844
+    "diff_density": 0.4719312771682844,
+    "unemployment": 4.5
   },
   "51143": {
     "year": 2016,
@@ -31281,7 +34258,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Pittsylvania",
     "diff_margin": -6.371790639694513,
-    "diff_density": 1.0427473321361482
+    "diff_density": 1.0427473321361482,
+    "unemployment": 4.9
   },
   "51145": {
     "year": 2016,
@@ -31292,7 +34270,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Powhatan",
     "diff_margin": -2.172562820054779,
-    "diff_density": 4.877698870186762
+    "diff_density": 4.877698870186762,
+    "unemployment": 3.6
   },
   "51147": {
     "year": 2016,
@@ -31303,7 +34282,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Prince Edward",
     "diff_margin": -5.1823932843191045,
-    "diff_density": -0.3598811292719155
+    "diff_density": -0.3598811292719155,
+    "unemployment": 5.6
   },
   "51149": {
     "year": 2016,
@@ -31314,7 +34294,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Prince George",
     "diff_margin": -3.7992441140024766,
-    "diff_density": 0.35120497831416486
+    "diff_density": 0.35120497831416486,
+    "unemployment": 4.9
   },
   "51153": {
     "year": 2016,
@@ -31325,7 +34306,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Prince William",
     "diff_margin": 0.02327612630647735,
-    "diff_density": -105.04952437574309
+    "diff_density": -105.04952437574309,
+    "unemployment": 3.6
   },
   "51155": {
     "year": 2016,
@@ -31336,7 +34318,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Pulaski",
     "diff_margin": -8.456034939121224,
-    "diff_density": 1.3456699806165204
+    "diff_density": 1.3456699806165204,
+    "unemployment": 10
   },
   "51157": {
     "year": 2016,
@@ -31347,7 +34330,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Rappahannock",
     "diff_margin": -6.263582358235823,
-    "diff_density": 0.3223336964278971
+    "diff_density": 0.3223336964278971,
+    "unemployment": 3.5
   },
   "51159": {
     "year": 2016,
@@ -31358,7 +34342,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Richmond",
     "diff_margin": -4.855998356614627,
-    "diff_density": -0.6237302208992652
+    "diff_density": -0.6237302208992652,
+    "unemployment": 3.3
   },
   "51161": {
     "year": 2016,
@@ -31369,7 +34354,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Roanoke",
     "diff_margin": -3.0557532552992086,
-    "diff_density": -4.260373622864449
+    "diff_density": -4.260373622864449,
+    "unemployment": 3.6
   },
   "51163": {
     "year": 2016,
@@ -31380,7 +34366,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Rockbridge",
     "diff_margin": -7.357646233036974,
-    "diff_density": 0.8510496017136369
+    "diff_density": 0.8510496017136369,
+    "unemployment": 4.3
   },
   "51165": {
     "year": 2016,
@@ -31391,7 +34378,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Rockingham",
     "diff_margin": -3.2486949857674645,
-    "diff_density": 1.9695963914308194
+    "diff_density": 1.9695963914308194,
+    "unemployment": 3.6
   },
   "51167": {
     "year": 2016,
@@ -31402,7 +34390,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Russell",
     "diff_margin": -11.670209102091022,
-    "diff_density": 0.22762188172723796
+    "diff_density": 0.22762188172723796,
+    "unemployment": 6.5
   },
   "51169": {
     "year": 2016,
@@ -31413,7 +34402,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Scott",
     "diff_margin": -8.266369965191446,
-    "diff_density": 0.11579220585214856
+    "diff_density": 0.11579220585214856,
+    "unemployment": 4.6
   },
   "51171": {
     "year": 2016,
@@ -31424,7 +34414,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Shenandoah",
     "diff_margin": -7.479009097614949,
-    "diff_density": 1.8881591257518053
+    "diff_density": 1.8881591257518053,
+    "unemployment": 3.6
   },
   "51173": {
     "year": 2016,
@@ -31435,7 +34426,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Smyth",
     "diff_margin": -11.891461988304094,
-    "diff_density": 0.11122147561706086
+    "diff_density": 0.11122147561706086,
+    "unemployment": 5.6
   },
   "51175": {
     "year": 2016,
@@ -31446,7 +34438,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Southampton",
     "diff_margin": -7.379260595130752,
-    "diff_density": -0.6521086891210732
+    "diff_density": -0.6521086891210732,
+    "unemployment": 3.8
   },
   "51177": {
     "year": 2016,
@@ -31457,7 +34450,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Spotsylvania",
     "diff_margin": -4.423481951580946,
-    "diff_density": 10.23764632627649
+    "diff_density": 10.23764632627649,
+    "unemployment": 4.1
   },
   "51179": {
     "year": 2016,
@@ -31468,7 +34462,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Stafford",
     "diff_margin": -2.2089441469012954,
-    "diff_density": 17.722932778108287
+    "diff_density": 17.722932778108287,
+    "unemployment": 4
   },
   "51181": {
     "year": 2016,
@@ -31479,7 +34474,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Surry",
     "diff_margin": -7.762776659959755,
-    "diff_density": -1.186549560853198
+    "diff_density": -1.186549560853198,
+    "unemployment": 5.6
   },
   "51183": {
     "year": 2016,
@@ -31490,7 +34486,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Sussex",
     "diff_margin": -4.660897537728346,
-    "diff_density": -0.8270613194076137
+    "diff_density": -0.8270613194076137,
+    "unemployment": 5.9
   },
   "51185": {
     "year": 2016,
@@ -31501,7 +34498,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Tazewell",
     "diff_margin": -4.997120843471206,
-    "diff_density": 1.466140503035561
+    "diff_density": 1.466140503035561,
+    "unemployment": 8.1
   },
   "51187": {
     "year": 2016,
@@ -31512,7 +34510,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Warren",
     "diff_margin": -9.608467202518128,
-    "diff_density": 5.121921581486859
+    "diff_density": 5.121921581486859,
+    "unemployment": 3.9
   },
   "51191": {
     "year": 2016,
@@ -31523,7 +34522,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Washington",
     "diff_margin": -6.035043748784755,
-    "diff_density": 0.149423865378445
+    "diff_density": 0.149423865378445,
+    "unemployment": 4.6
   },
   "51193": {
     "year": 2016,
@@ -31534,7 +34534,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Westmoreland",
     "diff_margin": -7.985887106501025,
-    "diff_density": 0.7452611387217729
+    "diff_density": 0.7452611387217729,
+    "unemployment": 4.2
   },
   "51195": {
     "year": 2016,
@@ -31545,7 +34546,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Wise",
     "diff_margin": -7.115912213995063,
-    "diff_density": -0.06901832882760317
+    "diff_density": -0.06901832882760317,
+    "unemployment": 8.7
   },
   "51197": {
     "year": 2016,
@@ -31556,7 +34558,8 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "Wythe",
     "diff_margin": -9.742075471698111,
-    "diff_density": 1.9308319258585591
+    "diff_density": 1.9308319258585591,
+    "unemployment": 7
   },
   "51199": {
     "year": 2016,
@@ -31567,7 +34570,122 @@ export const counties = {
     "statenam": "Virginia",
     "cty_name": "York",
     "diff_margin": -0.6965962069167944,
-    "diff_density": 1.041122351593799
+    "diff_density": 1.041122351593799,
+    "unemployment": 4
+  },
+  "51510": {
+    "unemployment": 2.9
+  },
+  "51520": {
+    "unemployment": 5.2
+  },
+  "51530": {
+    "unemployment": 5.1
+  },
+  "51540": {
+    "unemployment": 3.5
+  },
+  "51550": {
+    "unemployment": 4.4
+  },
+  "51570": {
+    "unemployment": 4.5
+  },
+  "51580": {
+    "unemployment": 5.8
+  },
+  "51590": {
+    "unemployment": 6.6
+  },
+  "51595": {
+    "unemployment": 6.4
+  },
+  "51600": {
+    "unemployment": 3.1
+  },
+  "51610": {
+    "unemployment": 2.7
+  },
+  "51620": {
+    "unemployment": 5.9
+  },
+  "51630": {
+    "unemployment": 4.7
+  },
+  "51640": {
+    "unemployment": 5.1
+  },
+  "51650": {
+    "unemployment": 5.7
+  },
+  "51660": {
+    "unemployment": 5.2
+  },
+  "51670": {
+    "unemployment": 6.5
+  },
+  "51678": {
+    "unemployment": 7.4
+  },
+  "51680": {
+    "unemployment": 5.5
+  },
+  "51683": {
+    "unemployment": 3.5
+  },
+  "51685": {
+    "unemployment": 3.5
+  },
+  "51690": {
+    "unemployment": 6.8
+  },
+  "51700": {
+    "unemployment": 5.1
+  },
+  "51710": {
+    "unemployment": 5.4
+  },
+  "51720": {
+    "unemployment": 7.2
+  },
+  "51730": {
+    "unemployment": 7.4
+  },
+  "51735": {
+    "unemployment": 3.6
+  },
+  "51740": {
+    "unemployment": 6.2
+  },
+  "51750": {
+    "unemployment": 6.7
+  },
+  "51760": {
+    "unemployment": 4.7
+  },
+  "51770": {
+    "unemployment": 4.4
+  },
+  "51775": {
+    "unemployment": 4
+  },
+  "51790": {
+    "unemployment": 3.9
+  },
+  "51800": {
+    "unemployment": 4.7
+  },
+  "51810": {
+    "unemployment": 4
+  },
+  "51820": {
+    "unemployment": 4.1
+  },
+  "51830": {
+    "unemployment": 5.9
+  },
+  "51840": {
+    "unemployment": 3.9
   },
   "53001": {
     "year": 2016,
@@ -31578,7 +34696,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Adams",
     "diff_margin": -5.329490121096242,
-    "diff_density": -0.8598531932799305
+    "diff_density": -0.8598531932799305,
+    "unemployment": 4.8
   },
   "53003": {
     "year": 2016,
@@ -31589,7 +34708,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Asotin",
     "diff_margin": -7.622129903994313,
-    "diff_density": -2.298655475393346
+    "diff_density": -2.298655475393346,
+    "unemployment": 4.7
   },
   "53005": {
     "year": 2016,
@@ -31600,7 +34720,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Benton",
     "diff_margin": -1.6585839094431378,
-    "diff_density": -15.82515684729296
+    "diff_density": -15.82515684729296,
+    "unemployment": 6.5
   },
   "53007": {
     "year": 2016,
@@ -31611,7 +34732,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Chelan",
     "diff_margin": -0.1938457723778768,
-    "diff_density": -5.516345046960654
+    "diff_density": -5.516345046960654,
+    "unemployment": 5.1
   },
   "53009": {
     "year": 2016,
@@ -31622,7 +34744,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Clallam",
     "diff_margin": -0.9931859779742496,
-    "diff_density": -7.06507222449132
+    "diff_density": -7.06507222449132,
+    "unemployment": 7.6
   },
   "53011": {
     "year": 2016,
@@ -31633,7 +34756,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Clark",
     "diff_margin": -1.2780684797157633,
-    "diff_density": -45.59596184419712
+    "diff_density": -45.59596184419712,
+    "unemployment": 6.6
   },
   "53013": {
     "year": 2016,
@@ -31644,7 +34768,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Columbia",
     "diff_margin": -4.070568816658202,
-    "diff_density": -0.33321206958083405
+    "diff_density": -0.33321206958083405,
+    "unemployment": 5.9
   },
   "53015": {
     "year": 2016,
@@ -31655,7 +34780,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Cowlitz",
     "diff_margin": -8.546935483870968,
-    "diff_density": -17.387903729431986
+    "diff_density": -17.387903729431986,
+    "unemployment": 7.6
   },
   "53017": {
     "year": 2016,
@@ -31666,7 +34792,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Douglas",
     "diff_margin": -1.8274626865671664,
-    "diff_density": -5.263747127953124
+    "diff_density": -5.263747127953124,
+    "unemployment": 6.6
   },
   "53019": {
     "year": 2016,
@@ -31677,7 +34804,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Ferry",
     "diff_margin": -6.8803266090297726,
-    "diff_density": -0.1424906044045824
+    "diff_density": -0.1424906044045824,
+    "unemployment": 9.8
   },
   "53021": {
     "year": 2016,
@@ -31688,7 +34816,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Franklin",
     "diff_margin": -1.1608375222333933,
-    "diff_density": -7.819991708059284
+    "diff_density": -7.819991708059284,
+    "unemployment": 6.5
   },
   "53023": {
     "year": 2016,
@@ -31699,7 +34828,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Garfield",
     "diff_margin": -3.8874025974025983,
-    "diff_density": -0.06647342723268945
+    "diff_density": -0.06647342723268945,
+    "unemployment": 5.3
   },
   "53025": {
     "year": 2016,
@@ -31710,7 +34840,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Grant",
     "diff_margin": -5.287393830675036,
-    "diff_density": -0.7099666730111096
+    "diff_density": -0.7099666730111096,
+    "unemployment": 6.6
   },
   "53027": {
     "year": 2016,
@@ -31721,7 +34852,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Grays Harbor",
     "diff_margin": -11.768534704370182,
-    "diff_density": -4.854083479230086
+    "diff_density": -4.854083479230086,
+    "unemployment": 8.7
   },
   "53029": {
     "year": 2016,
@@ -31732,7 +34864,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Island",
     "diff_margin": -1.2498758935927086,
-    "diff_density": -21.44189014152076
+    "diff_density": -21.44189014152076,
+    "unemployment": 6
   },
   "53031": {
     "year": 2016,
@@ -31743,7 +34876,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Jefferson",
     "diff_margin": -1.677966952064125,
-    "diff_density": -0.82367522315241
+    "diff_density": -0.82367522315241,
+    "unemployment": 7.2
   },
   "53033": {
     "year": 2016,
@@ -31754,7 +34888,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "King",
     "diff_margin": 4.655572644431004,
-    "diff_density": -149.14561144277906
+    "diff_density": -149.14561144277906,
+    "unemployment": 3.9
   },
   "53035": {
     "year": 2016,
@@ -31765,7 +34900,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Kitsap",
     "diff_margin": -1.980050081712271,
-    "diff_density": -72.21959740720109
+    "diff_density": -72.21959740720109,
+    "unemployment": 5.9
   },
   "53037": {
     "year": 2016,
@@ -31776,7 +34912,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Kittitas",
     "diff_margin": -3.850817230581228,
-    "diff_density": -2.210626395678349
+    "diff_density": -2.210626395678349,
+    "unemployment": 5.8
   },
   "53039": {
     "year": 2016,
@@ -31787,7 +34924,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Klickitat",
     "diff_margin": -4.433684794672587,
-    "diff_density": -1.6381528982370641
+    "diff_density": -1.6381528982370641,
+    "unemployment": 6.5
   },
   "53041": {
     "year": 2016,
@@ -31798,7 +34936,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Lewis",
     "diff_margin": -6.674609252400984,
-    "diff_density": -7.539818545030798
+    "diff_density": -7.539818545030798,
+    "unemployment": 8.1
   },
   "53043": {
     "year": 2016,
@@ -31809,7 +34948,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Lincoln",
     "diff_margin": -6.780993071593532,
-    "diff_density": -0.10372024981713812
+    "diff_density": -0.10372024981713812,
+    "unemployment": 4.1
   },
   "53045": {
     "year": 2016,
@@ -31820,7 +34960,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Mason",
     "diff_margin": -8.785785100633241,
-    "diff_density": -3.5883456671739147
+    "diff_density": -3.5883456671739147,
+    "unemployment": 8.3
   },
   "53047": {
     "year": 2016,
@@ -31831,7 +34972,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Okanogan",
     "diff_margin": -4.943151111740541,
-    "diff_density": -1.8596380396280927
+    "diff_density": -1.8596380396280927,
+    "unemployment": 6.1
   },
   "53049": {
     "year": 2016,
@@ -31842,7 +34984,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Pacific",
     "diff_margin": -10.31147880973851,
-    "diff_density": -1.767423069500138
+    "diff_density": -1.767423069500138,
+    "unemployment": 7.7
   },
   "53051": {
     "year": 2016,
@@ -31853,7 +34996,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Pend Oreille",
     "diff_margin": -9.114039776258544,
-    "diff_density": -0.16282430588789865
+    "diff_density": -0.16282430588789865,
+    "unemployment": 8.9
   },
   "53053": {
     "year": 2016,
@@ -31864,7 +35008,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Pierce",
     "diff_margin": -3.685111194235894,
-    "diff_density": -70.89227018706089
+    "diff_density": -70.89227018706089,
+    "unemployment": 6.5
   },
   "53055": {
     "year": 2016,
@@ -31875,7 +35020,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "San Juan",
     "diff_margin": 1.2362125915807667,
-    "diff_density": -14.60443965269392
+    "diff_density": -14.60443965269392,
+    "unemployment": 3.9
   },
   "53057": {
     "year": 2016,
@@ -31886,7 +35032,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Skagit",
     "diff_margin": -1.1785799293373813,
-    "diff_density": -13.29206099815157
+    "diff_density": -13.29206099815157,
+    "unemployment": 6.7
   },
   "53059": {
     "year": 2016,
@@ -31897,7 +35044,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Skamania",
     "diff_margin": -8.554755086661636,
-    "diff_density": -0.09406648627754155
+    "diff_density": -0.09406648627754155,
+    "unemployment": 6.7
   },
   "53061": {
     "year": 2016,
@@ -31908,7 +35056,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Snohomish",
     "diff_margin": -1.0593907201999713,
-    "diff_density": -53.74270348349758
+    "diff_density": -53.74270348349758,
+    "unemployment": 4.3
   },
   "53063": {
     "year": 2016,
@@ -31919,7 +35068,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Spokane",
     "diff_margin": -2.746158764509147,
-    "diff_density": -34.68040469670426
+    "diff_density": -34.68040469670426,
+    "unemployment": 6.3
   },
   "53065": {
     "year": 2016,
@@ -31930,7 +35080,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Stevens",
     "diff_margin": -7.561205561700113,
-    "diff_density": -3.831353480563089
+    "diff_density": -3.831353480563089,
+    "unemployment": 7.9
   },
   "53067": {
     "year": 2016,
@@ -31941,7 +35092,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Thurston",
     "diff_margin": -4.349955358922244,
-    "diff_density": -36.9950689788908
+    "diff_density": -36.9950689788908,
+    "unemployment": 5.9
   },
   "53069": {
     "year": 2016,
@@ -31952,7 +35104,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Wahkiakum",
     "diff_margin": -11.276413586413582,
-    "diff_density": -1.108815399802567
+    "diff_density": -1.108815399802567,
+    "unemployment": 8.4
   },
   "53071": {
     "year": 2016,
@@ -31963,7 +35116,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Walla Walla",
     "diff_margin": 0.6345129921887462,
-    "diff_density": -9.892270948643052
+    "diff_density": -9.892270948643052,
+    "unemployment": 5.6
   },
   "53073": {
     "year": 2016,
@@ -31974,7 +35128,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Whatcom",
     "diff_margin": -0.06342211548956556,
-    "diff_density": -5.418230921845783
+    "diff_density": -5.418230921845783,
+    "unemployment": 6.3
   },
   "53075": {
     "year": 2016,
@@ -31985,7 +35140,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Whitman",
     "diff_margin": 1.6939725097573444,
-    "diff_density": -5.200609377098685
+    "diff_density": -5.200609377098685,
+    "unemployment": 5.5
   },
   "53077": {
     "year": 2016,
@@ -31996,7 +35152,8 @@ export const counties = {
     "statenam": "Washington",
     "cty_name": "Yakima",
     "diff_margin": -5.0365932378278515,
-    "diff_density": -8.218226009219165
+    "diff_density": -8.218226009219165,
+    "unemployment": 7.3
   },
   "54001": {
     "year": 2016,
@@ -32007,7 +35164,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Barbour",
     "diff_margin": -10.553877822045155,
-    "diff_density": 0.7725813639828765
+    "diff_density": 0.7725813639828765,
+    "unemployment": 5.8
   },
   "54003": {
     "year": 2016,
@@ -32018,7 +35176,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Berkeley",
     "diff_margin": -9.671919569791907,
-    "diff_density": 17.431789873575383
+    "diff_density": 17.431789873575383,
+    "unemployment": 4
   },
   "54005": {
     "year": 2016,
@@ -32029,7 +35188,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Boone",
     "diff_margin": -12.216810723364919,
-    "diff_density": 0.3048550464569111
+    "diff_density": 0.3048550464569111,
+    "unemployment": 8.5
   },
   "54007": {
     "year": 2016,
@@ -32040,7 +35200,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Braxton",
     "diff_margin": -15.617256567252625,
-    "diff_density": 0.5117088545643185
+    "diff_density": 0.5117088545643185,
+    "unemployment": 6.9
   },
   "54009": {
     "year": 2016,
@@ -32051,7 +35212,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Brooke",
     "diff_margin": -16.370922431865832,
-    "diff_density": 2.760672645739916
+    "diff_density": 2.760672645739916,
+    "unemployment": 6.5
   },
   "54011": {
     "year": 2016,
@@ -32062,7 +35224,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Cabell",
     "diff_margin": -7.636133757377451,
-    "diff_density": 1.9853832467440213
+    "diff_density": 1.9853832467440213,
+    "unemployment": 4.8
   },
   "54013": {
     "year": 2016,
@@ -32073,7 +35236,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Calhoun",
     "diff_margin": -19.548479262672814,
-    "diff_density": 1.4249776186213072
+    "diff_density": 1.4249776186213072,
+    "unemployment": 8.5
   },
   "54015": {
     "year": 2016,
@@ -32084,7 +35248,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Clay",
     "diff_margin": -11.775449628127113,
-    "diff_density": -0.15834747002047322
+    "diff_density": -0.15834747002047322,
+    "unemployment": 9.1
   },
   "54017": {
     "year": 2016,
@@ -32095,7 +35260,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Doddridge",
     "diff_margin": -8.031146496815285,
-    "diff_density": 0.17898411109720946
+    "diff_density": 0.17898411109720946,
+    "unemployment": 4.9
   },
   "54019": {
     "year": 2016,
@@ -32106,7 +35272,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Fayette",
     "diff_margin": -10.551877921906893,
-    "diff_density": 1.6866926158264697
+    "diff_density": 1.6866926158264697,
+    "unemployment": 6.8
   },
   "54021": {
     "year": 2016,
@@ -32117,7 +35284,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Gilmer",
     "diff_margin": -12.23791139240506,
-    "diff_density": 0.058242245199409126
+    "diff_density": 0.058242245199409126,
+    "unemployment": 6.8
   },
   "54023": {
     "year": 2016,
@@ -32128,7 +35296,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Grant",
     "diff_margin": -5.346552072800808,
-    "diff_density": 0.7488411504702857
+    "diff_density": 0.7488411504702857,
+    "unemployment": 6.1
   },
   "54025": {
     "year": 2016,
@@ -32139,7 +35308,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Greenbrier",
     "diff_margin": -9.563695652173912,
-    "diff_density": 1.005585982325881
+    "diff_density": 1.005585982325881,
+    "unemployment": 4.5
   },
   "54027": {
     "year": 2016,
@@ -32150,7 +35320,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Hampshire",
     "diff_margin": -10.372330255930816,
-    "diff_density": 0.8950917610308462
+    "diff_density": 0.8950917610308462,
+    "unemployment": 4.1
   },
   "54029": {
     "year": 2016,
@@ -32161,7 +35332,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Hancock",
     "diff_margin": -12.495772820756208,
-    "diff_density": 6.34232054230722
+    "diff_density": 6.34232054230722,
+    "unemployment": 6.5
   },
   "54031": {
     "year": 2016,
@@ -32172,7 +35344,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Hardy",
     "diff_margin": -7.939382265028229,
-    "diff_density": 1.4715706410674745
+    "diff_density": 1.4715706410674745,
+    "unemployment": 5.3
   },
   "54033": {
     "year": 2016,
@@ -32183,7 +35356,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Harrison",
     "diff_margin": -9.679451700875553,
-    "diff_density": 4.138774308309898
+    "diff_density": 4.138774308309898,
+    "unemployment": 5.4
   },
   "54035": {
     "year": 2016,
@@ -32194,7 +35368,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Jackson",
     "diff_margin": -11.520161876445325,
-    "diff_density": 1.2151588241628062
+    "diff_density": 1.2151588241628062,
+    "unemployment": 5.9
   },
   "54037": {
     "year": 2016,
@@ -32205,7 +35380,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Jefferson",
     "diff_margin": -7.573157412421374,
-    "diff_density": 8.920822401373854
+    "diff_density": 8.920822401373854,
+    "unemployment": 3.4
   },
   "54039": {
     "year": 2016,
@@ -32216,7 +35392,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Kanawha",
     "diff_margin": -5.944676516080854,
-    "diff_density": -0.0880658614225922
+    "diff_density": -0.0880658614225922,
+    "unemployment": 5.2
   },
   "54041": {
     "year": 2016,
@@ -32227,7 +35404,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Lewis",
     "diff_margin": -8.205497458242558,
-    "diff_density": 1.5582278053469842
+    "diff_density": 1.5582278053469842,
+    "unemployment": 7.1
   },
   "54043": {
     "year": 2016,
@@ -32238,7 +35416,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Lincoln",
     "diff_margin": -12.124796794504864,
-    "diff_density": 0.38938312282628473
+    "diff_density": 0.38938312282628473,
+    "unemployment": 7.4
   },
   "54045": {
     "year": 2016,
@@ -32249,7 +35428,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Logan",
     "diff_margin": -12.133788063337391,
-    "diff_density": 0.8110940186009614
+    "diff_density": 0.8110940186009614,
+    "unemployment": 10
   },
   "54047": {
     "year": 2016,
@@ -32260,7 +35440,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "McDowell",
     "diff_margin": -10.953280466094835,
-    "diff_density": -0.017125932591010695
+    "diff_density": -0.017125932591010695,
+    "unemployment": 13.1
   },
   "54049": {
     "year": 2016,
@@ -32271,7 +35452,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Marion",
     "diff_margin": -11.358659973810568,
-    "diff_density": 4.424832545183648
+    "diff_density": 4.424832545183648,
+    "unemployment": 6
   },
   "54051": {
     "year": 2016,
@@ -32282,7 +35464,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Marshall",
     "diff_margin": -12.599691202323623,
-    "diff_density": 0.5446920734701877
+    "diff_density": 0.5446920734701877,
+    "unemployment": 7
   },
   "54053": {
     "year": 2016,
@@ -32293,7 +35476,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Mason",
     "diff_margin": -18.135229856648547,
-    "diff_density": 0.7522983168891457
+    "diff_density": 0.7522983168891457,
+    "unemployment": 7
   },
   "54055": {
     "year": 2016,
@@ -32304,7 +35488,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Mercer",
     "diff_margin": -5.07099218988612,
-    "diff_density": 3.920589512876198
+    "diff_density": 3.920589512876198,
+    "unemployment": 6.7
   },
   "54057": {
     "year": 2016,
@@ -32315,7 +35500,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Mineral",
     "diff_margin": -8.584995617879056,
-    "diff_density": 1.3146243479852373
+    "diff_density": 1.3146243479852373,
+    "unemployment": 6
   },
   "54059": {
     "year": 2016,
@@ -32326,7 +35512,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Mingo",
     "diff_margin": -13.084539022072024,
-    "diff_density": 1.5095230554702077
+    "diff_density": 1.5095230554702077,
+    "unemployment": 11.7
   },
   "54061": {
     "year": 2016,
@@ -32337,7 +35524,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Monongalia",
     "diff_margin": -3.160962975400892,
-    "diff_density": 11.821793034494249
+    "diff_density": 11.821793034494249,
+    "unemployment": 4.5
   },
   "54063": {
     "year": 2016,
@@ -32348,7 +35536,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Monroe",
     "diff_margin": -8.713650793650793,
-    "diff_density": 0.9736541512427284
+    "diff_density": 0.9736541512427284,
+    "unemployment": 4.5
   },
   "54065": {
     "year": 2016,
@@ -32359,7 +35548,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Morgan",
     "diff_margin": -13.012999345121148,
-    "diff_density": 2.580423014798974
+    "diff_density": 2.580423014798974,
+    "unemployment": 4.5
   },
   "54067": {
     "year": 2016,
@@ -32370,7 +35560,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Nicholas",
     "diff_margin": -10.916696856686201,
-    "diff_density": 0.9294462137843595
+    "diff_density": 0.9294462137843595,
+    "unemployment": 8.5
   },
   "54069": {
     "year": 2016,
@@ -32381,7 +35572,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Ohio",
     "diff_margin": -7.293445760143669,
-    "diff_density": -0.8702816102815802
+    "diff_density": -0.8702816102815802,
+    "unemployment": 5.3
   },
   "54071": {
     "year": 2016,
@@ -32392,7 +35584,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Pendleton",
     "diff_margin": -10.557260273972602,
-    "diff_density": -0.035388980676675175
+    "diff_density": -0.035388980676675175,
+    "unemployment": 3.5
   },
   "54073": {
     "year": 2016,
@@ -32403,7 +35596,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Pleasants",
     "diff_margin": -13.821693290734828,
-    "diff_density": 2.2284166026133754
+    "diff_density": 2.2284166026133754,
+    "unemployment": 7.5
   },
   "54075": {
     "year": 2016,
@@ -32414,7 +35608,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Pocahontas",
     "diff_margin": -10.908085106382977,
-    "diff_density": 0.04885353299017359
+    "diff_density": 0.04885353299017359,
+    "unemployment": 5.1
   },
   "54077": {
     "year": 2016,
@@ -32425,7 +35620,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Preston",
     "diff_margin": -6.757361034017922,
-    "diff_density": 2.247422934648583
+    "diff_density": 2.247422934648583,
+    "unemployment": 5.2
   },
   "54079": {
     "year": 2016,
@@ -32436,7 +35632,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Putnam",
     "diff_margin": -6.986783537209014,
-    "diff_density": 2.2319507044290674
+    "diff_density": 2.2319507044290674,
+    "unemployment": 4.6
   },
   "54081": {
     "year": 2016,
@@ -32447,7 +35644,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Raleigh",
     "diff_margin": -5.134838115383303,
-    "diff_density": 0.7999223589658868
+    "diff_density": 0.7999223589658868,
+    "unemployment": 6.3
   },
   "54083": {
     "year": 2016,
@@ -32458,7 +35656,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Randolph",
     "diff_margin": -9.075088757396447,
-    "diff_density": 1.0232009849184358
+    "diff_density": 1.0232009849184358,
+    "unemployment": 5.3
   },
   "54085": {
     "year": 2016,
@@ -32469,7 +35668,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Ritchie",
     "diff_margin": -8.141287128712872,
-    "diff_density": 0.5582508462576588
+    "diff_density": 0.5582508462576588,
+    "unemployment": 5.9
   },
   "54087": {
     "year": 2016,
@@ -32480,7 +35680,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Roane",
     "diff_margin": -15.110867405426063,
-    "diff_density": 0.38388948630986874
+    "diff_density": 0.38388948630986874,
+    "unemployment": 8.5
   },
   "54089": {
     "year": 2016,
@@ -32491,7 +35692,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Summers",
     "diff_margin": -9.761256447286978,
-    "diff_density": 0.3067069855185043
+    "diff_density": 0.3067069855185043,
+    "unemployment": 5.5
   },
   "54091": {
     "year": 2016,
@@ -32502,7 +35704,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Taylor",
     "diff_margin": -10.027593105570944,
-    "diff_density": 3.41069630144122
+    "diff_density": 3.41069630144122,
+    "unemployment": 5.2
   },
   "54093": {
     "year": 2016,
@@ -32513,7 +35716,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Tucker",
     "diff_margin": -6.388729792147807,
-    "diff_density": 0.7788818867564213
+    "diff_density": 0.7788818867564213,
+    "unemployment": 4.8
   },
   "54095": {
     "year": 2016,
@@ -32524,7 +35728,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Tyler",
     "diff_margin": -13.193576360121515,
-    "diff_density": 1.3385262788247694
+    "diff_density": 1.3385262788247694,
+    "unemployment": 8.1
   },
   "54097": {
     "year": 2016,
@@ -32535,7 +35740,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Upshur",
     "diff_margin": -6.87520697167756,
-    "diff_density": 2.555404917662983
+    "diff_density": 2.555404917662983,
+    "unemployment": 7
   },
   "54099": {
     "year": 2016,
@@ -32546,7 +35752,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Wayne",
     "diff_margin": -13.231246684350136,
-    "diff_density": 2.22354954741294
+    "diff_density": 2.22354954741294,
+    "unemployment": 6.3
   },
   "54101": {
     "year": 2016,
@@ -32557,7 +35764,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Webster",
     "diff_margin": -15.622115059221656,
-    "diff_density": 0.3590427665456115
+    "diff_density": 0.3590427665456115,
+    "unemployment": 8.2
   },
   "54103": {
     "year": 2016,
@@ -32568,7 +35776,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Wetzel",
     "diff_margin": -16.086457761266352,
-    "diff_density": 0.9403982572753158
+    "diff_density": 0.9403982572753158,
+    "unemployment": 8.1
   },
   "54105": {
     "year": 2016,
@@ -32579,7 +35788,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Wirt",
     "diff_margin": -15.247883817427388,
-    "diff_density": 1.0251455851361229
+    "diff_density": 1.0251455851361229,
+    "unemployment": 8.1
   },
   "54107": {
     "year": 2016,
@@ -32590,7 +35800,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Wood",
     "diff_margin": -9.431325164511001,
-    "diff_density": 3.4894877955550783
+    "diff_density": 3.4894877955550783,
+    "unemployment": 5.7
   },
   "54109": {
     "year": 2016,
@@ -32601,7 +35812,8 @@ export const counties = {
     "statenam": "West Virginia",
     "cty_name": "Wyoming",
     "diff_margin": -7.4531130746574465,
-    "diff_density": 0.5751987185904497
+    "diff_density": 0.5751987185904497,
+    "unemployment": 9.4
   },
   "55001": {
     "year": 2016,
@@ -32612,7 +35824,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Adams",
     "diff_margin": -16.470178094390022,
-    "diff_density": -0.2760078990164949
+    "diff_density": -0.2760078990164949,
+    "unemployment": 5.6
   },
   "55003": {
     "year": 2016,
@@ -32623,7 +35836,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Ashland",
     "diff_margin": -12.28731011859702,
-    "diff_density": -0.4256013166960111
+    "diff_density": -0.4256013166960111,
+    "unemployment": 5.1
   },
   "55005": {
     "year": 2016,
@@ -32634,7 +35848,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Barron",
     "diff_margin": -12.955114151194813,
-    "diff_density": -0.22316560605533908
+    "diff_density": -0.22316560605533908,
+    "unemployment": 3.9
   },
   "55007": {
     "year": 2016,
@@ -32645,7 +35860,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Bayfield",
     "diff_margin": -9.45371825940365,
-    "diff_density": -0.1978761181708686
+    "diff_density": -0.1978761181708686,
+    "unemployment": 5.8
   },
   "55009": {
     "year": 2016,
@@ -32656,7 +35872,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Brown",
     "diff_margin": -6.649603520082827,
-    "diff_density": -2.697923203262178
+    "diff_density": -2.697923203262178,
+    "unemployment": 3.6
   },
   "55011": {
     "year": 2016,
@@ -32667,7 +35884,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Buffalo",
     "diff_margin": -14.15014015315706,
-    "diff_density": -0.17521909384631407
+    "diff_density": -0.17521909384631407,
+    "unemployment": 4.2
   },
   "55013": {
     "year": 2016,
@@ -32678,7 +35896,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Burnett",
     "diff_margin": -12.128783117329967,
-    "diff_density": 0.04899190849911683
+    "diff_density": 0.04899190849911683,
+    "unemployment": 4.9
   },
   "55015": {
     "year": 2016,
@@ -32689,7 +35908,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Calumet",
     "diff_margin": -7.037618146732754,
-    "diff_density": 0.02738562091504093
+    "diff_density": 0.02738562091504093,
+    "unemployment": 3.4
   },
   "55017": {
     "year": 2016,
@@ -32700,7 +35920,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Chippewa",
     "diff_margin": -11.526848844968377,
-    "diff_density": 0.5297741900294533
+    "diff_density": 0.5297741900294533,
+    "unemployment": 3.6
   },
   "55019": {
     "year": 2016,
@@ -32711,7 +35932,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Clark",
     "diff_margin": -13.534585178624148,
-    "diff_density": -0.21163991337554222
+    "diff_density": -0.21163991337554222,
+    "unemployment": 3.2
   },
   "55021": {
     "year": 2016,
@@ -32722,7 +35944,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Columbia",
     "diff_margin": -10.049100624850617,
-    "diff_density": -1.6428448264600988
+    "diff_density": -1.6428448264600988,
+    "unemployment": 3.3
   },
   "55023": {
     "year": 2016,
@@ -32733,7 +35956,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Crawford",
     "diff_margin": -14.599004949205522,
-    "diff_density": -0.24540356779868766
+    "diff_density": -0.24540356779868766,
+    "unemployment": 4.3
   },
   "55025": {
     "year": 2016,
@@ -32744,7 +35968,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Dane",
     "diff_margin": 0.3468627206468682,
-    "diff_density": 0.42624369382915006
+    "diff_density": 0.42624369382915006,
+    "unemployment": 2.8
   },
   "55027": {
     "year": 2016,
@@ -32755,7 +35980,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Dodge",
     "diff_margin": -9.548205427623898,
-    "diff_density": -1.9097921472785018
+    "diff_density": -1.9097921472785018,
+    "unemployment": 3.7
   },
   "55029": {
     "year": 2016,
@@ -32766,7 +35992,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Door",
     "diff_margin": -6.818260719622948,
-    "diff_density": -0.5630665172828699
+    "diff_density": -0.5630665172828699,
+    "unemployment": 3.4
   },
   "55031": {
     "year": 2016,
@@ -32777,7 +36004,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Douglas",
     "diff_margin": -13.795366238449404,
-    "diff_density": -0.5387895471345132
+    "diff_density": -0.5387895471345132,
+    "unemployment": 5.2
   },
   "55033": {
     "year": 2016,
@@ -32788,7 +36016,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Dunn",
     "diff_margin": -10.491276953107274,
-    "diff_density": 0.04311712601898421
+    "diff_density": 0.04311712601898421,
+    "unemployment": 3.8
   },
   "55035": {
     "year": 2016,
@@ -32799,7 +36028,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Eau Claire",
     "diff_margin": -5.5228550295857985,
-    "diff_density": -1.1424524279757975
+    "diff_density": -1.1424524279757975,
+    "unemployment": 3.4
   },
   "55037": {
     "year": 2016,
@@ -32810,7 +36040,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Florence",
     "diff_margin": -11.177404752923422,
-    "diff_density": 0.050262807513468566
+    "diff_density": 0.050262807513468566,
+    "unemployment": 5.5
   },
   "55039": {
     "year": 2016,
@@ -32821,7 +36052,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Fond du Lac",
     "diff_margin": -7.872735350530391,
-    "diff_density": -3.211730942950453
+    "diff_density": -3.211730942950453,
+    "unemployment": 3.6
   },
   "55041": {
     "year": 2016,
@@ -32832,7 +36064,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Forest",
     "diff_margin": -17.046858220545822,
-    "diff_density": -0.13553364166181847
+    "diff_density": -0.13553364166181847,
+    "unemployment": 6.2
   },
   "55043": {
     "year": 2016,
@@ -32843,7 +36076,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Grant",
     "diff_margin": -14.286269177996758,
-    "diff_density": -0.16864367615642806
+    "diff_density": -0.16864367615642806,
+    "unemployment": 3.7
   },
   "55045": {
     "year": 2016,
@@ -32854,7 +36088,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Green",
     "diff_margin": -9.460805704858707,
-    "diff_density": -0.9114261250770639
+    "diff_density": -0.9114261250770639,
+    "unemployment": 3.1
   },
   "55047": {
     "year": 2016,
@@ -32865,7 +36100,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Green Lake",
     "diff_margin": -10.21449275362319,
-    "diff_density": -1.0330631868131874
+    "diff_density": -1.0330631868131874,
+    "unemployment": 3.9
   },
   "55049": {
     "year": 2016,
@@ -32876,7 +36112,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Iowa",
     "diff_margin": -9.648864142538969,
-    "diff_density": -0.5426515250858941
+    "diff_density": -0.5426515250858941,
+    "unemployment": 3
   },
   "55051": {
     "year": 2016,
@@ -32887,7 +36124,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Iron",
     "diff_margin": -12.507978142076496,
-    "diff_density": -0.20395729190023282
+    "diff_density": -0.20395729190023282,
+    "unemployment": 7
   },
   "55053": {
     "year": 2016,
@@ -32898,7 +36136,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Jackson",
     "diff_margin": -15.366418169963055,
-    "diff_density": -0.11359454096302635
+    "diff_density": -0.11359454096302635,
+    "unemployment": 3.7
   },
   "55055": {
     "year": 2016,
@@ -32909,7 +36148,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Jefferson",
     "diff_margin": -6.395626122294679,
-    "diff_density": -3.5119914820205906
+    "diff_density": -3.5119914820205906,
+    "unemployment": 3.9
   },
   "55057": {
     "year": 2016,
@@ -32920,7 +36160,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Juneau",
     "diff_margin": -17.844758009543284,
-    "diff_density": -0.11723048036300909
+    "diff_density": -0.11723048036300909,
+    "unemployment": 4
   },
   "55059": {
     "year": 2016,
@@ -32931,7 +36172,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Kenosha",
     "diff_margin": -8.285585229146058,
-    "diff_density": -18.65136843266299
+    "diff_density": -18.65136843266299,
+    "unemployment": 4.8
   },
   "55061": {
     "year": 2016,
@@ -32942,7 +36184,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Kewaunee",
     "diff_margin": -12.962574939489848,
-    "diff_density": -0.8583276888940752
+    "diff_density": -0.8583276888940752,
+    "unemployment": 3.1
   },
   "55063": {
     "year": 2016,
@@ -32953,7 +36196,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "La Crosse",
     "diff_margin": -6.2121318786334285,
-    "diff_density": -1.499800748300828
+    "diff_density": -1.499800748300828,
+    "unemployment": 3.7
   },
   "55065": {
     "year": 2016,
@@ -32964,7 +36208,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Lafayette",
     "diff_margin": -13.788224151539069,
-    "diff_density": -0.5517045723575205
+    "diff_density": -0.5517045723575205,
+    "unemployment": 2.9
   },
   "55067": {
     "year": 2016,
@@ -32975,7 +36220,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Langlade",
     "diff_margin": -11.170386406420292,
-    "diff_density": -0.4873784801984744
+    "diff_density": -0.4873784801984744,
+    "unemployment": 5.4
   },
   "55069": {
     "year": 2016,
@@ -32986,7 +36232,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Lincoln",
     "diff_margin": -12.82572958868365,
-    "diff_density": -0.7417439730593749
+    "diff_density": -0.7417439730593749,
+    "unemployment": 4.3
   },
   "55071": {
     "year": 2016,
@@ -32997,7 +36244,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Manitowoc",
     "diff_margin": -11.46430646895552,
-    "diff_density": -4.4527860392476555
+    "diff_density": -4.4527860392476555,
+    "unemployment": 4.3
   },
   "55073": {
     "year": 2016,
@@ -33008,7 +36256,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Marathon",
     "diff_margin": -7.864829990268554,
-    "diff_density": -0.6569635852891267
+    "diff_density": -0.6569635852891267,
+    "unemployment": 3.4
   },
   "55075": {
     "year": 2016,
@@ -33019,7 +36268,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Marinette",
     "diff_margin": -16.312189799289257,
-    "diff_density": -0.5726569478686514
+    "diff_density": -0.5726569478686514,
+    "unemployment": 5.2
   },
   "55077": {
     "year": 2016,
@@ -33030,7 +36280,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Marquette",
     "diff_margin": -13.57990016638935,
-    "diff_density": -0.6411852502194897
+    "diff_density": -0.6411852502194897,
+    "unemployment": 4.7
   },
   "55078": {
     "year": 2016,
@@ -33041,7 +36292,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Menominee",
     "diff_margin": -8.069358874120397,
-    "diff_density": -0.2734780906574201
+    "diff_density": -0.2734780906574201,
+    "unemployment": 8.6
   },
   "55079": {
     "year": 2016,
@@ -33052,7 +36304,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Milwaukee",
     "diff_margin": -1.0518548405637205,
-    "diff_density": -238.61587406793706
+    "diff_density": -238.61587406793706,
+    "unemployment": 5.5
   },
   "55081": {
     "year": 2016,
@@ -33063,7 +36316,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Monroe",
     "diff_margin": -12.791337833691315,
-    "diff_density": 0.07785319389862266
+    "diff_density": 0.07785319389862266,
+    "unemployment": 3.5
   },
   "55083": {
     "year": 2016,
@@ -33074,7 +36328,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Oconto",
     "diff_margin": -15.097739409757075,
-    "diff_density": 0.06412789707311717
+    "diff_density": 0.06412789707311717,
+    "unemployment": 3.9
   },
   "55085": {
     "year": 2016,
@@ -33085,7 +36340,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Oneida",
     "diff_margin": -9.382444209819077,
-    "diff_density": -0.7280218694124727
+    "diff_density": -0.7280218694124727,
+    "unemployment": 4.3
   },
   "55087": {
     "year": 2016,
@@ -33096,7 +36352,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Outagamie",
     "diff_margin": -8.215146171791268,
-    "diff_density": 0.8890425398419097
+    "diff_density": 0.8890425398419097,
+    "unemployment": 3.5
   },
   "55089": {
     "year": 2016,
@@ -33107,7 +36364,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Ozaukee",
     "diff_margin": 3.4685624344176276,
-    "diff_density": -10.511405525999663
+    "diff_density": -10.511405525999663,
+    "unemployment": 3.4
   },
   "55091": {
     "year": 2016,
@@ -33118,7 +36376,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Pepin",
     "diff_margin": -14.815034703683928,
-    "diff_density": 0.19794378825761072
+    "diff_density": 0.19794378825761072,
+    "unemployment": 3.2
   },
   "55093": {
     "year": 2016,
@@ -33129,7 +36388,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Pierce",
     "diff_margin": -8.953644554032905,
-    "diff_density": 0.11642701525054377
+    "diff_density": 0.11642701525054377,
+    "unemployment": 3.8
   },
   "55095": {
     "year": 2016,
@@ -33140,7 +36400,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Polk",
     "diff_margin": -11.26756952095544,
-    "diff_density": 0.1271259136067222
+    "diff_density": 0.1271259136067222,
+    "unemployment": 3.8
   },
   "55097": {
     "year": 2016,
@@ -33151,7 +36412,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Portage",
     "diff_margin": -7.529910028067043,
-    "diff_density": -1.516721286906126
+    "diff_density": -1.516721286906126,
+    "unemployment": 3.5
   },
   "55099": {
     "year": 2016,
@@ -33162,7 +36424,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Price",
     "diff_margin": -13.869312169312174,
-    "diff_density": -0.27311819384875413
+    "diff_density": -0.27311819384875413,
+    "unemployment": 3.8
   },
   "55101": {
     "year": 2016,
@@ -33173,7 +36436,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Racine",
     "diff_margin": -5.905418988449796,
-    "diff_density": -29.13165413533835
+    "diff_density": -29.13165413533835,
+    "unemployment": 5.3
   },
   "55103": {
     "year": 2016,
@@ -33184,7 +36448,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Richland",
     "diff_margin": -12.484101984426019,
-    "diff_density": -1.1864463021410891
+    "diff_density": -1.1864463021410891,
+    "unemployment": 3.4
   },
   "55105": {
     "year": 2016,
@@ -33195,7 +36460,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Rock",
     "diff_margin": -8.582052956305056,
-    "diff_density": -7.863662238560721
+    "diff_density": -7.863662238560721,
+    "unemployment": 4.3
   },
   "55107": {
     "year": 2016,
@@ -33206,7 +36472,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Rusk",
     "diff_margin": -16.35367193057334,
-    "diff_density": -0.17617673135651657
+    "diff_density": -0.17617673135651657,
+    "unemployment": 4.5
   },
   "55109": {
     "year": 2016,
@@ -33217,7 +36484,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "St. Croix",
     "diff_margin": -5.700555970866532,
-    "diff_density": 0.8266350559993256
+    "diff_density": 0.8266350559993256,
+    "unemployment": 3.5
   },
   "55111": {
     "year": 2016,
@@ -33228,7 +36496,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Sauk",
     "diff_margin": -11.262131883715433,
-    "diff_density": 2.316550728126124
+    "diff_density": 2.316550728126124,
+    "unemployment": 3.1
   },
   "55113": {
     "year": 2016,
@@ -33239,7 +36508,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Sawyer",
     "diff_margin": -13.06779580275525,
-    "diff_density": -1.0025258687197267
+    "diff_density": -1.0025258687197267,
+    "unemployment": 5.6
   },
   "55115": {
     "year": 2016,
@@ -33250,7 +36520,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Shawano",
     "diff_margin": -13.63420114738285,
-    "diff_density": -0.65437103889996
+    "diff_density": -0.65437103889996,
+    "unemployment": 3.9
   },
   "55117": {
     "year": 2016,
@@ -33261,7 +36532,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Sheboygan",
     "diff_margin": -5.726580888660152,
-    "diff_density": -8.527560145522827
+    "diff_density": -8.527560145522827,
+    "unemployment": 3.3
   },
   "55119": {
     "year": 2016,
@@ -33272,7 +36544,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Taylor",
     "diff_margin": -14.095414675586706,
-    "diff_density": -0.10034958148695239
+    "diff_density": -0.10034958148695239,
+    "unemployment": 3.5
   },
   "55121": {
     "year": 2016,
@@ -33283,7 +36556,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Trempealeau",
     "diff_margin": -14.844577718871953,
-    "diff_density": 0.13872559586340216
+    "diff_density": 0.13872559586340216,
+    "unemployment": 3.4
   },
   "55123": {
     "year": 2016,
@@ -33294,7 +36568,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Vernon",
     "diff_margin": -11.622589304586768,
-    "diff_density": -0.1000371409080607
+    "diff_density": -0.1000371409080607,
+    "unemployment": 3.1
   },
   "55125": {
     "year": 2016,
@@ -33305,7 +36580,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Vilas",
     "diff_margin": -7.540657845833643,
-    "diff_density": -0.45488676161568975
+    "diff_density": -0.45488676161568975,
+    "unemployment": 4.5
   },
   "55127": {
     "year": 2016,
@@ -33316,7 +36592,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Walworth",
     "diff_margin": -6.129689539252517,
-    "diff_density": -3.1242206330048816
+    "diff_density": -3.1242206330048816,
+    "unemployment": 4
   },
   "55129": {
     "year": 2016,
@@ -33327,7 +36604,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Washburn",
     "diff_margin": -11.63979688707363,
-    "diff_density": -0.2851946406393093
+    "diff_density": -0.2851946406393093,
+    "unemployment": 4.6
   },
   "55131": {
     "year": 2016,
@@ -33338,7 +36616,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Washington",
     "diff_margin": -2.06905699971146,
-    "diff_density": -5.791906199210587
+    "diff_density": -5.791906199210587,
+    "unemployment": 3.4
   },
   "55133": {
     "year": 2016,
@@ -33349,7 +36628,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Waukesha",
     "diff_margin": 1.210690399502262,
-    "diff_density": -13.80388376366983
+    "diff_density": -13.80388376366983,
+    "unemployment": 3.6
   },
   "55135": {
     "year": 2016,
@@ -33360,7 +36640,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Waupaca",
     "diff_margin": -12.237719587305328,
-    "diff_density": -0.4679054713725961
+    "diff_density": -0.4679054713725961,
+    "unemployment": 3.7
   },
   "55137": {
     "year": 2016,
@@ -33371,7 +36652,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Waushara",
     "diff_margin": -12.493360086949256,
-    "diff_density": -0.13754851074023478
+    "diff_density": -0.13754851074023478,
+    "unemployment": 4.6
   },
   "55139": {
     "year": 2016,
@@ -33382,7 +36664,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Winnebago",
     "diff_margin": -7.829777394867968,
-    "diff_density": -7.5553582360929
+    "diff_density": -7.5553582360929,
+    "unemployment": 3.7
   },
   "55141": {
     "year": 2016,
@@ -33393,7 +36676,8 @@ export const counties = {
     "statenam": "Wisconsin",
     "cty_name": "Wood",
     "diff_margin": -10.031349172677139,
-    "diff_density": -1.501079281823678
+    "diff_density": -1.501079281823678,
+    "unemployment": 4.7
   },
   "56001": {
     "year": 2016,
@@ -33404,7 +36688,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Albany",
     "diff_margin": -3.8011571254567613,
-    "diff_density": 0.03197817419463522
+    "diff_density": 0.03197817419463522,
+    "unemployment": 3.3
   },
   "56003": {
     "year": 2016,
@@ -33415,7 +36700,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Big Horn",
     "diff_margin": -4.604784406379208,
-    "diff_density": -0.08098881132255897
+    "diff_density": -0.08098881132255897,
+    "unemployment": 4.4
   },
   "56005": {
     "year": 2016,
@@ -33426,7 +36712,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Campbell",
     "diff_margin": -4.927786451073321,
-    "diff_density": 0.07434998157290362
+    "diff_density": 0.07434998157290362,
+    "unemployment": 6.8
   },
   "56007": {
     "year": 2016,
@@ -33437,7 +36724,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Carbon",
     "diff_margin": -11.790967741935486,
-    "diff_density": -0.03494938955983984
+    "diff_density": -0.03494938955983984,
+    "unemployment": 4.1
   },
   "56009": {
     "year": 2016,
@@ -33448,7 +36736,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Converse",
     "diff_margin": -6.974639804639807,
-    "diff_density": 0.04987891550407997
+    "diff_density": 0.04987891550407997,
+    "unemployment": 6
   },
   "56011": {
     "year": 2016,
@@ -33459,7 +36748,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Crook",
     "diff_margin": -4.373577300450809,
-    "diff_density": 0.031113645201635398
+    "diff_density": 0.031113645201635398,
+    "unemployment": 4
   },
   "56013": {
     "year": 2016,
@@ -33470,7 +36760,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Fremont",
     "diff_margin": -6.0916182070966585,
-    "diff_density": -0.03867789076646844
+    "diff_density": -0.03867789076646844,
+    "unemployment": 6.6
   },
   "56015": {
     "year": 2016,
@@ -33481,7 +36772,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Goshen",
     "diff_margin": -8.92219341275403,
-    "diff_density": -0.04505632720556818
+    "diff_density": -0.04505632720556818,
+    "unemployment": 3.3
   },
   "56017": {
     "year": 2016,
@@ -33492,7 +36784,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Hot Springs",
     "diff_margin": -5.020907297830375,
-    "diff_density": 0.014913252398844445
+    "diff_density": 0.014913252398844445,
+    "unemployment": 4.3
   },
   "56019": {
     "year": 2016,
@@ -33503,7 +36796,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Johnson",
     "diff_margin": -2.919960910554151,
-    "diff_density": 0.016904902326589033
+    "diff_density": 0.016904902326589033,
+    "unemployment": 4.4
   },
   "56021": {
     "year": 2016,
@@ -33514,7 +36808,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Laramie",
     "diff_margin": -7.220166478908499,
-    "diff_density": 0.1620545364513326
+    "diff_density": 0.1620545364513326,
+    "unemployment": 4
   },
   "56023": {
     "year": 2016,
@@ -33525,7 +36820,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Lincoln",
     "diff_margin": -1.7721052631578953,
-    "diff_density": -0.049712423303476694
+    "diff_density": -0.049712423303476694,
+    "unemployment": 3.8
   },
   "56025": {
     "year": 2016,
@@ -33536,7 +36832,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Natrona",
     "diff_margin": -7.451027605945896,
-    "diff_density": 0.024432668270805813
+    "diff_density": 0.024432668270805813,
+    "unemployment": 6.8
   },
   "56027": {
     "year": 2016,
@@ -33547,7 +36844,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Niobrara",
     "diff_margin": -6.803384734001542,
-    "diff_density": 0.0038995597934533
+    "diff_density": 0.0038995597934533,
+    "unemployment": 3.3
   },
   "56029": {
     "year": 2016,
@@ -33558,7 +36856,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Park",
     "diff_margin": -2.717326773267729,
-    "diff_density": 0.008013736517009207
+    "diff_density": 0.008013736517009207,
+    "unemployment": 3.7
   },
   "56031": {
     "year": 2016,
@@ -33569,7 +36868,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Platte",
     "diff_margin": -10.868923766816142,
-    "diff_density": -0.030100469722340595
+    "diff_density": -0.030100469722340595,
+    "unemployment": 4.6
   },
   "56033": {
     "year": 2016,
@@ -33580,7 +36880,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Sheridan",
     "diff_margin": -4.635484598576163,
-    "diff_density": -0.04913779373135352
+    "diff_density": -0.04913779373135352,
+    "unemployment": 4
   },
   "56035": {
     "year": 2016,
@@ -33591,7 +36892,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Sublette",
     "diff_margin": -2.542799627647197,
-    "diff_density": -0.020645692043859243
+    "diff_density": -0.020645692043859243,
+    "unemployment": 5.4
   },
   "56037": {
     "year": 2016,
@@ -33602,7 +36904,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Sweetwater",
     "diff_margin": -8.855402436828523,
-    "diff_density": -0.022075450887869108
+    "diff_density": -0.022075450887869108,
+    "unemployment": 5.7
   },
   "56039": {
     "year": 2016,
@@ -33613,7 +36916,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Teton",
     "diff_margin": 5.860775295663601,
-    "diff_density": 0.1775198854677149
+    "diff_density": 0.1775198854677149,
+    "unemployment": 2
   },
   "56041": {
     "year": 2016,
@@ -33624,7 +36928,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Uinta",
     "diff_margin": -4.143885508506148,
-    "diff_density": -0.2307092818773242
+    "diff_density": -0.2307092818773242,
+    "unemployment": 5.3
   },
   "56043": {
     "year": 2016,
@@ -33635,7 +36940,8 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Washakie",
     "diff_margin": -5.8096769851951535,
-    "diff_density": -0.10044359071720543
+    "diff_density": -0.10044359071720543,
+    "unemployment": 4.5
   },
   "56045": {
     "year": 2016,
@@ -33646,6 +36952,241 @@ export const counties = {
     "statenam": "Wyoming",
     "cty_name": "Weston",
     "diff_margin": -3.741763647270547,
-    "diff_density": -0.00972690766401585
+    "diff_density": -0.00972690766401585,
+    "unemployment": 4.9
+  },
+  "72001": {
+    "unemployment": 15.7
+  },
+  "72003": {
+    "unemployment": 14.5
+  },
+  "72005": {
+    "unemployment": 14.9
+  },
+  "72007": {
+    "unemployment": 14.5
+  },
+  "72009": {
+    "unemployment": 15.1
+  },
+  "72011": {
+    "unemployment": 13
+  },
+  "72013": {
+    "unemployment": 13.7
+  },
+  "72015": {
+    "unemployment": 18.7
+  },
+  "72017": {
+    "unemployment": 15
+  },
+  "72019": {
+    "unemployment": 14.1
+  },
+  "72021": {
+    "unemployment": 9.2
+  },
+  "72023": {
+    "unemployment": 12.9
+  },
+  "72025": {
+    "unemployment": 10.7
+  },
+  "72027": {
+    "unemployment": 12.8
+  },
+  "72029": {
+    "unemployment": 12.4
+  },
+  "72031": {
+    "unemployment": 8.8
+  },
+  "72033": {
+    "unemployment": 9.9
+  },
+  "72035": {
+    "unemployment": 11.2
+  },
+  "72037": {
+    "unemployment": 13.4
+  },
+  "72039": {
+    "unemployment": 16.9
+  },
+  "72041": {
+    "unemployment": 10.6
+  },
+  "72043": {
+    "unemployment": 19.5
+  },
+  "72045": {
+    "unemployment": 13.7
+  },
+  "72047": {
+    "unemployment": 12.6
+  },
+  "72049": {
+    "unemployment": 3.8
+  },
+  "72051": {
+    "unemployment": 8.5
+  },
+  "72053": {
+    "unemployment": 13.8
+  },
+  "72054": {
+    "unemployment": 15.4
+  },
+  "72055": {
+    "unemployment": 17.9
+  },
+  "72057": {
+    "unemployment": 17.3
+  },
+  "72059": {
+    "unemployment": 18.1
+  },
+  "72061": {
+    "unemployment": 6.3
+  },
+  "72063": {
+    "unemployment": 9.2
+  },
+  "72065": {
+    "unemployment": 14.1
+  },
+  "72067": {
+    "unemployment": 12.7
+  },
+  "72069": {
+    "unemployment": 14.2
+  },
+  "72071": {
+    "unemployment": 14.3
+  },
+  "72073": {
+    "unemployment": 12.5
+  },
+  "72075": {
+    "unemployment": 15.8
+  },
+  "72077": {
+    "unemployment": 13.4
+  },
+  "72079": {
+    "unemployment": 18.8
+  },
+  "72081": {
+    "unemployment": 17.8
+  },
+  "72083": {
+    "unemployment": 13.7
+  },
+  "72085": {
+    "unemployment": 14.7
+  },
+  "72087": {
+    "unemployment": 12.7
+  },
+  "72089": {
+    "unemployment": 15
+  },
+  "72091": {
+    "unemployment": 12.2
+  },
+  "72093": {
+    "unemployment": 13.7
+  },
+  "72095": {
+    "unemployment": 17.7
+  },
+  "72097": {
+    "unemployment": 14.5
+  },
+  "72099": {
+    "unemployment": 15.6
+  },
+  "72101": {
+    "unemployment": 14.3
+  },
+  "72103": {
+    "unemployment": 12.8
+  },
+  "72105": {
+    "unemployment": 13.6
+  },
+  "72107": {
+    "unemployment": 15.4
+  },
+  "72109": {
+    "unemployment": 20.6
+  },
+  "72111": {
+    "unemployment": 16.9
+  },
+  "72113": {
+    "unemployment": 13.8
+  },
+  "72115": {
+    "unemployment": 16.1
+  },
+  "72117": {
+    "unemployment": 13.3
+  },
+  "72119": {
+    "unemployment": 11.5
+  },
+  "72121": {
+    "unemployment": 16.5
+  },
+  "72123": {
+    "unemployment": 23.4
+  },
+  "72125": {
+    "unemployment": 15.4
+  },
+  "72127": {
+    "unemployment": 8.2
+  },
+  "72129": {
+    "unemployment": 13.2
+  },
+  "72131": {
+    "unemployment": 18.1
+  },
+  "72133": {
+    "unemployment": 20.6
+  },
+  "72135": {
+    "unemployment": 8.9
+  },
+  "72137": {
+    "unemployment": 9.1
+  },
+  "72139": {
+    "unemployment": 7.6
+  },
+  "72141": {
+    "unemployment": 15.3
+  },
+  "72143": {
+    "unemployment": 12
+  },
+  "72145": {
+    "unemployment": 14.3
+  },
+  "72147": {
+    "unemployment": 11.3
+  },
+  "72149": {
+    "unemployment": 19.6
+  },
+  "72151": {
+    "unemployment": 16.6
+  },
+  "72153": {
+    "unemployment": 18
   }
 }

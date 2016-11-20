@@ -1,9 +1,0 @@
-@import '~styles/variables';
-
-.Bars rect {
-  fill: $accent-2;
-  stroke: $accent-1;
-  &:hover {
-    fill: $accent-4;
-  }
-}

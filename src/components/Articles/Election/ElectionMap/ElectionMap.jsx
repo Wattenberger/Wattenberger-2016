@@ -73,7 +73,7 @@ class ElectionMap extends Component {
 
   render() {
     let {chart, map} = this.state
-    let {data, colorKey} = this.props
+    let {data, colorKey, colors} = this.props
 
     return (
       <div className={this.getClassName()}>
@@ -90,10 +90,13 @@ class ElectionMap extends Component {
             chart={chart}
             data={this.getData()}
             colorAccessor={
-              d => chart.state && chart.state.scales && chart.state.scales.color && data[+d.id] ?
+              d => chart.state && chart.state.scales && chart.state.scales.color && data[+d.id] && !!data[+d.id][colorKey] ?
                 chart.state.scales.color(data[+d.id][colorKey]) :
                 "#fff"
             }
+            legend={{
+              colors: colors
+            }}
             ref={Map => this.map = Map}
           />
           <Tooltip

@@ -103,7 +103,7 @@ class Chart extends Component {
       scale.range(config.range)
       if (config.domain) scale.domain(config.domain)
       if (config.type == "ordinal") scale.rangeRoundBands([0, width], .1);
-console.log(config.range, config.domain)
+
       scales[config.id] = scale
       this.setState({scales})
     })
@@ -117,6 +117,7 @@ console.log(config.range, config.domain)
 
   componentDidMount() {
     this._setSize = ::this.setSize
+    this._createScales = ::this.createScales
     window.addEventListener("resize", this._setSize)
     setTimeout(() => {
       this.setState({isLoaded: true})

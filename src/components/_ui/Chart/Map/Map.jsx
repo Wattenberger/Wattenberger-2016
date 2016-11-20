@@ -1,7 +1,9 @@
 import React, {Component, PropTypes} from "react"
 import classNames from "classnames"
+import Axis from "./../Axis/Axis"
 import * as d3 from "d3"
 import * as topojson from "./topojson"
+import Gradient from "components/_ui/Chart/Gradient/Gradient"
 
 require('./Map.scss')
 
@@ -21,6 +23,11 @@ class Map extends Component {
     colorAccessor: PropTypes.func,
     initTransition: PropTypes.number,
     transition: PropTypes.number,
+    legend: PropTypes.shape({
+      x: PropTypes.number,
+      y: PropTypes.number,
+      colors: PropTypes.array,
+    }),
   };
 
   static defaultProps = {
@@ -30,7 +37,7 @@ class Map extends Component {
   };
 
   update(props) {
-    let {mapJson, chart, data, colorAccessor, initTransition, transition} = props
+    let {mapJson, chart, data, colorAccessor, initTransition, transition, legend} = props
     let {map, states} = this.state
     let {elem} = this.refs
     if (!chart) return
@@ -74,9 +81,70 @@ class Map extends Component {
     )
   }
 
+  getLegendConfig() {
+    let {legend, chart} = this.props
+    let defaultConfig = {
+      x: chart.state ? chart.state.width - 200 : 0,
+      y: 0,
+      width: 200,
+      height: 20,
+      colors: legend.colors || []
+    }
+    return Object.assign({}, defaultConfig, legend)
+  }
+
+  renderLegend() {
+    let {chart} = this.props
+    let config = this.getLegendConfig()
+
+    if (!chart) return
+
+    if (chart._createScales) {
+      chart._createScales([{
+        id: "legend",
+        domain: chart && chart.state && chart.state.scales && chart.state.scales.color && chart.state.scales.color.domain(),
+        range: [0, config.width],
+      }]);
+    }
+
+    return <g ref="legend" className="Map__legend">
+      <rect
+        x={config.x}
+        y={config.y}
+        width={config.width}
+        height={config.height}
+        fill="url(#legendGradient)"
+      />
+      <Gradient
+        id="legendGradient"
+        x={[config.x, config.x]}
+        y={[config.y, config.y + config.height]}
+        stops={config.colors.map((color, i) => ({
+          offset: `${100 / (config.colors.length - 1) * i}%`,
+          color: color,
+        }))}
+      />
+      <g style={{transform: `translate3d(-${config.width}px, ${config.y + config.height}px, 0)`}}>
+        <Axis
+          className="Axis__legend"
+          ref="legend-axis"
+          chart={chart}
+          scale="legend"
+          orientation="bottom"
+          tickSizeInner={-5}
+          tickSizeOuter={-8}
+        />
+      </g>
+    </g>
+  }
+
   render() {
+    let {legend} = this.props
+
     return (
-      <g ref="elem" className={this.getClassName()}>
+      <g className={this.getClassName()}>
+        <g ref="elem" className="Map__paths" />
+        {!!legend && this.renderLegend()}
       </g>
     )
   }

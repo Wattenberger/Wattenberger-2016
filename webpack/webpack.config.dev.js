@@ -7,7 +7,7 @@ import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../../static")
-console.log("this")
+
 export default {
   devtool: "eval",
   entry: {
