@@ -55,31 +55,32 @@ class Day1 extends Component {
     window.clearInterval(interval)
   }
 
-    filters = [
-      {
-        type: "feGaussianBlur",
-        attrs: {
-          in: "SourceGraphic",
-          stdDeviation: 10,
-          result: "blur",
-        }
-      },{
-        type: "feColorMatrix",
-        attrs: {
-          in: "blur",
-          mode: "matrix",
-          values: "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7",
-          result: "goo",
-        }
-      },{
-        type: "feBlend",
-        attrs: {
-          in: "SourceGraphic",
-          in2: "goo",
-          operator: "atop",
-        }
+  filters = [
+    {
+      type: "feGaussianBlur",
+      attrs: {
+        in: "SourceGraphic",
+        stdDeviation: 10,
+        result: "blur",
       }
-    ]
+    },{
+      type: "feColorMatrix",
+      attrs: {
+        in: "blur",
+        mode: "matrix",
+        values: "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7",
+        result: "goo",
+      }
+    },{
+      type: "feBlend",
+      attrs: {
+        in: "SourceGraphic",
+        in2: "goo",
+        operator: "atop",
+      }
+    }
+  ];
+  
   movement(pos, bound, padding = 0) {
     let sign = pos >= bound - padding ? -1 :
                pos <= padding         ?  1 :

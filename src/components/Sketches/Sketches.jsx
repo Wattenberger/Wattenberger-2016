@@ -17,7 +17,7 @@ class Sketches extends Component {
   keypresses = {
     [KEYS.LEFT]: this.changeSketch.bind(this, -1),
     [KEYS.RIGHT]: this.changeSketch.bind(this, 1),
-  }
+  };
 
   getClassName() {
     return classNames("Sketches")
@@ -44,7 +44,7 @@ class Sketches extends Component {
 
   render() {
     let {active} = this.state
-    
+
     return (
       <div className={this.getClassName()}>
         <Keypress keys={this.keypresses} />

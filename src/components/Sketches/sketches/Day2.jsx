@@ -74,7 +74,7 @@ class Day2 extends Component {
         yChannelSelector: "G",
       },
     }
-  ]
+  ];
 
   movement(pos, bound, padding = 0) {
     let sign = pos >= bound - padding ? -1 :
