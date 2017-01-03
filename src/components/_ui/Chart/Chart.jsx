@@ -49,11 +49,12 @@ class Chart extends Component {
     height: 200,
     width: 600,
     margin: {
-      top: 10,
-      right: 10,
-      bottom: 20,
-      left: 60,
-    }
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+    },
+    scales: [],
 };
 
   getClassName() {
@@ -85,6 +86,7 @@ class Chart extends Component {
   }
 
   createScales(scaleConfigs) {
+    if (!scaleConfigs) return
     let {scales, width, height} = this.state
     const defaultConfig = {
       type: "linear"

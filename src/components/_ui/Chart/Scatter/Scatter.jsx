@@ -20,26 +20,30 @@ class Scatter extends Component {
     id: PropTypes.string,
     chart: PropTypes.object,
     data: PropTypes.array,
-    radius: PropTypes.number,
+    radius: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.func,
+    ]),
     xAccessor: PropTypes.func,
     yAccessor: PropTypes.func,
     dataKey: PropTypes.func,
     initTransition: PropTypes.number,
     transition: PropTypes.number,
+    easing: PropTypes.string,
     onUpdate: PropTypes.func,
   };
 
   static defaultProps = {
     id: "scatter",
-    dataKey: _.noop,
     radius: 8,
     initTransition: 1300,
     transition: 300,
+    easing: d3.easeBackOut,
     onUpdate: _.noop,
   };
 
   update(props) {
-    let {id, chart, data, radius, xAccessor, yAccessor, dataKey, initTransition, transition, onUpdate} = props
+    let {id, chart, data, radius, xAccessor, yAccessor, dataKey, initTransition, transition, easing, onUpdate} = props
     let {dots} = this.state
     let {elem} = this.refs
     if (!chart) return
@@ -51,7 +55,7 @@ class Scatter extends Component {
       .attr("class", "dot")
     if (init) dots.attr("r", 0)
 
-    dots.transition().duration(init ? initTransition : transition)
+    dots.transition().duration(init ? initTransition : transition).ease(easing)
         .attr("r", radius)
         .attr("cx", xAccessor)
         .attr("cy", yAccessor)

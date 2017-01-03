@@ -4,8 +4,7 @@ import appHistory from "./appHistory"
 
 import App from "components/App/App"
 import Home from "components/Home/Home"
-import Candidates from "components/Candidates/Candidates"
-import Election from "components/Articles/Election/Election"
+import Sketches from "components/Sketches/Sketches"
 
 class Routes extends Component {
   render() {
@@ -14,8 +13,7 @@ class Routes extends Component {
         <Route path="/" component={App}>
           <IndexRedirect to="home" />
           <Route path="home" component={Home} />
-          <Route path="candidates" component={Candidates} />
-          <Route path="election" component={Election} />
+          <Route path="sketches" component={Sketches} />
         </Route>
         <Redirect from="*" to="home" />
       </Router>

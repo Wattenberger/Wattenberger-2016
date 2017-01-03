@@ -1,0 +1,23 @@
+@import "~styles/variables";
+@import "~styles/mixins";
+
+.Sketches {
+  padding: 20px;
+
+  .Sketches__sketch {
+    margin: 9px 0 30px 0;
+    width: 100%;
+
+    .Chart {
+      margin: 0 -20px;
+      // background: #fff;
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .Sketches {
+    padding: $horizontal-padding-skinny;
+  }
+}
