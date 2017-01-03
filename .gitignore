@@ -45,3 +45,5 @@ npm-debug.log
 /log/*.log
 /tmp
 /ignore
+
+dist/

@@ -4,7 +4,33 @@
 .Sketches {
   padding: 20px;
 
-  .Sketches__sketch {
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      margin-left: 27px;
+
+      h6 {
+        margin: 3px 13px 0;
+      }
+
+      .Button {
+        line-height: 0.3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  &__sketch {
     margin: 9px 0 30px 0;
     width: 100%;
 

@@ -53,7 +53,12 @@ class Scatter extends Component {
       .data(data, dataKey)
     dots.enter().append("circle")
       .attr("class", "dot")
-    if (init) dots.attr("r", 0)
+    if (init){
+      dots.attr("r", 0)
+          .attr("cx", xAccessor)
+          .attr("cy", yAccessor)
+
+    }
 
     dots.transition().duration(init ? initTransition : transition).ease(easing)
         .attr("r", radius)
