@@ -4,13 +4,16 @@ import classNames from "classnames"
 require('./Day3.scss')
 
 let interval
-const INTERVAL_LENGTH = 90
+const INTERVAL_LENGTH = 13
+const MAX_DIAMETER = 100
 const ARC_SEGMENTS = 10
 
 class Day3 extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      height: 400,
+      width: window.innerWidth,
       canvas: null,
       point: null,
       clockwise: true,
@@ -49,8 +52,8 @@ class Day3 extends Component {
     point = point || {x: width / 2, y: height / 2}
 
     let newPoint = {
-      x: _.random(point.x < 20 ? 0 : -20, point.x > width - 20 ? 0 : 20) + point.x,
-      y: _.random(point.y < 20 ? 0 : -20, point.y > height - 20 ? 0 : 20) + point.y,
+      x: _.random(point.x < 20 ? 0 : -MAX_DIAMETER, point.x > width - 20 ? 0 : MAX_DIAMETER) + point.x,
+      y: _.random(point.y < 20 ? 0 : -MAX_DIAMETER, point.y > height - 20 ? 0 : MAX_DIAMETER) + point.y,
     }
 
     const l = newPoint.x - point.x
@@ -101,7 +104,7 @@ class Day3 extends Component {
     canvas.stroke()
     point.perc += 1 / ARC_SEGMENTS
 
-    this.fadeCanvas(0.01)
+    this.fadeCanvas(0.06)
   }
 
   createPathMethods(points, canvas) {
@@ -128,9 +131,13 @@ class Day3 extends Component {
   }
 
   render() {
+    let {height, width} = this.state
+
     return (
       <div className={this.getClassName()}>
         <canvas
+          height={height}
+          width={width}
           ref={canvas => this.canvas = canvas}
         />
       </div>
