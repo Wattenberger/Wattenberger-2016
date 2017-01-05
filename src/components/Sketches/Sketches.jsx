@@ -23,13 +23,41 @@ class Sketches extends Component {
     return classNames("Sketches")
   }
 
-  changeSketch(change) {
+  componentWillMount() {
+    const day = +this.getUrlParams()["day"]
+    if (day) this.changeSketch(null, day - 1)
+  }
+
+  getUrlParams() {
+    let params = window.location.search
+    if (params.length < 2) return
+    let pairs = {}
+    params
+      .substr(1)
+      .split("&")
+      .forEach(param => {
+        let pair = param.split("=")
+        pairs[pair[0]] = pair[1]
+      })
+    return pairs
+  }
+
+  setUrlParam(newParam) {
+    const base = window.location.pathname
+    let params = this.getUrlParams()
+    _.extend(params, newParam)
+    let ext = "?" + _.map(params, (val, key) => `${key}=${val}`).join("&")
+    window.history.pushState({}, "", base + ext);
+  }
+
+  changeSketch(change, day) {
     let {active} = this.state
-    let newIdx = active + change % list.length
+    let newIdx = _.isNumber(day) ? day : active + change % list.length
     if (newIdx < 0) newIdx = list.length + newIdx
     if (newIdx >= list.length) newIdx = list.length - newIdx
     if (_.inRange(newIdx, 0, list.length)) {
       this.setState({active: newIdx})
+      this.setUrlParam({day: newIdx + 1})
     }
   }
 
