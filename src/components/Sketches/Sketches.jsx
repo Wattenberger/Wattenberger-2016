@@ -30,7 +30,7 @@ class Sketches extends Component {
 
   getUrlParams() {
     let params = window.location.search
-    if (params.length < 2) return
+    if (params.length < 2) return {}
     let pairs = {}
     params
       .substr(1)
