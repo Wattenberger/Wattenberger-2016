@@ -34,7 +34,7 @@
     "image-webpack-loader": "^1.6.2",
     "immutable": "^3.7.6",
     "isomorphic-fetch": "^2.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.4",
     "morgan": "^1.6.1",
     "node-sass": "^3.4.2",
     "numeral": "^1.5.3",
