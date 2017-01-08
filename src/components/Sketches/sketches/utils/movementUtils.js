@@ -73,14 +73,13 @@ export const movementUtils = {
       return dir
     }
 
+    point.dx = updatePos(point.x, point.dx, config.width)
+    point.dy = updatePos(point.y, point.dy, config.height)
     let collisionPoints = _.filter(config.avoidPoints, target => this.isWithinTargetBounds(point, target, config.padding))
     if (collisionPoints.length) {
       let newDir = this.getNewDirAwayFromTargets(point, collisionPoints, config.height, config.width)
       point.dx = newDir.x
       point.dy = newDir.y
-    } else {
-      point.dx = updatePos(point.x, point.dx, config.width)
-      point.dy = updatePos(point.y, point.dy, config.height)
     }
     point.x += point.dx
     point.y += point.dy
@@ -99,7 +98,7 @@ export const movementUtils = {
   getNewDirAwayFromTargets(point, collisionPoints, height=400, width=window.innerWidth) {
     let avgXDiff = _.meanBy(collisionPoints, target => target.x - point.x)
     let avgYDiff = _.meanBy(collisionPoints, target => target.y - point.y)
-    return {x: -avgXDiff, y: -avgYDiff}
+    return {x: -_.random(avgXDiff), y: -_.random(avgYDiff)}
   },
 
   getDistanceBetweenPoints(point1, point2) {
@@ -109,6 +108,7 @@ export const movementUtils = {
   },
 
   isWithinTargetBounds(point, target, padding=40) {
-    return this.getDistanceBetweenPoints(point, target) < padding
+    let minDist = point.r && target.r ? point.r + target.r : padding
+    return this.getDistanceBetweenPoints(point, target) < minDist
   },
 }

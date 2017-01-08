@@ -5,6 +5,7 @@ import Day3 from "./sketches/Day3"
 import Day4 from "./sketches/Day4"
 import Day5 from "./sketches/Day5"
 import Day6 from "./sketches/Day6"
+import Day7 from "./sketches/Day7"
 
 export const list = [
   Day1,
@@ -13,4 +14,5 @@ export const list = [
   Day4,
   Day5,
   Day6,
+  Day7,
 ]
