@@ -61,13 +61,36 @@ class Sketches extends Component {
     }
   }
 
-  renderItem(item) {
+  renderItem() {
     let {active} = this.state
-    let Sketch = list[active]
+    let Sketch = list[active].elem
 
     return <div className="Sketches__sketch">
       <Sketch />
     </div>
+  }
+
+  renderNotes() {
+    let {active} = this.state
+    const {notes} = list[active]
+
+    return <div className="Sketches__notes">
+      <h6>Learnings</h6>
+      {notes.map((note, idx) =>
+        <div className="Sketches__notes__note" key={idx}>
+          <a href={note.url} target="_blank" rel="noopener noreferrer">{note.title}</a>
+          {note.text && <div className="Sketches__notes__note__text">{note.text}</div>}
+          {note.points &&
+            <ul className="Sketches__notes__note__points">
+              {note.points.map((point, idx) =>
+                <li className="Sketches__notes__note__point" key={idx}>{point}</li>
+              )}
+            </ul>
+          }
+        </div>
+      )}
+    </div>
+
   }
 
   render() {
@@ -85,6 +108,7 @@ class Sketches extends Component {
           </div>
         </div>
         {this.renderItem()}
+        {list[active].notes && this.renderNotes()}
       </div>
     )
   }

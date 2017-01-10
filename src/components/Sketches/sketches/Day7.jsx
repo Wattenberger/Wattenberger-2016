@@ -5,8 +5,7 @@ import {canvasUtils} from "./utils/canvasUtils"
 
 require('./Day7.scss')
 
-let interval
-const INTERVAL_LENGTH = 60
+let animationRequestId
 const MAX_DIAMETER = 30
 const MAX_ARC_SEGMENTS = 10
 const NUM_STREAMS = window.innerWidth * 0.13
@@ -37,17 +36,17 @@ class Day7 extends Component {
     this.setState({canvas})
 
     canvasUtils.fadeCanvas(1, canvas, CANVAS_RGB)
-    interval = window.setInterval(this.draw, INTERVAL_LENGTH)
 
     let canvasPos = {
       x: this.canvas.offsetLeft,
       y: this.canvas.offsetTop
     }
     this.setState({canvasPos})
+    this.draw()
   }
 
   componentWillUnmount() {
-    window.clearInterval(interval)
+    window.cancelAnimationFrame(animationRequestId)
   }
 
   getClassName() {
@@ -56,6 +55,7 @@ class Day7 extends Component {
 
   draw = () => {
     let {canvas, points, mousePos} = this.state
+    animationRequestId = window.requestAnimationFrame(this.draw)
     if (!canvas) return
 
     canvasUtils.fadeCanvas(1, canvas, CANVAS_RGB)

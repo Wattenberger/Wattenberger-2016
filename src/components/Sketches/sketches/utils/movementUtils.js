@@ -87,8 +87,8 @@ export const movementUtils = {
     return point
   },
 
-  getNewDir(pos, bound, maxMovement=40, padding=40) {
-    let newDir = _.random(maxMovement)
+  getNewDir(pos, bound, speed=40, padding=40) {
+    let newDir = speed
     let sign = pos + newDir > bound - padding ? -1 :
                pos - newDir < padding ? 1 :
                _.random() ? -1 : 1
