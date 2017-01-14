@@ -7,6 +7,8 @@ import Day5 from "./sketches/Day5"
 import Day6 from "./sketches/Day6"
 import Day7 from "./sketches/Day7"
 import Day8 from "./sketches/Day8"
+import Day9 from "./sketches/Day9"
+import Day10 from "./sketches/Day10"
 
 export const list = [
   {elem: Day1},
@@ -29,5 +31,7 @@ export const list = [
       text: "requestAnimationFrame is browser friendly (other than Opera Mini)"
     }
   ]},
+  {elem: Day9},
+  {elem: Day10},
   // EOL
 ]
