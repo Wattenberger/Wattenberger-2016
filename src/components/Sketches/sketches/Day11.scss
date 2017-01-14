@@ -3,8 +3,11 @@
 
 .Day11 {
   margin: 0 -20px;
+  text-align: center;
+  background: rgb(0, 0, 0);
 
   canvas {
+	margin: auto;
     // height: 400px;
     // width: 100%;
   }

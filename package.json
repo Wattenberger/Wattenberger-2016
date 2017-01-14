@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development node index",
+    "dev-windows": "set NODE_ENV=development&set CONTEXT=windows&node index",
     "build": "webpack --progress -p --config ./webpack/webpack.config.js",
     "start": "NODE_ENV=production node index",
     "test": "echo \"Error: no test specified\" && exit 1",
