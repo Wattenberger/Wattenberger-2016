@@ -18,7 +18,6 @@ app.use('/static/', express.static('dist'))
 
 // Dev: serve static files from webpack dev server
 if (app.get("env") === "development") require ("../../webpack/dev-server")
-if (app.get("env") === "development") require ("..\\..\\webpack\\dev-server")
 
 // Render app server-side and send it as response
 app.use(render)
