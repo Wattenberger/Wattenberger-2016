@@ -11,6 +11,7 @@ let animationRequestId
 const CANVAS_RGB = "0,0,0"
 const PATH_COLOR = "#fff"
 const NUM_STREAMS = 40
+const x = window.innerWidth > 1000 ? 2 : 1
 // const NUM_PATH_COLORS = 1000
 // const PATH_COLORS = _.times(NUM_PATH_COLORS, n => {
 //   const r = ((255 - 0) / (NUM_PATH_COLORS - 1) * n) + 0
@@ -21,8 +22,8 @@ class Day11 extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      height: 400,
-      width: 753,
+      height: 400 * x,
+      width: 753 * x,
       canvas: null,
       idxs: [..._.times(NUM_STREAMS, t => Math.floor(paths.length / NUM_STREAMS * t))]
     }
@@ -34,7 +35,8 @@ class Day11 extends Component {
 
     canvasUtils.fadeCanvas(1, canvas, CANVAS_RGB)
     canvas.strokeStyle = PATH_COLOR
-    canvas.lineWidth = 0.3
+    canvas.lineWidth = 0.6
+    canvas.scale(x, x)
     // _.each(paths, path => {
     //   this.drawPath(path, "#dadada")
     // })
