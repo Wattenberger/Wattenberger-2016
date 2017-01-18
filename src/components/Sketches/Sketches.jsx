@@ -15,8 +15,8 @@ class Sketches extends Component {
   }
 
   keypresses = {
-    [KEYS.RIGHT]: this.changeSketch.bind(this, 1, true),
-    [KEYS.LEFT]: this.changeSketch.bind(this, -1, true),
+    [KEYS.RIGHT]: this.changeSketch.bind(this, 1, null, true),
+    [KEYS.LEFT]: this.changeSketch.bind(this, -1, null, true),
   };
 
   getClassName() {
@@ -50,9 +50,10 @@ class Sketches extends Component {
     window.history.pushState({}, "", base + ext);
   }
 
-  changeSketch(change, day, key) {
+  changeSketch(change, day, isKey) {
     let {active} = this.state
-    if (list[active].preventKeyBindings && key) return
+    if (list[active].preventKeyBindings && isKey) return
+
     let newIdx = _.isNumber(day) ? day : active + change % list.length
     if (newIdx < 0) newIdx = list.length + newIdx
     if (newIdx >= list.length) newIdx = list.length - newIdx
@@ -103,9 +104,9 @@ class Sketches extends Component {
         <div className="Sketches__header">
           <h2>Daily Sketches</h2>
           <div className="Sketches__header__buttons">
-            <Button onClick={this.changeSketch.bind(this, -1)}>↢</Button>
+            <Button onClick={this.changeSketch.bind(this, -1, null, false)}>↢</Button>
             <h6>Sketch {active + 1}</h6>
-            <Button onClick={this.changeSketch.bind(this, 1)}>↣</Button>
+            <Button onClick={this.changeSketch.bind(this, 1, null, false)}>↣</Button>
           </div>
         </div>
         {this.renderItem()}
