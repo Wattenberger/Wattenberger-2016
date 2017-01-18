@@ -11,6 +11,7 @@ import Day9 from "./sketches/Day9"
 import Day10 from "./sketches/Day10"
 import Day11 from "./sketches/Day11"
 import Day12 from "./sketches/Day12"
+import Day13 from "./sketches/Day13"
 
 export const list = [
   {elem: Day1},
@@ -37,5 +38,6 @@ export const list = [
   {elem: Day10},
   {elem: Day11},
   {elem: Day12},
+  {elem: Day13, preventKeyBindings: true},
   // EOL
 ]

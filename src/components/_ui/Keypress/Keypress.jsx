@@ -23,7 +23,7 @@ class Keypress extends Component {
     let pressedKey = e.keyCode
     let onKeypress = keys[pressedKey]
 
-    if (onKeypress) onKeypress()
+    if (onKeypress) onKeypress(e)
   }
 
   componentWillUnmount() {

@@ -52,6 +52,7 @@ class Sketches extends Component {
 
   changeSketch(change, day) {
     let {active} = this.state
+    if (list[active].preventKeyBindings) return
     let newIdx = _.isNumber(day) ? day : active + change % list.length
     if (newIdx < 0) newIdx = list.length + newIdx
     if (newIdx >= list.length) newIdx = list.length - newIdx
