@@ -9,7 +9,7 @@ require('./Day13.scss')
 
 let animationRequestId
 const INTERVAL_LENGTH = 40
-const SNAKE_STARTING_LENGTH = 10
+const SNAKE_STARTING_LENGTH = 6
 const CANVAS_RGB = "240, 240, 244"
 const SNAKE_RGB = "153, 199, 137"
 const TARGET_RGB = "211, 125, 78"
@@ -53,7 +53,7 @@ class Day13 extends Component {
   endGame() {
     let {snake, record} = this.state
 
-    let score = snake.length
+    let score = snake.length - SNAKE_STARTING_LENGTH
     record = Math.max(score, record)
     this.setState({
       score,
@@ -62,7 +62,9 @@ class Day13 extends Component {
     })
   }
 
-  changeDir(dir) {
+  changeDir(dir, e) {
+    e.preventDefault()
+
     let {hasDrawnAfterDirChange, playing, snake} = this.state
     if (!playing || !hasDrawnAfterDirChange) return
 
@@ -213,7 +215,7 @@ class Day13 extends Component {
         :
         <h6>Play snake</h6>
       }
-      <Button onClick={this.startNewGame}>New Game</Button>
+      <Button onClick={this.startNewGame}>New Game (Enter)</Button>
     </div>
   }
 
