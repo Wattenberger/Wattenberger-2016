@@ -15,8 +15,8 @@ class Sketches extends Component {
   }
 
   keypresses = {
-    [KEYS.LEFT]: this.changeSketch.bind(this, -1),
-    [KEYS.RIGHT]: this.changeSketch.bind(this, 1),
+    [KEYS.RIGHT]: this.changeSketch.bind(this, 1, true),
+    [KEYS.LEFT]: this.changeSketch.bind(this, -1, true),
   };
 
   getClassName() {
@@ -50,9 +50,9 @@ class Sketches extends Component {
     window.history.pushState({}, "", base + ext);
   }
 
-  changeSketch(change, day) {
+  changeSketch(change, day, key) {
     let {active} = this.state
-    if (list[active].preventKeyBindings) return
+    if (list[active].preventKeyBindings && key) return
     let newIdx = _.isNumber(day) ? day : active + change % list.length
     if (newIdx < 0) newIdx = list.length + newIdx
     if (newIdx >= list.length) newIdx = list.length - newIdx
