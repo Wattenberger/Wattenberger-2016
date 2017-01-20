@@ -9,11 +9,15 @@ const SERVER_PORT  = parseInt(process.env.SERVER_PORT) || 3000
 
 const serverOptions = {
   contentBase: `http://${WEBPACK_HOST}:${WEBPACK_PORT}`,
-  quiet: false,
-  noInfo: false,
+  quiet: true,
+  noInfo: true,
   hot: true,
   inline: true,
   publicPath: config.output.publicPath,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 300,
+  },
   proxy: {
     '*': `http://${WEBPACK_HOST}:${SERVER_PORT}`
   }

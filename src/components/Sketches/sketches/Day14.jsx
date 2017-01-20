@@ -64,10 +64,11 @@ class Day14 extends Component {
       x: width / 2,
       y: (height - face.outline.points[face.outline.points.length - 1].y) / 2,
     }
+    let mixFlipped = _.extend({}, mid, {x: mid.x + 0.4})
 
     _.each(face, (feature, key) => {
-      this.drawFeature(feature, true, mid)
       this.drawFeature(feature, false, mid)
+      this.drawFeature(feature, true, mixFlipped)
     })
   }
 
