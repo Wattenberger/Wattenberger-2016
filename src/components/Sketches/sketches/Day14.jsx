@@ -10,8 +10,8 @@ require('./Day14.scss')
 
 let animationRequestId
 const MID_X = window.innerWidth / 2
-const CANVAS_RGB = "255, 255, 255"
-const INTERVAL_LENGTH = 3000
+const CANVAS_RGB = "182, 202, 192"
+const INTERVAL_LENGTH = 1000
 
 class Day14 extends Component {
   constructor(props) {
