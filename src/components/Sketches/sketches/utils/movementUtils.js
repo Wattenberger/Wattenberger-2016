@@ -88,7 +88,7 @@ export const movementUtils = {
   },
 
   getNewDir(pos, bound, speed=40, padding=40) {
-    let newDir = speed
+    let newDir = _.random(speed, true)
     let sign = pos + newDir > bound - padding ? -1 :
                pos - newDir < padding ? 1 :
                _.random() ? -1 : 1
