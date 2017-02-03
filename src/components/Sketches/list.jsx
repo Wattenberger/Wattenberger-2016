@@ -16,6 +16,7 @@ import Day14 from "./sketches/Day14"
 import Day15 from "./sketches/Day15"
 import Day16 from "./sketches/Day16"
 import Day17 from "./sketches/Day17"
+import Day18 from "./sketches/Day18"
 
 export const list = [
   {elem: Day1},
@@ -47,5 +48,11 @@ export const list = [
   {elem: Day15},
   {elem: Day16},
   {elem: Day17},
+  {elem: Day18, notes: [
+    {
+      url: "https://dribbble.com/shots/1224116-feathers-arrows",
+      title: "Inspiration"
+    }
+  ]},
   // EOL
 ]
