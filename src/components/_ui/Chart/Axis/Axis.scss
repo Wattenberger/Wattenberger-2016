@@ -5,10 +5,16 @@
     fill: $accent-3;
     font-size: $font-size-small;
   }
+
   .domain {
     fill: none;
     stroke: white;
     stroke-width: 1;
+
+  }
+
+  .tick text {
+    font-size: 0.9em;
   }
 
   &--x {

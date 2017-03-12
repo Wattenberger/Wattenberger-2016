@@ -17,8 +17,6 @@ class Scatter extends Component {
   }
 
   static propTypes = {
-    id: PropTypes.string,
-    chart: PropTypes.object,
     data: PropTypes.array,
     radius: PropTypes.oneOfType([
       PropTypes.number,
@@ -29,12 +27,11 @@ class Scatter extends Component {
     dataKey: PropTypes.func,
     initTransition: PropTypes.number,
     transition: PropTypes.number,
-    easing: PropTypes.string,
+    easing: PropTypes.func,
     onUpdate: PropTypes.func,
   };
 
   static defaultProps = {
-    id: "scatter",
     radius: 8,
     initTransition: 1300,
     transition: 300,
@@ -42,22 +39,21 @@ class Scatter extends Component {
     onUpdate: _.noop,
   };
 
-  update(props) {
-    let {id, chart, data, radius, xAccessor, yAccessor, dataKey, initTransition, transition, easing, onUpdate} = props
+  update = (props) => {
+    let {data, radius, xAccessor, yAccessor, dataKey, initTransition, transition, easing, onUpdate} = (props || this.props)
     let {dots} = this.state
     let {elem} = this.refs
-    if (!chart) return
-
+    
     let init = !dots
     dots = d3.select(elem).selectAll(".dot")
       .data(data, dataKey)
     dots.enter().append("circle")
       .attr("class", "dot")
-    if (init){
+
+    if (init) {
       dots.attr("r", 0)
           .attr("cx", xAccessor)
           .attr("cy", yAccessor)
-
     }
 
     dots.transition().duration(init ? initTransition : transition).ease(easing)
@@ -72,7 +68,7 @@ class Scatter extends Component {
   }
 
   componentDidMount() {
-    this.update(this.props)
+    this.update()
   }
 
   componentWillReceiveProps(newProps) {
@@ -80,10 +76,8 @@ class Scatter extends Component {
   }
 
   getClassName() {
-    let {id} = this.props
     return classNames(
       "Scatter",
-      `Scatter__${id}`,
       this.props.className
     )
   }

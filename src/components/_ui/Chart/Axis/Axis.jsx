@@ -23,8 +23,8 @@ class Axis extends Component {
   }
 
   static propTypes = {
-    chart: PropTypes.object,
-    scale: PropTypes.string,
+    chartInfo: PropTypes.object,
+    scale: PropTypes.func,
     dimension: PropTypes.oneOf(["x", "y"]),
     orientation: PropTypes.oneOf(["left", "right", "top", "bottom"]),
     ticks: PropTypes.number,
@@ -52,15 +52,14 @@ class Axis extends Component {
   };
 
   getStyle() {
-    let {chart, dimension} = this.props
-    if (!chart || !chart.props || !chart.state) return
+    let {chartInfo, dimension} = this.props
     let x = dimension == "x" ?
               0 :
-              chart.props.margin.left ?
+              chartInfo.margin.left ?
                 1 :
-                chart.state.width
+                chartInfo.width
     let y = dimension == "x" ?
-              chart.state.height :
+              chartInfo.height :
               0
 
     return {
@@ -74,15 +73,15 @@ class Axis extends Component {
   }
 
   update(props) {
-    let {chart, scale, tickSize, tickSizeInner, tickSizeOuter, ticks, tickFrequency, tickPadding, tickArguments, format, initTransition, transition} = props
+    let {scale, label, tickSize, tickSizeInner, tickSizeOuter, ticks, tickFrequency, tickPadding, tickArguments, format, initTransition, transition} = (props || this.props)
     let {axis} = this.state
     let {elem} = this.refs
-    if (!scale || !chart || !chart.state || !chart.state.scales || !chart.state.scales[scale]) return
+    if (!scale) return
 
     let init = !axis
     if (init) axis = d3[axesMap[this.getOrientation()]]()
-
-    axis.scale(chart.state.scales[scale])
+    
+    axis.scale(scale)
         .tickSize(tickSize)
         .tickSizeInner(tickSizeInner)
         .tickSizeOuter(tickSizeOuter)
@@ -100,7 +99,7 @@ class Axis extends Component {
   }
 
   componentDidMount() {
-    this.update(this.props)
+    this.update()
   }
 
   componentWillReceiveProps(newProps) {
@@ -108,8 +107,8 @@ class Axis extends Component {
   }
 
   renderLabel() {
-    let {chart, dimension, label} = this.props
-    let x =      dimension == "x" ? chart && chart.state && chart.state.width || 0 : 0
+    let {dimension, label, chartInfo} = this.props
+    let x =      dimension == "x" ? chartInfo.width || 0 : 0
     let y =      dimension == "x" ? -10 : 20
     let rotate = dimension == "x" ? 0 : -90
 

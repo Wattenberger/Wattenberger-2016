@@ -5,6 +5,8 @@ import appHistory from "./appHistory"
 import App from "components/App/App"
 import Home from "components/Home/Home"
 import Sketches from "components/Sketches/Sketches"
+import PresidentialAppointments from "components/Articles/PresidentialAppointments/PresidentialAppointments"
+import RochesterRealEstate from "components/Articles/RochesterRealEstate/RochesterRealEstate"
 
 class Routes extends Component {
   render() {
@@ -14,6 +16,8 @@ class Routes extends Component {
           <IndexRedirect to="home" />
           <Route path="home" component={Home} />
           <Route path="sketches" component={Sketches} />
+          <Route path="presidential-appointments" component={PresidentialAppointments} />
+          <Route path="rochester-real-estate" component={RochesterRealEstate} />
         </Route>
         <Redirect from="*" to="home" />
       </Router>

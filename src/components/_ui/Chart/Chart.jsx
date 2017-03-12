@@ -6,11 +6,8 @@ import * as d3 from "d3"
 
 require('./Chart.scss')
 
-const scaleTypes = {
-  linear: d3.scaleLinear,
-  ordinal: d3.scaleOrdinal,
-  time: d3.scaleTime,
-}
+export const getHeight = (height, margin={top: 0, bottom: 0}) => height - margin.top - margin.bottom
+export const getWidth = (width, margin={left: 0, right: 0}) => width - margin.left - margin.right
 
 class Chart extends Component {
   constructor(props) {
@@ -18,13 +15,11 @@ class Chart extends Component {
     this.state = {
       height: this.props.height,
       width: this.props.width,
-      scales: [],
       isLoaded: false,
     }
   }
 
   static propTypes = {
-    data: PropTypes.array,
     height: PropTypes.number,
     width: PropTypes.number,
     margin: PropTypes.shape({
@@ -33,19 +28,9 @@ class Chart extends Component {
       bottom: PropTypes.number,
       left: PropTypes.number,
     }),
-    scales: PropTypes.array(
-        PropTypes.shape({
-          id: PropTypes.string,
-          type: PropTypes.oneOf(["linear", "ordinal", "time", "color"]), // also "log", "pow", "identity", "quantize", "threshold"
-          domain: PropTypes.array,
-          range: PropTypes.array,
-          dimension: PropTypes.oneOf(["x", "y"]),
-      })
-    )
   };
 
   static defaultProps = {
-    data: [],
     height: 200,
     width: 600,
     margin: {
@@ -54,21 +39,10 @@ class Chart extends Component {
       bottom: 0,
       left: 0,
     },
-    scales: [],
 };
 
   getClassName() {
     return classNames("Chart", this.props.className)
-  }
-
-  getHeight() {
-    let {height, margin} = this.props
-    return height - margin.top - margin.bottom
-  }
-
-  getWidth() {
-    let {width, margin} = this.props
-    return width - margin.left - margin.right
   }
 
   getWrapperStyle() {
@@ -81,53 +55,21 @@ class Chart extends Component {
   }
 
   setSize() {
-    this.setState({height: this.getHeight()})
-    this.setState({width: this.getWidth()})
-  }
-
-  createScales(scaleConfigs) {
-    if (!scaleConfigs) return
-    let {scales, width, height} = this.state
-    const defaultConfig = {
-      type: "linear"
-    }
-
-    scaleConfigs.forEach(config => {
-      Object.assign(config, defaultConfig)
-      if (!config.range) {
-        config.range = config.dimension == "x" ?
-                         [0, this.getWidth()] :
-                         [this.getHeight(), 0]
-      }
-      if (!config.id) config.id = config.dimension
-
-      let scale = scales[config.id] || scaleTypes[config.type]()
-      scale.range(config.range)
-      if (config.domain) scale.domain(config.domain)
-      if (config.type == "ordinal") scale.rangeRoundBands([0, width], .1);
-
-      scales[config.id] = scale
-      this.setState({scales})
-    })
+    let {height, width, margin} = this.props
+    this.setState({height: getHeight(height, margin)})
+    this.setState({width: getWidth(width, margin)})
   }
 
   componentWillMount() {
-    let {scales} = this.props
     this.setSize()
-    this.createScales(scales)
   }
 
   componentDidMount() {
     this._setSize = ::this.setSize
-    this._createScales = ::this.createScales
     window.addEventListener("resize", this._setSize)
     setTimeout(() => {
       this.setState({isLoaded: true})
     })
-  }
-
-  componentWillReceiveProps(newProps) {
-    this.createScales(newProps.scales)
   }
 
   componentWillUnmount() {

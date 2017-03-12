@@ -9,7 +9,8 @@ const SERVER_PORT  = parseInt(process.env.SERVER_PORT) || 3000
 
 const serverOptions = {
   contentBase: `http://${WEBPACK_HOST}:${WEBPACK_PORT}`,
-  quiet: true,
+  // debug: true,
+  // quiet: true,
   noInfo: true,
   hot: true,
   inline: true,

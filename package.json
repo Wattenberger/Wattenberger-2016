@@ -4,7 +4,7 @@
   "description": "My personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "CONTEXT=linux NODE_ENV=development node index",
+    "dev": "NODE_ENV=development node index",
     "dev-windows": "set NODE_ENV=development&set CONTEXT=windows&node index",
     "build": "webpack --progress -p --config ./webpack/webpack.config.js",
     "start": "NODE_ENV=production node index",
@@ -36,6 +36,7 @@
     "immutable": "^3.7.6",
     "isomorphic-fetch": "^2.2.0",
     "lodash": "^4.17.4",
+    "moment": "^2.17.1",
     "morgan": "^1.6.1",
     "node-sass": "^3.4.2",
     "numeral": "^1.5.3",
@@ -55,7 +56,8 @@
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "topojson": "^2.0.0",
-    "webpack": "^1.12.10"
+    "webpack": "^1.12.10",
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "react-hot-loader": "^1.2.5",
