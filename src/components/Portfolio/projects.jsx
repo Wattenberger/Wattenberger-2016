@@ -4,6 +4,7 @@ import wc2 from "./WeatherCircle/images/wc2.png"
 import foos1 from "./FoosballTable/images/foos1.jpg"
 import foos2 from "./FoosballTable/images/foos2.png"
 import foos3 from "./FoosballTable/images/foos3.jpg"
+import Day8 from "components/Sketches/sketches/Day8"
 import foos4 from "./FoosballTable/images/foos4.jpg"
 import seaholm from "./Seaholm/images/seaholm.png"
 import seaholm2 from "./Seaholm/images/seaholm2.png"
@@ -23,6 +24,15 @@ export const projects = [
       category: "Development & Data Visualization",
       projects: [
       {
+        title: "Sketches",
+        description: <div>
+          <p>Once code sketch a day, usually dealing with HTML canvas animations and quick generative art.</p>
+        </div>,
+        tools: ["HTML Canvas", "D3.js"],
+        component: Day8,
+        link: "/sketches",
+      },
+      {
         title: "Weather Circle",
         description: <div>
           <p>After Umbel moved into our new office in the old Power Plant, we wanted to make a great first impression with our entrance screens. I wanted to build an interface that keeps visitors and employees informed about the weather, especially useful for planning the best bike ride home.</p>
@@ -32,61 +42,61 @@ export const projects = [
         tools: ["Angular", "D3.js", "Dark Sky Forecast API","SCSS"],
         images: [wc1,wc2]
       },
-      {
-        title: "Hacker News Salary Survey Results",
-        description: <div>
-          I wanted to better understand results of a job survey, originally presented in <a href="https://docs.google.com/spreadsheets/d/17Mr201gfDoOTe5ONLS6LYJi1wQbtT26srXeSwUjMK0A/edit#gid=0">spreadsheet format</a>. I performed some preprocessing and made a site that displayed the results. Users can view average salary and individual response by country, state, job type, and job level.
-        </div>,
-        link: "https://hn-survey-fall-2014.firebaseapp.com/#/home",
-        tools: ["Angular", "D3.js","SCSS"],
-        images: [hn1,hn2]
-      },
-      {
-        title: "Google Analytics Dashboard",
-        description: <div>
-          <p>Google Analytics is a wonderful tool, but can be hard to get information quickly. I created a dashboard for our Marketing team that visualizes basic data about a website's users, which is used for sending weekly email updates. I wrote a guide for gaining insight from this dashboard, <a href="https://www.umbel.com/blog/data-visualization/how-learn-about-your-users-google-analytics/">featured</a> on the Umbel blog.</p>
-          <p>Feel free to log in to see information about your own users!</p>
-        </div>,
-        link: "https://ga-dashboard.firebaseapp.com/",
-        tools: ["Angular", "Google Analytics API","SCSS"],
-        images: [ga1]
-      },
-      {
-        title: "Cohort Analysis Visualization",
-        description: <div>
-          <p>Often, I get to collaborate with Umbel’s Data Science team. One of these projects was aimed at helping a client understand how different cohorts of their customers behave. I built an interactive web app to securely visualize our findings.</p>
-          <p>Each category of their product is displayed in a stacked or grouped bar chart, split into month of first purchase.</p>
-          <p>Feel free to play around with this version, populated with dummy data.</p>
-        </div>,
-        link: "https://fake-cohort.firebaseapp.com/",
-        tools: ["Angular", "Google Analytics API", "SCSS"],
-        images: [ca]
-      },
+      // {
+      //   title: "Hacker News Salary Survey Results",
+      //   description: <div>
+      //     I wanted to better understand results of a job survey, originally presented in <a href="https://docs.google.com/spreadsheets/d/17Mr201gfDoOTe5ONLS6LYJi1wQbtT26srXeSwUjMK0A/edit#gid=0">spreadsheet format</a>. I performed some preprocessing and made a site that displayed the results. Users can view average salary and individual response by country, state, job type, and job level.
+      //   </div>,
+      //   link: "https://hn-survey-fall-2014.firebaseapp.com/#/home",
+      //   tools: ["Angular", "D3.js","SCSS"],
+      //   images: [hn1,hn2]
+      // },
+      // {
+      //   title: "Google Analytics Dashboard",
+      //   description: <div>
+      //     <p>Google Analytics is a wonderful tool, but can be hard to get information quickly. I created a dashboard for our Marketing team that visualizes basic data about a website's users, which is used for sending weekly email updates. I wrote a guide for gaining insight from this dashboard, <a href="https://www.umbel.com/blog/data-visualization/how-learn-about-your-users-google-analytics/">featured</a> on the Umbel blog.</p>
+      //     <p>Feel free to log in to see information about your own users!</p>
+      //   </div>,
+      //   link: "https://ga-dashboard.firebaseapp.com/",
+      //   tools: ["Angular", "Google Analytics API","SCSS"],
+      //   images: [ga1]
+      // },
+      // {
+      //   title: "Cohort Analysis Visualization",
+      //   description: <div>
+      //     <p>Often, I get to collaborate with Umbel’s Data Science team. One of these projects was aimed at helping a client understand how different cohorts of their customers behave. I built an interactive web app to securely visualize our findings.</p>
+      //     <p>Each category of their product is displayed in a stacked or grouped bar chart, split into month of first purchase.</p>
+      //     <p>Feel free to play around with this version, populated with dummy data.</p>
+      //   </div>,
+      //   link: "https://fake-cohort.firebaseapp.com/",
+      //   tools: ["Angular", "Google Analytics API", "SCSS"],
+      //   images: [ca]
+      // },
     ]
   },
   {
     category: "Design & Development",
     projects: [
-      {
-        title: "Umbel’s marketing website",
-        description: <div>
-          <p>In 2013, I worked with a Marketing coworker to completely redesign Umbel’s marketing website. We used a content-first approach, and based the design on how we wanted users to discover our product.</p>
-          <p>Afterwards, I worked with one Engineering coworker to build the new design within a month. The site was built on a Django/Python backend, and shares data with Umbel’s internal website.</p>
-        </div>,
-        link: "https://umbel.com/",
-        tools: ["Django", "Python", "LESS"],
-        images: [umbel1, umbel2]
-      },
-      {
-        title: "Umbel’s product",
-        description: <div>
-          <p>Over the past few years, I’ve gone from Umbel’s only front-end designer and developer, to working as part of wonderful Product and Developement teams. In 2015, we completely re-designed and -built our product, and I was thrilled to do a large part of the UX/UI design, then build our design with two other developers. My favorite part of the development was building an extendable, customizeable charting library in a React.js framework.</p>
-          <p>I did a ton of thinking about how a complex dataset can best be presented so that it doesn’t overwhelm, but empowers.</p>
-          <p>I will post images when we release the new product to our clients next month.</p>
-        </div>,
-        tools: ["React.js","D3.js","SCSS"],
-        images: []
-      },
+      // {
+      //   title: "Umbel’s marketing website",
+      //   description: <div>
+      //     <p>In 2013, I worked with a Marketing coworker to completely redesign Umbel’s marketing website. We used a content-first approach, and based the design on how we wanted users to discover our product.</p>
+      //     <p>Afterwards, I worked with one Engineering coworker to build the new design within a month. The site was built on a Django/Python backend, and shares data with Umbel’s internal website.</p>
+      //   </div>,
+      //   link: "https://umbel.com/",
+      //   tools: ["Django", "Python", "LESS"],
+      //   images: [umbel1, umbel2]
+      // },
+      // {
+      //   title: "Umbel’s product",
+      //   description: <div>
+      //     <p>Over the past few years, I’ve gone from Umbel’s only front-end designer and developer, to working as part of wonderful Product and Developement teams. In 2015, we completely re-designed and -built our product, and I was thrilled to do a large part of the UX/UI design, then build our design with two other developers. My favorite part of the development was building an extendable, customizeable charting library in a React.js framework.</p>
+      //     <p>I did a ton of thinking about how a complex dataset can best be presented so that it doesn’t overwhelm, but empowers.</p>
+      //     <p>I will post images when we release the new product to our clients next month.</p>
+      //   </div>,
+      //   tools: ["React.js","D3.js","SCSS"],
+      //   images: []
+      // },
       {
         title: "Umbel SXSW Party Photobooth",
         description: <div>

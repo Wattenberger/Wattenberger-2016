@@ -28,7 +28,8 @@ class Portfolio extends Component {
         {!!item.link && <a href={item.link} className="Portfolio__item__link btn">Check it out ></a>}
       </div>
       <div className="Portfolio__item__images">
-        {item.images.map(::this.renderImage)}
+        {item.images    && item.images.map(::this.renderImage)}
+        {item.component && this.renderComponent(item.component)}
       </div>
     </div>
   }
@@ -36,6 +37,13 @@ class Portfolio extends Component {
   renderImage(image, idx) {
     return <div className="Portfolio__item__image" key={idx}>
       <div className="Portfolio__item__image__content" style={{backgroundImage: `url(${image})`}} />
+    </div>
+  }
+
+  renderComponent(component) {
+    let Component = component
+    return <div className="Portfolio__item__image">
+      <Component />
     </div>
   }
 
