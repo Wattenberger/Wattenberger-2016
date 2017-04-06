@@ -2,7 +2,6 @@ import path from "path"
 import webpack from "webpack"
 import _ from "lodash"
 import config from "../src/config/config"
-import NyanProgressPlugin from 'nyan-progress-webpack-plugin'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const srcPath    = path.resolve(__dirname, "../src")
@@ -25,19 +24,19 @@ export default {
     chunkFilename: "[chunkhash].js"
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['node_modules', srcPath]
+    extensions: ['.js', '.jsx'],
+    modules: ['node_modules', srcPath]
   },
   module: {
-    loaders: [
-      {test: /\js(x)?$/, exclude: /node_modules/, loaders: ["react-hot", "babel"] },
-      {test: /\.css$/,   loaders: ["style", "css", "postcss"] },
-      {test: /\.scss$/,  loaders: ["style", "css", "postcss", "sass?include_paths[]=" + srcPath] },
+    rules: [
+      {test: /\js(x)?$/, exclude: /node_modules/, use: ["react-hot-loader", "babel-loader"] },
+      {test: /\.css$/,   use: ["style-loader", "css-loader", "postcss-loader"] },
+      {test: /\.scss$/,  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader?include_paths[]=" + srcPath] },
       {
         test: /.*\.(gif|png|jpe?g|pdf|svg)$/i,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+        use: [
+          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack-loader?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
         ]
       }
     ],
@@ -46,7 +45,7 @@ export default {
   plugins: [
     // hot reload
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
 
     new webpack.DefinePlugin({
       "__DEV__" : JSON.stringify(process.env.NODE_ENV === "development"),
@@ -59,7 +58,5 @@ export default {
         dry: false,
         exclude: ['favicon.*']
     }),
-
-    new NyanProgressPlugin()
   ]
 }
