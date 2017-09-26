@@ -47,3 +47,5 @@ npm-debug.log
 /ignore
 
 dist/
+
+\.python-version

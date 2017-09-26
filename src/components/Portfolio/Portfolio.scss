@@ -5,7 +5,6 @@ $aspect-ratio: 58vw;
 
 .Portfolio {
   padding: $horizontal-padding;
-
 }
 
 .Portfolio__category {
@@ -50,6 +49,7 @@ $aspect-ratio: 58vw;
   height: auto;
   height: $aspect-ratio / 2;
   width: 50%;
+  overflow: hidden;
   img {
     width: 100%;
   }

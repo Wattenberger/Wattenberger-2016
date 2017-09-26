@@ -33,7 +33,7 @@ export default {
       {test: /\.css$/,   use: ["style-loader", "css-loader", "postcss-loader"] },
       {test: /\.scss$/,  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader?include_paths[]=" + srcPath] },
       {
-        test: /.*\.(gif|png|jpe?g|pdf|svg)$/i,
+        test: /.*\.(gif|png|jpe?g|pdf|svg|csv)$/i,
         use: [
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack-loader?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
