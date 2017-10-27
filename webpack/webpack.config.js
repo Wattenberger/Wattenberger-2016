@@ -22,17 +22,12 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-    modules: ['node_modules', srcPath]
+    modules: ['node_modules', srcPath],
+    symlinks: false
   },
   module: {
     rules: [
-      {
-        test: /\.js(x)?$/, exclude: /node_modules/, loader: "babel-loader",
-        query: {
-          plugins: ["transform-decorators-legacy"],
-          presets: ["react", "es2015", "stage-0"],
-        }
-      },
+      {test: /\js(x)?$/, exclude: /node_modules/, loader: "babel-loader", query: {presets: ["react"]} },
       {test: /\.css$/,
         use: [
           "style-loader",
@@ -52,7 +47,7 @@ module.exports = {
         test: /.*\.(gif|png|jpe?g|svg)$/i,
         use: [
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack-loader?{progressive: true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}',
+          'image-webpack-loader'
         ]
       },
   ],

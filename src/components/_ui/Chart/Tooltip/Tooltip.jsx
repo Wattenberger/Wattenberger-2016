@@ -1,6 +1,8 @@
-import React, {Component, PropTypes} from "react"
+import React, {Component} from "react"
+import {findDOMNode} from "react-dom"
+import PropTypes from "prop-types"
 import classNames from "classnames"
-import * as d3 from "d3"
+import {mouse, select} from "d3"
 
 require('./Tooltip.scss')
 const orientations = {
@@ -9,7 +11,9 @@ const orientations = {
 }
 const typeMap = {
   scatter: ".dot",
-  map: ".Map__path"
+  map: ".Map__path",
+  line: ".Line__path",
+  chart: ".Chart__svg",
 }
 
 class Tooltip extends Component {
@@ -22,19 +26,14 @@ class Tooltip extends Component {
   }
 
   static propTypes = {
-    type: PropTypes.oneOf(["scatter", "map"]),
+    type: PropTypes.oneOf(["scatter", "map", "line", "chart"]),
     elem: PropTypes.object,
     renderElem: PropTypes.func,
-    scales: PropTypes.shape({
-      x: PropTypes.string,
-      y: PropTypes.string,
-    }),
     xAccessor: PropTypes.func,
     yAccessor: PropTypes.func,
   };
 
   static defaultProps = {
-    scales: {x:"x", y:"y"}
   };
 
   getStyle() {
@@ -54,17 +53,23 @@ class Tooltip extends Component {
     if (!elem || !elem.refs || !elem.refs.elem) return
     this._onMouseover = ::this.onMouseover
     this._onMouseout = ::this.onMouseout
-    this._listener = d3.select(elem.refs.elem).selectAll(typeMap[type])
+    this._listener = select(elem.refs.elem).selectAll(typeMap[type])
     this._listener.on("mouseover", this._onMouseover)
     this._listener.on("mouseout", this._onMouseout)
   }
 
-  onMouseover(d){
-    this.setState({hoveredPoint: d})
+  onMouseover(d) {
+    let {type, elem} = this.props
+    let p = d
+    if (!p) {
+      const domElem = findDOMNode(elem)
+      p = mouse(domElem)
+    }
+    this.setState({hoveredPoint: p})
     this.setState({showing: true})
   }
 
-  onMouseout(d){
+  onMouseout(d, e) {
     this.setState({showing: false})
   }
 
@@ -84,7 +89,7 @@ class Tooltip extends Component {
     let {id} = this.props
     let {elem} = this.refs
 
-    let domElem = d3.select(elem)._groups[0][0] || {}
+    let domElem = select(elem)._groups[0][0] || {}
     let offset = domElem.offsetTop
     let height = domElem.offsetHeight
     let scroll = window.scrollY

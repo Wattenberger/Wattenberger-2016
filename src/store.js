@@ -1,12 +1,12 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux'
 import {mapValues} from 'lodash'
 import thunkMiddleware from 'redux-thunk'
-import logger from 'redux-logger'
+import {createLogger} from 'redux-logger'
 import promiseMiddleware from 'redux-promise'
 
 import {default as app} from "reducers/appReducer"
 
-const loggerMiddleware = logger({
+const loggerMiddleware = createLogger({
   stateTransformer: state => mapValues(state, val => typeof val.toJS === "function"
     ? val.toJS()
     : val

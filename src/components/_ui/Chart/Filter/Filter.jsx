@@ -1,11 +1,12 @@
-import React, {Component, PropTypes} from "react"
+import React, {Component} from "react"
+import PropTypes from "prop-types"
 import classNames from "classnames"
 import * as d3 from "d3"
 
 class Filter extends Component {
   static propTypes = {
     id: PropTypes.string,
-    filters: PropTypes.array(
+    filters: PropTypes.arrayOf(
         PropTypes.shape({
           type: PropTypes.oneOf([
             "filter",

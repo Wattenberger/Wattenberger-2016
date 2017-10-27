@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from "react"
+import React, {Component} from "react"
+import PropTypes from "prop-types"
 import classNames from "classnames"
 import Button from "./../Button"
 
@@ -22,8 +23,12 @@ class ButtonGroup extends Component {
     })
   }
 
+  onChange = button => e => {
+    this.props.onChange(button, e)
+  }
+
   render() {
-    let {buttons, onChange} = this.props
+    let {buttons} = this.props
 
     return (
       <div className={this.getClassName()}>
@@ -31,8 +36,8 @@ class ButtonGroup extends Component {
           <Button type="button"
                   key={idx}
                   className={this.getButtonClassName(button)}
-                  onClick={onChange.bind(this, button)}>
-            {button.label}
+                  onClick={this.onChange(button)}>
+            {button.label || button}
           </Button>
         )}
       </div>

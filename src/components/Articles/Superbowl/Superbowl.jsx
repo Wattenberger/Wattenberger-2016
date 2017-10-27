@@ -1,13 +1,14 @@
-import React, {Component, PropTypes} from "react"
+import React, {Component} from "react"
+import PropTypes from "prop-types"
 import classNames from "classnames"
 import numeral from "numeral"
 import moment from "moment"
 import * as d3 from "d3"
-import {data} from "./data"
 import Chart from "components/_ui/Chart/Chart"
 import Axis from "components/_ui/Chart/Axis/Axis"
 import Scatter from "components/_ui/Chart/Scatter/Scatter"
 import Tooltip from "components/_ui/Chart/Tooltip/Tooltip"
+const data = {}
 
 require('./Superbowl.scss')
 const fields = {

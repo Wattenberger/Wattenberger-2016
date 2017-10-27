@@ -8,20 +8,24 @@ const WEBPACK_PORT = parseInt(process.env.PORT) + 1    || 3001
 const SERVER_PORT  = parseInt(process.env.SERVER_PORT) || 3000
 
 const serverOptions = {
-  contentBase: `http://${WEBPACK_HOST}:${WEBPACK_PORT}`,
   // debug: true,
   // quiet: true,
-  noInfo: true,
   hot: true,
   inline: true,
   publicPath: config.output.publicPath,
+  proxy: {
+    '**': `http://${WEBPACK_HOST}:${SERVER_PORT}`
+  },
+  stats: { colors: true },
+  overlay: { warnings: true, errors: true },
+  historyApiFallback: true,
+  headers: {
+    'Access-Control-Allow-Origin': '*'
+  },
   watchOptions: {
     aggregateTimeout: 300,
     poll: 300,
   },
-  proxy: {
-    '*': `http://${WEBPACK_HOST}:${SERVER_PORT}`
-  }
 }
 
 

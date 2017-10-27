@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from "react"
+import React, {Component} from "react"
+import PropTypes from "prop-types"
 import classNames from "classnames"
 import * as d3 from "d3"
 
@@ -60,8 +61,8 @@ class Line extends Component {
   render() {
     let {line} = this.state
     return (
-      <g className={this.getClassName()}>
-        <path ref="path" d={line} />
+      <g ref="elem" className={this.getClassName()}>
+        <path className="Line__path" ref="path" d={line} />
       </g>
     )
   }

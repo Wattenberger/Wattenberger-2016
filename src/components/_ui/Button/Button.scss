@@ -21,4 +21,9 @@
   & + .Button {
     margin-left: 0.3em;
   }
+
+  &--selected {
+    background: $accent-4;
+    color: $bgc;
+  }
 }

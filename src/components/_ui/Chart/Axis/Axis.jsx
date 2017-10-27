@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from "react"
+import React, {Component} from "react"
+import PropTypes from "prop-types"
 import classNames from "classnames"
 import * as d3 from "d3"
 
@@ -59,7 +60,7 @@ class Axis extends Component {
                 1 :
                 chartInfo.width
     let y = dimension == "x" ?
-              chartInfo.height :
+              chartInfo.height - chartInfo.margin.bottom :
               0
 
     return {
