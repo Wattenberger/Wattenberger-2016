@@ -12,11 +12,11 @@ const orientations = {
 class Gradient extends Component {
   static propTypes = {
     id: PropTypes.string,
-    stops: PropTypes.shape({
+    stops: PropTypes.arrayOf(PropTypes.shape({
       offset: PropTypes.string,
       color: PropTypes.string,
       opacity: PropTypes.string,
-    }),
+    })),
     x: PropTypes.oneOfType([
       PropTypes.array,
       PropTypes.number,
@@ -51,13 +51,7 @@ class Gradient extends Component {
     let {id, stops, x, y, width, height} = this.props
     let hasX2 = _.isArray(x)
     let hasY2 = _.isArray(y)
-console.log("hi",stops.map(stop =>
-  <stop
-    offset={stop.offset || 0}
-    stopColor={stop.color}
-    stopOpacity={stop.opacity || 1}
-  />
-))
+
     return (
       <linearGradient
         className={this.getClassName()}
@@ -70,6 +64,7 @@ console.log("hi",stops.map(stop =>
       >
         {stops.map(stop =>
           <stop
+            key={stop.offset || 0}
             offset={stop.offset || 0}
             stopColor={stop.color}
             stopOpacity={stop.opacity || 1}

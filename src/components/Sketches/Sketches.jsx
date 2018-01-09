@@ -81,7 +81,7 @@ class Sketches extends Component {
       {notes.map((note, idx) =>
         <div className="Sketches__notes__note" key={idx}>
           <a href={note.url} target="_blank" rel="noopener noreferrer">{note.title}</a>
-          {note.text && <div className="Sketches__notes__note__text">{note.text}</div>}
+          {note.text && <div className="Sketches__notes__note__text" dangerouslySetInnerHTML={{__html: note.text}} />}
           {note.points &&
             <ul className="Sketches__notes__note__points">
               {note.points.map((point, idx) =>

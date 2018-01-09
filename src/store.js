@@ -25,6 +25,15 @@ const rootReducer = combineReducers({
 })
 
 // create a Redux instance using the dispatcher function
-export default function(initialState) {
-  return createStoreWithMiddleware(rootReducer, initialState)
+export default function (initialState) {
+  const store = createStoreWithMiddleware(rootReducer, initialState)
+
+  if (module.hot) {
+    // Enable Webpack hot module replacement for reducers
+    module.hot.accept('reducers/appReducer', () => {
+      store.replaceReducer(nextApp)
+    })
+  }
+
+  return store
 }

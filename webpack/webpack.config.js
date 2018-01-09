@@ -10,6 +10,9 @@ const assetsPath = path.resolve(__dirname, "../dist")
 module.exports = {
   entry: {
     "main": [
+      "react-hot-loader/patch",
+      "webpack-dev-server/client?http://" + config.WEBPACK_HOST + ":" + config.WEBPACK_PORT + "/",
+      "webpack/hot/only-dev-server",
       "./src/client.js"
     ],
   },
@@ -55,18 +58,15 @@ module.exports = {
   noParse: [/ignore/]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      debug: true
+    }),
 
     new webpack.DefinePlugin({
       "__DEV__" : JSON.stringify(process.env.NODE_ENV === "development"),
       "__PROD__": JSON.stringify(process.env.NODE_ENV === "production")
-    }),
-
-    new CleanWebpackPlugin(['dist'], {
-        root: __dirname,
-        verbose: true,
-        dry: false,
-        exclude: ['favicon.*']
     }),
   ]
 }

@@ -41,7 +41,7 @@ class Day16 extends Component {
   }
 
   componentWillUnmount() {
-    window.cancelAnimationFrame(animationRequestId)
+    window.clearTimeout(animationRequestId)
   }
 
   getClassName() {
@@ -58,7 +58,7 @@ class Day16 extends Component {
       })
     }
 
-    animationRequestId = setTimeout(() => {
+    animationRequestId = window.setTimeout(() => {
       window.requestAnimationFrame(this.draw)
     }, canvas ? INTERVAL_LENGTH : 0)
   }

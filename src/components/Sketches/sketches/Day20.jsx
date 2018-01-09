@@ -36,7 +36,7 @@ class Day20 extends Component {
   }
 
   componentWillUnmount() {
-    window.cancelAnimationFrame(animationRequestId)
+    window.clearTimeout(animationRequestId)
   }
 
   getClassName() {
@@ -51,7 +51,7 @@ class Day20 extends Component {
       this.drawTiles()
     }
 
-    animationRequestId = setTimeout(() => {
+    animationRequestId = window.setTimeout(() => {
       window.requestAnimationFrame(this.draw)
     }, canvas ? INTERVAL_LENGTH : 0)
   }
