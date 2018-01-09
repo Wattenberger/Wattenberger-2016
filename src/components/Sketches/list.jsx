@@ -59,6 +59,10 @@ export const list = [
   ]},
   {elem: Day19},
   {elem: Day20},
-  {elem: Day21},
+  {elem: Day21, notes: [
+    {
+      text: "Playing around with making a backgammon board with neurons to lasercut for a friend"
+    }
+  ]},
   // EOL
 ]

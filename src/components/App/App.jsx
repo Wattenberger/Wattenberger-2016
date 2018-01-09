@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className={this.getClassName()}>
-        <Route path="/home" component={Home} />
+        <Route path="" component={Home} />
         <Route path="/sketches" component={Sketches} />
         <Route path="/rochester-real-estate" component={RochesterRealEstate} />
         <Route path="/headlines" component={Headlines} />
