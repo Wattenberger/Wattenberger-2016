@@ -124,20 +124,6 @@ class Day22 extends Component {
             height={height}
             width={width}
           />
-
-          {_.map(lines, (line, i) => (
-            <path
-              key={i}
-              id={line.id}
-              d={line.path}
-              className="Day22__line"
-              style={{
-                strokeDasharray: line.dashArray,
-                animationDuration: line.animationDuration + "s",
-                // animationDirection: line.animationDirection,
-              }}
-            />
-          ))}
           {_.map(lines, (line, i) => (
             <path
               key={i}
@@ -145,12 +131,30 @@ class Day22 extends Component {
               className="Day22__line Day22__line--background"
             />
           ))}
-          <g className="Day22__whale">
-            {whale}
-            <animateMotion dur="12s" repeatCount="indefinite">
-              <mpath xlinkHref="#whalePath"/>
-            </animateMotion>
-          </g>
+
+          {_.map(lines, (line, i) => (
+            <g>
+              {line.id == "whalePath" && (
+                <g className="Day22__whale">
+                  {whale}
+                  <animateMotion dur="12s" repeatCount="indefinite">
+                    <mpath xlinkHref="#whalePath" />
+                  </animateMotion>
+                </g>
+              )}
+              <path
+                key={i}
+                id={line.id}
+                d={line.path}
+                className="Day22__line"
+                style={{
+                  strokeDasharray: line.dashArray,
+                  animationDuration: line.animationDuration + "s",
+                  // animationDirection: line.animationDirection,
+                }}
+              />
+            </g>
+          ))}
         </svg>
       </div>
     )
