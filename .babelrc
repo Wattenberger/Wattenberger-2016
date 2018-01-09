@@ -1,4 +1,14 @@
 {
-  "presets": ["env", "stage-0", "react"],
-  "plugins": ["transform-decorators-legacy"]
+  "presets": [
+    "env",
+    "react",
+    "env"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-function-bind",
+    "react-hot-loader/babel",
+  ]
 }

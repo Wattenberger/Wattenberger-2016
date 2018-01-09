@@ -10,9 +10,6 @@ const assetsPath = path.resolve(__dirname, "../dist")
 module.exports = {
   entry: {
     "main": [
-      "react-hot-loader/patch",
-      "webpack-dev-server/client?http://" + config.WEBPACK_HOST + ":" + config.WEBPACK_PORT + "/",
-      "webpack/hot/only-dev-server",
       "./src/client.js"
     ],
   },
