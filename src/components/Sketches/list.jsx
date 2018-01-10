@@ -21,6 +21,7 @@ import Day19 from "./sketches/Day19"
 import Day20 from "./sketches/Day20"
 import Day21 from "./sketches/Day21"
 import Day22 from "./sketches/Day22"
+import Day23 from "./sketches/Day23"
 
 export const list = [
   {elem: Day1},
@@ -70,5 +71,6 @@ export const list = [
       text: "<a href='https://thenounproject.com/term/whale/853136' target='_blank' rel='noopener noreferrer'>Whale</a> icon by <a href='https://thenounproject.com/nookfulloption/' target='_blank' rel='noopener noreferrer'>Nook Fulloption</a> from the Noun Project."
     }
   ]},
+  {elem: Day23},
   // EOL
 ]
