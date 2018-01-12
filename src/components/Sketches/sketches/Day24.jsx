@@ -9,28 +9,75 @@ require('./Day24.scss')
 
 const SVG_HEIGHT = 400
 const HOUSE_DIMENSION = 200
-const HOUSE_BUFFER = 20
+const HOUSE_BUFFER = 40
 const ORIFICE_WIDTH = HOUSE_DIMENSION * 0.2
 const ORIFICE_BUFFER = HOUSE_DIMENSION * 0.05
+const TOTAL_ORIFICE_WIDTH = ORIFICE_WIDTH + ORIFICE_BUFFER
 const TOTAL_HOUSE_DIMENSION = HOUSE_DIMENSION + HOUSE_BUFFER
 const STORY_HEIGHT = HOUSE_DIMENSION / 3
 const orificeTypes = ["window"]
-const houseColors = [ "#ddd", "navajowhite", "#FF7C59", "#D56649", "#AA5039", "#7F3B29", "#27556C", "#3E82A3", "#326B87", "#867376", "#DFBFC4", "#AF9397", "#7C776F", "#CECAC2", "#A39E96", "#7D8583", "#616967", "#7C746F", "#CEC7C2", "#A39B96", "#83858A", "#65686D", "#2F3136"]
-const roofColors = ["#53261A", "#1D3F50", "#122935", "#5A5152", "#211F1F", "#504C45", "#312C22", "#47504E", "#2C3432", "#16201D", "#504945", "#312822", "#4B4D53", "#181A21", "charcoal", "#003423", "#026243", "#4E1A00", "#943403", "#480011", "#880322", "#113C4F", "#455311", "#563612", "#7D4D16",]
+const houseColors = [
+  "#fe938c",
+  "#edaf97",
+  "#c49792",
+  "#ad91a3",
+  "#9d91a3",
+  "#e9c46a",
+  "#f4a261",
+  "#e76f51",
+  "#554971",
+  "#63768d",
+  "#8ac6d0",
+  "#b8f3ff",
+  "#1693A5",
+  "#FBB829",
+  "#ADD8C7",
+  "#CDD7B6",
+  "#FF9999",
+  "#CCCCCC",
+  "#7F94B0",
+  "#E7807B",
+  "#C5E0DC",
+  "#807C8B",
+  "#896872",
+]
+const roofColors = [
+  "#264653",
+  "#36213e",
+  "#323035",
+  "#170535",
+  "#556270",
+  "#630947",
+  "#3B3B3B",
+  "#4F4E57",
+  "#3C3D36",
+  "#3B8686",
+]
+const shrubColors = [
+  "#2a9d8f",
+  "#45aeb1",
+  "#77CCA4",
+  "#3FB8AF",
+  "#90AB76",
+  "#61A598",
+  "#4ECDC4",
+  "#64B6B1",
+  "#A1C820",
+]
 
-const getHouseDimWithinRange = (min=0, max=1) => TOTAL_HOUSE_DIMENSION * _.random(min, max, true)
+const getHouseDimWithinRange = (min=0, max=1) => HOUSE_DIMENSION * _.random(min, max, true)
+const getRadiusFromChord = (height, width) => (height * height + width * width) / (2 * height)
 
 class Day24 extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      height: SVG_HEIGHT,
+      height: Math.max(400, window.innerWidth * 0.4),
       width: window.innerWidth,
       svg: null,
-      interval: null,
       houses: [],
-      iterations: 0,
       numHouses: 0,
+      r: 0,
     }
   }
 
@@ -38,34 +85,18 @@ class Day24 extends Component {
     let svg = this.svg
     const { elem } = this.refs
     const width = elem.offsetWidth
-    const numHouses = Math.floor(width / TOTAL_HOUSE_DIMENSION) - 1
-    this.setState({ svg, width, numHouses })
+    const height = Math.max(400, width * 0.4)
+    const h = height * 0.25
+    const w = width * 0.5
+    const r = getRadiusFromChord(h, w)
+    const numHouses = Math.floor(2 * Math.PI * r / TOTAL_HOUSE_DIMENSION)
+    this.setState({ svg, height, width, r, numHouses })
 
-    this.createHouse()
-    const interval = window.setInterval(this.createHouse, 2000)
-    this.setState({ interval })
+    const houses = _.times(numHouses, d => this.getHouse())
+    this.setState({ houses })
   }
 
-  componentWillUnmount() {
-    const { interval } = this.state
-    if (interval) window.clearInterval(interval)
-  }
-
-  createHouse = () => {
-    let { width, houses, iterations, numHouses } = this.state
-
-    iterations++
-
-    let newHouses = [...houses, this.getHouse({
-      x: (houses.length + 0.5) * TOTAL_HOUSE_DIMENSION,
-      y: (SVG_HEIGHT - TOTAL_HOUSE_DIMENSION) / 2,
-    })]
-    newHouses = _.map(newHouses, (house, i) => i > newHouses.length - numHouses ? house : null)
-
-    this.setState({ houses: newHouses, iterations })
-  }
-
-  getHouse = (pos) => {
+  getHouse = () => {
     const mainColor = _.sample(houseColors)
     const roofColor = _.sample(roofColors)
     const width = getHouseDimWithinRange(0.6)
@@ -74,89 +105,106 @@ class Day24 extends Component {
     const additionStories = additionWidth ? _.random(1, stories) : stories
     const additionXOffset = _.random(-(width - additionWidth) / 2, (width - additionWidth) / 2)
     const chimneyWidth = !_.random(0, 6) ? _.random(HOUSE_DIMENSION * 0.05, width * 0.2, true) : 0
+    const shutterColor = _.sample(houseColors)
+    const shutterWidth = ORIFICE_WIDTH * _.random(0.1, 0.33, true)
 
     return (
-      <g
-        className="house"
-        key={`${pos.x},${pos.y}`}>
-        <g
-          style={{
-            transform: [
-              `translate3d(${pos.x}px, ${pos.y}px, 0)`,
-              // `rotate(${_.random(-30, 30, true)}deg)`,
-              // `scale3d(${_.random(0.8, 1.2, true)}, ${_.random(0.8, 1.2, true)}, 1)`,
-            ].join(" ")
-          }}>
-          {chimneyWidth && this.getChimney(
-            chimneyWidth,
-            stories,
-            (HOUSE_DIMENSION - width) / 2 + getHouseDimWithinRange(0, width)
-          )}
-          {this.getStructure(width, stories, roofColor, mainColor)}
-          {_.times(additionStories, story => {
-            const numOrifices = Math.floor(width / (ORIFICE_WIDTH + ORIFICE_BUFFER))
-            const doorIndex = !story ? _.random(0, numOrifices) : -1
+      <g>
+        {chimneyWidth && this.getChimney(
+          chimneyWidth,
+          stories,
+          (HOUSE_DIMENSION - width) / 2 + width * _.random(0, 0.9, true)
+        )}
+        {this.getStructure(width, stories, roofColor, mainColor)}
+        {_.times(additionStories + 1, story => {
+          const numOrifices = story == additionStories ? (!_.random(0, 3) ? 1 : 0) : Math.floor(width / TOTAL_ORIFICE_WIDTH)
+          const doorIndex = !story ? _.random(0, numOrifices - 1) : -1
+          const orificeXStart = TOTAL_HOUSE_DIMENSION / 2 - (numOrifices * TOTAL_ORIFICE_WIDTH + ORIFICE_BUFFER) / 2
+          const numShrubs = !story && _.random(0, 2)
+          const shrubColor = _.sample(shrubColors)
 
-            return _.times(numOrifices, i => (
-              <g key={i} style={{
-                transform: [
-                  "translate3d(",
-                  [
-                    _.round(((width - numOrifices * (ORIFICE_WIDTH + ORIFICE_BUFFER) + ORIFICE_BUFFER + ORIFICE_BUFFER) / 2) + i * (ORIFICE_WIDTH + ORIFICE_BUFFER), 0),
-                    _.round(HOUSE_DIMENSION - (STORY_HEIGHT * (story + 1)), 0),
-                    0
-                  ].join("px, "),
-                  ")"
-                ].join("")
-              }}>
-                {this.getOrifice(i == doorIndex && "door")}
-              </g>
-            ))
-          })}
-          {!!additionWidth && this.getStructure(
-            additionWidth,
-            additionStories,
-            roofColor,
-            d3.color(mainColor).brighter(_.random(0.3, 1.2)),
-            additionXOffset
-          )}
-          {additionWidth && _.times(additionStories, story => {
-            const numOrifices = Math.floor(width / (ORIFICE_WIDTH + ORIFICE_BUFFER))
-            const doorIndex = !story ? _.random(0, numOrifices) : -1
+          return (
+            <g key={story}>
+              {_.times(numOrifices, i => (
+                <g className={story == additionStories ? "house__orifice--attic" : ""} key={i}>
+                  <g style={{
+                      transform: [
+                        "translate3d(",
+                        [
+                          orificeXStart + i * TOTAL_ORIFICE_WIDTH + (story == additionStories ? ORIFICE_WIDTH : 0),
+                          HOUSE_DIMENSION - (STORY_HEIGHT * (story + 1)) + (story == additionStories ? ORIFICE_WIDTH : 0),
+                          0
+                        ].join("px, "),
+                        ")"
+                      ].join("")
+                    }}
+                  >
+                    {this.getOrifice(i == doorIndex && "door", shutterColor, shutterWidth)}
+                  </g>
+                </g>
+            ))}
+            {numShrubs && _.times(numShrubs, i => (
+                this.getShrub(
+                  TOTAL_ORIFICE_WIDTH * ((i ? _.random(1.3, 1.6) : -_.random(0, 0.3)) + doorIndex),
+                  shrubColor
+                )
+            ))}
+            </g>
+          )
+        })}
+        {!!additionWidth && this.getStructure(
+          additionWidth,
+          additionStories,
+          roofColor,
+          d3.color(mainColor).brighter(_.random(0.3, 1.2)),
+          additionXOffset
+        )}
+        {additionWidth && _.times(additionStories, story => {
+          const isDoor = !story && !_.random(0, 1)
 
-            return _.times(numOrifices, i => (
-              <g key={i} style={{
-                transform: [
-                  "translate3d(",
-                  [
-                    _.round((HOUSE_DIMENSION - width) / 2 + additionXOffset + ((additionWidth + ORIFICE_WIDTH) / 2), 0),
-                    _.round(HOUSE_DIMENSION - (STORY_HEIGHT * (story + 1)), 0),
-                    0
-                  ].join("px, "),
-                  ")"
-                ].join("")
-              }}>
-                {this.getOrifice()}
-              </g>
-            ))
-          })}
-        </g>
+          return (
+            <g style={{
+              transform: [
+                "translate3d(",
+                [
+                  (HOUSE_DIMENSION - additionWidth) / 2 + additionXOffset + ((additionWidth - ORIFICE_WIDTH) / 2),
+                  HOUSE_DIMENSION - (STORY_HEIGHT * (story + 1)),
+                  0
+                ].join("px, "),
+                ")"
+              ].join("")
+            }}>
+              {this.getOrifice(isDoor && "door", shutterColor, shutterWidth)}
+            </g>
+          )
+        })}
       </g>
     )
   }
 
   getChimney = (chimneyWidth, stories, x) => {
-    const height = STORY_HEIGHT * (stories + _.random(0.1, 1))
+    const height = STORY_HEIGHT * (stories + _.random(0.6, 1.1))
+    const CHIMNEY_TOP_OVERHANG = 0.04
 
     return (
-      <rect
-        className="house__chimney"
-        height={height}
-        width={chimneyWidth}
-        x={x}
-        y={HOUSE_DIMENSION - height}
-        fill="black"
-      />
+      <g>
+        <rect
+          className="house__chimney__top"
+          height={HOUSE_DIMENSION * 0.05}
+          width={chimneyWidth * (1 + CHIMNEY_TOP_OVERHANG * 2)}
+          x={x - chimneyWidth * CHIMNEY_TOP_OVERHANG}
+          y={HOUSE_DIMENSION - height - HOUSE_DIMENSION * 0.043}
+          fill="grey"
+        />
+        <rect
+          className="house__chimney"
+          height={height}
+          width={chimneyWidth}
+          x={x}
+          y={HOUSE_DIMENSION - height}
+          fill="black"
+        />
+      </g>
     )
   }
 
@@ -180,19 +228,38 @@ class Day24 extends Component {
       [(HOUSE_DIMENSION - width) / 2 - overhang + xOffset, bottomOfRoof               ].join(" "),
       [HOUSE_DIMENSION           / 2            + xOffset, bottomOfRoof - STORY_HEIGHT].join(" "),
       [(HOUSE_DIMENSION + width) / 2 + overhang + xOffset, bottomOfRoof               ].join(" "),
-    ].join("L ")
+    ]
+    const isGambrel = !xOffset && !_.random(0, 6)
+    if (isGambrel) {
+      paths = [
+        paths[0],
+        [(HOUSE_DIMENSION - width * 0.6) / 2, bottomOfRoof - STORY_HEIGHT * 0.75].join(" "),
+        paths[1],
+        [(HOUSE_DIMENSION + width * 0.6) / 2, bottomOfRoof - STORY_HEIGHT * 0.75].join(" "),
+        paths[2],
+      ]
+    }
+    const isRotated = !xOffset && !isGambrel && !_.random(0, 4)
+    if (isRotated) {
+      paths = [
+        paths[0],
+        [(HOUSE_DIMENSION - width * 0.9) / 2, bottomOfRoof - STORY_HEIGHT].join(" "),
+        [(HOUSE_DIMENSION + width * 0.9) / 2, bottomOfRoof - STORY_HEIGHT].join(" "),
+        paths[2],
+      ]
+    }
 
     return (
       <path
         className="house__roof"
-        d={"M " + paths}
+        d={"M " + paths.join("L ")}
         stroke={roofColor}
-        fill={mainColor}
+        fill={isRotated ? roofColor : mainColor}
       />
     )
   }
 
-  getOrifice = type => {
+  getOrifice = (type, shutterColor, shutterWidth) => {
     type = type || _.random(0, 5) && _.sample(orificeTypes)
     if (!type) return null
     const range = type == "door" ? [0.7, 0.9] : [0.3, 0.6]
@@ -200,25 +267,63 @@ class Day24 extends Component {
     const width = ORIFICE_WIDTH * _.random(0.7, 1, true)
 
     return (
-      <rect
-        className={`house__orifice house__orifice--${type}`}
-        height={height}
-        width={width}
-        x={(ORIFICE_WIDTH - width) / 2}
-        y={type == "door" ? STORY_HEIGHT - height : (STORY_HEIGHT - height) / 2}
-        fill={type == "door" ? _.sample(houseColors) : "white"}
+      <g>
+        <rect
+          className={`house__orifice house__orifice--${type}`}
+          height={height}
+          width={width}
+          x={(ORIFICE_WIDTH - width) / 2}
+          y={type == "door" ? STORY_HEIGHT - height : (STORY_HEIGHT - height) / 2}
+          fill={type == "door" ? _.sample(roofColors) : "white"}
+        />
+        {type == "window" && _.times(2, i => (
+          <rect
+            key={i}
+            width={shutterWidth}
+            height={height}
+            x={(ORIFICE_WIDTH - width) / 2 + (i ? -shutterWidth / 2 : width - shutterWidth / 2)}
+            y={(STORY_HEIGHT - height) / 2}
+            fill={shutterColor}
+          />
+        ))}
+      </g>
+    )
+  }
+
+  getShrub = (x, color) => {
+    const height = getHouseDimWithinRange(0.01, 0.12)
+    return (
+      <ellipse
+        rx={getHouseDimWithinRange(0.01, 0.12)}
+        ry={height}
+        cx={x}
+        cy={STORY_HEIGHT * 3 - height}
+        fill={color}
       />
     )
   }
 
+  renderWorld = () => {
+    const { height, width, r } = this.state
+    const h = height * 0.25
+    const w = width * 0.5
 
+    return (
+      <circle
+        className="world"
+        cx={w}
+        cy={height - h + r}
+        r={r}
+      />
+    )
+  }
 
   getClassName() {
     return classNames("Day24")
   }
 
   render() {
-    let { height, width, houses, iterations, numHouses } = this.state
+    let { height, width, r, houses, numHouses } = this.state
 
     return (
       <div className={this.getClassName()} ref="elem">
@@ -232,10 +337,35 @@ class Day24 extends Component {
             height={height}
             width={width}
           />
-          <g className="houses" style={{
-            transform: `translate3d(-${(iterations - numHouses) * TOTAL_HOUSE_DIMENSION}px, 0, 0)`
+          <g style={{
+            transform: `translate3d(0, -${height * 0.1}px, 0)`
           }}>
-            {houses}
+            <g className="rotater" style={{
+              transformOrigin: `center center`,
+              animationDuration: `${numHouses}s`,
+            }}>
+              {this.renderWorld()}
+              <g className="houses">
+                {_.map(houses, (house, i) => {
+                  return (
+                    <g
+                      className="house"
+                      key={i} style={{
+                        transform: `translate3d(${(width) / 2}px, ${height * 0.25 + STORY_HEIGHT / 4}px, 0)`,
+                      }}>
+                      <g style={{
+                          transform: [
+                            `rotate(${_.round(360 / numHouses * i, 3)}deg)`,
+                          ].join(" "),
+                          transformOrigin: `center ${r + TOTAL_HOUSE_DIMENSION}px`,
+                        }}>
+                        {house}
+                      </g>
+                    </g>
+                  )
+                })}
+              </g>
+            </g>
           </g>
         </svg>
       </div>
