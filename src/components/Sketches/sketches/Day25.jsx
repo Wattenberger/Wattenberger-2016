@@ -8,7 +8,7 @@ import Gradient from "components/_ui/Chart/Gradient/Gradient"
 require('./Day25.scss')
 
 const SVG_HEIGHT = 400
-const HOUSE_DIMENSION = 300
+const HOUSE_DIMENSION = window.innerWidth * 0.26
 const HOUSE_BUFFER = 40
 const ORIFICE_WIDTH = HOUSE_DIMENSION * 0.2
 const ORIFICE_BUFFER = HOUSE_DIMENSION * 0.05
@@ -25,19 +25,18 @@ const houseColors = [
   "#e9c46a",
   "#f4a261",
   "#e76f51",
-  "#554971",
+//   "#554971",
   "#63768d",
   "#8ac6d0",
-  "#b8f3ff",
   "#1693A5",
   "#FBB829",
   "#ADD8C7",
   "#CDD7B6",
   "#FF9999",
   "#CCCCCC",
-  "#7F94B0",
+//   "#7F94B0",
   "#E7807B",
-  "#C5E0DC",
+//   "#C5E0DC",
   "#807C8B",
   "#896872",
 ]
@@ -78,7 +77,7 @@ class Day25 extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      height: Math.max(400, window.innerWidth * 0.4),
+      height: Math.max(400, window.innerWidth * 0.8),
       width: window.innerWidth,
       svg: null,
       interval: null,
@@ -92,7 +91,7 @@ class Day25 extends Component {
     let svg = this.svg
     const { elem } = this.refs
     const width = elem.offsetWidth
-    const height = Math.max(400, width * 0.4)
+    const height = Math.max(400, width * 0.54)
     const numHouses = 1
     this.setState({ svg, height, width, numHouses })
 
@@ -117,12 +116,12 @@ class Day25 extends Component {
     const mainColor = _.sample(houseColors)
     const roofColor = _.sample(roofColors)
     const width = getHouseDimWithinRange(0.6)
-    const stories = _.random(1, 2)
-    const additionWidth = !_.random(0, 4) ? _.random(HOUSE_DIMENSION * 0.2, width * 0.8, true) : 0
+    const stories = !_.random(0, 2) ? 2 : 1
+    const additionWidth = !_.random(0, 2) ? _.random(HOUSE_DIMENSION * 0.2, width * 0.8, true) : 0
     const additionStories = additionWidth ? _.random(1, stories) : stories
     const additionXOffset = _.random(-(width - additionWidth) / 2, (width - additionWidth) / 2)
     const chimneyWidth = !_.random(0, 3) ? _.random(HOUSE_DIMENSION * 0.05, width * 0.2, true) : 0
-    const shutterColor = _.sample(_.filter(houseColors, mainColor))
+    const shutterColor = _.sample(_.filter(houseColors, d => d != mainColor))
     const shutterWidth = ORIFICE_WIDTH * _.random(0.1, 0.26, true)
 
     return (
@@ -238,7 +237,7 @@ class Day25 extends Component {
 
             {numShrubs && _.times(numShrubs, i => (
                 this.getShrub(
-                  TOTAL_ORIFICE_WIDTH * ((i ? _.random(-0.2, 0.4) : _.random(1.8, 2.1)) + doorIndex),
+                  TOTAL_ORIFICE_WIDTH * ((i ? _.random(-0.3, 0.4) : _.random(2, 2.2)) + doorIndex),
                   shrubColor,
                   i
                 )
@@ -298,7 +297,7 @@ class Day25 extends Component {
     if (!type) return null
     const range = type == "door" ? [0.7, 0.9] : [0.3, 0.6]
     const height = STORY_HEIGHT * _.random(range[0], range[1], true)
-    const width = ORIFICE_WIDTH * _.random(0.4, 0.8, true)
+    const width = ORIFICE_WIDTH * (type == "door" ? _.random(0.7, 0.92, true) : _.random(0.4, 0.8, true))
 
     return (
       <g className={`house__orifice house__orifice--${type} house__orifice--${i}`} key={`house__orifice--${iteration}`}>
@@ -352,7 +351,7 @@ class Day25 extends Component {
   getTrees = () => {
     const { iteration } = this.state
 
-    const numTrees = _.random(3, 16)
+    const numTrees = _.random(6, 25)
     const treeColor = _.sample(shrubColors)
     const isTreesCircles = !!_.random(0, 1)
     let trees = _.times(numTrees, i => this.createTree(i, treeColor))
@@ -439,6 +438,7 @@ class Day25 extends Component {
 
   render() {
     let { height, width, houses, numHouses } = this.state
+    const earthHeight = height * 0.5 - HOUSE_DIMENSION * 0.2
 
     return (
       <div className={this.getClassName()} ref="elem">
@@ -454,8 +454,8 @@ class Day25 extends Component {
           />
           <rect
             className="Day25__earth"
-            y={height * 0.7}
-            height={height * 0.3}
+            y={height - earthHeight}
+            height={earthHeight}
             width={width}
           />
           <g className="houses" style={{

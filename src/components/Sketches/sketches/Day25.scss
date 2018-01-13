@@ -130,24 +130,12 @@
 
     &__tree {
       opacity: 0.9;
-
-      &--0  { animation-delay: 0.1s + 0.0s;  }
-      &--1  { animation-delay: 0.1s + 0.25s; }
-      &--2  { animation-delay: 0.1s + 0.5s;  }
-      &--3  { animation-delay: 0.1s + 0.75s; }
-      &--4  { animation-delay: 0.1s + 1s;    }
-      &--5  { animation-delay: 0.1s + 1.25s; }
-      &--6  { animation-delay: 0.1s + 1.5s;  }
-      &--7  { animation-delay: 0.1s + 1.75s; }
-      &--8  { animation-delay: 0.1s + 2s;    }
-      &--9  { animation-delay: 0.1s + 2.25s; }
-      &--10 { animation-delay: 0.1s + 2.5s;  }
-      &--11 { animation-delay: 0.1s + 2.75s; }
-      &--12 { animation-delay: 0.1s + 3s;    }
-      &--13 { animation-delay: 0.1s + 3.2s;  }
-      &--14 { animation-delay: 0.1s + 3.5s;  }
-      &--15 { animation-delay: 0.1s + 3.65s; }
-      &--16 { animation-delay: 0.1s + 3.75s; }
+      
+        @for $i from 0 through 26 {
+            &--#{$i} {
+                animation-delay: 0.1s + $i * 0.15s;
+            }
+        }
     }
 
     &__chimney {
@@ -171,7 +159,7 @@
 
         @for $i from 0 through 40 {
           &--#{$i} {
-            animation-delay: 0.9s + $i * 0.03s;
+            animation-delay: 0.9s + $i * 0.2s;
           }
         }
       }
@@ -184,18 +172,11 @@
       &__bubble {
         animation-duration: 1s;
 
-        &--0  { animation-delay: 0.1s + 0.0s;  }
-        &--1  { animation-delay: 0.1s + 0.25s; }
-        &--2  { animation-delay: 0.1s + 0.5s;  }
-        &--3  { animation-delay: 0.1s + 0.75s; }
-        &--4  { animation-delay: 0.1s + 1s;    }
-        &--5  { animation-delay: 0.1s + 1.25s; }
-        &--6  { animation-delay: 0.1s + 1.5s;  }
-        &--7  { animation-delay: 0.1s + 1.75s; }
-        &--8  { animation-delay: 0.1s + 2s;    }
-        &--9  { animation-delay: 0.1s + 2.25s; }
-        &--10 { animation-delay: 0.1s + 2.5s;  }
-        &--11 { animation-delay: 0.1s + 2.75s; }
+        @for $i from 0 through 12 {
+            &--#{$i} {
+                animation-delay: 0.1s + $i * 0.25s;
+            }
+        }
       }
     }
 
