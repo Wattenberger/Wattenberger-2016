@@ -20,8 +20,9 @@ const serverOptions = {
   overlay: { warnings: true, errors: true },
   historyApiFallback: true,
   headers: {
-    'Access-Control-Allow-Origin': '*'
+    // 'Access-Control-Allow-Origin': '*'
   },
+  public: "z",
   watchOptions: {
     aggregateTimeout: 300,
     poll: 300,
