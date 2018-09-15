@@ -2,11 +2,7 @@ import React, {Component} from "react"
 import PropTypes from "prop-types"
 import * as d3 from "d3"
 import classNames from "classnames"
-import numeral from "numeral"
 import _ from "lodash"
-import moment from "moment"
-import {scaleLinear, format} from "d3"
-import ButtonGroup from "components/_ui/Button/ButtonGroup/ButtonGroup"
 import dataCsvFile from "./data.csv"
 import intelligenceCsvFile from "./dog_intelligence.csv"
 import Boroughs from "./Boroughs"
@@ -96,7 +92,7 @@ class DogNames extends Component {
     const parsedData = d3.csv(dataCsvFile, data => {
       const boroughTotals = _.countBy(data, "borough");
       // console.log(data)
-      this.setState({ data, boroughTotals }, this.parseUrlArgs)
+      this.setState({ data, boroughTotals })
     })
   }
 
