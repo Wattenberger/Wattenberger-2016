@@ -54,14 +54,18 @@ class DogNames extends Component {
   componentDidMount() {
     this.parseData();
     this.parseIntelligenceData();
+    document.title = "NYC Dogs - Wattenberger"
   }
 
   getClassName() {
     return classNames("DogNames", this.props.className)
   }
-
+  getUrlArgs = () => {
+    const args = window.location.search.slice(1).split("&")
+    return _.fromPairs(args.map(str => str.split("=").map(decodeURIComponent)))
+  }
   parseUrlArgs = () => {
-    const urlArgs = getUrlArgs()
+    const urlArgs = this.getUrlArgs()
     const appropriateArg = _.intersection([...filterableAspects, "borough"], Object.keys(urlArgs))[0]
     const aspect = appropriateArg || null
     const item = appropriateArg ? urlArgs[appropriateArg] : null
@@ -131,7 +135,7 @@ class DogNames extends Component {
       borough,
       (boroughData[borough] || 0) * 100 / (total || 1),
     ]))
-    window.history.pushState( {} , '', item ? `?${aspect}=${item}` : "?" );
+    window.history.replaceState( {} , '', item ? `?${aspect}=${item}` : window.location.pathname );
     this.setState({ selectedItem: item, selectedAspect: item ? aspect : null, totals, boroughData, boroughPercents })
   }
 
@@ -395,9 +399,4 @@ class DogNamesSelectableList extends Component {
       </div>
     )
   }
-}
-
-const getUrlArgs = () => {
-  const args = window.location.search.slice(1).split("&")
-  return _.fromPairs(args.map(str => str.split("=").map(decodeURIComponent)))
 }

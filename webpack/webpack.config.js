@@ -36,7 +36,7 @@ module.exports = {
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack-loader'
         ]
-      },
+      }
   ],
   // noParse: [/node_modules/]
   // noParse: [/ignore/]

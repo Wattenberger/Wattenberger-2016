@@ -57,7 +57,7 @@ class Boroughs extends Component {
 											{ formatNumber((data[borough] || {}).count) }
 										</div>
 										<div className="Borough__text-label__total">
-											{ `${formatIntelligence((data[borough] || {}).intelligence || 0)}` }
+											{ `${formatIntelligence((data[borough] || {}).intelligence || 0)} avg intelligence` }
 										</div>
 									</React.Fragment>
 								) : (
@@ -74,7 +74,7 @@ class Boroughs extends Component {
 										{ `${formatNumber((data[borough] || {}).count || 0)} dogs` }
 									</div>
 									<div className="Borough__text-label__total">
-										{ `${formatIntelligence((data[borough] || {}).intelligence || 0)}` }
+										{ `${formatIntelligence((data[borough] || {}).intelligence || 0)} avg intelligence` }
 									</div>
 								</React.Fragment>
 								)
