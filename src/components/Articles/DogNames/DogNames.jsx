@@ -92,7 +92,7 @@ class DogNames extends Component {
     const parsedData = d3.csv(dataCsvFile, data => {
       const boroughTotals = _.countBy(data, "borough");
       // console.log(data)
-      this.setState({ data, boroughTotals })
+      this.setState({ data, boroughTotals }, this.parseUrlArgs)
     })
   }
 
@@ -131,7 +131,7 @@ class DogNames extends Component {
       borough,
       (boroughData[borough] || 0) * 100 / (total || 1),
     ]))
-    window.history.replaceState( {} , '', item ? `?${aspect}=${item}` : window.location.pathname );
+    // window.history.replaceState( {} , '', item ? `?${aspect}=${item}` : window.location.pathname );
     this.setState({ selectedItem: item, selectedAspect: item ? aspect : null, totals, boroughData, boroughPercents })
   }
 
