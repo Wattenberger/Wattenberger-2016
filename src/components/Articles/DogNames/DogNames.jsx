@@ -53,6 +53,7 @@ class DogNames extends Component {
 
   componentDidMount() {
     this.parseData();
+    this.parseIntelligenceData();
   }
 
   getClassName() {
@@ -272,6 +273,7 @@ class DogNamesSelectableList extends Component {
     super(props)
     this.state = {
       searchValue: "",
+      uppercaseOnly: false,
     }
   }
 
@@ -285,10 +287,11 @@ class DogNamesSelectableList extends Component {
 
   parseItems = () => {
     const { items, aspect, allDogs } = this.props
-    const { searchValue } = this.state
+    const { searchValue, uppercaseOnly } = this.state
 
     let parsedItems = items
     if (!_.isEmpty(searchValue)) parsedItems = _.filter(parsedItems, d => d.key.toLowerCase().includes(searchValue))
+    if (uppercaseOnly) parsedItems = _.filter(parsedItems, d => d.key == _.upperCase(d.key))
     parsedItems = _.take(parsedItems, 100)
     parsedItems = _.map(parsedItems, (item, index) => ({
       ...item,
@@ -323,19 +326,28 @@ class DogNamesSelectableList extends Component {
     this.props.onSelect(parsedItems[nextItemIndex])
   }
 
+  onToggleUppercaseOnly = () => {
+    this.setState({uppercaseOnly: !this.state.uppercaseOnly}, this.parseItems)
+  }
+
   keypresses = {
     [KEYS.UP]: this.onChangeSelectedItem.bind(this, 1),
     [KEYS.DOWN]: this.onChangeSelectedItem.bind(this, -1),
   };
 
   render() {
-    const { items, selectedItem, label, extraColumn, allDogs, onSelect, ...props } = this.props
-    const { searchValue, parsedItems } = this.state
+    const { items, aspect, selectedItem, label, extraColumn, allDogs, onSelect, ...props } = this.props
+    const { searchValue, parsedItems, uppercaseOnly } = this.state
 
     return (
       <div className="DogNamesSelectableList" {...props}>
         {/* {selectedItem && <Keypress keys={this.keypresses} />} */}
         <input className="DogNamesSelectableList__input" value={searchValue} placeholder={`Search for a ${label}`} onChange={this.onInputChange} />
+        {aspect == "dog_name" && (
+          <div className={`DogNamesSelectableList__toggle DogNamesSelectableList__toggle--is-${uppercaseOnly ? "selected" : "not-selected"}`} onClick={this.onToggleUppercaseOnly}>
+            Uppercase only
+          </div>
+        )}
         <div className="DogNamesSelectableList__column-headers">
           <div className="DogNamesSelectableList__column-header">
             Count
@@ -347,7 +359,14 @@ class DogNamesSelectableList extends Component {
         <div className="DogNamesSelectableList__items">
           {_.map(parsedItems, (item, i) => (
             <div
-              className={`DogNamesSelectableList__item DogNamesSelectableList__item--is-${item.key == selectedItem ? "selected" : "not-selected"}`}
+              className={[
+                "DogNamesSelectableList__item",
+                `DogNamesSelectableList__item--is-${
+                  item.key == selectedItem ? "selected"         :
+                  selectedItem             ? "next-to-selected" :
+                                             "not-selected"
+                }`
+              ].join(" ")}
               key={i}
               onMouseDown={this.onSelectLocal(item.key)}>
               <div className="DogNamesSelectableList__item__index">

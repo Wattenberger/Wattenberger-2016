@@ -28,21 +28,8 @@ module.exports = {
   module: {
     rules: [
       {test: /\js(x)?$/, exclude: /node_modules/, loader: "babel-loader", query: {presets: ["react"]} },
-      {test: /\.css$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "postcss-loader",
-        ]
-      },
-      {test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "postcss-loader",
-          "sass-loader?include_paths[]=" + srcPath,
-        ]
-      },
+      {test: /\.css$/,   use: ["style-loader", "css-loader", "postcss-loader"] },
+      {test: /\.scss$/,  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader?include_paths[]=" + srcPath] },
       {
         test: /.*\.(gif|png|jpe?g|pdf|svg|csv)$/i,
         use: [
@@ -52,7 +39,7 @@ module.exports = {
       },
   ],
   // noParse: [/node_modules/]
-  noParse: [/ignore/]
+  // noParse: [/ignore/]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
