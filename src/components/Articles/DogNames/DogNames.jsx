@@ -6,7 +6,6 @@ import _ from "lodash"
 import dataCsvFile from "./data.csv"
 import intelligenceCsvFile from "./dog_intelligence.csv"
 import Boroughs from "./Boroughs"
-import Keypress, {KEYS} from 'components/_ui/Keypress/Keypress'
 
 // const parsedData = _.map(data, (info, name) => _.extend({}, info, {
 //   name,
@@ -131,7 +130,7 @@ class DogNames extends Component {
       borough,
       (boroughData[borough] || 0) * 100 / (total || 1),
     ]))
-    // window.history.replaceState( {} , '', item ? `?${aspect}=${item}` : window.location.pathname );
+    window.history.replaceState( {} , '', item ? `?${aspect}=${item}` : window.location.pathname );
     this.setState({ selectedItem: item, selectedAspect: item ? aspect : null, totals, boroughData, boroughPercents })
   }
 
@@ -281,6 +280,11 @@ class DogNamesSelectableList extends Component {
     this.parseItems()
   }
 
+  componentDidCatch(error, info) {
+    this.setState({ error });
+    console.log(error)
+  }
+
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.items != this.props.items) this.parseItems()
   }
@@ -330,18 +334,13 @@ class DogNamesSelectableList extends Component {
     this.setState({uppercaseOnly: !this.state.uppercaseOnly}, this.parseItems)
   }
 
-  keypresses = {
-    [KEYS.UP]: this.onChangeSelectedItem.bind(this, 1),
-    [KEYS.DOWN]: this.onChangeSelectedItem.bind(this, -1),
-  };
-
   render() {
     const { items, aspect, selectedItem, label, extraColumn, allDogs, onSelect, ...props } = this.props
-    const { searchValue, parsedItems, uppercaseOnly } = this.state
+    const { searchValue, parsedItems, uppercaseOnly, error } = this.state
+    if (error) return null
 
     return (
       <div className="DogNamesSelectableList" {...props}>
-        {/* {selectedItem && <Keypress keys={this.keypresses} />} */}
         <input className="DogNamesSelectableList__input" value={searchValue} placeholder={`Search for a ${label}`} onChange={this.onInputChange} />
         {aspect == "dog_name" && (
           <div className={`DogNamesSelectableList__toggle DogNamesSelectableList__toggle--is-${uppercaseOnly ? "selected" : "not-selected"}`} onClick={this.onToggleUppercaseOnly}>
