@@ -8,6 +8,7 @@ import moment from "moment"
 import {scaleLinear, format} from "d3"
 import ButtonGroup from "components/_ui/Button/ButtonGroup/ButtonGroup"
 import dataCsvFile from "./data.csv"
+import intelligenceCsvFile from "./dog_intelligence.csv"
 import Boroughs, { defaultBoroughs } from "./Boroughs"
 import Keypress, {KEYS} from 'components/_ui/Keypress/Keypress'
 
@@ -24,9 +25,11 @@ import Keypress, {KEYS} from 'components/_ui/Keypress/Keypress'
 
 require('./DogNames.scss')
 
-const formatNumber = d3.format(",")
+const formatNumber = d => _.isFinite(d) ? d3.format(",")(d) : "-"
+const formatIntelligence = d => _.isFinite(d) ? d3.format(".2f")(d) : "-"
 const excludedItemsByAspect = {
   breed: ["Mixed/Other"],
+  // breed: [],
   dog_name: ["n/a"],
 }
 const filterableAspects = ["breed", "dog_name"]
@@ -39,6 +42,7 @@ class DogNames extends Component {
       names: [],
       selectedItem: null,
       boroughData: null,
+      intelligence: {},
       totals: {
         name: {},
         breed: {},
@@ -48,6 +52,7 @@ class DogNames extends Component {
   }
 
   componentDidMount() {
+    this.parseIntelligenceData();
     this.parseData();
   }
 
@@ -55,31 +60,63 @@ class DogNames extends Component {
     return classNames("DogNames", this.props.className)
   }
 
-  getOrderedListByAspect = (list, aspect) => (
-    _.orderBy(
-      _.filter(
-        _.toPairs(
-          _.countBy(list, aspect)
-        ),
-      d => !_.includes(excludedItemsByAspect[aspect] || [], d[0])),
-    "1", "desc")
-  )
+  getIntelligenceForBreed = breed => _.get(this.state.intelligence, mappedDogBreeds[breed] || breed)
+  getIntelligenceForBreeds = breeds => {
+    if (!this.state.intelligence) return
+    const numberOfDogs = _.sum(Object.values(breeds))
+    const sumOfAverages = _.map(breeds, (count, breed) => (this.getIntelligenceForBreed(breed) || 0) * count)
+    return _.sum(sumOfAverages) / numberOfDogs
+  }
+
+  getOrderedListByAspect = (list, aspect) => {
+    const count = _.countBy(list, aspect)
+    const filteredCount = _.omit(count, excludedItemsByAspect[aspect] || [])
+    const orderedCounts = _.orderBy(_.toPairs(filteredCount), "1", "desc")
+    const listOfObjects = _.map(orderedCounts, (count, index) => ({
+      index: index + 1,
+      key: count[0],
+      count: count[1],
+    }))
+    return listOfObjects
+  }
 
   parseData = () => {
     const parsedData = d3.csv(dataCsvFile, data => {
-      console.table(data[0])
-      console.log(_.countBy(data, "dog_name"))
       const boroughTotals = _.countBy(data, "borough");
+      console.log(data)
       this.setState({ data, boroughTotals }, () => {
         this.setSelectedItem(null)(null)
       })
     })
   }
 
+  parseIntelligenceData = () => {
+    const parsedData = d3.csv(intelligenceCsvFile, data => {
+      const intelligence = _.fromPairs(
+        _.map(data, d => [
+          d.breed,
+          +d.obey,
+        ])
+      )
+      this.setState({ intelligence })
+    })
+  }
+
   setSelectedItem = aspect => item => {
-    const { data, boroughTotals } = this.state
+    const { data, boroughTotals, selectedItem } = this.state
+    if (item == selectedItem) item = null
     const dogsOfType = item ? _.filter(data, { [aspect]: item }) : data
-    const boroughData = _.countBy(dogsOfType, "borough")
+    const boroughCounts = _.countBy(dogsOfType, "borough")
+    const boroughData = _.fromPairs(_.map(
+      boroughTotals, (total, borough) => [
+        borough,
+        {
+          count: boroughCounts[borough] || 0,
+          percent: (boroughCounts[borough] || 0) * 100 / (total || 1),
+          intelligence: this.getIntelligenceForBreeds(_.countBy(_.filter(dogsOfType, { borough }), "breed")),
+        }
+      ]
+    ))
     const totals = _.fromPairs(_.map(filterableAspects, aspectToTotal => [
       aspectToTotal,
       this.getOrderedListByAspect(aspect == aspectToTotal ? data : dogsOfType, aspectToTotal)
@@ -88,7 +125,7 @@ class DogNames extends Component {
       borough,
       (boroughData[borough] || 0) * 100 / (total || 1),
     ]))
-    this.setState({ selectedItem: item, selectedAspect: aspect, totals, boroughData, boroughPercents })
+    this.setState({ selectedItem: item, selectedAspect: item ? aspect : null, totals, boroughData, boroughPercents })
   }
 
   onBoroughHover = borough => {
@@ -103,85 +140,58 @@ class DogNames extends Component {
   onMouseOutOfSelectedList = () => this.setSelectedItem(null)(null)
 
   render() {
-    const { data, totals, boroughTotals, selectedAspect, selectedItem, boroughData, boroughPercents } = this.state
+    const { data, totals, boroughTotals, selectedAspect, selectedItem, boroughData, boroughPercents, intelligence } = this.state
 
     return (
       <div className={this.getClassName()}>
-        <h2>Dogs of New  York City</h2>
+        <div className="DogNames__title-container">
+          <h2 className="DogNames__title">
+            Dogs of New  York City
+            <span className="DogNames__title-addition">
+              {
+                selectedAspect == "breed"    ? `of the breed ${selectedItem}`                               :
+                selectedAspect == "dog_name" ? `named ${selectedItem}`                                      :
+                selectedAspect == "borough"  ? `in ${selectedItem == "Bronx" ? "the Bronx" : selectedItem}` :
+                ""}
+            </span>
+          </h2>
+          {selectedItem && (
+            <div className="DogNames__clear" onClick={this.onMouseOutOfSelectedList}>x</div>
+          )}
+        </div>
         <div className="DogNames__contents">
           <Boroughs
             className="DogNames__map"
-            title={selectedAspect == "breed" ? `${selectedItem}s` :
-              selectedAspect == "dog_name" ? `Dogs named ${selectedItem}` :
-              selectedAspect == "borough" ? `Dogs in ${selectedItem == "Bronx" ? "the Bronx" : selectedItem}` :
-              "All dogs"}
             data={boroughData}
-            percents={boroughPercents}
             aspect={selectedAspect}
+            isShowingAllDogs={!selectedAspect}
             onHover={this.onBoroughHover}
           />
           <DogNamesSelectableList
             items={totals.breed}
+            extraColumn={intelligence}
             selectedItem={selectedAspect == "breed" ? selectedItem : null}
+            aspect="breed"
             label="breed"
+            allDogs={selectedItem && selectedAspect != "breed" ? _.filter(data, {[selectedAspect]: selectedItem}) : data}
+            intelligence={intelligence}
             onSelect={this.setSelectedItem("breed")}
-            onMouseOut={selectedAspect == "breed" ? this.onMouseOutOfSelectedList : _.noop}
           />
           <DogNamesSelectableList
             items={totals.dog_name}
             selectedItem={selectedAspect == "dog_name" ? selectedItem : null}
+            aspect="dog_name"
             label="name"
+            allDogs={selectedItem && selectedAspect != "dog_name" ? _.filter(data, {[selectedAspect]: selectedItem}) : data}
+            intelligence={intelligence}
             onSelect={this.setSelectedItem("dog_name")}
-            onMouseOut={selectedAspect == "dog_name" ? this.onMouseOutOfSelectedList : _.noop}
           />
-          {/* <div className="DogNames__bars">
-            {_.map(genders, (gender, i) => (
-              <React.Fragment key={i}>
-                <div>
-                  { gender[0] }
-                </div>
-                <div className="DogNames__bar" style={{
-                  width: `${gender[1] * 100 / _.first(genders)[1]}%`,
-                }} />
-              </React.Fragment>
-            ))}
-          </div> */}
+        </div>
 
-
-          {/* {_.map(data, (dog, index) => (
-            <div className="DogNames__item" key={index}>
-              <div className="DogNames__item__name">
-                { _.get(dog, "name") }
-              </div>
-              <div className="DogNames__item__job">
-                { _.get(dog, "Job") }
-              </div>
-              <div className="DogNames__item__job">
-                { _.get(dog, "Gender") }
-              </div>
-              <div className="DogNames__item__description">
-                { _.get(dog, "Description") }
-              </div>
-            </div>
-          ))} */}
-
-
-          {/* _.map(people, (d, key) => (
-            <div className="DogNames__item" key={key}>
-              <div className="DogNames__item__name">
-                <b>{_.get(d, "NAME.last")}</b>, {_.get(d, "NAME.first")}
-              </div>
-              <div className="DogNames__item__dates">
-                <div className="DogNames__item__dates__item">
-                  {_.get(d, 'BIRT.tree.DATE.data')}
-                </div>
-                -
-                <div className="DogNames__item__dates__item">
-                  {_.get(d, 'DEAT.tree.DATE.data')}
-                </div>
-              </div>
-            </div>
-          )) */}
+        <div className="DogNames__footer">
+          <p>
+            Using 2016 dog licensing data from <a href="https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp">NYC Open data</a> and dog intelligence data from <a href="https://en.m.wikipedia.org/wiki/The_Intelligence_of_Dogs">Stanley Coren</a>, parsed and uploaded to <a href="https://data.world/len/intelligence-of-dogs">Data World</a>
+          </p>
         </div>
       </div>
     )
@@ -190,6 +200,67 @@ class DogNames extends Component {
 
 export default DogNames
 
+const mappedDogBreeds = {
+  "American Pit Bull Terrier/Pit Bull"  : "American Staffordshire Terrier",
+  "Labrador Retriever Crossbreed"       : "Labrador Retriever",
+  "Poodle, Standard"                    : "Poodle",
+  "German Shepherd Crossbreed"          : "German Shepherd",
+  "German Shepherd Dog"                 : "German Shepherd",
+  "Schnauzer, Miniature"                : "Miniature Schnauzer",
+  "Bull Dog, French"                    : "French Bulldog",
+  "Poodle, Toy"                         : "Poodle",
+  "American Pit Bull Mix / Pit Bull Mix": "American Staffordshire Terrier",
+  "Poodle, Miniature"                   : "Poodle",
+  "Bull Dog, English"                   : "Bulldog",
+  "Dachshund Smooth Coat"               : "Dachshund",
+  "Puggle"                              : "Pug",
+  "West High White Terrier"             : "West Highland White Terrier",
+  "Beagle Crossbreed"                   : "Beagle",
+  "Labradoodle"                         : "Labrador Retriever",
+  "Wheaton Terrier"                     : "Soft-coated Wheaten Terrier",
+  "Silky Terrier"                       : "Australian Silky Terrier",
+  "Dachshund Smooth Coat Miniature"     : "Dachshund",
+  "Collie, Border"                      : "Border Collie",
+  "American Eskimo dog"                 : null,
+  "Brussels Griffon"                    : "Griffon Bruxellois",
+  "Bassett Hound"                       : "Basset Hound",
+  "Schnauzer, Standard"                 : "Standard Schnauzer",
+  "Collie Crossbreed"                   : "Collie",
+  "Welsh Corgi, Pembroke"               : "Pembroke Welsh Corgi",
+  "Cane Corso"                          : null,
+  "Cotton De Tulear"                    : null,
+  "Dachshund, Long Haired Miniature"    : "Dachshund",
+  "Shar-Pei, Chinese"                   : "Chinese Shar Pei",
+  "Dachshund, Long Haired"              : "Dachshund",
+  "Australian Cattledog"                : "Australian Cattle Dog",
+  "Mastiff, Bull"                       : "Bullmastiff",
+  "Japanese Chin/Spaniel"               : "Japanese Chin",
+  "Pointer, German Shorthaired"         : "German Shorthaired Pointer",
+  "Brittany Spaniel"                    : "Brittany",
+  "Schipperkee"                         : "Schipperke",
+  "Akita Crossbreed"                    : "Akita",
+  "Jindo Dog, Korea"                    : null,
+  "Welsh Corgi, Cardigan"               : "Cardigan Welsh Corgi",
+  "Dachshund, Wirehaired"               : "Dachshund",
+  "Coonhound, Black and Tan"            : "Black and Tan Coonhound",
+  "Dachshund, Wirehaired, Miniature"    : "Dachshund",
+  "Collie, Bearded"                     : "Bearded Collie",
+  "Mastiff, Old English"                : "Mastiff",
+  "Collie, Rough Coat"                  : "Collie",
+  "Mastiff, French (Dogue de Bordeaux)" : "Mastiff",                     //
+  "Schnauzer, Giant"                    : "Giant Schnauzer",
+  "Collie, Smooth Coat"                 : "Collie",
+  "Coonhound, Treeing Walker"           : "Black and Tan Coonhound",
+  "Mastiff, Neapolitan"                 : "Mastiff",                     //
+  "Coonhound, Blue Tick"                : "Black and Tan Coonhound",
+  "Belgian Griffon"                     : "Wirehaired Pointing Griffon", //
+  "Pointer, German Wirehaired"          : "German Wirehaired Pointer",
+  "Pharoh hound"                        : "Pharaoh Hound",
+  "Australian Kelpie"                   : null,
+  "Mastiff, Tibetan"                    : "Mastiff",                     //
+  "Fila Brasileiro"                     : null,
+  "Russian Wolfhound"                   : "Irish Wolfhound",
+}
 class DogNamesSelectableList extends Component {
   constructor(props) {
     super(props)
@@ -207,17 +278,28 @@ class DogNamesSelectableList extends Component {
   }
 
   parseItems = () => {
-    const { items } = this.props
+    const { items, aspect, allDogs } = this.props
     const { searchValue } = this.state
 
-    let parsedItems = _.map(items, (item, index) => [
-      ...item,
-      index + 1,
-    ])
-    if (!_.isEmpty(searchValue)) parsedItems = _.filter(parsedItems, d => d[0].toLowerCase().includes(searchValue))
+    let parsedItems = items
+    if (!_.isEmpty(searchValue)) parsedItems = _.filter(parsedItems, d => d.key.toLowerCase().includes(searchValue))
     parsedItems = _.take(parsedItems, 100)
+    parsedItems = _.map(parsedItems, (item, index) => ({
+      ...item,
+      intelligence: aspect == "breed" ?
+        this.getIntelligenceForBreed(item.key) :
+        index < 20 ? this.getIntelligenceForBreeds(_.countBy(_.filter(allDogs, {[aspect]: item.key}), "breed")) : null,
+    }))
 
     this.setState({ parsedItems })
+  }
+
+  getIntelligenceForBreed = breed => _.get(this.props.intelligence, mappedDogBreeds[breed] || breed)
+  getIntelligenceForBreeds = breeds => {
+    if (!this.props.intelligence) return
+    const numberOfDogs = _.sum(Object.values(breeds))
+    const sumOfAverages = _.map(breeds, (count, breed) => (this.getIntelligenceForBreed(breed) || 0) * count)
+    return _.sum(sumOfAverages) / numberOfDogs
   }
 
   onSelectLocal = item => () => this.props.onSelect(item)
@@ -229,10 +311,9 @@ class DogNamesSelectableList extends Component {
 
   onChangeSelectedItem = delta => {
     const { parsedItems, selectedItem } = this.props
-    const currentItemIndex = _.findIndex(parsedItems, d => d[0] == selectedItem)
+    const currentItemIndex = _.findIndex(parsedItems, d => d.key == selectedItem)
     if (currentItemIndex == -1) return
     const nextItemIndex = _.max([0, currentItemIndex + delta % parsedItems.length])
-    console.log(delta, selectedItem, currentItemIndex, nextItemIndex)
     this.props.onSelect(parsedItems[nextItemIndex])
   }
 
@@ -242,27 +323,41 @@ class DogNamesSelectableList extends Component {
   };
 
   render() {
-    const { items, selectedItem, label, onSelect, ...props } = this.props
+    const { items, selectedItem, label, extraColumn, onSelect, ...props } = this.props
     const { searchValue, parsedItems } = this.state
 
     return (
       <div className="DogNamesSelectableList" {...props}>
-        {selectedItem && <Keypress keys={this.keypresses} />}
+        {/* {selectedItem && <Keypress keys={this.keypresses} />} */}
         <input className="DogNamesSelectableList__input" value={searchValue} placeholder={`Search for a ${label}`} onChange={this.onInputChange} />
+        <div className="DogNamesSelectableList__column-headers">
+          <div className="DogNamesSelectableList__column-header">
+            Count
+          </div>
+          <div className="DogNamesSelectableList__column-header">
+            Intelligence
+          </div>
+        </div>
         <div className="DogNamesSelectableList__items">
           {_.map(parsedItems, (item, i) => (
-            <div className={`DogNamesSelectableList__item DogNamesSelectableList__item--is-${item[0] == selectedItem ? "selected" : "not-selected"}`} key={i} onMouseOver={this.onSelectLocal(item[0])}>
+            <div
+              className={`DogNamesSelectableList__item DogNamesSelectableList__item--is-${item.key == selectedItem ? "selected" : "not-selected"}`}
+              key={i}
+              onMouseDown={this.onSelectLocal(item.key)}>
               <div className="DogNamesSelectableList__item__index">
-                { item[2] }
+                { item.index }
               </div>
               <div className="DogNamesSelectableList__item__label">
-                { item[0] }
+                { item.key }
               </div>
               <div className="DogNamesSelectableList__item__value">
-                { formatNumber(item[1]) }
+                { formatNumber(item.count) }
+              </div>
+              <div className="DogNamesSelectableList__item__annotation">
+                {_.times(_.round((item.intelligence || 0) * 10), d => "|")}
               </div>
               <div className="DogNamesSelectableList__item__bar" style={{
-                width: `${item[1] * 100 / parsedItems[0][1]}%`,
+                width: `${item.count * 100 / parsedItems[0].count}%`,
               }} />
             </div>
           ))}

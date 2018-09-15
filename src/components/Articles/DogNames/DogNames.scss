@@ -3,6 +3,45 @@
 .DogNames {
     padding: 3em;
 
+    &__title {
+        // display: inline-block;
+        position: relative;
+        color: $accent-4;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &-addition {
+            color: $accent-2;
+            padding-left: 0.2em;
+            border-bottom: 1px solid rgba($accent-2, 0.5);
+        }
+
+        &-container {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+        }
+    }
+
+    &__clear {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.6em;
+        width: 1.8em;
+        margin-top: -1.2em;
+        font-family: $font-family-sans-serif;
+        font-size: 1.2em;
+        line-height: 1em;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            background: $gray;
+        }
+    }
+
     &__contents {
         display: flex;
     }
@@ -10,7 +49,14 @@
     &__map {
         flex: 0 0 500px;
         min-width: 500px;
-        margin-right: 1em;
+        margin-right: 1.6em;
+
+        @media (max-width: 1500px) {
+            flex: 0 0 460px;
+            min-width: 460px;
+            transform: scale(0.9);
+            transform-origin: left top;
+        }
     }
 
     &__item {
@@ -25,8 +71,13 @@
     }
 
     &SelectableList {
+        position: relative;
         flex: 1;
         font-size: 0.9em;
+
+        @media (max-width: 1500px) {
+            font-size: 0.8em;
+        }
 
         &__input {
             width: 100%;
@@ -48,6 +99,19 @@
             }
         }
 
+        &__column-headers {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            // background: $bgc;
+            right: 0;
+            top: 0.2em;
+        }
+        &__column-header {
+            width: 5.9em;
+            font-size: 0.7em;
+        }
+
         &__items {
             max-height: calc(500px - 2em);
             overflow: auto;
@@ -64,6 +128,11 @@
             border: 1px solid transparent;
             max-width: 100%;
             overflow: hidden;
+            cursor: pointer;
+
+            &:hover {
+                background: $gray;
+            }
 
             &--is {
                 &-selected {
@@ -90,6 +159,7 @@
             }
 
             &__label {
+                flex: 1;
                 height: 1.3em;
                 line-height: 1.3em;
                 z-index: 2;
@@ -99,7 +169,17 @@
             }
 
             &__value {
+                flex: 0 0 4em;
                 margin-left: auto;
+                text-align: right;
+            }
+
+            &__annotation {
+                flex: 0 0 4rem;
+                margin-left: auto;
+                text-align: right;
+                font-size: 0.9em;
+                letter-spacing: -0.26em;
             }
         }
 
@@ -113,14 +193,53 @@
         }
     }
 
-    &__bars {
-        // display: flex;
-        // flex-direction: column;
-        width: 100%;
+    &__footer {
+        padding-top: 6em;
+        font-size: 0.7em;
+        opacity: 0.5;
     }
 
-    &__bar {
-        height: 1em;
-        background: $accent-2;
+    @media (max-width: 950px) {
+        .DogNames {
+            &__title {
+                white-space: normal;
+            }
+
+            &__map {
+                height: 390px;
+                flex: none;
+                margin-right: -50px;
+            }
+
+            &__contents {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &SelectableList {
+                flex: none;
+                width: 100%;
+                margin-top: 1em;
+
+                &__items {
+                    max-height: 20em;
+                }
+            }
+        }
+    }
+    @media (max-width: 950px) {
+        padding: 2em;
+
+        .DogNames {
+            &__map {
+                height: 360px;
+                margin-right: -190px;
+                transform: scale(0.7);
+            }
+        }
+    }
+    @media (max-width: 360px) {
+        padding: 1em;
     }
 }

@@ -9,8 +9,8 @@
         font-size: 2.2em;
         font-weight: 900;
         line-height: 1.3em;
-        top: 50px;
-        left: 10px;
+        top: 10px;
+        left: 0;
         max-width: 220px;
     }
 
@@ -24,30 +24,31 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 4em;
         position: absolute;
         text-align: center;
         white-space: nowrap;
 
         &--borough {
             &-Manhattan {
-                top: 120px;
-                left: 220px;
+                top: 130px;
+                left: 170px;
             }
             &-Bronx {
                 top: 61px;
-                left: 365px;
+                left: 319px;
             }
             &-Queens {
-                top: 231px;
-                left: 400px;
+                top: 228px;
+                left: 358px;
             }
             &-Brooklyn {
                 top: 320px;
-                left: 279px;
+                left: 249px;
             }
             &-Staten {
                 top: 400px;
-                left: 89px;
+                left: 66px;
             }
         }
 
@@ -81,7 +82,15 @@
         }
     }
 
+    &__svg {
+        overflow: visible;
+    }
+
     &__item {
         transition: fill 0.3s ease-out;
+        stroke: #fff;
+        stroke-width: 1px;
+        stroke-linejoin: round;
+        cursor: pointer;
     }
 }
