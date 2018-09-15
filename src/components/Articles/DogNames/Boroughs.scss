@@ -1,0 +1,87 @@
+@import "~styles/variables";
+
+.Borough {
+    position: relative;
+
+    &__title {
+        font-family: $font-family-serif;
+        position: absolute;
+        font-size: 2.2em;
+        font-weight: 900;
+        line-height: 1.3em;
+        top: 50px;
+        left: 10px;
+        max-width: 220px;
+    }
+
+    &__text-labels {
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &__text-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        white-space: nowrap;
+
+        &--borough {
+            &-Manhattan {
+                top: 120px;
+                left: 220px;
+            }
+            &-Bronx {
+                top: 61px;
+                left: 365px;
+            }
+            &-Queens {
+                top: 231px;
+                left: 400px;
+            }
+            &-Brooklyn {
+                top: 320px;
+                left: 279px;
+            }
+            &-Staten {
+                top: 400px;
+                left: 89px;
+            }
+        }
+
+        &__title {
+            font-size: 0.6em;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 1.2em;
+        }
+
+        &__value {
+            position: relative;
+            font-size: 1.5em;
+            line-height: 1.3em;
+            font-weight: 300;
+
+            &__sign {
+                position: absolute;
+                top: -0.2em;
+                right: -1em;
+                font-size: 0.5em;
+                opacity: 0.5;
+            }
+        }
+
+        &__total {
+            font-size: 0.5em;
+            line-height: 1em;
+            opacity: 0.5;
+        }
+    }
+
+    &__item {
+        transition: fill 0.3s ease-out;
+    }
+}

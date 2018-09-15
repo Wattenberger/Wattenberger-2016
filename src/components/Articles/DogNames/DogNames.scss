@@ -1,0 +1,126 @@
+@import "~styles/variables";
+
+.DogNames {
+    padding: 3em;
+
+    &__contents {
+        display: flex;
+    }
+
+    &__map {
+        flex: 0 0 500px;
+        min-width: 500px;
+        margin-right: 1em;
+    }
+
+    &__item {
+        margin: 2em;
+        font-size: 0.8em;
+        line-height: 1.3em;
+
+        &__name {
+            // font-size: 1.2em;
+            font-weight: 900;
+        }
+    }
+
+    &SelectableList {
+        flex: 1;
+        font-size: 0.9em;
+
+        &__input {
+            width: 100%;
+            padding: 0.3em 0.4em;
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 0.2em;
+            border-radius: 2px;
+            font-size: 1.1em;
+            appearance: none;
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $gray;
+
+            &::placeholder {
+                font-size: 0.9em;
+                opacity: 0.5;
+                font-style: italic;
+            }
+        }
+
+        &__items {
+            max-height: calc(500px - 2em);
+            overflow: auto;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: 0.3em 0.6em;
+            transition: all 0.3s ease-out;
+            font-size: 0.8em;
+            border: 1px solid transparent;
+            max-width: 100%;
+            overflow: hidden;
+
+            &--is {
+                &-selected {
+                    background: $gray;
+                    border-color: $accent-4;
+                    font-weight: 900;
+                }
+            }
+
+            &__bar {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -0.2em;
+                background: $accent-2;
+                opacity: 0.3;
+                z-index: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &__index {
+                flex: 0 0 2em;
+                opacity: 0.3;
+            }
+
+            &__label {
+                height: 1.3em;
+                line-height: 1.3em;
+                z-index: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &__value {
+                margin-left: auto;
+            }
+        }
+
+        &__note {
+            font-size: 0.7em;
+            background: $gray;
+            padding: 0.8em 0.8em;
+            font-style: italic;
+            color: darken($gray, 30%);
+            line-height: 1em;
+        }
+    }
+
+    &__bars {
+        // display: flex;
+        // flex-direction: column;
+        width: 100%;
+    }
+
+    &__bar {
+        height: 1em;
+        background: $accent-2;
+    }
+}

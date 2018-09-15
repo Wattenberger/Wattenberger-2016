@@ -6,8 +6,11 @@ import Footer from "components/Footer/Footer"
 
 import Home from "components/Home/Home"
 import Sketches from "components/Sketches/Sketches"
-import RochesterRealEstate from "components/Articles/RochesterRealEstate/RochesterRealEstate"
-import Headlines from "components/Articles/Headlines/Headlines"
+// import RochesterRealEstate from "components/Articles/RochesterRealEstate/RochesterRealEstate"
+// import Headlines from "components/Articles/Headlines/Headlines"
+// import FamilyTree from "components/Articles/FamilyTree/FamilyTree"
+// import JournalistDeaths from 'components/Articles/JournalistDeaths/JournalistDeaths';
+import DogNames from 'components/Articles/DogNames/DogNames';
 
 require('styles/app.scss')
 require('./App.scss')
@@ -23,8 +26,10 @@ class App extends Component {
       <div className={this.getClassName()}>
         <Route exact path="/" component={Home} />
         <Route path="/sketches" component={Sketches} />
-        <Route path="/rochester-real-estate" component={RochesterRealEstate} />
-        <Route path="/headlines" component={Headlines} />
+        {/* <Route path="/rochester-real-estate" component={RochesterRealEstate} /> */}
+        {/* <Route path="/headlines" component={Headlines} /> */}
+        <Route path="/dog-names" component={DogNames} />
+        {/* <Route path="/family-tree" component={FamilyTree} /> */}
         {this.props.children}
         <Footer />
       </div>
