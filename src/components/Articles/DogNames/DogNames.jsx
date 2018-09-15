@@ -62,7 +62,7 @@ class DogNames extends Component {
   }
   getUrlArgs = () => {
     const args = window.location.search.slice(1).split("&")
-    return _.fromPairs(args.map(str => str.split("=").map(decodeURIComponent)))
+    return _.fromPairs(args.map(str => str.split("=").map(window.decodeURIComponent)))
   }
   parseUrlArgs = () => {
     const urlArgs = this.getUrlArgs()
