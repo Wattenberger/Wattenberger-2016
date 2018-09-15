@@ -9,7 +9,7 @@ import {scaleLinear, format} from "d3"
 import ButtonGroup from "components/_ui/Button/ButtonGroup/ButtonGroup"
 import dataCsvFile from "./data.csv"
 import intelligenceCsvFile from "./dog_intelligence.csv"
-import Boroughs, { defaultBoroughs } from "./Boroughs"
+import Boroughs from "./Boroughs"
 import Keypress, {KEYS} from 'components/_ui/Keypress/Keypress'
 
 // const parsedData = _.map(data, (info, name) => _.extend({}, info, {
@@ -61,7 +61,7 @@ class DogNames extends Component {
 
   parseUrlArgs = () => {
     const urlArgs = getUrlArgs()
-    const appropriateArg = _.intersection([...filterableAspects, "borough"], Object.keys(urlArgs))
+    const appropriateArg = _.intersection([...filterableAspects, "borough"], Object.keys(urlArgs))[0]
     const aspect = appropriateArg || null
     const item = appropriateArg ? urlArgs[appropriateArg] : null
     this.setSelectedItem(aspect)(item)
