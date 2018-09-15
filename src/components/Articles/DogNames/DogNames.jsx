@@ -52,12 +52,19 @@ class DogNames extends Component {
   }
 
   componentDidMount() {
-    this.parseIntelligenceData();
     this.parseData();
   }
 
   getClassName() {
     return classNames("DogNames", this.props.className)
+  }
+
+  parseUrlArgs = () => {
+    const urlArgs = getUrlArgs()
+    const appropriateArg = _.intersection([...filterableAspects, "borough"], Object.keys(urlArgs))
+    const aspect = appropriateArg || null
+    const item = appropriateArg ? urlArgs[appropriateArg] : null
+    this.setSelectedItem(aspect)(item)
   }
 
   getIntelligenceForBreed = breed => _.get(this.state.intelligence, mappedDogBreeds[breed] || breed)
@@ -83,10 +90,8 @@ class DogNames extends Component {
   parseData = () => {
     const parsedData = d3.csv(dataCsvFile, data => {
       const boroughTotals = _.countBy(data, "borough");
-      console.log(data)
-      this.setState({ data, boroughTotals }, () => {
-        this.setSelectedItem(null)(null)
-      })
+      // console.log(data)
+      this.setState({ data, boroughTotals }, this.parseUrlArgs)
     })
   }
 
@@ -125,6 +130,7 @@ class DogNames extends Component {
       borough,
       (boroughData[borough] || 0) * 100 / (total || 1),
     ]))
+    window.history.pushState( {} , '', item ? `?${aspect}=${item}` : "?" );
     this.setState({ selectedItem: item, selectedAspect: item ? aspect : null, totals, boroughData, boroughPercents })
   }
 
@@ -323,7 +329,7 @@ class DogNamesSelectableList extends Component {
   };
 
   render() {
-    const { items, selectedItem, label, extraColumn, onSelect, ...props } = this.props
+    const { items, selectedItem, label, extraColumn, allDogs, onSelect, ...props } = this.props
     const { searchValue, parsedItems } = this.state
 
     return (
@@ -370,4 +376,9 @@ class DogNamesSelectableList extends Component {
       </div>
     )
   }
+}
+
+const getUrlArgs = () => {
+  const args = window.location.search.slice(1).split("&")
+  return _.fromPairs(args.map(str => str.split("=").map(decodeURIComponent)))
 }

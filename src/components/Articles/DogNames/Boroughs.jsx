@@ -54,27 +54,27 @@ class Boroughs extends Component {
 								isShowingAllDogs ? (
 									<React.Fragment>
 										<div className="Borough__text-label__value">
-											{ formatNumber(data[borough].count) }
+											{ formatNumber((data[borough] || {}).count) }
 										</div>
 										<div className="Borough__text-label__total">
-											{ `${formatIntelligence(data[borough].intelligence || 0)}` }
+											{ `${formatIntelligence((data[borough] || {}).intelligence || 0)}` }
 										</div>
 									</React.Fragment>
 								) : (
 								<React.Fragment>
 									<div className="Borough__text-label__value">
 										<span>
-											{ formatPercent(data[borough].percent) }
+											{ formatPercent((data[borough] || {}).percent) }
 											<div className="Borough__text-label__value__sign">
 												%
 											</div>
 										</span>
 									</div>
 									<div className="Borough__text-label__total">
-										{ `${formatNumber(data[borough].count || 0)} dogs` }
+										{ `${formatNumber((data[borough] || {}).count || 0)} dogs` }
 									</div>
 									<div className="Borough__text-label__total">
-										{ `${formatIntelligence(data[borough].intelligence || 0)}` }
+										{ `${formatIntelligence((data[borough] || {}).intelligence || 0)}` }
 									</div>
 								</React.Fragment>
 								)
@@ -88,7 +88,7 @@ class Boroughs extends Component {
 							className="Borough__item"
 							title={borough}
 							d={paths[borough]}
-							fill={data && !isShowingAllDogs ? colorScale(data[borough].percent || 0) : "#e0e9ee"}
+							fill={data && !isShowingAllDogs ? colorScale((data[borough] || {}).percent || 0) : "#e0e9ee"}
 							onClick={this.onMouseOver(borough)}
 						/>
 					))}

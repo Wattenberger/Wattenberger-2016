@@ -28,7 +28,7 @@ class App extends Component {
         <Route path="/sketches" component={Sketches} />
         {/* <Route path="/rochester-real-estate" component={RochesterRealEstate} /> */}
         {/* <Route path="/headlines" component={Headlines} /> */}
-        <Route path="/dog-names" component={DogNames} />
+        <Route path="/dogs" component={DogNames} />
         {/* <Route path="/family-tree" component={FamilyTree} /> */}
         {this.props.children}
         <Footer />
