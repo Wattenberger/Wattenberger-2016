@@ -312,7 +312,7 @@ class DogNamesSelectableList extends Component {
       ...item,
       intelligence: aspect == "breed" ?
         this.getIntelligenceForBreed(item.key) :
-        index < 20 ? this.getIntelligenceForBreeds(_.countBy(_.filter(allDogs, {[aspect]: item.key}), "breed")) : null,
+        index < 40 ? this.getIntelligenceForBreeds(_.countBy(_.filter(allDogs, {[aspect]: item.key}), "breed")) : null,
     }))
 
     this.setState({ parsedItems })
