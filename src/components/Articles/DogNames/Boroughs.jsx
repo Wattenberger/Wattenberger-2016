@@ -55,7 +55,7 @@ class Boroughs extends Component {
 							<div className="Borough__text-label__title">
 								{ borough == "Bronx" ? "The Bronx" : borough }
 							</div>
-							{!!data && !!data[borough] && (
+							{!!data && !!data[borough] && !!(data[borough] || {}).count && (
 								isShowingAllDogs ? (
 									<React.Fragment>
 										<div className="Borough__text-label__value">
