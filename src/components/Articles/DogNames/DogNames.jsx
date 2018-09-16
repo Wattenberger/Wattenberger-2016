@@ -51,6 +51,11 @@ class DogNames extends Component {
     this.parseIntelligenceData();
     document.title = "NYC Dogs - Wattenberger"
   }
+  allBreeds = []
+
+  parseBreeds = () => {
+    this.allBreeds = [...Object.keys(mappedDogBreeds), ...Object.keys(this.state.intelligence || {})]
+  }
 
   getClassName() {
     return classNames("DogNames", this.props.className)
@@ -70,7 +75,7 @@ class DogNames extends Component {
   getIntelligenceForBreed = breed => _.get(this.state.intelligence, mappedDogBreeds[breed] || breed)
   getIntelligenceForBreeds = breeds => {
     if (!this.state.intelligence) return
-    const numberOfDogs = _.sum(Object.values(breeds))
+    const numberOfDogs = _.sum(Object.values(_.pick(breeds, this.allBreeds)))
     const sumOfAverages = _.map(breeds, (count, breed) => (this.getIntelligenceForBreed(breed) || 0) * count)
     return _.sum(sumOfAverages) / numberOfDogs
   }
@@ -103,7 +108,7 @@ class DogNames extends Component {
           +d.obey,
         ])
       )
-      this.setState({ intelligence })
+      this.setState({ intelligence }, this.parseBreeds)
     })
   }
 
@@ -287,6 +292,12 @@ class DogNamesSelectableList extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.items != this.props.items) this.parseItems()
+    if (prevProps.intelligence != this.props.intelligence) this.parseBreeds()
+  }
+  allBreeds = []
+
+  parseBreeds = () => {
+    this.allBreeds = [...Object.keys(mappedDogBreeds), ...Object.keys(this.props.intelligence)]
   }
 
   parseItems = () => {
@@ -310,7 +321,7 @@ class DogNamesSelectableList extends Component {
   getIntelligenceForBreed = breed => _.get(this.props.intelligence, mappedDogBreeds[breed] || breed)
   getIntelligenceForBreeds = breeds => {
     if (!this.props.intelligence) return
-    const numberOfDogs = _.sum(Object.values(breeds))
+    const numberOfDogs = _.sum(Object.values(_.pick(breeds, this.allBreeds)))
     const sumOfAverages = _.map(breeds, (count, breed) => (this.getIntelligenceForBreed(breed) || 0) * count)
     return _.sum(sumOfAverages) / numberOfDogs
   }
