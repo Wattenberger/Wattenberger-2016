@@ -11,6 +11,7 @@ import Sketches from "components/Sketches/Sketches"
 // import FamilyTree from "components/Articles/FamilyTree/FamilyTree"
 // import JournalistDeaths from 'components/Articles/JournalistDeaths/JournalistDeaths';
 import DogNames from 'components/Articles/DogNames/DogNames';
+import News from 'components/News/News';
 
 require('styles/app.scss')
 require('./App.scss')
@@ -30,6 +31,7 @@ class App extends Component {
         {/* <Route path="/headlines" component={Headlines} /> */}
         <Route path="/dogs" component={DogNames} />
         {/* <Route path="/family-tree" component={FamilyTree} /> */}
+        <Route path="/news" component={News} />
         {this.props.children}
         <Footer />
       </div>

@@ -1,0 +1,62 @@
+@import "~styles/variables";
+
+.News {
+  padding: 3em 2em;
+
+  &__articles {
+  }
+  &__article {
+    display: block;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    padding: 0.6em 1em 1em;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background: #fff;
+    }
+
+    &:visited {
+      .News__article__title {
+        color: $accent-2;
+      }
+    }
+
+    &__title {
+      font-weight: 800;
+      padding-bottom: 0.4em;
+      color: $accent-4;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      &__label {
+        flex: 1;
+      }
+    }
+
+    &__date {
+      flex: 0 0 4em;
+      width: 4em;
+      text-align: right;
+      font-size: 0.8em;
+      line-height: 1.3em;
+      color: $tc;
+      opacity: 0.6;
+      white-space: nowrap;
+    }
+
+    &__site {
+      font-size: 0.8em;
+      font-weight: 800;
+      // padding: 0 0 0.4em 0;
+    }
+
+    &__snippet {
+      font-size: 0.8em;
+      line-height: 1.3em;
+      color: $tc;
+      opacity: 0.6;
+    }
+  }
+}
