@@ -3,8 +3,16 @@
 .News {
   padding: 3em 2em;
 
-  &__articles {
+  &__toggle {
+    margin-left: 1.3em;
+    margin-bottom: 1em;
+    font-size: 0.6em;
   }
+
+  &__articles {
+    // margin-top: 2em;
+  }
+
   &__article {
     display: block;
     font-size: 0.8em;

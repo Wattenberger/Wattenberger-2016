@@ -18,5 +18,9 @@
   .Button--active {
     background: $accent-4;
     color: $bgc;
+
+    &:hover {
+      background: darken($accent-4, 10%);
+    }
   }
 }

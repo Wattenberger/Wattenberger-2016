@@ -4,6 +4,7 @@ import classNames from "classnames"
 import rssParser from "rss-parser";
 import _ from "lodash";
 import * as d3 from "d3";
+import ButtonGroup from 'components/_ui/Button/ButtonGroup/ButtonGroup';
 const parser = new rssParser({
   headers: {
     // "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
@@ -17,28 +18,36 @@ const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
 require('styles/app.scss')
 require('./News.scss')
 const sites = [
+  {label: "The Atlantic", url: "https://www.theatlantic.com/feed/all/"},
   {label: "ABC", url: "http://feeds.abcnews.com/abcnews/topstories"},
   {label: "CBS", url: "https://www.cbsnews.com/latest/rss/main"},
   {label: "NBC", url: "https://www.nbcnewyork.com/news/top-stories/?rss=y"},
-  {label: "Reuters", url: "http://feeds.reuters.com/reuters/topNews/"},
+  {label: "BBC", url: "http://feeds.bbci.co.uk/news/rss.xml"},
+  // {label: "Reuters", url: "http://feeds.reuters.com/reuters/topNews/"},
 ]
 
 const today = new Date()
 const formatDate = date => {
   const daysAgo = Math.round((today - date) / (1000 * 60 * 60 * 24));
   const hoursAgo = Math.round((today - date) / (1000 * 60 * 60));
-  return hoursAgo <  1 ? "" :
-         hoursAgo <  24 ? `-${hoursAgo}h` :
-         daysAgo <  1 ? `-${hoursAgo}h` :
+  return hoursAgo <  1   ? ""                   :
+         hoursAgo <  24  ? `${hoursAgo}h`       :
+         daysAgo <  1    ? `${hoursAgo}h`       :
         //  daysAgo <  2 ? `${daysAgo} day ago` :
-         daysAgo < 30 ? `-${daysAgo}d` :
-         d3.timeFormat("%-m/%-d/%Y")(date)
+         daysAgo < 30    ? `${daysAgo}d`        :
+                           d3.timeFormat("%-m/%-d/%Y")(date)
 }
+const defaultSiteOptions = _.map(sites, site => ({
+  label: site.label,
+  active: true,
+}))
 class News extends Component {
   constructor(props) {
     super(props)
     this.state = {
       articles: [],
+      siteOptions: defaultSiteOptions,
+      activeSites: _.map(_.filter(defaultSiteOptions, "active"), "label"),
     }
     this.getNews = this.getNews.bind(this)
   }
@@ -80,12 +89,33 @@ class News extends Component {
     }
   }
 
+  onSiteChange = toggledSite => {
+    const isSelectingOne = this.state.activeSites.length == sites.length;
+    console.log(this.state.activeSites, toggledSite)
+    const isSelectingAll = this.state.activeSites.length == 1 && _.includes(this.state.activeSites, toggledSite.label);
+    const siteOptions = _.map(this.state.siteOptions, site => ({
+      ...site,
+      active: isSelectingAll ? true :
+        isSelectingOne ?
+          site.label == toggledSite.label ? true : false :
+          site.label == toggledSite.label ? !site.active : site.active,
+    }))
+    const activeSites = _.map(_.filter(siteOptions, "active"), "label")
+    this.setState({ siteOptions, activeSites })
+  }
+
   render() {
-    const { articles } = this.state
+    const { articles, siteOptions, activeSites } = this.state
+
     return (
       <div className={this.getClassName()}>
+        <ButtonGroup
+          className="News__toggle"
+          buttons={siteOptions}
+          onChange={this.onSiteChange}
+        />
         <div className="News__articles">
-          {articles.map(article => (
+          {articles.map(article => _.includes(activeSites, article.site) && (
             <a className="News__article" href={article.link} target="_blank" key={article.guid}>
               <div className="News__article__title">
                 <div className="News__article__title__label">
