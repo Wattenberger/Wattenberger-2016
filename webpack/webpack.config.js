@@ -27,7 +27,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {test: /\js(x)?$/, exclude: /node_modules/, loader: "babel-loader", query: {presets: ["react"]} },
+      {test: /\js(x)?$/, loader: "babel-loader", query: {presets: ["react"]} },
       {test: /\.css$/,   use: ["style-loader", "css-loader", "postcss-loader"] },
       {test: /\.scss$/,  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader?include_paths[]=" + srcPath] },
       {
