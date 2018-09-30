@@ -5,6 +5,7 @@ import rssParser from "rss-parser";
 import _ from "lodash";
 import * as d3 from "d3";
 import ButtonGroup from 'components/_ui/Button/ButtonGroup/ButtonGroup';
+import { getFromStorage, setInStorage } from 'utils/utils';
 const parser = new rssParser({
   headers: {
     // "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
@@ -23,6 +24,7 @@ const sites = [
   {label: "CBS", url: "https://www.cbsnews.com/latest/rss/main"},
   {label: "NBC", url: "https://www.nbcnewyork.com/news/top-stories/?rss=y"},
   {label: "BBC", url: "http://feeds.bbci.co.uk/news/rss.xml"},
+  // {label: "NPR", url: "https://www.npr.org/sections/news/"},
   // {label: "Reuters", url: "http://feeds.reuters.com/reuters/topNews/"},
 ]
 
@@ -41,42 +43,71 @@ const defaultSiteOptions = _.map(sites, site => ({
   label: site.label,
   active: true,
 }))
+const defaultActiveSites = _.map(_.filter(defaultSiteOptions, "active"), "label")
+const localStorageActiveSitesKey = "news--active-sites"
+const localStorageLastLoadKey = "news--last-load"
+const storageTimeFormat = "%H:%M %m/%d/%Y"
+const parseTime = d3.timeParse(storageTimeFormat)
+const formatTime = d3.timeFormat(storageTimeFormat)
+const fetchInterval = 1000 * 60 * 5
 class News extends Component {
   constructor(props) {
     super(props)
     this.state = {
       articles: [],
       siteOptions: defaultSiteOptions,
-      activeSites: _.map(_.filter(defaultSiteOptions, "active"), "label"),
+      activeSites: defaultActiveSites,
     }
     this.getNews = this.getNews.bind(this)
   }
+  isFirstLoad = true
 
   componentDidMount() {
+    this.setDefaults();
     this.getNews();
+  }
+
+  componentWillUnmount() {
+    if (this.timeout) clearTimeout(this.timeout)
   }
 
   getClassName() {
     return classNames("News")
   }
 
+  setDefaults = () => {
+    const activeSites = getFromStorage(localStorageActiveSitesKey) || defaultActiveSites
+    const siteOptions = _.map(sites, site => ({
+      label: site.label,
+      active: _.includes(activeSites, site.label),
+    }))
+    this.setState({ activeSites, siteOptions })
+  }
+
   getNews = () => {
     Promise.all(sites.map(site => this.getFeed(site.url))).then(feeds => {
-
+      const lastLoad = getFromStorage(localStorageLastLoadKey)
+      const parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
       const articles = _.orderBy(
         _.filter(
           _.flatMap(feeds, (feed, index) => _.map(feed.items || [], item => ({
             ...item,
             site: sites[index].label,
             pubDate: new Date(item.pubDate),
+            hasBeenViewed: parsedLastLoad ? new Date(item.pubDate) < parsedLastLoad : false,
           }))),
           article => !!article && !_.startsWith(article.title, "WATCH: ")
         ),
         "pubDate",
         "desc"
       )
-      console.log(feeds, articles)
       this.setState({ articles })
+      if (!this.isFirstLoad) {
+        const currentTime = formatTime(new Date())
+        setInStorage(localStorageLastLoadKey, currentTime)
+      }
+      this.isFirstLoad = false;
+      this.timeout = setTimeout(this.getNews, fetchInterval)
     })
   }
 
@@ -84,14 +115,12 @@ class News extends Component {
     try {
       return await parser.parseURL(`${CORS_PROXY}${site}`)
     } catch(e) {
-      console.log(e, site)
       return []
     }
   }
 
   onSiteChange = toggledSite => {
     const isSelectingOne = this.state.activeSites.length == sites.length;
-    console.log(this.state.activeSites, toggledSite)
     const isSelectingAll = this.state.activeSites.length == 1 && _.includes(this.state.activeSites, toggledSite.label);
     const siteOptions = _.map(this.state.siteOptions, site => ({
       ...site,
@@ -101,6 +130,7 @@ class News extends Component {
           site.label == toggledSite.label ? !site.active : site.active,
     }))
     const activeSites = _.map(_.filter(siteOptions, "active"), "label")
+    setInStorage(localStorageActiveSitesKey, activeSites)
     this.setState({ siteOptions, activeSites })
   }
 
@@ -116,7 +146,7 @@ class News extends Component {
         />
         <div className="News__articles">
           {articles.map(article => _.includes(activeSites, article.site) && (
-            <a className="News__article" href={article.link} target="_blank" key={article.guid}>
+            <a className={`News__article News__article--is-${article.hasBeenViewed ? "not-new" : "new"}`} href={article.link} target="_blank" key={article.guid}>
               <div className="News__article__title">
                 <div className="News__article__title__label">
                   { article.title }

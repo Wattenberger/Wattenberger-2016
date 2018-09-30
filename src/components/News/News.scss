@@ -14,10 +14,11 @@
   }
 
   &__article {
+    position: relative;
     display: block;
     font-size: 0.8em;
     line-height: 1.3em;
-    padding: 0.6em 1em 1em;
+    padding: 1em 1em 1.2em;
     transition: all 0.3s ease-out;
 
     &:hover {
@@ -30,8 +31,56 @@
       }
     }
 
+    &--is-not-new {
+      margin-top: 4em;
+
+      .News__article__title,
+      .News__article__snippet,
+      .News__article__site,
+      .News__article__date {
+        opacity: 0.3;
+      }
+
+      &:hover {
+        .News__article__title,
+        .News__article__snippet,
+        .News__article__site,
+        .News__article__date {
+          opacity: 1;
+        }
+      }
+
+      &:before {
+        content: "Already seen";
+        position: absolute;
+        top: -1.7rem;
+        color: $accent-2;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -1.15rem;
+        left: 5.9rem;
+        right: 0;
+        border-bottom: 1px solid rgba($accent-2, 0.3);
+      }
+
+      & + & {
+        margin-top: 0;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+
     &__title {
-      font-weight: 800;
       padding-bottom: 0.4em;
       color: $accent-4;
       display: flex;
@@ -40,31 +89,68 @@
 
       &__label {
         flex: 1;
+        // font-family: $font-family-serif;;
+        // font-size: 1.2em;
+        // font-weight: 800;
       }
     }
 
     &__date {
       flex: 0 0 4em;
       width: 4em;
-      text-align: right;
-      font-size: 0.8em;
       line-height: 1.3em;
       color: $tc;
-      opacity: 0.6;
+      text-align: right;
+      font-size: 0.8em;
+      opacity: 0.4;
       white-space: nowrap;
     }
 
     &__site {
       font-size: 0.8em;
       font-weight: 800;
+      opacity: 0.5;
       // padding: 0 0 0.4em 0;
     }
 
     &__snippet {
-      font-size: 0.8em;
+      font-size: 0.77em;
       line-height: 1.3em;
       color: $tc;
-      opacity: 0.6;
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 1em 0.4em;
+
+    &__article {
+      &__title {
+        // flex-direction: column;
+        flex-wrap: wrap;
+
+        &__label {
+          min-width: 100%;
+          order: 3;
+        }
+      }
+
+      &__site {
+        flex: 1;
+        margin-top: 0.3rem;
+        width: 50%;
+        opacity: 0.5;
+        order: 1;
+      }
+
+      &__date {
+        flex: 1;
+        margin-top: 0.3rem;
+        width: 50%;
+        text-align: right;
+        opacity: 0.3;
+        order: 2;
+      }
     }
   }
 }
