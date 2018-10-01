@@ -95,8 +95,8 @@ class News extends Component {
 
   getNews = () => {
     Promise.all(sites.map(site => this.getFeed(site.url))).then(feeds => {
-      // const lastLoad = getFromStorage(localStorageLastLoadKey)
-      const lastLoad = "17:25 09/30/2018"
+      const lastLoad = getFromStorage(localStorageLastLoadKey)
+      // const lastLoad = "17:25 09/30/2018"
       const parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
 
       const articles = _.orderBy(
