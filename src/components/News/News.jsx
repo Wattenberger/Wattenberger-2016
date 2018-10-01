@@ -75,6 +75,8 @@ class News extends Component {
       activeSites: defaultActiveSites,
       sentimentRange: defaultSentimentRange,
       isDimmingSeen: true,
+      isLoading: true,
+      isShowingAbout: false,
     }
     this.getNews = this.getNews.bind(this)
   }
@@ -123,8 +125,7 @@ class News extends Component {
         "pubDate",
         "desc"
       )
-      console.log(articles)
-      this.setState({ articles })
+      this.setState({ articles, isLoading: false })
 
       if (this.isFirstLoad) {
         const currentTime = formatTime(new Date())
@@ -171,39 +172,47 @@ class News extends Component {
     // setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
   }
 
+  onIsShowingAboutToggle = () => {
+    const isShowingAbout = !this.state.isShowingAbout
+    this.setState({ isShowingAbout })
+    // setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
+  }
+
   render() {
-    const { articles, siteOptions, activeSites, sentimentRange, isDimmingSeen } = this.state
+    const { articles, siteOptions, activeSites, sentimentRange, isDimmingSeen, isLoading, isShowingAbout } = this.state
     const filteredArticles = _.filter(articles, article => (
       _.includes(activeSites, article.site) &&
       (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
       (!article.sentiment || article.sentiment.score < sentimentRange[1])
     ))
     const groupedArticles = _.groupBy(filteredArticles, "hasBeenViewed")
-    console.log(groupedArticles)
     const seenArticles = groupedArticles.true || []
     const unseenArticles = groupedArticles.false || []
 
     return (
       <div className={this.getClassName()}>
+        {/* {isShowingAbout && (
+          <p>
+            stuffs
+          </p>
+        )} */}
         <div className="News__controls">
           <ButtonGroup
             className="News__toggle"
             buttons={siteOptions}
             onChange={this.onSiteChange}
           />
+          {/* <div className="News__controls__about-toggle" onClick={this.onIsShowingAboutToggle}>
+            About
+          </div> */}
           <div className="News__slider">
             <div className="News__slider__values">
               <div className="News__slider__value">
-              Sentiment:
+                Sentiment:
               </div>
               <div className="News__slider__value">
                 {sentimentRange.join(" to ")}
               </div>
-              {/* {_.map(sentimentRange, value => (
-                <div className="News__slider__value">
-                  { value }
-                </div>
-              ))} */}
             </div>
             <Range
               value={sentimentRange}
@@ -217,6 +226,9 @@ class News extends Component {
           </div>
         </div>
         <div className={`News__articles News__articles--is-${isDimmingSeen ? "dimming-seen" : "not-dimming-seen"}`}>
+          {isLoading && (
+            <div className="News__note">Loading...</div>
+          )}
           {unseenArticles.map(article => <NewsArticle key={article.guid} article={article} />)}
           {!!seenArticles.length && (
             <div className="News__articles-separator">
@@ -256,7 +268,7 @@ const NewsArticle = ({ article }) => (
       </div>
     </div>
     <div className="NewsArticle__snippet">
-      { article.contentSnippet.slice(0, 100) }
+      { article.contentSnippet.slice(0, 200) }
     </div>
     <div className="NewsArticle__sentiment">
       Sentiment: { article.sentiment && article.sentiment.score }
