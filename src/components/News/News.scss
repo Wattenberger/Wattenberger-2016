@@ -6,6 +6,7 @@
   &__controls {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__slider {
@@ -48,9 +49,37 @@
 
   &__articles {
     // margin-top: 2em;
+
+    &--is-not-dimming-seen {
+      .NewsArticle--is-not-new {
+        opacity: 1;
+      }
+    }
   }
 
-  &__article {
+  &__articles-separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.54em;
+    margin: 3.6em 1rem 1em;
+
+    &__text {
+      color: $accent-2;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+
+    &__line {
+      flex: 1;
+      margin: 0 1.3em;
+      border-bottom: 1px solid rgba($accent-2, 0.3);
+    }
+
+  }
+
+  &Article {
     position: relative;
     display: block;
     font-size: 0.8em;
@@ -61,70 +90,29 @@
     &:hover {
       background: #fff;
 
-      .News__article__sentiment {
+      .NewsArticle__sentiment {
         opacity: 0.3;
       }
     }
 
     &:visited {
-      .News__article__title {
+      .NewsArticle__title {
         color: $accent-2;
       }
     }
 
-    .News__article__title,
-    .News__article__snippet,
-    .News__article__site,
-    .News__article__date {
+    .NewsArticle__title,
+    .NewsArticle__snippet,
+    .NewsArticle__site,
+    .NewsArticle__date {
       transition: opacity 0.3s ease-out;
     }
 
     &--is-not-new {
-      margin-top: 4em;
-
-      .News__article__title,
-      .News__article__snippet,
-      .News__article__site,
-      .News__article__date {
-        opacity: 0.3;
-      }
+      opacity: 0.3;
 
       &:hover {
-        .News__article__title,
-        .News__article__snippet,
-        .News__article__site,
-        .News__article__date {
-          opacity: 1;
-        }
-      }
-
-      &:before {
-        content: "Already seen";
-        position: absolute;
-        top: -1.7rem;
-        color: $accent-2;
-        font-size: 0.6em;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 0.1em;
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: -1.15rem;
-        left: 5.9rem;
-        right: 0;
-        border-bottom: 1px solid rgba($accent-2, 0.3);
-      }
-
-      & + & {
-        margin-top: 0;
-
-        &:before,
-        &:after {
-          display: none;
-        }
+        opacity: 1;
       }
     }
 
@@ -190,7 +178,7 @@
       width: 90%;
     }
 
-    &__article {
+    &Article {
       &__title {
         // flex-direction: column;
         flex-wrap: wrap;

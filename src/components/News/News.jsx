@@ -8,14 +8,15 @@ import Sentiment from "sentiment"
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
-
 import ButtonGroup from 'components/_ui/Button/ButtonGroup/ButtonGroup';
+import Button from 'components/_ui/Button/Button';
+
 import { getFromStorage, setInStorage } from 'utils/utils';
 
 const parser = new rssParser({
-  headers: {
-    "Accept": "text/html,application/xhtml+xml,application/xml"
-  }
+  // headers: {
+  //   "Accept": "text/html,application/xhtml+xml,application/xml"
+  // }
 })
 const sentiment = new Sentiment();
 
@@ -30,18 +31,26 @@ const sites = [
   {label: "NBC", url: "https://www.nbcnewyork.com/news/top-stories/?rss=y"},
   {label: "BBC", url: "http://feeds.bbci.co.uk/news/rss.xml"},
   // {label: "NPR", url: "https://www.npr.org/sections/news/"},
-  // {label: "Reuters", url: "http://feeds.reuters.com/reuters/topNews/"},
+  // {label: "NPR", url: "http://feeds.feedburner.com/blogspot/lQlzL"},
+  {label: "Reuters", url: "http://feeds.reuters.com/reuters/topNews/?format=xml"},
+  {label: "Al Jazeera", url: "https://www.aljazeera.com/xml/rss/all.xml"},
+  // {label: "The Hill", url: "https://thehill.com/rss/syndicator/19109"},
+  // {label: "The Hill International", url: "https://thehill.com/taxonomy/term/43/feed"},
+  {label: "PBS Now", url: "http://www.pbs.org/now/rss.xml"},
+  {label: "PBS Nova", url: "http://www.pbs.org/wgbh/nova/rss/nova.xml"},
 ]
 
 const today = new Date()
 const formatDate = date => {
   const daysAgo = Math.round((today - date) / (1000 * 60 * 60 * 24));
   const hoursAgo = Math.round((today - date) / (1000 * 60 * 60));
-  return hoursAgo <  1   ? ""                   :
-         hoursAgo <  24  ? `${hoursAgo}h`       :
-         daysAgo <  1    ? `${hoursAgo}h`       :
-        //  daysAgo <  2 ? `${daysAgo} day ago` :
-         daysAgo < 30    ? `${daysAgo}d`        :
+  const minutesAgo = Math.round((today - date) / (1000 * 60));
+  return minutesAgo < 10  ? ""                   :
+         hoursAgo   <  1  ? `${minutesAgo}m`     :
+         hoursAgo   < 24  ? `${hoursAgo}h`       :
+         daysAgo    <  1  ? `${hoursAgo}h`       :
+        //  daysAgo <  2  ? `${daysAgo} day ago` :
+         daysAgo    < 30  ? `${daysAgo}d`        :
                            d3.timeFormat("%-m/%-d/%Y")(date)
 }
 const defaultSiteOptions = _.map(sites, site => ({
@@ -65,6 +74,7 @@ class News extends Component {
       siteOptions: defaultSiteOptions,
       activeSites: defaultActiveSites,
       sentimentRange: defaultSentimentRange,
+      isDimmingSeen: true,
     }
     this.getNews = this.getNews.bind(this)
   }
@@ -153,9 +163,25 @@ class News extends Component {
     this.setState({ sentimentRange })
     setInStorage(localStorageSentimentRangeKey, sentimentRange)
   }
+  onIsDimmingSeenToggle = e => {
+    e.stopPropagation();
+    e.preventDefault();
+    const isDimmingSeen = !this.state.isDimmingSeen
+    this.setState({ isDimmingSeen })
+    // setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
+  }
 
   render() {
-    const { articles, siteOptions, activeSites, sentimentRange } = this.state
+    const { articles, siteOptions, activeSites, sentimentRange, isDimmingSeen } = this.state
+    const filteredArticles = _.filter(articles, article => (
+      _.includes(activeSites, article.site) &&
+      (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
+      (!article.sentiment || article.sentiment.score < sentimentRange[1])
+    ))
+    const groupedArticles = _.groupBy(filteredArticles, "hasBeenViewed")
+    console.log(groupedArticles)
+    const seenArticles = groupedArticles.true || []
+    const unseenArticles = groupedArticles.false || []
 
     return (
       <div className={this.getClassName()}>
@@ -190,31 +216,21 @@ class News extends Component {
             />
           </div>
         </div>
-        <div className="News__articles">
-          {articles.map(article =>
-            _.includes(activeSites, article.site) &&
-            (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
-            (!article.sentiment || article.sentiment.score < sentimentRange[1]) && (
-            <a className={`News__article News__article--is-${article.hasBeenViewed ? "not-new" : "new"}`} href={article.link} target="_blank" key={article.guid}>
-              <div className="News__article__title">
-                <div className="News__article__title__label">
-                  { article.title }
-                </div>
-                <div className="News__article__site">
-                  { article.site }
-                </div>
-                <div className="News__article__date">
-                  { formatDate(article.pubDate) }
-                </div>
+        <div className={`News__articles News__articles--is-${isDimmingSeen ? "dimming-seen" : "not-dimming-seen"}`}>
+          {unseenArticles.map(article => <NewsArticle key={article.guid} article={article} />)}
+          {!!seenArticles.length && (
+            <div className="News__articles-separator">
+              <div className="News__articles-separator__text">
+                Already seen
               </div>
-              <div className="News__article__snippet">
-                { article.contentSnippet.slice(0, 100) }
-              </div>
-              <div className="News__article__sentiment">
-                Sentiment: { article.sentiment && article.sentiment.score }
-              </div>
-            </a>
-          ))}
+              <div className="News__articles-separator__line" />
+
+              <Button className="News__articles-separator__toggle" onClick={this.onIsDimmingSeenToggle}>
+                { isDimmingSeen ? "Don't" : "Do" } dim
+              </Button>
+            </div>
+          )}
+          {seenArticles.map(article => <NewsArticle key={article.guid} article={article} />)}
         </div>
       </div>
     )
@@ -222,3 +238,28 @@ class News extends Component {
 }
 
 export default News
+
+const NewsArticle = ({ article }) => (
+  <a className={[
+    "NewsArticle",
+    `NewsArticle--is-${article.hasBeenViewed ? "not-new" : "new"}`,
+  ].join(" ")} href={article.link} target="_blank">
+    <div className="NewsArticle__title">
+      <div className="NewsArticle__title__label">
+        { article.title }
+      </div>
+      <div className="NewsArticle__site">
+        { article.site }
+      </div>
+      <div className="NewsArticle__date">
+        { formatDate(article.pubDate) }
+      </div>
+    </div>
+    <div className="NewsArticle__snippet">
+      { article.contentSnippet.slice(0, 100) }
+    </div>
+    <div className="NewsArticle__sentiment">
+      Sentiment: { article.sentiment && article.sentiment.score }
+    </div>
+  </a>
+)
