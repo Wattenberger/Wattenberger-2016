@@ -105,27 +105,34 @@ class News extends Component {
     this.setState({ activeSites, siteOptions, sentimentRange })
   }
 
+  parseArticles = (articles, siteLabel) => _.filter(
+    _.map(articles, article => this.parseArticle(article, siteLabel)),
+    article => !!article && !_.startsWith(article.title, "WATCH: ")
+  )
+
+  parseArticle = (article, siteLabel) => ({
+    ...article,
+    site: siteLabel,
+    pubDate: new Date(article.pubDate),
+    hasBeenViewed: this.parsedLastLoad ? new Date(article.pubDate) < this.parsedLastLoad : false,
+    sentiment: sentiment.analyze([article.title, article.contentSnippet].join(". ")),
+  })
+
   getNews = () => {
-    Promise.all(sites.map(site => this.getFeed(site.url))).then(feeds => {
+    sites.map(async site => {
+      const feed = await this.getFeed(site.url)
       const lastLoad = getFromStorage(localStorageLastLoadKey)
       // const lastLoad = "17:25 09/30/2018"
-      const parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
+      this.parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
 
-      const articles = _.orderBy(
-        _.filter(
-          _.flatMap(feeds, (feed, index) => _.map(feed.items || [], item => ({
-            ...item,
-            site: sites[index].label,
-            pubDate: new Date(item.pubDate),
-            hasBeenViewed: parsedLastLoad ? new Date(item.pubDate) < parsedLastLoad : false,
-            sentiment: sentiment.analyze([item.title, item.contentSnippet].join(". ")),
-          }))),
-          article => !!article && !_.startsWith(article.title, "WATCH: ")
+      const articles = this.parseArticles(feed.items || [], site.label)
+      this.setState(prevState => ({
+        articles: _.orderBy([...articles, ...prevState.articles],
+          "pubDate",
+          "desc"
         ),
-        "pubDate",
-        "desc"
-      )
-      this.setState({ articles, isLoading: false })
+        isLoading: false
+      }))
 
       if (this.isFirstLoad) {
         const currentTime = formatTime(new Date())
