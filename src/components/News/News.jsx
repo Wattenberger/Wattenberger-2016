@@ -4,16 +4,21 @@ import classNames from "classnames"
 import rssParser from "rss-parser";
 import _ from "lodash";
 import * as d3 from "d3";
+import Sentiment from "sentiment"
+import { Range } from 'rc-slider';
+import 'rc-slider/assets/index.css';
+
+
 import ButtonGroup from 'components/_ui/Button/ButtonGroup/ButtonGroup';
 import { getFromStorage, setInStorage } from 'utils/utils';
+
 const parser = new rssParser({
   headers: {
-    // "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
-    // "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
-    // "Content-Type": "application/xml"
     "Accept": "text/html,application/xhtml+xml,application/xml"
   }
 })
+const sentiment = new Sentiment();
+
 const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
 
 require('styles/app.scss')
@@ -44,7 +49,9 @@ const defaultSiteOptions = _.map(sites, site => ({
   active: true,
 }))
 const defaultActiveSites = _.map(_.filter(defaultSiteOptions, "active"), "label")
+const defaultSentimentRange = [-100, 100]
 const localStorageActiveSitesKey = "news--active-sites"
+const localStorageSentimentRangeKey = "news--sentiment-range"
 const localStorageLastLoadKey = "news--last-load"
 const storageTimeFormat = "%H:%M %m/%d/%Y"
 const parseTime = d3.timeParse(storageTimeFormat)
@@ -57,6 +64,7 @@ class News extends Component {
       articles: [],
       siteOptions: defaultSiteOptions,
       activeSites: defaultActiveSites,
+      sentimentRange: defaultSentimentRange,
     }
     this.getNews = this.getNews.bind(this)
   }
@@ -77,17 +85,20 @@ class News extends Component {
 
   setDefaults = () => {
     const activeSites = getFromStorage(localStorageActiveSitesKey) || defaultActiveSites
+    const sentimentRange = getFromStorage(localStorageSentimentRangeKey) || defaultSentimentRange
     const siteOptions = _.map(sites, site => ({
       label: site.label,
       active: _.includes(activeSites, site.label),
     }))
-    this.setState({ activeSites, siteOptions })
+    this.setState({ activeSites, siteOptions, sentimentRange })
   }
 
   getNews = () => {
     Promise.all(sites.map(site => this.getFeed(site.url))).then(feeds => {
-      const lastLoad = getFromStorage(localStorageLastLoadKey)
+      // const lastLoad = getFromStorage(localStorageLastLoadKey)
+      const lastLoad = "17:25 09/30/2018"
       const parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
+
       const articles = _.orderBy(
         _.filter(
           _.flatMap(feeds, (feed, index) => _.map(feed.items || [], item => ({
@@ -95,13 +106,16 @@ class News extends Component {
             site: sites[index].label,
             pubDate: new Date(item.pubDate),
             hasBeenViewed: parsedLastLoad ? new Date(item.pubDate) < parsedLastLoad : false,
+            sentiment: sentiment.analyze([item.title, item.contentSnippet].join(". ")),
           }))),
           article => !!article && !_.startsWith(article.title, "WATCH: ")
         ),
         "pubDate",
         "desc"
       )
+      console.log(articles)
       this.setState({ articles })
+
       if (!this.isFirstLoad) {
         const currentTime = formatTime(new Date())
         setInStorage(localStorageLastLoadKey, currentTime)
@@ -134,18 +148,53 @@ class News extends Component {
     this.setState({ siteOptions, activeSites })
   }
 
+  onSentimentRangeChange = newRange => {
+    const sentimentRange = _.sortBy(newRange)
+    this.setState({ sentimentRange })
+    setInStorage(localStorageSentimentRangeKey, sentimentRange)
+  }
+
   render() {
-    const { articles, siteOptions, activeSites } = this.state
+    const { articles, siteOptions, activeSites, sentimentRange } = this.state
 
     return (
       <div className={this.getClassName()}>
-        <ButtonGroup
-          className="News__toggle"
-          buttons={siteOptions}
-          onChange={this.onSiteChange}
-        />
+        <div className="News__controls">
+          <ButtonGroup
+            className="News__toggle"
+            buttons={siteOptions}
+            onChange={this.onSiteChange}
+          />
+          <div className="News__slider">
+            <div className="News__slider__values">
+              <div className="News__slider__value">
+              Sentiment:
+              </div>
+              <div className="News__slider__value">
+                {sentimentRange.join(" to ")}
+              </div>
+              {/* {_.map(sentimentRange, value => (
+                <div className="News__slider__value">
+                  { value }
+                </div>
+              ))} */}
+            </div>
+            <Range
+              value={sentimentRange}
+              min={-100}
+              max={100}
+              count={2}
+              onChange={this.onSentimentRangeChange}
+              pushable
+              allowCross={false}
+            />
+          </div>
+        </div>
         <div className="News__articles">
-          {articles.map(article => _.includes(activeSites, article.site) && (
+          {articles.map(article =>
+            _.includes(activeSites, article.site) &&
+            (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
+            (!article.sentiment || article.sentiment.score < sentimentRange[1]) && (
             <a className={`News__article News__article--is-${article.hasBeenViewed ? "not-new" : "new"}`} href={article.link} target="_blank" key={article.guid}>
               <div className="News__article__title">
                 <div className="News__article__title__label">
@@ -159,7 +208,10 @@ class News extends Component {
                 </div>
               </div>
               <div className="News__article__snippet">
-                { article.contentSnippet.slice(0, 200) }
+                { article.contentSnippet.slice(0, 100) }
+              </div>
+              <div className="News__article__sentiment">
+                Sentiment: { article.sentiment && article.sentiment.score }
               </div>
             </a>
           ))}
