@@ -126,7 +126,7 @@ class News extends Component {
       console.log(articles)
       this.setState({ articles })
 
-      if (!this.isFirstLoad) {
+      if (this.isFirstLoad) {
         const currentTime = formatTime(new Date())
         setInStorage(localStorageLastLoadKey, currentTime)
       }
