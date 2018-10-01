@@ -139,6 +139,8 @@ class News extends Component {
         setInStorage(localStorageLastLoadKey, currentTime)
       }
       this.isFirstLoad = false;
+
+      if (this.timeout) clearTimeout(this.timeout)
       this.timeout = setTimeout(this.getNews, fetchInterval)
     })
   }
