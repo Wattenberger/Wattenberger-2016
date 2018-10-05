@@ -127,12 +127,16 @@ class News extends Component {
 
       const articles = this.parseArticles(feed.items || [], site.label)
       this.setState(prevState => ({
-        articles: _.orderBy([...articles, ...prevState.articles],
-          "pubDate",
-          "desc"
-        ),
-        isLoading: false
-      }))
+        articles: _.uniqBy(
+            _.orderBy(
+              [...articles, ...prevState.articles],
+              "pubDate",
+              "desc"
+            ),
+            d => d.link
+          ),
+          isLoading: false
+        }))
 
       if (this.isFirstLoad) {
         const currentTime = formatTime(new Date())
@@ -266,9 +270,7 @@ const NewsArticle = ({ article }) => (
     `NewsArticle--is-${article.hasBeenViewed ? "not-new" : "new"}`,
   ].join(" ")} href={article.link} target="_blank">
     <div className="NewsArticle__title">
-      <div className="NewsArticle__title__label">
-        { article.title }
-      </div>
+      <div className="NewsArticle__title__label" dangerouslySetInnerHTML={{__html:  article.title }} />
       <div className="NewsArticle__site">
         { article.site }
       </div>
