@@ -74,7 +74,8 @@ class News extends Component {
       siteOptions: defaultSiteOptions,
       activeSites: defaultActiveSites,
       sentimentRange: defaultSentimentRange,
-      sentimentCount: {},
+      articlesBySentiment: {},
+      articlesBySite: {},
       isDimmingSeen: true,
       isLoading: true,
       isShowingAbout: false,
@@ -133,12 +134,14 @@ class News extends Component {
           _.orderBy([...articles, ...prevState.articles], "pubDate", "desc"),
           d => d.link
         )
-        const sentimentCount = _.countBy(parsedArticles, d => d.sentiment.score);
+        const articlesBySentiment = _.countBy(parsedArticles, d => d.sentiment.score);
+        const articlesBySite = _.countBy(parsedArticles, "site");
 
         return {
           articles: parsedArticles,
           isLoading: false,
-          sentimentCount,
+          articlesBySentiment,
+          articlesBySite,
         }
       })
 
@@ -196,7 +199,7 @@ class News extends Component {
   }
 
   render() {
-    const { articles, siteOptions, activeSites, sentimentRange, sentimentCount, isDimmingSeen, isLoading, isShowingAbout } = this.state
+    const { articles, siteOptions, activeSites, sentimentRange, articlesBySentiment, articlesBySite, isDimmingSeen, isLoading, isShowingAbout } = this.state
     const filteredArticles = _.filter(articles, article => (
       _.includes(activeSites, article.site) &&
       (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
@@ -205,7 +208,7 @@ class News extends Component {
     const groupedArticles = _.groupBy(filteredArticles, "hasBeenViewed")
     const seenArticles = groupedArticles.true || []
     const unseenArticles = groupedArticles.false || []
-    const maxSentimentCount = _.max(Object.values(sentimentCount))
+    const maxSentimentCount = _.max(Object.values(articlesBySentiment))
 
     return (
       <div className={this.getClassName()}>
@@ -217,7 +220,16 @@ class News extends Component {
         <div className="News__controls">
           <ButtonGroup
             className="News__toggle"
-            buttons={siteOptions}
+            buttons={_.map(siteOptions, site => ({
+              ...site,
+              children: articlesBySite[site.label] ? (
+                <div className="News__toggle__notification">
+                  { articlesBySite[site.label] || 0 }
+                </div>
+              ) : (
+                <div className="News__toggle__loader" />
+              ),
+            }))}
             onChange={this.onSiteChange}
           />
           {/* <div className="News__controls__about-toggle" onClick={this.onIsShowingAboutToggle}>
@@ -227,7 +239,7 @@ class News extends Component {
             <div className="News__histogram">
               {_.map(_.range(200), i => (
                 <div className={`News__histogram__bar News__histogram__bar--is-${i - 100 > sentimentRange[0] && i - 100 < sentimentRange[1] ? "showing" : "not-showing"}`} key={i} style={{
-                  height: `${sentimentCount[i - 100] ? _.max([sentimentCount[i - 100], 4]) * 100 / maxSentimentCount : 0}%`
+                  height: `${articlesBySentiment[i - 100] ? _.max([articlesBySentiment[i - 100], 4]) * 100 / maxSentimentCount : 0}%`
                 }}>
                 </div>
               ))}

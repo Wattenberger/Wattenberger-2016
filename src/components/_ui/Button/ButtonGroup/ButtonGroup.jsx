@@ -19,7 +19,7 @@ class ButtonGroup extends Component {
 
   getButtonClassName(button) {
     return classNames({
-      "Button--active": button.active
+      "Button--active": button.active,
     })
   }
 
@@ -38,6 +38,7 @@ class ButtonGroup extends Component {
                   className={this.getButtonClassName(button)}
                   onClick={this.onChange(button)}>
             {button.label || button}
+            {button.children}
           </Button>
         )}
       </div>
