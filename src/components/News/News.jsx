@@ -74,6 +74,7 @@ class News extends Component {
       siteOptions: defaultSiteOptions,
       activeSites: defaultActiveSites,
       sentimentRange: defaultSentimentRange,
+      sentimentCount: {},
       isDimmingSeen: true,
       isLoading: true,
       isShowingAbout: false,
@@ -126,17 +127,20 @@ class News extends Component {
       this.parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
 
       const articles = this.parseArticles(feed.items || [], site.label)
-      this.setState(prevState => ({
-        articles: _.uniqBy(
-            _.orderBy(
-              [...articles, ...prevState.articles],
-              "pubDate",
-              "desc"
-            ),
-            d => d.link
-          ),
-          isLoading: false
-        }))
+
+      this.setState(prevState => {
+        const parsedArticles = _.uniqBy(
+          _.orderBy([...articles, ...prevState.articles], "pubDate", "desc"),
+          d => d.link
+        )
+        const sentimentCount = _.countBy(parsedArticles, d => d.sentiment.score);
+
+        return {
+          articles: parsedArticles,
+          isLoading: false,
+          sentimentCount,
+        }
+      })
 
       if (this.isFirstLoad) {
         const currentTime = formatTime(new Date())
@@ -192,7 +196,7 @@ class News extends Component {
   }
 
   render() {
-    const { articles, siteOptions, activeSites, sentimentRange, isDimmingSeen, isLoading, isShowingAbout } = this.state
+    const { articles, siteOptions, activeSites, sentimentRange, sentimentCount, isDimmingSeen, isLoading, isShowingAbout } = this.state
     const filteredArticles = _.filter(articles, article => (
       _.includes(activeSites, article.site) &&
       (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
@@ -201,6 +205,7 @@ class News extends Component {
     const groupedArticles = _.groupBy(filteredArticles, "hasBeenViewed")
     const seenArticles = groupedArticles.true || []
     const unseenArticles = groupedArticles.false || []
+    const maxSentimentCount = _.max(Object.values(sentimentCount))
 
     return (
       <div className={this.getClassName()}>
@@ -219,6 +224,14 @@ class News extends Component {
             About
           </div> */}
           <div className="News__slider">
+            <div className="News__histogram">
+              {_.map(_.range(200), i => (
+                <div className={`News__histogram__bar News__histogram__bar--is-${i - 100 > sentimentRange[0] && i - 100 < sentimentRange[1] ? "showing" : "not-showing"}`} key={i} style={{
+                  height: `${sentimentCount[i - 100] ? _.max([sentimentCount[i - 100], 4]) * 100 / maxSentimentCount : 0}%`
+                }}>
+                </div>
+              ))}
+            </div>
             <div className="News__slider__values">
               <div className="News__slider__value">
                 Sentiment:
@@ -236,6 +249,11 @@ class News extends Component {
               pushable
               allowCross={false}
             />
+            {(sentimentRange[0] != -100 || sentimentRange[1] != 100) && (
+              <div className="News__slider__note">
+                Showing { filteredArticles.length } of { articles.length } articles
+              </div>
+            )}
           </div>
         </div>
         <div className={`News__articles News__articles--is-${isDimmingSeen ? "dimming-seen" : "not-dimming-seen"}`}>

@@ -24,6 +24,33 @@
     }
   }
 
+  &__histogram {
+    // position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: 1.5em;
+    align-items: flex-end;
+    transform: translate3d(0, -100%, 0);
+
+    &__bar {
+      flex: 1;
+      background: $gray;
+      background: $accent-4;
+      border-left: 0.6px solid $bgc;
+      // transition: all 0.3s ease-out;
+
+      &--is {
+        &-not-showing {
+          background: $accent-2;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
   &__slider {
     position: relative;
     width: 10em;
@@ -46,6 +73,13 @@
       display: flex;
       justify-content: space-between;
       font-size: 0.6em;
+    }
+
+    &__note {
+      position: absolute;
+      bottom: -1.5rem;
+      font-size: 0.5em;
+      opacity: 0.5;
     }
 
     .rc-slider-handle {
