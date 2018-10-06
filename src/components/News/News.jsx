@@ -7,6 +7,8 @@ import * as d3 from "d3";
 import Sentiment from "sentiment"
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import ReactSelect from 'react-select';
+import Creatable from 'react-select/lib/Creatable';
 
 import ButtonGroup from 'components/_ui/Button/ButtonGroup/ButtonGroup';
 import Button from 'components/_ui/Button/Button';
@@ -59,9 +61,10 @@ const defaultSiteOptions = _.map(sites, site => ({
 }))
 const defaultActiveSites = _.map(_.filter(defaultSiteOptions, "active"), "label")
 const defaultSentimentRange = [-100, 100]
-const localStorageActiveSitesKey = "news--active-sites"
-const localStorageSentimentRangeKey = "news--sentiment-range"
-const localStorageLastLoadKey = "news--last-load"
+const localStorageActiveSitesKey = "active-sites"
+const localStorageSentimentRangeKey = "sentiment-range"
+const localStorageLastLoadKey = "last-load"
+const localStorageTitleFiltersKey = "title-filters"
 const storageTimeFormat = "%H:%M %m/%d/%Y"
 const parseTime = d3.timeParse(storageTimeFormat)
 const formatTime = d3.timeFormat(storageTimeFormat)
@@ -71,6 +74,8 @@ class News extends Component {
     super(props)
     this.state = {
       articles: [],
+      titleFilters: [],
+      articleTokens: [],
       siteOptions: defaultSiteOptions,
       activeSites: defaultActiveSites,
       sentimentRange: defaultSentimentRange,
@@ -95,16 +100,52 @@ class News extends Component {
 
   getClassName() {
     return classNames("News")
+
+  }
+  getUrlArgs = () => {
+    const args = window.location.search.slice(1).split("&")
+    return _.fromPairs(args.map(str => str.split("=").map((d,i) => i == 1 ?
+      JSON.parse(window.decodeURIComponent(d)) :
+      window.decodeURIComponent(d)
+    )))
   }
 
+  setUrlArg = (key, value) => {
+    const urlArgs = this.getUrlArgs()
+    let newUrlArgs = _.omit({...urlArgs, [key]: value}, "")
+
+    const { activeSites } = this.state
+    if (newUrlArgs && activeSites.length == sites.length) newUrlArgs = _.omit(newUrlArgs, localStorageActiveSitesKey)
+
+    window.history.replaceState( {} , '', !_.isEmpty(newUrlArgs) ?
+      "?" + _.map(newUrlArgs, (val, key) => `${key}=${JSON.stringify(val)}`).join("&") :
+      window.location.pathname
+    );
+  }
+
+  getFromStorage = (key) => getFromStorage(`news--${key}`)
+  setInStorage = (key, value) => setInStorage(`news--${key}`, value)
+
   setDefaults = () => {
-    const activeSites = getFromStorage(localStorageActiveSitesKey) || defaultActiveSites
-    const sentimentRange = getFromStorage(localStorageSentimentRangeKey) || defaultSentimentRange
+    const urlArgs = this.getUrlArgs()
+    let activeSites = urlArgs[localStorageActiveSitesKey] || this.getFromStorage(localStorageActiveSitesKey) || defaultActiveSites
+    if (!_.isArray(activeSites)) activeSites = defaultActiveSites
+    if (urlArgs[localStorageActiveSitesKey]) this.setInStorage(localStorageActiveSitesKey, activeSites)
+
+    let sentimentRange = urlArgs[localStorageSentimentRangeKey] || this.getFromStorage(localStorageSentimentRangeKey) || defaultSentimentRange
+    if (!_.isArray(sentimentRange)) sentimentRange = defaultSentimentRange
+    if (urlArgs[localStorageSentimentRangeKey]) this.setInStorage(localStorageSentimentRangeKey, sentimentRange)
+
     const siteOptions = _.map(sites, site => ({
       label: site.label,
       active: _.includes(activeSites, site.label),
     }))
-    this.setState({ activeSites, siteOptions, sentimentRange })
+    let titleFilters = urlArgs[localStorageTitleFiltersKey] || this.getFromStorage(localStorageTitleFiltersKey) || []
+    if (!_.isArray(titleFilters)) titleFilters = []
+    if (titleFilters.length && _.isObject(titleFilters[0])) titleFilters = []
+    if (urlArgs[localStorageTitleFiltersKey]) this.setInStorage(localStorageTitleFiltersKey, titleFilters)
+
+    this.setState({ activeSites, siteOptions, sentimentRange, titleFilters })
   }
 
   parseArticles = (articles, siteLabel) => _.filter(
@@ -123,7 +164,7 @@ class News extends Component {
   getNews = () => {
     sites.map(async site => {
       const feed = await this.getFeed(site.url)
-      const lastLoad = getFromStorage(localStorageLastLoadKey)
+      const lastLoad = this.getFromStorage(localStorageLastLoadKey)
       // const lastLoad = "17:25 09/30/2018"
       this.parsedLastLoad = lastLoad ? parseTime(lastLoad) : null
 
@@ -136,24 +177,33 @@ class News extends Component {
         )
         const articlesBySentiment = _.countBy(parsedArticles, d => d.sentiment.score);
         const articlesBySite = _.countBy(parsedArticles, "site");
+        // const articleTokens = _.map(
+        //   _.flatMap(parsedArticles, d => d.sentiment.tokens),
+        //   d => ({
+        //     value: d,
+        //     label: d,
+        //   })
+        // );
+        if (this.isFirstLoad && _.every(_.map(sites, site => !!articlesBySite[site.label]))) {
+          const currentTime = formatTime(new Date())
+          this.setInStorage(localStorageLastLoadKey, currentTime)
+          this.isFirstLoad = false;
+        }
+
 
         return {
           articles: parsedArticles,
           isLoading: false,
           articlesBySentiment,
           articlesBySite,
+          // articleTokens,
         }
       })
-
-      if (this.isFirstLoad) {
-        const currentTime = formatTime(new Date())
-        setInStorage(localStorageLastLoadKey, currentTime)
-      }
-      this.isFirstLoad = false;
-
-      if (this.timeout) clearTimeout(this.timeout)
-      this.timeout = setTimeout(this.getNews, fetchInterval)
     })
+
+    if (this.timeout) clearTimeout(this.timeout)
+    this.timeout = setTimeout(this.getNews, fetchInterval)
+
   }
 
   getFeed = async site => {
@@ -175,33 +225,43 @@ class News extends Component {
           site.label == toggledSite.label ? !site.active : site.active,
     }))
     const activeSites = _.map(_.filter(siteOptions, "active"), "label")
-    setInStorage(localStorageActiveSitesKey, activeSites)
+    this.setInStorage(localStorageActiveSitesKey, activeSites)
+    this.setUrlArg(localStorageActiveSitesKey, activeSites)
     this.setState({ siteOptions, activeSites })
   }
 
   onSentimentRangeChange = newRange => {
     const sentimentRange = _.sortBy(newRange)
     this.setState({ sentimentRange })
-    setInStorage(localStorageSentimentRangeKey, sentimentRange)
+    this.setInStorage(localStorageSentimentRangeKey, sentimentRange)
+    this.setUrlArg(localStorageSentimentRangeKey, sentimentRange)
   }
   onIsDimmingSeenToggle = e => {
     e.stopPropagation();
     e.preventDefault();
     const isDimmingSeen = !this.state.isDimmingSeen
     this.setState({ isDimmingSeen })
-    // setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
+    // this.setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
   }
 
   onIsShowingAboutToggle = () => {
     const isShowingAbout = !this.state.isShowingAbout
     this.setState({ isShowingAbout })
-    // setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
+    // this.setInStorage(localStorageIsDimmingSeenKey, isDimmingSeen)
+  }
+
+  onTitleFilterChange = newFilters => {
+    const titleFilters = _.map(newFilters, "label")
+    this.setState({ titleFilters })
+    this.setInStorage(localStorageTitleFiltersKey, titleFilters)
+    this.setUrlArg(localStorageTitleFiltersKey, titleFilters)
   }
 
   render() {
-    const { articles, siteOptions, activeSites, sentimentRange, articlesBySentiment, articlesBySite, isDimmingSeen, isLoading, isShowingAbout } = this.state
+    const { articles, siteOptions, activeSites, sentimentRange, articlesBySentiment, articlesBySite, articleTokens, titleFilters, isDimmingSeen, isLoading, isShowingAbout } = this.state
     const filteredArticles = _.filter(articles, article => (
       _.includes(activeSites, article.site) &&
+      _.every(_.map(titleFilters, filter => !_.includes(_.lowerCase(article.title), filter))) &&
       (!article.sentiment || article.sentiment.score > sentimentRange[0]) &&
       (!article.sentiment || article.sentiment.score < sentimentRange[1])
     ))
@@ -209,6 +269,10 @@ class News extends Component {
     const seenArticles = groupedArticles.true || []
     const unseenArticles = groupedArticles.false || []
     const maxSentimentCount = _.max(Object.values(articlesBySentiment))
+    const titleFilterObjects = _.map(titleFilters, filter => ({
+      label: filter,
+      value: filter,
+    }))
 
     return (
       <div className={this.getClassName()}>
@@ -261,13 +325,26 @@ class News extends Component {
               pushable
               allowCross={false}
             />
-            {(sentimentRange[0] != -100 || sentimentRange[1] != 100) && (
-              <div className="News__slider__note">
-                Showing { filteredArticles.length } of { articles.length } articles
-              </div>
-            )}
           </div>
         </div>
+
+        <div className="News__title-filter">
+          <div className="News__title-filter__title">
+            Filter out articles containing strings:
+          </div>
+          <Creatable
+            className="News__title-filter__input"
+            classNamePrefix="News__title-filter__input"
+            value={titleFilterObjects}
+            onChange={this.onTitleFilterChange}
+            isMulti
+            isClearable
+          />
+        </div>
+        <div className="News__note">
+          Showing { filteredArticles.length } of { articles.length } articles
+        </div>
+
         <div className={`News__articles News__articles--is-${isDimmingSeen ? "dimming-seen" : "not-dimming-seen"}`}>
           {isLoading && (
             <div className="News__note">Loading...</div>

@@ -75,13 +75,6 @@
       font-size: 0.6em;
     }
 
-    &__note {
-      position: absolute;
-      bottom: -1.5rem;
-      font-size: 0.5em;
-      opacity: 0.5;
-    }
-
     .rc-slider-handle {
       border-color: $accent-4;
     }
@@ -181,10 +174,56 @@
 
   &__note {
     font-size: 0.77em;
-    padding: 2em;
+    padding: 1em 1.8em;
     line-height: 1.3em;
     color: $tc;
+    font-size: 0.5em;
     opacity: 0.5;
+  }
+
+  &__title-filter {
+    position: relative;
+    width: 100%;
+    margin-top: 1em;
+
+    @media (max-width: 500px) {
+      margin-top: 2em;
+    }
+
+    &__title {
+      position: absolute;
+      top: -1.4rem;
+      font-size: 0.5em;
+      opacity: 0.5;
+      left: 1rem;
+    }
+
+    .News__title-filter__input {
+      &__control {
+        min-height: 1em;
+        font-size: 0.6em;
+      }
+
+      &__menu {
+        font-size: 0.6em;
+      }
+
+      &__value-container {
+        height: 2.4em;
+      }
+
+      &__indicators {
+        height: 3.4em;
+      }
+
+      &__multi-value {
+        background: $gray;
+
+        &__label {
+          padding: 0.6em 1em;
+        }
+      }
+    }
   }
 
   &Article {
