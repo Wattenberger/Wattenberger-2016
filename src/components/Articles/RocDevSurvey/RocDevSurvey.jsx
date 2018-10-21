@@ -1,16 +1,19 @@
 import React, {Component} from "react"
 import PropTypes from "prop-types"
 import numeral from "numeral"
+import domToImage from "dom-to-image"
 import * as d3 from "d3"
 import classNames from "classnames"
 import _ from "lodash"
 import Tooltip from "components/_ui/Tooltip/Tooltip"
+import Button from "components/_ui/Button/Button"
 import dataExperience from "./experience.json"
 import dataManagement from "./management.json"
 import dataRace from "./race.json"
 import dataRemote from "./remote.json"
 import dataSize from "./size.json"
 import dataTime from "./time.json"
+import 'components/Articles/RocDevSurvey/RocDevSurvey.scss';
 
 const formatSalary = d => numeral(d).format("$0,0")
 const formatNumber = d => numeral(d).format("0,0")
@@ -114,8 +117,6 @@ console.log({parsedDatasets})
 // const total = parsedData.length;
 // const genders = _.sortBy(_.filter(_.toPairs(_.countBy(parsedData, "Gender")), "0"), d => -_.get(d, 1))
 
-require('./RocDevSurvey.scss')
-
 class RocDevSurvey extends Component {
   constructor(props) {
     super(props)
@@ -123,16 +124,39 @@ class RocDevSurvey extends Component {
     }
   }
 
+  groups = _.fromPairs(_.map(parsedDatasets, dataset => [
+    dataset.key,
+    React.createRef(),
+  ]))
+
   componentDidMount() {
-    this.parseData();
   }
 
   getClassName() {
     return classNames("RocDevSurvey", this.props.className)
   }
 
-  parseData = () => {
+  takeSnapshots = () => {
+    _.each(this.groups, (group, key) => {
+      if (!group) return
+      const elem = group.current.elem.current
+
+      domToImage.toPng(elem)
+        .then(function (dataUrl) {
+          const img = new Image()
+          img.src = dataUrl
+
+          const link = document.createElement('a');
+          link.download = `2018-rocdev-salary-survey-results--${key}.jpeg`;
+          link.href = dataUrl;
+          link.click();
+        })
+        .catch(function (error) {
+            console.error('oops, something went wrong!', error)
+        })
+    })
   }
+
 
   render() {
     const {  } = this.state
@@ -143,114 +167,16 @@ class RocDevSurvey extends Component {
           <h2 className="RocDevSurvey__title">
             RocDev Salary Survey
           </h2>
+          <Button className="RocDevSurvey__title__button" onClick={this.takeSnapshots}>
+            Take snapshots
+          </Button>
         </div>
         <div className="RocDevSurvey__contents">
-
-              <div className="RocDevSurvey__group RocDevSurvey__group--legend">
-                <div className="RocDevSurvey__group__legend">
-                  <div className="RocDevSurvey__group__content">
-                    <div className="RocDevSurvey__bars">
-                      <div className="RocDevSurvey__bars__item">
-                        <div className="RocDevSurvey__bars__item__text">
-                          <div className="RocDevSurvey__bars__item__text__label">
-                          </div>
-                          <div className="RocDevSurvey__bars__item__text__mean">
-                            <div className="RocDevSurvey__histogram__mean" />
-                              Mean
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="RocDevSurvey__histograms">
-                        <div className="RocDevSurvey__histogram">
-                          {_.map(_.first(parsedDatasets).bins, (bin) => (
-                            <div className="RocDevSurvey__histogram__item" key={bin.x0}>
-                              <div className="RocDevSurvey__histogram__item__text">
-                                <span className="RocDevSurvey__number-prefix">$</span>{ formatNumber(bin.x0 / 1000) }k
-                              </div>
-                            </div>
-                          ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
         {_.map(parsedDatasets, (dataset, key) => (
-            <div className="RocDevSurvey__group" key={dataset.key}>
-              <h3 className="RocDevSurvey__group__label">
-                { dataset.label || dataset.key }
-              </h3>
-              <div className="RocDevSurvey__group__content">
-                <div className="RocDevSurvey__bars">
-                  {_.map(dataset.options, option => (
-                    <div className="RocDevSurvey__bars__item" key={option}>
-                      <div className="RocDevSurvey__bars__item__text">
-                        <div className="RocDevSurvey__bars__item__text__label">
-                          { dataset[dataset.formatOptionLegend ? "formatOptionLegend" : "formatOption"](option) }
-                        </div>
-                        <div className="RocDevSurvey__bars__item__text__mean">
-                          { formatSalary(dataset.means[option]) }
-                        </div>
-                      </div>
-                      <div className="RocDevSurvey__bars__item__bar" style={{
-                        width: `${(dataset.counts[option] * 100) / dataset.maxCount}%`,
-                        // background: dataset.colors[option],
-                      }} />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="RocDevSurvey__histograms">
-                  {_.map(dataset.options, (option, i) => (
-                    <div className="RocDevSurvey__histogram" key={option}>
-                    {/* <div className="RocDevSurvey__histogram__item__legend">
-                    { formatSalary(bin.x0 / 1000) }k
-                  </div> */}
-                        <div className="RocDevSurvey__histogram__mean"
-                          style={{
-                            left: `${((dataset.means[option] - _.first(dataset.bins).x0) * 100) / ((_.last(dataset.bins).x1 + 10000) - _.first(dataset.bins).x0)}%`,
-                          }}
-                        />
-                      {_.map(dataset.bins, (bin) => (
-                        <div className="RocDevSurvey__histogram__item" key={bin.x0}>
-                          <div className="RocDevSurvey__histogram__item__bar" style={{
-                            // height: `${(((dataset.countsBySalary[bin.x0] || {})[option] ||0) * 100) / dataset.maxCountBySalary}%`,
-                            // background: dataset.colors[option],
-                            opacity: ((dataset.countsBySalary[bin.x0] || {})[option] ||0) / dataset.maxCountBySalary,
-                            zIndex: dataset.maxCountBySalary - ((dataset.countsBySalary[bin.x0] || {})[option] ||0),
-                          }}>
-                          </div>
-                          <Tooltip className="RocDevSurvey__histogram__item__tooltip">
-                            { dataset.formatOption(option) }: { formatSalary(bin.x0) } ({ (dataset.countsBySalary[bin.x0] || {})[option] ||0 })
-                          </Tooltip>
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-
-               {/*  <div className="RocDevSurvey__histogram">
-                  {_.map(dataset.bins, (bin) => (
-                    <div className="RocDevSurvey__histogram__item" key={bin.x0}>
-                      <div className="RocDevSurvey__histogram__item__legend">
-                        { formatSalary(bin.x0 / 1000) }k
-                      </div>
-                      {_.map(dataset.options, (option, i) => (
-                        <Tooltip className="RocDevSurvey__histogram__item__bar" key={option} style={{
-                          height: `${(((dataset.countsBySalary[bin.x0] || {})[option] ||0) * 100) / dataset.maxCountBySalary}%`,
-                          background: dataset.colors[option],
-                          zIndex: dataset.maxCountBySalary - ((dataset.countsBySalary[bin.x0] || {})[option] ||0),
-                        }}>
-                          { option }: { formatSalary(bin.x0) } ({ (dataset.countsBySalary[bin.x0] || {})[option] ||0 })
-                        </Tooltip>
-                      ))}
-                    </div>
-                  ))}
-                </div> */}
-            </div>
-          </div>
+          <RocDevSurveyGroup
+            {...dataset}
+            ref={this.groups[dataset.key]}
+          />
         ))}
 
         <div className="RocDevSurvey__footer">
@@ -265,3 +191,116 @@ class RocDevSurvey extends Component {
 }
 
 export default RocDevSurvey
+
+class RocDevSurveyGroup extends Component {
+  elem = React.createRef()
+
+  render() {
+    const { label, bins, options, colors, means, counts, maxCount, maxCountBySalary, countsBySalary, formatOption, formatOptionLegend, isOrdinal, filteredKeys,...props } = this.props
+    return (
+      <div className="RocDevSurveyGroup" ref={this.elem}>
+        <h3 className="RocDevSurveyGroup__label">
+          { label }
+        </h3>
+
+            <div className="RocDevSurveyGroup__legend">
+              <div className="RocDevSurveyGroup__content">
+                <div className="RocDevSurveyGroup__bars">
+                  <div className="RocDevSurveyGroup__bars__item">
+                    <div className="RocDevSurveyGroup__bars__item__text">
+                      <div className="RocDevSurveyGroup__bars__item__text__label">
+                      </div>
+                      <div className="RocDevSurveyGroup__bars__item__text__mean">
+                        <div className="RocDevSurveyGroup__histogram__mean" />
+                          Mean
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="RocDevSurveyGroup__histograms">
+                    <div className="RocDevSurveyGroup__histogram">
+                      {_.map(_.first(parsedDatasets).bins, (bin) => (
+                        <div className="RocDevSurveyGroup__histogram__item" key={bin.x0}>
+                          <div className="RocDevSurveyGroup__histogram__item__text">
+                            <span className="RocDevSurveyGroup__number-prefix">$</span>{ formatNumber(bin.x0 / 1000) }k
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <div className="RocDevSurveyGroup__content">
+          <div className="RocDevSurveyGroup__bars">
+            {_.map(options, option => (
+              <div className="RocDevSurveyGroup__bars__item" key={option}>
+                <div className="RocDevSurveyGroup__bars__item__text">
+                  <div className="RocDevSurveyGroup__bars__item__text__label">
+                    { formatOptionLegend ? formatOptionLegend(option) : formatOption(option) }
+                  </div>
+                  <div className="RocDevSurveyGroup__bars__item__text__mean">
+                    { formatSalary(means[option]) }
+                  </div>
+                </div>
+                <div className="RocDevSurveyGroup__bars__item__bar" style={{
+                  width: `${(counts[option] * 100) / maxCount}%`,
+                  // background: colors[option],
+                }} />
+              </div>
+            ))}
+          </div>
+
+          <div className="RocDevSurveyGroup__histograms">
+            {_.map(options, (option, i) => (
+              <div className="RocDevSurveyGroup__histogram" key={option}>
+              {/* <div className="RocDevSurveyGroup__histogram__item__legend">
+              { formatSalary(bin.x0 / 1000) }k
+            </div> */}
+                  <div className="RocDevSurveyGroup__histogram__mean"
+                    style={{
+                      left: `${((means[option] - _.first(bins).x0) * 100) / ((_.last(bins).x1 + 10000) - _.first(bins).x0)}%`,
+                    }}
+                  />
+                {_.map(bins, (bin) => (
+                  <div className="RocDevSurveyGroup__histogram__item" key={bin.x0}>
+                    <div className="RocDevSurveyGroup__histogram__item__bar" style={{
+                      // height: `${(((countsBySalary[bin.x0] || {})[option] ||0) * 100) / maxCountBySalary}%`,
+                      // background: colors[option],
+                      opacity: ((countsBySalary[bin.x0] || {})[option] ||0) / maxCountBySalary,
+                      zIndex: maxCountBySalary - ((countsBySalary[bin.x0] || {})[option] ||0),
+                    }}>
+                    </div>
+                    <Tooltip className="RocDevSurveyGroup__histogram__item__tooltip">
+                      { formatOption(option) }: { formatSalary(bin.x0) } ({ (countsBySalary[bin.x0] || {})[option] ||0 })
+                    </Tooltip>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+        {/*  <div className="RocDevSurvey__histogram">
+            {_.map(bins, (bin) => (
+              <div className="RocDevSurvey__histogram__item" key={bin.x0}>
+                <div className="RocDevSurvey__histogram__item__legend">
+                  { formatSalary(bin.x0 / 1000) }k
+                </div>
+                {_.map(options, (option, i) => (
+                  <Tooltip className="RocDevSurvey__histogram__item__bar" key={option} style={{
+                    height: `${(((countsBySalary[bin.x0] || {})[option] ||0) * 100) / maxCountBySalary}%`,
+                    background: colors[option],
+                    zIndex: maxCountBySalary - ((countsBySalary[bin.x0] || {})[option] ||0),
+                  }}>
+                    { option }: { formatSalary(bin.x0) } ({ (countsBySalary[bin.x0] || {})[option] ||0 })
+                  </Tooltip>
+                ))}
+              </div>
+            ))}
+          </div> */}
+        </div>
+      </div>
+    )
+  }
+}
