@@ -5,6 +5,7 @@ $main-color: #30336b;
 .RocDevSurvey {
     padding: 3em;
     font-size: 21px;
+    background: $bgc;
 
     @media (max-width: 700px) {
         padding: 2em 1em;
@@ -40,6 +41,7 @@ $main-color: #30336b;
     &__contents {
         // display: flex;
         margin: 0 -1em;
+        background: $bgc;
     }
 
     &Group {
@@ -297,6 +299,14 @@ $main-color: #30336b;
                     margin-right: 0.4em;
                 }
             }
+        }
+
+        &__disclaimer {
+            font-size: 0.5em;
+            margin-left: 0.5em;
+            opacity: 0.5;
+            font-style: italic;
+            margin-top: 2em;
         }
     }
 

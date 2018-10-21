@@ -37,9 +37,11 @@ const datasets = {
     label: "Race",
     data: _.map(dataRace, d => ({
       ...d,
-      race: _.includes(d.race, ", ") ? "Mixed" : d.race,
+      // race: _.includes(d.race, ", ") ? "Mixed" : d.race,
+      race: d.race == "White or European descent" ? "White or European descent" : "Not White or European descent",
     })),
     filteredKeys: ["Prefer not to say"],
+    disclaimer: "Non-white races bucketed to preserve anonymity",
     formatOption: d => d,
   },
   remote: {
@@ -124,6 +126,7 @@ class RocDevSurvey extends Component {
     }
   }
 
+  contents = React.createRef()
   groups = _.fromPairs(_.map(parsedDatasets, dataset => [
     dataset.key,
     React.createRef(),
@@ -134,6 +137,24 @@ class RocDevSurvey extends Component {
 
   getClassName() {
     return classNames("RocDevSurvey", this.props.className)
+  }
+
+  takeSnapshotsOfContents = () => {
+    const elem = this.contents.current
+
+    domToImage.toPng(elem)
+      .then(function (dataUrl) {
+        const img = new Image()
+        img.src = dataUrl
+
+        const link = document.createElement('a');
+        link.download = `2018-rocdev-salary-survey-results.jpeg`;
+        link.href = dataUrl;
+        link.click();
+      })
+      .catch(function (error) {
+          console.error('oops, something went wrong!', error)
+      })
   }
 
   takeSnapshots = () => {
@@ -171,7 +192,7 @@ class RocDevSurvey extends Component {
             Take snapshots
           </Button>
         </div>
-        <div className="RocDevSurvey__contents">
+        <div className="RocDevSurvey__contents" ref={this.contents}>
         {_.map(parsedDatasets, (dataset, key) => (
           <RocDevSurveyGroup
             {...dataset}
@@ -179,11 +200,6 @@ class RocDevSurvey extends Component {
           />
         ))}
 
-        <div className="RocDevSurvey__footer">
-          <p>
-            Using 2018 Rochester survey data - <a href="https://github.com/585-software/compensation-survey-2018">repo here</a>
-          </p>
-        </div>
       </div>
     </div>
     )
@@ -196,7 +212,7 @@ class RocDevSurveyGroup extends Component {
   elem = React.createRef()
 
   render() {
-    const { label, bins, options, colors, means, counts, maxCount, maxCountBySalary, countsBySalary, formatOption, formatOptionLegend, isOrdinal, filteredKeys,...props } = this.props
+    const { label, disclaimer, bins, options, colors, means, counts, maxCount, maxCountBySalary, countsBySalary, formatOption, formatOptionLegend, isOrdinal, filteredKeys,...props } = this.props
     return (
       <div className="RocDevSurveyGroup" ref={this.elem}>
         <h3 className="RocDevSurveyGroup__label">
@@ -300,6 +316,12 @@ class RocDevSurveyGroup extends Component {
             ))}
           </div> */}
         </div>
+          {disclaimer && (
+            <div className="RocDevSurveyGroup__disclaimer">
+              { disclaimer }
+            </div>
+          )}
+
       </div>
     )
   }
