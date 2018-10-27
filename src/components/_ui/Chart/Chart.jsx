@@ -7,8 +7,8 @@ import * as d3 from "d3"
 
 require('./Chart.scss')
 
-export const getHeight = (height, margin={top: 0, bottom: 0}) => height - margin.top - margin.bottom
-export const getWidth = (width, margin={left: 0, right: 0}) => width - margin.left - margin.right
+export const getHeight = (height, margin={top: 0, bottom: 0}) => Math.max(height - margin.top - margin.bottom, 0)
+export const getWidth = (width, margin={left: 0, right: 0}) => Math.max(width - margin.left - margin.right, 0)
 
 class Chart extends Component {
   constructor(props) {
@@ -29,6 +29,8 @@ class Chart extends Component {
       bottom: PropTypes.number,
       left: PropTypes.number,
     }),
+    onMouseMove: PropTypes.func,
+    onMouseOut: PropTypes.func,
   };
 
   static defaultProps = {
@@ -40,6 +42,8 @@ class Chart extends Component {
       bottom: 0,
       left: 0,
     },
+    onMouseMove: _.noop,
+    onMouseOut: _.noop,
 };
 
   getClassName() {
@@ -56,6 +60,7 @@ class Chart extends Component {
   }
 
   setSize() {
+    if (!this._isMounted) return
     let {height, width, margin} = this.props
     this.setState({height: getHeight(height, margin)})
     this.setState({width: getWidth(width, margin)})
@@ -66,6 +71,7 @@ class Chart extends Component {
   }
 
   componentDidMount() {
+    this._isMounted = true
     this._setSize = ::this.setSize
     window.addEventListener("resize", this._setSize)
     setTimeout(() => {
@@ -74,6 +80,7 @@ class Chart extends Component {
   }
 
   componentWillUnmount() {
+    this._isMounted = false
     window.removeEventListener("resize", this._setSize)
   }
 
@@ -93,7 +100,7 @@ class Chart extends Component {
 
 
   render() {
-    let {height, width, children, line, area, bar, xAxis, yAxis, brush, hasTooltip} = this.props
+    const {height, width, margin, children, line, area, bar, xAxis, yAxis, brush, hasTooltip, onMouseMove, onMouseOut} = this.props
 
     return (
       <div ref="elem" className={this.getClassName()}>
@@ -104,6 +111,15 @@ class Chart extends Component {
           <g className="Chart__wrapper" style={this.getWrapperStyle()}>
             {children}
           </g>
+          <rect
+            className="Chart__listener"
+            x={margin.left}
+            y={margin.top}
+            height={getHeight(height, margin)}
+            width={getWidth(width, margin)}
+            onMouseMove={onMouseMove}
+            onMouseOut={onMouseOut}
+          />
         </svg>
       </div>
     )

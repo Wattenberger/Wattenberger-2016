@@ -8,8 +8,8 @@ import _ from "lodash"
 import Tooltip from "components/_ui/Tooltip/Tooltip"
 import Button from "components/_ui/Button/Button"
 import dataSalaryByField from "./salary-by-field.csv"
-console.log(dataSalaryByField)
-import 'components/Articles/DoctorateStats/DoctorateStats.scss';
+// console.log(dataSalaryByField)
+import './DoctorateStats.scss';
 
 const formatSalary = d => numeral(d).format("$0,0")
 const formatNumber = d => numeral(d).format("0,0")

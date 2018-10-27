@@ -24,8 +24,15 @@ class Axis extends Component {
   }
 
   static propTypes = {
-    chartInfo: PropTypes.object,
+    width: PropTypes.number,
+    height: PropTypes.number,
     scale: PropTypes.func,
+    margin: PropTypes.shape({
+      top: PropTypes.number,
+      right: PropTypes.number,
+      bottom: PropTypes.number,
+      left: PropTypes.number,
+    }),
     dimension: PropTypes.oneOf(["x", "y"]),
     orientation: PropTypes.oneOf(["left", "right", "top", "bottom"]),
     ticks: PropTypes.number,
@@ -44,6 +51,12 @@ class Axis extends Component {
   };
 
   static defaultProps = {
+    margin: {
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+    },
     ticks: 6,
     tickSize: 0,
     tickSizeInner: 6,
@@ -51,17 +64,14 @@ class Axis extends Component {
     initTransition: 300,
     transition: 300
   };
+  elem = React.createRef()
 
   getStyle() {
-    let {chartInfo, dimension} = this.props
-    let x = dimension == "x" ?
-              0 :
-              chartInfo.margin.left ?
-                1 :
-                chartInfo.width
-    let y = dimension == "x" ?
-              chartInfo.height - chartInfo.margin.bottom :
-              0
+    const {height, width, margin, dimension} = this.props
+    const x = dimension == "x"      ? 0 :
+              margin.left           ? 1 :
+                                      width
+    const y = dimension == "x" ? height - margin.bottom : 0
 
     return {
       transform: `translate3d(${x}px, ${y}px, 0)`
@@ -76,12 +86,11 @@ class Axis extends Component {
   update(props) {
     let {scale, label, tickSize, tickSizeInner, tickSizeOuter, ticks, tickFrequency, tickPadding, tickArguments, format, initTransition, transition} = (props || this.props)
     let {axis} = this.state
-    let {elem} = this.refs
     if (!scale) return
 
     let init = !axis
     if (init) axis = d3[axesMap[this.getOrientation()]]()
-    
+
     axis.scale(scale)
         .tickSize(tickSize)
         .tickSizeInner(tickSizeInner)
@@ -92,7 +101,7 @@ class Axis extends Component {
     if (ticks) axis.ticks(ticks, tickFrequency)
     if (tickPadding) axis.tickPadding(tickPadding)
 
-    d3.select(elem)
+    d3.select(this.elem.current)
       .transition().duration(init ? initTransition : transition)
       .call(axis)
 
@@ -108,8 +117,8 @@ class Axis extends Component {
   }
 
   renderLabel() {
-    let {dimension, label, chartInfo} = this.props
-    let x =      dimension == "x" ? chartInfo.width || 0 : 0
+    let {dimension, label, width} = this.props
+    let x =      dimension == "x" ? width || 0 : 0
     let y =      dimension == "x" ? -10 : 20
     let rotate = dimension == "x" ? 0 : -90
 
@@ -117,10 +126,10 @@ class Axis extends Component {
       transform: `rotate(${rotate}deg)`,
     }
     return <text
-             className={`Axis__label Axis--${dimension ? `${dimension}__` : ''}label`}
-             style={style}
-             x={x}
-             y={y}>
+      className={`Axis__label Axis--${dimension ? `${dimension}__` : ''}label`}
+      style={style}
+      x={x}
+      y={y}>
       {label}
     </text>
   }
@@ -140,7 +149,7 @@ class Axis extends Component {
     let {label} = this.props
 
     return (
-      <g ref="elem" className={this.getClassName()} style={this.getStyle()}>
+      <g ref={this.elem} className={this.getClassName()} style={this.getStyle()}>
         {!!label && this.renderLabel()}
       </g>
     )

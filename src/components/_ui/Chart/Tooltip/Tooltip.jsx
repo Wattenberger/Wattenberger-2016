@@ -35,6 +35,7 @@ class Tooltip extends Component {
 
   static defaultProps = {
   };
+  elem = React.createRef()
 
   getStyle() {
     let {xAccessor, yAccessor} = this.props
@@ -42,18 +43,18 @@ class Tooltip extends Component {
     if (!hoveredPoint) return {opacity: 0}
 
     return {
-      left: `${xAccessor(hoveredPoint)}px`,
-      top: `${yAccessor(hoveredPoint)}px`,
+      left: `${hoveredPoint[0]}px`,
+      top: `${hoveredPoint[1]}px`,
       opacity: showing ? 1 : 0
     }
   }
 
-  update(props) {
-    let {type, elem} = props
-    if (!elem || !elem.refs || !elem.refs.elem) return
+  update() {
+    let {type, elem} = this.props
+    if (!elem || !elem.current) return
     this._onMouseover = ::this.onMouseover
     this._onMouseout = ::this.onMouseout
-    this._listener = select(elem.refs.elem).selectAll(typeMap[type])
+    this._listener = select(elem.current).selectAll(typeMap[type])
     this._listener.on("mouseover", this._onMouseover)
     this._listener.on("mouseout", this._onMouseout)
   }
@@ -62,7 +63,7 @@ class Tooltip extends Component {
     let {type, elem} = this.props
     let p = d
     if (!p) {
-      const domElem = findDOMNode(elem)
+      const domElem = elem.current
       p = mouse(domElem)
     }
     this.setState({hoveredPoint: p})
@@ -74,22 +75,22 @@ class Tooltip extends Component {
   }
 
   componentDidMount() {
-    this.update(this.props)
+    this.update()
   }
 
-  componentWillReceiveProps(newProps) {
-    this.update(newProps)
+  componentDidUpdate(newProps) {
+    this.update()
   }
 
   componentWillUnmount() {
-    this._listener.off("mouseover", this._onMouseover)
+    this._listener.on("mouseover", null)
+    this._listener.on("mouseout", null)
   }
 
   getClassName() {
     let {id} = this.props
-    let {elem} = this.refs
 
-    let domElem = select(elem)._groups[0][0] || {}
+    let domElem = select(this.elem.current)._groups[0][0] || {}
     let offset = domElem.offsetTop
     let height = domElem.offsetHeight
     let scroll = window.scrollY
@@ -106,7 +107,7 @@ class Tooltip extends Component {
     let {hoveredPoint} = this.state
 
     return (
-      <div ref="elem" className={this.getClassName()} style={this.getStyle()}>
+      <div ref={this.elem} className={this.getClassName()} style={this.getStyle()}>
         {hoveredPoint && this.props.renderElem(hoveredPoint)}
       </div>
     )

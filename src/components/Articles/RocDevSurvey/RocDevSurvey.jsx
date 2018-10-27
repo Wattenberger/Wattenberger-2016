@@ -105,7 +105,7 @@ const parsedDatasets =_.map(datasets, (dataset, key) => {
     bins,
   }
 })
-console.log({parsedDatasets})
+// console.log({parsedDatasets})
 
 
 // const parsedData = _.map(data, (info, name) => _.extend({}, info, {

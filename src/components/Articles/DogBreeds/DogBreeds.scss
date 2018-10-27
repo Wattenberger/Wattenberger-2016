@@ -1,0 +1,131 @@
+@import "~react-vis/dist/style";
+@import "~styles/variables";
+
+$main-color: #30336b;
+
+.DogBreeds {
+    padding: 3em 2em;
+    font-size: 21px;
+    background: $bgc;
+
+    &__title {
+        // display: inline-block;
+        position: relative;
+        color: $tc;
+        // color: #474787;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 0;
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+
+        &__button {
+            display: block;
+            font-size: 0.5em;
+        }
+    }
+
+    &__contents {
+        position: relative;
+        // display: flex;
+        background: $bgc;
+    }
+
+    &__select {
+        margin: 0 2em 2em;
+        font-size: 0.7em;
+
+        &__menu {
+        }
+    }
+
+    &__chart {
+        position: relative;
+    }
+
+    &__crosshair {
+        fill: $gray;
+    }
+
+    &__footer {
+        padding: 6em 1.9em 0;
+        font-size: 0.6em;
+        opacity: 0.5;
+    }
+
+    .Line__path {
+        stroke-width: 1px;
+    }
+
+    &Tooltip {
+        position: absolute;
+        top: -7.8em;
+        left: 0;
+        padding: 0.6em 0.9em;
+        font-size: 0.6em;
+        line-height: 1.3em;
+        text-align: center;
+        background: $gray;
+        background: white;
+        border: 1px solid $gray;
+        // transition: all 0.1s ease-out;
+        opacity: 0.9;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+
+        &__header {
+            flex: 1;
+            width: calc(100% + 2em);
+            margin: -1.1em -1.2em 0.6em;
+            padding: 0.4em;
+            background: $accent-3;
+            color: white;
+        }
+
+        &__breed-color {
+            height: 0.5em;
+            width: 0.5em;
+            margin-right: 0.6em;
+            border-radius: 100%;
+        }
+
+        &__breeds {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__breed {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            &:first-of-type {
+                color: #000;
+            }
+
+            &__label {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                font-weight: 600;
+                text-align: left;
+            }
+            &__value {
+                width: 5em;
+                text-align: right;
+            }
+        }
+    }
+}
