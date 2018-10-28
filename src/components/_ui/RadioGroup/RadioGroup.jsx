@@ -5,6 +5,8 @@ import {isObject} from "lodash"
 
 require('./RadioGroup.scss')
 
+const getOptionValue = option => _.isObject(option) ? option.value : option
+const areSameValue = (a, b) => getOptionValue(a) == getOptionValue(b)
 class RadioGroup extends Component {
   static propTypes = {
     options: PropTypes.array,
@@ -12,15 +14,16 @@ class RadioGroup extends Component {
       PropTypes.string,
       PropTypes.object
     ]),
-    clear: PropTypes.bool,
-    onSelect: PropTypes.func,
-    onClear: PropTypes.func
+    isMulti: PropTypes.bool,
+    canClear: PropTypes.bool,
+    onChange: PropTypes.func,
   };
 
   static defaultProps = {
     options: [],
-    onSelect: () => {},
-    onClear: () => {}
+    isMulti: false,
+    canClear: false,
+    onChange: _.noop,
   };
 
   getClassName() {
@@ -29,36 +32,50 @@ class RadioGroup extends Component {
     )
   }
 
-  getOptionStyle(option) {
-    let style = {}
-    if (option.color) style.color = option.color
-    return style
+  onChange = option => () => {
+    const { value, isMulti } = this.props
+    const newValue = isMulti ?
+      !option ? [] :
+      value.map(getOptionValue).includes(getOptionValue(option)) ? _.filter(value, d => !areSameValue(option, d)) :
+        [...value, option]  :
+      !option || areSameValue(value, option) ?
+        null :
+        option
+    this.props.onChange(newValue)
   }
 
   renderOption(option, idx) {
-    let {value} = this.props
+    const {value, isMulti} = this.props
 
-    let className = classNames(
+    const className = classNames(
       "RadioGroup__option", {
-        "RadioGroup__option--selected": option === value
+        "RadioGroup__option--selected": isMulti ?
+          value.map(getOptionValue).includes(getOptionValue(option)) :
+          areSameValue(option, value)
       }
     )
-    return <div className={className} style={this.getOptionStyle(option)} onClick={this.props.onSelect.bind(this, option)} key={idx}>
+    return <div className={className} style={{
+      color: option.color,
+    }} onClick={this.onChange(option)} key={idx}>
       {isObject ? option.value : option}
     </div>
   }
 
   renderClear() {
-    return <div className="RadioGroup__option RadioGroup__clear" onClick={::this.props.onClear}>x</div>
+    return (
+      <div className="RadioGroup__option RadioGroup__clear" onClick={this.onChange}>
+        x
+      </div>
+    )
   }
 
   render() {
-    let {options, clear} = this.props
+    const {options, canClear, isMulti} = this.props
 
     return (
       <div className={this.getClassName()}>
         {options.map(::this.renderOption)}
-        {clear && ::this.renderClear()}
+        {canClear && ::this.renderClear()}
       </div>
     )
   }

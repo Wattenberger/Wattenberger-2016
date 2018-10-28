@@ -30,7 +30,8 @@ class Chart extends Component {
       left: PropTypes.number,
     }),
     onMouseMove: PropTypes.func,
-    onMouseOut: PropTypes.func,
+    onMouseEnter: PropTypes.func,
+    onMouseEnter: PropTypes.func,
   };
 
   static defaultProps = {
@@ -43,7 +44,8 @@ class Chart extends Component {
       left: 0,
     },
     onMouseMove: _.noop,
-    onMouseOut: _.noop,
+    onMouseEnter: _.noop,
+    onMouseEnter: _.noop,
 };
 
   getClassName() {
@@ -100,7 +102,7 @@ class Chart extends Component {
 
 
   render() {
-    const {height, width, margin, children, line, area, bar, xAxis, yAxis, brush, hasTooltip, onMouseMove, onMouseOut} = this.props
+    const {height, width, margin, children, line, area, bar, xAxis, yAxis, brush, hasTooltip, onMouseMove, onMouseEnter, onMouseLeave} = this.props
 
     return (
       <div ref="elem" className={this.getClassName()}>
@@ -118,7 +120,8 @@ class Chart extends Component {
             height={getHeight(height, margin)}
             width={getWidth(width, margin)}
             onMouseMove={onMouseMove}
-            onMouseOut={onMouseOut}
+            onMouseLeave={onMouseLeave}
+            onMouseEnter={onMouseEnter}
           />
         </svg>
       </div>

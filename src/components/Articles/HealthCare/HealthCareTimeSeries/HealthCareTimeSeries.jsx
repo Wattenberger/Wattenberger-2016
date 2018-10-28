@@ -139,9 +139,8 @@ class HealthCareTimeSeries extends Component {
             <RadioGroup
               options={continents}
               value={selectedContinent}
-              clear
-              onSelect={::this.onContinentSelect}
-              onClear={::this.onContinentClear}
+              onChange={::this.onContinentSelect}
+              canClear
             />
           </Flex>
         </div>

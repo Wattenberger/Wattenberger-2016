@@ -20,7 +20,7 @@ class Line extends Component {
     yAccessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
     y0Accessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
     interpolation: PropTypes.func,
-    iteration: PropTypes.number, // for updating
+    iterator: PropTypes.number, // for updating
   };
 
   static defaultProps = {
@@ -53,7 +53,7 @@ class Line extends Component {
   componentDidUpdate(prevProps) {
     if (
       prevProps.data != this.props.data ||
-      prevProps.iteration != this.props.iteration
+      prevProps.iterator != this.props.iterator
     ) this.update()
   }
 
@@ -65,7 +65,7 @@ class Line extends Component {
   }
 
   render() {
-    const {type, data, xAccessor, yAccessor, y0Accessor, interpolation, iteration, ...props} = this.props
+    const {type, data, xAccessor, yAccessor, y0Accessor, interpolation, iterator, ...props} = this.props
     const {line} = this.state
 
     return (

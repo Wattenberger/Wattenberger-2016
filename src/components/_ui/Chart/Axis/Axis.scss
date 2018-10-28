@@ -13,8 +13,14 @@
 
   }
 
-  .tick text {
-    font-size: 0.9em;
+  .tick {
+    text {
+      font-size: 0.9em;
+    }
+
+    line {
+      stroke-width: 0;
+    }
   }
 
   &--x {

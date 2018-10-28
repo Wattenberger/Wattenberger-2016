@@ -13,10 +13,17 @@ import Chart from 'components/_ui/Chart/Chart';
 import { createScale } from 'components/_ui/Chart/utils/scale';
 import Line from 'components/_ui/Chart/Line/Line';
 import Axis from 'components/_ui/Chart/Axis/Axis';
+import RadioGroup from 'components/_ui/RadioGroup/RadioGroup';
+
 import data from "./breeds.json"
-console.log(data)
 
 import './DogBreeds.scss'
+
+console.log(data)
+const dataByBreed = _.fromPairs(_.map(data, d => [
+  d.breed,
+  d,
+]))
 
 const margin = {
   top: 2,
@@ -27,16 +34,25 @@ const margin = {
 const formatXAxis = (d, i) => d + 1926
 const formatSalary = d => numeral(d).format("$0,0")
 const formatNumber = d => numeral(d).format("0,0")
-const formatNumberShort = d => numeral(d).format(".1s")
+const formatNumberShort = d => numeral(d).format("0,0a")
 const ordinalColors = ["#778beb", "#63cdda", "#cf6a87", "#e77f67", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"];
-const breeds = _.keys(data)
+const breeds = _.map(data, "breed")
 const breedColors = _.fromPairs(
   _.map(breeds, (breed, i) => [
     breed,
     ordinalColors[i % ordinalColors.length],
   ])
 )
-const breedOptions = _.map(breeds, breed => ({ value: breed, label: breed, color: breedColors[breed] }))
+const breedGroups = _.uniqBy(_.map(data, "group"))
+const breedGroupColors = _.fromPairs(
+  _.map(breedGroups, (group, i) => [
+    group,
+    ordinalColors[i % ordinalColors.length],
+  ])
+  )
+const breedGroupOptions = _.map(breedGroups, group => ({ value: group, label: group, color: breedGroupColors[group] }))
+
+const breedOptions = _.map(breeds, breed => ({ value: breed, label: breed, color: breedGroupColors[dataByBreed[breed].group] }))
 const colorScale = d3.scaleLinear().range(["#c7ecee", "#686de0"]).domain([0, 1])
 const selectStyles = {
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
@@ -79,9 +95,11 @@ class DogBreeds extends Component {
       width: 0,
       xScale: null,
       yScale: null,
+      filteredData: [],
       tooltipInfo: null,
       closestBreed: null,
       selectedBreeds: [],
+      selectedGroups: [],
       iteration: 0,
     }
   }
@@ -97,7 +115,7 @@ class DogBreeds extends Component {
   chart = React.createRef()
 
   createScales = () => {
-    const { selectedBreeds } = this.state
+    const { selectedBreeds, selectedGroups } = this.state
 
     const height = 500
     const width = window.innerWidth * 0.9
@@ -106,13 +124,16 @@ class DogBreeds extends Component {
       width,
       margin,
       dimension: "x",
-      domain: [0, data["Akita"].length],
+      domain: [0, data[0].counts.length],
     })
     const selectedBreedValues = _.map(selectedBreeds, "value")
-    const filteredValues = _.isEmpty(selectedBreeds) ?
-      _.flatMap(data) :
-      _.flatMap(data, (values, breed) => _.includes(selectedBreedValues, breed) ? values : [])
-    const maxCount = _.max(filteredValues)
+    const selectedGroupValues = _.map(selectedGroups, "value")
+    const filteredData = _.filter(data, d => (
+      (_.isEmpty(selectedBreeds) || _.includes(selectedBreedValues, d.breed)) &&
+      (_.isEmpty(selectedGroups) || _.includes(selectedGroupValues, d.group))
+    ))
+
+    const maxCount = _.max(_.flatMap(filteredData, "counts"))
     const yScale = createScale({
       height,
       margin,
@@ -120,21 +141,16 @@ class DogBreeds extends Component {
       domain: [0, maxCount],
     })
     const iteration = this.state.iteration + 1
-    this.setState({ height, width, xScale, yScale, iteration })
+    this.setState({ height, width, xScale, yScale, filteredData, iteration })
   }
 
   xAccessor = (d,i) => this.state.xScale && this.state.xScale(i)
   yAccessor = d => this.state.yScale && this.state.yScale(+d)
 
-  renderTooltip = (hoveredPoint) => (
-    <Tooltip className="DogBreeds__tooltip" style={{top: `${hoveredPoint[0]}px`, left: `${hoveredPoint[1]}px`}}>
-      hi
-    </Tooltip>
-  )
-
   onMouseMove = (clientX, clientY) => {
     if (!this.chart || !this.chart.current) return
-    const { width, xScale, yScale } = this.state
+    const { width, xScale, yScale, filteredData } = this.state
+    if (!this.isHoveringChart) return
 
     const mouseX = clientX - this.chart.current.getBoundingClientRect().left - margin.left
     const yearIndex = Math.round(xScale.invert(mouseX))
@@ -143,14 +159,16 @@ class DogBreeds extends Component {
     const mouseY = clientY - this.chart.current.getBoundingClientRect().top - margin.top
     const mouseYVal = yScale.invert(mouseY)
 
-    const parsedBreeds = _.map(data, (values, breed) => ({
-      breed,
-      value: +values[yearIndex],
-      distanceFromY: mouseYVal - values[yearIndex],
-      absDistanceFromY: Math.abs(mouseYVal - values[yearIndex]),
+    const parsedBreeds = _.map(filteredData, breed => ({
+      ...breed,
+      breed: breed.breed,
+      value: +breed.counts[yearIndex],
+      distanceFromY: mouseYVal - breed.counts[yearIndex],
+      absDistanceFromY: Math.abs(mouseYVal - breed.counts[yearIndex]),
     }))
-    const breedsByYCloseness = _.orderBy(parsedBreeds, "distanceFromY", "asc")
-    const breedsByYAbsCloseness = _.orderBy(parsedBreeds, "absDistanceFromY", "asc")
+    const orderedBreeds = _.map(_.orderBy(parsedBreeds, "value", "desc"), (d, i) => ({...d, index: i + 1}))
+    const breedsByYCloseness = _.orderBy(orderedBreeds, "distanceFromY", "asc")
+    const breedsByYAbsCloseness = _.orderBy(orderedBreeds, "absDistanceFromY", "asc")
     const closestBreed = _.get(breedsByYAbsCloseness, [0, "breed"])
     const closestBreedIndex = _.findIndex(breedsByYCloseness, {breed: closestBreed})
     const neighborsOnEachSide = 3
@@ -175,18 +193,18 @@ class DogBreeds extends Component {
   throttledOnMouseMove = _.throttle(this.onMouseMove, 90)
   persistedOnMouseMove = e => this.throttledOnMouseMove(e.clientX, e.clientY)
 
+  onMouseEnter = () => this.isHoveringChart = true;
   clearTooltip = () => {
+    this.isHoveringChart = false;
     this.setState({ tooltipInfo: null, closestBreed: null })
   }
-
-  onBreedsSelect = breeds => {
-    this.setState({ selectedBreeds: breeds }, this.createScales)
-  }
+  onBreedsSelect = breeds => this.setState({ selectedBreeds: breeds }, this.createScales)
+  onSelectedGroupsChange = groups => this.setState({ selectedGroups: groups || [] }, this.createScales)
 
   render() {
-    const { height, width, xScale, yScale, tooltipInfo, closestBreed, selectedBreeds, iteration } = this.state
+    const { height, width, xScale, yScale, tooltipInfo, closestBreed, selectedBreeds, selectedGroups, filteredData, iteration } = this.state
     const selectedBreedValues = _.map(selectedBreeds, "value")
-    const highlightedBreeds = _.filter([closestBreed, ...selectedBreedValues])
+    const highlightedBreeds = _.uniqBy(_.filter([closestBreed, ...selectedBreedValues]), _.identity)
 
     return (
       <div className={this.getClassName()}>
@@ -196,50 +214,61 @@ class DogBreeds extends Component {
           </h2>
         </div>
         <div className="DogBreeds__contents">
+          <div className="DogBreeds__controls">
+            <Select
+              isMulti
+              name="breeds"
+              options={breedOptions}
+              value={selectedBreeds}
+              className="DogBreeds__select"
+              classNamePrefix="DogBreeds__select"
+              styles={selectStyles}
+              onChange={this.onBreedsSelect}
+            />
 
-          <Select
-            isMulti
-            name="breeds"
-            options={breedOptions}
-            value={selectedBreeds}
-            className="DogBreeds__select"
-            classNamePrefix="DogBreeds__select"
-            styles={selectStyles}
-            onChange={this.onBreedsSelect}
-          />
+            <RadioGroup
+              className="DogBreeds__toggle"
+              options={breedGroupOptions}
+              value={selectedGroups}
+              onChange={this.onSelectedGroupsChange}
+              isMulti
+              canClear
+            />
+          </div>
           <div className={`DogBreeds__chart DogBreeds__chart--has-${selectedBreedValues.length ? "selected-breeds" : "no-selected-breeds"}`} ref={this.chart}>
             <Chart
               width={width}
               height={height}
               margin={margin}
               onMouseMove={this.persistedOnMouseMove}
-              onMouseOut={this.clearTooltip}>
-              {!!xScale && _.map(data, (years, breed) => (
+              onMouseEnter={this.onMouseEnter}
+              onMouseLeave={this.clearTooltip}>
+              {_.map(filteredData, breed => (
                 <Line
-                  key={breed}
-                  data={years}
+                  key={breed.breed}
+                  data={breed.counts}
                   xAccessor={this.xAccessor}
                   yAccessor={this.yAccessor}
                   style={{
-                    stroke: breedColors[breed],
+                    stroke: breedGroupColors[breed.group],
                     strokeWidth: 1.6,
                   }}
-                  iteration={iteration}
+                  iterator={iteration}
                 />
               ))}
-              {highlightedBreeds.map((breed, i) => (
+              {highlightedBreeds.map(breed => (
                 <Line
-                  key={i}
-                  data={data[breed]}
+                  key={breed}
+                  data={dataByBreed[breed].counts}
                   xAccessor={this.xAccessor}
                   yAccessor={this.yAccessor}
                   style={{
-                    stroke: breedColors[breed],
+                    stroke: breedGroupColors[dataByBreed[breed].group],
                     strokeWidth: 4,
                     opacity: 1,
                     transition: "none",
                   }}
-                  iteration={iteration}
+                  iterator={iteration}
                 />
               ))}
 
@@ -272,7 +301,7 @@ class DogBreeds extends Component {
 
             {tooltipInfo && (
               <DogBreedsTooltip
-                style={{transform: `translate3d(${tooltipInfo.boundedX}px, ${tooltipInfo.y}px, 0)`}}
+                style={{transform: `translate3d(calc(-50% + ${tooltipInfo.boundedX}px), calc(-100% + ${tooltipInfo.y}px), 0)`}}
                 {...tooltipInfo}
               />
             )}
@@ -292,8 +321,11 @@ const DogBreedsTooltip = ({ breeds, year, x, boundedX, y, ...props }) => (
     <div className="DogBreedsTooltip__breeds">
       {_.map(breeds, breed => _.isObject(breed) && (
         <div className={`DogBreedsTooltip__breed DogBreedsTooltip__breed--is-${breed.isSelected ? "selected" : "not-selected"}`} key={breed.breed}>
+          <div className="DogBreedsTooltip__breed-color" style={{background: breedGroupColors[breed.group]}} />
+          <div className="DogBreedsTooltip__breed__index">
+            { breed.index }.
+          </div>
           <div className="DogBreedsTooltip__breed__label">
-            <div className="DogBreedsTooltip__breed-color" style={{background: breedColors[breed.breed]}} />
             { breed.breed }
           </div>
           <div className="DogBreedsTooltip__breed__value">
