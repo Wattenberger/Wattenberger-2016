@@ -14,37 +14,36 @@ class Line extends Component {
   }
 
   static propTypes = {
+    type: PropTypes.oneOf(["line", "area"]),
     data: PropTypes.array,
-    xAccessor: PropTypes.func,
-    yAccessor: PropTypes.func,
+    xAccessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
+    yAccessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
+    y0Accessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
     interpolation: PropTypes.func,
-    dataKey: PropTypes.func,
-    initTransition: PropTypes.number,
-    transition: PropTypes.number,
-    easing: PropTypes.func,
-    onUpdate: PropTypes.func,
     iteration: PropTypes.number, // for updating
   };
 
   static defaultProps = {
+    type: "line",
+    y0Accessor: 0,
     interpolation: d3.curveMonotoneX,
-    initTransition: 1300,
-    transition: 300,
-    easing: d3.easeBackOut,
-    onUpdate: _.noop,
   };
 
   update = () => {
-    let {data, xAccessor, yAccessor, interpolation, dataKey, initTransition, transition, easing, onUpdate} = this.props
+    const {type, data, xAccessor, yAccessor, y0Accessor, interpolation} = this.props
 
-    let lineObj = d3.line()
+    let lineObj = d3[type]()
       .x(xAccessor)
-      .y(yAccessor)
       .curve(interpolation)
+      if (type == "area") {
+        lineObj.y0(y0Accessor)
+        lineObj.y1(yAccessor)
+      } else {
+        lineObj.y(yAccessor)
+    }
     const line = lineObj(data)
 
     this.setState({line})
-    onUpdate(line)
   }
 
   componentDidMount() {
@@ -66,13 +65,11 @@ class Line extends Component {
   }
 
   render() {
-    const {style} = this.props
+    const {type, data, xAccessor, yAccessor, y0Accessor, interpolation, iteration, ...props} = this.props
     const {line} = this.state
 
     return (
-      <g ref="elem" className={this.getClassName()}>
-        <path className="Line__path" ref="path" d={line} style={style} />
-      </g>
+      <path className={this.getClassName()} ref="path" d={line} {...props} />
     )
   }
 }

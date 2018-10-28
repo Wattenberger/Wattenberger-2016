@@ -47,6 +47,12 @@ $main-color: #30336b;
 
     &__chart {
         position: relative;
+
+        &--has-selected-breeds {
+            .Line {
+                opacity: 0.2;
+            }
+        }
     }
 
     &__crosshair {
@@ -59,7 +65,7 @@ $main-color: #30336b;
         opacity: 0.5;
     }
 
-    .Line__path {
+    .Line {
         stroke-width: 1px;
     }
 
@@ -110,9 +116,13 @@ $main-color: #30336b;
             width: 100%;
             display: flex;
             align-items: center;
+            font-weight: 100;
+            opacity: 0.45;
 
-            &:first-of-type {
+            &--is-selected {
                 color: #000;
+                font-weight: 600;
+                opacity: 1;
             }
 
             &__label {

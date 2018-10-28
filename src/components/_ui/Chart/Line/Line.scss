@@ -4,8 +4,5 @@
   stroke: $accent-2;
   stroke-width: 2;
   fill: none;
-
-  &__path {
-    transition: d 0.3s ease-out, stroke-width 0s;
-  }
+  transition: d 0.3s ease-out, stroke-width 0s;
 }
