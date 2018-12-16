@@ -22,16 +22,16 @@
 
         @keyframes pulseLine {
               0% { stroke-dashoffset:   0%; }
-            100% { stroke-dashoffset: -220%; }
+            100% { stroke-dashoffset: -290%; }
         }
 
         @keyframes pulseCircles {
-              0% { opacity: 0; }
-              30% { opacity: 0; }
-             40% { opacity: 1; }
-             60% { opacity: 1; }
-             70% { opacity: 0; }
-            100% { opacity: 0; }
+              0% { stroke-opacity: 0.2; }
+             30% { stroke-opacity: 0.2; }
+             40% { stroke-opacity: 1; }
+             60% { stroke-opacity: 1; }
+             70% { stroke-opacity: 0.2; }
+            100% { stroke-opacity: 0.2; }
         }
 
         .st2{
@@ -42,17 +42,18 @@
         }
 
         #Layer_3 .st2 {
-            animation: pulseLine 12s infinite;
-            stroke-dasharray: 0 100% 35%;
+            animation: pulseLine 7s infinite;
+            stroke-dasharray: 0 160% 35%;
 
             @for $i from 0 through 100 {
               &:nth-child(#{$i}) {
-                animation-delay: 0.9s + $i * 0.2s;
+                animation-delay: 0.2s + $i * 0.2s;
               }
             }
         }
 
         #Layer_5 .st2 {
+            fill: #181a1f;
             animation: pulseCircles 60s infinite;
 
             @for $i from 0 through 100 {
