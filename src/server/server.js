@@ -22,6 +22,15 @@ if (app.get("env") === "development") require ("../../webpack/dev-server")
 // Render app server-side and send it as response
 app.use(render)
 
+app.use((err, req, res, next) => {
+  if (req.headers['x-forwarded-proto'] != 'https') {
+    const status = 302
+    res.redirect(status, 'https://' + req.hostname + req.originalUrl);
+  } else {
+    next()
+  }
+}
+
 // Generic server errors (eg. not caught by components)
 app.use((err, req, res, next) => {
   console.log("Error on request %s %s", req.method, req.url)
