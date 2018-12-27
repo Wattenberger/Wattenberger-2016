@@ -29,7 +29,7 @@ app.use((err, req, res, next) => {
   } else {
     next()
   }
-}
+})
 
 // Generic server errors (eg. not caught by components)
 app.use((err, req, res, next) => {
