@@ -144,7 +144,7 @@ class Day1 extends Component {
             yAccessor={d => d.y}
             radius={d => d.r}
             transition={INTERVAL_LENGTH}
-            easing={d3.linear}
+            // easing={d3.linear}
           />
         </Chart>
       </div>

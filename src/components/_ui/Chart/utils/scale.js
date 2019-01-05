@@ -27,6 +27,7 @@ export const createScale = (providedConfig) => {
   let scale = (scaleTypes[config.type] || config.type)()
   scale.range(config.range)
        .domain(config.domain)
+  if (config.clamp) scale.clamp(config.clamp)
 
   return scale
 }

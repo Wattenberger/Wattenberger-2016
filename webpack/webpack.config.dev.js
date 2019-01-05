@@ -9,11 +9,12 @@ const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../../static")
 
 export default {
-  devtool: 'source-map',
+  mode: "development",
+  devtool: "cheap-module-eval-source-map",
   entry: {
     "main": [
       "react-hot-loader/patch",
-      "babel-polyfill",
+      "@babel/polyfill",
       `webpack-dev-server/client?http://${config.WEBPACK_HOST}:${config.WEBPACK_PORT}`,
       "webpack/hot/only-dev-server",
       "./src/client.js"
@@ -24,7 +25,8 @@ export default {
     path: assetsPath,
     publicPath: `//${config.STATIC_HOST}/static/`,
     filename: "app.min.js",
-    chunkFilename: "[chunkhash].js"
+    chunkFilename: "[chunkhash].js",
+    pathinfo: false,
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -32,16 +34,24 @@ export default {
   },
   module: {
     rules: [
-      {test: /\js(x)?$/, exclude: /node_modules/, loader: "babel-loader", query: {presets: ["react"]} },
+      {test: /\js(x)?$/, exclude: /node_modules/, loader: "babel-loader?cacheDirectory", query: {presets: ["@babel/react"]} },
       {test: /\.css$/,   use: ["style-loader", "css-loader", "postcss-loader"] },
       {test: /\.scss$/,  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader?include_paths[]=" + srcPath] },
       {
         test: /.*\.(gif|png|jpe?g|pdf|svg|csv)$/i,
-        use: [
-          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack-loader'
-        ]
-      }
+          // include: [
+          //     staticPath
+          // ],
+          use: [
+              'file-loader',
+              {
+                  loader: 'image-webpack-loader',
+                  options: {
+                      disable: true, // webpack@2.x and newer
+                  },
+              },
+          ],
+      },
     ],
     // noParse: [/node_modules/]
   },

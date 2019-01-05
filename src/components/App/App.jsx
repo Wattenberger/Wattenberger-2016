@@ -10,9 +10,10 @@ import Sketches from "components/Sketches/Sketches"
 // import Headlines from "components/Articles/Headlines/Headlines"
 // import FamilyTree from "components/Articles/FamilyTree/FamilyTree"
 // import JournalistDeaths from 'components/Articles/JournalistDeaths/JournalistDeaths';
-import HealthCare from 'components/Articles/HealthCare/HealthCare';
+// import HealthCare from 'components/Articles/HealthCare/HealthCare';
 import DogNames from 'components/Articles/DogNames/DogNames';
 import DogBreeds from 'components/Articles/DogBreeds/DogBreeds';
+import WDVP from 'components/Articles/WDVP/WDVP';
 import RocDevSurvey from 'components/Articles/RocDevSurvey/RocDevSurvey';
 // import DoctorateStats from 'components/Articles/DoctorateStats/DoctorateStats';
 import News from 'components/News/News';
@@ -32,11 +33,12 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/sketches" component={Sketches} />
         {/* <Route path="/rochester-real-estate" component={RochesterRealEstate} /> */}
-        <Route path="/healthcare" component={HealthCare} />
+        {/* <Route path="/healthcare" component={HealthCare} /> */}
         <Route path="/dogs" component={DogNames} />
         <Route path="/dog-breeds" component={DogBreeds} />
         {/* <Route path="/family-tree" component={FamilyTree} /> */}
         <Route path="/news" component={News} />
+        <Route path="/wdvp" component={WDVP} />
         <Route path="/rocdev" component={RocDevSurvey} />
         {/* <Route path="/docstats" component={DoctorateStats} /> */}
         {this.props.children}

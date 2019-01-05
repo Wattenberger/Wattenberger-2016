@@ -19,7 +19,7 @@ import data from "./breeds.json"
 
 import './DogBreeds.scss'
 
-console.log(data)
+// console.log(data)
 const dataByBreed = _.fromPairs(_.map(data, d => [
   d.breed,
   d,

@@ -35,11 +35,11 @@ class RadioGroup extends Component {
   onChange = option => () => {
     const { value, isMulti } = this.props
     const newValue = isMulti ?
-      !option ? [] :
-      value.map(getOptionValue).includes(getOptionValue(option)) ? _.filter(value, d => !areSameValue(option, d)) :
-        [...value, option]  :
-      !option || areSameValue(value, option) ?
-        null :
+        !option ? [] :
+        value.map(getOptionValue).includes(getOptionValue(option)) ? _.filter(value, d => !areSameValue(option, d)) :
+          [...value, option]  :
+        !option || areSameValue(value, option) ?
+          null :
         option
     this.props.onChange(newValue)
   }
@@ -57,13 +57,13 @@ class RadioGroup extends Component {
     return <div className={className} style={{
       color: option.color,
     }} onClick={this.onChange(option)} key={idx}>
-      {isObject ? option.value : option}
+      {getOptionValue(option)}
     </div>
   }
 
   renderClear() {
     return (
-      <div className="RadioGroup__option RadioGroup__clear" onClick={this.onChange}>
+      <div className="RadioGroup__option RadioGroup__clear" onClick={this.onChange()}>
         x
       </div>
     )

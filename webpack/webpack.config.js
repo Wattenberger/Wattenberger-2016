@@ -8,6 +8,7 @@ const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../dist")
 
 module.exports = {
+  mode: "production",
   entry: {
     "main": [
       "./src/client.js"
@@ -23,11 +24,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     modules: ['node_modules', srcPath],
-    symlinks: false
+    symlinks: false,
   },
   module: {
     rules: [
-      {test: /\js(x)?$/, loader: "babel-loader", query: {presets: ["react"]} },
+      {test: /\js(x)?$/, loader: "babel-loader?cacheDirectory", query: {presets: ["@babel/react"]} },
       {test: /\.css$/,   use: ["style-loader", "css-loader", "postcss-loader"] },
       {test: /\.scss$/,  use: ["style-loader", "css-loader", "postcss-loader", "sass-loader?include_paths[]=" + srcPath] },
       {
@@ -40,6 +41,8 @@ module.exports = {
   ],
   // noParse: [/node_modules/]
   // noParse: [/ignore/]
+  },
+  optimization: {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
