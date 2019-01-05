@@ -11,6 +11,7 @@ module.exports = {
   mode: "production",
   entry: {
     "main": [
+      "@babel/polyfill",
       "./src/client.js"
     ],
   },
