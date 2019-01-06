@@ -40,7 +40,7 @@ app.use((err, req, res, next) => {
 })
 
 // Start Express server
-app.set("port", process.env.PORT || 3000)
+app.set("port", process.env.PORT || 8080)
 
 app.listen(app.get("port"), () => {
   console.log(`Express ${app.get("env")} server listening on ${app.get("port")}. Get ’er done!`)
