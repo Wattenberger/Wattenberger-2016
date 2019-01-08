@@ -1,9 +1,9 @@
 import "@babel/register"
-import "@babel/polyfill"
+// import "@babel/polyfill"
 import React from "react"
 import ReactDOM from "react-dom"
 import { AppContainer } from 'react-hot-loader'
-import {Provider} from "react-redux"
+import { Provider } from "react-redux"
 import Routes from "./routes"
 import createStore from "./store"
 

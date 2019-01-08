@@ -16,7 +16,8 @@ import Axis from 'components/_ui/Chart/Axis/Axis';
 import RadioGroup from 'components/_ui/RadioGroup/RadioGroup';
 
 // import data from "./WDVP Datasets - the future of government"
-import data from "./WDVP Datasets - what makes a 'good' government"
+// import data from "./WDVP Datasets - what makes a 'good' government.json"
+import data from "./Wdvp_gov_score.json"
 // import data from "./WDVP Datasets - small countries are beautiful"
 
 import './WDVP.scss'
@@ -36,6 +37,7 @@ const numberFromValue = value =>
 // ]
 const metricOptions = [
   "population", "surface area (Km2)", "happy planet index", "human development index", "world happiness report score", "sustainable economic development assessment (SEDA)", "GDP (billions PPP)", "GDP per capita (PPP)", "GDP growth (annual %)", "health expenditure % of GDP", "health expenditure per person", "education expenditure % of GDP", "education expenditure per person", "school life expectancy (years)", "unemployment (%)", "government spending score", "government expenditure (% of GDP)", "political rights score", "civil liberties score", "political stability & absence of violence", "government effectiveness", "regulatory quality", "rule of law", "control of corruption", "judicial effectiveness score", "government integrity score", "property rights score", "tax burden score", "overall economic freedom score", "financial freedom score", "women MPs (% of all MPs)", "Area in km²", "Population",
+  "PCscore1", "PCscore2", "PCscore3", "PCscore4", "tSNE1", "tSNE2",
 ]
 const metricOptionsVerbose = _.map(metricOptions, m => ({
   value: m,
@@ -126,6 +128,7 @@ class WDVP extends Component {
     })
 
     const yScale = createScale({
+      // type: "log",
       height,
       margin,
       clamp: false,

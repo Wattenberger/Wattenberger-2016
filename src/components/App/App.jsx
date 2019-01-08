@@ -14,6 +14,7 @@ import Sketches from "components/Sketches/Sketches"
 import DogNames from 'components/Articles/DogNames/DogNames';
 import DogBreeds from 'components/Articles/DogBreeds/DogBreeds';
 import WDVP from 'components/Articles/WDVP/WDVP';
+import WDVPGrid from 'components/Articles/WDVP/WDVPGrid';
 import RocDevSurvey from 'components/Articles/RocDevSurvey/RocDevSurvey';
 // import DoctorateStats from 'components/Articles/DoctorateStats/DoctorateStats';
 import News from 'components/News/News';
@@ -39,6 +40,7 @@ class App extends Component {
         {/* <Route path="/family-tree" component={FamilyTree} /> */}
         <Route path="/news" component={News} />
         <Route path="/wdvp" component={WDVP} />
+        <Route path="/wdvpgrid" component={WDVPGrid} />
         <Route path="/rocdev" component={RocDevSurvey} />
         {/* <Route path="/docstats" component={DoctorateStats} /> */}
         {this.props.children}

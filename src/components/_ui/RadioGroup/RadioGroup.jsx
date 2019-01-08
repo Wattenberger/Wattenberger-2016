@@ -57,7 +57,7 @@ class RadioGroup extends Component {
     return <div className={className} style={{
       color: option.color,
     }} onClick={this.onChange(option)} key={idx}>
-      {getOptionValue(option)}
+      {_.isObject(option) && option.label ? option.label : getOptionValue(option)}
     </div>
   }
 

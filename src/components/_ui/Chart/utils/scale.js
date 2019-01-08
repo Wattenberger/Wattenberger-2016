@@ -4,6 +4,7 @@ const scaleTypes = {
   linear: d3.scaleLinear,
   ordinal: d3.scaleOrdinal,
   time: d3.scaleTime,
+  log: d3.scaleLog,
 }
 
 export const createScale = (providedConfig) => {
