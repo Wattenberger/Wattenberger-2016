@@ -8,10 +8,8 @@ const WEBPACK_PORT = parseInt(process.env.PORT) + 1    || 3001
 const SERVER_PORT  = parseInt(process.env.SERVER_PORT) || 3000
 
 const serverOptions = {
-  debug: true,
   // quiet: true,
   hot: true,
-  verbose: true,
   inline: true,
   publicPath: config.output.publicPath,
   proxy: {

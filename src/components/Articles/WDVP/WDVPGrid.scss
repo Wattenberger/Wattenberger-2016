@@ -44,6 +44,22 @@ $main-color: #30336b;
     &__rows {
     }
 
+    &Chart {
+        &__metric {
+            font-size: 0.6em;
+            cursor: pointer;
+
+            &:hover {
+                color: #45aeb1;
+            }
+
+            &--is-selected {
+                color: #45aeb1;
+            }
+        }
+    }
+
+
     &Metric {
         position: relative;
         display: flex;
@@ -108,8 +124,9 @@ $main-color: #30336b;
     &__chart {
         position: relative;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 5em;
+        shape-rendering: crispedges;
     }
 
     &__metrics {
