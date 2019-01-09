@@ -270,6 +270,7 @@ class WDVPGridChart extends Component {
         .on("mouseout", d => onCountryHover(null))
     const cellWidth = xScale(1) - xScale(0)
     const cellHeight = yScale(0) - yScale(1)
+    const speedMultiplier = 6
     
     const metricElems = bounds.selectAll(".WDVPGridChart__metric")
         .data(metrics, d => d)
@@ -281,7 +282,7 @@ class WDVPGridChart extends Component {
         .attr("x", -margins.left)
         .text(d => d)
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
-        .delay((d, i) => data.length * 10 + i * 10 + 900)
+        .delay((d, i) => data.length * speedMultiplier + i * speedMultiplier + 900)
         .attr("y", (d, i) => yScale(metrics.length - i) + cellHeight * 0.6)
     
     const countries = bounds.selectAll(".WDVPGridChart__group")
@@ -292,7 +293,7 @@ class WDVPGridChart extends Component {
       .merge(countries)
         .style("opacity", 0.2)
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
-        .delay((d,i) => i * 10)
+        .delay((d,i) => i * speedMultiplier)
         .style("transform", (d, i) => `translateX(${xScale(i)}px)`)
         .style("opacity", 1)
     countries.exit().remove()
@@ -308,7 +309,7 @@ class WDVPGridChart extends Component {
         .attr("height", cellHeight)
         .attr("fill", d => !_.isFinite(getValue(d)) ? "#ccc" : blackAndWhiteColorScale(getValue(d)))
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
-        .delay((d, i) => data.length * 10 + i * 10 + 900)
+        .delay((d, i) => data.length * speedMultiplier + i * 10 + 900)
         .attr("y", d => yScale(metrics.length - d.metricIndex))
     rects.exit().remove()
   }
