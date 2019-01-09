@@ -50,11 +50,7 @@ $main-color: #30336b;
             cursor: pointer;
 
             &:hover {
-                color: #45aeb1;
-            }
-
-            &--is-selected {
-                color: #45aeb1;
+                fill: #45aeb1;
             }
         }
     }

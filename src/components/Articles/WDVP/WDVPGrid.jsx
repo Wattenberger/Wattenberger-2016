@@ -277,7 +277,7 @@ class WDVPGridChart extends Component {
         .attr("class", "WDVPGridChart__metric")
         .on("click", onMetricClick)
       .merge(metricElems)
-        .style("color", d => d == sort ? "inherit" : "#45aeb1")
+        .style("fill", d => d == sort ? "inherit" : "#45aeb1")
         .attr("x", -margins.left)
         .text(d => d)
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
