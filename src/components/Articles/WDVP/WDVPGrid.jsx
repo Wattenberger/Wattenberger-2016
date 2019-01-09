@@ -145,7 +145,7 @@ class WDVPGrid extends Component {
 
     return (
       <div className={this.getClassName()}>
-        <h2 className="WDVPGrid__title">x
+        <h2 className="WDVPGrid__title">
           Country Metric Explorer
         </h2>
         <div className="WDVPGrid__contents">
@@ -267,7 +267,7 @@ class WDVPGridChart extends Component {
     }))
 
     const bounds = d3.select(this.container.current)
-        .on("mouseover", d => onCountryHover(null))
+        .on("mouseout", d => onCountryHover(null))
     const cellWidth = xScale(1) - xScale(0)
     const cellHeight = yScale(0) - yScale(1)
     
