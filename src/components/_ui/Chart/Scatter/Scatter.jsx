@@ -36,18 +36,19 @@ class Scatter extends Component {
     radius: 8,
     initTransition: 1300,
     transition: 300,
-    easing: d3.easeBackOut,
+    easing: d3.easeLinear,
     onUpdate: _.noop,
   };
+  elem = React.createRef()
 
-  update = (props) => {
-    let {data, radius, xAccessor, yAccessor, dataKey, initTransition, transition, easing, onUpdate} = (props || this.props)
+  update = () => {
+    let {data, radius, xAccessor, yAccessor, dataKey, initTransition, transition, easing, onUpdate} = this.props
     let {dots} = this.state
-    let {elem} = this.refs
     
     let init = !dots
-    dots = d3.select(elem).selectAll(".dot")
-      .data(data, dataKey)
+    console.log(data)
+    dots = d3.select(this.elem.current).selectAll(".dot")
+      .data((data || []), dataKey)
     dots.enter().append("circle")
       .attr("class", "dot")
 
@@ -72,8 +73,13 @@ class Scatter extends Component {
     this.update()
   }
 
-  componentWillReceiveProps(newProps) {
-    this.update(newProps)
+  componentDidUpdate(prevProps) {
+    if (
+      // this.props.data != prevProps.data ||
+      // this.props.xAccessor != prevProps.xAccessor ||
+      // this.props.yAccessor != prevProps.yAccessor ||
+      this.props.iterator != prevProps.iterator
+    ) this.update()
   }
 
   getClassName() {
@@ -85,8 +91,7 @@ class Scatter extends Component {
 
   render() {
     return (
-      <g ref="elem" className={this.getClassName()}>
-      </g>
+      <g ref={this.elem} className={this.getClassName()} />
     )
   }
 }

@@ -1,27 +1,20 @@
   import React, {Component} from "react"
-import { FixedSizeList as List } from 'react-window'
 import * as d3 from "d3"
 import { interpolatePRGn } from "d3-scale-chromatic"
-import numeral from "numeral"
 import classNames from "classnames"
 import _ from "lodash"
-import Tooltip from "components/_ui/Tooltip/Tooltip"
-import Button from "components/_ui/Button/Button"
-import Chart from 'components/_ui/Chart/Chart';
 import { createScale } from 'components/_ui/Chart/utils/scale';
-import Line from 'components/_ui/Chart/Line/Line';
-import Axis from 'components/_ui/Chart/Axis/Axis';
 import RadioGroup from 'components/_ui/RadioGroup/RadioGroup';
 
 // import data from "./WDVP Datasets - the future of government"
 import rawData from "./Wdvp_gov_score.json"
 import metricRankedCorrelationData from "./Wdvp_corr.json"
 // import data from "./WDVP Datasets - small countries are beautiful"
+import WDVPScatter from './WDVPScatter'
 
 import './WDVPGrid.scss'
-import { cpus } from "os";
 
-console.log(rawData)
+// console.log(rawData)
 
 const ordinalColors = ["#63cdda", "#cf6a87", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"]; // "#e77f67", "#778beb", 
 const numberFromValue = value =>
@@ -46,13 +39,13 @@ const highlightColorScale = createScale({
   domain: [0, 1],
   range: ["#fff", "#45aeb1"]
 })
-continents = _.map(continents, (continent, i) => ({...continent, color: interpolatedColorScale(i)}))
+continents = _.map(continents, (continent, i) => ({...continent, color: d3.interpolatePlasma(i /( continents.length - 1))}))
 const continentColorScales = _.fromPairs(
   _.map(continents, continent => [
     continent.code,
     createScale({
-      domain: [0, 1],
-      range: ["#fff", continent.color],
+      domain: [-0.3, 0.6, 1.2],
+      range: ["#fff", continent.color, "#000"],
     }),
   ])
 )
@@ -62,6 +55,13 @@ const percentileOrRawOptions = [{
 },{
   value: false,
   label: "Value",
+}]
+const colorModeOptions = [{
+  value: "normal",
+  label: "All the same",
+},{
+  value: "continents",
+  label: "Continents",
 }]
 const defaultMetrics = _.map(metricRankedCorrelationData, "fieldname")
 const metricCorrelationSorts = _.fromPairs(
@@ -85,6 +85,7 @@ class WDVPGrid extends Component {
       selectedContinents: [],
       hoveredCountry: null,
       isAscending: true,
+      colorMode: "continents",
       isShowingPercentile: true,
     }
   }
@@ -137,11 +138,12 @@ class WDVPGrid extends Component {
     this.setState({ sort: metric, isAscending: this.state.isShowingPercentile ? true : false }, this.createScales)
     
   onContinentsSelect = continents => this.setState({ selectedContinents: continents }, this.createScales)
+  onColorModeOptionsSelect = newVal => this.setState({ colorMode: newVal.value })
   onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value, isAscending: !this.state.isAscending }, this.createScales)
   onCountryHover = country => this.setState({ hoveredCountry: country })
 
   render() {
-    const { processedData, metrics, selectedContinents, scales, sort, hoveredCountry, isAscending, isShowingPercentile } = this.state
+    const { processedData, metrics, selectedContinents, scales, sort, hoveredCountry, colorMode, isAscending, isShowingPercentile } = this.state
 
     return (
       <div className={this.getClassName()}>
@@ -165,10 +167,16 @@ class WDVPGrid extends Component {
             value={isShowingPercentile}
             onChange={this.onIsShowingPercentileSelect}
           />
-
+        
+          <RadioGroup
+            className="WDVPGrid__toggle"
+            options={colorModeOptions}
+            value={colorMode}
+            onChange={this.onColorModeOptionsSelect}
+          />
           
           <div className="WDVPGrid__chart">
-            <div className="WDVPGrid__header">
+            {/* <div className="WDVPGrid__header">
               {_.map(processedData, country => (
                 <div
                   key={country.Country}
@@ -178,7 +186,7 @@ class WDVPGrid extends Component {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
             {/* <div className="WDVPGrid__metrics">
               {_.map(metrics, metric => (
                 <div
@@ -195,9 +203,16 @@ class WDVPGrid extends Component {
               metrics={metrics}
               sort={sort}
               scales={scales}
+              colorMode={colorMode}
               isShowingPercentile={isShowingPercentile}
               onCountryHover={this.onCountryHover}
               onMetricClick={this.onChangeSort}
+            />
+            
+            <WDVPScatter
+              data={processedData}
+              xMetric={metrics[0]}
+              yMetric={_.last(metrics)}
             />
           </div>
         </div>
@@ -214,7 +229,7 @@ class WDVPGridChart extends Component {
     width: window.innerWidth * 0.9,
     height: window.innerHeight * 0.9,
     margins: {
-      top: 0,
+      top: 150,
       right: 0,
       bottom: 50,
       left: 160,
@@ -229,6 +244,7 @@ class WDVPGridChart extends Component {
   componentDidUpdate(prevProps) {
     if (prevProps.data != this.props.data) this.createScales()
     if (prevProps.isShowingPercentile != this.props.isShowingPercentile) this.drawData()
+    if (prevProps.Continent != this.props.Continent) this.drawData()
   }
 
   createScales = () => {
@@ -250,7 +266,7 @@ class WDVPGridChart extends Component {
 
   drawData = () => {
     if (!this.container.current) return
-    const { data, metrics, scales, sort, isShowingPercentile, onCountryHover, onMetricClick } = this.props
+    const { data, metrics, scales, sort, colorMode, isShowingPercentile, onCountryHover, onMetricClick } = this.props
     const { width, height, margins, xScale, yScale } = this.state
 
     if (_.isEmpty(data)) return;
@@ -261,6 +277,7 @@ class WDVPGridChart extends Component {
         metric,
         countryIndex,
         metricIndex,
+        Continent: country.Continent,
         scaledValue: scales[metric](country[metric]),
         percentileValue: (country[`${metric}__percentile`] - 1) / 100,
       })),
@@ -270,7 +287,7 @@ class WDVPGridChart extends Component {
         .on("mouseout", d => onCountryHover(null))
     const cellWidth = xScale(1) - xScale(0)
     const cellHeight = yScale(0) - yScale(1)
-    const speedMultiplier = 6
+    const speedMultiplier = 3
     
     const metricElems = bounds.selectAll(".WDVPGridChart__metric")
         .data(metrics, d => d)
@@ -278,27 +295,37 @@ class WDVPGridChart extends Component {
         .attr("class", "WDVPGridChart__metric")
         .on("click", onMetricClick)
       .merge(metricElems)
-        .style("fill", d => d == sort ? "inherit" : "#45aeb1")
+        .style("fill", d => d == sort ? "#45aeb1" : "inherit")
         .attr("x", -margins.left)
         .text(d => d)
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
         .delay((d, i) => data.length * speedMultiplier + i * speedMultiplier + 900)
         .attr("y", (d, i) => yScale(metrics.length - i) + cellHeight * 0.6)
     
-    const countries = bounds.selectAll(".WDVPGridChart__group")
+    let countries = bounds.selectAll(".WDVPGridChart__country")
         .data(reformattedData, d => d.name)
-    countries.enter().append("g")
-        .attr("class", "WDVPGridChart__group")
+      
+    const newCountries = countries.enter().append("g")
+        .attr("class", "WDVPGridChart__country")
         .on("mouseover", d => onCountryHover(d.name))
-      .merge(countries)
+        
+    newCountries.append("text")
+        .attr("class", "WDVPGridChart__country__text")
+        .text(d => d.name)
+        
+    countries.merge(newCountries)
         .style("opacity", 0.2)
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
         .delay((d,i) => i * speedMultiplier)
         .style("transform", (d, i) => `translateX(${xScale(i)}px)`)
         .style("opacity", 1)
+
     countries.exit().remove()
 
-    const rects = bounds.selectAll(".WDVPGridChart__group").selectAll(".WDVPGridChart__rect")
+    // bounds.selectAll(".WDVPGridChart__country__text")
+        // .attr("transform", `translate(-10px, ${cellWidth}px)`)
+
+    const rects = bounds.selectAll(".WDVPGridChart__country").selectAll(".WDVPGridChart__rect")
         .data(d => d.metrics, d => d.metric)
         
     const getValue = d => isShowingPercentile ? d.percentileValue : d.scaledValue
@@ -307,9 +334,14 @@ class WDVPGridChart extends Component {
         .attr("class", "WDVPGridChart__rect")
         .attr("width", cellWidth)
         .attr("height", cellHeight)
-        .attr("fill", d => !_.isFinite(getValue(d)) ? "#ccc" : blackAndWhiteColorScale(getValue(d)))
+        .attr("fill", d =>
+          !_.isFinite(getValue(d))  ? "#ccc" :
+          colorMode == "continents" ? continentColorScales[d.Continent](getValue(d)) :
+                                      blackAndWhiteColorScale(getValue(d))
+        )
       .transition(d3.transition().duration(900).ease(d3.easeLinear))
-        .delay((d, i) => data.length * speedMultiplier + i * 10 + 900)
+        // .delay((d, i) => data.length * speedMultiplier + i * 10 + 900)
+        .delay((d, i) => data.length * speedMultiplier + 900)
         .attr("y", d => yScale(metrics.length - d.metricIndex))
     rects.exit().remove()
   }
