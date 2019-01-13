@@ -39,8 +39,9 @@ class App extends Component {
         <Route path="/dog-breeds" component={DogBreeds} />
         {/* <Route path="/family-tree" component={FamilyTree} /> */}
         <Route path="/news" component={News} />
-        <Route path="/wdvp" component={WDVP} />
+        {/* <Route path="/wdvpscatter" component={WDVP} /> */}
         <Route path="/wdvpgrid" component={WDVPGrid} />
+        <Route path="/wdvp" component={WDVP} />
         <Route path="/rocdev" component={RocDevSurvey} />
         {/* <Route path="/docstats" component={DoctorateStats} /> */}
         {this.props.children}

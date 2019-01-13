@@ -1,0 +1,146 @@
+@import "~styles/variables";
+@import './WDVP.scss';
+
+$main-color: #30336b;
+
+.WDVPBars {
+    position: relative;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    background: $c-dark;
+    padding: 3em 0;
+
+    &.WDVP__full-width {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    &__title {
+    }
+
+    &__contents {
+    }
+
+    &__controls {
+        flex: 0 0 19em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: white;
+        background: $c-dark;
+        color: $c-light;
+        white-space: nowrap;
+    }
+
+    &__toggles {
+        display: flex;
+        align-items: center;
+        padding: 0.8em 0.7rem;
+    }
+    &__toggle {
+        padding: 0.3rem;
+    }
+
+    &__metrics {
+        position: relative;
+        // position: absolute;
+        // left: 0;
+        // top: 50%;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.6em;
+        padding-top: 1em;
+        line-height: 1em;
+        text-align: left;
+        width: 100%;
+        max-height: calc(50vw - 20em);
+        overflow: auto;
+        // overflow: hidden;
+        z-index: 10;
+        cursor: default;
+
+        &__item {
+            flex: 0 0;
+            position: relative;
+            padding: 0.5em 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+
+            &:hover {
+                background: $c-light;
+            }
+            
+            &--is-selected {
+                // color: $c-accent-1;
+                background: $c-dark;
+                color: white;
+                font-weight: 900;
+                
+                &:hover {
+                    background: $c-dark;
+                }
+                
+            }
+
+            &__index {
+                display: inline-block;
+                width: 2em;
+                opacity: 0.5;
+            }
+
+            &__details {
+                // color: $tc;
+                padding-left: 2.3em;
+                padding-top: 0.2em;
+                padding-bottom: 0.2em;
+                font-size: 0.9em;
+                line-height: 1.3em;
+                // height: 3.8em;
+                white-space: normal;
+                opacity: 0.5;
+                font-weight: 100;
+                font-style: italic;
+            }
+        }
+        
+        &__tooltip {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            white-space: nowrap;
+            z-index: 10;
+
+            .Tooltip__contents {
+                transform: translate(-100%, -50%);
+                width: 15em;
+                white-space: normal;
+                top: 50%;
+                // left: auto;
+                left: 0;
+                font-size: 1.1em;
+            }
+        }
+    }
+    &__chart {
+        position: relative;
+        flex: 1;
+    }
+
+    &Chart {
+        &__label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            text-align: center;
+            color: #666;
+        }
+    }
+}
