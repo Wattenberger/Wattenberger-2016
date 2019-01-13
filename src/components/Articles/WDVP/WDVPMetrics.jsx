@@ -78,7 +78,7 @@ class WDVPMetrics extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      sorts: ["population", "women MPs (% of all MPs)"],
+      sorts: ["financial freedom score", "women MPs (% of all MPs)"],
       hoveredCountry: null,
       // isAscending: true,
       colorMode: "normal",
@@ -88,7 +88,7 @@ class WDVPMetrics extends Component {
   }
 
   getClassName() {
-    return classNames("WDVPMetrics", "WDVP__full-width", this.props.className)
+    return classNames("WDVPMetrics", this.props.className)
   }
 
   componentDidMount() {
@@ -104,8 +104,8 @@ class WDVPMetrics extends Component {
     const sortedData = _.map(sorts, sort => (
       _.orderBy(
         rawData,
-        [d => d[`${sort}__percentile`]],
-        ["desc"]
+        [d => d[sort]],
+        ["asc"]
       )
     ))
 

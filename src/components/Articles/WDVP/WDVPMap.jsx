@@ -1,7 +1,8 @@
 import React, {Component, PureComponent} from "react"
 import Select from 'react-select';
+import selectStyles from "./selectStyles"
 import * as d3 from "d3"
-import { interpolateRdYlGn } from "d3-scale-chromatic"
+import { interpolateRdBu } from "d3-scale-chromatic"
 import classNames from "classnames"
 import _ from "lodash"
 import { createScale } from 'components/_ui/Chart/utils/scale';
@@ -10,16 +11,19 @@ import Tooltip from 'components/_ui/Tooltip/Tooltip';
 
 import rawData from "./Wdvp_gov_score.json"
 import countryPaths from "./country-paths.json"
+const countriesByName = _.fromPairs(
+  _.map(rawData, country => [country.Country, country])
+)
 import metricsInfo from "./metric-info.json"
 import metricRankedCorrelationData from "./Wdvp_corr.json"
 
 import './WDVPMap.scss'
 
-// const blackAndWhiteColorScale = d3.scaleSequential(interpolateRdYlGn)
+// const blackAndWhiteColorScale = d3.scaleSequential(interpolateRdBu)
 const blackAndWhiteColorScale = createScale({
-  domain: [-.2, 1],
+  domain: [-1, 0, 1],
   // range: ["#fafafa", "#45aeb1"],
-  range: ["#E1EEFB", "#30336b"],
+  range: ["#FE2E24", "#eaeaea", "#30336b"],
 })
 const percentileOrRawOptions = [{
   value: false,
@@ -32,24 +36,38 @@ const defaultMetrics = _.sortBy(
   _.without(_.map(metricRankedCorrelationData, "fieldname"), "Area in km²"),
   _.toLower,
 )
+const percentileMetrics = _.map(defaultMetrics, d => `${d}__percentile`)
+const countryOptions = _.map(rawData, country => ({
+  value: country.Country,
+  label: country.Country,
+  color: "#114D4D",
+}))
 const metricOptionsVerbose = _.map(defaultMetrics, m => ({
   value: m,
   label: m,
   color: "#114D4D",
 }))
+const valueToNumber = d => _.isFinite(d) ? d : 0
 
 class WDVPMap extends Component {
   constructor(props) {
     super(props)
     this.state = {
       selectedMetric: defaultMetrics[0],
+      selectedCountry: countriesByName["United States"],
       metricScales: {},
+      sortedCountries: [],
+      metricsByImportance: [],
       hoveredCountry: null,
       tooltipPosition: null,
+      countryCorrelations: null,
       isShowingPercentile: false,
     }
   }
   container = React.createRef()
+  static propTypes = {
+    selectedCountryName: null,
+  }
 
   getClassName() {
     return classNames("WDVPMap", "WDVP__full-width", this.props.className)
@@ -59,26 +77,58 @@ class WDVPMap extends Component {
     this._isMounted = true
     this.createScales()
   }
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedCountryName != this.props.selectedCountryName) this.onCountrySelectExternal()
+  }
   componentWillUnmount() {
     this._isMounted = false
   }
   chart = React.createRef()
 
   createScales = () => {
-    const { sort, selectedContinents, isAscending, isShowingPercentile } = this.state
-    
-    const metricScales = _.fromPairs(
-      _.map(defaultMetrics, (metric, i) => [
+    const { sort, selectedCountry, isAscending, isShowingPercentile } = this.state
+
+    const metricsByImportance = _.orderBy(
+      _.map(defaultMetrics, metric => [
         metric,
-        createScale({
-          domain: d3.extent(rawData, d => d[metric]),
-          range: [0, 1],
-        }),
-      ])
+        selectedCountry[`${metric}__percentile`] > 50 ? 100 - selectedCountry[`${metric}__percentile`] : selectedCountry[`${metric}__percentile`],
+        selectedCountry[`${metric}__percentile`],
+      ]),
+      1,
+      "asc",
     )
-    this.setState({ metricScales })
+    const selectedCountryDifferences = this.getDifferences(_.values(_.pick(selectedCountry, percentileMetrics)))
+    
+    const countryCorrelations = _.fromPairs(
+      _.map(rawData, country => {
+        const metricDifferences = this.getDifferences(_.values(_.pick(country, percentileMetrics)))
+        const numerator = _.mean(_.map(metricDifferences, (d,i) => d * selectedCountryDifferences[i]))
+        const squaredDiffsForCountry = _.mean(_.map(metricDifferences, (d,i) => d * d))
+        const squaredDiffsForSelectedCountry = _.mean(_.map(selectedCountryDifferences, (d,i) => d * d))
+        const denominator = Math.sqrt(squaredDiffsForCountry) * Math.sqrt(squaredDiffsForSelectedCountry)
+        return [country.Country, numerator / denominator]
+      })
+    )
+
+    const sortedCountries = _.map(
+      _.orderBy(
+        _.toPairs(countryCorrelations),
+        1,
+        "desc"
+      ),
+      0,
+    )
+    
+    this.setState({ countryCorrelations, sortedCountries, metricsByImportance })
   }
-  
+
+  getDifferences = arr => {
+    const values = _.map(arr, valueToNumber)
+    const mean = _.mean(arr)
+    const differences = _.map(values, (d, i) => d - mean)
+    return differences
+  }
+
   removeTooltip = () => {
     if (!this._isMounted) return
 
@@ -100,8 +150,8 @@ class WDVPMap extends Component {
       const containerBounds = this.container.current.getBoundingClientRect()
       const bounds = countryElement.getBoundingClientRect()
       const tooltipPosition = {
-        x: bounds.top - containerBounds.top + bounds.height / 2,
-        y: bounds.left - containerBounds.left + bounds.width / 2,
+        x: Math.min(bounds.left - containerBounds.left + bounds.width / 2, window.innerWidth - 300),
+        y: bounds.top - containerBounds.top + bounds.height / 2,
       }
       this.setState({ tooltipPosition })
     } catch(e) {
@@ -112,21 +162,79 @@ class WDVPMap extends Component {
   }
   onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value }, this.createScales)
   onMetricChange = metric => () => this.setState({ selectedMetric: metric })
+  onCountrySelectFromSelect = country => this.onCountrySelect(countriesByName[country.value])
+  onCountrySelectLocal = country => () => this.onCountrySelect(country)
+  onCountrySelectByNameLocal = country => () => this.onCountrySelect(countriesByName[country])
+  onCountrySelect = country => this.setState({ selectedCountry: country }, this.createScales)
+  onCountrySelectExternal = () => !!this.props.selectedCountryName && this.setState({ selectedCountry: countriesByName[this.props.selectedCountryName] }, this.createScales)
+
+  getCountryColor = countryName => countryName == this.state.selectedCountry.Country ? "#1d1d27" :
+    this.state.countryCorrelations &&
+    _.isFinite(this.state.countryCorrelations[countryName]) &&
+    blackAndWhiteColorScale(this.state.countryCorrelations[countryName])
 
   render() {
-    const { metricScales, selectedMetric, hoveredCountry, tooltipPosition, isShowingPercentile } = this.state
+    const { metricScales, selectedMetric, selectedCountry, countryCorrelations, sortedCountries, metricsByImportance, hoveredCountry, tooltipPosition, isShowingPercentile } = this.state
     const valueMetric = isShowingPercentile ? `${selectedMetric}__percentile` : selectedMetric
 
     return (
       <div className={this.getClassName()}>
-        {/* <Select
-          className="WDVP__select"
-          classNamePrefix="WDVP__select"
-          options={metricOptionsVerbose}
-          value={{value: selectedMetric, label: selectedMetric}}
-          styles={selectStyles}
-          onChange={this.onMetricChange}
-        /> */}
+      
+      <div className="WDVPMap__header">
+        <div className="WDVPMap__header__contents">
+          <div className="WDVPMap__header__title">
+            <h2>
+              Countries similar to
+            </h2>
+            <Select
+              name="countries"
+              options={countryOptions}
+              value={{value: selectedCountry.Country, label: selectedCountry.Country}}
+              className="WDVPMap__select"
+              classNamePrefix="WDVPMap__select"
+              styles={selectStyles}
+              onChange={this.onCountrySelectFromSelect}
+            />
+          </div>
+
+          <div className="WDVPMap__header__scale">
+            <h6 className="WDVPMap__header__scale__label">Most</h6>
+            {_.map(sortedCountries.slice(1, 4), (country, index) => (
+              <React.Fragment key={country}>
+                {!!index && ","}
+                <span style={{color: this.getCountryColor(country)}} className="WDVPMap__header__country" onClick={this.onCountrySelectByNameLocal(country)}>
+                  { country }
+                </span>
+              </React.Fragment>
+            ))}
+            ...
+            {_.map(sortedCountries.slice(-3), (country, index) => (
+              <React.Fragment key={country}>
+                {!!index && ","}
+                <span style={{color: this.getCountryColor(country)}} className="WDVPMap__header__country" onClick={this.onCountrySelectByNameLocal(country)}>
+                  { country }
+                </span>
+              </React.Fragment>
+            ))}
+            <h6 className="WDVPMap__header__scale__label">Least</h6>
+          </div>
+            
+          <div className="WDVPMap__header__scale WDVPMap__header__metrics">
+            <h6 className="WDVPMap__header__scale__label">Distinctive metrics</h6>
+            {_.map(metricsByImportance.slice(0, 5), (metric, index) => (
+              <React.Fragment key={metric[0]}>
+                {!!index && ","}
+                <span className="WDVPMap__header__metrics__item">
+                  { metric[0] }
+                <span className={`WDVPMap__header__metrics__item__arrow WDVPMap__header__metrics__item__arrow--${metric[2] > 50 ? "up" : "down"}`}>
+                  🠙
+                </span>
+                </span>
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      </div>
 
         <div className="WDVPMap__chart">
           <svg className="WDVPMap__svg" viewBox="0 0 962 502" preserveAspectRatio="xMidYMid meet" ref={this.container}>
@@ -138,13 +246,8 @@ class WDVPMap extends Component {
                 path={countryPaths[country.Country]}
                 onMouseEnter={this.onCountryHover(country)}
                 onMouseLeave={this.onCountryHover(null)}
-                color={
-                  metricScales[selectedMetric] &&
-                  blackAndWhiteColorScale(isShowingPercentile ?
-                    country[`${selectedMetric}__percentile`] / 100 :
-                    metricScales[selectedMetric](country[selectedMetric])
-                  )
-                }
+                onClick={this.onCountrySelectLocal(country)}
+                color={this.getCountryColor(country.Country)}
               />
             ))}
 
@@ -152,13 +255,7 @@ class WDVPMap extends Component {
               <WDVPMapCountry
                 name={hoveredCountry.Country}
                 path={countryPaths[hoveredCountry.Country]}
-                color={
-                  metricScales[selectedMetric] &&
-                  blackAndWhiteColorScale(isShowingPercentile ?
-                    hoveredCountry[`${selectedMetric}__percentile`] / 100 :
-                    metricScales[selectedMetric](hoveredCountry[selectedMetric])
-                  )
-                }
+                color={this.getCountryColor(hoveredCountry.Country)}
                 isHovered
               />
             )}
@@ -167,44 +264,17 @@ class WDVPMap extends Component {
           {tooltipPosition && (
             <WDVPMapTooltip
               country={hoveredCountry}
+              correlation={countryCorrelations && countryCorrelations[hoveredCountry.Country]}
+              sortedCountries={sortedCountries}
+              selectedCountry={selectedCountry}
               selectedMetric={selectedMetric}
               style={{
-                transform: `translate(${tooltipPosition.y}px, ${tooltipPosition.x}px)`
+                transform: `translate(${tooltipPosition.x}px, ${tooltipPosition.y}px)`
               }}
             />
           )}
         </div>
 
-        <div className="WDVPMap__controls">
-          <RadioGroup
-            className="WDVPMap__toggle"
-            options={percentileOrRawOptions}
-            value={isShowingPercentile}
-            onChange={this.onIsShowingPercentileSelect}
-          />
-        
-          <div className="WDVPMap__metrics">
-            {_.map(defaultMetrics, metric => (
-              <div className={`WDVPMap__metrics__item WDVPMap__metrics__item--is-${metric == selectedMetric ? "selected" : "not-selected"}`} key={metric} onMouseEnter={this.onMetricChange(metric)}>
-                { metric }
-                {selectedMetric == metric && (
-                  <div className="WDVPMap__metrics__item__details">
-                    <div>{ metricsInfo[metric].notes }</div>
-                    <div>Source: { metricsInfo[metric].source }, { metricsInfo[metric].year }</div>
-                  </div>
-                )}
-                {false && metricsInfo[metric] && (
-                  <Tooltip className="WDVPMap__metrics__tooltip">
-                    <h6>{ metric }</h6>
-                    <div>{ metricsInfo[metric].notes }</div>
-                    <div>Source: { metricsInfo[metric].source }, { metricsInfo[metric].year }</div>
-                  </Tooltip>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-        
       </div>
     )
   }
@@ -214,6 +284,7 @@ export default WDVPMap
 
 
 const formatNumber = d3.format(",")
+const formatCorrelation = d3.format(".2f")
 const WDVPMapCountry = React.memo(({ id, name, path, color, isHovered, ...props }) => (
   <path {...props}
     className={isHovered ? "WDVPMapCountry WDVPMapCountry--is-hovered" : "WDVPMapCountry"}
@@ -224,66 +295,18 @@ const WDVPMapCountry = React.memo(({ id, name, path, color, isHovered, ...props 
   />
 ))
 
-const WDVPMapTooltip = React.memo(({ country, selectedMetric, ...props }) => (
+const WDVPMapTooltip = React.memo(({ country, selectedCountry, selectedMetric, correlation, ...props }) => (
   <div className="WDVPMapTooltip" {...props}>
     <h6>
       { country.Country }
     </h6>
     <div className="WDVPMapTooltip__metric">
       <div className="WDVPMapTooltip__metric__label">
-        { selectedMetric }:
+        Correlation with { selectedCountry.Country }:
       </div>
       <div className="WDVPMapTooltip__metric__number">
-        { formatNumber(country[selectedMetric]) }
-      </div>
-    </div>
-    <div className="WDVPMapTooltip__metric">
-      <div className="WDVPMapTooltip__metric__label">
-        { selectedMetric } Percentile:
-      </div>
-      <div className="WDVPMapTooltip__metric__number">
-        { _.isFinite(country[`${selectedMetric}__percentile`]) ? country[`${selectedMetric}__percentile`] - 1 : "-" }
+        { formatCorrelation(correlation) }
       </div>
     </div>
   </div>
 ))
-
-const selectStyles = {
-  colors: {
-    primary: "#114D4D",
-    primary50: "#e0e9ee",
-    primary25: "#e0e9ee",
-  },
-  borderRadius: 6,
-  option: (styles, { data, isDisabled, isFocused, isSelected }) => {
-    return {
-      ...styles,
-      backgroundColor: isDisabled
-        ? null
-        : isSelected ? data.color : isFocused ? `${data.color}22` : null,
-      color: isDisabled
-        ? '#e0e9ee'
-        : isSelected
-          ? "white"
-          : data.color,
-    };
-  },
-  multiValue: (styles, { data }) => {
-    return {
-      ...styles,
-      backgroundColor: `${data.color}22`,
-    };
-  },
-  multiValueLabel: (styles, { data }) => ({
-    ...styles,
-    color: data.color,
-  }),
-  multiValueRemove: (styles, { data }) => ({
-    ...styles,
-    color: data.color,
-    ':hover': {
-      backgroundColor: data.color,
-      color: 'white',
-    },
-  })
-}

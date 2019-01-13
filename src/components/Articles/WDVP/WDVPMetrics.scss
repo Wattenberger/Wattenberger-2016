@@ -5,12 +5,6 @@ $main-color: #30336b;
 
 .WDVPMetrics {
     position: relative;
-    padding: 1em 0;
-
-    &.WDVP__full-width {
-        margin-top: 3em;
-        margin-bottom: 3em;
-    }
 
     &__title {
     }
@@ -29,11 +23,11 @@ $main-color: #30336b;
         width: 100%;
         // height: 20em;
         padding: 0 2em;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
 
         &__header {
             font-weight: 900;
-            font-size: 1.1em;
+            font-size: 0.8em;
             margin-bottom: 1em;
         }
 
@@ -41,12 +35,34 @@ $main-color: #30336b;
             display: flex;
             width: 100%;
             align-items: flex-end;
+
+            &:hover {
+                
+                .WDVPMetricsChart__item--is-selected {
+                    .WDVPMetricsChart__item__bar {
+                        background: white;
+                        &__fill {
+                            background: $c-accent-1 !important;
+                        }
+                    }
+                    
+                    .WDVPMetricsChart__item__bar__value,
+                    .WDVPMetricsChart__item__label {
+                        opacity: 0.2;
+                    }
+                }
+
+            }
         }
 
         &__item {
             flex: 1;
-            height: 7em;
-            margin-left: 1px;
+            @media (min-width: 700px) {
+                flex: 0 0 2px;
+            }
+            height: 5em;
+            width: 2px;
+            // padding-right: 1px;
             
             @keyframes slideUpBar {
                 0%   { opacity: 0; transform: translateY(3em); }
@@ -96,8 +112,9 @@ $main-color: #30336b;
                 position: relative;
                 display: flex;
                 align-items: flex-end;
-                height: 6em;
-                width: 100%;
+                height: 4em;
+                width: 1px;
+                // width: 100%;
                 
                 &__fill {
                     width: 100%;

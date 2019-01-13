@@ -3,15 +3,9 @@
 
 .WDVPMap {
     position: relative;
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    background: white;
-    padding: 0 0 5em;
-
-    &.WDVP__full-width {
-        margin: 3em 0;
-    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     &__controls {
         flex: 0 0 19em;
@@ -25,119 +19,6 @@
 
     &__toggle {
         padding: 0.8em 1rem;
-    }
-
-    &__select {
-        width: 20em;
-        text-align: left;
-    }
-    &__header {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 5em 2em 3em;
-        z-index: 10;
-
-        &__contents {
-            position: relative;
-            z-index: 10;
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: -5em;
-            left: 0;
-            background: linear-gradient(to top,
-                rgba(white, 0),
-                rgba(white, 0.8) 32%,
-                rgba(white, 0.94) 47%,
-                rgba(white, 1)    90%,
-            );
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        &__title {
-            width: 100%;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-
-            @media (max-width: 700px) {
-                flex-direction: column;
-            }
-
-            h2 {
-                margin-bottom: 0;
-                margin-right: 0.3em;
-            }
-        }
-
-        &__scale {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 0.6em;
-
-            h6 {
-                margin: 0 0.3em 0 0.9em;
-                font-weight: 900;
-                // padding: 0 0.2em 0 0.6em;
-            }
-        }
-
-        &__country {
-            padding: 0 0.2em 0 0.6em;
-            cursor: pointer;
-        }
-
-        &__metrics {
-            margin-top: 0.8em;
-            font-size: 0.73em;
-            line-height: 1.2em;
-            
-            &__item {
-                margin-left: 0.9em;
-
-                @keyframes slideUpMetric {
-                    0%   { opacity: 0; transform: translateY(1em); }
-                    100% { opacity: 1; transform: translateY(0); }
-                }
-    
-                animation: slideUpMetric 0.2s ease-out;
-                animation-fill-mode: forwards;
-                opacity: 0;
-
-                @for $i from 0 through 5 {
-                    &:nth-child(#{$i}) {
-                        animation-delay: $i * 0.1s;
-                    }
-                }
-
-                &__arrow {
-                    display: inline-block;
-                    margin-left: 0.4em;
-                    transition: all 0.3s ease-out;
-
-                    &--up {
-                        color: #54B5BB;
-                    }
-                    &--down {
-                        color: #FE2E24;
-                        transform: rotate(180deg);
-                    }
-                }
-            }
-        }
-    }
-
-    &__scale {
-        width: 100%;
-        justify-content: space-between;
     }
 
     &__metrics {
@@ -201,7 +82,6 @@
     }
 
     &__chart {
-        position: relative;
         flex: 1;
         display: flex;
         // padding-left: 16em;
@@ -219,31 +99,19 @@
         height: 52.5%;
         overflow: visible;
         z-index: 0;
-        pointer-events: all;
     }
 
     &Country {
         stroke: white;
         stroke-width: 0.4;
         transition: fill 0.3s ease-out;
-        stroke-linejoin: round;
-        stroke-linecap: round;
-        pointer-events: all;
         
         &--is-hovered {
             stroke: $c-dark;
-            stroke-width: 1.5;
+            stroke-width: 2;
             pointer-events: none;
             transition: none;
         }
-    }
-
-    &__info {
-        position: absolute;
-        background: white;
-        padding: 1em 2em;
-        font-size: 0.7em;
-        line-height: 1.3em;
     }
 
     &Tooltip {
@@ -264,8 +132,6 @@
         box-shadow: 0 0.2em 0.6em 0.2em rgba($c-dark, 0.03);
         padding: 0.3em 0.6em;
         pointer-events: none;
-
-        transition: all 0.3s ease-out;
 
         h6 {
             margin: 0;

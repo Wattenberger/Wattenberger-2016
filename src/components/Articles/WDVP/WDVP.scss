@@ -23,7 +23,7 @@ $c-accent-4: #686B89;
         // background: $c-dark;
         
         h1 {
-            color: $c-accent-2;
+            // color: $c-accent-2;
             font-size: 4em;
             margin-top: 3em;
             margin-bottom: 0;
@@ -39,11 +39,22 @@ $c-accent-4: #686B89;
         }
     }
 
+    &Metric {
+        padding: 0.3em 0.7em;
+        font-size: 0.7em;
+        background: white;
+        color: $c-accent-4;
+    }
+
     p {
         position: relative;
         max-width: 50em;
-        margin: auto;
+        // margin: auto;
         z-index: 3;
+
+        @media (min-width: 700px) {
+            padding-left: 2.5em;
+        }
     }
 
     &__content {
@@ -59,7 +70,120 @@ $c-accent-4: #686B89;
         text-align: center;
     }
 
+    &__split {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 2em 0 4em;
+
+        @media (min-width: 700px) {
+            flex-direction: row;
+        }
+
+        &__section {
+            &--content {
+                // flex: 4;
+                padding-right: 2em;
+            }
+                
+            &--chart {
+                @media (min-width: 700px) {
+                    flex: 1;
+                    // position: sticky;
+                    // position: absolute;
+                    // // transform: translateX(-100%);
+                    // // width: 20%;
+                    // flex: 1;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    // justify-content: center;
+                    // top: 1em;
+                    // right: 0;
+
+                }
+
+            }
+        }
+    }
+
+    // ol {
+    //     max-width: 30em;
+
+    //     li {
+    //         margin-bottom: 1em;
+    //         font-size: 0.9em;
+    //     }
+    // }
+
+    i {
+        font-style: normal;
+        font-weight: 900;
+        color: $c-accent-3;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0 -0.5rem 2em;
+
+        &-intro {
+            padding-left: 2.5em;
+            margin: 1em 0 0;
+        }
+        
+        &__item {
+            flex: 1;
+            min-width: 13em;
+            background: white;
+            padding: 1.4em 2em;
+            margin: 0.5rem;
+            font-size: 0.8em;
+            line-height: 1.3em;
+            
+            &__header {
+                font-size: 1.2em;
+                // line-height: 1.2em;
+                font-weight: 900;
+                margin-bottom: 1em;
+            }
+
+        }
+    }
+
     &__section {
         margin: 2em 0 4em;
+
+        &-header {
+            position: relative;
+            font-size: 2em;
+            line-height: 1.2em;
+            margin-bottom: 1em;
+            padding-left: 1em;
+            font-family: $font-family-serif;
+
+            &__index {
+                position: absolute;
+                left: -0.3em;
+                top: 0.2em;
+                opacity: 0.4;
+                font-size: 0.6em;
+                width: 2em;
+            }
+        }
+    }
+
+    &__square {
+        display: inline-block;
+        width: 0.8em;
+        height: 0.8em;
+        margin: 0.3em 0.3em 0;
+    }
+
+    &__country {
+        display: inline-block;
+        font-weight: 900;
+        cursor: pointer;
     }
 }
