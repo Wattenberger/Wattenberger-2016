@@ -17,13 +17,16 @@ $c-accent-4: #686B89;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 90vh;
+        // min-height: 30vh;
         text-align: center;
-        background: $c-dark;
-        padding: 2em;
-        color: $c-light;
+        padding: 1em 2em;
+        // background: $c-dark;
+        
         h1 {
+            color: $c-accent-2;
             font-size: 4em;
+            margin-top: 3em;
+            margin-bottom: 0;
             font-weight: 100;
         }
         

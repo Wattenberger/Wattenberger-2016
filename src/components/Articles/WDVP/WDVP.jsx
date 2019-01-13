@@ -4,6 +4,7 @@ import _ from "lodash"
 
 import WDVPMap from "./WDVPMap"
 import WDVPBars from "./WDVPBars"
+import WDVPMetrics from "./WDVPMetrics"
 
 import './WDVP.scss'
 
@@ -21,7 +22,7 @@ class WDVP extends Component {
               What makes a “good” country?
             </h1>
             <h6 className="WDVP__header__byline">
-              Comparing countries across many different metrics
+              {/* Comparing countries across many different metrics */}
             </h6>
           </div>
 
@@ -32,7 +33,8 @@ class WDVP extends Component {
                 Every country/government in the world is regularly tracked by a large number of indicator variables. Some are mundane measures (e.g., population, physical size) and others are meant to reflect quality (e.g., corruption, political freedom). This creates a large list of variables that could make a country “good” or “bad”, with no principled way to combine them.
               </p>
 
-              [possible figure showing countries ranked by one or two example indicators demonstrating that a country can rank high on one index and low on another] 
+              <WDVPMetrics />
+
               <p>
                 For example US is high for X and low for Y
               </p>
