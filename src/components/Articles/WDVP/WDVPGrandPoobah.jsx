@@ -209,7 +209,7 @@ class WDVPGrandPoobah extends Component {
 
     const angleOfMostVariance = Math.atan2(vectorOfMostVariance[1], vectorOfMostVariance[0]) / Math.PI * 180
 
-    this.setState({ dataWithWeights, angleOfMostVariance, lineVector })
+    this.setState({ dataWithWeights, angleOfMostVariance })
   }
   debouncedGenerateWeightedData = _.debounce(this.generateWeightedData, 400)
 

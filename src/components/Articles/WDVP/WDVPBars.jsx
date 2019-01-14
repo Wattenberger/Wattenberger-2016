@@ -79,6 +79,7 @@ const metricsColorScale = createScale({
   domain: [0, defaultMetrics.length - 1],
   range: ["#63cdda", "#e77f67"],
 })
+const formatNumber = d3.format(",")
 class WDVPBars extends Component {
   constructor(props) {
     super(props)
@@ -96,7 +97,7 @@ class WDVPBars extends Component {
       sort: defaultMetrics[3],
       processedData: [],
       selectedContinents: [],
-      hoveredCountry: null,
+      hoveredCountries: [],
       isAscending: true,
       colorMode: "normal",
       isShowingPercentile: true,
@@ -163,10 +164,14 @@ class WDVPBars extends Component {
   onColorModeOptionsSelect = newVal => this.setState({ colorMode: newVal.value })
   // onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value, isAscending: !this.state.isAscending }, this.createScales)
   onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value }, this.createScales)
-  onCountryHover = country => this.setState({ hoveredCountry: country })
+  onCountryHover = country => this.setState({ hoveredCountries: country })
+
+  onChangeHoveredCountries = countries => {
+    this.setState({ hoveredCountries: countries })
+  }
 
   render() {
-    const { processedData, metrics, metricsOrder, countryOrder, selectedContinents, scales, sort, hoveredCountry, colorMode, isAscending, isShowingPercentile } = this.state
+    const { processedData, metrics, metricsOrder, countryOrder, selectedContinents, scales, sort, hoveredCountries, colorMode, isAscending, isShowingPercentile } = this.state
 
     return (
       <div className={this.getClassName()}>
@@ -192,6 +197,7 @@ class WDVPBars extends Component {
             visibleContinents={selectedContinents}
             visibleContinents={selectedContinents}
             isShowingPercentile={isShowingPercentile}
+            onChangeHoveredCountries={this.onChangeHoveredCountries}
           />
           {/* <WDVPScatter
             data={processedData}
@@ -200,7 +206,7 @@ class WDVPBars extends Component {
           /> */}
         </div>
           
-        <div className="WDVPMap__controls">
+        <div className="WDVPBars__controls">
           <div className="WDVPBars__toggles">
             <RadioGroup
               className="WDVPBars__toggle"
@@ -236,6 +242,22 @@ class WDVPBars extends Component {
             ))}
           </div>
         </div>
+
+        {!!hoveredCountries.length && (
+          <div className="WDVPBars__tooltip">
+            {_.map(hoveredCountries, country => (
+              <div key={country.Country}>
+                <h6>
+                  { country.country.Country }
+                </h6>
+                <p>
+                  { country.metric }: { formatNumber(country.country[country.metric]) }
+                </p>
+
+              </div>
+            ))}
+          </div>
+        )}
         
   
       </div>
@@ -267,8 +289,8 @@ const metricIndexScale = createScale({
 })
 class WDVPBarsChart extends PureComponent {
   state = {
-    width: window.innerWidth - 400,
-    height: window.innerWidth * 0.4,
+    width: window.innerWidth - 300,
+    height: window.innerWidth * 0.5,
     margins: {
       top: 150,
       right: 0,
@@ -279,10 +301,12 @@ class WDVPBarsChart extends PureComponent {
   container = React.createRef()
   xLabel = React.createRef()
   zLabel = React.createRef()
-  mouse = {x:0, y:0}
+  mouse = {x: -9999, y: -9999}
+  hoveredCountryObjects = []
 
   componentDidMount() {
     this.initScene()
+    this.containerBounds = this.container.current.getBoundingClientRect()
   }
 
   componentDidUpdate(prevProps) {
@@ -291,6 +315,10 @@ class WDVPBarsChart extends PureComponent {
     if (prevProps.Continent != this.props.Continent) this.drawData()
     if (prevProps.colorMode != this.props.colorMode) this.drawData()
   }
+  componentWillUnmount() {
+    document.removeEventListener('mousemove', this.onMouseMove)
+    window.removeEventListener('resize', this.onResize)
+  }
   countryIndexScale = createScale({
     domain: [0, rawData.length - 1],
     range: [-rawData.length / 2  * xBarTotalDimension, rawData.length / 2  * xBarTotalDimension]
@@ -298,13 +326,14 @@ class WDVPBarsChart extends PureComponent {
 
   onMouseMove = e => {
     // e.preventDefault();
-    this.mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
-    this.mouse.y = - (e.clientY / window.innerHeight) * 2 + 1;
+    // const containerBounds = this.container.current.getBoundingClientRect()
+    this.mouse.x = (e.offsetX / this.containerBounds.width) * 2 - 1;
+    this.mouse.y = -(e.offsetY / this.containerBounds.height) * 2 + 1;
   }
 
   onResize = () => {
-    const width = window.innerWidth - 400
-    const height = window.innerWidth * 0.4
+    const width = this.container.getBoundingClientRect().width
+    const height = width * 0.6
     this.setState({
       width,
       height,
@@ -312,6 +341,7 @@ class WDVPBarsChart extends PureComponent {
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
+    this.containerBounds = this.container.current.getBoundingClientRect()
   }
 
   initScene = () => {
@@ -365,6 +395,7 @@ class WDVPBarsChart extends PureComponent {
     );
 
     window.addEventListener('resize', this.onResize)
+    document.addEventListener('mousemove', this.onMouseMove, false)
 
     this.drawAxes()
     this.initBars()
@@ -405,8 +436,26 @@ class WDVPBarsChart extends PureComponent {
 
     if (!this.onMouseMove) return;
 
-    // this.raycaster.setFromCamera( this.mouse, this.camera );
-    // const intersects = this.raycaster.intersectObjects( this.scene.children );
+    this.raycaster.setFromCamera( this.mouse, this.camera );
+    const intersects = this.raycaster.intersectObjects( this.scene.children );
+    const intersectNames = _.map(intersects, d => d.object.name).join(", ")
+    if (intersectNames != this.hoveredCountries) {
+      const intersectObjects = _.map(intersects, d => d.object)
+      _.each(this.hoveredCountryObjects, d => {
+        const color = !_.isFinite(d.userData.country[d.userData.metric])  ? "#ccc" :
+        colorMode == "continents" ? continentColors[d.userData.country.Continent] :
+                                    blackAndWhiteColorScale(isShowingPercentile ? d.userData.metric.percentileValue : this.props.scales[d.userData.metric](d.userData.country[d.userData.metric]))
+        d.material.color.setStyle(color)
+      })
+      _.each(intersectObjects, d => {
+        d.material.color.setStyle("#ffffff")
+      })
+      const intersectedCountries = _.map(intersectObjects, d => d.userData)
+      this.props.onChangeHoveredCountries(intersectedCountries)
+      this.hoveredCountries = intersectNames
+      this.hoveredCountryObjects = intersectObjects
+    }
+    // console.log(intersects, intersectedBars)
 
     // this.stats.update();
   }
@@ -434,7 +483,7 @@ class WDVPBarsChart extends PureComponent {
     // this.controls.update()
   }
 
-  createBar = (countryIndex, metricIndex, country) => {
+  createBar = (countryIndex, metricIndex, country, metric) => {
     const geometry = new THREE.BoxBufferGeometry( 1, 1, 1 )
     geometry.translate( 0, 0, 0 )
     let object = new THREE.Mesh(
@@ -448,6 +497,11 @@ class WDVPBarsChart extends PureComponent {
     object.scale.x = barDimension
     object.scale.y = 1
     object.scale.z = barDimension
+    object.name = `${country.Country}--${metric}`
+    object.userData = {
+      country,
+      metric,
+    }
 
     this.scene.add(object)
     return object
@@ -466,10 +520,9 @@ class WDVPBarsChart extends PureComponent {
         name: metric,
         metricIndex,
         percentileValue: (country[`${metric}__percentile`] - 1) / 100,
-        bar: this.createBar(countryIndex, metricIndex, country),
+        bar: this.createBar(countryIndex, metricIndex, country, metric),
       }))
     }))
-    console.log(this.countries[0])
 
     this.drawData()
   }
@@ -546,7 +599,7 @@ class WDVPBarsChart extends PureComponent {
     const { width, height, margins, xScale, yScale } = this.state
 
     return (
-      <div ref={this.container} onMouseMove={this.onMouseMove}>
+      <div ref={this.container}>
         <div className="WDVPBarsChart__label" ref={this.xLabel}>Countries</div>
         <div className="WDVPBarsChart__label" ref={this.zLabel}>Metrics</div>
         {/* <g

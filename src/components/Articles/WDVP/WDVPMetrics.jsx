@@ -205,7 +205,7 @@ const WDVPMetricsChart = React.memo(({ data, metric, scales, highlightedCountrie
 
     <div className="WDVPMetricsChart__items">
       {_.map(data, country => (
-        <div className={`WDVPMetricsChart__item WDVPMetricsChart__item--is-${highlightedCountries.includes(country.Country) ? "selected" : "not-selected"}`} key={country.country}>
+        <div className={`WDVPMetricsChart__item WDVPMetricsChart__item--is-${highlightedCountries.includes(country.Country) ? "selected" : "not-selected"}`} key={country.Country}>
           <div className="WDVPMetricsChart__item__bar">
             <div className="WDVPMetricsChart__item__bar__fill" style={{
               height: `${Math.max([

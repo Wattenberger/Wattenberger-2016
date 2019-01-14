@@ -29,9 +29,6 @@ class WDVP extends Component {
             <h1 className="WDVP__title">
               What makes a <b>good</b> country?
             </h1>
-            <h6 className="WDVP__header__byline">
-              {/* Comparing countries across many different metrics */}
-            </h6>
           </div>
 
 

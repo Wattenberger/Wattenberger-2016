@@ -9,7 +9,7 @@ $main-color: #30336b;
     display: flex;
     align-items: center;
     background: $c-dark;
-    padding: 3em 0;
+    // padding: 3em 0;
 
     &.WDVP__full-width {
         margin-top: 3em;
@@ -28,8 +28,11 @@ $main-color: #30336b;
         flex-direction: column;
         align-items: flex-start;
         background: white;
+        // border-top: 3em solid $c-dark;
+        // border-bottom: 3em solid $c-dark;
         background: $c-dark;
         color: $c-light;
+        padding: 3em 0;
         white-space: nowrap;
     }
 
@@ -69,17 +72,17 @@ $main-color: #30336b;
             cursor: pointer;
 
             &:hover {
-                background: $c-light;
+                background: #000;
             }
             
             &--is-selected {
                 // color: $c-accent-1;
-                background: $c-dark;
-                color: white;
+                background: $c-light;
+                color: $c-dark;
                 font-weight: 900;
                 
                 &:hover {
-                    background: $c-dark;
+                    background: $c-light;
                 }
                 
             }
@@ -125,6 +128,17 @@ $main-color: #30336b;
             }
         }
     }
+
+    &__tooltip {
+        position: absolute;
+        left: 6em;
+        top: -2em;
+        padding: 1em 2em;
+        background: white;
+        font-size: 0.5em;
+        line-height: 1.2em;
+    }
+    
     &__chart {
         position: relative;
         flex: 1;
