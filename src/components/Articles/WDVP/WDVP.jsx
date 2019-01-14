@@ -5,6 +5,7 @@ import _ from "lodash"
 import WDVPMap from "./WDVPMap"
 import WDVPBars from "./WDVPBars"
 import WDVPMetrics from "./WDVPMetrics"
+import WDVPGrandPoobah from "./WDVPGrandPoobah"
 
 import './WDVP.scss'
 
@@ -71,7 +72,6 @@ class WDVP extends Component {
 
               <WDVPMap selectedCountryName={selectedMapCountryName} />
 
-              
               <div className="WDVP__cards-intro">
                 A few interesting things can be learned here:
               </div>
@@ -129,10 +129,6 @@ class WDVP extends Component {
               <p>
                 Although we can find groupings in this space, we always see the full dimensionality of the dataset. The final visualization will try to reduce this to a single axis.
               </p>
-
-              <p>
-                We can use these to sets of correlation values as weights to combine metrics to get a measure of <i>government spending score</i>ness (the weighted combination of metrics that are correlated with <i>government spending score</i>) and we can plot that against <i>government expenditure</i>ness  (the weighted combination of metrics that are correlated with <i>government expenditure</i>). (here “ness” just means a quality of similarity to — we can think of a better suffix)
-              </p>
             </div>
 
             <div className="WDVP__section">
@@ -164,14 +160,48 @@ class WDVP extends Component {
               <p>
                 Since many of these metrics are supposed to measure the quality of a government. Let’s pick the metric that is most correlated with all other metrics. The <i>government effectiveness</i> score is the single most correlated metric in the dataset. It is particularly highly correlated with <i>government integrity</i>, <i>rule of law</i>, <i>control of corruption</i>, and <i>regulatory quality</i>
               </p>
+
+              <WDVPGrandPoobah />
             </div>
 
             <div className="WDVP__footer">
-              <p>
-                Our source: <a href="https://wdvp.worldgovernmentsummit.org/#faq" target="_blank" rel="noopener noreferrer">
-                  WDVP spreadsheet
-                </a>
-              </p>
+                <h6>
+                  Methods
+                </h6>
+              <div className="WDVP__footer__section">
+                <h6>
+                  The Dataset
+                </h6>
+                <p>
+                  <a href="https://docs.google.com/spreadsheets/d/11LhOlwsloUuA495r-04IDwciMqNrLwWGpveqpF61WXU/edit#gid=0" target="_blank" rel="noopener noreferrer">WDVP provided</a>
+                </p>
+              </div>
+
+              <div className="WDVP__footer__section">
+                <h6>
+                  Preprocessing
+                </h6>
+                  <p>
+                  <b>Missing data:</b> metrics with more than 20 missing country values were removed (‘Education Expenditure per person’, ‘education expenditure as % of GDP’, ‘happy planet index’, and ‘world happiness report score’)
+                  </p>
+                <p>
+                  <b>Percentile:</b> raw values were converted to percentiles
+                </p>
+                <p>
+                  <b>Highlow flip:</b> percentiles were reversed for metrics where low is better ('Government Spending Score', 'Political Rights Score', 'Civil Liberties Score’)
+                </p>
+              </div>
+
+              <div className="WDVP__footer__section">
+                <h6>
+                  Analysis
+                </h6>
+                <p>
+                  Correlations between countries and metrics were measured using the Pearson correlation coefficient.
+                  We used non-negative matrix factorization (NNMF) to initialize weights. To find the axis of good in the 2D scatter plot, we used Principal Components Analysis to find the eigenvector for the largest eigenvalue. NNMF was run using matlab. All other analyses were run with custom javascript functions.
+                </p>
+              </div>
+
             </div>
         </div>
     </div>

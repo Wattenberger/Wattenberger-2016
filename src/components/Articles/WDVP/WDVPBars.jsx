@@ -279,6 +279,7 @@ class WDVPBarsChart extends PureComponent {
   container = React.createRef()
   xLabel = React.createRef()
   zLabel = React.createRef()
+  mouse = {x:0, y:0}
 
   componentDidMount() {
     this.initScene()
@@ -294,6 +295,12 @@ class WDVPBarsChart extends PureComponent {
     domain: [0, rawData.length - 1],
     range: [-rawData.length / 2  * xBarTotalDimension, rawData.length / 2  * xBarTotalDimension]
   })
+
+  onMouseMove = e => {
+    // e.preventDefault();
+    this.mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = - (e.clientY / window.innerHeight) * 2 + 1;
+  }
 
   onResize = () => {
     const width = window.innerWidth - 400
@@ -390,10 +397,17 @@ class WDVPBarsChart extends PureComponent {
 
   
   animate = (time) => {
-    requestAnimationFrame( this.animate );
     TWEEN.update(time);
     this.renderScene();
     this.updateAxisLabelsPosition();
+    
+    requestAnimationFrame( this.animate );
+
+    if (!this.onMouseMove) return;
+
+    // this.raycaster.setFromCamera( this.mouse, this.camera );
+    // const intersects = this.raycaster.intersectObjects( this.scene.children );
+
     // this.stats.update();
   }
 
@@ -532,7 +546,7 @@ class WDVPBarsChart extends PureComponent {
     const { width, height, margins, xScale, yScale } = this.state
 
     return (
-      <div ref={this.container}>
+      <div ref={this.container} onMouseMove={this.onMouseMove}>
         <div className="WDVPBarsChart__label" ref={this.xLabel}>Countries</div>
         <div className="WDVPBarsChart__label" ref={this.zLabel}>Metrics</div>
         {/* <g

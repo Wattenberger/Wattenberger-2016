@@ -1,7 +1,7 @@
 @import "~styles/variables";
 
 $c-dark: #1d1d27;
-$c-light: #fafafa;
+$c-light: #eae8e5;
 $c-accent-1: #FE2E24;
 $c-accent-2: #30336b;
 $c-accent-3: #54B5BB;
@@ -53,7 +53,7 @@ $c-accent-4: #686B89;
         z-index: 3;
 
         @media (min-width: 700px) {
-            padding-left: 2.5em;
+            padding-left: 2.3rem;
         }
     }
 
@@ -126,7 +126,8 @@ $c-accent-4: #686B89;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin: 0 -0.5rem 2em;
+        // margin: 0 -0.5rem 2em;
+        margin: 0 0.6rem 2em;
 
         &-intro {
             padding-left: 2.5em;
@@ -169,7 +170,7 @@ $c-accent-4: #686B89;
                 top: 0.2em;
                 opacity: 0.4;
                 font-size: 0.6em;
-                width: 2em;
+                width: 2.3rem;
             }
         }
     }
@@ -185,5 +186,19 @@ $c-accent-4: #686B89;
         display: inline-block;
         font-weight: 900;
         cursor: pointer;
+    }
+
+    &__footer {
+        &__section {
+            margin-top: 1em;
+        }
+        
+        p {
+            max-width: none;
+            margin: 0.1em 0 0.2em;
+            padding: 0 0 0 2em;
+            font-size: 0.7em;
+            line-height: 1.3em;
+        }
     }
 }

@@ -1,0 +1,211 @@
+@import "~styles/variables";
+@import './WDVP.scss';
+
+$main-color: #30336b;
+
+.WDVPGrandPoobah {
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__sliders {
+        flex: none;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    &Sliders {
+        flex: none;
+        // display: flex;
+        // width: 25em;
+        // flex-direction: column;
+        // margin-right: 1em;
+        width: 17em;
+        padding-right: 0.4em;
+        -webkit-user-select: none;
+        user-select: none;
+
+        &--has-no-labels {
+            width: 6.4em;
+        }
+
+        &__title {
+            // width: 6em;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0.3em;
+            text-align: right;
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        &__select {
+            position: relative;
+            width: 7.6rem;
+            margin-bottom: 1em;
+            z-index: 20;
+
+            &-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            &__menu,
+            &__value-container {
+                font-size: 0.7em;
+                line-height: 1.2em;
+            }
+        }
+        
+        &Item {
+            display: flex;
+            width: auto;
+            flex: 0 0;
+            align-items: center;
+            margin-bottom: 0.2em;
+
+            &__label {
+                font-size: 0.7em;
+                flex: 0 0 15em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.4em;
+            }
+
+            // &__bar {
+            //     width: 100%;
+            //     height: 1em;
+            // background: white;
+                
+            //     &__fill {
+            //         height: 100%;
+            //         background: $c-accent-3;
+            //         background: linear-gradient(
+            //             to right,
+            //             $c-accent-3,
+            //             darken($c-accent-3, 20%)
+            //         );
+            //     }
+            // }
+
+            &__slider {
+                background: white;
+                width: 6em;
+                flex: 0 0 6em;
+                cursor: col-resize;
+            }
+
+            .slider {
+                width: 100%;
+                height: 1em;
+                pointer-events: none;
+            }
+                
+            .handle {
+                top: -1px;
+                bottom: -1px;
+                // left: 0;
+                width: 1.1em;
+                // height: 1em;
+                z-index: 10;
+                font-size: 0.9em;
+                text-align: center;
+                background: white;
+                border: 1px solid $c-accent-2;
+                // transform: translateX(50%);
+                cursor: -webkit-grab;
+                border-radius: 3px;
+                pointer-events: all;
+                transition: all 0.2s ease-out;
+            }
+            .handle.active {
+                cursor: -webkit-grabbing;
+                // background-color: grey;
+            }
+
+            .bar {
+                position: relative;
+                height: 1em;
+                background: $c-accent-3;
+                background: linear-gradient(
+                    to right,
+                    $c-accent-3,
+                    darken($c-accent-3, 20%)
+                );
+                transition: left 0.2s ease-out,
+                            right 0.2s ease-out;
+            }
+
+            .bar.bar-1 {
+                background: white;
+            }
+
+            // &--is {
+            //     &-negative {
+            //         .WDVPGrandPoobahSlidersItem__bar__fill {
+            //             background: $c-accent-1;
+            //             transform: translateX(0) scaleX(-1);
+            //         }
+            //         .slider {
+            //             background: linear-gradient(
+            //                 to right,
+            //                 darken($c-accent-1, 20%),
+            //                 $c-accent-1 50%,
+            //                 white 50%,
+            //             );
+            //             .bar.bar-0 {
+            //                 background: white;
+            //             }
+            //             .bar.bar-1 {
+            //                 background: none;
+            //             }
+            //         }
+            //     }
+            //     &-positive {
+            //         .WDVPGrandPoobahSlidersItem__bar__fill {
+            //             background: $c-accent-3;
+            //         }
+            //     }
+            // }
+
+            //     position: relative;
+            //     flex: 1;
+            //     width: 50%;
+
+            //     &__wrapper {
+            //         position: relative;
+            //         width: 50%;
+            //     }
+
+            //     &__fill {
+            //         position: absolute;
+            //         right: 0;
+            //         height: 1em;
+            //         background: $c-accent-1;
+            //         transform: translateX(100%);
+            //         transition: all 0.3s ease-out;
+            //     }
+            // }
+
+            // &Handle {
+            //     position: absolute;
+            //     top: 50%;
+            //     right: 0;
+            //     height: 1.2em;
+            //     width: 0.9em;
+            //     background: white;
+            //     border: 1px solid $accent-2;
+            //     border-radius: 3px;
+            //     transform: translate(-50%, -50%);
+            //     z-index: 10;
+            //     cursor: -webkit-grab;
+            // }
+        }
+    }
+}
+

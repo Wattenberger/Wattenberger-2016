@@ -141,6 +141,7 @@ class WDVPMetrics extends Component {
         <div className="WDVPMetrics__charts">
           {_.map(sorts, (sort, index) => (
             <WDVPMetricsChart
+              key={sort}
               data={processedData[index]}
               metric={sort}
               scales={scales}
