@@ -296,8 +296,10 @@ class WDVPBarsChart extends PureComponent {
   zLabel = React.createRef()
   mouse = {x: -9999, y: -9999}
   hoveredCountryObject = []
+  isInView = true
 
   componentDidMount() {
+    this._isMounted = true
     this.initScene()
     this.containerBounds = this.container.current.getBoundingClientRect()
   }
@@ -309,8 +311,10 @@ class WDVPBarsChart extends PureComponent {
     if (prevProps.colorMode != this.props.colorMode) this.drawData()
   }
   componentWillUnmount() {
+    this._isMounted = false
     document.removeEventListener('mousemove', this.onMouseMove)
     window.removeEventListener('resize', this.onResize)
+    if (this.observer) this.observer.disconnect()
   }
   countryIndexScale = createScale({
     domain: [0, rawData.length - 1],
@@ -326,7 +330,8 @@ class WDVPBarsChart extends PureComponent {
   }
 
   onResize = () => {
-    const width = this.container.getBoundingClientRect().width
+    this.containerBounds = this.container.current.getBoundingClientRect()
+    const width = this.containerBounds.width
     const height = width * 0.6
     this.setState({
       width,
@@ -335,7 +340,6 @@ class WDVPBarsChart extends PureComponent {
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
-    this.containerBounds = this.container.current.getBoundingClientRect()
   }
 
   initScene = () => {
@@ -393,11 +397,32 @@ class WDVPBarsChart extends PureComponent {
     document.addEventListener('mousemove', this.onMouseMove, false)
     this.controls.addEventListener("change", this.renderScene);
 
+    const options = {
+      threshold: 0.01,
+    }
+    
+    this.observer = new IntersectionObserver(this.debouncedOnVisibilityChange, options);
+    this.observer.observe(this.container.current);
+
     this.drawAxes()
     this.initBars()
     // this.renderScene()
     this.animate()
   }
+
+  onVisibilityChange = e => {
+      if (!this._isMounted) return
+      const bounds = e[0].boundingClientRect
+      const threshold = window.innerHeight * 2
+      const isInView = !!e[0].isIntersecting ||
+                        Math.abs(bounds.top)    < threshold ||
+                        Math.abs(bounds.bottom) < threshold
+      if (isInView != this.isInView) {
+        this.isInView = isInView
+        if (isInView) this.animate()
+      }
+  }
+  debouncedOnVisibilityChange = _.debounce(this.onVisibilityChange, 60);
 
   drawAxes = () => {
     const material = new THREE.LineBasicMaterial({
@@ -425,6 +450,7 @@ class WDVPBarsChart extends PureComponent {
 
   
   animate = (time) => {
+    if (!this.isInView) return
     TWEEN.update(time);
     this.renderScene();
     // this.updateAxisLabelsPosition();
@@ -606,7 +632,7 @@ class WDVPBarsChart extends PureComponent {
     const { width, height, margins, xScale, yScale } = this.state
 
     return (
-      <div ref={this.container}>
+      <div className="WDVPBarsChart" ref={this.container}>
         <div className="WDVPBarsChart__label" ref={this.xLabel}>Countries</div>
         <div className="WDVPBarsChart__label" ref={this.zLabel}>Metrics</div>
         {/* <g
