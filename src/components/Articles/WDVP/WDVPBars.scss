@@ -27,16 +27,18 @@ $main-color: #30336b;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        background: white;
+        height: 60vw;
+        // background: rgb(243, 241, 241);
         // border-top: 3em solid $c-dark;
         // border-bottom: 3em solid $c-dark;
         background: $c-dark;
         color: $c-light;
-        padding: 3em 0;
+        // padding: 3em 0;
         white-space: nowrap;
     }
 
     &__toggles {
+        flex: none;
         display: flex;
         align-items: center;
         padding: 0.8em 0.7rem;
@@ -50,6 +52,7 @@ $main-color: #30336b;
         // position: absolute;
         // left: 0;
         // top: 50%;
+        flex: 1;
         display: flex;
         flex-direction: column;
         font-size: 0.6em;
@@ -57,7 +60,7 @@ $main-color: #30336b;
         line-height: 1em;
         text-align: left;
         width: 100%;
-        max-height: calc(50vw - 20em);
+        padding-bottom: 1em;
         overflow: auto;
         // overflow: hidden;
         z-index: 10;
@@ -131,7 +134,8 @@ $main-color: #30336b;
 
     &__tooltip {
         position: absolute;
-        left: 6em;
+        left: 11em;
+        width: 15em;
         top: -2em;
         padding: 1em 2em;
         background: white;
@@ -142,6 +146,17 @@ $main-color: #30336b;
     &__chart {
         position: relative;
         flex: 1;
+    }
+
+    .RadioGroup {
+        .RadioGroup__option {
+            border-color: #000;
+            color: white;
+        }
+
+        .RadioGroup__option--selected {
+            background: #000;
+        }
     }
 
     &Chart {

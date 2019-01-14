@@ -198,7 +198,7 @@ class WDVPMap extends Component {
           </div>
 
           <div className="WDVPMap__header__scale">
-            <h6 className="WDVPMap__header__scale__label">Most</h6>
+            <h6 className="WDVPMap__header__scale__label">Most Similar</h6>
             {_.map(sortedCountries.slice(1, 4), (country, index) => (
               <React.Fragment key={country}>
                 {!!index && ","}
@@ -216,7 +216,7 @@ class WDVPMap extends Component {
                 </span>
               </React.Fragment>
             ))}
-            <h6 className="WDVPMap__header__scale__label">Least</h6>
+            <h6 className="WDVPMap__header__scale__label">Least Similar</h6>
           </div>
             
           <div className="WDVPMap__header__scale WDVPMap__header__metrics">

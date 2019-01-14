@@ -59,7 +59,7 @@ const percentileOrRawOptions = [{
 }]
 const colorModeOptions = [{
   value: "normal",
-  label: "All the same",
+  label: "Red ⇄ Green",
 },{
   value: "continents",
   label: "Continents",
@@ -97,7 +97,7 @@ class WDVPBars extends Component {
       sort: defaultMetrics[3],
       processedData: [],
       selectedContinents: [],
-      hoveredCountries: [],
+      hoveredCountry: null,
       isAscending: true,
       colorMode: "normal",
       isShowingPercentile: true,
@@ -164,14 +164,12 @@ class WDVPBars extends Component {
   onColorModeOptionsSelect = newVal => this.setState({ colorMode: newVal.value })
   // onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value, isAscending: !this.state.isAscending }, this.createScales)
   onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value }, this.createScales)
-  onCountryHover = country => this.setState({ hoveredCountries: country })
+  onCountryHover = country => this.setState({ hoveredCountry: country })
 
-  onChangeHoveredCountries = countries => {
-    this.setState({ hoveredCountries: countries })
-  }
+  onChangeHoveredCountry = country => this.setState({ hoveredCountry: country })
 
   render() {
-    const { processedData, metrics, metricsOrder, countryOrder, selectedContinents, scales, sort, hoveredCountries, colorMode, isAscending, isShowingPercentile } = this.state
+    const { processedData, metrics, metricsOrder, countryOrder, selectedContinents, scales, sort, hoveredCountry, colorMode, isAscending, isShowingPercentile } = this.state
 
     return (
       <div className={this.getClassName()}>
@@ -197,7 +195,7 @@ class WDVPBars extends Component {
             visibleContinents={selectedContinents}
             visibleContinents={selectedContinents}
             isShowingPercentile={isShowingPercentile}
-            onChangeHoveredCountries={this.onChangeHoveredCountries}
+            onChangeHoveredCountry={this.onChangeHoveredCountry}
           />
           {/* <WDVPScatter
             data={processedData}
@@ -243,19 +241,14 @@ class WDVPBars extends Component {
           </div>
         </div>
 
-        {!!hoveredCountries.length && (
+        {!!hoveredCountry && (
           <div className="WDVPBars__tooltip">
-            {_.map(hoveredCountries, country => (
-              <div key={country.Country}>
-                <h6>
-                  { country.country.Country }
-                </h6>
-                <p>
-                  { country.metric }: { formatNumber(country.country[country.metric]) }
-                </p>
-
+              <h6 className="WDVPBars__tooltip__title">
+                { hoveredCountry.country.Country }
+              </h6>
+              <div className="WDVPBars__tooltip__metric">
+                { hoveredCountry.metric }: <b>{ formatNumber(hoveredCountry.country[hoveredCountry.metric]) }</b>
               </div>
-            ))}
           </div>
         )}
         
@@ -302,7 +295,7 @@ class WDVPBarsChart extends PureComponent {
   xLabel = React.createRef()
   zLabel = React.createRef()
   mouse = {x: -9999, y: -9999}
-  hoveredCountryObjects = []
+  hoveredCountryObject = []
 
   componentDidMount() {
     this.initScene()
@@ -329,6 +322,7 @@ class WDVPBarsChart extends PureComponent {
     // const containerBounds = this.container.current.getBoundingClientRect()
     this.mouse.x = (e.offsetX / this.containerBounds.width) * 2 - 1;
     this.mouse.y = -(e.offsetY / this.containerBounds.height) * 2 + 1;
+    this.updateIntersects()
   }
 
   onResize = () => {
@@ -360,7 +354,8 @@ class WDVPBarsChart extends PureComponent {
 
     this.scene = new THREE.Scene()
     // this.scene.background = new THREE.Color(0xf4f4f4)
-    this.scene.background = new THREE.Color(0x1d1d27)
+    // this.scene.background = new THREE.Color(0x1d1d27)
+    this.scene.background = new THREE.Color(0x282A38)
     // this.scene.fog = new THREE.FogExp2( 0x686B89, 0.0005 );
     
     var light1 = new THREE.DirectionalLight( 0x686B89, 0.3 );
@@ -396,9 +391,11 @@ class WDVPBarsChart extends PureComponent {
 
     window.addEventListener('resize', this.onResize)
     document.addEventListener('mousemove', this.onMouseMove, false)
+    this.controls.addEventListener("change", this.renderScene);
 
     this.drawAxes()
     this.initBars()
+    // this.renderScene()
     this.animate()
   }
 
@@ -430,34 +427,43 @@ class WDVPBarsChart extends PureComponent {
   animate = (time) => {
     TWEEN.update(time);
     this.renderScene();
-    this.updateAxisLabelsPosition();
+    // this.updateAxisLabelsPosition();
     
     requestAnimationFrame( this.animate );
 
-    if (!this.onMouseMove) return;
+    // this.updateIntersects()
+  }
 
+  updateIntersects = () => {
     this.raycaster.setFromCamera( this.mouse, this.camera );
     const intersects = this.raycaster.intersectObjects( this.scene.children );
-    const intersectNames = _.map(intersects, d => d.object.name).join(", ")
-    if (intersectNames != this.hoveredCountries) {
-      const intersectObjects = _.map(intersects, d => d.object)
-      _.each(this.hoveredCountryObjects, d => {
-        const color = !_.isFinite(d.userData.country[d.userData.metric])  ? "#ccc" :
-        colorMode == "continents" ? continentColors[d.userData.country.Continent] :
-                                    blackAndWhiteColorScale(isShowingPercentile ? d.userData.metric.percentileValue : this.props.scales[d.userData.metric](d.userData.country[d.userData.metric]))
-        d.material.color.setStyle(color)
-      })
-      _.each(intersectObjects, d => {
-        d.material.color.setStyle("#ffffff")
-      })
-      const intersectedCountries = _.map(intersectObjects, d => d.userData)
-      this.props.onChangeHoveredCountries(intersectedCountries)
-      this.hoveredCountries = intersectNames
-      this.hoveredCountryObjects = intersectObjects
-    }
-    // console.log(intersects, intersectedBars)
+    const closestIntersect = intersects[0];
+    const intersectName = closestIntersect && closestIntersect.object.name
+    if (intersectName != this.hoveredCountry) {
+      const { colorMode, scales, isShowingPercentile, onChangeHoveredCountry } = this.props
 
-    // this.stats.update();
+      if (!closestIntersect) {
+        this.props.onChangeHoveredCountry(null)
+        this.hoveredCountry = null
+        this.hoveredCountryObject = null
+        return
+      }
+
+      closestIntersect.object.material.color.setStyle("#ffffff")
+
+      if (this.onFinishedHoveringCountry) this.onFinishedHoveringCountry()
+      this.onFinishedHoveringCountry = () => {
+        const barData = closestIntersect.object.userData
+        const color = !_.isFinite(barData.country[barData.metric])  ? "#ccc" :
+          colorMode == "continents" ? continentColors[barData.country.Continent] :
+                                    blackAndWhiteColorScale(isShowingPercentile ? (barData.country[`${barData.metric}__percentile`] - 1) / 100 : scales[barData.metric](barData.country[barData.metric]))
+
+        closestIntersect.object.material.color.setStyle(color)
+      }
+
+      this.hoveredCountry = intersectName
+      this.props.onChangeHoveredCountry(closestIntersect.object.userData)
+    }
   }
 
   updateAxisLabelsPosition = () => {
@@ -480,6 +486,7 @@ class WDVPBarsChart extends PureComponent {
 
   renderScene = () => {
     this.renderer.render(this.scene, this.camera)
+    this.updateAxisLabelsPosition();
     // this.controls.update()
   }
 
@@ -587,7 +594,7 @@ class WDVPBarsChart extends PureComponent {
             bar.position.y = metric.yTweenCoords.y / 2
         })
         .start()
-    
+
     const color = !_.isFinite(country.country[metric.name])  ? "#ccc" :
       colorMode == "continents" ? continentColors[country.country.Continent] :
                                   blackAndWhiteColorScale(isShowingPercentile ? metric.percentileValue : scales[metric.name](country.country[metric.name]))

@@ -8,6 +8,8 @@ $main-color: #30336b;
     font-size: 21px;
     // background: #f2f4f7;
     width: 100%;
+    flex: 1;
+    overflow: hidden;
     
     &__chart-wrapper {
         width: 100%;

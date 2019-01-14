@@ -1,9 +1,9 @@
 @import "~styles/variables";
 
-$c-dark: #1d1d27;
+$c-dark: #282A38;
 $c-light: #eae8e5;
 $c-accent-1: #FE2E24;
-$c-accent-2: #30336b;
+$c-accent-2: #353749;
 $c-accent-3: #54B5BB;
 $c-accent-4: #686B89;
 
@@ -62,11 +62,11 @@ $c-accent-4: #686B89;
     }
 
     &__full-width {
-        margin: 0 -2em;
+        margin: 0 -2rem;
     }
 
     &__centered {
-        margin: 2em auto;
+        margin: 2rem auto;
         text-align: center;
     }
 
