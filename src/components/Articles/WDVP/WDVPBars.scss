@@ -64,7 +64,7 @@ $main-color: #30336b;
         cursor: default;
 
         &__item {
-            flex: 0 0;
+            flex: none;
             position: relative;
             padding: 0.5em 1rem;
             overflow: hidden;
