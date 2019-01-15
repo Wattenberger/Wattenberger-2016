@@ -65,9 +65,6 @@ class WDVPMap extends Component {
     }
   }
   container = React.createRef()
-  static propTypes = {
-    selectedCountryName: null,
-  }
 
   getClassName() {
     return classNames("WDVPMap", "WDVP__full-width", this.props.className)
@@ -183,9 +180,9 @@ class WDVPMap extends Component {
       <div className="WDVPMap__header">
         <div className="WDVPMap__header__contents">
           <div className="WDVPMap__header__title">
-            <h2>
+            <div className="WDVPMap__header__title__text">
               Countries similar to
-            </h2>
+            </div>
             <Select
               name="countries"
               options={countryOptions}

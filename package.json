@@ -71,6 +71,7 @@
     "three": "^0.100.0",
     "three-orbit-controls": "^82.1.0",
     "topojson": "^3.0.2",
+    "topojson-client": "^3.0.0",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.28.3",
     "xml2js": "^0.4.17"
