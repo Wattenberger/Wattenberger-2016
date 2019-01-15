@@ -268,7 +268,7 @@ const metricIndexScale = createScale({
 class WDVPBarsChart extends PureComponent {
   state = {
     width: window.innerWidth - 300,
-    height: window.innerWidth * 0.5,
+    height: window.innerWidth * 0.6,
     margins: {
       top: 150,
       right: 0,
@@ -317,7 +317,7 @@ class WDVPBarsChart extends PureComponent {
   onResize = () => {
     this.containerBounds = this.container.current.getBoundingClientRect()
     const width = this.containerBounds.width
-    const height = width * 0.6
+    const height = width * 0.7
     this.setState({
       width,
       height,
@@ -371,7 +371,7 @@ class WDVPBarsChart extends PureComponent {
     // this.stats = new Stats()
     // container.appendChild( this.stats.dom )
     this.controls = new OrbitControls( this.camera, this.renderer.domElement )
-    // this.controls.enableZoom = false
+    this.controls.enableZoom = false
 
     this.camera.lookAt(
       xAxisLength * 0.15,
@@ -613,12 +613,36 @@ class WDVPBarsChart extends PureComponent {
     bar.material.color.setStyle(color)
   }
 
+  changeZoom = (diff) => () => {
+    const newZoom = Math.min(Math.max(this.camera.zoom + diff, 0.2), 6.5)
+    
+    let zoomTweenAmount = { zoom: this.camera.zoom }
+    this.zoomTween = new TWEEN.Tween(zoomTweenAmount)
+        .to({ zoom: newZoom }, 300)
+        .easing(TWEEN.Easing.Quadratic.Out)
+        .onUpdate(() => {
+          console.log(zoomTweenAmount)
+          this.camera.zoom = zoomTweenAmount.zoom
+          this.camera.updateProjectionMatrix()
+        })
+        .start()
+  }
+
   render () {
     const { data } = this.props
     const { width, height, margins, xScale, yScale } = this.state
 
     return (
       <div className="WDVPBarsChart" ref={this.container}>
+        <div className="WDVPBarsChart__zooms">
+          <div className="WDVPBarsChart__zoom WDVPBarsChart__zoom--up" onClick={this.changeZoom(0.3)}>
+            +
+          </div>
+          <div className="WDVPBarsChart__zoom WDVPBarsChart__zoom--down" onClick={this.changeZoom(-0.3)}>
+            −
+          </div>
+        </div>
+
         <div className="WDVPBarsChart__label" ref={this.xLabel}>Countries</div>
         <div className="WDVPBarsChart__label" ref={this.zLabel}>Metrics</div>
         {/* <g

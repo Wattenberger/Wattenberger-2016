@@ -153,7 +153,7 @@ $main-color: #30336b;
 
     &__tooltip {
         position: absolute;
-        left: 2em;
+        left: 3em;
         width: 15em;
         min-height: 6em;
         top: 2em;
@@ -196,6 +196,33 @@ $main-color: #30336b;
             width: 0;
             text-align: center;
             color: #666;
+        }
+
+        &__zoom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 1.3em;
+            width: 1.3em;
+            font-size: 1.4em;
+            font-weight: 900;
+            background: white;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &:hover {
+                background: #eaeaea;
+            }
+
+            &--down {
+                margin-top: 0.2em;
+            }
+
+            &s {
+                position: absolute;
+                top: 2em;
+                left: 0.6em;
+            }
         }
     }
 }
