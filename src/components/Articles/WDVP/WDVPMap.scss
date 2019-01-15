@@ -7,11 +7,14 @@
     // flex-direction: row;
     // align-items: center;
     // background: white;
-    padding: 0 0 3em;
-
+    
     &.WDVP__full-width {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         margin-top: 0;
         margin-bottom: 1em;
+        padding: 0 0 3em;
     }
 
     &__controls {
@@ -210,6 +213,12 @@
         position: relative;
         flex: 1;
         display: flex;
+        width: 100%;
+        max-width: 100em;
+        // max-width: 130vh;
+        @media (min-width: 800px) and (max-width: 1400px) {
+            max-width: 130vh;
+        }
         // padding-left: 16em;
     }
 

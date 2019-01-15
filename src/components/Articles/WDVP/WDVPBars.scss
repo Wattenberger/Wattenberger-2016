@@ -8,7 +8,7 @@ $main-color: #30336b;
     font-size: 21px;
     display: flex;
     align-items: center;
-    background: $c-dark;
+    background: #282a38;
     // padding: 3em 0;
 
     @media (max-width: 700px) {
@@ -153,12 +153,13 @@ $main-color: #30336b;
 
     &__tooltip {
         position: absolute;
-        left: 11em;
+        left: 2em;
         width: 15em;
-        top: -2em;
+        min-height: 6em;
+        top: 2em;
         padding: 1em 2em;
         background: white;
-        font-size: 0.5em;
+        font-size: 1em;
         line-height: 1.2em;
     }
     
