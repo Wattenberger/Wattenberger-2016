@@ -371,7 +371,7 @@ class WDVPBarsChart extends PureComponent {
     // this.stats = new Stats()
     // container.appendChild( this.stats.dom )
     this.controls = new OrbitControls( this.camera, this.renderer.domElement )
-    this.controls.enableZoom = false
+    // this.controls.enableZoom = false
 
     this.camera.lookAt(
       xAxisLength * 0.15,
