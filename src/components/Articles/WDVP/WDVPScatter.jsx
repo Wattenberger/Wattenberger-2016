@@ -213,7 +213,10 @@ class WDVPScatter extends Component {
     this.isHoveringChart = false;
     this.setState({ tooltipInfo: null, closestCountries: null })
   }
-  onCountriesSelect = countries => this.setState({ selectedCountries: countries }, this.createScales)
+  onCountriesSelect = countries => {
+    this.setState({ selectedCountries: countries }, this.createScales)
+    if (this.props.onHighlightedCountriesChange) this.props.onHighlightedCountriesChange(countries)
+  }
   onContinentsSelect = continents => this.setState({ selectedContinents: continents }, this.createScales)
   
   onMetricChange = axis => metric => this.setState({ [`${axis}Metric`]: metric.value }, this.createScales)

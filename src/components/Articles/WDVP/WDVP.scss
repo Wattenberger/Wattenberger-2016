@@ -131,6 +131,7 @@ $c-accent-4: #686B89;
                 
             &--chart {
                 padding-top: 1em;
+                
                 @media (min-width: 700px) {
                     flex: 1;
                     // position: sticky;
@@ -141,6 +142,8 @@ $c-accent-4: #686B89;
                     display: flex;
                     align-items: flex-start;
                     justify-content: flex-start;
+                    margin-top: 6.45em;
+                    margin-bottom: -7em;
                     padding-top: 0;
                     // justify-content: center;
                     // top: 1em;
@@ -171,6 +174,8 @@ $c-accent-4: #686B89;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
         // margin: 0 -0.5rem 2em;
         margin: 0 0.6rem 2em;
 
@@ -187,6 +192,30 @@ $c-accent-4: #686B89;
             margin: 0.5rem;
             font-size: 0.8em;
             line-height: 1.3em;
+
+            &--dark {
+                background: #2C2E3B;
+                color: white;
+                max-width: 30em;
+                align-self: normal;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            // &__image-wrapper {
+            //     display: flex;
+            //     align-items: center;
+            //     flex-wrap: wrap;
+            // }
+
+            &__image {
+                display: block;
+                width: 100%;
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+            }
             
             &__header {
                 font-size: 1.2em;

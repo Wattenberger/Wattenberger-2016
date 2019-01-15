@@ -89,7 +89,7 @@ class WDVPGlobe extends Component {
     //   .scale(scale).translate(offset)
 
     this.projection
-      .fitExtent([[0, 0], [width, height]], countries)
+      .fitExtent([[0, 0], [width * 0.2, height * 0.2]], countries)
       // .scale((scaleFactor * Math.min(width, height)) / 2)
       // .translate([width, height])
     this.path = this.path.projection(this.projection)
@@ -121,6 +121,7 @@ class WDVPGlobe extends Component {
 
   initGlobe = () => {
     this.context = this.container.current.getContext('2d')
+    this.context.imageSmoothingEnabled = false
     this.path = d3.geoPath(this.projection).context(this.context)
     this.setAngles()
     this.scale()

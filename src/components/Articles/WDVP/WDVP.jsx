@@ -8,6 +8,9 @@ import WDVPGlobe from "./WDVPGlobe"
 import WDVPMetrics from "./WDVPMetrics"
 import WDVPGrandPoobah from "./WDVPGrandPoobah"
 
+import similarCountriesImage from "./similar_countries.png"
+import similarMetricsImage from "./similar_metrics.png"
+
 import './WDVP.scss'
 
 class WDVP extends Component {
@@ -127,6 +130,27 @@ class WDVP extends Component {
                 It is clear that many metrics are correlated with each other (the same countries have high values for both metrics). Certain countries are also correlated with each other (they have similar patterns of metric values).
               </p>
 
+              <div className="WDVP__cards">
+                <div className="WDVP__cards__item WDVP__cards__item--dark">
+                  <div>
+                    <div className="WDVP__cards__item__header">
+                      Some countries are similar across metrics  
+                    </div>
+                    For example, the countries in the white bounding box all rank low on the selected metric, but rank high on many other metrics.
+                  </div>
+                  <img className="WDVP__cards__item__image" src={similarCountriesImage} />
+                </div>
+                <div className="WDVP__cards__item WDVP__cards__item--dark">
+                  <div>
+                    <div className="WDVP__cards__item__header">
+                      Some metrics are similar across countries
+                    </div>
+                    For example, metrics in the white bounding box all have lots of green to the left and lots of red to the right, meaning the same countries are ranking high and low in each.
+                  </div>
+                  <img className="WDVP__cards__item__image" src={similarMetricsImage} />
+                </div>
+              </div>
+
               <p>
                 Although we can find groupings in this space, we always see the full dimensionality of the dataset. The final visualization will try to reduce this to a single axis.
               </p>
@@ -140,26 +164,17 @@ class WDVP extends Component {
                 Axes of “goodness”
               </div>
               <p>
-                This visualization lets you select axes of interest to reduce the 27 metrics to a single axis.
+                It’s time to combine metrics and rank countries by how good they are. The sliders below let you set how much each metric contributes to the ranking. Since we have established that countries can be good at some metrics and bad at others, you can create two sets of weights to combine metrics. 
               </p>
 
               <p>
-                Click on a metric, we rank other metrics by correlation. We also take the least correlated metric and rank metrics by their correlation with it.
+                Play around with different weights or select from our presets.
               </p>
+                
               <p>
-                We can use these to sets of correlation values as weights to combine metrics to get a measure of <i>government spending score</i>ness (the weighted combination of metrics that are correlated with <i>government spending score</i>) and we can plot that against <i>government expenditure</i>ness  (the weighted combination of metrics that are correlated with <i>government expenditure</i>). (here “ness” just means a quality of similarity to -- we can think of a better suffix)
-              </p>
-
-              <p>
-                In that space, we find an axis that is effectively equal to (<i>Variable A</i>ness- <i>Variable B</i>ness (the black arrow). We plot that as a divergent colormap on the worldmap.
-              </p>
-
-              <p>
-                In this interactive visualization, the user can select a variable of interest and find countries that s
-              </p>
-
-              <p>
-                Since many of these metrics are supposed to measure the quality of a government. Let’s pick the metric that is most correlated with all other metrics. The <i>government effectiveness</i> score is the single most correlated metric in the dataset. It is particularly highly correlated with <i>government integrity</i>, <i>rule of law</i>, <i>control of corruption</i>, and <i>regulatory quality</i>
+                <span style={{fontSize: "0.9em", lineHeight: "1.1em", opacity: 0.6}}>
+                  Note: once you have picked your favorite metrics to combine, the scatter plot will update to show how each country performs under your conditions. We then find the “axis of good” in this plot by finding the line that explains the maximum amount of variability across countries. The black line shows the axis of good given the two sets of metrics you selected.
+                </span>
               </p>
 
               <WDVPGrandPoobah />

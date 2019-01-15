@@ -37,8 +37,7 @@ $main-color: #30336b;
             align-items: flex-end;
 
             &:hover {
-                
-                .WDVPMetricsChart__item--is-selected {
+                .WDVPMetricsChart__item--is-selected:not(:hover) {
                     .WDVPMetricsChart__item__bar {
                         background: white;
                         &__fill {

@@ -1,4 +1,5 @@
 import React, {Component, PureComponent} from "react"
+import PropTypes from "prop-types"
 import * as THREE from "three"
 import OrbitControlsGenerator from "three-orbit-controls"
 const OrbitControls = OrbitControlsGenerator(THREE)
@@ -11,11 +12,8 @@ import { createScale } from 'components/_ui/Chart/utils/scale';
 import RadioGroup from 'components/_ui/RadioGroup/RadioGroup';
 import Tooltip from 'components/_ui/Tooltip/Tooltip';
 
-// import data from "./WDVP Datasets - the future of government"
 import rawData from "./Wdvp_gov_score.json"
-import metricsInfo from "./metric-info.json"
 import metricRankedCorrelationData from "./Wdvp_corr.json"
-// import data from "./WDVP Datasets - small countries are beautiful"
 import WDVPScatter from './WDVPScatter'
 
 import './WDVPMetrics.scss'
@@ -78,13 +76,22 @@ class WDVPMetrics extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      sorts: ["financial freedom score", "women MPs (% of all MPs)"],
       hoveredCountry: null,
       // isAscending: true,
       colorMode: "normal",
       isShowingPercentile: true,
       processedData: [],
     }
+  }
+  static propTypes = {
+    metrics: PropTypes.array,
+    data: PropTypes.array,
+    highlightedCountries: PropTypes.array,
+  }
+  static defaultProps = {
+    metrics: ["financial freedom score", "women MPs (% of all MPs)"],
+    data: rawData,
+    highlightedCountries: ["United States"]
   }
 
   getClassName() {
@@ -94,17 +101,21 @@ class WDVPMetrics extends Component {
   componentDidMount() {
     this.createScales()
   }
+  componentDidUpdate(prevProps) {
+    if (prevProps.data != this.props.data) this.createScales()
+  }
   chart = React.createRef()
 
   createScales = () => {
-    const { sorts, selectedContinents, isAscending, isShowingPercentile } = this.state
+    const { data, metrics } = this.props
+    const { selectedContinents, isAscending, isShowingPercentile } = this.state
 
     const selectedContinentValues = _.map(selectedContinents, "code")
 
-    const sortedData = _.map(sorts, sort => (
+    const sortedData = _.map(metrics, metric => (
       _.orderBy(
-        rawData,
-        [d => d[sort]],
+        data,
+        [d => d[metric]],
         ["asc"]
       )
     ))
@@ -113,7 +124,7 @@ class WDVPMetrics extends Component {
       _.map(metrics, (metric, i) => [
         metric,
         createScale({
-          domain: d3.extent(rawData, d => d[metric]),
+          domain: d3.extent(data, d => d[metric]),
           range: [0, 1],
         }),
       ])
@@ -121,29 +132,19 @@ class WDVPMetrics extends Component {
     this.setState({ scales, processedData: sortedData })
   }
 
-  // onChangeSort = metric => () => metric == this.state.sort ?
-  //   this.setState({ isAscending: !this.state.isAscending }, this.createScales) :
-  //   this.setState({ sort: metric, isAscending: this.state.isShowingPercentile ? true : false }, this.createScales)
-    
-  // onContinentsSelect = continents => this.setState({ selectedContinents: continents }, this.createScales)
-  // onColorModeOptionsSelect = newVal => this.setState({ colorMode: newVal.value })
-  // // onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value, isAscending: !this.state.isAscending }, this.createScales)
-  // onIsShowingPercentileSelect = newVal => this.setState({ isShowingPercentile: newVal.value }, this.createScales)
-  // onCountryHover = country => this.setState({ hoveredCountry: country })
-
   render() {
-    const { processedData, metrics, countryOrder, selectedContinents, scales, sorts, hoveredCountry, colorMode, isAscending, isShowingPercentile } = this.state
-    const highlightedCountries = ["United States"]
+    const { metrics, highlightedCountries } = this.props
+    const { processedData, scales } = this.state
 
     return (
       <div className={this.getClassName()}>
 
         <div className="WDVPMetrics__charts">
-          {_.map(sorts, (sort, index) => (
+          {_.map(metrics, (metric, index) => (
             <WDVPMetricsChart
-              key={sort}
+              key={metric}
               data={processedData[index]}
-              metric={sort}
+              metric={metric}
               scales={scales}
               highlightedCountries={highlightedCountries}
             />
@@ -196,7 +197,7 @@ class WDVPMetrics extends Component {
 export default WDVPMetrics
 
 
-const formatNumber = d3.format(",")
+const formatNumber = d3.format(",.1f")
 const WDVPMetricsChart = React.memo(({ data, metric, scales, highlightedCountries }) => (
   <div className="WDVPMetricsChart">
     <h6 className="WDVPMetricsChart__header">

@@ -47,6 +47,22 @@ $main-color: #30336b;
         flex-direction: row;
         align-items: flex-start;
     }
+
+    .WDVPMetrics {
+        margin: -2em 0 7em;
+        
+        &Chart__item {
+            @media (min-width: 700px) {
+                flex: 1;
+                margin-right: 1px;
+
+                &__bar {
+                    width: auto;
+                    flex: 1;
+                }
+            }
+        }
+    }
     
     &Sliders {
         flex: none;

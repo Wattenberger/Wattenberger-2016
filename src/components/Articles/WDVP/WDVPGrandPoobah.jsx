@@ -1,4 +1,5 @@
 import React, {Component, PureComponent} from "react"
+import PropTypes from "prop-types"
 import * as THREE from "three"
 import OrbitControlsGenerator from "three-orbit-controls"
 const OrbitControls = OrbitControlsGenerator(THREE)
@@ -14,12 +15,10 @@ import Tooltip from 'components/_ui/Tooltip/Tooltip';
 import Select from 'react-select';
 import selectStyles from './selectStyles';
 
-// import data from "./WDVP Datasets - the future of government"
 import rawData from "./Wdvp_gov_score.json"
 import presets from "./Wdvp_nnmf.json"
-import metricsInfo from "./metric-info.json"
 import metricRankedCorrelationData from "./Wdvp_corr.json"
-// import data from "./WDVP Datasets - small countries are beautiful"
+import WDVPMetrics from "./WDVPMetrics"
 import WDVPScatter from './WDVPScatter'
 
 import './WDVPGrandPoobah.scss'
@@ -111,6 +110,7 @@ class WDVPGrandPoobah extends Component {
       xMetric: defaultMetrics[0],
       yMetric: defaultMetrics[1],
       dataWithWeights: [],
+      highlightedCountries: [],
       angleOfMostVariance: 0,
     }
   }
@@ -144,7 +144,13 @@ class WDVPGrandPoobah extends Component {
     const hasAnyWeights = _.sum(_.values(xMetricWeights)) && _.sum(_.values(yMetricWeights))
 
     if (!hasAnyWeights) {
-      this.setState({ dataWithWeights, angleOfMostVariance: 0 })
+      const filledWeightMetric = _.sum(_.values(xMetricWeights)) ? "xValue" : "yValue"
+      const updateDataWithWeights = _.map(dataWithWeights, country => ({
+        ...country,
+        ["axis of good"]: country[filledWeightMetric],
+      }))
+
+      this.setState({ dataWithWeights: updateDataWithWeights, angleOfMostVariance: 0 })
       return
     }
 
@@ -209,7 +215,12 @@ class WDVPGrandPoobah extends Component {
 
     const angleOfMostVariance = Math.atan2(vectorOfMostVariance[1], vectorOfMostVariance[0]) / Math.PI * 180
 
-    this.setState({ dataWithWeights, angleOfMostVariance })
+    const updateDataWithWeights = _.map(dataWithWeights, country => ({
+      ...country,
+      ["axis of good"]: vectorOfMostVariance[0] * country.xValue + vectorOfMostVariance[1] * country.yValue,
+    }))
+
+    this.setState({ dataWithWeights: updateDataWithWeights, angleOfMostVariance })
   }
   debouncedGenerateWeightedData = _.debounce(this.generateWeightedData, 400)
 
@@ -228,9 +239,10 @@ class WDVPGrandPoobah extends Component {
     return _.mean(weightedCountryMetricValues)
   }
 
+  onHighlightedCountriesChange = countries => this.setState({ highlightedCountries: _.map(countries, "value") })
+
   render() {
-    const { dataWithWeights, xMetricWeights, yMetricWeights, xMetric, yMetric, angleOfMostVariance } = this.state
-    const highlightedCountries = ["United States"]
+    const { dataWithWeights, xMetricWeights, yMetricWeights, xMetric, yMetric, angleOfMostVariance, highlightedCountries } = this.state
 
     return (
       <div className={this.getClassName()}>
@@ -255,8 +267,12 @@ class WDVPGrandPoobah extends Component {
             xMetric={"xValue"}
             yMetric={"yValue"}
             angleOfMostVariance={angleOfMostVariance}
+            onHighlightedCountriesChange={this.onHighlightedCountriesChange}
           />
         </div>
+
+        <WDVPMetrics metrics={["axis of good"]} data={dataWithWeights} highlightedCountries={highlightedCountries} />
+
       </div>
     )
   }
