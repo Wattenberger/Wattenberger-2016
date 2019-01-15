@@ -113,6 +113,7 @@ $main-color: #30336b;
                 align-items: flex-end;
                 height: 4em;
                 width: 1px;
+                shape-rendering: crispEdges;
                 // width: 100%;
                 
                 &__fill {

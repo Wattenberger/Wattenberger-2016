@@ -227,7 +227,7 @@ class WDVPBars extends Component {
           </div>
         </div>
 
-        {!!hoveredCountry && (
+        {!!hoveredCountry && !!hoveredCountry.country && (
           <div className="WDVPBars__tooltip">
               <h6 className="WDVPBars__tooltip__title">
                 { hoveredCountry.country.Country }

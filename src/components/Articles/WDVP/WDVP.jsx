@@ -175,7 +175,7 @@ class WDVP extends Component {
               </p>
                 
               <p>
-                <span style={{fontSize: "0.9em", lineHeight: "1.1em", opacity: 0.6}}>
+                <span style={{fontSize: "0.8em", lineHeight: "1.1em", opacity: 0.6}}>
                   Note: once you have picked your favorite metrics to combine, the scatter plot will update to show how each country performs under your conditions. We then find the “axis of good” in this plot by finding the line that explains the maximum amount of variability across countries. The black line shows the axis of good given the two sets of metrics you selected.
                 </span>
               </p>
@@ -243,10 +243,7 @@ Another takeaway is that the Northern European countries are doing well on many 
       </div>
 
 <p>
-Overall, what makes a "good" country will not be the same for everyone, but Northern Europe is dominating many metrics in the dataset provided by WDVP. It is almost impossible to infer the cause of their success from these correlational analyses, but we think it is likely that their political systems contribute a large part to their success on social indicators. This is not all that surprising, however, these interactive visualizations do reveal that many of the indicators aren't really giving us new information (they are all correlated with each other).
-</p>
-<p>
-The visualizations also reveal that there are some truly unique countries. <b>Botswana</b>, for example, is not like it's neighbors. It is more correlated with <b>Finland</b> and <b>Australia</b> and any other African country. 
+Overall, what makes a "good" country will not be the same for everyone, but it is clear from the analyses above that Northern Europe is dominating many metrics in the dataset provided by WDVP. While it is almost impossible to infer the cause of their success from these correlational analyses, they are well known for implementing a <a href="https://en.wikipedia.org/wiki/Welfare_state" target="_blank" ref="noreferrer noopener">welfare state</a>, where the government promotes the social well-being of its citizens. It is not surprising that they dominate the social metrics, however, these data reveal that this in no way hurts their economic indicators. In other words, if a country wants to knock Northern Europe off the top of the list, cutting corners on social fronts isn't necessarily a shortcut to better economic metrics. 
 </p>
             </div>
 

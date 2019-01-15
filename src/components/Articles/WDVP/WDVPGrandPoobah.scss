@@ -43,13 +43,31 @@ $main-color: #30336b;
 
     &__sliders {
         flex: none;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        margin-bottom: -4em;
+        
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__note {
+        margin-top: 1.2em;
+        max-width: 30em;
+        font-size: 0.7em;
+        line-height: 1.2em;
+        font-style: italic;
+        opacity: 0.6;
     }
 
     .WDVPMetrics {
-        margin: -2em 0 7em;
+        margin: 1em 0 7em;
+        
+        .WDVPMetricsChart__header {
+            width: 100%;
+            text-align: center;
+        }
         
         &Chart__item {
             @media (min-width: 700px) {

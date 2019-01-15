@@ -80,10 +80,10 @@ const metricCorrelationSorts = _.fromPairs(
 )
 const presetNames = [
   "Generally Good",
-  "Stable & Libertied",
+  "Politically Stable",
   "Large",
-  "Unemployed, but Wise with Money",
-  "Wealthy & Taxed"
+  "Reckless Growth",
+  "Taxation Nation"
 ]
 const presetOptions = _.map(presets, (preset, index) => ({
   value: presetNames[index],
@@ -147,7 +147,7 @@ class WDVPGrandPoobah extends Component {
       const filledWeightMetric = _.sum(_.values(xMetricWeights)) ? "xValue" : "yValue"
       const updateDataWithWeights = _.map(dataWithWeights, country => ({
         ...country,
-        ["axis of good"]: country[filledWeightMetric],
+        ["axis of good rankings"]: country[filledWeightMetric],
       }))
 
       this.setState({ dataWithWeights: updateDataWithWeights, angleOfMostVariance: 0 })
@@ -217,7 +217,7 @@ class WDVPGrandPoobah extends Component {
 
     const updateDataWithWeights = _.map(dataWithWeights, country => ({
       ...country,
-      ["axis of good"]: vectorOfMostVariance[0] * country.xValue + vectorOfMostVariance[1] * country.yValue,
+      ["axis of good rankings"]: vectorOfMostVariance[0] * country.xValue + vectorOfMostVariance[1] * country.yValue,
     }))
 
     this.setState({ dataWithWeights: updateDataWithWeights, angleOfMostVariance })
@@ -248,19 +248,25 @@ class WDVPGrandPoobah extends Component {
       <div className={this.getClassName()}>
         <div className="WDVPGrandPoobah__content">
           <div className="WDVPGrandPoobah__sliders">
-            <WDVPGrandPoobahSliders
-              metricWeights={xMetricWeights}
-              onChange={this.onMetricWeightsChangeForAxisLocal("x")}
-              title="x axis weights"
-              startingPresetName={presetNames[1]}
-              isShowingLabels
-            />
-            <WDVPGrandPoobahSliders
-              metricWeights={yMetricWeights}
-              onChange={this.onMetricWeightsChangeForAxisLocal("y")}
-              startingPresetName={presetNames[2]}
-              title="y axis weights"
-            />
+            <div className="WDVPGrandPoobah__sliders-wrapper">
+              <WDVPGrandPoobahSliders
+                metricWeights={xMetricWeights}
+                onChange={this.onMetricWeightsChangeForAxisLocal("x")}
+                title="x axis weights"
+                startingPresetName={presetNames[1]}
+                isShowingLabels
+              />
+              <WDVPGrandPoobahSliders
+                metricWeights={yMetricWeights}
+                onChange={this.onMetricWeightsChangeForAxisLocal("y")}
+                startingPresetName={presetNames[2]}
+                title="y axis weights"
+              />
+            </div>
+            <div className="WDVPGrandPoobah__note">
+              Note: These presets were discovered automatically using <a href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization" target="_blank" ref="noopener noreferrer">non-negative matrix factorization</a> and manually named.
+            </div>
+    
           </div>
           <WDVPScatter
             data={dataWithWeights}
@@ -271,7 +277,7 @@ class WDVPGrandPoobah extends Component {
           />
         </div>
 
-        <WDVPMetrics metrics={["axis of good"]} data={dataWithWeights} highlightedCountries={highlightedCountries} />
+        <WDVPMetrics metrics={["axis of good rankings"]} data={dataWithWeights} highlightedCountries={highlightedCountries} />
 
       </div>
     )

@@ -117,14 +117,14 @@ $c-accent-4: #686B89;
         flex-direction: column;
         margin: 2em 0 4em;
 
-        @media (min-width: 700px) {
+        @media (min-width: 800px) {
             flex-direction: row;
         }
         
         &__section {
             &--content {
                 // flex: 4;
-                @media (min-width: 700px) {
+                @media (min-width: 800px) {
                     padding-right: 2em;
                 }
             }
@@ -132,7 +132,7 @@ $c-accent-4: #686B89;
             &--chart {
                 padding-top: 1em;
                 
-                @media (min-width: 700px) {
+                @media (min-width: 800px) {
                     flex: 1;
                     // position: sticky;
                     // position: absolute;
