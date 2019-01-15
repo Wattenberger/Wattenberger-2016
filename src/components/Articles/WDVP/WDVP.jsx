@@ -10,6 +10,9 @@ import WDVPGrandPoobah from "./WDVPGrandPoobah"
 
 import similarCountriesImage from "./similar_countries.png"
 import similarMetricsImage from "./similar_metrics.png"
+import Economic_vs_Social_plot_only from "./Economic_vs_Social_plot_only.jpg"
+import Governing_vs_Social_plot_only from "./Governing_vs_Social_plot_only.jpg"
+import Governing_vs_Economic_plot_only from "./Governing_vs_Economic_plot_only.jpg"
 
 import './WDVP.scss'
 
@@ -178,6 +181,73 @@ class WDVP extends Component {
               </p>
 
               <WDVPGrandPoobah />
+<p>
+The Axis of Good plot lets you pick aggregate metrics. One thing is pretty clear, most aggregate metrics are correlated with each other (countries that do well by one aggregate will do well by another), although there are some trade offs.
+</p>
+
+<p>
+Another takeaway is that the Northern European countries are doing well on many metrics and thus often appear at the top.
+</p>
+
+
+              
+            <div className="WDVP__cards">
+              <div className="WDVP__cards__item">
+                <div className="WDVP__cards__item__header">
+                  Economic vs. Social Good
+  </div>
+                Choosing indicators of economic health (e.g., <i>GDP</i>, <i>GDP per capita</i>, <i>Tax Burden Score</i>, etc.) and plotting them against metrics reflecting social good (e.g., <i>civil liberties</i>, <i>political rights</i>, <i>% female MPs</i>) shows that countries that are doing well economically are also doing well socially. The two aggregate metrics are very correlated.
+  <img className="WDVP__cards__item__image" src={Economic_vs_Social_plot_only} />
+                <h6 className="WDVP__cards__item__list-header">Top Countries</h6>
+                <ol className="WDVP__cards__item__list">
+                  <li>Sweden</li>
+                  <li>Germany</li>
+                  <li>United Kingdom</li>
+                  <li>Norway</li>
+                  <li>Netherlands</li>
+                </ol>
+
+            </div>
+            <div className="WDVP__cards__item">
+              <div className="WDVP__cards__item__header">
+                Governing vs. Social Good
+  </div>
+              Choosing indicators of government health (e.g., <i>control of corruption</i>, <i>government effectiveness</i>, <i>government integrity</i>, etc.) and plotting them against metrics reflecting social good (e.g., <i>civil liberties</i>, <i>political rights</i>, <i>% female MPs</i>) shows positive correlation. Countries that have functioning governments are doing well on social indicators as well.
+  <img className="WDVP__cards__item__image" src={Governing_vs_Social_plot_only} />
+              <h6 className="WDVP__cards__item__list-header">Top Countries</h6>
+              <ol className="WDVP__cards__item__list">
+                <li>Germany</li>
+                <li>Norway</li>
+                <li>United Kingdom</li>
+                <li>Sweden</li>
+                <li>Netherlands</li>
+              </ol>
+
+          </div>
+          <div className="WDVP__cards__item">
+            <div className="WDVP__cards__item__header">
+              Governing vs. Economic good
+  </div>
+            Choosing indicators of government health (e.g., <i>control of corruption</i>, <i>government effectiveness</i>, <i>government integrity</i>, etc.) and plotting them against metrics reflecting economic health (e.g., <i>GDP</i>, <i>GDP per capita</i>, <i>Tax Burden Score</i>, etc.) shows positive correlation. Countries that have healthy government indicators also have good economic indicators.
+  <img className="WDVP__cards__item__image" src={Governing_vs_Economic_plot_only} />
+            <h6 className="WDVP__cards__item__list-header">Top Countries</h6>
+            <ol className="WDVP__cards__item__list">
+              <li>Sweden</li>
+              <li>Netherlands</li>
+              <li>Luxembourg</li>
+              <li>Denmark</li>
+              <li>New Zealand</li>
+            </ol>
+
+        </div>
+      </div>
+
+<p>
+Overall, what makes a "good" country will not be the same for everyone, but Northern Europe is dominating many metrics in the dataset provided by WDVP. It is almost impossible to infer the cause of their success from these correlational analyses, but we think it is likely that their political systems contribute a large part to their success on social indicators. This is not all that surprising, however, these interactive visualizations do reveal that many of the indicators aren't really giving us new information (they are all correlated with each other).
+</p>
+<p>
+The visualizations also reveal that there are some truly unique countries. <b>Botswana</b>, for example, is not like it's neighbors. It is more correlated with <b>Finland</b> and <b>Australia</b> and any other African country. 
+</p>
             </div>
 
             <div className="WDVP__footer">

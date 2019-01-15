@@ -71,7 +71,7 @@ class Axis extends Component {
     const x = dimension == "x"      ? 0 :
               margin.left           ? 1 :
                                       width
-    const y = dimension == "x" ? height - margin.bottom : 0
+    const y = dimension == "x" ? height - margin.top - margin.bottom : 0
 
     return {
       transform: `translate3d(${x}px, ${y}px, 0)`
@@ -118,7 +118,7 @@ class Axis extends Component {
 
   renderLabel() {
     let {dimension, label, width} = this.props
-    let x =      dimension == "x" ? width || 0 : 0
+    let x =      dimension == "x" ? width - 100 || 0 : 0
     let y =      dimension == "x" ? -10 : 20
     let rotate = dimension == "x" ? 0 : -90
 

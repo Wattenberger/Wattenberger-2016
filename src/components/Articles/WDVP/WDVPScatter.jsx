@@ -338,24 +338,13 @@ class WDVPScatter extends Component {
             )}
 
             {_.isFinite(angleOfMostVariance) && _.isFinite(meanX) && (
-              <line
-                className="WDVPScatter__line"
-                // x1={meanX - (width - margin.left - margin.right) / 2}
-                // y1={meanY}
-                // x2={meanX + (width - margin.left - margin.right) / 2}
-                // y2={meanY}
-                // x1={meanX - vectorOfMostVariance[0] * 300}
-                // y1={meanY + vectorOfMostVariance[1] * 300}
-                // x2={meanX + vectorOfMostVariance[0] * 300}
-                // y2={meanY - vectorOfMostVariance[1] * 300}
-                x1={meanX + width / 2 * Math.cos(angleOfMostVariance / 180 * Math.PI)}
-                y1={meanY - height / 2 * Math.sin(angleOfMostVariance / 180 * Math.PI)}
-                x2={meanX - width / 2 * Math.cos(angleOfMostVariance / 180 * Math.PI)}
-                y2={meanY + height / 2 * Math.sin(angleOfMostVariance / 180 * Math.PI)}
-                stroke="black"
-                style={{
-                  // transform: `rotate(${-angleOfMostVariance}deg)`
-                }}
+              <WDVPScatterLine
+                angle={angleOfMostVariance}
+                meanX={meanX}
+                meanY={meanY}
+                width={width}
+                height={height}
+                margin={margin}
               />
             )}
           </Chart>
@@ -449,3 +438,48 @@ const WDVPScatterCountryHighlight = React.memo(({ name, color, x, y, isSelected,
     </g>
   </g>
 ))
+
+const WDVPScatterLine = ({ angle, meanX, meanY, width, height, margin }) => {
+  const boundedWidth = width - margin.left - margin.right
+  const boundedHeight = height - margin.top - margin.bottom
+  const x1 = meanX + boundedWidth / 2 * Math.cos(angle / 180 * Math.PI)
+  const y1 = meanY - boundedHeight / 2 * Math.sin(angle / 180 * Math.PI)
+  const x2 = meanX - boundedWidth / 2 * Math.cos(angle / 180 * Math.PI)
+  const y2 = meanY + boundedHeight / 2 * Math.sin(angle / 180 * Math.PI)
+  const arrowWidth = 10
+  const arrowHeight = 10
+
+  return (
+    <g
+      style={{
+        // transform: `rotate(${-angle}deg)`,
+        // transformOrigin: "center center",
+      }}>
+        {/* <rect x="0" y="0" width={boundedWidth} height={boundedHeight} fill="none" stroke="green" /> */}
+        {/* <text
+          x={width - margin.left - margin.right / 2}
+          y={meanY}>Axis of Good</text> */}
+        <line
+          className="WDVPScatter__line"
+          // x1={meanX - ((width) / 2)}
+          // y1={meanY}
+          // x2={meanX + ((width) / 2)}
+          // y2={meanY}
+          // x1={meanX - vectorOfMostVariance[0] * 300}
+          // y1={meanY + vectorOfMostVariance[1] * 300}
+          // x2={meanX + vectorOfMostVariance[0] * 300}
+          // y2={meanY - vectorOfMostVariance[1] * 300}
+          x1={x1}
+          y1={y1}
+          x2={x2}
+          y2={y2}
+          stroke="black"
+        />
+        {/* <path d={"M " + [
+          [width - arrowWidth / 2, meanY - arrowHeight / 2].join(" "),
+          [width + arrowWidth / 2, meanY + 0].join(" "),
+          [width - arrowWidth / 2, meanY + arrowHeight / 2].join(" "),
+        ].join(" L ") + " Z"} /> */}
+    </g>
+  )
+}
