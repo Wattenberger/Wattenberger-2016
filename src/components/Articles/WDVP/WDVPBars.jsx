@@ -173,15 +173,6 @@ class WDVPBars extends Component {
 
     return (
       <div className={this.getClassName()}>
-      
-        {/* <RadioGroup
-          className="WDVPBars__toggle"
-          options={continents}
-          value={selectedContinents}
-          onChange={this.onContinentsSelect}
-          isMulti
-          canClear
-        /> */}
 
         <div className="WDVPBars__chart">
           <WDVPBarsChart
@@ -197,11 +188,6 @@ class WDVPBars extends Component {
             isShowingPercentile={isShowingPercentile}
             onChangeHoveredCountry={this.onChangeHoveredCountry}
           />
-          {/* <WDVPScatter
-            data={processedData}
-            xMetric={metrics[0]}
-            yMetric={_.last(metrics)}
-          /> */}
         </div>
           
         <div className="WDVPBars__controls">
@@ -252,7 +238,6 @@ class WDVPBars extends Component {
           </div>
         )}
         
-  
       </div>
     )
   }

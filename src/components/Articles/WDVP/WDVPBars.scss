@@ -11,6 +11,23 @@ $main-color: #30336b;
     background: $c-dark;
     // padding: 3em 0;
 
+    @media (max-width: 700px) {
+        flex-direction: column;
+
+        .WDVPBars {
+            &__controls {
+                height: auto;
+                width: 100%;
+                flex: none;
+            }
+
+            &__chart {
+                width: 100%;
+                min-height: 50vw;
+            }
+        }
+    }
+
     &.WDVP__full-width {
         margin-top: 3em;
         margin-bottom: 3em;
@@ -82,12 +99,12 @@ $main-color: #30336b;
             
             &--is-selected {
                 // color: $c-accent-1;
-                background: $c-light;
-                color: $c-dark;
+                background: #000;
+                // color: $c-dark;
                 font-weight: 900;
                 
                 &:hover {
-                    background: $c-light;
+                    background: #000;
                 }
                 
             }
@@ -155,6 +172,9 @@ $main-color: #30336b;
         .RadioGroup__option {
             border-color: #000;
             color: white;
+            &:hover:not(.RadioGroup__option--selected) {
+              background: rgba(#000, 0.3);
+            }
         }
 
         .RadioGroup__option--selected {

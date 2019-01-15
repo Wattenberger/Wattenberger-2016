@@ -199,9 +199,9 @@ export default WDVPMetrics
 const formatNumber = d3.format(",")
 const WDVPMetricsChart = React.memo(({ data, metric, scales, highlightedCountries }) => (
   <div className="WDVPMetricsChart">
-    <div className="WDVPMetricsChart__header">
+    <h6 className="WDVPMetricsChart__header">
       { metric}
-    </div>
+    </h6>
 
     <div className="WDVPMetricsChart__items">
       {_.map(data, country => (

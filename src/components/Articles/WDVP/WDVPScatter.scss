@@ -11,12 +11,22 @@ $main-color: #30336b;
     flex: 1;
     overflow: hidden;
     
+    @media (max-width: 700px) {
+        padding: 3em 0;
+
+        .WDVPScatter {
+            &__select {
+                min-width: 7em;
+            }
+        }
+    }
+
     &__chart-wrapper {
         width: 100%;
         padding: 1em 0;
         transform-origin: center center;
         transition: all 0.3s ease-out;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     .Chart__listener {

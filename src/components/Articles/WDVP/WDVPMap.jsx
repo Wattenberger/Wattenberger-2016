@@ -21,9 +21,9 @@ import './WDVPMap.scss'
 
 // const blackAndWhiteColorScale = d3.scaleSequential(interpolateRdBu)
 const blackAndWhiteColorScale = createScale({
-  domain: [-1, 0, 1],
+  domain: [-0.9, 0, 0.9],
   // range: ["#fafafa", "#45aeb1"],
-  range: ["#FE2E24", "#eaeaea", "#30336b"],
+  range: ["#F97F51", "#eaeaea", "#3B3B98"],
 })
 const percentileOrRawOptions = [{
   value: false,

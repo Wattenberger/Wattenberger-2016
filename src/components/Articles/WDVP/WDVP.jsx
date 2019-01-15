@@ -64,7 +64,7 @@ class WDVP extends Component {
               </div>
 
               <p>
-                Click on a country to find what it is good (and bad) at and other countries it is similar to. The best and worst metrics for the country will display to the left and the map will recolor itself to reflect the <b style={{color: "#30336b"}}>most similar countries</b> and <b style={{color: "#FE2E24"}}>least similar countries</b> across all metrics.
+                Click on a country to find what it is good (and bad) at and other countries it is similar to. The best and worst metrics for the country will display to the left and the map will recolor itself to reflect the <b className="WDVP__color-2">most similar countries</b> and <b className="WDVP__color-1">least similar countries</b> across all metrics.
               </p>
 
               <WDVPMap selectedCountryName={selectedMapCountryName} />
