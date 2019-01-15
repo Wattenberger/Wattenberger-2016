@@ -194,13 +194,16 @@ $c-accent-4: #686B89;
             line-height: 1.3em;
 
             &--dark {
-                background: #2C2E3B;
-                color: white;
+                background: #282a38;
+                color: rgba(#f4f4f4, 0.8);
                 max-width: 30em;
                 align-self: normal;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+
+                .WDVP__cards__item__header {
+                    color: white;
+                }
             }
 
             // &__image-wrapper {
@@ -213,7 +216,7 @@ $c-accent-4: #686B89;
                 display: block;
                 width: 100%;
                 max-width: 300px;
-                margin: auto;
+                margin: auto auto 0;
                 text-align: center;
             }
             
@@ -239,6 +242,7 @@ $c-accent-4: #686B89;
             font-family: $font-family-serif;
 
             &__index {
+                display: none;
                 position: absolute;
                 left: -0.3em;
                 top: 0.2em;

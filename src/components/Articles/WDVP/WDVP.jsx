@@ -4,7 +4,7 @@ import _ from "lodash"
 
 import WDVPMap from "./WDVPMap"
 import WDVPBars from "./WDVPBars"
-import WDVPGlobe from "./WDVPGlobe"
+// import WDVPGlobe from "./WDVPGlobe"
 import WDVPMetrics from "./WDVPMetrics"
 import WDVPGrandPoobah from "./WDVPGrandPoobah"
 
@@ -30,9 +30,9 @@ class WDVP extends Component {
     return (
       <div className={this.getClassName()}>
           <div className="WDVP__header">
-            <div className="WDVP__header__globe">
+            {/* <div className="WDVP__header__globe">
               <WDVPGlobe />
-            </div>
+            </div> */}
             <h1 className="WDVP__title">
               What makes a <b>good</b> country?
             </h1>
