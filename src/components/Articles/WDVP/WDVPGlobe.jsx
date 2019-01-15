@@ -9,7 +9,6 @@ import _ from "lodash"
 import { createScale } from 'components/_ui/Chart/utils/scale';
 
 import worldData from "./world.json"
-console.log(worldData)
 
 const land = topojson.feature(worldData, worldData.objects.land)
 const countries = topojson.feature(worldData, worldData.objects.countries)
@@ -19,15 +18,13 @@ const graticule = d3.geoGraticule10()
 
 import './WDVPGlobe.scss'
 
-const scaleFactor = 0.8
+const scaleFactor = 0.9
 const angles = { x: -20, y: 40, z: 0}
 const degPerPx = 1
 const colorWater = '#fff'
 const colorLand = '#111'
 const colorGraticule = '#ccc'
 const colorCountry = '#a00'
-
-
 
 
 class WDVPGlobe extends Component {
@@ -79,9 +76,23 @@ class WDVPGlobe extends Component {
   scale = () => {
     const { width, height } = this.state
     console.log( width, height)
+    
+    // const bounds  = this.path.bounds(this.projection)
+    // console.log(bounds)
+    // const hScale  = 150 * width  / (bounds[1][0] - bounds[0][0])
+    // const vScale  = 150 * height / (bounds[1][1] - bounds[0][1])
+    // const scale   = (hScale < vScale) ? hScale : vScale;
+    // const offset  = [width - (bounds[0][0] + bounds[1][0])/2,
+    //                   height - (bounds[0][1] + bounds[1][1])/2];
+
+    // this.projection
+    //   .scale(scale).translate(offset)
+
     this.projection
-      .scale((scaleFactor * Math.min(width, height)) / 2)
-      .translate([width / 2, height / 2])
+      .fitExtent([[0, 0], [width, height]], countries)
+      // .scale((scaleFactor * Math.min(width, height)) / 2)
+      // .translate([width, height])
+    this.path = this.path.projection(this.projection)
   }
   
   fill = (obj, color) => {
@@ -111,8 +122,8 @@ class WDVPGlobe extends Component {
   initGlobe = () => {
     this.context = this.container.current.getContext('2d')
     this.path = d3.geoPath(this.projection).context(this.context)
-    this.scale()
     this.setAngles()
+    this.scale()
     this.drawGlobe()
     window.addEventListener('resize', this.onResize)
     window.addEventListener('scroll', this.onScroll)

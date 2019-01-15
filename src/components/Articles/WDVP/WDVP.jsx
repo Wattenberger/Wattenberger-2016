@@ -121,7 +121,7 @@ class WDVP extends Component {
                 To aid in metric discovery, we want to visualize all countries and metrics simultaneously. Below, we’ve plotted the values of all metrics for all countries as a grid of bars, where the bar height indicates  the  value for each metric/country combination. Select metrics on the right and the countries will be ranked by their percentile for that metric. The metrics will also be ranked by their similarity to the selected metric.
               </p>
 
-              {/* <WDVPBars /> */}
+              <WDVPBars />
 
               <p>
                 It is clear that many metrics are correlated with each other (the same countries have high values for both metrics). Certain countries are also correlated with each other (they have similar patterns of metric values).
