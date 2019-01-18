@@ -1,6 +1,6 @@
 import React, {Component, PureComponent} from "react"
 import * as THREE from "three"
-import Stats from "stats-js"
+// import Stats from "stats-js"
 import OrbitControlsGenerator from "three-orbit-controls"
 const OrbitControls = OrbitControlsGenerator(THREE)
 import TWEEN from "@tweenjs/tween.js"
@@ -369,8 +369,8 @@ class WDVPBarsChart extends PureComponent {
     // this.camera.rotateOnAxis(new THREE.Vector3(0, 1, 0), 45)
     this.camera.updateMatrixWorld();
 
-    this.stats = new Stats()
-    this.container.current.appendChild( this.stats.dom )
+    // this.stats = new Stats()
+    // this.container.current.appendChild( this.stats.dom )
     this.controls = new OrbitControls( this.camera, this.renderer.domElement )
     this.controls.enableZoom = false
 
@@ -478,7 +478,7 @@ class WDVPBarsChart extends PureComponent {
 
       this.hoveredCountry = intersectName
       this.props.onChangeHoveredCountry(closestIntersect.object.userData)
-      
+
       this.renderScene()
     }
   }
