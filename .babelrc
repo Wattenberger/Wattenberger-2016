@@ -1,6 +1,15 @@
 {
   "presets": [
-    "@babel/env",
+    ["@babel/env",{
+      "modules": false,
+      "targets": {
+        "browsers": [
+          "> 1%",
+          "Firefox >= 52", // last ESR
+          "IE 11"
+        ]
+      }
+    }],
     "@babel/preset-react",
   ],
   "plugins": [
