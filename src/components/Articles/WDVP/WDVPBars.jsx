@@ -633,6 +633,8 @@ class WDVPBarsChart extends PureComponent {
           this.camera.updateProjectionMatrix()
         })
         .start()
+
+    this.renderScene()
   }
 
   render () {
