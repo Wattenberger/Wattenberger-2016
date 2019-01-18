@@ -1,5 +1,7 @@
 import "@babel/register"
 // import "@babel/polyfill"
+require('intersection-observer');
+
 import React from "react"
 import ReactDOM from "react-dom"
 import { AppContainer } from 'react-hot-loader'
