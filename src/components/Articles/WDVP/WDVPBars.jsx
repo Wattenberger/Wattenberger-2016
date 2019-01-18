@@ -1,5 +1,6 @@
 import React, {Component, PureComponent} from "react"
 import * as THREE from "three"
+import Stats from "stats-js"
 import OrbitControlsGenerator from "three-orbit-controls"
 const OrbitControls = OrbitControlsGenerator(THREE)
 import TWEEN from "@tweenjs/tween.js"
@@ -368,8 +369,8 @@ class WDVPBarsChart extends PureComponent {
     // this.camera.rotateOnAxis(new THREE.Vector3(0, 1, 0), 45)
     this.camera.updateMatrixWorld();
 
-    // this.stats = new Stats()
-    // container.appendChild( this.stats.dom )
+    this.stats = new Stats()
+    this.container.current.appendChild( this.stats.dom )
     this.controls = new OrbitControls( this.camera, this.renderer.domElement )
     this.controls.enableZoom = false
 
@@ -392,8 +393,8 @@ class WDVPBarsChart extends PureComponent {
 
     this.drawAxes()
     this.initBars()
-    // this.renderScene()
-    this.animate()
+    this.renderScene()
+    // this.animate()
   }
 
   onVisibilityChange = e => {
@@ -405,13 +406,13 @@ class WDVPBarsChart extends PureComponent {
                         Math.abs(bounds.bottom) < threshold
       if (isInView != this.isInView) {
         this.isInView = isInView
-        if (isInView) this.animate()
+        if (isInView && TWEEN.getAll().length) this.animate()
       }
   }
   debouncedOnVisibilityChange = _.debounce(this.onVisibilityChange, 60);
 
   drawAxes = () => {
-    const material = new THREE.LineBasicMaterial({
+    const material = new THREE.MeshBasicMaterial ({
       color: 0x666666
     });
     
@@ -440,8 +441,10 @@ class WDVPBarsChart extends PureComponent {
     TWEEN.update(time);
     this.renderScene();
     // this.updateAxisLabelsPosition();
+    // this.stats.update();
     
-    requestAnimationFrame( this.animate );
+    const tweens = TWEEN.getAll()
+    if (tweens.length) requestAnimationFrame( this.animate );
 
     // this.updateIntersects()
   }
@@ -475,6 +478,8 @@ class WDVPBarsChart extends PureComponent {
 
       this.hoveredCountry = intersectName
       this.props.onChangeHoveredCountry(closestIntersect.object.userData)
+      
+      this.renderScene()
     }
   }
 
@@ -521,8 +526,9 @@ class WDVPBarsChart extends PureComponent {
       country,
       metric,
     }
-
+    
     this.scene.add(object)
+
     return object
   }
 
@@ -564,6 +570,7 @@ class WDVPBarsChart extends PureComponent {
     })
 
     // this.renderScene()
+    this.animate()
   }
 
   drawBar = ({ country, metric, bar }) => {
