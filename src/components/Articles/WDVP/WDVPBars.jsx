@@ -326,6 +326,8 @@ class WDVPBarsChart extends PureComponent {
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
+    this.renderer.setPixelRatio(window.devicePixelRatio)
+    this.renderScene()
   }
 
   initScene = () => {
@@ -628,13 +630,12 @@ class WDVPBarsChart extends PureComponent {
         .to({ zoom: newZoom }, 300)
         .easing(TWEEN.Easing.Quadratic.Out)
         .onUpdate(() => {
-          console.log(zoomTweenAmount)
           this.camera.zoom = zoomTweenAmount.zoom
           this.camera.updateProjectionMatrix()
+          this.renderScene()
         })
         .start()
 
-    this.renderScene()
   }
 
   render () {
