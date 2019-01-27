@@ -632,10 +632,10 @@ class WDVPBarsChart extends PureComponent {
         .onUpdate(() => {
           this.camera.zoom = zoomTweenAmount.zoom
           this.camera.updateProjectionMatrix()
-          this.animate()
         })
         .start()
 
+    this.animate()
   }
 
   render () {
