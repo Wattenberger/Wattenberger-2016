@@ -33,9 +33,6 @@ class WDVP extends Component {
     return (
       <div className={this.getClassName()}>
           <div className="WDVP__header">
-            {/* <div className="WDVP__header__globe">
-              <WDVPGlobe />
-            </div> */}
             <h1 className="WDVP__title">
               What makes a <b>good</b> country?
             </h1>
@@ -66,7 +63,7 @@ class WDVP extends Component {
 
             <div className="WDVP__section">
 
-              <div className="WDVP__section-header">
+              <div className="WDVP__section-header" id="country-similarity-map">
                 <div className="WDVP__section-header__index">
                   I.
                 </div>
@@ -116,7 +113,7 @@ class WDVP extends Component {
             </div>
 
             <div className="WDVP__section">
-              <div className="WDVP__section-header">
+              <div className="WDVP__section-header" id="finding-metrics">
                 <div className="WDVP__section-header__index">
                   II.
                 </div>
@@ -159,7 +156,7 @@ class WDVP extends Component {
               </p>
             </div>
 
-            <div className="WDVP__section">
+            <div className="WDVP__section" id="axis-of-goodness">
               <div className="WDVP__section-header">
                 <div className="WDVP__section-header__index">
                   III.
