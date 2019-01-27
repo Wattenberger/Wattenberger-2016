@@ -463,6 +463,7 @@ class WDVPBarsChart extends PureComponent {
         this.props.onChangeHoveredCountry(null)
         this.hoveredCountry = null
         this.hoveredCountryObject = null
+        if (this.onFinishedHoveringCountry) this.onFinishedHoveringCountry()
         return
       }
 
@@ -474,8 +475,9 @@ class WDVPBarsChart extends PureComponent {
         const color = !_.isFinite(barData.country && barData.country[barData.metric])  ? "#ccc" :
           colorMode == "continents" ? continentColors[barData.country.Continent] :
                                     blackAndWhiteColorScale(isShowingPercentile ? (barData.country[`${barData.metric}__percentile`] - 1) / 100 : scales[barData.metric](barData.country[barData.metric]))
-
         closestIntersect.object.material.color.setStyle(color)
+        this.onFinishedHoveringCountry = null
+        this.renderScene()
       }
 
       this.hoveredCountry = intersectName
