@@ -471,7 +471,7 @@ class WDVPBarsChart extends PureComponent {
       if (this.onFinishedHoveringCountry) this.onFinishedHoveringCountry()
       this.onFinishedHoveringCountry = () => {
         const barData = closestIntersect.object.userData
-        const color = !_.isFinite(barData.country[barData.metric])  ? "#ccc" :
+        const color = !_.isFinite(barData.country && barData.country[barData.metric])  ? "#ccc" :
           colorMode == "continents" ? continentColors[barData.country.Continent] :
                                     blackAndWhiteColorScale(isShowingPercentile ? (barData.country[`${barData.metric}__percentile`] - 1) / 100 : scales[barData.metric](barData.country[barData.metric]))
 
