@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "NODE_ENV=development node index",
     "dev-windows": "set NODE_ENV=development&set CONTEXT=windows&node index",
-    "build": "webpack --progress -p --config ./webpack/webpack.config.js",
+    "build": "webpack --progress --config ./webpack/webpack.config.js",
     "start": "NODE_ENV=production node index",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "webpack --progress -p --config ./webpack/webpack.config.js"
+    "postinstall": "webpack --progress --config ./webpack/webpack.config.js"
   },
   "engines": {
     "node": "7.5.0"
@@ -50,6 +50,7 @@
     "morgan": "^1.9.1",
     "node-sass": "^4.9.4",
     "numeral": "^2.0.6",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^2.0.8",
     "prop-types": "^15.6.0",
     "rc-slider": "^8.6.3",
