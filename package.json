@@ -85,6 +85,7 @@
     "hard-source-webpack-plugin": "^0.13.1",
     "react-hot-loader": "^3.1.1",
     "stats-js": "^1.0.0",
+    "terser-webpack-plugin": "^1.2.2",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^2.9.2",
     "webpack-monitor": "^1.0.14"

@@ -6,6 +6,7 @@ var CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin')
 
 const srcPath    = path.resolve(__dirname, "../src")
 const assetsPath = path.resolve(__dirname, "../dist")
@@ -70,6 +71,13 @@ module.exports = {
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
 
+    new TerserPlugin({
+      parallel: true,
+      terserOptions: {
+        ecma: 6,
+      },
+    }),
+    
     new webpack.DefinePlugin({
       "__DEV__" : JSON.stringify(process.env.NODE_ENV === "development"),
       "__PROD__": JSON.stringify(process.env.NODE_ENV === "production")
