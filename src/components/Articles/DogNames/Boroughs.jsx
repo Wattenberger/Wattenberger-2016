@@ -27,7 +27,9 @@ class Boroughs extends Component {
 	updateColorScale = () => {
 		const { data, percents, aspect } = this.props
 		const colorScale = data ?
-			d3.scaleLinear().domain([0, d3.max(_.map(data, "percent"))]).range([aspect == "borough" ? "#e0e9ee" : "#fff", "#6E9987"]) :
+			d3.scaleLinear()
+				.domain([0, d3.max(_.map(data, "percent"))])
+				.range([aspect == "borough" ? "#e0e9ee" : "#fff", "#a2beb2"]) :
 			_.noop
 		this.setState({ colorScale })
 	}

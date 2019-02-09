@@ -12,7 +12,7 @@ $c-accent-4: #686B89;
     background: $c-light;
     color: $c-dark;
     font-size: 1.1em;
-    line-height: 1.6em;
+    line-height: 1.5em;
     
     &__color-1 { color: $c-accent-1; }
     &__color-2 { color: $c-accent-2; }
@@ -32,12 +32,11 @@ $c-accent-4: #686B89;
             // color: $c-accent-2;
             font-size: 4.6em;
             margin: 2em 1em 0;
-            // font-weight: 100;
-            font-weight: 500;
+            font-weight: 900;
             z-index: 10;
 
             b {
-                font-weight: 500;
+                font-weight: 900;
                 // text-decoration: underline;
                 // font-weight: 900;
                 // color: $c-accent-3;
@@ -71,7 +70,7 @@ $c-accent-4: #686B89;
     }
     h2,
     h3 {
-        font-weight: 500;
+        // font-weight: 500;
     }
 
     &Metric {
@@ -166,7 +165,7 @@ $c-accent-4: #686B89;
 
     i {
         font-style: normal;
-        font-weight: 900;
+        font-weight: 600;
         color: $c-accent-3;
     }
 
@@ -191,7 +190,7 @@ $c-accent-4: #686B89;
             padding: 1.4em 2em;
             margin: 0.5rem;
             font-size: 0.8em;
-            line-height: 1.3em;
+            line-height: 1.6em;
 
             &--dark {
                 background: #282a38;
@@ -222,8 +221,8 @@ $c-accent-4: #686B89;
             
             &__header {
                 font-size: 1.2em;
-                // line-height: 1.2em;
-                font-weight: 900;
+                line-height: 1.3em;
+                font-weight: 800;
                 margin-bottom: 1em;
             }
 
@@ -243,11 +242,12 @@ $c-accent-4: #686B89;
 
         &-header {
             position: relative;
-            font-size: 2em;
+            font-size: 3em;
             line-height: 1.2em;
             margin-bottom: 1em;
-            padding-left: 1em;
-            font-family: $font-family-serif;
+            padding-left: 2rem;
+            font-weight: 800;
+            // font-family: $font-family-serif;
 
             &__index {
                 display: none;
@@ -280,13 +280,19 @@ $c-accent-4: #686B89;
         &__section {
             margin-top: 1em;
         }
+
+        h6 {
+            font-weight: 500;
+            // opacity: 0.5;
+            font-size: 0.7em;
+        }
         
         p {
             max-width: none;
             margin: 0.1em 0 0.2em;
             padding: 0 0 0 2em;
-            font-size: 0.7em;
-            line-height: 1.3em;
+            font-size: 0.8em;
+            line-height: 1.2em;
         }
     }
 }

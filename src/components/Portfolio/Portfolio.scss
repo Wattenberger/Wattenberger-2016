@@ -25,6 +25,14 @@ $aspect-ratio: 58vw;
 .Portfolio__item__description {
   position: relative;
   margin-bottom: 1.6em;
+
+  ol {
+    padding-left: 3em;
+
+    li {
+      margin-bottom: 0.6em;
+    }
+  }
 }
 
 .Portfolio__item__link {
@@ -33,7 +41,7 @@ $aspect-ratio: 58vw;
 }
 
 .Portfolio__item {
-  margin: 30px 0 100px 0;
+  margin: 2em 0 10em 0;
 }
 
 .Portfolio__item__images {
@@ -42,6 +50,15 @@ $aspect-ratio: 58vw;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 (-$horizontal-padding);
+
+  .WDVPMap__header:before {
+    background: linear-gradient(to top,
+      rgba($bgc, 0),
+      rgba($bgc, 0.8) 32%,
+      rgba($bgc, 0.94) 47%,
+      rgba($bgc, 1)    90%,
+    );
+  }
 }
 
 .Portfolio__item__image {

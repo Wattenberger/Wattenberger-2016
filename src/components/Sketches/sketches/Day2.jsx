@@ -39,6 +39,7 @@ class Day2 extends Component {
       width: window.innerWidth,
       chart: {},
       dots: dots,
+      iterator: 0,
     }
   }
 
@@ -107,11 +108,11 @@ class Day2 extends Component {
   }
 
   moveDots = () => {
-    let {dots, height, width} = this.state
+    let {dots, height, width, iterator} = this.state
     const pctChangeChangeDir = 0.01
 
     dots = dots.map(this.movementFromDir)
-    this.setState({dots})
+    this.setState({dots, iterator: iterator + 1})
   }
   //
   // getWidth() {
@@ -119,7 +120,7 @@ class Day2 extends Component {
   // }
 
   render() {
-    let {chart, dots, height, width} = this.state
+    let {chart, dots, height, width, iterator} = this.state
 
     return (
       <div className={this.getClassName()}>
@@ -139,6 +140,7 @@ class Day2 extends Component {
             yAccessor={d => d.y}
             radius={d => d.r}
             transition={INTERVAL_LENGTH}
+            iterator={iterator}
             // easing={d3.linear}
           />
         </Chart>

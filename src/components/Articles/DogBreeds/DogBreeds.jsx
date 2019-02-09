@@ -118,7 +118,7 @@ class DogBreeds extends Component {
     const { selectedBreeds, selectedGroups } = this.state
 
     const height = 500
-    const width = window.innerWidth * 0.9
+    const width = window.innerWidth * 0.95
     const xScale = createScale({
       // type: "time",
       width,
@@ -216,6 +216,7 @@ class DogBreeds extends Component {
         <div className="DogBreeds__contents">
           <div className="DogBreeds__controls">
             <Select
+              placeholder="Explore specific breeds"
               isMulti
               name="breeds"
               options={breedOptions}
@@ -224,6 +225,7 @@ class DogBreeds extends Component {
               classNamePrefix="DogBreeds__select"
               styles={selectStyles}
               onChange={this.onBreedsSelect}
+
             />
 
             <RadioGroup

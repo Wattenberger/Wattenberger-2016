@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import classNames from "classnames"
+import Link from "components/_ui/Link"
 import {projects} from "./projects"
 
 require('./Portfolio.scss')
@@ -25,24 +26,27 @@ class Portfolio extends Component {
           {item.tools.map(this.renderTool)}
         </div>
         {item.description}
-        {!!item.link && <a href={item.link} className="Portfolio__item__link btn">Check it out ></a>}
+        {!!item.link && (_.startsWith("/")
+          ? <a href={item.link} className="Portfolio__item__link btn">Check it out ⇛</a>
+          : <Link to={item.link} className="Portfolio__item__link btn">Check it out ⇛</Link>
+        )}
       </div>
       <div className="Portfolio__item__images">
-        {item.images    && item.images.map(::this.renderImage)}
-        {item.component && this.renderComponent(item.component)}
+        {item.images    && item.images.map((image, idx) => this.renderImage(image, idx, item.imageContentStyle))}
+        {item.component && this.renderComponent(item.component, item.imageStyle)}
       </div>
     </div>
   }
 
-  renderImage(image, idx) {
+  renderImage = (image, idx, imageContentStyle={}) => {
     return <div className="Portfolio__item__image" key={idx}>
-      <div className="Portfolio__item__image__content" style={{backgroundImage: `url(${image})`}} />
+      <div className="Portfolio__item__image__content" style={{backgroundImage: `url(${image})`, ...imageContentStyle}} />
     </div>
   }
 
-  renderComponent(component) {
+  renderComponent(component, style={}) {
     let Component = component
-    return <div className="Portfolio__item__image">
+    return <div className="Portfolio__item__image" style={style}>
       <Component />
     </div>
   }

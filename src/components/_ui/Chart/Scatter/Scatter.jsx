@@ -46,7 +46,6 @@ class Scatter extends Component {
     let {dots} = this.state
     
     let init = !dots
-    console.log(data)
     dots = d3.select(this.elem.current).selectAll(".dot")
       .data((data || []), dataKey)
     dots.enter().append("circle")

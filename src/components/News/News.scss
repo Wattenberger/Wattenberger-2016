@@ -1,7 +1,7 @@
 @import "~styles/variables";
 
 .News {
-  padding: 3em 2em;
+  padding: 4em 2em;
 
   &__controls {
     display: flex;
@@ -313,7 +313,7 @@
   }
 
   @media (max-width: 500px) {
-    padding: 1em 0.4em;
+    padding: 80px 0.4em;
 
     &__controls {
       flex-direction: column;

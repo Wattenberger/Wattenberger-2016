@@ -5,6 +5,7 @@ import foos1 from "./FoosballTable/images/foos1.jpg"
 import foos2 from "./FoosballTable/images/foos2.png"
 import foos3 from "./FoosballTable/images/foos3.jpg"
 import Day8 from "components/Sketches/sketches/Day8"
+import WDVPMap from "components/Articles/WDVP/WDVPMap"
 import foos4 from "./FoosballTable/images/foos4.jpg"
 import seaholm from "./Seaholm/images/seaholm.png"
 import seaholm2 from "./Seaholm/images/seaholm2.png"
@@ -18,11 +19,55 @@ import lucha2 from "./lucha/images/lucha2.jpg"
 import lucha3 from "./lucha/images/lucha3.jpg"
 import lucha4 from "./lucha/images/lucha4.jpg"
 import ca from "./ca/images/ca.png"
+import newsImage from "./Interactives/News.png"
+import dogs from "./Interactives/dogs.png"
+import dogBreeds from "./Interactives/dog-breeds.png"
 
 export const projects = [
     {
       category: "Development & Data Visualization",
       projects: [
+      {
+        title: "What makes a Good Country?",
+        description: <div>
+          <p>
+            A brief dive into combining many metrics to decide what makes a country <b>Good</b>. There are three distinct visualizations here, exploring:
+          </p>
+          <ol>
+            <li>What countries are similar (below)</li>
+            <li>How can we group countries based on 27 metrics</li>
+            <li>How countries rank along your own custom Axis of Goodness</li>
+          </ol>
+        </div>,
+        tools: ["SVG", "D3.js", "Three.js"],
+        imageStyle: {height: "auto"},
+        component: WDVPMap,
+        link: "/wdvp",
+      },
+      {
+        title: "Dog Names in NYC",
+        description: <div>
+          <p>
+            I found this great dataset of registered dog names in New York City and had to dig in. Did you know that Yorkies are the most common NYC dog? Or that a dog named Molly is most likely a Lab from Staten Island? Explore for more important dog facts!
+          </p>
+        </div>,
+        tools: ["d3.js", "SVG"],
+        images: [dogs],
+        imageContentStyle: {backgroundPosition: "top"},
+        link: "/dogs",
+      },
+      {
+        title: "Dog Breeds",
+        description: <div>
+          <p>
+            I found another great doggy dataset of breed popularity over time from the American Kennel Club. This chart was an experiment to test out a new kind of tooltip that scrolls a list - check it out and tell me what you think!
+          </p>
+        </div>,
+        tools: ["d3.js", "SVG"],
+        images: [dogBreeds],
+        imageContentStyle: {backgroundPosition: "bottom"},
+        link: "/dog-breeds",
+      },
       {
         title: "Sketches",
         description: <div>
@@ -35,11 +80,10 @@ export const projects = [
       {
         title: "Weather Circle",
         description: <div>
-          <p>After Umbel moved into our new office in the old Power Plant, we wanted to make a great first impression with our entrance screens. I wanted to build an interface that keeps visitors and employees informed about the weather, especially useful for planning the best bike ride home.</p>
+          <p>After Umbel moved into its new office in the old Power Plant, we wanted to make a great first impression with our entrance screens. I wanted to build an interface that keeps visitors and employees informed about the weather, especially useful for planning the best bike ride home.</p>
           <p>I built a standalone web app that pulls current weather data from the <a href="https://developer.forecast.io/">Dark Sky Forecast API</a> and displays today's temperature, precipitation, and sunset forecast. A clock-like layout keeps the interface familiar and easy to understand.</p>
-          <p>Future plans are to use Google Calendar data to display today's company events.</p>
         </div>,
-        tools: ["Angular", "D3.js", "Dark Sky Forecast API","SCSS"],
+        tools: ["Angular", "D3.js", "Dark Sky Forecast API"],
         images: [wc1,wc2]
       },
       // {
@@ -77,6 +121,32 @@ export const projects = [
   {
     category: "Design & Development",
     projects: [
+      {
+        title: "Unbiased News Aggregator",
+        description: <div>
+          <p>
+            There are many issues with how we receive our news (in the United States). I created a news aggregator (largely for personal use) that attempts to solve three core issues.
+          </p>
+          <ol>
+            <li>
+              Stories are often biased towards the viewpoint of a political parties.
+              <br /><b>Solution:</b> I aggregate stories from the most un-biased, fact-based publishers (based on Ad Fontes Media's <a href="https://www.adfontesmedia.com/" target="_blank">Media Bias Chart</a>).
+            </li>
+            <li>
+              One story has the tendency to flood public attention.
+              <br /><b>Solution:</b> I added a filter to hide stories with specific words in their title or description.
+            </li>
+            <li>
+              News stories are overwhelmingly sad and upsetting, which can be compelling to avoid all news.
+              <br /><b>Solution:</b> I added a sentiment filter so a reader can only see stories within a specific range -- only happy stories, or only sad stories (but why).
+            </li>
+          </ol>
+        </div>,
+        tools: ["Sentiment", "React.js", "RSS parsing"],
+        images: [newsImage],
+        imageContentStyle: {backgroundPosition: "top"},
+        link: "/news",
+      },
       // {
       //   title: "Umbel’s marketing website",
       //   description: <div>
@@ -107,16 +177,16 @@ export const projects = [
         tools: ["C++", "Xcode", "Open Frameworks", "React.js", "Amazon Web Services", "SCSS"],
         images: [lucha4, lucha1, lucha2]
       },
-      {
-        title: "Umbel Seaholm Officewarming Photobooth",
-        description: <div>
-          <p>Last year, Umbel hosted a small old-timey-themed party to celebrate moving into their new office. I threw together a C++ app that takes in a video feed and renders it in black & white, and displays hats, glasses, bow ties, or mustaches on any people in the frame. The facial detection algorithm was less complicated than the one used for the <b>SXSW Party Photobooth</b>, and therefore a little more performant.</p>
-          <p>Photos were sent to an Amazon Web Services bucket and displayed in real-time on a web app next to the photobooth.</p>
-        </div>,
-        link: "https://umbel-seaholm.firebaseapp.com/",
-        tools: ["C++", "Xcode", "React.js", "Amazon Web Services", "SCSS"],
-        images: [seaholm, seaholm2]
-      },
+      // {
+      //   title: "Umbel Seaholm Officewarming Photobooth",
+      //   description: <div>
+      //     <p>In 2015, Umbel hosted a small old-timey-themed party to celebrate moving into their new office. I threw together a C++ app that takes in a video feed and renders it in black & white, and displays hats, glasses, bow ties, or mustaches on any people in the frame. The facial detection algorithm was less complicated than the one used for the <b>SXSW Party Photobooth</b>, and therefore a little more performant.</p>
+      //     <p>Photos were sent to an Amazon Web Services bucket and displayed in real-time on a web app next to the photobooth.</p>
+      //   </div>,
+      //   link: "https://umbel-seaholm.firebaseapp.com/",
+      //   tools: ["C++", "Xcode", "React.js", "Amazon Web Services", "SCSS"],
+      //   images: [seaholm, seaholm2]
+      // },
     ]
   },
   {
@@ -125,7 +195,7 @@ export const projects = [
       {
         title: "Foosball Table",
         description: <div>
-          <p>From time to time, I find myself being more ambitious than I have time for. Last Fall, I started with the idea of scanning coworkers and replacing the players on a foosball field with their 3d-printed heads, and ended up building a whole table from scratch. I used <b>Adobe Illustrator</b> to create a design for the table, and reproduced it in <b>Cinema 4D</b> to get an idea of how it would look when finished. A coworker, who happens to be an amazing woodworker, turned the bed design into a real, wooden table. Along with another coworker, I cut and etched the field out of a sheet of brand-colored acrylic, using a laser cutter.</p>
+          <p>From time to time, I find myself being more ambitious than I have time for. In Fall 2015, I started with the idea of scanning coworkers and replacing the players on a foosball field with their 3d-printed heads, and ended up building a whole table from scratch. I used <b>Adobe Illustrator</b> to create a design for the table, and reproduced it in <b>Cinema 4D</b> to get an idea of how it would look when finished. A coworker, who happens to be an amazing woodworker, turned the bed design into a real, wooden table. Along with another coworker, I cut and etched the field out of a sheet of brand-colored acrylic, using a laser cutter.</p>
           <p>All 26 foosball players’ bodies have been 3d printed, with a threaded hole in the top for the heads to screw into. One by one, I am molding 3D scans of coworkers and printing them with screws on the bottom. Sometime in the next month, the players will be installed, along with LED lights around the field that change color when the ball is hit.</p>
         </div>,
         category: "Other",

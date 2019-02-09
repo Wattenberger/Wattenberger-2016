@@ -28,7 +28,7 @@ function Drip(options) {
     lifeSpan: 300,
     position: new Vector2D(0,0),
     velocity: new Vector2D(0,0),
-    color: '#333',
+    color: '#fafafa',
     size: 1,
     onDeath: function(event){},
   };

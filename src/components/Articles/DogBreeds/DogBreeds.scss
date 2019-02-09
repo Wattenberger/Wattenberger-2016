@@ -4,7 +4,7 @@
 $main-color: #30336b;
 
 .DogBreeds {
-    padding: 3em 2em;
+    padding: 4em 2em;
     font-size: 21px;
     background: $bgc;
 
@@ -16,7 +16,10 @@ $main-color: #30336b;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        margin-top: 0;
+        font-size: 3em;
         margin-bottom: 0;
+        line-height: 1.5em;
 
         &-container {
             display: flex;
@@ -40,14 +43,17 @@ $main-color: #30336b;
     &__controls {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-wrap: wrap;
+        // flex-direction: column;
     }
 
     &__select {
-        width: 100%;
+        // width: 100%;
         flex: 1;
         font-size: 0.7em;
         margin-bottom: 1em;
+        margin-right: 1em;
+        min-width: 30em;
     }
     &__toggle {
         margin-bottom: 1em;
@@ -138,8 +144,8 @@ $main-color: #30336b;
                 flex: 0 0 1.5em;
                 padding-right: 0.3em;
                 text-align: right;
-                font-weight: 100;
-                opacity: 0.5;
+                font-weight: 300;
+                opacity: 0.7;
             }
             &__label {
                 flex: 1;

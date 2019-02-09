@@ -20,10 +20,12 @@ $main-color: #30336b;
         position: relative;
         color: $tc;
         // color: #474787;
+        font-size: 3em;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         margin-bottom: 0;
+        padding: 0.2em 0;
 
         &-container {
             display: flex;
@@ -135,7 +137,8 @@ $main-color: #30336b;
         }
 
         &__label {
-            font-weight: 100;
+            // font-weight: 100;
+            font-size: 1em;
         }
 
         &__bar {

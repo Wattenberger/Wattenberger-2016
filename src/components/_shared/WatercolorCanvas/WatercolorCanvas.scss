@@ -18,14 +18,14 @@
       position: absolute;
       top: 7vh;
       right: 7vw;
-      width: 300px;
+      width: 5em;
       max-width: 30vw;
 
       &__block {
           display: flex;
-          height: 14px;
+          height: 1.6em;
           width: 100%;
-          margin-top: 10px;
+          margin-top: 0.1em;
           border: 1px solid transparent;
           cursor: pointer;
           transition: transform 0.1s ease-out;
@@ -33,11 +33,12 @@
 
           &--selected {
               border-color: $accent-1;
-              transform: scale3d(1.04, 1, 1);
+              border-color: $accent-3;
+              transform: scaleX(1.1);
           }
 
           &:hover {
-              transform: scale3d(1.03, 1, 1);
+              transform: scaleX(1.1);
           }
 
           &__color {

@@ -172,7 +172,7 @@ class WDVP extends Component {
               </p>
                 
               <p>
-                <span style={{fontSize: "0.8em", lineHeight: "1.1em", opacity: 0.6}}>
+                <span style={{fontSize: "0.8em", lineHeight: "1em", opacity: 0.6}}>
                   Note: once you have picked your favorite metrics to combine, the scatter plot will update to show how each country performs under your conditions. We then find the “axis of good” in this plot by finding the line that explains the maximum amount of variability across countries. The black line shows the axis of good given the two sets of metrics you selected.
                 </span>
               </p>

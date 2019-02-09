@@ -13,31 +13,42 @@ body {
   font-size: 18px;
   line-height: 1.46em;
   font-family: $font-family-sans-serif;
+
+  ::selection {
+    background: $accent-4;
+    color: white;
+  }
 }
 
 h1 {
-  font-size: $font-size-xlarge;
-  line-height: 1.03em;
-  font-family: $font-family-serif;
+  font-size: 8vw;
+  line-height: 0.9em;
+  font-weight: 900;
+  // font-family: $font-family-serif;
 }
 
 h2 {
-  font-family: $font-family-serif;
-  font-size: $font-size-large;
-  line-height: 1.3em;
+  // font-family: $font-family-serif;
+  font-size: 5em;
+  line-height: 0.9em;
   margin-bottom: 0.6em;
+  font-weight: 800;
+
+  @media (max-width: 900px) {
+    font-size: 3em;
+  }
 }
 
 h3 {
-  font-family: $font-family-serif;
-  font-size: $font-size-medium;
+  // font-family: $font-family-serif;
+  font-size: 3em;
   line-height: 1.1em;
   margin-bottom: 0.6em;
+  font-weight: 800;
 }
 
 h6 {
-  font-family: $font-family-sans-serif;
-  font-size: $font-size-xsmall;
+  font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.1em;
@@ -69,6 +80,8 @@ p {
   color: $accent-2;
   padding: 0.9em 1.4em;
   border: 1px solid;
+  letter-spacing: 0.06em;
+  font-weight: 500;
   transition: all 0.2s ease-out;
   &:hover {
     -webkit-text-fill-color: #fff;
