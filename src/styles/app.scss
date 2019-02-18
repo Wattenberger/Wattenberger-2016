@@ -13,6 +13,7 @@ body {
   font-size: 18px;
   line-height: 1.46em;
   font-family: $font-family-sans-serif;
+  letter-spacing: -0.014em;
 
   ::selection {
     background: $accent-4;
@@ -33,6 +34,7 @@ h2 {
   line-height: 0.9em;
   margin-bottom: 0.6em;
   font-weight: 800;
+  letter-spacing: -0.022em;
 
   @media (max-width: 900px) {
     font-size: 3em;
@@ -45,6 +47,7 @@ h3 {
   line-height: 1.1em;
   margin-bottom: 0.6em;
   font-weight: 800;
+  letter-spacing: -0.022em;
 }
 
 h6 {
