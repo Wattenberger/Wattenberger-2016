@@ -66,7 +66,7 @@ class Logo extends PureComponent {
   ]
 
     return (
-      <div style={style} >
+      <div style={{...style, display: "flex"}} >
         <svg height={height} width={width}>
           {trianglePoints.map((points, i) => (
             <path

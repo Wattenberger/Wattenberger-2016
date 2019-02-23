@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import {connect} from "react-redux"
 import classNames from "classnames"
 import Footer from "components/Footer/Footer"
+import Blog from "components/Blog/Blog"
 import Loader from "components/_ui/Loader"
 import Link from "components/_ui/Link"
 import Header from "components/Header/Header"
@@ -16,6 +17,8 @@ const DogBreeds = React.lazy(() => import("components/Articles/DogBreeds/DogBree
 const WDVP = React.lazy(() => import("components/Articles/WDVP/WDVP"));
 const WDVPGrid = React.lazy(() => import("components/Articles/WDVP/WDVPGrid"));
 const RocDevSurvey = React.lazy(() => import("components/Articles/RocDevSurvey/RocDevSurvey"));
+const StephenKing = React.lazy(() => import("components/Articles/StephenKing/StephenKing"));
+const Fishing = React.lazy(() => import("components/Articles/Fishing/Fishing"));
 
 // import RochesterRealEstate from "components/Articles/RochesterRealEstate/RochesterRealEstate"
 // import Headlines from "components/Articles/Headlines/Headlines"
@@ -58,6 +61,9 @@ class App extends Component {
             <Route path="/wdvpgrid" component={WDVPGrid} />
             <Route path="/wdvp" component={WDVP} />
             <Route path="/rocdev" component={RocDevSurvey} />
+            <Route path="/king" component={StephenKing} />
+            <Route path="/fishing" component={Fishing} />
+            <Route path="/blog" component={Blog} />
             {/* <Route path="/docstats" component={DoctorateStats} /> */}
             <Route>
               <div style={{

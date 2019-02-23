@@ -48,8 +48,11 @@ class Scatter extends Component {
     let init = !dots
     dots = d3.select(this.elem.current).selectAll(".dot")
       .data((data || []), dataKey)
-    dots.enter().append("circle")
+    
+    const newDots = dots.enter().append("circle")
       .attr("class", "dot")
+
+    dots = newDots.merge(dots)
 
     if (init) {
       dots.attr("r", 0)
@@ -61,8 +64,10 @@ class Scatter extends Component {
         .attr("r", radius)
         .attr("cx", xAccessor)
         .attr("cy", yAccessor)
-
+        
     dots.exit().remove()
+    
+    dots.on("mouseenter", d => console.log(d))
 
     this.setState({dots})
     onUpdate(dots)

@@ -1,0 +1,98 @@
+@import "~styles/variables";
+
+$main-color: #30336b;
+
+.Fishing {
+    padding: 3em;
+    font-size: 21px;
+
+    @media (max-width: 700px) {
+        padding: 2em 1em;
+    }
+
+    @media (min-width: 1300px) {
+        font-size: 25px;
+    }
+
+    &__title {
+        // display: inline-block;
+        position: relative;
+        color: $tc;
+        // color: #474787;
+        font-size: 3em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 0;
+        padding: 0.2em 0;
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+
+        &__button {
+            display: block;
+            font-size: 0.5em;
+        }
+    }
+
+    &__contents {
+        // display: flex;
+        // margin: 0 -1em;
+    }
+
+    &Circle {
+        overflow: hidden;
+        
+        path {
+            // fill: cornflowerblue;
+            fill-opacity: 0.4;
+            transition: all 0.5s ease-out;
+
+            &:hover {
+                fill-opacity: 0.9;
+            }
+            // stroke: cornflowerblue;
+            // stroke-width: 2px;
+        }
+
+        &__tick-rect {
+            fill: $bgc;
+        }
+
+        &__tick-text {
+            font-size: 0.6em;
+            text-anchor: middle;
+            fill: #99989c;
+            // stroke: white;
+            // stroke-width: 10px;
+        }
+
+        &__tick {
+            fill: none;
+            stroke: #dddbe2;
+            stroke-width: 1px;
+        }
+
+        &__month {
+            font-size: 0.6em;
+            opacity: 0.5;
+        }
+    }
+
+    &__circles {
+        display: flex;
+        flex-wrap: wrap;
+        
+        &__item {
+            padding: 2em;
+            flex: 1 1 500px;
+            margin-top: 4em;
+            text-align: center;
+        }
+    }
+
+}
