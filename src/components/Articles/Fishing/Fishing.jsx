@@ -25,18 +25,26 @@ const formatSalary = d => numeral(d).format("$0,0")
 const formatNumber = d => numeral(d).format("0,0a")
 const formatNumberWithDecimal = d => numeral(d).format("0,0.0a")
 const ordinalColors = ["#c7ecee", "#778beb", "#f7d794", "#63cdda", "#cf6a87", "#e77f67", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"];
+const countryColors = _.fromPairs(_.map(_.keys(countryCodes), (country, i) => [
+  country,
+  ordinalColors[i % (ordinalColors.length - 1)],
+]))
 const colorScale = d3.scaleLinear().range(["#c7ecee", "#686de0"]).domain([0, 1])
 
 const metricOptions = [{
   value: "boats",
-  label: "Daily number of boats fishing",
+  label: "Daily number of boats fishing in foreign waters",
 },{
   value: "hours",
-  label: "Daily hours of fishing",
+  label: "Daily hours of fishing in foreign waters",
 }]
 const metricFieldMap = {
   boats: "hours_by_day",
   hours: "boats_by_day",
+}
+const metricTakenFieldMap = {
+  boats: "taken_hours",
+  hours: "taken_boats",
 }
 const metricLabels = _.fromPairs(_.map(metricOptions, metric => ([
   metric.value,
@@ -75,9 +83,13 @@ const Fishing = () => {
             <div className="Fishing__circles__item">
               <h6>{ countryCodes[d.name] || d.name }</h6>
               <div className="Fishing__circles__item__description">
-                { metricLabels[metric] } in 2016
+                { metricLabels[metric] } (2016)
               </div>
-              <FishingCircle data={d} metric={metricFieldMap[metric]} />
+              <FishingCircle
+                data={d}
+                metric={metricFieldMap[metric]}
+                takenMetric={metricTakenFieldMap[metric]}
+              />
             </div>
           ))}
         </div>
@@ -93,251 +105,178 @@ const Fishing = () => {
 export default Fishing
 
 
-
 const parseDate = d3.timeParse("%m/%d/%Y")
-const FishingTimeline = ({ data }) => {
+const parseMonth = d3.timeParse("%m")
+const formatMonth = d3.timeFormat("%b")
+const FishingCircle = ({ data, metric, takenMetric }) => {
   if (!data) return null
-  const countryData = _.map(data.boats_by_day, (values, toCountry) => ({
-    name: toCountry,
-    values: _.sortBy(_.map(values, (count, date) => ({
-        date: parseDate(date),
-        count,
-      })), "date"),
-  }))
-  const width = window.innerWidth * 0.9
-  const height = 500
-  const margin = {top: 20, right: 20, bottom: 50, left: 50}
 
-  const xAccessor = d => d.date
-  const yAccessor = d => d.count
-  const xScale = d3.scaleTime()
-    // .domain(d3.extent(countryData, xAccessor))
+  const width = 400
+  const height = 400
+  const margin = {top: 50, right: 50, bottom: 50, left: 50}
+  const boundedWidth = width - margin.left - margin.right
+  const boundedHeight = height - margin.top - margin.bottom
+  const radius = boundedWidth / 2
+  const gradientId = `gradient-${_.uniqueId()}`
+
+  const dateAccessor = d => d.date
+  const radiusAccessor = d => d.count
+  const colorScale = d3.interpolateLab("cornflowerblue", "tomato")
+  
+  const [countryData, setCountryData] = useState([])
+  const [takenData, setTakenData] = useState([])
+  // const [lineGenerator, setLineGenerator] = useState(_.noop)
+  // const [radiusScale, setRadiusScale] = useState(_.noop)
+  // const [dateScale, setDateScale] = useState(_.noop)
+
+  useEffect(() => {
+    const newCountryData = _.map(data[metric], (values, toCountry) => ({
+      name: toCountry,
+      values: _.sortBy(_.map(values, (count, date) => ({
+          date: parseDate(date),
+          count,
+        })), "date"),
+    }))
+    setCountryData(newCountryData)
+
+    const newTakenData = _.sortBy(_.map(data[takenMetric], (count, date) => ({
+      date: parseDate(date),
+      count,
+    })), "date")
+    setTakenData(newTakenData)
+
+  }, [metric])  
+
+  const dateScale = d3.scaleTime()
+    // .domain(d3.extent(_.flatMap(countryData, "values"), dateAccessor))
     .domain([parseDate("01/01/2015"), parseDate("01/01/2016")])
-    .range([0, width - margin.left - margin.right])
-  const yScale = d3.scaleLinear()
-    .domain(d3.extent(_.flatMap(countryData, d => d.values), yAccessor))
-    .range([height - margin.top - margin.bottom, 0])
-  const xAccessorScaled = d => xScale(xAccessor(d))
-  const yAccessorScaled = d => yScale(yAccessor(d))
+    .range([0, Math.PI * 2])
+  
+  const radiusScale = d3.scaleLinear()
+    .domain(d3.extent(_.flatMap(countryData, "values"), radiusAccessor))
+    .range([0, radius])
+    .nice()
+
+  const dateAccessorScaled = d => dateScale(dateAccessor(d)) || 0
+  const radiusAccessorScaled = d => radiusScale(radiusAccessor(d)) || 0
+  const takenRadiusAccessorScaled = d => radius * 0.99 - (radiusScale(radiusAccessor(d)) || 0)
+  
+  const lineGenerator = d3.lineRadial()
+    .angle(dateAccessorScaled)
+    .radius(radiusAccessorScaled)
+    .curve(d3.curveLinearClosed)
+  
+  const takenAreaGenerator = d3.lineRadial()
+    .angle(dateAccessorScaled)
+    .radius(takenRadiusAccessorScaled)
+    .curve(d3.curveLinearClosed)
 
   return (
-    <Chart
-      className={`FishingTimeline`}
-      width={width}
-      height={height}
-      margin={margin}>
-      {_.map(countryData.slice(0, 3), toCountry => (
-        <Line
-          key={toCountry.name}
-          data={toCountry.values}
-          xAccessor={xAccessorScaled}
-          yAccessor={yAccessorScaled}
-        />
-      ))}
+    <div className="FishingCircle__wrapper">
+      <div className="FishingCircle__annotation">
+        Fish taken from { countryCodes[data.name] }'s waters
+      </div>
 
-      <Axis
-        dimension="x"
-        height={height}
+      <svg
+        className={`FishingCircle`}
         width={width}
-        margin={margin}
-        scale={xScale}
-      />
-      <Axis
-        dimension="y"
-        height={height}
-        margin={margin}
-        scale={yScale}
-        format={formatNumber}
-      />
-    </Chart>
-  )
-}
-  
-  // const FishingCircle = ({ data, metric }) => {
-  //   if (!data) return null
-  //   const countryData = _.sortBy(_.map(data[metric], (count, date) => {
-  //       date: parseDate(date),
-  //       count,
-  //   }), "date")
-  //   const width = 500
-  //   const height = 500
-  //   const margin = {top: 20, right: 20, bottom: 20, left: 20}
-  //   const boundedWidth = width - margin.left - margin.right
-  //   const boundedHeight = height - margin.top - margin.bottom
-  //   const radius = boundedWidth / 2
-  //   const gradientId = `gradient-${_.uniqueId()}`
-  
-  //   const dateAccessor = d => d.date
-  //   const radiusAccessor = d => d.count
-  //   const dateScale = d3.scaleTime()
-  //     // .domain(d3.extent(countryData, dateAccessor))
-  //     .domain([parseDate("01/01/2015"), parseDate("01/01/2016")])
-  //     .range([0, Math.PI * 2])
-  //   const radiusScale = d3.scaleLinear()
-  //     .domain(d3.extent(countryData, radiusAccessor))
-  //     .range([0, radius])
-  //   const colorScale = d3.interpolateLab("tomato", "cornflowerblue")
-  //   const dateAccessorScaled = d => dateScale(dateAccessor(d)) || 0
-  //   const radiusAccessorScaled = d => radiusScale(radiusAccessor(d)) || 0
-    
-  //   const lineGenerator = d3.lineRadial()
-  //     .angle(dateAccessorScaled)
-  //     .radius(radiusAccessorScaled)
-  //     .curve(d3.curveLinearClosed)
-  
-  //   return (
-  //     <Chart
-  //       className={`FishingCircle`}
-  //       width={width}
-  //       height={height}
-  //       margin={margin}>
-  //       <defs>
-  //         <Gradient
-  //           id={gradientId}
-  //           width={width / 2}
-  //           height={height / 2}
-  //           x={-width / 4}
-  //           y={-height / 4}
-  //           stops={_.times(10, i => ({
-  //             offset: `${i * 100 / 9}%`,
-  //             color: colorScale(i / 9),
-  //           }))}
-  //         />
-  //       </defs>
-  //       <g transform={`translate(${boundedWidth / 2}, ${boundedHeight / 2})`}>
-  //         {_.times(4, i => (
-  //           <circle
-  //             key={i}
-  //             className="FishingCircle__tick"
-  //             r={radius * i / 3}
-  //           />
-  //         ))}
-  //         <path
-  //           d={lineGenerator(countryData)}
-  //           fill={`url(#${gradientId})`}
-  //         />
-  //       </g>
-  //     </Chart>
-  //   )
-  // }
-  
-  const parseMonth = d3.timeParse("%m")
-  const formatMonth = d3.timeFormat("%b")
-  const FishingCircle = ({ data, metric }) => {
-    if (!data) return null
-
-    const width = 400
-    const height = 400
-    const margin = {top: 50, right: 50, bottom: 50, left: 50}
-    const boundedWidth = width - margin.left - margin.right
-    const boundedHeight = height - margin.top - margin.bottom
-    const radius = boundedWidth / 2
-    const gradientId = `gradient-${_.uniqueId()}`
-
-    const dateAccessor = d => d.date
-    const radiusAccessor = d => d.count
-    const colorScale = d3.interpolateLab("cornflowerblue", "tomato")
-    
-    const [countryData, setCountryData] = useState([])
-    // const [lineGenerator, setLineGenerator] = useState(_.noop)
-    // const [radiusScale, setRadiusScale] = useState(_.noop)
-    // const [dateScale, setDateScale] = useState(_.noop)
-
-    useEffect(() => {
-      const newCountryData = _.map(data[metric], (values, toCountry) => ({
-        name: toCountry,
-        values: _.sortBy(_.map(values, (count, date) => ({
-            date: parseDate(date),
-            count,
-          })), "date"),
-      }))
-      setCountryData(newCountryData)
-
-    }, [metric])   
-    const dateScale = d3.scaleTime()
-      // .domain(d3.extent(_.flatMap(countryData, "values"), dateAccessor))
-      .domain([parseDate("01/01/2015"), parseDate("01/01/2016")])
-      .range([0, Math.PI * 2])
-    
-    const radiusScale = d3.scaleLinear()
-      .domain(d3.extent(_.flatMap(countryData, "values"), radiusAccessor))
-      .range([0, radius])
-
-    const dateAccessorScaled = d => dateScale(dateAccessor(d)) || 0
-    const radiusAccessorScaled = d => radiusScale(radiusAccessor(d)) || 0
-    
-    const lineGenerator = d3.lineRadial()
-      .angle(dateAccessorScaled)
-      .radius(radiusAccessorScaled)
-      .curve(d3.curveLinearClosed)
-  return (
-    <svg
-      className={`FishingCircle`}
-      width={width}
-      height={height}>
-      <defs>
-        <Gradient
-          id={gradientId}
-          x={-width / 7}
-          y={-height / 4}
-          width={-width / 7}
-          height={height / 2}
-          stops={_.times(10, i => ({
-            offset: `${i * 100 / 9}%`,
-            color: colorScale(i / 9),
-          }))}
-        />
-      </defs>
-      
-      <g transform={`translate(${width / 2}, ${height / 2})`}>
-        {_.times(3, i => (
-          <React.Fragment>
-            <circle
-              key={i}
-              className="FishingCircle__tick"
-              r={radius * (i + 1) / 3}
-            />
-            <rect
-              x={-25}
-              y={-radius * (i + 1) / 3 - 6}
-              width={50}
-              height={20}
-              className="FishingCircle__tick-rect"
-            />
-            <text transform={`translate(0, ${-radius * (i + 1) / 3 + 6})`} className="FishingCircle__tick-text">
-              { radiusScale && formatNumber(radiusScale.invert(radius * (i + 1) / 3)) }
-            </text>
-          </React.Fragment>
-        ))}
-        {_.map(countryData, toCountry => (
-          <path
-            key={toCountry.name}
-            d={lineGenerator(toCountry.values)}
-            fill={`url(#${gradientId})`}
+        height={height}>
+        {/* <defs>
+          <Gradient
+            id={gradientId}
+            x={-width / 7}
+            y={-height / 4}
+            width={-width / 7}
+            height={height / 2}
+            stops={_.times(10, i => ({
+              offset: `${i * 100 / 9}%`,
+              color: colorScale(i / 9),
+            }))}
+          />
+        </defs> */}
+        <g transform={`translate(${width / 2}, ${height / 2})`}>
+          <circle
+            r={radius}
+            className="FishingCircle__taken"
           >
             <title>
-              { countryCodes[toCountry.name] }
+              Taken from { countryCodes[data.name] }'s waters
             </title>
-          </path>
-        ))}
-        {_.times(12, i => {
-          const angle = i * ((Math.PI * 2) / 12) - Math.PI * 0.5
-          const x = Math.cos(angle) * (radius * 1.1)
-          const y = Math.sin(angle) * (radius * 1.1)
-          return (
-            <text
-              key={i}
-              className="FishingCircle__month"
-              transform={`translate(${x},${y})`}
-              style={{textAnchor: i == 0 || i == 6 ? "middle" :
-                                                i < 6 ? "start"  :
-                                                        "end"
-            }}>
-              { formatMonth(parseMonth(i)) }
-            </text>
-          )
-        })}
-      </g>
-    </svg>
+          </circle>
+          <path
+            d={takenAreaGenerator(takenData)}
+            className="FishingCircle__reset"
+          />
+        
+          {radiusScale && _.map(radiusScale.ticks(3), yValue => {
+            // const yValue = radiusScale && radiusScale.domain()[1] * (i + 1) / 3
+            if (!yValue) return null
+            const r = radiusScale(yValue)
+            return (
+              <circle key={yValue}
+                className="FishingCircle__tick"
+                r={r}
+              />
+            )
+          })}
+          
+          {/* <rect
+            x={-25}
+            y={-radius}
+            width={50}
+            height={radius * 0.9}
+            className="FishingCircle__tick-rect"
+          /> */}
+          {radiusScale && _.map(radiusScale.ticks(3), yValue => {
+            // const yValue = radiusScale && radiusScale.domain()[1] * (i + 1) / 3
+            if (!yValue) return null
+            const r = radiusScale(yValue)
+            return (
+              <text transform={`translate(0, ${-r + 6})`} className="FishingCircle__tick-text" key={yValue}>
+                { radiusScale && formatNumber(yValue) }
+              </text>
+            )
+          })}
+          {_.map(countryData, (toCountry, i) => (
+            <path
+              key={toCountry.name}
+              className="FishingCircle__country"
+              d={lineGenerator(toCountry.values)}
+              // fill={`url(#${gradientId})`}
+              fill={countryColors[toCountry.name]}
+            >
+              <title>
+                { countryCodes[toCountry.name] }
+              </title>
+            </path>
+          ))}
+          {_.times(12, i => {
+            const angle = i * ((Math.PI * 2) / 12) - Math.PI * 0.5
+            const x = Math.cos(angle) * (radius * 1.1)
+            const y = Math.sin(angle) * (radius * 1.1)
+            return (
+              <text
+                key={i}
+                className="FishingCircle__month"
+                transform={`translate(${x},${y})`}
+                style={{textAnchor: i == 0 || i == 6 ? "middle" :
+                                                  i < 6 ? "start"  :
+                                                          "end"
+              }}>
+                { formatMonth(parseMonth(i)) }
+              </text>
+            )
+          })}
+        </g>
+
+        <line
+          className="FishingCircle__annotation-line"
+          x1={width - 86}
+          x2={width - 86 + 35}
+          y1={height - 103}
+          y2={height - 103 + 35}
+        />
+      </svg>
+    </div>
   )
 }

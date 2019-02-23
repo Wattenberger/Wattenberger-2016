@@ -46,17 +46,36 @@ $main-color: #30336b;
 
     &Circle {
         overflow: hidden;
+
+        &__wrapper {
+            position: relative;
+            width: 400px;
+        }
         
         path {
             // fill: cornflowerblue;
-            fill-opacity: 0.4;
+            // fill-opacity: 0.4;
+            // stroke: cornflowerblue;
+            // stroke-width: 2px;
+        }
+
+        &__taken {
+            fill: rgb(217, 217, 224);
+        }
+
+        &__reset {
+            fill: $bgc;
+        }
+
+        &__country {
+            fill-opacity: 0.5;
+            mix-blend-mode: multiply;
             transition: all 0.5s ease-out;
 
             &:hover {
                 fill-opacity: 0.9;
             }
-            // stroke: cornflowerblue;
-            // stroke-width: 2px;
+
         }
 
         &__tick-rect {
@@ -81,6 +100,21 @@ $main-color: #30336b;
             font-size: 0.6em;
             opacity: 0.36;
         }
+
+        &__annotation {
+            position: absolute;
+            bottom: 45px;
+            right: -73px;
+            font-size: 0.55em;
+            opacity: 0.4;
+            width: 10em;
+            line-height: 1.2em;
+
+            &-line {
+                stroke: rgb(217, 217, 224);
+                stroke-width: 1px;
+            }
+        }
     }
 
     &__circles {
@@ -88,6 +122,10 @@ $main-color: #30336b;
         flex-wrap: wrap;
         
         &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             padding: 1.2em;
             flex: 1 1 400px;
             margin-top: 1em;
