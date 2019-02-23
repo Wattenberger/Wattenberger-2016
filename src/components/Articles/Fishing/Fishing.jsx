@@ -174,7 +174,7 @@ const FishingCircle = ({ data, metric, takenMetric }) => {
   return (
     <div className="FishingCircle__wrapper">
       <div className="FishingCircle__annotation">
-        Fish taken from { countryCodes[data.name] }'s waters
+        Fish taken from { countryCodes[data.name] }’s waters
       </div>
 
       <svg
@@ -200,7 +200,7 @@ const FishingCircle = ({ data, metric, takenMetric }) => {
             className="FishingCircle__taken"
           >
             <title>
-              Taken from { countryCodes[data.name] }'s waters
+              Taken from { countryCodes[data.name] }’s waters
             </title>
           </circle>
           <path

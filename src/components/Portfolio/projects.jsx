@@ -4,6 +4,7 @@ import wc2 from "./Images/wc2.png"
 import foos1 from "./Images/foos1.jpg"
 import foos2 from "./Images/foos2.png"
 import foos3 from "./Images/foos3.jpg"
+import fishing from "./Images/fishing.png"
 // import foos4 from "./Images/foos4.jpg"
 // import seaholm from "./Images/seaholm.png"
 // import seaholm2 from "./Images/seaholm2.png"
@@ -27,6 +28,20 @@ export const projects = [
     {
       category: "Development & Data Visualization",
       projects: [
+      {
+        title: "Illegal Foreign Fishing",
+        description: <div>
+          <p>
+            A weekend exploration of fishing in foreign waters - most of the work was analyzing a 7 million row dataset!
+          </p>
+          <p>
+            Each circle is a unique profile of a country that illegally fishes in other, often poorer, countries’ waters. Data collected by Global Fishing Watch which used AIS tracking devices, among other data sources, to monitor commercial fishing activity and larger boats.
+          </p>
+        </div>,
+        tools: ["SVG", "D3.js", "Python"],
+        images: [fishing],
+        link: "/fishing",
+      },
       {
         title: "What makes a Good Country?",
         description: <div>

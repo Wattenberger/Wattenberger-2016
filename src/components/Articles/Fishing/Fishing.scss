@@ -63,8 +63,18 @@ $main-color: #30336b;
             fill: rgb(217, 217, 224);
         }
 
+        @keyframes scaleIn {
+            from {transform: scale(0)}
+            to {transform: scale(1)}
+        }
+
         &__reset {
             fill: $bgc;
+            transform-origin: top left;
+            animation: scaleIn 1s ease-out;
+            animation-delay: 2s;
+            transform: scale(0);
+            animation-fill-mode: forwards;
         }
 
         &__country {
