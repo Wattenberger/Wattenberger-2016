@@ -38,6 +38,11 @@ const metricFieldMap = {
   boats: "hours_by_day",
   hours: "boats_by_day",
 }
+const metricLabels = _.fromPairs(_.map(metricOptions, metric => ([
+  metric.value,
+  metric.label,
+])))
+console.log(metricLabels )
 const Fishing = () => {
   // const [sortedAuthors, setSortedAuthors] = useState([])
   const [metric, setMetric] = useState("boats")
@@ -69,10 +74,17 @@ const Fishing = () => {
           {_.map(data, d => d.name && (
             <div className="Fishing__circles__item">
               <h6>{ countryCodes[d.name] || d.name }</h6>
+              <div className="Fishing__circles__item__description">
+                { metricLabels[metric] } in 2016
+              </div>
               <FishingCircle data={d} metric={metricFieldMap[metric]} />
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="Fishing__note">
+        Data from <a href="https://www.olgatsubiks.com/single-post/2019/02/07/Visualizing-global-fishing-to-promote-ocean-sustainability">Global Fishing Watch</a> which uses AIS tracking devices and other kinds of information to show what's happening in the oceans around the world. They monitor commercial fishing activity and larger boats.
       </div>
     </div>
   )
@@ -214,8 +226,8 @@ const FishingTimeline = ({ data }) => {
   const FishingCircle = ({ data, metric }) => {
     if (!data) return null
 
-    const width = 500
-    const height = 500
+    const width = 400
+    const height = 400
     const margin = {top: 50, right: 50, bottom: 50, left: 50}
     const boundedWidth = width - margin.left - margin.right
     const boundedHeight = height - margin.top - margin.bottom

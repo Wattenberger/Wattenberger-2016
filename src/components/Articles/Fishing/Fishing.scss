@@ -79,7 +79,7 @@ $main-color: #30336b;
 
         &__month {
             font-size: 0.6em;
-            opacity: 0.5;
+            opacity: 0.36;
         }
     }
 
@@ -88,11 +88,28 @@ $main-color: #30336b;
         flex-wrap: wrap;
         
         &__item {
-            padding: 2em;
-            flex: 1 1 500px;
-            margin-top: 4em;
+            padding: 1.2em;
+            flex: 1 1 400px;
+            margin-top: 1em;
             text-align: center;
+
+            h6 {
+                line-height: 1.1em;
+            }
+
+            &__description {
+                font-size: 0.67em;
+                font-style: italic;
+                line-height: 1.1em;
+                opacity: 0.6;
+            }
         }
     }
-
+    
+    &__note {
+        opacity: 0.5;
+        font-size: 14px;
+        margin-top: 3em;
+        line-height: 1.3em;
+    }
 }
