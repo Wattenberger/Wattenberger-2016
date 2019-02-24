@@ -237,7 +237,7 @@ export default {
   UZB: "Uzbekistan",
   VAT: "Holy See",
   VCT: "Saint Vincent and the Grenadines",
-  VEN: "Venezuela (Bolivarian Republic of)",
+  VEN: "Venezuela",
   VGB: "Virgin Islands (British)",
   VIR: "Virgin Islands (U.S.)",
   VNM: "Viet Nam",

@@ -23,6 +23,7 @@ import './Fishing.scss';
 
 const formatSalary = d => numeral(d).format("$0,0")
 const formatNumber = d => numeral(d).format("0,0a")
+const formatNumberLong = d => numeral(d).format("0,0")
 const formatNumberWithDecimal = d => numeral(d).format("0,0.0a")
 const ordinalColors = ["#c7ecee", "#778beb", "#f7d794", "#63cdda", "#cf6a87", "#e77f67", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"];
 const countryColors = _.fromPairs(_.map(_.keys(countryCodes), (country, i) => [
@@ -46,11 +47,14 @@ const metricTakenFieldMap = {
   boats: "taken_hours",
   hours: "taken_boats",
 }
+const metricTotalsFieldMap = {
+  boats: "total_hours_by_country",
+  hours: "total_boats_by_country",
+}
 const metricLabels = _.fromPairs(_.map(metricOptions, metric => ([
   metric.value,
   metric.label,
 ])))
-console.log(metricLabels )
 const Fishing = () => {
   // const [sortedAuthors, setSortedAuthors] = useState([])
   const [metric, setMetric] = useState("boats")
@@ -66,10 +70,6 @@ const Fishing = () => {
         </h2>
       </div>
       <div className="Fishing__contents">
-        {/* <div className="Fishing__timelines">
-          <FishingTimeline data={data[0]} />
-          <FishingTimeline data={data[1]} />
-        </div> */}
 
         <RadioGroup
           options={metricOptions}
@@ -79,7 +79,7 @@ const Fishing = () => {
 
         
         <div className="Fishing__circles">
-          {_.map(data, d => d.name && (
+          {_.map(data.slice(0, 69), d => d.name && (
             <div className="Fishing__circles__item">
               <h6>{ countryCodes[d.name] || d.name }</h6>
               <div className="Fishing__circles__item__description">
@@ -89,6 +89,7 @@ const Fishing = () => {
                 data={d}
                 metric={metricFieldMap[metric]}
                 takenMetric={metricTakenFieldMap[metric]}
+                totalsMetric={metricTotalsFieldMap[metric]}
               />
             </div>
           ))}
@@ -108,7 +109,7 @@ export default Fishing
 const parseDate = d3.timeParse("%m/%d/%Y")
 const parseMonth = d3.timeParse("%m")
 const formatMonth = d3.timeFormat("%b")
-const FishingCircle = ({ data, metric, takenMetric }) => {
+const FishingCircle = ({ data, metric, takenMetric, totalsMetric }) => {
   if (!data) return null
 
   const width = 400
@@ -119,8 +120,8 @@ const FishingCircle = ({ data, metric, takenMetric }) => {
   const radius = boundedWidth / 2
   const gradientId = `gradient-${_.uniqueId()}`
 
-  const dateAccessor = d => d.date
-  const radiusAccessor = d => d.count
+  const dateAccessor = d => d[0]
+  const radiusAccessor = d => d[1]
   const colorScale = d3.interpolateLab("cornflowerblue", "tomato")
   
   const [countryData, setCountryData] = useState([])
@@ -132,24 +133,17 @@ const FishingCircle = ({ data, metric, takenMetric }) => {
   useEffect(() => {
     const newCountryData = _.map(data[metric], (values, toCountry) => ({
       name: toCountry,
-      values: _.sortBy(_.map(values, (count, date) => ({
-          date: parseDate(date),
-          count,
-        })), "date"),
+      values: _.sortBy(padData(values), dateAccessor),
     }))
     setCountryData(newCountryData)
 
-    const newTakenData = _.sortBy(_.map(data[takenMetric], (count, date) => ({
-      date: parseDate(date),
-      count,
-    })), "date")
+    const newTakenData = _.sortBy(padData(data[takenMetric]), dateAccessor)
     setTakenData(newTakenData)
-
   }, [metric])  
 
   const dateScale = d3.scaleTime()
     // .domain(d3.extent(_.flatMap(countryData, "values"), dateAccessor))
-    .domain([parseDate("01/01/2015"), parseDate("01/01/2016")])
+    .domain([parseDate("1/1/2015"), parseDate("1/1/2016")])
     .range([0, Math.PI * 2])
   
   const radiusScale = d3.scaleLinear()
@@ -170,6 +164,8 @@ const FishingCircle = ({ data, metric, takenMetric }) => {
     .angle(dateAccessorScaled)
     .radius(takenRadiusAccessorScaled)
     .curve(d3.curveLinearClosed)
+
+  const topCountries = _.orderBy(_.toPairs(data[totalsMetric]), "1", "desc")
 
   return (
     <div className="FishingCircle__wrapper">
@@ -277,6 +273,35 @@ const FishingCircle = ({ data, metric, takenMetric }) => {
           y2={height - 103 + 35}
         />
       </svg>
+
+      <div className="FishingCircle__legend">
+        {_.map(topCountries.slice(0, 3), country => (
+            <div className="FishingCircle__legend__item" key={country[0]}>
+              <div className="FishingCircle__legend__item__label" title={countryCodes[country[0]]}>
+                <div className="FishingCircle__legend__item__dot" style={{
+                  background: countryColors[country[0]]
+                }} />
+                <b>{ countryCodes[country[0]] }</b>
+              </div>
+              <div className="FishingCircle__legend__item__value">
+                { formatNumberLong(country[1]) }
+              </div>
+            </div>
+        ))}
+      </div>
     </div>
   )
 }
+
+
+const formatDate = d3.timeFormat("%-m/%-d/%Y")
+const start = parseDate("1/1/2015")
+const end = parseDate("1/1/2016")
+const dates = d3.timeDays(start, end).map(d => [
+  d,
+  formatDate(d),
+])
+const padData = (data={}) => _.map(dates, date => ([
+  date[0],
+  data[date[1]] || 0,
+]))
