@@ -48,8 +48,8 @@ const metricTakenFieldMap = {
   hours: "taken_boats",
 }
 const metricTotalsFieldMap = {
-  boats: "total_hours_by_country",
-  hours: "total_boats_by_country",
+  boats: "total_boats_by_country",
+  hours: "total_hours_by_country",
 }
 const metricLabels = _.fromPairs(_.map(metricOptions, metric => ([
   metric.value,
