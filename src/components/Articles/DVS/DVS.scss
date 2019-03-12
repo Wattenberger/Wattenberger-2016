@@ -1,0 +1,93 @@
+@import "~styles/variables";
+
+$main-color: #30336b;
+
+.DVS {
+    padding: 3em;
+    font-size: 21px;
+
+    @media (max-width: 700px) {
+        padding: 2em 1em;
+    }
+
+    @media (min-width: 1300px) {
+        font-size: 25px;
+    }
+
+    &__title {
+        // display: inline-block;
+        position: relative;
+        color: $tc;
+        // color: #474787;
+        font-size: 3em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 0;
+        padding: 0.2em 0;
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+
+        &__button {
+            display: block;
+            font-size: 0.5em;
+        }
+    }
+
+    &__contents {
+        // display: flex;
+        // margin: 0 -1em;
+    }
+
+    &Map {
+        position: relative;
+        height: 800px;
+        width: 800px;
+        margin: auto;
+        text-align: center;
+
+        &__center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 100%;
+            color: #34495e;
+            transition: all 0.3s ease-out;
+            transform: translate(-50%, -50%) scale(2);
+            transform-origin: center center;
+        }
+
+        $dot-size: 12px;
+        &__dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: $dot-size;
+            width: $dot-size;
+            margin-left: -$dot-size / 2;
+            margin-top: -$dot-size / 2;
+            border-radius: 100%;
+            background: cornflowerblue;
+            transition: all 0.3s ease-out;
+            opacity: 0.4;
+        }
+        &__location {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 0;
+            width: 0;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-out;
+            z-index: 10;
+        }
+    }
+}

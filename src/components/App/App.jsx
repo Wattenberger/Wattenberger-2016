@@ -18,7 +18,9 @@ const WDVP = React.lazy(() => import("components/Articles/WDVP/WDVP"));
 const WDVPGrid = React.lazy(() => import("components/Articles/WDVP/WDVPGrid"));
 const RocDevSurvey = React.lazy(() => import("components/Articles/RocDevSurvey/RocDevSurvey"));
 const StephenKing = React.lazy(() => import("components/Articles/StephenKing/StephenKing"));
+const Authors = React.lazy(() => import("components/Articles/Authors/Authors"));
 const Fishing = React.lazy(() => import("components/Articles/Fishing/Fishing"));
+const DVS = React.lazy(() => import("components/Articles/DVS/DVS"));
 
 // import RochesterRealEstate from "components/Articles/RochesterRealEstate/RochesterRealEstate"
 // import Headlines from "components/Articles/Headlines/Headlines"
@@ -62,6 +64,8 @@ class App extends Component {
             <Route path="/wdvp" component={WDVP} />
             <Route path="/rocdev" component={RocDevSurvey} />
             <Route path="/king" component={StephenKing} />
+            <Route path="/dvs" component={DVS} />
+            <Route path="/authors" component={Authors} />
             <Route path="/fishing" component={Fishing} />
             <Route path="/blog" component={Blog} />
             {/* <Route path="/docstats" component={DoctorateStats} /> */}
