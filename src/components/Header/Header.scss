@@ -8,12 +8,14 @@
     align-items: center;
     padding: 1em;
     z-index: 1000;
+    pointer-events: none;
 
     &__link {
         display: flex;
         align-items: center;
         color: $accent-3;
         font-weight: 900;
+        pointer-events: all;
 
         &--blog {
             margin-left: auto;
