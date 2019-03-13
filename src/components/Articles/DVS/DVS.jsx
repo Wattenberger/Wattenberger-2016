@@ -287,7 +287,7 @@ const DVSLocation = ({ location, setLocation }) => {
   return (
     <div className="DVSLocation">
       <div className="DVSLocation__current">
-        { location.map(formatNumberWithDecimal).join(", ") }
+        <i>Centered at { location.map(formatNumberWithDecimal).join(", ") }</i>
       </div>
 
       <Button onClick={grabLocation}>

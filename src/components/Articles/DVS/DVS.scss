@@ -52,6 +52,11 @@ $main-color: #30336b;
             margin-top: 1em;
         }
 
+        &__current {
+            opacity: 0.5;
+            font-size: 0.8em;
+        }
+
         &__city {
             display: flex;
             justify-content: space-between;
