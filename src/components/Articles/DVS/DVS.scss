@@ -148,18 +148,18 @@ $main-color: #30336b;
             border-radius: 100%;
             background: cornflowerblue;
             transition: all 0.3s ease-out;
-            opacity: 0.4;
+            opacity: 0.6;
 
             animation: fadeIn 0.5s ease-out;
             animation-fill-mode: forwards;
             opacity: 0;
-            will-change: transform, opacity;
+            // will-change: transform, opacity;
 
-            @for $i from 0 through 3500 {
-                &:nth-child(#{$i}) {
-                    animation-delay: $i * 0.003s;
-                }
-            }
+            // @for $i from 0 through 3500 {
+            //     &:nth-child(#{$i}) {
+            //         animation-delay: $i * 0.003s;
+            //     }
+            // }
         }
 
         &__location {
