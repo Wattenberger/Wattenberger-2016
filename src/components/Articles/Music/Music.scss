@@ -117,6 +117,14 @@ $main-color: #30336b;
             left: 0;
             transform: translate(-50%, -50%);
             transition: all 0.3s ease-out;
+
+            &__eyebrow {
+                position: absolute;
+                top: -2em;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease-out;
+            }
         }
 
         &__eye {

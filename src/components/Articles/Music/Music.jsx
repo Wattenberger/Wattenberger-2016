@@ -68,7 +68,15 @@ const eyesClosed = _.filter(emotion.map(d => ({
   eyesAreClosed: d.Face.EyesOpen && !d.Face.EyesOpen.Value && d.Face.EyesOpen.Confidence > 0.9,
   time: d.Timestamp,
 })), "eyesAreClosed")
-console.log(eyesClosed)
+
+const getLandmark = (d, landmark) => _.first(_.filter(d.Face.Landmarks, d => d.Type == landmark)) || {}
+const getEyebrowDistance = d => getLandmark(d, "leftEyeBrowLeft").Y - getLandmark(d, "eyeLeft").Y
+const eyebrowMean = d3.mean(emotion.map(getEyebrowDistance))
+const eyebrowStandardDeviation = d3.deviation(emotion.map(getEyebrowDistance))
+const eyebrowRaises = _.filter(emotion.map(d => (
+  getEyebrowDistance(d) > (eyebrowMean + eyebrowStandardDeviation) ? d.Timestamp : null
+)))
+console.log(eyebrowRaises)
 
 const MusicStaff = () => {
   const xScale = d3.scaleLinear()
@@ -108,6 +116,9 @@ const MusicStaff = () => {
                   zIndex: isFirst ? 2 : 1,
                 }}>
                 { isFirst ? emoji[expressionAccessor(d)] : "·" }
+                {_.includes(eyebrowRaises, timeAccessor(d)) && (
+                  <div style={{top: isFirst ? "-0.6em" : 0}} className="MusicStaff__note__eyebrow">⌒</div>
+                )}
               </div>
             )
           })}
