@@ -93,12 +93,13 @@ $main-color: #30336b;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: 20px;
-            flex: 0 0 120px;
+            // padding-right: 20px;
+            flex: 0 0 100px;
 
             svg {
-                transform: scale(3);
-                stroke-width: 1;
+                padding-top: 10px;
+                transform: scale(1.5);
+                // stroke-width: 1;
             }
         }
 
