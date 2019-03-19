@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react"
+
 const localStorageKey = "wattenberger--"
 
 export const setInStorage = (key, value) => {
@@ -15,4 +17,25 @@ export const getFromStorage = key => {
         console.log(e)
         return null
     }
+}
+
+
+export function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  // Remember the latest callback.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
 }

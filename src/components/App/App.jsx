@@ -21,6 +21,7 @@ const StephenKing = React.lazy(() => import("components/Articles/StephenKing/Ste
 const Authors = React.lazy(() => import("components/Articles/Authors/Authors"));
 const Fishing = React.lazy(() => import("components/Articles/Fishing/Fishing"));
 const DVS = React.lazy(() => import("components/Articles/DVS/DVS"));
+const Music = React.lazy(() => import("components/Articles/Music/Music"));
 
 // import RochesterRealEstate from "components/Articles/RochesterRealEstate/RochesterRealEstate"
 // import Headlines from "components/Articles/Headlines/Headlines"
@@ -67,6 +68,7 @@ class App extends Component {
             <Route path="/dvs" component={DVS} />
             <Route path="/authors" component={Authors} />
             <Route path="/fishing" component={Fishing} />
+            <Route path="/music" component={Music} />
             <Route path="/blog" component={Blog} />
             {/* <Route path="/docstats" component={DoctorateStats} /> */}
             <Route>

@@ -1,0 +1,93 @@
+@import "~styles/variables";
+
+$main-color: #30336b;
+
+.Music {
+    padding: 3em;
+    font-size: 21px;
+
+    @media (max-width: 700px) {
+        padding: 2em 1em;
+    }
+
+    @media (min-width: 1300px) {
+        font-size: 25px;
+    }
+
+    &__title {
+        // display: inline-block;
+        position: relative;
+        color: $tc;
+        // color: #474787;
+        font-size: 3em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 0;
+        padding: 0.2em 0;
+    }
+
+    &__description {
+        margin-top: 1em;
+        padding-right: 40px;
+        line-height: 1.3em;
+    }
+
+    &__contents {
+        display: flex;
+        // margin: 0 -1em;
+    }
+
+    @keyframes slideLeft {
+          0% {transform: translateX(0); }
+        100% {transform: translateX(-80%); }
+    }
+
+    &Staff {
+        position: relative;
+        width: 200em;
+        flex: none;
+        height: 100px;
+        margin-top: 3em;
+        padding-right: 9em;
+        background: #f4f4f4;
+        display: flex;
+        animation: slideLeft 30s linear;
+
+        &__clef {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 20px;
+            flex: 0 0 120px;
+
+            svg {
+                transform: scale(3);
+                stroke-width: 1;
+            }
+        }
+
+        &__notes {
+            position: relative;
+            flex: 1;
+            height: 100%;
+        }
+
+        &__note {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-out;
+        }
+
+        &__line {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            right: 0;
+            border-bottom: 2px solid;
+            // opacity: 0.5;
+        }
+    }
+}
