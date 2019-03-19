@@ -82,6 +82,14 @@ const MusicStaff = () => {
   return (
     <div className="MusicStaff__wrapper">
       <div className="MusicStaff">
+        <div className="MusicStaff__key">
+          <div className="MusicStaff__key__item">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="17" cy="17" r="16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="21" cy="7" r="1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="13" cy="7" r="1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M25 10C25 13.866 21.4183 17 17 17C12.5817 17 9 13.866 9 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+          </div>
+          <div className="MusicStaff__key__item">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="17" cy="17" r="16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="21" cy="19" r="1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="13" cy="19" r="1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M25 22C25 25.866 21.4183 29 17 29C12.5817 29 9 25.866 9 22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+          </div>
+        </div>
         <div className="MusicStaff__clef">
           {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg> */}
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
