@@ -153,7 +153,7 @@ const MusicStaff = ({ data }) => {
                   zIndex: isFirst ? 2 : 1,
                 }}>
                 { isFirst ? emoji[expressionAccessor(d)] : "·" }
-                {_.includes(data.eyebrows_raised, d) && (
+                {_.includes(data.eyebrows_raised, timeAccessor(d)) && (
                   <div style={{top: isFirst ? "-0.6em" : 0}} className="MusicStaff__note__eyebrow">⌒</div>
                 )}
               </div>
