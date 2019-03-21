@@ -66,7 +66,7 @@ $main-color: #30336b;
 
         &__wrapper {
             flex: none;
-            height: 240px;
+            height: 260px;
             width: calc(100% + 3em);
             // margin-top: 3em;
             margin-left: -3em;
@@ -130,6 +130,11 @@ $main-color: #30336b;
             background-size: #{$second-size * $seconds-per-measure} 100%;
         }
 
+        @keyframes slideUpEyebrow {
+              0% { transform: translateY(-20%, -50%); }
+            100% { transform: translateY(-50%, -50%); }
+        }
+
         &__note {
             position: absolute;
             top: 0;
@@ -141,8 +146,10 @@ $main-color: #30336b;
                 position: absolute;
                 top: -2em;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-20%, -50%);
+                animation-fill-mode: forwards;
                 transition: all 0.3s ease-out;
+                animation: slideUpEyebrow 1s ease-out;
             }
         }
 
@@ -152,6 +159,7 @@ $main-color: #30336b;
             left: 0;
             transform: translate(-50%, -50%);
             transition: all 0.3s ease-out;
+            animation: slideUpEyebrow 1s ease-out;
         }
 
         &__line {

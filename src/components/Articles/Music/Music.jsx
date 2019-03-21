@@ -34,11 +34,17 @@ const eyesClosedIcon = <svg width="24" height="24" viewBox="0 0 24 24" fill="non
 const formatNumber = d => numeral(d).format("0,0a")
 const formatNumberWithDecimal = d => numeral(d).format("0,0.0a")
 const ordinalColors = ["#c7ecee", "#778beb", "#f7d794", "#63cdda", "#cf6a87", "#e77f67", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"];
+
+const instrumentColors = {
+  violin: "#778beb",
+  cello: "#e77f67",
+}
 const colorScale = d3.scaleLinear().range(["#c7ecee", "#686de0"]).domain([0, 1])
 const formatPieceName = str => _.startCase(str.split("_")[1])
-const pieceOptions = _.map(pieceNames, piece => ({
+const pieceOptions = _.map(pieceNames, (piece, index) => ({
   value: piece,
   label: formatPieceName(piece),
+  color: instrumentColors[pieces[index].instrument],
 }))
 const Music = () => {
   const [pieceName, setPieceName] = useState(pieceNames[0])
@@ -58,7 +64,7 @@ const Music = () => {
 
         <div className="Music__description">
           <p>
-            <b>How do different musicians emote while performing?</b> We've laid out <b>{ formatPieceName(pieceName) }</b>'s emotions during their <b>{ data.instrument }</b> performance. Each measure lasts for two seconds and each "note" is a prominent facial expression -- higher on the scale when looking up and lower when looking down.
+            <b>How do different musicians emote while performing?</b> We've laid out <b>{ formatPieceName(pieceName) }</b>'s emotions during their <b style={{color: instrumentColors[data.instrument]}}>{ data.instrument }</b> performance. Each measure lasts for two seconds and each "note" is a prominent facial expression -- higher on the scale when looking up and lower when looking down.
           </p>
           <p>
             The expressions we looked for were { _.map(emoji, (emoji, expression) => `${expression == "CONFUSED" ? ",  and" : expression == "DISGUSTED" ? "" : ", "}  ${emoji} ${_.lowerCase(expression)}`)}.
