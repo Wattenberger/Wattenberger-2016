@@ -32,6 +32,7 @@ $main-color: #30336b;
     &__description {
         margin-top: 1em;
         padding-right: 40px;
+        font-size: 0.8em;
         line-height: 1.3em;
     }
 
@@ -113,13 +114,20 @@ $main-color: #30336b;
             }
         }
 
+        p svg {
+            transform: scale(0.5);
+            transform-origin: center center;
+        }
+
+        $second-size: 142.8575px;
+        $seconds-per-measure: 2;
         &__notes {
             position: relative;
             flex: 1;
             height: 100%;
-            background: linear-gradient(to right, white 250px, $tc 5px);
+            background: linear-gradient(to right, white #{$second-size * $seconds-per-measure - 2}, $tc 5px);
             background-repeat: repeat;
-            background-size: 252px 100%;
+            background-size: #{$second-size * $seconds-per-measure} 100%;
         }
 
         &__note {

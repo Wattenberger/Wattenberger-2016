@@ -30,6 +30,7 @@ const emoji = {
   CONFUSED: "😕",
 }
 
+const eyesClosedIcon = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
 const formatNumber = d => numeral(d).format("0,0a")
 const formatNumberWithDecimal = d => numeral(d).format("0,0.0a")
 const ordinalColors = ["#c7ecee", "#778beb", "#f7d794", "#63cdda", "#cf6a87", "#e77f67", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"];
@@ -55,7 +56,17 @@ const Music = () => {
           onChange={d => setPieceName(d.value)}
         />
 
-        <h3>{ formatPieceName(pieceName) }</h3>
+        <div className="Music__description">
+          <p>
+            <b>How do different musicians emote while performing?</b> We've laid out <b>{ formatPieceName(pieceName) }</b>'s emotions during their <b>{ data.instrument }</b> performance. Each measure lasts for two seconds and each "note" is a prominent facial expression -- higher on the scale when looking up and lower when looking down.
+          </p>
+          <p>
+            The expressions we looked for were { _.map(emoji, (emoji, expression) => `${expression == "CONFUSED" ? ",  and" : expression == "DISGUSTED" ? "" : ", "}  ${emoji} ${_.lowerCase(expression)}`)}.
+          </p>
+          <p>
+            Musicians also emote with other facial expressions, such as closing their eyes ({ eyesClosedIcon }) and raising their eyebrows (⌒). Run through the piece and see if you can find their idiosyncracies.
+          </p>
+        </div>
         <MusicStaff data={data} />
         {/* {_.map(pieces, piece => (
           <div className="Music__piece" key={piece.name}>
@@ -66,6 +77,8 @@ const Music = () => {
       </div>
 
       <div className="Music__attribution">
+        This is a preliminary exploration of the data. Future exploration could involve "playing" the in time with the video, making the emoji look like real notes (grace note, whole note, etc), etc.
+        <br />
         <i>Icons by ATOM from the Noun Project</i>
       </div>
     </div>
@@ -117,7 +130,7 @@ const MusicStaff = ({ data }) => {
   const timestampDiff = timeAccessor(_.last(data.frame_data)) - timeAccessor(_.first(data.frame_data))
   const xScale = d3.scaleLinear()
     .domain(d3.extent(data.frame_data, timeAccessor))
-    .range([0, timestampDiff / 10])
+    .range([0, timestampDiff / 7])
   const yScale = d3.scaleQuantize()
     .domain(d3.extent(data.frame_data, headPitchAccessor))
     .range(_.map(_.times(9), (d, i) => (i * 100) / 8))
@@ -170,7 +183,7 @@ const MusicStaff = ({ data }) => {
             }}
           >
             {(data.eyes_closed[i-1] && ((d - data.eyes_closed[i-1]) < 500)) ? "—" : (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+              eyesClosedIcon
             )}
           </div>
         ))}
