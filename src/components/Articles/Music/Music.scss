@@ -177,4 +177,38 @@ $main-color: #30336b;
         font-size: 12px;
         opacity: 0.6;
     }
+
+    &__radars {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__radar {
+        padding: 0.3em 2em;
+        margin: 0 -1em;
+    }
+
+    &Radar {
+        overflow: visible;
+
+        &__grid-line {
+            fill: none;
+            stroke: #dadadd;
+            stroke-width: 1px;
+        }
+
+        &__label {
+            fill: #dadadd;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-size: 0.8em;
+        }
+
+        &__line {
+            fill: $accent-4;
+            fill-opacity: 0.2;
+            stroke: $accent-4;
+            stroke-width: 2;
+        }
+    }
 }

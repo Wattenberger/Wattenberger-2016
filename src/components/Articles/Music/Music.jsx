@@ -80,6 +80,18 @@ const Music = () => {
             <MusicStaff data={piece} />
           </div>
         ))} */}
+        <div className="Music__radars">
+          {_.map(pieces, piece => (
+            <div className="Music__radar" key={piece.name}>
+              <h3>{ formatPieceName(piece.name) }</h3>
+              <MusicRadar data={[piece]} />
+            </div>
+          ))}
+          <div className="Music__radar">
+            <h3>All</h3>
+            <MusicRadar data={pieces} />
+          </div>
+        </div>
       </div>
 
       <div className="Music__attribution">
@@ -205,5 +217,85 @@ const MusicStaff = ({ data }) => {
         ))}
       </div>
     </div>
+  )
+}
+
+const MusicRadar = ({ data }) => {
+  const height = 380
+  const width = height
+  const radius = width / 2 * 0.8
+
+  const expressionCounts = _.map(data, piece => (
+    _.map(emoji, (emoji, expression) => ([
+      expression,
+      (_.filter(piece.frame_data, d => expressionAccessor(d) == expression).length * 100) / piece.frame_data.length
+    ]))
+  ))
+
+  const radarScale = d3.scaleLinear()
+    .domain([0, 76])
+    .range([0, radius])
+
+  const angles = _.map(expressionCounts[0], (d,i) => (
+    i * ((Math.PI * 2) / expressionCounts[0].length)
+  ))
+  console.log(expressionCounts, angles)
+
+  const lineGenerator = d3.lineRadial()
+    .angle((d, i) => angles[i])
+    .radius((d, i) => radarScale(d[1]))
+    .curve(d3.curveLinearClosed)
+
+  return (
+    <svg className="MusicRadar" height={height} width={width}>
+      {_.map(angles, angle => (
+        <line
+          className="MusicRadar__grid-line"
+          x1={width / 2}
+          x2={Math.cos(angle - Math.PI * 0.5) * radius + width / 2}
+          y1={height / 2}
+          y2={Math.sin(angle - Math.PI * 0.5) * radius + height / 2}
+          transform={`translate(${height / 2}px, ${width / 2}px)`}
+        />
+      ))}
+
+      {_.map(_.times(4), i => (
+        <circle
+          className="MusicRadar__grid-line"
+          key={i}
+          cx={width / 2}
+          cy={height / 2}
+          r={radius * (i / 3)}
+        />
+      ))}
+
+      {_.map(angles, (angle, i) => {
+        const x = Math.cos(angle - Math.PI * 0.5) * (radius * 1.1) + width / 2
+        const y = Math.sin(angle - Math.PI * 0.5) * (radius * 1.1) + height / 2
+        return (
+          <text
+            className="MusicRadar__label"
+            x={x}
+            y={y}
+            style={{
+              textAnchor: i == 0 || i == expressionCounts[0].length / 2 ? "middle" :
+                          i < expressionCounts[0].length / 2            ? "start"  :
+                                                                      "end"
+            }}
+          >
+            { emoji[expressionCounts[0][i][0]] }
+          </text>
+        )
+      })}
+
+      {_.map(data, (piece, index) => (
+          <path
+            key={piece.name}
+            className="MusicRadar__line"
+            d={lineGenerator(expressionCounts[index])}
+            style={{transform: `translate(${height / 2}px, ${width / 2}px)`}}
+          />
+      ))}
+    </svg>
   )
 }
