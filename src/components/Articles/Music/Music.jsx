@@ -185,7 +185,7 @@ const MusicStaff = ({ data }) => {
                 }}>
                 { isFirst ? emoji[expressionAccessor(d)] : "·" }
                 {_.includes(data.eyebrows_raised, timeAccessor(d)) && (
-                  <div style={{top: isFirst ? "-0.6em" : 0}} className="MusicStaff__note__eyebrow">⌒</div>
+                  <div style={{top: isFirst ? "-0.5em" : 0}} className="MusicStaff__note__eyebrow">⌒</div>
                 )}
               </div>
             )
@@ -239,7 +239,6 @@ const MusicRadar = ({ data }) => {
   const angles = _.map(expressionCounts[0], (d,i) => (
     i * ((Math.PI * 2) / expressionCounts[0].length)
   ))
-  console.log(expressionCounts, angles)
 
   const lineGenerator = d3.lineRadial()
     .angle((d, i) => angles[i])
