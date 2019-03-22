@@ -181,11 +181,25 @@ $main-color: #30336b;
     &__radars {
         display: flex;
         flex-wrap: wrap;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     &__radar {
-        padding: 0.3em 2em;
+        padding: 0.3em 2.7em;
         margin: 0 -1em;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                transform: rotate(-43deg) scale(0.8);
+                transform-origin: center center;
+            }
+        }
     }
 
     &Radar {

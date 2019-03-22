@@ -83,21 +83,30 @@ const Music = () => {
         <div className="Music__radars">
           {_.map(pieces, piece => (
             <div className="Music__radar" key={piece.name}>
-              <h3>{ formatPieceName(piece.name) }</h3>
+              <h3 className="Music__radar__title">
+                <div style={{stroke: instrumentColors[piece.instrument]}}>{ icons[piece.instrument ]}</div>
+                <div>{ formatPieceName(piece.name) }</div>
+              </h3>
               <MusicRadar data={[piece]} />
             </div>
           ))}
           <div className="Music__radar">
-            <h3>All</h3>
+              <h3 className="Music__radar__title">
+                <div style={{display: "flex", alignItems: "center"}}>
+                  <div style={{stroke: instrumentColors["cello"]}}>{ icons["cello"]}</div>
+                  <div style={{stroke: instrumentColors["violin"]}}>{ icons["violin"]}</div>
+                </div>
+                <div>All</div>
+              </h3>
             <MusicRadar data={pieces} />
           </div>
         </div>
       </div>
 
       <div className="Music__attribution">
-        This is a preliminary exploration of the data. Future exploration could involve "playing" the in time with the video, making the emoji look like real notes (grace note, whole note, etc), etc.
+        This is a preliminary exploration of the data. Future exploration could involve "playing" the in time with the video, making the emoji look like real notes (grace note, whole note, etc), a birds-eye-view of all musicians. We plan on analyzing lots more pieces to get a bigger picture.
         <br />
-        <i>Icons by ATOM from the Noun Project</i>
+        <i>Violin & cello icons by ATOM from the Noun Project</i>
       </div>
     </div>
   )
@@ -221,7 +230,7 @@ const MusicStaff = ({ data }) => {
 }
 
 const MusicRadar = ({ data }) => {
-  const height = 380
+  const height = 220
   const width = height
   const radius = width / 2 * 0.8
 
@@ -292,7 +301,11 @@ const MusicRadar = ({ data }) => {
             key={piece.name}
             className="MusicRadar__line"
             d={lineGenerator(expressionCounts[index])}
-            style={{transform: `translate(${height / 2}px, ${width / 2}px)`}}
+            style={{
+              transform: `translate(${height / 2}px, ${width / 2}px)`,
+              stroke: instrumentColors[piece.instrument],
+              fill: instrumentColors[piece.instrument],
+            }}
           />
       ))}
     </svg>
