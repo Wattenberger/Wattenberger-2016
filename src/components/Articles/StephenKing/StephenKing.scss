@@ -85,7 +85,61 @@ $main-color: #30336b;
     }
 
     &Scatter {
-        padding: 2em;
+        position: relative;
+        width: 100%;
+
+        svg {
+            overflow: visible;
+        }
+
+        text.Axis__label {
+            font-size: 1.6em;
+        }
+
+        .Axis .tick text {
+            font-size: 1.6em;
+        }
+
+        &Tooltip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0.8em 1em;
+            background: white;
+            width: 12em;
+            margin-top: -1em;
+            font-size: 0.8em;
+            text-align: center;
+            box-shadow: 0 0 0 4px rgba(black, 0.1);
+            pointer-events: none;
+
+            &__title {
+                font-size: 0.9em;
+                font-weight: 700;
+                line-height: 1.3em;
+                margin-bottom: 1em;
+            }
+
+            &__metric {
+                font-size: 0.7em;
+                line-height: 1.2em;
+                margin-top: 0.6em;
+                opacity: 0.6;
+                font-style: italic;
+            }
+
+            &__swears {
+                font-size: 0.8em;
+                line-height: 1.4em;
+            }
+
+            &__swear {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                font-weight: 600;
+            }
+        }
     }
 
     &Dots {
@@ -242,7 +296,7 @@ $main-color: #30336b;
             font-size: 0.6em;
             position: absolute;
             bottom: 8em;
-            
+
             &__tick {
                 position: absolute;
                 top: 0;
@@ -251,3 +305,32 @@ $main-color: #30336b;
         }
     }
 }
+
+
+.Asterisk {
+    @keyframes asteriskSlideUp {
+        0% { opacity: 0; transform: translateY(4em); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    stroke: #5758BB;
+    stroke-width: 4px;
+    stroke-linecap: round;
+
+    &--is-hovered {
+        stroke: #6F1E51;
+    }
+
+    &-wrapper {
+        opacity: 0;
+        animation: asteriskSlideUp 0.5s ease-out;
+        animation-fill-mode: forwards;
+
+        @for $i from 0 through 100 {
+            &:nth-child(#{$i}) {
+                animation-delay: 0.2s + $i * 0.02s;
+            }
+        }
+    }
+}
+

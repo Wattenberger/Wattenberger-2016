@@ -33,4 +33,10 @@
     text-anchor: end;
     font-size: $font-size-xsmall;
   }
+
+  &--has-inline-label {
+   text.Axis__label {
+     text-anchor: start;
+   }
+  }
 }

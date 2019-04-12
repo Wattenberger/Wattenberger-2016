@@ -47,7 +47,8 @@ class Axis extends Component {
     ]),
     initTransition: PropTypes.number,
     transition: PropTypes.number,
-    label: PropTypes.string
+    label: PropTypes.string,
+    hasInlineLabel: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -117,10 +118,11 @@ class Axis extends Component {
   }
 
   renderLabel() {
-    let {dimension, label, width} = this.props
+    let {dimension, label, width, hasInlineLabel} = this.props
     let x =      dimension == "x" ? width - 100 || 0 : 0
-    let y =      dimension == "x" ? -10 : 20
-    let rotate = dimension == "x" ? 0 : -90
+    let y =      dimension == "x" ? -10 :
+      hasInlineLabel ? 6 : 20
+    let rotate = dimension == "x" || hasInlineLabel ? 0 : -90
 
     let style = {
       transform: `rotate(${rotate}deg)`,
@@ -135,11 +137,12 @@ class Axis extends Component {
   }
 
   getClassName() {
-    let {dimension, className} = this.props
+    let {dimension, hasInlineLabel, className} = this.props
 
     return classNames(
       "Axis", {
         [`Axis--${dimension}`]: dimension,
+        [`Axis--has-inline-label`]: hasInlineLabel,
       },
       className
     )

@@ -29,6 +29,7 @@ class Chart extends Component {
       bottom: PropTypes.number,
       left: PropTypes.number,
     }),
+    hasNoListener: PropTypes.bool,
     onMouseMove: PropTypes.func,
     onMouseEnter: PropTypes.func,
     onMouseEnter: PropTypes.func,
@@ -102,7 +103,7 @@ class Chart extends Component {
 
 
   render() {
-    const {height, width, margin, children, line, area, bar, xAxis, yAxis, brush, hasTooltip, onMouseMove, onMouseEnter, onMouseLeave} = this.props
+    const {height, width, margin, hasNoListener, children, line, area, bar, xAxis, yAxis, brush, hasTooltip, onMouseMove, onMouseEnter, onMouseLeave} = this.props
 
     return (
       <div ref="elem" className={this.getClassName()}>
@@ -113,16 +114,18 @@ class Chart extends Component {
           <g className="Chart__wrapper" style={this.getWrapperStyle()}>
             {children}
           </g>
-          <rect
-            className="Chart__listener"
-            x={margin.left}
-            y={margin.top}
-            height={getHeight(height, margin)}
-            width={getWidth(width, margin)}
-            onMouseMove={onMouseMove}
-            onMouseLeave={onMouseLeave}
-            onMouseEnter={onMouseEnter}
-          />
+          {!hasNoListener && (
+            <rect
+              className="Chart__listener"
+              x={margin.left}
+              y={margin.top}
+              height={getHeight(height, margin)}
+              width={getWidth(width, margin)}
+              onMouseMove={onMouseMove}
+              onMouseLeave={onMouseLeave}
+              onMouseEnter={onMouseEnter}
+            />
+          )}
         </svg>
       </div>
     )

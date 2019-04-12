@@ -9,6 +9,7 @@ import _ from "lodash"
 import Tooltip from "components/_ui/Tooltip/Tooltip"
 import Button from "components/_ui/Button/Button"
 import Chart from "components/_ui/Chart/Chart"
+import { useChartDimensions } from "components/_ui/Chart/utils/utils"
 import Scatter from "components/_ui/Chart/Scatter/Scatter"
 import Axis from "components/_ui/Chart/Axis/Axis"
 import stephenKingBooks from "./kingBooks"
@@ -65,19 +66,20 @@ const StephenKing = () => {
     <div className="StephenKing">
       <div className="StephenKing__title-container">
         <h2 className="StephenKing__title">
-          Stephen King: the Man, the Myth, the Legend
+          Stephen King: Swears over Time
         </h2>
       </div>
       <div className="StephenKing__contents">
 
         <div className="StephenKing__scatters">
-          <StephenKingScatter metric="work_ratings_count" />
+          <StephenKingScatter />
+          {/* <StephenKingScatter metric="work_ratings_count" />
           <StephenKingScatter metric="average_rating" />
           <StephenKingScatter metric="average_sentence_length" />
           <StephenKingScatter metric="average_word_length" />
           <StephenKingScatter metric="percent_swears" />
           <StephenKingScatter metric="sentiment.polarity" />
-          <StephenKingScatter metric="sentiment.subjectivity" />
+          <StephenKingScatter metric="sentiment.subjectivity" /> */}
         </div>
       </div>
     </div>
@@ -89,59 +91,134 @@ export default StephenKing
 
 const yearToDate = d => d3.timeParse("%Y")(+d)
 const toYear = d3.timeFormat("%-Y")
+// const formatPercent = d3.format(",.1%")
 
 const margin = {
   top: 2,
   right: 2,
-  bottom: 20,
-  left: 20,
+  bottom: 30,
+  left: 60,
 }
-const StephenKingScatter = ({ metric, height=500, width=500 }) => {
-  const data = _.filter(stephenKingBooksEnhanced, d => _.isFinite(_.get(d, metric)))
-  if (_.isEmpty(data)) return null
+const metric = "percent_swears"
+const data = _.filter(stephenKingBooksEnhanced, d => _.isFinite(_.get(d, metric)))
+let swearOccurances = {}
+_.each(data, d => {
+  _.each(d.swear_occurrences, (count, swear) => {
+    if (!swearOccurances[swear]) swearOccurances[swear] = 0
+    swearOccurances[swear] += count
+  })
+})
+console.log(swearOccurances, data)
+const topSwears = _.sortBy(_.toPairs(swearOccurances), d => -d[1])
+const colors = ["#0fb9b1", "#778beb", "#e77f67", "#FDA7DF", "#cf6a87", "#58B19F", "#A3CB38", "#786fa6", "#4b7bec", "#778ca3"]
+const topSwearColors = _.fromPairs(
+  _.zip(topSwears.map(d => d[0]).slice(0,colors.length - 1), colors)
+)
+console.log(topSwearColors)
+
+const getTopSwear = book => _.sortBy(
+  _.toPairs(book.swear_occurrences),
+  d => -d[1]
+)[0][0]
+const StephenKingScatter = ({ height=500, width }) => {
+  const xAccessor = d => yearToDate(d.original_publication_year)
+  const yAccessor = d => +_.get(d, metric)
+
+  const [hoveredPoint, setHoveredPoint] = useState(null)
+  const [hoveredBook, setHoveredBook] = useState(null)
+
+  const [ref, dimensions] = useChartDimensions({
+    height,
+    marginTop: margin.top,
+    marginRight: margin.right,
+    marginBottom: margin.bottom,
+    marginLeft: margin.left,
+  })
 
   const yScale = d3.scaleLinear()
       .domain(d3.extent(data.map(d => +_.get(d, metric))))
-      .range([height - margin.top - margin.bottom, 0])
+      .range([dimensions.boundedHeight - margin.top - margin.bottom, 0])
       .nice()
   const xScale = d3.scaleTime()
       .domain([
         yearToDate((_.last(data) || {}).original_publication_year),
         yearToDate((_.first(data) || {}).original_publication_year),
       ])
-      .range([0, width - margin.left - margin.right])
-      .nice()
+      .range([0, dimensions.boundedWidth - margin.left - margin.right])
+
+  const onMouseEnter = d => {
+    const coordinates = [
+      xScale(xAccessor(d)) + margin.left,
+      yScale(yAccessor(d)) + margin.top,
+    ]
+    setHoveredPoint(coordinates)
+    setHoveredBook(d)
+  }
+
+  const onMouseEnterLocal = d => () => onMouseEnter(d)
+  const onMouseLeave = () => {
+    setHoveredPoint(null)
+    setHoveredBook(null)
+  }
+
   return (
-    <div className="StephenKingScatter">
+    <div className="StephenKingScatter" ref={ref}>
       <Chart
-        height={height}
-        width={width}
+        height={dimensions.height}
+        width={dimensions.width}
         margin={margin}
+        hasNoListener
       >
-        <Scatter
-          data={data}
-          radius={6}
-          xAccessor={d => xScale(yearToDate(d.original_publication_year))}
-          yAccessor={d => yScale(+_.get(d, metric))}
-          dataKey={d => d.id}
+        <rect
+          width={dimensions.boundedWidth}
+          height={dimensions.boundedHeight}
+          fill="white"
         />
         <Axis
-          width={width}
-          height={height}
+          width={dimensions.width}
+          height={dimensions.height}
           margin={margin}
           scale={xScale}
           dimension="x"
           label="Publication Date"
         />
         <Axis
-          width={width}
-          height={height}
+          width={dimensions.width}
+          height={dimensions.height}
           margin={margin}
           scale={yScale}
+          format={formatPercent}
           dimension="y"
-          label={metric}
+          label={"of words are swears"}
+          hasInlineLabel
         />
+        {_.map(data.reverse(), d => (
+          <Asterisk
+            key={d.id}
+            x={xScale(xAccessor(d))}
+            y={yScale(yAccessor(d))}
+            stroke={topSwearColors[getTopSwear(d)]}
+            isHovered={hoveredBook && d.id == hoveredBook.id}
+          />
+        ))}
+        {_.map(data.reverse(), d => (
+          <circle
+            cx={xScale(xAccessor(d))}
+            cy={yScale(yAccessor(d))}
+            r="20"
+            fill="transparent"
+            onMouseEnter={onMouseEnterLocal(d)}
+            onMouseLeave={onMouseLeave}
+          />
+        ))}
       </Chart>
+      {hoveredPoint && (
+        <StephenKingScatterTooltip
+          book={hoveredBook}
+          x={hoveredPoint[0]}
+          y={hoveredPoint[1]}
+        />
+      )}
     </div>
   )
 }
@@ -165,7 +242,7 @@ const StephenKingBooksList = ({ books, name, count }) => (
   </div>
 )
 
-const formatPercent = d3.format(".2%")
+const formatPercent = d3.format(".1%")
 const StephenKingBookListInfo = ({ name }) => {
   const book = textInfo.filter(info => _.includes([
     info.book,
@@ -193,6 +270,67 @@ const StephenKingBookListInfo = ({ name }) => {
         {_.map(sortedSwearTypes, swearType => (
           <div>{ swearType[0] }: { swearType[1] }</div>
         ))}
+    </div>
+  )
+}
+
+
+const Asterisk = ({ x, y, isHovered, ...props }) => {
+  const lineWidth = 10
+  return (
+    <g className="Asterisk-wrapper">
+      <g className={`Asterisk Asterisk--is-${isHovered ? "hovered" : "not-hovered"}`} transform={`translate(${x},${y})`}>
+        {_.map(_.times(4), i => {
+          const [x1, y1] = getPositionFromPoint(i * (Math.PI * 2) / 3)
+          return (
+            <line {...props}
+              x1={x1}
+              y1={y1}
+              x2={-x1}
+              y2={-y1}
+            />
+          )
+        })}
+      </g>
+    </g>
+  )
+}
+
+const getPositionFromPoint = (angle, offset=10) => [
+  Math.cos(angle - (Math.PI / 2)) * offset,
+  Math.sin(angle - (Math.PI / 2)) * offset,
+]
+
+
+const StephenKingScatterTooltip = ({ x, y, book }) => {
+  const topSwears = _.sortBy(
+    _.toPairs(book.swear_occurrences),
+    d => -d[1]
+  )
+
+  return (
+    <div className="StephenKingScatterTooltip" style={{
+      transform: `translate(calc(-50% + ${x}px), calc(-100% + ${y}px))`
+    }}>
+      <div className="StephenKingScatterTooltip__title">
+        { book.title }
+      </div>
+
+      <div className="StephenKingScatterTooltip__swears">
+        {_.map(topSwears.slice(0, 4), swear => (
+          <div className="StephenKingScatterTooltip__swear" key={swear[0]} style={{
+            color: topSwearColors[swear[0]]
+          }}>
+            {/* <div>{ swear[0].split("").map((d,i) => i ? "*" : d).join("") }</div> */}
+            <div>{ swear[0] }</div>
+            <div>{ swear[1] }</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="StephenKingScatterTooltip__metric">
+        { formatPercent(book.percent_swears) } of words are swears
+      </div>
     </div>
   )
 }
