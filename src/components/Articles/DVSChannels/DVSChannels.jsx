@@ -45,14 +45,15 @@ const DVSChannels = () => {
 
   useInterval(() => {
     if (!data.length) return;
-
+console.log(dateIndex)
     const newDate = d3.min([
       dateIndex + 1,
       dateStops.length - 2,
     ])
     setDate(newDate)
-    console.log(newDate)
   }, dateIndex < dateStops.length - 2 ? dateStepTiming : null)
+
+  const onChangeDate = index => () => setDate(index)
 
   const indicatorX = dateIndex * (100 - (100 / dateStops.length)) / (dateStops.length - 2)
   const dateStopString = d3.timeFormat("%Y-%m-%d")(dateStops[dateIndex])
@@ -75,7 +76,7 @@ const DVSChannels = () => {
           {_.map(dateStops.slice(0, -1), (date, index) => {
             const dayString = d3.timeFormat("%-d")(date)
             return (
-              <div className="DVSChannels__dates__item" key={date} >
+              <div className="DVSChannels__dates__item" key={date} onClick={onChangeDate(+dayString)}>
                 {(!index || +dayString == 1) && (
                   <div className="DVSChannels__dates__item__month">{ d3.timeFormat("%B")(date) }</div>
                 )}
