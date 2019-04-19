@@ -68,6 +68,7 @@
     "react-select": "^2.1.0",
     "react-slider": "^0.11.2",
     "react-spring": "^8.0.19",
+    "react-three-fiber": "^2.0.8",
     "react-window": "^1.5.0",
     "redux": "^3.0.5",
     "redux-actions": "^2.2.1",
