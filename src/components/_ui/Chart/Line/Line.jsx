@@ -19,6 +19,7 @@ class Line extends Component {
     xAccessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
     yAccessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
     y0Accessor: PropTypes.oneOfType([PropTypes.func, PropTypes.number]),
+    defined: PropTypes.func,
     interpolation: PropTypes.func,
     iterator: PropTypes.number, // for updating
   };
@@ -30,7 +31,7 @@ class Line extends Component {
   };
 
   update = () => {
-    const {type, data, xAccessor, yAccessor, y0Accessor, interpolation} = this.props
+    const {type, data, xAccessor, yAccessor, y0Accessor, defined, interpolation} = this.props
 
     let lineObj = d3[type]()
       .x(xAccessor)
@@ -41,6 +42,9 @@ class Line extends Component {
       } else {
         lineObj.y(yAccessor)
     }
+
+    if (defined) lineObj.defined(defined)
+
     const line = lineObj(data)
 
     this.setState({line})
