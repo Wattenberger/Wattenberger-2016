@@ -53,17 +53,45 @@ const formatNumberWithDecimal = d => numeral(d).format("0,0.0a")
 const ordinalColors = ["#c7ecee", "#778beb", "#f7d794", "#63cdda", "#cf6a87", "#e77f67", "#786fa6", "#FDA7DF", "#4b7bec", "#778ca3"];
 
 const metrics = [{
+  label: "Angry",
+  accessor: d => {
+    const emotion = _.find(d.Face.Emotions, {Type: "ANGRY"})
+    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+  },
+  color: "#EA2027",
+},{
+  label: "Sad",
+  accessor: d => {
+    const emotion = _.find(d.Face.Emotions, {Type: "SAD"})
+    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+  },
+  color: "#5758BB",
+},{
+  label: "Disgusted",
+  accessor: d => {
+    const emotion = _.find(d.Face.Emotions, {Type: "DISGUSTED"})
+    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+  },
+  color: "#006266",
+},{
+  label: "Calm",
+  accessor: d => {
+    const emotion = _.find(d.Face.Emotions, {Type: "CALM"})
+    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+  },
+  color: "#4b6584",
+},{
   label: "Mouth Open",
   accessor: d => d.Face.MouthOpen.Confidence < 50 ? null : (d.Face.MouthOpen.Value ? d.Face.MouthOpen.Confidence : 0),
-  color: "green",
+  color: "#6F1E51",
 },{
   label: "Smiling",
   accessor: d => d.Face.Smile.Confidence < 50 ? null : (d.Face.Smile.Value ? d.Face.Smile.Confidence : 0),
-  color: "blue",
+  color: "#6F1E51",
 },{
   label: "Eyes Closed",
   accessor: d => d.Face.EyesOpen.Confidence < 50 ? null : (d.Face.EyesOpen.Value ? 0 : d.Face.EyesOpen.Confidence),
-  color: "cornflowerblue",
+  color: "#6F1E51",
 // },{
 //   label: "Volume",
 //   isBoxed: true,
