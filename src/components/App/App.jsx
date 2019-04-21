@@ -19,6 +19,7 @@ const WDVPGrid = React.lazy(() => import("components/Articles/WDVP/WDVPGrid"));
 const RocDevSurvey = React.lazy(() => import("components/Articles/RocDevSurvey/RocDevSurvey"));
 const StephenKing = React.lazy(() => import("components/Articles/StephenKing/StephenKing"));
 const StephenKing3d = React.lazy(() => import("components/Articles/StephenKing3d/StephenKing3d"));
+const Playground = React.lazy(() => import("components/Articles/Playground/Playground"));
 const Authors = React.lazy(() => import("components/Articles/Authors/Authors"));
 const Fishing = React.lazy(() => import("components/Articles/Fishing/Fishing"));
 const DVS = React.lazy(() => import("components/Articles/DVS/DVS"));
@@ -68,6 +69,7 @@ class App extends Component {
             <Route path="/rocdev" component={RocDevSurvey} />
             <Route path="/king" component={StephenKing} />
             <Route path="/king3d" component={StephenKing3d} />
+            <Route path="/playground" component={Playground} />
             <Route path="/dvs" component={DVS} />
             <Route path="/dvs-channels" component={DVSChannels} />
             <Route path="/authors" component={Authors} />
