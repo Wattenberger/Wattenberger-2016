@@ -18,17 +18,17 @@ import Axis from "components/_ui/Chart/Axis/Axis"
 import RadioGroup from "components/_ui/RadioGroup/RadioGroup"
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import bell from "./bell.json"
-import ehnes from "./ehnes.json"
-import gitlis from "./gitlis.json"
-import heifetz from "./heifetz.json"
-import hristova from "./hristova.json"
-import kremer from "./kremer.json"
-import midori from "./midori.json"
-import milstein from "./milstein.json"
-import perlman from "./perlman.json"
-import vengerov from "./vengerov.json"
-import zimmerman from "./zimmerman.json"
+import bell from "./bell-small.json"
+import ehnes from "./ehnes-small.json"
+import gitlis from "./gitlis-small.json"
+import heifetz from "./heifetz-small.json"
+import hristova from "./hristova-small.json"
+import kremer from "./kremer-small.json"
+import midori from "./midori-small.json"
+import milstein from "./milstein-small.json"
+import perlman from "./perlman-small.json"
+import vengerov from "./vengerov-small.json"
+import zimmerman from "./zimmerman-small.json"
 import barData from "./barData.json"
 console.log(bell, barData)
 import './Chaconne.scss';
@@ -55,42 +55,42 @@ const ordinalColors = ["#c7ecee", "#778beb", "#f7d794", "#63cdda", "#cf6a87", "#
 const metrics = [{
   label: "Angry",
   accessor: d => {
-    const emotion = _.find(d.Face.Emotions, {Type: "ANGRY"})
-    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+    const emotion = d.emotions["ANGRY"]
+    return emotion < 0.5 ? null : emotion * 100
   },
   color: "#EA2027",
 },{
   label: "Sad",
   accessor: d => {
-    const emotion = _.find(d.Face.Emotions, {Type: "SAD"})
-    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+    const emotion = d.emotions["SAD"]
+    return emotion < 0.5 ? null : emotion * 100
   },
   color: "#5758BB",
 },{
   label: "Disgusted",
   accessor: d => {
-    const emotion = _.find(d.Face.Emotions, {Type: "DISGUSTED"})
-    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+    const emotion = d.emotions["DISGUSTED"]
+    return emotion < 0.5 ? null : emotion * 100
   },
   color: "#006266",
 },{
   label: "Calm",
   accessor: d => {
-    const emotion = _.find(d.Face.Emotions, {Type: "CALM"})
-    return emotion.Confidence < 0.5 ? null : emotion.Confidence * 100
+    const emotion = d.emotions["CALM"]
+    return emotion < 0.5 ? null : emotion * 100
   },
   color: "#4b6584",
 },{
   label: "Mouth Open",
-  accessor: d => d.Face.MouthOpen.Confidence < 50 ? null : (d.Face.MouthOpen.Value ? d.Face.MouthOpen.Confidence : 0),
+  accessor: d => d.mouthOpen,
   color: "#6F1E51",
 },{
   label: "Smiling",
-  accessor: d => d.Face.Smile.Confidence < 50 ? null : (d.Face.Smile.Value ? d.Face.Smile.Confidence : 0),
+  accessor: d => d.smile,
   color: "#6F1E51",
 },{
   label: "Eyes Closed",
-  accessor: d => d.Face.EyesOpen.Confidence < 50 ? null : (d.Face.EyesOpen.Value ? 0 : d.Face.EyesOpen.Confidence),
+  accessor: d => d.eyesClosed,
   color: "#6F1E51",
 // },{
 //   label: "Volume",
@@ -162,7 +162,7 @@ const Chaconne = () => {
             <ChaconneVideoChart
               visibleMetrics={visibleMetrics}
               name={_.startCase(musician)}
-              data={musicianData[musician].Faces}
+              data={musicianData[musician]}
               onMouseEnter={setHoveredObject}
             />
           </div>
@@ -176,7 +176,7 @@ const Chaconne = () => {
 export default Chaconne
 
 
-const timeAccessor = d => d.Timestamp
+const timeAccessor = d => d.time
 const ChaconneVideoChart = ({ visibleMetrics, name, data, onMouseEnter }) => {
   const [ref, dimensions] = useChartDimensions({
     marginTop: 0,
