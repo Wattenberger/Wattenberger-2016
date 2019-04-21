@@ -88,10 +88,18 @@ $main-color: #30336b;
     }
 
     &__hovered {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: white;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        background: $accent-3;
+        color: white;
         padding: 0.6em 1em;
+        z-index: 100;
+        display: flex;
+
+        &__metric {
+            font-weight: 700;
+            padding-right: 0.6em;
+        }
     }
 }

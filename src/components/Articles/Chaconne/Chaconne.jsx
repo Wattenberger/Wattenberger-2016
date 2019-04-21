@@ -20,6 +20,7 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import bell from "./bell.json"
 import ehnes from "./ehnes.json"
+import gitlis from "./gitlis.json"
 import barData from "./barData.json"
 console.log(bell, barData)
 import './Chaconne.scss';
@@ -108,7 +109,14 @@ const Chaconne = () => {
         <ChaconneVideoChart
           visibleMetrics={visibleMetrics}
           name="Ehnes"
-          data={bell.Faces}
+          data={ehnes.Faces}
+          onMouseEnter={setHoveredObject}
+        />
+        <h3>Gitlis</h3>
+        <ChaconneVideoChart
+          visibleMetrics={visibleMetrics}
+          name="Gitlis"
+          data={gitlis.Faces}
           onMouseEnter={setHoveredObject}
         />
 
