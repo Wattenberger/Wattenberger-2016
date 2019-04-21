@@ -21,9 +21,31 @@ import 'rc-slider/assets/index.css';
 import bell from "./bell.json"
 import ehnes from "./ehnes.json"
 import gitlis from "./gitlis.json"
+import heifetz from "./heifetz.json"
+import hristova from "./hristova.json"
+import kremer from "./kremer.json"
+import midori from "./midori.json"
+import milstein from "./milstein.json"
+import perlman from "./perlman.json"
+import vengerov from "./vengerov.json"
+import zimmerman from "./zimmerman.json"
 import barData from "./barData.json"
 console.log(bell, barData)
 import './Chaconne.scss';
+const musicianData = {
+  "bell": bell,
+  "ehnes": ehnes,
+  "gitlis": gitlis,
+  "heifetz": heifetz,
+  "hristova": hristova,
+  "kremer": kremer,
+  "midori": midori,
+  "milstein": milstein,
+  "perlman": perlman,
+  "vengerov": vengerov,
+  "zimmerman": zimmerman,
+}
+const musicians = _.keys(musicianData)
 
 const eyesClosedIcon = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
 const formatNumber = d => numeral(d).format("0,0a")
@@ -70,6 +92,7 @@ const metricsByKey = _.fromPairs(_.map(metrics, metric => [
 const colorScale = d3.scaleLinear().range(["#c7ecee", "#686de0"]).domain([0, 1])
 const Chaconne = () => {
   const [visibleMetrics, setVisibleMetrics] = useState(metricKeys)
+  const [visibleMusicians, setVisibleMusicians] = useState(["zimmerman"])
   const [hoveredObject, setHoveredObject] = useState(null)
 
   return (
@@ -82,6 +105,13 @@ const Chaconne = () => {
           options={metricKeys}
           value={visibleMetrics}
           onChange={setVisibleMetrics}
+          isMulti
+        />
+        <br />
+        <RadioGroup
+          options={musicians}
+          value={visibleMusicians}
+          onChange={setVisibleMusicians}
           isMulti
         />
       </div>
@@ -98,27 +128,17 @@ const Chaconne = () => {
           </div>
         )}
 
-        <h3>Bell</h3>
-        <ChaconneVideoChart
-          visibleMetrics={visibleMetrics}
-          name="Bell"
-          data={bell.Faces}
-          onMouseEnter={setHoveredObject}
-        />
-        <h3>Ehnes</h3>
-        <ChaconneVideoChart
-          visibleMetrics={visibleMetrics}
-          name="Ehnes"
-          data={ehnes.Faces}
-          onMouseEnter={setHoveredObject}
-        />
-        <h3>Gitlis</h3>
-        <ChaconneVideoChart
-          visibleMetrics={visibleMetrics}
-          name="Gitlis"
-          data={gitlis.Faces}
-          onMouseEnter={setHoveredObject}
-        />
+        {_.map(visibleMusicians, musician => (
+          <div key={musician}>
+            <h3>{ _.startCase(musician) }</h3>
+            <ChaconneVideoChart
+              visibleMetrics={visibleMetrics}
+              name={_.startCase(musician)}
+              data={musicianData[musician].Faces}
+              onMouseEnter={setHoveredObject}
+            />
+          </div>
+        ))}
 
       </div>
     </div>
