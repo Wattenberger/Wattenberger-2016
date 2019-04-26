@@ -15,6 +15,7 @@ import Chart from "components/_ui/Chart/Chart"
 import Scatter from "components/_ui/Chart/Scatter/Scatter"
 import Axis from "components/_ui/Chart/Axis/Axis"
 import Slider from 'rc-slider';
+import RadioGroup from "components/_ui/RadioGroup/RadioGroup"
 import 'rc-slider/assets/index.css';
 import emojiUrls from "./emojiUrls"
 import emojiFile from "./emojis.csv"
@@ -27,16 +28,19 @@ const startDate = d3.timeParse("%Y-%m-%d")("2019-02-27")
 const endDate = d3.timeParse("%Y-%m-%d")("2019-04-07")
 const dateStops = d3.timeDay.range(startDate, endDate)
 const dateStepTiming = 1000
+const channels = [
+  "-announcements","-events","-introductions","-open-discussion","-topics-in-data-viz","audience-kids","audience-scientists","connect-academia","connect-freelance","connect-gov-civic","connect-hr-analytics","connect-journalism","connect-meetup-leads","connect-newbie","connect-nonprofit","connect-speaking","connect-team-up","dvs-chapter-thinkers","dvs-com-tech","dvs-suggestions","help-code","help-design","help-general","help-slack","location-africa","location-apac","location-atlanta","location-canada","location-chicago","location-dc","location-europe","location-newengland","location-nyc","location-seattle","location-uk","share-critique","share-inspiration","share-showcase","spanish-general","topic-accessibility","topic-best-practices","topic-career-advice","topic-data-art","topic-data-literacy","topic-data-processing","topic-data-resources","topic-dynamic-data","topic-health","topic-historical-viz","topic-interactivity","topic-machine-learnin","topic-mapping","topic-networks","topic-research","topic-sports-viz","topic-storytelling","topic-teaching","topic-temporal","topic-terminology","topic-text-analytics","topic-weather-climate","topic-xenographics"
+]
 
 const DVSChannels = () => {
   const [data, setData] = useState([])
   const [channelData, setChannelData] = useState([])
   const [dateIndex, setDate] = useState(0)
+  const [activeChannels, setActiveChannels] = useState(["share-critique", "share-showcase", "-topics-in-data-viz", "topic-historical-viz"])
 
   useEffect(() => {
     d3.csv(emojiFile).then(rows => {
       setData(rows)
-      // console.log(rows)
     })
     d3.csv(channelDataFile).then(rows => {
       setChannelData(rows)
@@ -45,7 +49,6 @@ const DVSChannels = () => {
 
   useInterval(() => {
     if (!data.length) return;
-console.log(dateIndex)
     const newDate = d3.min([
       dateIndex + 1,
       dateStops.length - 2,
@@ -58,6 +61,11 @@ console.log(dateIndex)
   const indicatorX = dateIndex * (100 - (100 / dateStops.length)) / (dateStops.length - 2)
   const dateStopString = d3.timeFormat("%Y-%m-%d")(dateStops[dateIndex])
 
+  const onSetActiveChannels = channels => {
+    setActiveChannels(channels)
+    setDate(0)
+  }
+
   return (
     <div className="DVSChannels">
       <h2 className="DVSChannels__title">
@@ -65,6 +73,13 @@ console.log(dateIndex)
       </h2>
 
       <div className="DVSChannels__contents">
+
+        <RadioGroup
+          options={channels}
+          value={activeChannels}
+          onChange={onSetActiveChannels}
+          isMulti
+        />
 
         <div className="DVSChannels__dates">
         <div
@@ -76,7 +91,7 @@ console.log(dateIndex)
           {_.map(dateStops.slice(0, -1), (date, index) => {
             const dayString = d3.timeFormat("%-d")(date)
             return (
-              <div className="DVSChannels__dates__item" key={date} onClick={onChangeDate(+dayString)}>
+              <div className="DVSChannels__dates__item" key={date} onClick={onChangeDate(+index)}>
                 {(!index || +dayString == 1) && (
                   <div className="DVSChannels__dates__item__month">{ d3.timeFormat("%B")(date) }</div>
                 )}
@@ -87,14 +102,7 @@ console.log(dateIndex)
         </div>
 
         <div className="DVSChannels__hubs">
-        {_.map([
-          // "-introductions",
-          "share-critique",
-          "share-showcase",
-          // "	-open-discussion",
-          "-topics-in-data-viz",
-          "topic-historical-viz",
-        ], (channel, index) => (
+        {_.map(activeChannels, (channel, index) => (
           <DVSChannelsHub
             key={channel}
             channel={ channel }
@@ -134,7 +142,6 @@ const DVSChannelsEmojiTimeline = ({ data, channel }) => {
 
   const filteredData = data.filter(d => d.value > 5)
   const stackedData = d3.stack()(filteredData)
-  console.log(stackedData)
 
   const xScale = d3.scaleLinear()
     .domain(d3.extent(filteredData, dateAccessor))
