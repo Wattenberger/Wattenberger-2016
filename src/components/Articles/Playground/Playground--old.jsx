@@ -28,9 +28,7 @@ apply({ OrbitControls })
 
 function Controls(props) {
   const ref = useRef()
-  const { camera, scene } = useThree()
-  scene.fog = new THREE.Fog(new THREE.Color("#e1eeed"), 0, 20)
-
+  const { camera } = useThree()
   // useRender(() => ref.current.obj.update())
   return <orbitControls ref={ref} args={[camera]} {...props} />
 }
@@ -41,11 +39,11 @@ const camera = {
 }
 
 const colorScale = d3.scaleLinear()
-  .domain([0,1])
-  .range(["#e1b12c", "#40739e"])
+.domain([0,1])
+.range(["#e1b12c", "#40739e"])
 
 function Wrapper({ ...props }) {
-  const meshGeo = new THREE.SphereBufferGeometry(100, 50, 50)
+  const meshGeo = new THREE.SphereBufferGeometry(1, 50, 50)
 
   return (
     <Canvas camera={camera} {...props}>
@@ -53,51 +51,38 @@ function Wrapper({ ...props }) {
       <group>
         <pointLight
           position={[0,0,5]}
-          color="#fafaff"
-          intensity={0.5}
-          />
-        {/* <pointLight
-          position={[-2,0,-2]}
-          color="#ff007b"
-          intensity={0.3}
-          /> */}
-        {/* <pointLight
-          position={[1,10,1]}
-          color="#ff007b"
+          color="#9980FA"
           intensity={0.5}
           />
         <pointLight
-          position={[0,0,7]}
+          position={[-2,0,-2]}
+          color="#9980FA"
+          intensity={0.3}
+          />
+        <pointLight
+          position={[1,10,1]}
+          color="#9c88ff"
+          intensity={0.5}
+          />
+        <pointLight
+          position={[0,0,4]}
           color="#9c88ff"
           intensity={0.2}
-          /> */}
-        {/* <pointLight
-          position={[0,0,6]}
-          color="#9c88ff"
-          intensity={0.2}
-          /> */}
+          />
         {/* <pointLight
           position={[-10,-1,-1]}
           color="#FFC312"
           intensity={1}
         /> */}
-        {/* <pointLight
+        <pointLight
           position={[3,3,3]}
           color="#12CBC4"
           intensity={0.1}
-          /> */}
-        <pointLight
-          position={[0,0,3]}
-          color="#f7f3ce"
-          intensity={0.1}
           />
-        <ambientLight color="#fff" intensity={0.7} />
-        {/* <ambientLight color="#5758BB" intensity={0.4} /> */}
+        <ambientLight color="#fff" intensity={0.5} />
+        <ambientLight color="#5758BB" intensity={0.4} />
 
         <Dogs />
-
-        <Ground
-        />
 
         {/* {_.map(_.times(100), i => (
           <mesh
@@ -125,26 +110,7 @@ function Wrapper({ ...props }) {
   )
 }
 
-const Ground = () => {
-  const geometry = new THREE.SphereBufferGeometry(30, 50, 50)
-  // var geometry = new THREE.PlaneGeometry( 5, 20, 32 );
-
-  return (
-    <mesh geometry={geometry} position={[0, -31, 0]}>
-      <meshBasicMaterial
-        side={THREE.DoubleSide}
-        attach="material"
-        color="#228c7b"
-      />
-    </mesh>
-  )
-
-}
-
-const rows = 9
-const columns = 3
-const spacing = 0.9
-let dogs = _.times(rows * columns, {})
+let dogs = _.times(8, {})
 const Dogs = () => {
   const [rotation, setRotation] = useState(0)
 
@@ -157,31 +123,18 @@ const Dogs = () => {
     ...dog,
     ref: useRef(),
     position: [
-      (-(rows / 2) + (i % rows)) * spacing,
+      getPointFromAngleAndDistance(i * (360 / 8), 1.1).x,
+      getPointFromAngleAndDistance(i * (360 / 8), 1.1).y,
       0,
-      (-5 + Math.floor(i / columns)) * (spacing / 2),
-      // getPointFromAngleAndDistance(i * (360 / 8), 2).x,
-      // 0,
-      // getPointFromAngleAndDistance(i * (360 / 8), 1).y,
-    ],
-    rate: d3.randomNormal(0.0005, 0.005)(),
-    y: -2,
+    ]
   }))
   let theta = 0
   useRender(() => {
-    theta++
-    // const y = 4 * Math.sin(THREE.Math.degToRad((theta += 0.1)))
-    // group.current.rotation.set(0, 0, r)
+    const r = 4 * Math.sin(THREE.Math.degToRad((theta += 0.1)))
+    group.current.rotation.set(0, 0, r)
     dogs.forEach((dog, i) => {
-      // const y = 1 * Math.sin(THREE.Math.degToRad((theta + dog.rate)))
-      if ((dog.y > 1 && Math.random() < 0.03)
-      || (dog.y > 2.3 && dog.rate > 0)
-      || (dog.y < 1 && dog.rate < 0)) {
-        dog.rate = -dog.rate
-      }
-      dog.y += dog.rate
       if (!_.get(dog, "ref.current")) return
-      dog.ref.current.position.set(dog.position[0], dog.y, dog.position[2])
+      dog.ref.current.rotation.set(-r / 4 * dog.position[0], -r / 4 * dog.position[1], -r)
     })
   })
   useEffect(() => {
@@ -193,19 +146,15 @@ const Dogs = () => {
 
   }, [])
 
-  const sun = new THREE.SphereBufferGeometry(6, 50, 50)
-  const sky = new THREE.SphereBufferGeometry(25, 50, 50)
+  const wrapper = new THREE.SphereBufferGeometry(6, 50, 50)
 
   return (
     <group ref={group}>
-      <mesh geometry={sun} position-z={-8}>
-        <meshBasicMaterial attach="material" color="#ffca61" side={THREE.BackSide} />
-      </mesh>
-      <mesh geometry={sky} position-z={10}>
-        <meshLambertMaterial attach="material" color="#fe5f55" side={THREE.BackSide} />
+      <mesh geometry={wrapper}>
+        <meshLambertMaterial attach="material" color="#2f3640" side={THREE.BackSide} />
       </mesh>
       {_.map(dogs, (dog, i) => (
-        <group ref={dog.ref}  key={i} scale={[0.8, 0.8, 0.8]}>
+        <group ref={dog.ref}  key={i}>
         <Dog
           position={dog.position}
         />
@@ -216,7 +165,6 @@ const Dogs = () => {
 }
 
 
-const flowerColorScale = d3.interpolateHcl("#FDA7DF", "#FFC312")
 const Dog = ({ position }) => {
 
   useUpdate(e => {
@@ -246,8 +194,6 @@ const Dog = ({ position }) => {
   const points = curve.getPoints( 50 );
   const circleGeometry = new THREE.BufferGeometry().setFromPoints( points );
 
-  const petalsColor = flowerColorScale(d3.randomNormal(0.5, 0.2)())
-
 
   return (
     <animated.group position={position} scale={_.times(3, i => 0.5)}>
@@ -255,13 +201,9 @@ const Dog = ({ position }) => {
       <DogNose color={color} />
       <DogEyes color={color} />
       <DogEars color={color} />
-      {_.times(6, i => (
-        <DogPetal color={petalsColor} rotation-z={i * (Math.PI * 2 / 6)} />
-      ))}
-      <DogStem />
-      {/* <line geometry={circleGeometry}>
+      <line geometry={circleGeometry}>
         <lineBasicMaterial attach="material" color="#9c88ff" />
-      </line> */}
+      </line>
     </animated.group>
   )
 }
@@ -317,7 +259,7 @@ const DogNose = ({ color }) => {
         <meshLambertMaterial attach="material" color={"#2f3640"} />
       </mesh>
 
-      <line geometry={mouthGeometry} position={[0, -0.1, noseLength]}>
+      <line geometry={mouthGeometry} position={[0, -0.1, noseLength * 1.15]}>
         <lineBasicMaterial attach="material" color="#2f3640" />
       </line>
     </group>
@@ -413,55 +355,6 @@ const DogEars = ({ color }) => {
     </group>
   )
 }
-
-
-const DogStem = () => {
-  var geometry = new THREE.CylinderGeometry( 0.1, 0.1, 10, 32 );
-
-  return (
-    <mesh
-      position={[0, -4.3, 0]}
-      geometry={geometry}
-    >
-      <meshLambertMaterial attach="material" color="#228c7b" />
-    </mesh>
-  )
-}
-
-const DogPetal = ({ color, ...props }) => {
-  // var curve = new THREE.EllipseCurve(0, 0, 3, 0.5, 0, Math.PI * 2, false, 0)
-  // var points = curve.getPoints( 50 )
-  // var geometry = new THREE.BufferGeometry().setFromPoints( points )
-
-  const puffFactor = d3.randomNormal(1.5, 0.3)()
-  const points = _.times(90 / 2, i => {
-      const rad = Math.PI * (i * 2) / 90
-
-      return new THREE.Vector3(
-        (1.72 + 0.08 * Math.cos(rad))
-          * (Math.sin(rad)
-          * 1.6),
-        - Math.cos(rad)
-          * puffFactor,
-          1.01
-      )
-    })
-
-    const geometry = new THREE.LatheBufferGeometry( points, 32 );
-
-  return (
-    <mesh {...props}
-      // position={[0, -4.3, 0]}
-      geometry={geometry}
-      scale={[1, 1, 0.2]}
-      rotation-x={-0.2}
-      position-z={-0.7}
-    >
-      <meshLambertMaterial side={THREE.DoubleSide} attach="material" color={color} opacity={0.9} transparent />
-    </mesh>
-  )
-}
-
 
 function getPointFromAngleAndDistance(angle, distance) {
   return {
