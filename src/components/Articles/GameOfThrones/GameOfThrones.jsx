@@ -36,7 +36,6 @@ const GameOfThrones = () => {
 
   const onMouseEnterYearLocal = year => () => setFocusedYear(year)
   const onCharacterFocus = (character, e) => {
-    console.log(character)
     setFocusedCharacter(character && e ? {
       ...character,
       x: e.pageX,
@@ -90,7 +89,7 @@ function Controls(props) {
 
 const camera = {
   fov: 75, near: 0.1, far: 1000,
-  // "position.z": 2,
+  position: [0, 0, -60],
 }
 
 const colorScale = d3.scaleLinear()
@@ -283,28 +282,27 @@ const Character = ({ index, popularity, house, dateOfBirth, killed, killedBy, is
 }
 
 
-  const simplex = new SimplexNoise()
-  console.log(simplex.noise2D(100, 100))
 const noiseColorScale = d3.scaleLinear()
-    .domain([0, 1])
-    .range(["rgba(236, 240, 241, 0.2)", "rgba(44, 62, 80, 0.2)"])
+.domain([0, 1])
+.range(["rgba(236, 240, 241, 0.2)", "rgba(44, 62, 80, 0.2)"])
 function generateNoise(opacity=0.2, canvas, color) {
-    const context = canvas.getContext('2d')
-    context.globalCompositeOperation = "color-burn"
-    // context.globalCompositeOperation = "overlay"
+  const simplex = new SimplexNoise()
+  const context = canvas.getContext('2d')
+  context.globalCompositeOperation = "color-burn"
+  // context.globalCompositeOperation = "overlay"
 
-    const size = d3.randomNormal(12, 4)()
+  const size = d3.randomNormal(12, 4)()
 
-    context.fillStyle = color
-    context.fillRect(0, 0, canvas.width, canvas.height)
+  context.fillStyle = color
+  context.fillRect(0, 0, canvas.width, canvas.height)
 
-    _.times(canvas.width, x => {
-      _.times(canvas.height, y => {
-        const number = simplex.noise2D(x / size, y / size)
+  _.times(canvas.width, x => {
+    _.times(canvas.height, y => {
+      const number = simplex.noise2D(x / size, y / size)
 
-        context.fillStyle = noiseColorScale(number)
-        context.fillOpacity = 0.3
-        context.fillRect(x, y, 1, 1)
-      })
+      context.fillStyle = noiseColorScale(number)
+      context.fillOpacity = 0.3
+      context.fillRect(x, y, 1, 1)
     })
+  })
 }
