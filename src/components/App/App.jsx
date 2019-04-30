@@ -19,6 +19,7 @@ const WDVPGrid = React.lazy(() => import("components/Articles/WDVP/WDVPGrid"));
 const RocDevSurvey = React.lazy(() => import("components/Articles/RocDevSurvey/RocDevSurvey"));
 const StephenKing = React.lazy(() => import("components/Articles/StephenKing/StephenKing"));
 const StephenKing3d = React.lazy(() => import("components/Articles/StephenKing3d/StephenKing3d"));
+const GameOfThrones = React.lazy(() => import("components/Articles/GameOfThrones/GameOfThrones"));
 const Chaconne = React.lazy(() => import("components/Articles/Chaconne/Chaconne"));
 const Playground = React.lazy(() => import("components/Articles/Playground/Playground"));
 const Authors = React.lazy(() => import("components/Articles/Authors/Authors"));
@@ -77,6 +78,7 @@ class App extends Component {
             <Route path="/fishing" component={Fishing} />
             <Route path="/music" component={Music} />
             <Route path="/chaconne" component={Chaconne} />
+            <Route path="/game-of-thrones" component={GameOfThrones} />
             <Route path="/blog" component={Blog} />
             {/* <Route path="/docstats" component={DoctorateStats} /> */}
             <Route>
