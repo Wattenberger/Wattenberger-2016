@@ -32,7 +32,7 @@ const I3 = () => {
             <Keyboard selectedKeys={selectedKeys} />
             <div className="I3__shortcuts">
                 {_.map(keyboardShortcuts, ({ label, description, keys }) => (
-                    <div className="I3__shortcuts__item" key={label} onMouseEnter={() => setSelectedKeys(keys)}>
+                    <div className="I3__shortcuts__item" key={label} onMouseEnter={() => setSelectedKeys(keys)} onMouseLeave={() => setSelectedKeys([])}>
                         <h5>
                             { label }
                         </h5>
