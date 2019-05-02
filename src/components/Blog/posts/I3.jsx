@@ -18,14 +18,14 @@ const keyboardShortcuts = [{
     label: "Move window to Workspace 1",
     keys: ["Windows","Shift","1"],
 },{
-    label: "Open app chooser",
+    label: "Open app picker",
     keys: ["Windows","d"],
 },{
     label: "Open emoji picker",
     keys: ["Windows","f"],
 }]
 const I3 = () => {
-    const [selectedKeys, setSelectedKeys] = useState(["Windows","1"])
+    const [selectedKeys, setSelectedKeys] = useState([])
 
     return (
         <div className="I3">
@@ -39,6 +39,16 @@ const I3 = () => {
                         <p>
                             { description }
                         </p>
+                        <div className="I3__shortcuts__item__keys">
+                            {_.map(keys, (key, i) => (
+                                <>
+                                    {!!i && <div className="I3__shortcuts__item__keys__item__plus">+</div>}
+                                    <div className="I3__shortcuts__item__keys__item" key={key}>
+                                        { renderKey(key) }
+                                    </div>
+                                </>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>
@@ -49,6 +59,10 @@ const I3 = () => {
 export default I3
 
 
+const renderKey = key => key == "Windows" ? <KeyWindows /> :
+                         key == "Page"    ? <KeyPage />    :
+                         key == "arrows"  ? <KeyArrows />  :
+                         key
 const keys = [
     ["`","1","2","3","4","5","6","7","8","9","0","-","=","Backspace"],
     ["Tab","q","w","e","r","t","y","u","i","o","p","[","]","\\"],
@@ -69,13 +83,7 @@ const Keyboard = ({ selectedKeys=[] }) => {
                             `Keyboard__key--position-${!i ? "first" : i == (row.length - 1) ? "last" : "middle"}`,
                             `Keyboard__key--is-${selectedKeys.includes(key) && !(key == "Shift" && i > 0) ? "selected" : "not-selected"}`,
                         ].join(" ")} key={key}>
-
-                            {
-                                key == "Windows" ? <KeyWindows /> :
-                                key == "Page"    ? <KeyPage /> :
-                                key == "arrows"  ? <KeyArrows /> :
-                                key
-                            }
+                            { renderKey(key) }
                         </div>
                     ))}
                 </div>
