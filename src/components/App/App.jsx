@@ -24,6 +24,7 @@ const Chaconne = React.lazy(() => import("components/Articles/Chaconne/Chaconne"
 const Playground = React.lazy(() => import("components/Articles/Playground/Playground"));
 const Authors = React.lazy(() => import("components/Articles/Authors/Authors"));
 const Fishing = React.lazy(() => import("components/Articles/Fishing/Fishing"));
+const TrafficSources = React.lazy(() => import("components/Articles/TrafficSources/TrafficSources"));
 const DVS = React.lazy(() => import("components/Articles/DVS/DVS"));
 const DVSChannels = React.lazy(() => import("components/Articles/DVSChannels/DVSChannels"));
 const Music = React.lazy(() => import("components/Articles/Music/Music"));
@@ -80,6 +81,7 @@ class App extends Component {
             <Route path="/music" component={Music} />
             <Route path="/chaconne" component={Chaconne} />
             <Route path="/game-of-thrones" component={GameOfThrones} />
+            <Route path="/traffic-sources" component={TrafficSources} />
             <Route path="/blog/i3" component={I3} />
             <Route path="/blog" component={Blog} />
             {/* <Route path="/docstats" component={DoctorateStats} /> */}
