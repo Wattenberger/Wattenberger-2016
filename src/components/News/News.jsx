@@ -8,7 +8,7 @@ import Sentiment from "sentiment"
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import ReactSelect from 'react-select';
-import Creatable from 'react-select/lib/Creatable';
+import Creatable from 'react-select/creatable';
 
 import ButtonGroup from 'components/_ui/Button/ButtonGroup/ButtonGroup';
 import Button from 'components/_ui/Button/Button';
