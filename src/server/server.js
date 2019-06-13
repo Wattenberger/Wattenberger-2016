@@ -16,6 +16,11 @@ app.use(compression())
 
 app.use('/static/', express.static('dist'))
 
+function handleRedirect(req, res) {
+  res.redirect("http://wattenberger.netlify.com");
+}
+app.get('/blog', handleRedirect);
+
 // Dev: serve static files from webpack dev server
 if (app.get("env") === "development") require ("../../webpack/dev-server")
 

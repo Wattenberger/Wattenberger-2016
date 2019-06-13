@@ -72,6 +72,7 @@
     "react-spring": "^8.0.20",
     "react-three-fiber": "^2.1.6",
     "react-window": "^1.8.2",
+    "react-zdog": "^1.0.3",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.5",
     "redux-logger": "^3.0.6",
