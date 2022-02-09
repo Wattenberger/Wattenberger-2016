@@ -55,7 +55,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "numeral": "^2.0.6",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
