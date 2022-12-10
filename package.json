@@ -44,7 +44,7 @@
     "d3-weighted-voronoi": "^1.0.1",
     "defined": "^1.0.0",
     "dom-to-image": "^2.6.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "file-loader": "^3.0.1",
     "hard-source-webpack-plugin": "^0.13.1",
     "history": "^4.9.0",
