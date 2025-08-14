@@ -1,4 +1,5 @@
 import VisualDesign from "./posts/VisualDesign"
+import DataVisualizationBestPractices from "./posts/DataVisualizationBestPractices"
 
 const posts = [{
     title: "Visual vs. Visualization Design",
@@ -7,6 +8,9 @@ const posts = [{
 },{
     title: "Drawing a Map",
     // component: VisualDesign,
+},{
+    title: "Data Visualization Best Practices",
+    component: DataVisualizationBestPractices,
 }]
 const processedPosts = _.map(posts, post => ({
     ...post,
